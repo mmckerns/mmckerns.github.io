@@ -1,3 +1,3 @@
 # mmckerns.github.io
 
-redirects to: http://cacr.caltech.edu/~mmckerns
+redirects to: http://www.cacr.caltech.edu/~mmckerns/my
