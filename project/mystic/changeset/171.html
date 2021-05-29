@@ -1,0 +1,1430 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/171 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:48:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 171 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="170.html" title="Changeset 170" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/171?format=diff&amp;new=171" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/171?format=zip&amp;new=171" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="172.html" title="Changeset 172" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="170.html" title="Changeset 170">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="172.html" title="Changeset 172">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 171</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             08/07/09 11:27:13
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-08-07T11%3A27%3A13-07%3A00&amp;precision=second" title="2009-08-07T11:27:13-07:00 in Timeline">7 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">altafang</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+Adding uncertainty and fixing <a class="missing wiki">SetInitialPoints?</a>. More revisions to come<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171">
+              branches/alta/mystic-0.1a2/mystic/snobfit_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">27 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="171/branches/alta/mystic-0.1a2/mystic/snobfit_solver.html" title="Show the changeset 171 restricted to branches/alta/mystic-0.1a2/mystic/snobfit_solver.py">branches/alta/mystic-0.1a2/mystic/snobfit_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 168">
+                    <a title="Show revision 168 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L27">
+                      r168</a>
+                  </th>
+                  <th title="Revision 171">
+                    <a title="Show revision 171 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L27">
+                      r171</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>27</th><th>27</th><td class="l"><span>&nbsp; &nbsp; - StepMonitor = Sow()</span> </td>
+                  </tr><tr>
+                          <th>28</th><th>28</th><td class="l"><span>&nbsp; &nbsp; - enable_signal_handler()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; - termination = SnobfitTermination(rtol, ftol, <del>nstop</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>29</th><td class="r"><span>&nbsp; &nbsp; - termination = SnobfitTermination(rtol, ftol, <ins>generations</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>30</th><th>30</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>31</th><th>31</th><td class="l"><span>Usage</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L72">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L72">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>72</th><th>72</th><td class="l"><span># Import Mystic tools</span> </td>
+                  </tr><tr>
+                          <th>73</th><th>73</th><td class="l"><span>from mystic.tools import Null, wrap_function</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>74</th><th> </th><td class="l"><span>from mystic.tools import wrap_bounds<del>, random_seed</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>74</th><td class="r"><span>from mystic.tools import wrap_bounds<ins></ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>75</th><th>75</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>76</th><th>76</th><td class="l"><span>from abstract_solver import AbstractSolver</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L123">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L123">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>123</th><th>123</th><td class="l"><span>&nbsp; &nbsp; p -- probability of generating a evaluation point of Class 4.</span> </td>
+                  </tr><tr>
+                          <th>124</th><th>124</th><td class="l"><span>&nbsp; &nbsp; fac&nbsp; &nbsp; &nbsp;-- Factor for multiplicative perturbation of the data.</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>125</th><th> </th><td class="l"><del>&nbsp; &nbsp; disp&nbsp; &nbsp;-- non-zero if fval and warnflag outputs are desired.</del> </td>
+                  </tr><tr>
+                          <th>126</th><th> </th><td class="l"><del>&nbsp; &nbsp; callback&nbsp; -- an optional user-supplied function to call after each</del> </td>
+                  </tr><tr>
+                          <th>127</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;iteration. It's called as callback(xbest), where xbest</del> </td>
+                  </tr><tr class="last">
+                          <th>128</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;is the current best point.</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>129</th><th>125</th><td class="l"><span>&nbsp; &nbsp; fglob -- the user specified global function value.</span> </td>
+                  </tr><tr>
+                          <th>130</th><th>126</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L134">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L130">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>134</th><th>130</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.p = 0.5</span> </td>
+                  </tr><tr>
+                          <th>135</th><th>131</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.fac = 0.0</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>136</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; disp = 0</del> </td>
+                  </tr><tr class="last">
+                          <th>137</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; callback = None</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>138</th><th>132</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.fglob = 0</span> </td>
+                  </tr><tr>
+                          <th>139</th><th>133</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L141">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L135">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>141</th><th>135</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('p'): self.p = kwds['p']</span> </td>
+                  </tr><tr>
+                          <th>142</th><th>136</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('fac'): self.fac = kwds['fac']</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>143</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('disp'): disp = kwds['disp']</del> </td>
+                  </tr><tr class="last">
+                          <th>144</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('callback'): callback = kwds['callback']</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>145</th><th>137</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('fglob'): self.fglob = kwds['fglob']</span> </td>
+                  </tr><tr>
+                          <th>146</th><th>138</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L160">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L152">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>160</th><th>152</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>161</th><th>153</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>154</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.func = func</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>155</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>162</th><th>156</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x0 = self.population[0]</span> </td>
+                  </tr><tr>
+                          <th>163</th><th>157</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.x = self.population</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L182">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L176">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>182</th><th>176</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>183</th><th>177</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # Function call counter</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>184</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ncall = self.nPop</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>178</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; #ncall = self.nPop&nbsp; &nbsp;# &lt;-- original snobfit's function call counter</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>179</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; initfcalls = fcalls[0]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>185</th><th>180</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>186</th><th>181</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # iteration counter</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L195">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L190">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>195</th><th>190</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>196</th><th>191</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # Repeat until the limit on function calls is reached</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>197</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; while ncall &lt; self._maxiter:</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>192</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; #while ncall &lt; self._maxiter:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>193</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; while fcalls[0] &lt; self._maxiter:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>198</th><th>194</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;StepMonitor(self.bestSolution, self.bestEnergy)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>199</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> </td>
+                      </tr><tr>
+                        <th>200</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if ncall == self.nPop:</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>195</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>196</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#if ncall == self.nPop:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>197</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if fcalls[0] == initfcalls:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>201</th><th>198</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# initial call</span> </td>
+                  </tr><tr>
+                          <th>202</th><th>199</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.fit(func, initialCall=True)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L213">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L210">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>213</th><th>210</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>214</th><th>211</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# update function call counter</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>215</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del></del>ncall += self.nPop</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>212</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>#</ins>ncall += self.nPop</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>216</th><th>213</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>217</th><th>214</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# best of the new function values</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L223">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L220">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>223</th><th>220</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;xopt = x[jbest,:]</span> </td>
+                  </tr><tr>
+                          <th>224</th><th>221</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>225</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if <del></del>callback is not None:</span> </td>
+                      </tr><tr>
+                        <th>226</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del></del>callback(x[jbest])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>222</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if <ins>self.</ins>callback is not None:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>223</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>self.</ins>callback(x[jbest])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>227</th><th>224</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>228</th><th>225</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# Monitor progress</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L245">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L242">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>245</th><th>242</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>246</th><th>243</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if fcalls[0] &gt;= self._maxfun:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>247</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if <del></del>disp:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>244</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if <ins>self.</ins>disp:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>248</th><th>245</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Maximum number of function evaluations has "\</span> </td>
+                  </tr><tr>
+                          <th>249</th><th>246</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "been exceeded."</span> </td>
+                  </tr><tr>
+                          <th>250</th><th>247</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif i &gt;= self._maxiter:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>251</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if <del></del>disp:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>248</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if <ins>self.</ins>disp:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>252</th><th>249</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Maximum number of iterations has been exceeded"</span> </td>
+                  </tr><tr>
+                          <th>253</th><th>250</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>254</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if <del></del>disp:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>251</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if <ins>self.</ins>disp:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>255</th><th>252</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Optimization terminated successfully."</span> </td>
+                  </tr><tr>
+                          <th>256</th><th>253</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Current function value: %f" % fval</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L259">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L256">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>259</th><th>256</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return </span> </td>
+                  </tr><tr>
+                          <th>260</th><th>257</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>261</th><th> </th><td class="l"><span>&nbsp; &nbsp; # Overwrite abstract_solver's SetInitialPoints()</span> </td>
+                      </tr><tr>
+                        <th>262</th><th> </th><td class="l"><span>&nbsp; &nbsp; def SetInitialPoints(self, x0):</span> </td>
+                      </tr><tr>
+                        <th>263</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Set initial points with guess x0."""</span> </td>
+                      </tr><tr>
+                        <th>264</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.population = self._setInitRecommendedEvalPoints(x0)</span> </td>
+                      </tr><tr>
+                        <th>265</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>258</th><td class="r"><span>&nbsp; &nbsp; # Overwrite abstract_solver's SetRandomInitialPoints()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>259</th><td class="r"><span>&nbsp; &nbsp; def SetRandomInitialPoints(self, min=None, max=None):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>260</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Set random initial points."""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>261</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.population = self._setInitRecommendedEvalPoints()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>262</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>263</th><td class="r"><span>&nbsp; #&nbsp; def SetInitialPoints(self, x0):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>264</th><td class="r"><span>&nbsp; #&nbsp; &nbsp; &nbsp; self.SetRandomInitialPoints()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>265</th><td class="r"><span>&nbsp; #&nbsp; &nbsp; &nbsp; self.population[0] = x0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>266</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>267</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>266</th><th>268</th><td class="l"><span>#################################################################################</span> </td>
+                  </tr><tr>
+                          <th>267</th><th>269</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>268</th><th>270</th><td class="l"><span># Helper methods for SnobfitSolver</span> </td>
+                  </tr><tr>
+                          <th>269</th><th>271</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>270</th><th> </th><td class="l"><span>&nbsp; &nbsp; def _setInitRecommendedEvalPoints(self<del>, x0</del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>272</th><td class="r"><span>&nbsp; &nbsp; def _setInitRecommendedEvalPoints(self<ins></ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>271</th><th>273</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>272</th><th>274</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; From the initial user-supplied guess, we set up the first set of</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L277">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L279">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>277</th><th>279</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Make sure the initial guess x0 is in recommended evaluation points.</span> </td>
+                  </tr><tr>
+                          <th>278</th><th>280</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>279</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x = numpy.dot( rand(self.nPop<del>-1</del>, self.nDim),</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>281</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x = numpy.dot( rand(self.nPop<ins></ins>, self.nDim),</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>280</th><th>282</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;numpy.diag(self._strictMax-self._strictMin)</span> </td>
+                  </tr><tr>
+                          <th>281</th><th>283</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;) + \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>282</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; numpy.array( [self._strictMin] ).repeat(self.nPop<del>-1</del>,axis=0)</span> </td>
+                      </tr><tr>
+                        <th>283</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>284</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; <del></del>x = numpy.append( [x0], x, axis=0 )</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>284</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; numpy.array( [self._strictMin] ).repeat(self.nPop<ins></ins>,axis=0)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>285</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>286</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; <ins>#</ins>x = numpy.append( [x0], x, axis=0 )</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>285</th><th>287</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return x</span> </td>
+                  </tr><tr>
+                          <th>286</th><th>288</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2163">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2165">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2163</th><th>2165</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._warning()</span> </td>
+                  </tr><tr>
+                          <th>2164</th><th>2166</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>2167</th><td class="r"><ins>###########################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2168</th><td class="r"><ins># Helper methods for SnobfitSolver to calculate the covariance </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2169</th><td class="r"><ins># matrix, uncertainty:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2170</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2171</th><td class="r"><ins>&nbsp; &nbsp; def _calcCovarAtSolution(self, x, f, df=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2172</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """ calc the Correlation Matrix or Uncertainty at the solution</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2173</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2174</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; OutPut:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2175</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; -------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2176</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; covar&nbsp; &nbsp;the Correlation Matrix.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2177</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2178</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if x&nbsp; is not None: self.xnew&nbsp; = x.copy()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2179</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if f&nbsp; is not None: self.fnew&nbsp; = f.copy()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2180</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if df is not None:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2181</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.dfnew = df.copy()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2182</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2183</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.dfnew = numpy.ones(len(f))*max(3*self.fac,numpy.sqrt(eps))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2184</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2185</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.updateWorkspace(self.func)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2186</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2187</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # Current best solution</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2188</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; [fSolution, j] = min_( self.f )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2189</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; xSolution = self.x[j,:]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2190</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2191</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; K = min( self.nx-1, self.nDim*(self.nDim+3) )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2192</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; distance=numpy.sum((self.x - \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2193</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;numpy.array([xSolution]).repeat(self.nx,axis=0))**2,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2194</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;axis=1</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2195</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2196</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ind = numpy.argsort(distance)[1:K+1]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2197</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2198</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # S^k = x^k - xSolution</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2199</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; S = self.x[ind,:] - numpy.array([xSolution]).repeat(K,axis=0)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2200</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2201</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #---------- Fixed typo -------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2202</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #R = numpy.linalg.qr(a, mode='r')</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2203</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; R = numpy.linalg.qr(S, mode='r')</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2204</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; L = inv(R).T</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2205</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2206</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # Scale matrix</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2207</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; sc = numpy.sum( numpy.dot(S,L.T)**2, axis=1) ** (3.0/2.0 )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2208</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; b = (self.f[ind]-fSolution)/sc</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2209</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2210</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; xx&nbsp; = self.x[ind,:] - numpy.array([xSolution]).repeat(K,axis=0)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2211</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; xx2 = 0.5*xx*xx</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2212</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; A&nbsp; &nbsp;= numpy.bmat( 'xx xx2')</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2213</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2214</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; for i in xrange(self.nDim-1):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2215</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xx =( self.x[ind,i] - xSolution[i])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2216</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; B&nbsp; = numpy.array( toCol(xx) ).repeat( self.nDim-i-1, axis=1)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2217</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xx = B*(self.x[ind,i+1:self.nDim] - \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2218</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; numpy.array([ xSolution[i+1:self.nDim] ]).repeat(K,axis=0) )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2219</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; A&nbsp; = numpy.bmat('A xx')</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2220</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2221</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; xx = numpy.array( toCol(sc) ).repeat(A.shape[1], axis=1)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2222</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; A = A/xx</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2223</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2224</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # In q, it includes the components of g and the upper triangle of G</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2225</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; q = mldiv(A, toCol(b))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2226</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2227</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # Jacobian matrix</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2228</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; J = numpy.diag( q[self.nDim:2*self.nDim] )/2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2229</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; k = 2*self.nDim</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2230</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; for i in xrange( self.nDim-1 ):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2231</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;for j in xrange(self.nDim-i-1):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2232</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;J[i, j+i+1] = q[k]/2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2233</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;J[j+i+1, i] = q[k]/2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2234</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;k += 1</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2235</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2236</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # The covariance matrix is computed by,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2237</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # covar = (J^T J)^{-1}</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2238</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; covar = inv(J.T * J)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2239</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2240</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # If the minimisation uses the weighted least-squares function.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2241</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # the covariance matrix should be multiplied by the variance of</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2242</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # the residuals about the best-solution least-squares.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2243</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # For example, the fit of the reflectometry problem.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2244</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if self.isLeastSqrt:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2245</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Calc the squared residuals(i.e., the goodness of fit)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2246</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # at the solution.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2247</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sumsq = abs(fSolution)**2/self.nDim</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2248</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; covar *= sumsq</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2249</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2250</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2251</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return covar</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2252</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2253</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2254</th><td class="r"><ins>&nbsp; &nbsp; def _covarianceMatrix(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2255</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2256</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; Calculate the Covariance Matrix at the solution</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2257</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2258</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # Compute function values at the suggested points</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2259</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; nrequest = self.request.shape[0]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2260</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; x = numpy.zeros( (nrequest,self.nDim) )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2261</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; f = vector( nrequest )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2262</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; for j in xrange( nrequest ):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2263</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x[j,:] = self.request[j,0:self.nDim]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2264</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; f[j]&nbsp; &nbsp;= self.func(x[j,:])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2265</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2266</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return self. _calcCovarAtSolution(x, f)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2267</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2268</th><td class="r"><ins>&nbsp; &nbsp; # The alias</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2269</th><td class="r"><ins>&nbsp; &nbsp; covar = _covarianceMatrix</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2270</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2271</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2272</th><td class="r"><ins>&nbsp; &nbsp; def uncertainty(self, isLeastSqrt=False):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2273</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2274</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; Calculate the uncertainty of the fitting parameter at the solution.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2275</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2276</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; Optional input: isLeastSqrt -- boolean -- True if the minimisation</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2277</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; uses the least squares function. </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2278</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2279</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.isLeastSqrt=isLeastSqrt</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2280</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; covar = self._covarianceMatrix()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2281</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; print covar</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2282</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; print numpy.diag(covar)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2283</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2284</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # calculate the uncertainty of fit parameters.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2285</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; uct = numpy.sqrt( numpy.diag(covar) )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2286</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2287</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return uct</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2288</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2289</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>2290</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2165</th><th>2291</th><td class="l"><span>###############################################################################</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>2166</th><th> </th><td class="l"><span># If using an instance of SoftConstraints, use SnobfitSoftSolver instead of SnobfitSolver</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>2292</th><td class="r"><span># If using an instance of SoftConstraints (constraint is not None),</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>2293</th><td class="r"><span># use SnobfitSoftSolver instead of SnobfitSolver</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2167</th><th>2294</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>2168</th><th>2295</th><td class="l"><span>class SnobfitSoftSolver(SnobfitSolver):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>2169</th><th> </th><td class="l"><span>&nbsp; &nbsp; """Inherits from SnobfitSolver. Use if there are soft constraints."""</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>2296</th><td class="r"><span>&nbsp; &nbsp; """Inherits from SnobfitSolver. Use this solver only if </span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>2297</th><td class="r"><span>there are soft constraints."""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2170</th><th>2298</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>2171</th><th>2299</th><td class="l"><span>&nbsp; &nbsp; def Solve(self, func, termination, sigint_callback=None,</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2191">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2319">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2191</th><th>2319</th><td class="l"><span>&nbsp; &nbsp; p -- probability of generating a evaluation point of Class 4.</span> </td>
+                  </tr><tr>
+                          <th>2192</th><th>2320</th><td class="l"><span>&nbsp; &nbsp; fac&nbsp; &nbsp; &nbsp;-- Factor for multiplicative perturbation of the data.</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>2193</th><th> </th><td class="l"><del>&nbsp; &nbsp; disp&nbsp; &nbsp;-- non-zero if fval and warnflag outputs are desired.</del> </td>
+                  </tr><tr>
+                          <th>2194</th><th> </th><td class="l"><del>&nbsp; &nbsp; callback&nbsp; -- an optional user-supplied function to call after each</del> </td>
+                  </tr><tr>
+                          <th>2195</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;iteration. It's called as callback(xbest), where xbest</del> </td>
+                  </tr><tr class="last">
+                          <th>2196</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;is the current best point.</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2197</th><th>2321</th><td class="l"><span>&nbsp; &nbsp; fglob -- the user specified global function value.</span> </td>
+                  </tr><tr>
+                          <th>2198</th><th>2322</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2202">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2326">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2202</th><th>2326</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.p = 0.5</span> </td>
+                  </tr><tr>
+                          <th>2203</th><th>2327</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.fac = 0.0</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>2204</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; disp = 0</del> </td>
+                  </tr><tr class="last">
+                          <th>2205</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; callback = None</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2206</th><th>2328</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.fglob = 0</span> </td>
+                  </tr><tr>
+                          <th>2207</th><th>2329</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2209">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2331">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2209</th><th>2331</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('p'): self.p = kwds['p']</span> </td>
+                  </tr><tr>
+                          <th>2210</th><th>2332</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('fac'): self.fac = kwds['fac']</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>2211</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('<del>disp'): disp = kwds['disp</del>']</span> </td>
+                      </tr><tr>
+                        <th>2212</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('callback'): callback = kwds['callback']</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>2333</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('<ins>fglob'): self.fglob = kwds['fglob</ins>']</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>2334</th><td class="r"><span></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2213</th><th>2335</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # SoftConstraints requires a constraint passed to Solve()....</span> </td>
+                  </tr><tr>
+                          <th>2214</th><th>2336</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('constraint'): self.constraint = kwds['constraint']</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>2215</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('fglob'): self.fglob = kwds['fglob']</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2216</th><th>2337</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>2217</th><th>2338</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2253">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2374">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2253</th><th>2374</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ncall = self.nPop</span> </td>
+                  </tr><tr>
+                          <th>2254</th><th>2375</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; xopt&nbsp; = inf</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>2255</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; improvement = 0</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2256</th><th>2376</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; change = 0</span> </td>
+                  </tr><tr>
+                          <th>2257</th><th>2377</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2342">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2462">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2342</th><th>2462</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;xopt = x[jbest,:]</span> </td>
+                  </tr><tr>
+                          <th>2343</th><th>2463</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>2344</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if&nbsp; <del></del>callback is not None :</span> </td>
+                      </tr><tr>
+                        <th>2345</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>callback(i, x[jbest], fbestn, improvement==0</del>)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>2464</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if&nbsp; <ins>self.</ins>callback is not None :</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>2465</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>self.callback(x[jbest]</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2346</th><th>2466</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>2347</th><th>2467</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if&nbsp; fopt &lt; 0 and change == 0:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2399">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2519">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2399</th><th>2519</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Function evaluations: %d" % fcalls[0]</span> </td>
+                  </tr><tr>
+                          <th>2400</th><th>2520</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>2401</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>2402</th><th> </th><td class="l"><del>&nbsp; &nbsp; # Overwrite abstractsolver's SetInitialPoints()</del> </td>
+                  </tr><tr>
+                          <th>2403</th><th> </th><td class="l"><del>&nbsp; &nbsp; def SetInitialPoints(self, x0):</del> </td>
+                  </tr><tr>
+                          <th>2404</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; """Set initial points with guess x0."""</del> </td>
+                  </tr><tr class="last">
+                          <th>2405</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self.population = self._setInitRecommendedEvalPoints(x0)</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2406</th><th>2521</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>2407</th><th>2522</th><td class="l"><span>#######################################################################</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2488">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2603">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2488</th><th>2603</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retall = 0,</span> </td>
+                  </tr><tr>
+                          <th>2489</th><th>2604</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; callback&nbsp; &nbsp; = None,</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>2490</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; seed&nbsp; &nbsp; &nbsp; &nbsp; = None,</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2491</th><th>2605</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraint = None,</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>2492</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; full_output = 0):</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>2606</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; full_output = 0,</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>2607</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retuct = False):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2493</th><th>2608</th><td class="l"><span>&nbsp; &nbsp; """Minimize a function using Snobfit - Stable Noisy Optimization by Branch and Fit.</span> </td>
+                  </tr><tr>
+                          <th>2494</th><th>2609</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2519">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2634">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2519</th><th>2634</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;iteration. It's called as callback(xbest), where xbest</span> </td>
+                  </tr><tr>
+                          <th>2520</th><th>2635</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;is the current best point.</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>2521</th><th> </th><td class="l"><del>&nbsp; &nbsp; seed&nbsp; &nbsp; &nbsp;-- The seed for numpy.random. If the user set this number,it makes</del> </td>
+                  </tr><tr class="last">
+                          <th>2522</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sure that it returns the same solution from repeated tests</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2523</th><th>2636</th><td class="l"><span>&nbsp; &nbsp; constraint -- an instance of SoftConstraints. If constraint is not None, then use </span> </td>
+                  </tr><tr>
+                          <th>2524</th><th>2637</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SnobfitSoftSolver instead of SnobfitSolver.</span> </td>
+                  </tr><tr>
+                          <th>2525</th><th>2638</th><td class="l"><span>&nbsp; &nbsp; full_output -- non-zero if fval and warnflag outputs are</span> </td>
+                  </tr><tr>
+                          <th>2526</th><th>2639</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; desired.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>2527</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>2528</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>2529</th><th> </th><td class="l"><span>Returns: (xopt, {fopt, iter, funcalls, warnflag}, {allvecs})</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>2640</th><td class="r"><span>&nbsp; &nbsp; retuct&nbsp; -- True to return the uncertainty of the fitting parameters</span> </td>
+                      </tr><tr>
+                        <th> </th><th>2641</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>2642</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>2643</th><td class="r"><span>Returns: (xopt, {fopt, iter, funcalls, warnflag}, {allvecs}, {uncertainty})</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2530</th><th>2644</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>2531</th><th>2645</th><td class="l"><span>&nbsp; &nbsp; xopt -- ndarray - minimizer of function</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2537">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2651">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2537</th><th>2651</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; 2 : 'Maximum number of iterations.'</span> </td>
+                  </tr><tr>
+                          <th>2538</th><th>2652</th><td class="l"><span>&nbsp; &nbsp; allvecs -- list - a list of solutions at each iteration</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>2653</th><td class="r"><ins>&nbsp; &nbsp; uncertainty -- list - Returned if retuct is True. The uncertainty of </ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>2654</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;the fitting parameters.</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2539</th><th>2655</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>2540</th><th>2656</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2545">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2661">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2545</th><th>2661</th><td class="l"><span>&nbsp; &nbsp; from mystic.termination import SnobfitTermination</span> </td>
+                  </tr><tr>
+                          <th>2546</th><th>2662</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>2547</th><th> </th><td class="l"><del>&nbsp; &nbsp; # Set the random seed</del> </td>
+                  </tr><tr>
+                          <th>2548</th><th> </th><td class="l"><del>&nbsp; &nbsp; if seed:</del> </td>
+                  </tr><tr>
+                          <th>2549</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; random_seed(seed)</del> </td>
+                  </tr><tr>
+                          <th>2550</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>2551</th><th> </th><td class="l"><del>&nbsp; &nbsp; # Messy?:</del> </td>
+                  </tr><tr class="last">
+                          <th>2552</th><th> </th><td class="l"><del>&nbsp; &nbsp; # Using npop instead of dn may not be the best idea?</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2553</th><th>2663</th><td class="l"><span>&nbsp; &nbsp; if constraint is None:</span> </td>
+                  </tr><tr>
+                          <th>2554</th><th>2664</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if npop:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2562">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2672">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2562</th><th>2672</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; solver = SnobfitSoftSolver(len(x0))</span> </td>
+                  </tr><tr>
+                          <th>2563</th><th>2673</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>2674</th><td class="r"><ins>&nbsp; &nbsp; solver.disp = disp</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2675</th><td class="r"><ins>&nbsp; &nbsp; solver.callback = callback</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>2676</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2564</th><th>2677</th><td class="l"><span>&nbsp; &nbsp; # Problem?: SetStrictRanges must be called before SetInitialPoints</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>2565</th><th> </th><td class="l"><span>&nbsp; &nbsp; # In fact, <del>SetStrictRanges must always be called</del>. Perhaps</span> </td>
+                      </tr><tr>
+                        <th>2566</th><th> </th><td class="l"><span>&nbsp; &nbsp; # integrate bounds into __init__?<del></del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>2678</th><td class="r"><span>&nbsp; &nbsp; # In fact, <ins>_strictMin and _strictMax must always be set</ins>. Perhaps</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>2679</th><td class="r"><span>&nbsp; &nbsp; # integrate bounds into __init__?<ins>&nbsp;Make a default?</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2567</th><th>2680</th><td class="l"><span>&nbsp; &nbsp; solver.SetStrictRanges(bounds[0],bounds[1])</span> </td>
+                  </tr><tr>
+                          <th>2568</th><th>2681</th><td class="l"><span>&nbsp; &nbsp; solver.SetInitialPoints(x0)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2572">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2685">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2572</th><th>2685</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;EvaluationMonitor=evalmon,StepMonitor=stepmon,\</span> </td>
+                  </tr><tr>
+                          <th>2573</th><th>2686</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ExtraArgs=args,\</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>2574</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;p=p, fac=fac, disp=disp, fglob=fglob,\</span> </td>
+                      </tr><tr>
+                        <th>2575</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;callback=callback,</span> </td>
+                      </tr><tr>
+                        <th>2576</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;constraint=constraint) </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>2687</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;p=p, fac=fac, fglob=fglob,constraint=constraint) </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2577</th><th>2688</th><td class="l"><span>&nbsp; &nbsp; solution = solver.Solution()</span> </td>
+                  </tr><tr>
+                          <th>2578</th><th>2689</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>2579</th><th> </th><td class="l"><del>&nbsp; &nbsp; # code below here pushes output to scipy.optimize interface</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2580</th><th>2690</th><td class="l"><span>&nbsp; &nbsp; x = solver.bestSolution</span> </td>
+                  </tr><tr>
+                          <th>2581</th><th>2691</th><td class="l"><span>&nbsp; &nbsp; fval = solver.bestEnergy</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=168#L2601">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=171#L2711">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2601</th><th>2711</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retlist = (x, allvecs)</span> </td>
+                  </tr><tr>
+                          <th>2602</th><th>2712</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>2713</th><td class="r"><ins>&nbsp; &nbsp; if retuct:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2714</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; retlist += (solver.uncertainty(),)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>2715</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2603</th><th>2716</th><td class="l"><span>&nbsp; &nbsp; return retlist</span> </td>
+                  </tr><tr>
+                          <th>2604</th><th>2717</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/171?format=diff&amp;new=171" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/171?format=zip&amp;new=171" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/171 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:48:38 GMT -->
+</html>

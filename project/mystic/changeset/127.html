@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/127 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:50:57 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 127 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="126.html" title="Changeset 126" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/127?format=diff&amp;new=127" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/127?format=zip&amp;new=127" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="128.html" title="Changeset 128" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="126.html" title="Changeset 126">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="128.html" title="Changeset 128">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 127</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             03/26/09 11:24:54
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-26T11%3A24%3A54-07%3A00&amp;precision=second" title="2009-03-26T11:24:54-07:00 in Timeline">7 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+renamed some examples to better conform to 'examples' naming convention<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=127">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>5 edited</dd>
+              <dt class="mv"></dt><dd>4 moved</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/ABOUT-MYSTIC.txt?rev=127">
+              ABOUT-MYSTIC.txt
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/NOTES?rev=127">
+              NOTES
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/README?rev=127">
+              README
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/Make.mm?rev=127">
+              examples/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/derun.py?rev=127">
+              examples/derun.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">2 diffs</a>)
+            </li><li>
+          <div class="mv"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/dummy.py?rev=127">
+              examples/dummy.py
+            </a>
+          <span class="comment">(moved)</span>
+            <small><em>(moved from <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/example.py?rev=95" title="Show original file (revision 95)">
+                mystic/examples/example.py</a>)</em></small>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li><li>
+          <div class="mv"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/rosetta_mogi.py?rev=127">
+              examples/rosetta_mogi.py
+            </a>
+          <span class="comment">(moved)</span>
+            <small><em>(moved from <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/rosetta_mogi_example.py?rev=117" title="Show original file (revision 117)">
+                mystic/examples/rosetta_mogi_example.py</a>)</em></small>
+            </li><li>
+          <div class="mv"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/rosetta_parabola.py?rev=127">
+              examples/rosetta_parabola.py
+            </a>
+          <span class="comment">(moved)</span>
+            <small><em>(moved from <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/rosetta_parabola_example.py?rev=113" title="Show original file (revision 113)">
+                mystic/examples/rosetta_parabola_example.py</a>)</em></small>
+            </li><li>
+          <div class="mv"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_getCost.py?rev=127">
+              examples/test_getCost.py
+            </a>
+          <span class="comment">(moved)</span>
+            <small><em>(moved from <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/example_getCost.py?rev=117" title="Show original file (revision 117)">
+                mystic/examples/example_getCost.py</a>)</em></small>
+              (<a title="Show differences" href="#file8">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="127/mystic/ABOUT-MYSTIC.html" title="Show the changeset 127 restricted to mystic/ABOUT-MYSTIC.txt">mystic/ABOUT-MYSTIC.txt</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 90">
+                    <a title="Show revision 90 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/ABOUT-MYSTIC.txt?rev=90#L51">
+                      r90</a>
+                  </th>
+                  <th title="Revision 127">
+                    <a title="Show revision 127 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/ABOUT-MYSTIC.txt?rev=127#L51">
+                      r127</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>51</th><th>51</th><td class="l"><span>&nbsp; &lt; optimizer interface: slide #10 &gt;</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>52</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>53</th><th> </th><td class="l"><span>Mystic's Interface:&nbsp; (see MYSTIC-EXAMPLE.txt) -&gt; uses <del>example</del>_getCost.py</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>53</th><td class="r"><span>Mystic's Interface:&nbsp; (see MYSTIC-EXAMPLE.txt) -&gt; uses <ins>test</ins>_getCost.py</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>54</th><td class="l"><span>&nbsp;* Model Factory Interface</span> </td>
+                  </tr><tr>
+                          <th>55</th><th>55</th><td class="l"><span>&nbsp;* Cost Function Generation</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/ABOUT-MYSTIC.txt?rev=90#L71">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/ABOUT-MYSTIC.txt?rev=127#L71">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>71</th><th>71</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>72</th><th>72</th><td class="l"><span>-------------------------------------------------------------</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>73</th><th> </th><td class="l"><span>== Example 1: simple parabola == (examples/<del>example</del>_getCost.py) == </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>73</th><td class="r"><span>== Example 1: simple parabola == (examples/<ins>test</ins>_getCost.py) == </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>74</th><td class="l"><span>- very simple forward model</span> </td>
+                  </tr><tr>
+                          <th>75</th><th>75</th><td class="l"><span>- highlights several configuration options (esp. SetStrictRanges)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="127/mystic/NOTES.html" title="Show the changeset 127 restricted to mystic/NOTES">mystic/NOTES</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 95">
+                    <a title="Show revision 95 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/NOTES?rev=95#L12">
+                      r95</a>
+                  </th>
+                  <th title="Revision 127">
+                    <a title="Show revision 127 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/NOTES?rev=127#L12">
+                      r127</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>12</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>13</th><th>13</th><td class="l"><span>&nbsp;o mystic.derun =&gt; an optimization framework pyre application [NEEDS WORK!]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>14</th><th> </th><td class="l"><span>&nbsp;* mystic.<del>example</del> =&gt; Chebyshev8 cost function</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>14</th><td class="r"><span>&nbsp;* mystic.<ins>dummy</ins> =&gt; Chebyshev8 cost function</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>15</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>16</th><th>16</th><td class="l"><span>&nbsp;* mystic.differential_evolution =&gt; Price &amp; Storn's DE solver</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/NOTES?rev=95#L35">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/NOTES?rev=127#L35">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>35</th><td class="l"><span>&nbsp; &nbsp; &nbsp;. factory.addModel()</span> </td>
+                  </tr><tr>
+                          <th>36</th><th>36</th><td class="l"><span>&nbsp; &nbsp; &nbsp;. factory.getCostFunction[Slow]()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>37</th><th> </th><td class="l"><span>&nbsp;o mystic.<del>example</del>_getCost =&gt; example usage of CostFactory [NEEDS WORK!]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>37</th><td class="r"><span>&nbsp;o mystic.<ins>test</ins>_getCost =&gt; example usage of CostFactory [NEEDS WORK!]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>38</th><th>38</th><td class="l"><span>&nbsp; &nbsp;- SIMPLE example: User-prepared cost function</span> </td>
+                  </tr><tr>
+                          <th>39</th><th>39</th><td class="l"><span>&nbsp; &nbsp;- SIMPLE example: CostFactory-built cost function</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="127/mystic/README.html" title="Show the changeset 127 restricted to mystic/README">mystic/README</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 126">
+                    <a title="Show revision 126 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/README?rev=126#L19">
+                      r126</a>
+                  </th>
+                  <th title="Revision 127">
+                    <a title="Show revision 127 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/README?rev=127#L19">
+                      r127</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>19</th><th>19</th><td class="l"><span>Notes on the "ffit" tests/examples:</span> </td>
+                  </tr><tr>
+                          <th>20</th><th>20</th><td class="l"><span>&nbsp;- test_ffit: The fitting problem whose exact solution is 8th order Chebyshev polynomial of the first kind.&nbsp; This example uses a Ctrl-C signal handler. Try ctrl-c as the differential_evolution strategy is running.</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>21</th><td class="r"><ins>&nbsp;- test_ffit2: The fitting problem whose exact solution is 16th order Chebyshev polynomial of the first kind.&nbsp; Also uses the signal_handler. </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>22</th><td class="r"><ins>&nbsp;- test_ffitB: Same as test_ffit.py, but uses DifferentialEvolutionSolver2 instead of DifferentialEvolutionSolver. </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>23</th><td class="r"><ins>&nbsp;- test_ffitC: Same as test_ffit.py, but uses scipy_optimize.fmin.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>24</th><td class="r"><ins>&nbsp;- test_ffitD: Same as test_ffit.py, but uses scipy_optimize.diffev.</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>25</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>21</th><th>26</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>22</th><th>27</th><td class="l"><span>Notes on the "mogi" tests/examples:</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="127/mystic/examples/Make.html" title="Show the changeset 127 restricted to mystic/examples/Make.mm">mystic/examples/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 126">
+                    <a title="Show revision 126 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/Make.mm?rev=126#L69">
+                      r126</a>
+                  </th>
+                  <th title="Revision 127">
+                    <a title="Show revision 127 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/Make.mm?rev=127#L69">
+                      r127</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>69</th><th>69</th><td class="l"><span>&nbsp; &nbsp; test_wavy.py \</span> </td>
+                  </tr><tr>
+                          <th>70</th><th>70</th><td class="l"><span>##&nbsp; derun.py \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>71</th><th> </th><td class="l"><span>##&nbsp; <del>example</del>.py \</span> </td>
+                      </tr><tr>
+                        <th>72</th><th> </th><td class="l"><span>&nbsp; &nbsp; <del>example</del>_getCost.py \</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>71</th><td class="r"><span>##&nbsp; <ins>dummy</ins>.py \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>72</th><td class="r"><span>&nbsp; &nbsp; <ins>test</ins>_getCost.py \</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>73</th><th>73</th><td class="l"><span>&nbsp; &nbsp; forward_model.py \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>74</th><th> </th><td class="l"><span>&nbsp; &nbsp; rosetta_parabola<del>_example</del>.py \</span> </td>
+                      </tr><tr>
+                        <th>75</th><th> </th><td class="l"><span>&nbsp; &nbsp; rosetta_mogi<del>_example</del>.py \</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; &nbsp; rosetta_parabola<ins></ins>.py \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; &nbsp; rosetta_mogi<ins></ins>.py \</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>76</th><th>76</th><td class="l"><span>&nbsp; &nbsp; example01.py \</span> </td>
+                  </tr><tr>
+                          <th>77</th><th>77</th><td class="l"><span>&nbsp; &nbsp; example02.py \</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="127/mystic/examples/derun.html" title="Show the changeset 127 restricted to mystic/examples/derun.py">mystic/examples/derun.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 117">
+                    <a title="Show revision 117 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/derun.py?rev=117#L34">
+                      r117</a>
+                  </th>
+                  <th title="Revision 127">
+                    <a title="Show revision 127 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/derun.py?rev=127#L34">
+                      r127</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>34</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; probability.meta['tip'] = 'Differential Evolution crossover probability.'</span> </td>
+                  </tr><tr>
+                          <th>35</th><th>35</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>36</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; costfunc = pyre.inventory.str('costfunc', default = '<del>example</del>')</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>36</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; costfunc = pyre.inventory.str('costfunc', default = '<ins>dummy</ins>')</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>37</th><th>37</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; costfunc.meta['tip'] = 'The python module containing the cost-function and other data.'</span> </td>
+                  </tr><tr>
+                          <th>38</th><th>38</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/derun.py?rev=117#L117">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/derun.py?rev=127#L117">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>117</th><th>117</th><td class="l"><span>&nbsp; &nbsp; app.run()</span> </td>
+                  </tr><tr>
+                          <th>118</th><th>118</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>119</th><th> </th><td class="l"><span>&nbsp; &nbsp; # Chebyshev8 polynomial (used with "<del>example</del>.py")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>119</th><td class="r"><span>&nbsp; &nbsp; # Chebyshev8 polynomial (used with "<ins>dummy</ins>.py")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>120</th><th>120</th><td class="l"><span>&nbsp; &nbsp; from mystic.models.poly import chebyshev8coeffs as target_coeffs</span> </td>
+                  </tr><tr>
+                          <th>121</th><th>121</th><td class="l"><span>&nbsp; &nbsp; from mystic.models.poly import poly1d</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="127/mystic/examples/dummy.html" title="Show the changeset 127 restricted to mystic/examples/dummy.py">mystic/examples/dummy.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 95">
+                    <a title="Show revision 95 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/example.py?rev=95#L10">
+                      r95</a>
+                  </th>
+                  <th title="Revision 127">
+                    <a title="Show revision 127 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/dummy.py?rev=127#L10">
+                      r127</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>10</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>11</th><th>11</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>12</th><th> </th><td class="l"><span><del>example</del>.py</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>12</th><td class="r"><span><ins>dummy.py -- cost function container module for derun</ins>.py</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>13</th><th>13</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>14</th><th>14</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file8">
+          <a href="127/mystic/examples/test_getCost.html" title="Show the changeset 127 restricted to mystic/examples/test_getCost.py">mystic/examples/test_getCost.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 117">
+                    <a title="Show revision 117 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/example_getCost.py?rev=117#L1">
+                      r117</a>
+                  </th>
+                  <th title="Revision 127">
+                    <a title="Show revision 127 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_getCost.py?rev=127#L1">
+                      r127</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span><del>example</del>_getCost.py</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>3</th><td class="r"><span><ins>test</ins>_getCost.py</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span>Example to demonstrate use of CostFactory</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>5</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/127?format=diff&amp;new=127" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/127?format=zip&amp;new=127" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/127 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:51:03 GMT -->
+</html>

@@ -1,0 +1,1502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/784/mystic by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:55:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 784 for mystic – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/784/mystic?format=diff&amp;new=784" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/784/mystic?format=zip&amp;new=784" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../785/mystic.html" title="Changeset 785 for mystic" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../783/mystic.html" title="Changeset 783 for mystic" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../783/mystic.html" title="Changeset 783 for mystic">Previous Change</a></span></li><li class="last"><span><a class="next" href="../785/mystic.html" title="Changeset 785 for mystic">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../784.html">784</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=784">mystic</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             02/18/15 18:10:28
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-02-18T18%3A10%3A28-08%3A00&amp;precision=second" title="2015-02-18T18:10:28-08:00 in Timeline">15 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+added <a class="missing wiki">SolverInterrupt?</a> as termination; pull _EARLYEXIT into <a class="missing wiki">CheckTermination?</a><br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic?rev=784">mystic/mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>6 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=784">
+              abstract_ensemble_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784">
+              abstract_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">8 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784">
+              differential_evolution.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">8 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=784">
+              ensemble.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">12 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784">
+              scipy_optimize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">6 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=784">
+              termination.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="mystic/mystic/abstract_ensemble_solver.html" title="Show the changeset 784 restricted to mystic/mystic/abstract_ensemble_solver.py">mystic/mystic/abstract_ensemble_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 783">
+                    <a title="Show revision 783 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=783#L229">
+                      r783</a>
+                  </th>
+                  <th title="Revision 784">
+                    <a title="Show revision 784 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=784#L229">
+                      r784</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>229</th><th>229</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # check for termination messages</span> </td>
+                  </tr><tr>
+                          <th>230</th><th>230</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; msg = termination(solver, info=True)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>231</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; sig = "SolverInterrupt with %s" % {}</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>231</th><th>232</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; lim = "EvaluationLimits with %s" % {'evaluations':solver._maxfun,</span> </td>
+                  </tr><tr>
+                          <th>232</th><th>233</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'generations':solver._maxiter}</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=783#L242">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=784#L243">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>242</th><th>243</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if disp:</span> </td>
+                  </tr><tr>
+                          <th>243</th><th>244</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Maximum number of iterations has been exceeded"</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>245</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; elif solver._EARLYEXIT: #XXX: self or solver ?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>246</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = sig</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>247</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if disp:</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>248</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Optimization terminated with signal interrupt."</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>244</th><th>249</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif msg and disp:</span> </td>
+                  </tr><tr>
+                          <th>245</th><th>250</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Optimization terminated successfully."</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="mystic/mystic/abstract_solver.html" title="Show the changeset 784 restricted to mystic/mystic/abstract_solver.py">mystic/mystic/abstract_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 783">
+                    <a title="Show revision 783 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=783#L422">
+                      r783</a>
+                  </th>
+                  <th title="Revision 784">
+                    <a title="Show revision 784 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L422">
+                      r784</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>422</th><th>422</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>423</th><th>423</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>424</th><th> </th><td class="l"><span>&nbsp; &nbsp; def enable_signal_handler(self):<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>424</th><td class="r"><span>&nbsp; &nbsp; def enable_signal_handler(self):<ins>#, callback='*'):</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>425</th><th>425</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """enable workflow interrupt handler while solver is running"""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>426</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """ #XXX: disabled, as would add state to solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>427</th><td class="r"><ins>input::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>428</th><td class="r"><ins>&nbsp; &nbsp; - if a callback function is provided, generate a new handler with</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>429</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; the given callback.&nbsp; If callback is None, do not use a callback.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>430</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; If callback is not provided, just turn on the existing handler.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>431</th><td class="r"><ins>"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>432</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;## always _generate handler on first call</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>433</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#if (self.signal_handler is None) and callback == '*':</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>434</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; callback = None</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>435</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;## when a new callback is given, generate a new handler</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>436</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#if callback != '*':</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>437</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; self._generateHandler(callback)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>426</th><th>438</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._handle_sigint = True</span> </td>
+                  </tr><tr>
+                          <th>427</th><th>439</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=783#L546">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L558">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>546</th><th>558</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # check for termination messages</span> </td>
+                  </tr><tr>
+                          <th>547</th><th>559</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; msg = termination(self, info=True)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>560</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; sig = "SolverInterrupt with %s" % {}</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>548</th><th>561</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; lim = "EvaluationLimits with %s" % {'evaluations':self._maxfun,</span> </td>
+                  </tr><tr>
+                          <th>549</th><th>562</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'generations':self._maxiter}</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=783#L559">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L572">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>559</th><th>572</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if disp:</span> </td>
+                  </tr><tr>
+                          <th>560</th><th>573</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Maximum number of iterations has been exceeded"</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>574</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; elif self._EARLYEXIT:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>575</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = sig</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>576</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if disp:</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>577</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Optimization terminated with signal interrupt."</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>561</th><th>578</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif msg and disp:</span> </td>
+                  </tr><tr>
+                          <th>562</th><th>579</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Optimization terminated successfully."</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=783#L671">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L688">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>671</th><th>688</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return settings</span> </td>
+                  </tr><tr>
+                          <th>672</th><th>689</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>673</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Solve(self, cost=None, termination=None, sigint_callback=None,</span> </td>
+                      </tr><tr>
+                        <th>674</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>690</th><td class="r"><span>&nbsp; &nbsp; def Solve(self, cost=None, termination=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>675</th><th>691</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a 'cost' function with given termination conditions.</span> </td>
+                  </tr><tr>
+                          <th>676</th><th>692</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=783#L687">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L703">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>687</th><th>703</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>688</th><th>704</th><td class="l"><span>&nbsp; &nbsp; termination -- callable object providing termination conditions.</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>705</th><td class="r"><ins>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>706</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>707</th><td class="r"><ins>Further Inputs:</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>708</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>689</th><th>709</th><td class="l"><span>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>690</th><th> </th><td class="l"><del>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</del> </td>
+                  </tr><tr>
+                          <th>691</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>692</th><th> </th><td class="l"><del>Further Inputs:</del> </td>
+                  </tr><tr class="last">
+                          <th>693</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>694</th><th>710</th><td class="l"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                  </tr><tr>
+                          <th>695</th><th>711</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=783#L700">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L716">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>700</th><th>716</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</span> </td>
+                  </tr><tr>
+                          <th>701</th><th>717</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>718</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; sigint_callback = kwds.pop('sigint_callback', None)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>702</th><th>719</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = self._process_inputs(kwds)</span> </td>
+                  </tr><tr>
+                          <th>703</th><th>720</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for key in settings:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=783#L705">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L722">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>705</th><th>722</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>706</th><th>723</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # set up signal handler</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>724</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._EARLYEXIT = False&nbsp; #XXX: why not use EARLYEXIT singleton?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>725</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._generateHandler(sigint_callback)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>726</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>727</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # activate signal handler</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>707</th><th>728</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import signal</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>708</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self._EARLYEXIT = False&nbsp; #XXX: why not use EARLYEXIT singleton?</del> </td>
+                  </tr><tr class="last">
+                          <th>709</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self._generateHandler(sigint_callback) </del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>710</th><th>729</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint: signal.signal(signal.SIGINT,self.signal_handler)</span> </td>
+                  </tr><tr>
+                          <th>711</th><th>730</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=783#L721">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L740">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>721</th><th>740</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>722</th><th>741</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # the main optimization loop</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>723</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; while not self.CheckTermination()<del>&nbsp;and not self._EARLYEXIT</del>:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>742</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; while not self.CheckTermination()<ins></ins>:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>724</th><th>743</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.Step(**settings)&nbsp; # includes settings['callback']</span> </td>
+                  </tr><tr>
+                          <th>725</th><th>744</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: self._exitMain()</span> </td>
+                  </tr><tr>
+                          <th>726</th><th>745</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>727</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # <del>handle</del> signal interrupts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>746</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # <ins>restore default handler for</ins> signal interrupts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>728</th><th>747</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                  </tr><tr>
+                          <th>729</th><th>748</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="mystic/mystic/differential_evolution.html" title="Show the changeset 784 restricted to mystic/mystic/differential_evolution.py">mystic/mystic/differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 783">
+                    <a title="Show revision 783 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=783#L291">
+                      r783</a>
+                  </th>
+                  <th title="Revision 784">
+                    <a title="Show revision 784 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L291">
+                      r784</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>291</th><th>291</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return settings</span> </td>
+                  </tr><tr>
+                          <th>292</th><th>292</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>293</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Solve(self, cost=None, termination=None, sigint_callback=None,</span> </td>
+                      </tr><tr>
+                        <th>294</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>293</th><td class="r"><span>&nbsp; &nbsp; def Solve(self, cost=None, termination=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>295</th><th>294</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using differential evolution.</span> </td>
+                  </tr><tr>
+                          <th>296</th><th>295</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=783#L307">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L306">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>307</th><th>306</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>308</th><th>307</th><td class="l"><span>&nbsp; &nbsp; termination -- callable object providing termination conditions.</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>309</th><th> </th><td class="l"><del>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>310</th><th>308</th><td class="l"><span>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</span> </td>
+                  </tr><tr>
+                          <th>311</th><th>309</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=783#L318">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L316">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>318</th><th>316</th><td class="l"><span>&nbsp; &nbsp; ScalingFactor -- multiplier for the impact of mutations on the</span> </td>
+                  </tr><tr>
+                          <th>319</th><th>317</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; trial solution [default = 0.8]</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>318</th><td class="r"><ins>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>320</th><th>319</th><td class="l"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                  </tr><tr>
+                          <th>321</th><th>320</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=783#L324">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L323">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>324</th><th>323</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>325</th><th>324</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(DifferentialEvolutionSolver, self).Solve(cost, termination,\</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>326</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <del>sigint_callback,</del> ExtraArgs, **kwds)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>325</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> ExtraArgs, **kwds)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>327</th><th>326</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>328</th><th>327</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=783#L461">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L460">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>461</th><th>460</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return settings</span> </td>
+                  </tr><tr>
+                          <th>462</th><th>461</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>463</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Solve(self, cost=None, termination=None, sigint_callback=None,</span> </td>
+                      </tr><tr>
+                        <th>464</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>462</th><td class="r"><span>&nbsp; &nbsp; def Solve(self, cost=None, termination=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>465</th><th>463</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using differential evolution.</span> </td>
+                  </tr><tr>
+                          <th>466</th><th>464</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=783#L478">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L476">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>478</th><th>476</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>479</th><th>477</th><td class="l"><span>&nbsp; &nbsp; termination -- callable object providing termination conditions.</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>480</th><th> </th><td class="l"><del>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>481</th><th>478</th><td class="l"><span>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</span> </td>
+                  </tr><tr>
+                          <th>482</th><th>479</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=783#L489">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L486">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>489</th><th>486</th><td class="l"><span>&nbsp; &nbsp; ScalingFactor -- multiplier for the impact of mutations on the</span> </td>
+                  </tr><tr>
+                          <th>490</th><th>487</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; trial solution [default = 0.8]</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>488</th><td class="r"><ins>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>491</th><th>489</th><td class="l"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                  </tr><tr>
+                          <th>492</th><th>490</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=783#L495">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L493">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>495</th><th>493</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>496</th><th>494</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(DifferentialEvolutionSolver2, self).Solve(cost, termination,\</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>497</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <del>sigint_callback,</del> ExtraArgs, **kwds)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>495</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</ins> ExtraArgs, **kwds)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>498</th><th>496</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return </span> </td>
+                  </tr><tr>
+                          <th>499</th><th>497</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="mystic/mystic/ensemble.html" title="Show the changeset 784 restricted to mystic/mystic/ensemble.py">mystic/mystic/ensemble.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=776#L57">
+                      r776</a>
+                  </th>
+                  <th title="Revision 784">
+                    <a title="Show revision 784 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L57">
+                      r784</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>57</th><th>57</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>58</th><th>58</th><td class="l"><span>&nbsp; &nbsp; #FIXME: should take cost=None, ExtraArgs=None... and utilize Step</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>59</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Solve(self, cost, termination=None, sigint_callback=None,</span> </td>
+                      </tr><tr>
+                        <th>60</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ExtraArgs=(), **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>59</th><td class="r"><span>&nbsp; &nbsp; def Solve(self, cost, termination=None, ExtraArgs=(), **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>60</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using batch grid optimization.</span> </td>
+                  </tr><tr>
+                          <th>62</th><th>61</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=776#L73">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L72">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>73</th><th>72</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>74</th><th>73</th><td class="l"><span>&nbsp; &nbsp; termination -- callable object providing termination conditions.</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>74</th><td class="r"><ins>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>75</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>76</th><td class="r"><ins>Further Inputs:</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>77</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>75</th><th>78</th><td class="l"><span>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>76</th><th> </th><td class="l"><del>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</del> </td>
+                  </tr><tr>
+                          <th>77</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>78</th><th> </th><td class="l"><del>Further Inputs:</del> </td>
+                  </tr><tr class="last">
+                          <th>79</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>80</th><th>79</th><td class="l"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                  </tr><tr>
+                          <th>81</th><th>80</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=776#L84">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L83">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>84</th><th>83</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>85</th><th>84</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>85</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; sigint_callback = kwds.pop('sigint_callback', None)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>86</th><th>86</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = self._process_inputs(kwds)</span> </td>
+                  </tr><tr>
+                          <th>87</th><th>87</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; disp = settings.get('disp', False)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=776#L93">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L93">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>93</th><th>93</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>94</th><th>94</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>95</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; import signal</del> </td>
+                  </tr><tr>
+                          <th>96</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp;#self._EARLYEXIT = False</del> </td>
+                  </tr><tr class="last">
+                          <th>97</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>98</th><th>95</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#FIXME: EvaluationMonitor fails for MPI, throws error for 'pp'</span> </td>
+                  </tr><tr>
+                          <th>99</th><th>96</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from python_map import python_map</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=776#L103">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L100">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>103</th><th>100</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._fcalls, cost = wrap_function(cost, ExtraArgs, self._evalmon)</span> </td>
+                  </tr><tr>
+                          <th>104</th><th>101</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>105</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #generate signal_handler</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>102</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # set up signal handler</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>103</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;#self._EARLYEXIT = False</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>106</th><th>104</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._generateHandler(sigint_callback) </span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>105</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>106</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # activate signal_handler</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>107</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; import signal</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>107</th><th>108</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint: signal.signal(signal.SIGINT,self.signal_handler)</span> </td>
+                  </tr><tr>
+                          <th>108</th><th>109</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=776#L222">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L223">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>222</th><th>223</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>223</th><th>224</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>225</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # restore default handler for signal interrupts</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>224</th><th>226</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                  </tr><tr>
+                          <th>225</th><th>227</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=776#L248">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L250">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>248</th><th>250</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._termination = NormalizedChangeOverGeneration(convergence_tol)</span> </td>
+                  </tr><tr>
+                          <th>249</th><th>251</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>250</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Solve(self, cost, termination=None, sigint_callback=None,</span> </td>
+                      </tr><tr>
+                        <th>251</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ExtraArgs=(), **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>252</th><td class="r"><span>&nbsp; &nbsp; def Solve(self, cost, termination=None, ExtraArgs=(), **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>252</th><th>253</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using buckshot optimization.</span> </td>
+                  </tr><tr>
+                          <th>253</th><th>254</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=776#L264">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L265">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>264</th><th>265</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>265</th><th>266</th><td class="l"><span>&nbsp; &nbsp; termination -- callable object providing termination conditions.</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>267</th><td class="r"><ins>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>268</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>269</th><td class="r"><ins>Further Inputs:</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>270</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>266</th><th>271</th><td class="l"><span>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>267</th><th> </th><td class="l"><del>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</del> </td>
+                  </tr><tr>
+                          <th>268</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>269</th><th> </th><td class="l"><del>Further Inputs:</del> </td>
+                  </tr><tr class="last">
+                          <th>270</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>271</th><th>272</th><td class="l"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                  </tr><tr>
+                          <th>272</th><th>273</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=776#L275">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L276">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>275</th><th>276</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>276</th><th>277</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>278</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; sigint_callback = kwds.pop('sigint_callback', None)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>277</th><th>279</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = self._process_inputs(kwds)</span> </td>
+                  </tr><tr>
+                          <th>278</th><th>280</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; disp = settings.get('disp', False)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=776#L284">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L286">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>284</th><th>286</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>285</th><th>287</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>286</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; import signal</del> </td>
+                  </tr><tr>
+                          <th>287</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp;#self._EARLYEXIT = False</del> </td>
+                  </tr><tr class="last">
+                          <th>288</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>289</th><th>288</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#FIXME: EvaluationMonitor fails for MPI, throws error for 'pp'</span> </td>
+                  </tr><tr>
+                          <th>290</th><th>289</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from python_map import python_map</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=776#L294">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L293">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>294</th><th>293</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._fcalls, cost = wrap_function(cost, ExtraArgs, self._evalmon)</span> </td>
+                  </tr><tr>
+                          <th>295</th><th>294</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>296</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #generate signal_handler</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>295</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # set up signal handler</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>296</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;#self._EARLYEXIT = False</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>297</th><th>297</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._generateHandler(sigint_callback) </span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>298</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>299</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # activate signal_handler</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>300</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; import signal</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>298</th><th>301</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint: signal.signal(signal.SIGINT,self.signal_handler)</span> </td>
+                  </tr><tr>
+                          <th>299</th><th>302</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=776#L406">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L409">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>406</th><th>409</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>407</th><th>410</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>411</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # restore default handler for signal interrupts</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>408</th><th>412</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                  </tr><tr>
+                          <th>409</th><th>413</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="mystic/mystic/scipy_optimize.html" title="Show the changeset 784 restricted to mystic/mystic/scipy_optimize.py">mystic/mystic/scipy_optimize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 782">
+                    <a title="Show revision 782 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=782#L270">
+                      r782</a>
+                  </th>
+                  <th title="Revision 784">
+                    <a title="Show revision 784 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L270">
+                      r784</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>270</th><th>270</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return settings</span> </td>
+                  </tr><tr>
+                          <th>271</th><th>271</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>272</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Solve(self, cost=None, termination=None, sigint_callback=None,</span> </td>
+                      </tr><tr>
+                        <th>273</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>272</th><td class="r"><span>&nbsp; &nbsp; def Solve(self, cost=None, termination=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>274</th><th>273</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using the downhill simplex algorithm.</span> </td>
+                  </tr><tr>
+                          <th>275</th><th>274</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=782#L286">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L285">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>286</th><th>285</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>287</th><th>286</th><td class="l"><span>&nbsp; &nbsp; termination -- callable object providing termination conditions.</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>287</th><td class="r"><ins>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>288</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>289</th><td class="r"><ins>Further Inputs:</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>290</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>288</th><th>291</th><td class="l"><span>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>289</th><th> </th><td class="l"><del>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</del> </td>
+                  </tr><tr>
+                          <th>290</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>291</th><th> </th><td class="l"><del>Further Inputs:</del> </td>
+                  </tr><tr class="last">
+                          <th>292</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>293</th><th>292</th><td class="l"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                  </tr><tr>
+                          <th>294</th><th>293</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=782#L298">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L297">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>298</th><th>297</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>299</th><th>298</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(NelderMeadSimplexSolver, self).Solve(cost, termination,\</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>300</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <del>sigint_callback,</del> ExtraArgs, **kwds)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>299</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> ExtraArgs, **kwds)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>301</th><th>300</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>302</th><th>301</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=782#L593">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L592">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>593</th><th>592</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return settings</span> </td>
+                  </tr><tr>
+                          <th>594</th><th>593</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>595</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Solve(self, cost=None, termination=None, sigint_callback=None,</span> </td>
+                      </tr><tr>
+                        <th>596</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>594</th><td class="r"><span>&nbsp; &nbsp; def Solve(self, cost=None, termination=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>597</th><th>595</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using modified Powell's method.</span> </td>
+                  </tr><tr>
+                          <th>598</th><th>596</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=782#L609">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L607">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>609</th><th>607</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>610</th><th>608</th><td class="l"><span>&nbsp; &nbsp; termination -- callable object providing termination conditions.</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>609</th><td class="r"><ins>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>610</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>611</th><td class="r"><ins>Further Inputs:</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>612</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>611</th><th>613</th><td class="l"><span>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>612</th><th> </th><td class="l"><del>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</del> </td>
+                  </tr><tr>
+                          <th>613</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>614</th><th> </th><td class="l"><del>Further Inputs:</del> </td>
+                  </tr><tr class="last">
+                          <th>615</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>616</th><th>614</th><td class="l"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                  </tr><tr>
+                          <th>617</th><th>615</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=782#L622">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L620">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>622</th><th>620</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>623</th><th>621</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(PowellDirectionalSolver, self).Solve(cost, termination,\</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>624</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <del>sigint_callback,</del> ExtraArgs, **kwds)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>622</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> ExtraArgs, **kwds)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>625</th><th>623</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>626</th><th>624</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="mystic/mystic/termination.html" title="Show the changeset 784 restricted to mystic/mystic/termination.py">mystic/mystic/termination.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=776#L349">
+                      r776</a>
+                  </th>
+                  <th title="Revision 784">
+                    <a title="Show revision 784 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=784#L349">
+                      r784</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>349</th><th>349</th><td class="l"><span>&nbsp; &nbsp; return _EvaluationLimits</span> </td>
+                  </tr><tr>
+                          <th>350</th><th>350</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>351</th><td class="r"><ins>def SolverInterrupt(): #XXX: enable = True ?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>352</th><td class="r"><ins>&nbsp; &nbsp; """handler is enabled and interrupt is given:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>353</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>354</th><td class="r"><ins>_EARLYEXIT == True"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>355</th><td class="r"><ins>&nbsp; &nbsp; doc = "SolverInterrupt with %s" % {}</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>356</th><td class="r"><ins>&nbsp; &nbsp; def _SolverInterrupt(inst, info=False):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>357</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if info: info = lambda x:x</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>358</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; else: info = bool</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>359</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if inst._EARLYEXIT: return info(doc)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>360</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return info(null)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>361</th><td class="r"><ins>&nbsp; &nbsp; _SolverInterrupt.__doc__ = doc</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>362</th><td class="r"><ins>&nbsp; &nbsp; return _SolverInterrupt</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>363</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>351</th><th>364</th><td class="l"><span># end of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/784/mystic?format=diff&amp;new=784" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/784/mystic?format=zip&amp;new=784" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/784/mystic by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:55:49 GMT -->
+</html>

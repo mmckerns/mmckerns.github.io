@@ -1,0 +1,1037 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/860/mystic/mystic/ensemble.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 860 for mystic/mystic/ensemble.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/860/mystic/mystic/ensemble.py?format=diff&amp;new=860" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/860/mystic/mystic/ensemble.py?format=zip&amp;new=860" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../862/mystic/mystic/ensemble.html" title="Changeset 862 for mystic/mystic/ensemble.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../855/mystic/mystic/ensemble.html" title="Changeset 855 for mystic/mystic/ensemble.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../855/mystic/mystic/ensemble.html" title="Changeset 855 for mystic/mystic/ensemble.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../862/mystic/mystic/ensemble.html" title="Changeset 862 for mystic/mystic/ensemble.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../860.html">860</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860">mystic/mystic/ensemble.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             04/01/16 20:27:31
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-04-01T20%3A27%3A31-07%3A00&amp;precision=second" title="2016-04-01T20:27:31-07:00 in Timeline">7 weeks</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+refactor ensemble solvers so Solve in abstract class; new _InitialPoints method<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860">
+              mystic/mystic/ensemble.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">5 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="ensemble.html" title="Show the changeset 860 restricted to mystic/mystic/ensemble.py">mystic/mystic/ensemble.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 855">
+                    <a title="Show revision 855 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=855#L31">
+                      r855</a>
+                  </th>
+                  <th title="Revision 860">
+                    <a title="Show revision 860 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860#L31">
+                      r860</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>31</th><td class="l"><span>__all__ = ['LatticeSolver','BuckshotSolver']</span> </td>
+                  </tr><tr>
+                          <th>32</th><th>32</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>33</th><th> </th><td class="l"><span>from mystic.tools import <del>wrap_function, </del>unpair</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>33</th><td class="r"><span>from mystic.tools import <ins></ins>unpair</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>34</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>35</th><th>35</th><td class="l"><span>from mystic.abstract_ensemble_solver import AbstractEnsembleSolver</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=855#L53">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860#L53">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>53</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._termination = NormalizedChangeOverGeneration(convergence_tol)</span> </td>
+                  </tr><tr>
+                          <th>54</th><th>54</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>55</th><th> </th><td class="l"><span>#&nbsp; &nbsp;def SetGridBins(self, nbins):</span> </td>
+                      </tr><tr>
+                        <th>56</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp;return</span> </td>
+                      </tr><tr>
+                        <th>57</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>58</th><th> </th><td class="l"><span>&nbsp; &nbsp; #FIXME: should take cost=None, ExtraArgs=None... and utilize Step</span> </td>
+                      </tr><tr>
+                        <th>59</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Solve(self, cost, termination=None, ExtraArgs=(), **kwds):</span> </td>
+                      </tr><tr>
+                        <th>60</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using batch grid optimization.</span> </td>
+                      </tr><tr>
+                        <th>61</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>62</th><th> </th><td class="l"><span>Description:</span> </td>
+                      </tr><tr>
+                        <th>63</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>64</th><th> </th><td class="l"><span>&nbsp; &nbsp; Uses parallel mapping of solvers on a regular grid to find the</span> </td>
+                      </tr><tr>
+                        <th>65</th><th> </th><td class="l"><span>&nbsp; &nbsp; minimum of a function of one or more variables.</span> </td>
+                      </tr><tr>
+                        <th>66</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>67</th><th> </th><td class="l"><span>Inputs:</span> </td>
+                      </tr><tr>
+                        <th>68</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>69</th><th> </th><td class="l"><span>&nbsp; &nbsp; cost -- the Python function or method to be minimized.</span> </td>
+                      </tr><tr>
+                        <th>70</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>71</th><th> </th><td class="l"><span>Additional Inputs:</span> </td>
+                      </tr><tr>
+                        <th>72</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>73</th><th> </th><td class="l"><span>&nbsp; &nbsp; termination -- callable object providing termination conditions.</span> </td>
+                      </tr><tr>
+                        <th>74</th><th> </th><td class="l"><span>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</span> </td>
+                      </tr><tr>
+                        <th>75</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>76</th><th> </th><td class="l"><span>Further Inputs:</span> </td>
+                      </tr><tr>
+                        <th>77</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>78</th><th> </th><td class="l"><span>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</span> </td>
+                      </tr><tr>
+                        <th>79</th><th> </th><td class="l"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                      </tr><tr>
+                        <th>80</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                      </tr><tr>
+                        <th>81</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; current parameter vector.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[default = None]</span> </td>
+                      </tr><tr>
+                        <th>82</th><th> </th><td class="l"><span>&nbsp; &nbsp; disp -- non-zero to print convergence messages.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[default = 0]</span> </td>
+                      </tr><tr>
+                        <th>83</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>84</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                      </tr><tr>
+                        <th>85</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; sigint_callback = kwds.pop('sigint_callback', None)</span> </td>
+                      </tr><tr>
+                        <th>86</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = self._process_inputs(kwds)</span> </td>
+                      </tr><tr>
+                        <th>87</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; disp = settings['disp'] if 'disp' in settings else False</span> </td>
+                      </tr><tr>
+                        <th>88</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; echo = settings['callback'] if 'callback' in settings else None</span> </td>
+                      </tr><tr>
+                        <th>89</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp;for key in settings:</span> </td>
+                      </tr><tr>
+                        <th>90</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;exec "%s = settings['%s']" % (key,key)</span> </td>
+                      </tr><tr>
+                        <th>91</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if disp in ['verbose', 'all']: verbose = True</span> </td>
+                      </tr><tr>
+                        <th>92</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: verbose = False</span> </td>
+                      </tr><tr>
+                        <th>93</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                      </tr><tr>
+                        <th>94</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>95</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from python_map import python_map</span> </td>
+                      </tr><tr>
+                        <th>96</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._map != python_map:</span> </td>
+                      </tr><tr>
+                        <th>97</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #FIXME: EvaluationMonitor fails for MPI, throws error for 'pp'</span> </td>
+                      </tr><tr>
+                        <th>98</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; from mystic.monitors import Null</span> </td>
+                      </tr><tr>
+                        <th>99</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; evalmon = Null()</span> </td>
+                      </tr><tr>
+                        <th>100</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: evalmon = self._evalmon</span> </td>
+                      </tr><tr>
+                        <th>101</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; fcalls, cost = wrap_function(cost, ExtraArgs, evalmon)</span> </td>
+                      </tr><tr>
+                        <th>102</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>103</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # set up signal handler</span> </td>
+                      </tr><tr>
+                        <th>104</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#self._EARLYEXIT = False</span> </td>
+                      </tr><tr>
+                        <th>105</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._generateHandler(sigint_callback) </span> </td>
+                      </tr><tr>
+                        <th>106</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>107</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # activate signal_handler</span> </td>
+                      </tr><tr>
+                        <th>108</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#import threading as thread</span> </td>
+                      </tr><tr>
+                        <th>109</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#mainthread = isinstance(thread.current_thread(), thread._MainThread)</span> </td>
+                      </tr><tr>
+                        <th>110</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#if mainthread: #XXX: if not mainthread, signal will raise ValueError</span> </td>
+                      </tr><tr>
+                        <th>111</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import signal</span> </td>
+                      </tr><tr>
+                        <th>112</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint:</span> </td>
+                      </tr><tr>
+                        <th>113</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,self.signal_handler)</span> </td>
+                      </tr><tr>
+                        <th>114</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>115</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # register termination function</span> </td>
+                      </tr><tr>
+                        <th>116</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if termination is not None:</span> </td>
+                      </tr><tr>
+                        <th>117</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.SetTermination(termination)</span> </td>
+                      </tr><tr>
+                        <th>118</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>119</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # get the nested solver instance</span> </td>
+                      </tr><tr>
+                        <th>120</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver = self._AbstractEnsembleSolver__get_solver_instance()</span> </td>
+                      </tr><tr>
+                        <th>121</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                      </tr><tr>
+                        <th>122</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>55</th><td class="r"><span>&nbsp; &nbsp; def _InitialPoints(self):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>56</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Generate a grid of starting points for the ensemble of optimizers"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>123</th><th>57</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; nbins = self._nbins</span> </td>
+                  </tr><tr>
+                          <th>124</th><th>58</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if len(self._strictMax): upper = list(self._strictMax)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=855#L138">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860#L72">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>138</th><th>72</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # build a grid of starting points</span> </td>
+                  </tr><tr>
+                          <th>139</th><th>73</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.math import gridpts</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>140</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; initial_values = gridpts(bins)</span> </td>
+                      </tr><tr>
+                        <th>141</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>142</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # run optimizer for each grid point</span> </td>
+                      </tr><tr>
+                        <th>143</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from copy import deepcopy as _copy</span> </td>
+                      </tr><tr>
+                        <th>144</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; op = [_copy(solver) for i in range(len(initial_values))]</span> </td>
+                      </tr><tr>
+                        <th>145</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#cf = [cost for i in range(len(initial_values))]</span> </td>
+                      </tr><tr>
+                        <th>146</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; vb = [verbose for i in range(len(initial_values))]</span> </td>
+                      </tr><tr>
+                        <th>147</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cb = [echo for i in range(len(initial_values))] #XXX: remove?</span> </td>
+                      </tr><tr>
+                        <th>148</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; at = self.id if self.id else 0&nbsp; # start at self.id</span> </td>
+                      </tr><tr>
+                        <th>149</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; id = range(at,at+len(initial_values))</span> </td>
+                      </tr><tr>
+                        <th>150</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>151</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # generate the local_optimize function</span> </td>
+                      </tr><tr>
+                        <th>152</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; def local_optimize(solver, x0, rank=None, disp=False, callback=None):</span> </td>
+                      </tr><tr>
+                        <th>153</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; from copy import deepcopy as _copy</span> </td>
+                      </tr><tr>
+                        <th>154</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; from mystic.tools import isNull</span> </td>
+                      </tr><tr>
+                        <th>155</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; solver.id = rank</span> </td>
+                      </tr><tr>
+                        <th>156</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; solver.SetInitialPoints(x0)</span> </td>
+                      </tr><tr>
+                        <th>157</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if solver._useStrictRange: #XXX: always, settable, or sync'd ?</span> </td>
+                      </tr><tr>
+                        <th>158</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; solver.SetStrictRanges(min=solver._strictMin, \</span> </td>
+                      </tr><tr>
+                        <th>159</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;max=solver._strictMax) # or lower,upper ?</span> </td>
+                      </tr><tr>
+                        <th>160</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; solver.Solve(cost, disp=disp, callback=callback)</span> </td>
+                      </tr><tr>
+                        <th>161</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sm = solver._stepmon</span> </td>
+                      </tr><tr>
+                        <th>162</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; em = solver._evalmon</span> </td>
+                      </tr><tr>
+                        <th>163</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if isNull(sm): sm = ([],[],[],[])</span> </td>
+                      </tr><tr>
+                        <th>164</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else: sm = (_copy(sm._x),_copy(sm._y),_copy(sm._id),_copy(sm._info))</span> </td>
+                      </tr><tr>
+                        <th>165</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if isNull(em): em = ([],[],[],[])</span> </td>
+                      </tr><tr>
+                        <th>166</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else: em = (_copy(em._x),_copy(em._y),_copy(em._id),_copy(em._info))</span> </td>
+                      </tr><tr>
+                        <th>167</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return solver, sm, em</span> </td>
+                      </tr><tr>
+                        <th>168</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>169</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # map:: solver = local_optimize(solver, x0, id, verbose)</span> </td>
+                      </tr><tr>
+                        <th>170</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; results = self._map(local_optimize, op, initial_values, id, \</span> </td>
+                      </tr><tr>
+                        <th>171</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; vb, cb, **self._mapconfig)</span> </td>
+                      </tr><tr>
+                        <th>172</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>173</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # save initial state</span> </td>
+                      </tr><tr>
+                        <th>174</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._AbstractSolver__save_state()</span> </td>
+                      </tr><tr>
+                        <th>175</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #XXX: HACK TO GET CONTENT OF ALL MONITORS</span> </td>
+                      </tr><tr>
+                        <th>176</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # reconnect monitors; save all solvers</span> </td>
+                      </tr><tr>
+                        <th>177</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.monitors import Monitor</span> </td>
+                      </tr><tr>
+                        <th>178</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; while results: #XXX: option to not save allSolvers? skip this and _copy</span> </td>
+                      </tr><tr>
+                        <th>179</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _solver, _stepmon, _evalmon = results.pop()</span> </td>
+                      </tr><tr>
+                        <th>180</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sm = Monitor()</span> </td>
+                      </tr><tr>
+                        <th>181</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sm._x,sm._y,sm._id,sm._info = _stepmon</span> </td>
+                      </tr><tr>
+                        <th>182</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _solver._stepmon.extend(sm)</span> </td>
+                      </tr><tr>
+                        <th>183</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; del sm</span> </td>
+                      </tr><tr>
+                        <th>184</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; em = Monitor()</span> </td>
+                      </tr><tr>
+                        <th>185</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; em._x,em._y,em._id,em._info = _evalmon</span> </td>
+                      </tr><tr>
+                        <th>186</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _solver._evalmon.extend(em)</span> </td>
+                      </tr><tr>
+                        <th>187</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; del em</span> </td>
+                      </tr><tr>
+                        <th>188</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._allSolvers[len(results)] = _solver</span> </td>
+                      </tr><tr>
+                        <th>189</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; del results, _solver, _stepmon, _evalmon</span> </td>
+                      </tr><tr>
+                        <th>190</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #XXX: END HACK</span> </td>
+                      </tr><tr>
+                        <th>191</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>192</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # get the results with the lowest energy</span> </td>
+                      </tr><tr>
+                        <th>193</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._bestSolver = self._allSolvers[0]</span> </td>
+                      </tr><tr>
+                        <th>194</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; bestpath = self._bestSolver._stepmon</span> </td>
+                      </tr><tr>
+                        <th>195</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; besteval = self._bestSolver._evalmon</span> </td>
+                      </tr><tr>
+                        <th>196</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._total_evals = self._bestSolver.evaluations</span> </td>
+                      </tr><tr>
+                        <th>197</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for solver in self._allSolvers[1:]:</span> </td>
+                      </tr><tr>
+                        <th>198</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._total_evals += solver.evaluations # add func evals</span> </td>
+                      </tr><tr>
+                        <th>199</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if solver.bestEnergy &lt; self._bestSolver.bestEnergy:</span> </td>
+                      </tr><tr>
+                        <th>200</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._bestSolver = solver</span> </td>
+                      </tr><tr>
+                        <th>201</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bestpath = solver._stepmon</span> </td>
+                      </tr><tr>
+                        <th>202</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; besteval = solver._evalmon</span> </td>
+                      </tr><tr>
+                        <th>203</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>204</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # return results to internals</span> </td>
+                      </tr><tr>
+                        <th>205</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.population = self._bestSolver.population #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>206</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy = self._bestSolver.popEnergy #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>207</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = self._bestSolver.bestSolution #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>208</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = self._bestSolver.bestEnergy</span> </td>
+                      </tr><tr>
+                        <th>209</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution = self._bestSolver.trialSolution #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>210</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._fcalls = self._bestSolver._fcalls #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>211</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = self._bestSolver._maxiter</span> </td>
+                      </tr><tr>
+                        <th>212</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = self._bestSolver._maxfun</span> </td>
+                      </tr><tr>
+                        <th>213</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>214</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # write 'bests' to monitors&nbsp; #XXX: non-best monitors may be useful too</span> </td>
+                      </tr><tr>
+                        <th>215</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon = bestpath #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>216</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._evalmon = besteval #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>217</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history = None</span> </td>
+                      </tr><tr>
+                        <th>218</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.solution_history = None</span> </td>
+                      </tr><tr>
+                        <th>219</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#from mystic.tools import isNull</span> </td>
+                      </tr><tr>
+                        <th>220</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#if isNull(bestpath):</span> </td>
+                      </tr><tr>
+                        <th>221</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; self._stepmon = bestpath</span> </td>
+                      </tr><tr>
+                        <th>222</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#else:</span> </td>
+                      </tr><tr>
+                        <th>223</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; for i in range(len(bestpath.y)):</span> </td>
+                      </tr><tr>
+                        <th>224</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(bestpath.x[i], bestpath.y[i], self.id)</span> </td>
+                      </tr><tr>
+                        <th>225</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; &nbsp; &nbsp; #XXX: could apply callback here, or in exec'd code</span> </td>
+                      </tr><tr>
+                        <th>226</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#if isNull(besteval):</span> </td>
+                      </tr><tr>
+                        <th>227</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; self._evalmon = besteval</span> </td>
+                      </tr><tr>
+                        <th>228</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#else:</span> </td>
+                      </tr><tr>
+                        <th>229</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; for i in range(len(besteval.y)):</span> </td>
+                      </tr><tr>
+                        <th>230</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; &nbsp; &nbsp; self._evalmon(besteval.x[i], besteval.y[i])</span> </td>
+                      </tr><tr>
+                        <th>231</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                      </tr><tr>
+                        <th>232</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>233</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # restore default handler for signal interrupts</span> </td>
+                      </tr><tr>
+                        <th>234</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint:</span> </td>
+                      </tr><tr>
+                        <th>235</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                      </tr><tr>
+                        <th>236</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>237</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # log any termination messages</span> </td>
+                      </tr><tr>
+                        <th>238</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; msg = self.Terminated(disp=disp, info=True)</span> </td>
+                      </tr><tr>
+                        <th>239</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if msg: self._stepmon.info('STOP("%s")' % msg)</span> </td>
+                      </tr><tr>
+                        <th>240</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # save final state</span> </td>
+                      </tr><tr>
+                        <th>241</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._AbstractSolver__save_state(force=True)</span> </td>
+                      </tr><tr>
+                        <th>242</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return </span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return gridpts(bins)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>75</th><td class="r"><span></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>243</th><th>76</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>244</th><th>77</th><td class="l"><span>class BuckshotSolver(AbstractEnsembleSolver):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=855#L259">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860#L92">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>259</th><th>92</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._termination = NormalizedChangeOverGeneration(convergence_tol)</span> </td>
+                  </tr><tr>
+                          <th>260</th><th>93</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>261</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Solve(self, cost, termination=None, ExtraArgs=(), **kwds):</span> </td>
+                      </tr><tr>
+                        <th>262</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using buckshot optimization.</span> </td>
+                      </tr><tr>
+                        <th>263</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>264</th><th> </th><td class="l"><span>Description:</span> </td>
+                      </tr><tr>
+                        <th>265</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>266</th><th> </th><td class="l"><span>&nbsp; &nbsp; Uses parallel mapping of solvers on randomly selected points</span> </td>
+                      </tr><tr>
+                        <th>267</th><th> </th><td class="l"><span>&nbsp; &nbsp; to find the minimum of a function of one or more variables.</span> </td>
+                      </tr><tr>
+                        <th>268</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>269</th><th> </th><td class="l"><span>Inputs:</span> </td>
+                      </tr><tr>
+                        <th>270</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>271</th><th> </th><td class="l"><span>&nbsp; &nbsp; cost -- the Python function or method to be minimized.</span> </td>
+                      </tr><tr>
+                        <th>272</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>273</th><th> </th><td class="l"><span>Additional Inputs:</span> </td>
+                      </tr><tr>
+                        <th>274</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>275</th><th> </th><td class="l"><span>&nbsp; &nbsp; termination -- callable object providing termination conditions.</span> </td>
+                      </tr><tr>
+                        <th>276</th><th> </th><td class="l"><span>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</span> </td>
+                      </tr><tr>
+                        <th>277</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>278</th><th> </th><td class="l"><span>Further Inputs:</span> </td>
+                      </tr><tr>
+                        <th>279</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>280</th><th> </th><td class="l"><span>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</span> </td>
+                      </tr><tr>
+                        <th>281</th><th> </th><td class="l"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                      </tr><tr>
+                        <th>282</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                      </tr><tr>
+                        <th>283</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; current parameter vector.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[default = None]</span> </td>
+                      </tr><tr>
+                        <th>284</th><th> </th><td class="l"><span>&nbsp; &nbsp; disp -- non-zero to print convergence messages.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[default = 0]</span> </td>
+                      </tr><tr>
+                        <th>285</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>286</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                      </tr><tr>
+                        <th>287</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; sigint_callback = kwds.pop('sigint_callback', None)</span> </td>
+                      </tr><tr>
+                        <th>288</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = self._process_inputs(kwds)</span> </td>
+                      </tr><tr>
+                        <th>289</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; disp = settings['disp'] if 'disp' in settings else False</span> </td>
+                      </tr><tr>
+                        <th>290</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; echo = settings['callback'] if 'callback' in settings else None</span> </td>
+                      </tr><tr>
+                        <th>291</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp;for key in settings:</span> </td>
+                      </tr><tr>
+                        <th>292</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;exec "%s = settings['%s']" % (key,key)</span> </td>
+                      </tr><tr>
+                        <th>293</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if disp in ['verbose', 'all']: verbose = True</span> </td>
+                      </tr><tr>
+                        <th>294</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: verbose = False</span> </td>
+                      </tr><tr>
+                        <th>295</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                      </tr><tr>
+                        <th>296</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>297</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from python_map import python_map</span> </td>
+                      </tr><tr>
+                        <th>298</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._map != python_map:</span> </td>
+                      </tr><tr>
+                        <th>299</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #FIXME: EvaluationMonitor fails for MPI, throws error for 'pp'</span> </td>
+                      </tr><tr>
+                        <th>300</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; from mystic.monitors import Null</span> </td>
+                      </tr><tr>
+                        <th>301</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; evalmon = Null()</span> </td>
+                      </tr><tr>
+                        <th>302</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: evalmon = self._evalmon</span> </td>
+                      </tr><tr>
+                        <th>303</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; fcalls, cost = wrap_function(cost, ExtraArgs, evalmon)</span> </td>
+                      </tr><tr>
+                        <th>304</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>305</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # set up signal handler</span> </td>
+                      </tr><tr>
+                        <th>306</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#self._EARLYEXIT = False</span> </td>
+                      </tr><tr>
+                        <th>307</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._generateHandler(sigint_callback) </span> </td>
+                      </tr><tr>
+                        <th>308</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>309</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # activate signal_handler</span> </td>
+                      </tr><tr>
+                        <th>310</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#import threading as thread</span> </td>
+                      </tr><tr>
+                        <th>311</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#mainthread = isinstance(thread.current_thread(), thread._MainThread)</span> </td>
+                      </tr><tr>
+                        <th>312</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#if mainthread: #XXX: if not mainthread, signal will raise ValueError</span> </td>
+                      </tr><tr>
+                        <th>313</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import signal</span> </td>
+                      </tr><tr>
+                        <th>314</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint:</span> </td>
+                      </tr><tr>
+                        <th>315</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,self.signal_handler)</span> </td>
+                      </tr><tr>
+                        <th>316</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>317</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # register termination function</span> </td>
+                      </tr><tr>
+                        <th>318</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if termination is not None:</span> </td>
+                      </tr><tr>
+                        <th>319</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.SetTermination(termination)</span> </td>
+                      </tr><tr>
+                        <th>320</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>321</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # get the nested solver instance</span> </td>
+                      </tr><tr>
+                        <th>322</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver = self._AbstractEnsembleSolver__get_solver_instance()</span> </td>
+                      </tr><tr>
+                        <th>323</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                      </tr><tr>
+                        <th>324</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>94</th><td class="r"><span>&nbsp; &nbsp; def _InitialPoints(self):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>95</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Generate a grid of starting points for the ensemble of optimizers"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>325</th><th>96</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; npts = self._npts</span> </td>
+                  </tr><tr>
+                          <th>326</th><th>97</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if len(self._strictMax): upper = list(self._strictMax)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=855#L331">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860#L102">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>331</th><th>102</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lower = list(self._defaultMin)</span> </td>
+                  </tr><tr>
+                          <th>332</th><th>103</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>333</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # <del>generate a set</del> of starting points</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>104</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # <ins>build a grid</ins> of starting points</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>334</th><th>105</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.math import samplepts</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>335</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; initial_values = samplepts(lower,upper,npts)</span> </td>
+                      </tr><tr>
+                        <th>336</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>337</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # run optimizer for each grid point</span> </td>
+                      </tr><tr>
+                        <th>338</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from copy import deepcopy as _copy</span> </td>
+                      </tr><tr>
+                        <th>339</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; op = [_copy(solver) for i in range(len(initial_values))]</span> </td>
+                      </tr><tr>
+                        <th>340</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#cf = [cost for i in range(len(initial_values))]</span> </td>
+                      </tr><tr>
+                        <th>341</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; vb = [verbose for i in range(len(initial_values))]</span> </td>
+                      </tr><tr>
+                        <th>342</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cb = [echo for i in range(len(initial_values))] #XXX: remove?</span> </td>
+                      </tr><tr>
+                        <th>343</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; at = self.id if self.id else 0&nbsp; # start at self.id</span> </td>
+                      </tr><tr>
+                        <th>344</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; id = range(at,at+len(initial_values))</span> </td>
+                      </tr><tr>
+                        <th>345</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>346</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # generate the local_optimize function</span> </td>
+                      </tr><tr>
+                        <th>347</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; def local_optimize(solver, x0, rank=None, disp=False, callback=None):</span> </td>
+                      </tr><tr>
+                        <th>348</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; from copy import deepcopy as _copy</span> </td>
+                      </tr><tr>
+                        <th>349</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; from mystic.tools import isNull</span> </td>
+                      </tr><tr>
+                        <th>350</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; solver.id = rank</span> </td>
+                      </tr><tr>
+                        <th>351</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; solver.SetInitialPoints(x0)</span> </td>
+                      </tr><tr>
+                        <th>352</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if solver._useStrictRange: #XXX: always, settable, or sync'd ?</span> </td>
+                      </tr><tr>
+                        <th>353</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; solver.SetStrictRanges(min=solver._strictMin, \</span> </td>
+                      </tr><tr>
+                        <th>354</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;max=solver._strictMax) # or lower,upper ?</span> </td>
+                      </tr><tr>
+                        <th>355</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; solver.Solve(cost, disp=disp, callback=callback)</span> </td>
+                      </tr><tr>
+                        <th>356</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sm = solver._stepmon</span> </td>
+                      </tr><tr>
+                        <th>357</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; em = solver._evalmon</span> </td>
+                      </tr><tr>
+                        <th>358</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if isNull(sm): sm = ([],[],[],[])</span> </td>
+                      </tr><tr>
+                        <th>359</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else: sm = (_copy(sm._x),_copy(sm._y),_copy(sm._id),_copy(sm._info))</span> </td>
+                      </tr><tr>
+                        <th>360</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if isNull(em): em = ([],[],[],[])</span> </td>
+                      </tr><tr>
+                        <th>361</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else: em = (_copy(em._x),_copy(em._y),_copy(em._id),_copy(em._info))</span> </td>
+                      </tr><tr>
+                        <th>362</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return solver, sm, em</span> </td>
+                      </tr><tr>
+                        <th>363</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>364</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # map:: solver = local_optimize(solver, x0, id, verbose)</span> </td>
+                      </tr><tr>
+                        <th>365</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; results = self._map(local_optimize, op, initial_values, id, \</span> </td>
+                      </tr><tr>
+                        <th>366</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; vb, cb, **self._mapconfig)</span> </td>
+                      </tr><tr>
+                        <th>367</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>368</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # save initial state</span> </td>
+                      </tr><tr>
+                        <th>369</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._AbstractSolver__save_state()</span> </td>
+                      </tr><tr>
+                        <th>370</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #XXX: HACK TO GET CONTENT OF ALL MONITORS</span> </td>
+                      </tr><tr>
+                        <th>371</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # reconnect monitors; save all solvers</span> </td>
+                      </tr><tr>
+                        <th>372</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.monitors import Monitor</span> </td>
+                      </tr><tr>
+                        <th>373</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; while results: #XXX: option to not store allSolvers? skip this &amp; _copy</span> </td>
+                      </tr><tr>
+                        <th>374</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _solver, _stepmon, _evalmon = results.pop()</span> </td>
+                      </tr><tr>
+                        <th>375</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sm = Monitor()</span> </td>
+                      </tr><tr>
+                        <th>376</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sm._x,sm._y,sm._id,sm._info = _stepmon</span> </td>
+                      </tr><tr>
+                        <th>377</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _solver._stepmon.extend(sm)</span> </td>
+                      </tr><tr>
+                        <th>378</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; del sm</span> </td>
+                      </tr><tr>
+                        <th>379</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; em = Monitor()</span> </td>
+                      </tr><tr>
+                        <th>380</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; em._x,em._y,em._id,em._info = _evalmon</span> </td>
+                      </tr><tr>
+                        <th>381</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _solver._evalmon.extend(em)</span> </td>
+                      </tr><tr>
+                        <th>382</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; del em</span> </td>
+                      </tr><tr>
+                        <th>383</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._allSolvers[len(results)] = _solver</span> </td>
+                      </tr><tr>
+                        <th>384</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; del results, _solver, _stepmon, _evalmon</span> </td>
+                      </tr><tr>
+                        <th>385</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #XXX: END HACK</span> </td>
+                      </tr><tr>
+                        <th>386</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>387</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # get the results with the lowest energy</span> </td>
+                      </tr><tr>
+                        <th>388</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._bestSolver = self._allSolvers[0]</span> </td>
+                      </tr><tr>
+                        <th>389</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; bestpath = self._bestSolver._stepmon</span> </td>
+                      </tr><tr>
+                        <th>390</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; besteval = self._bestSolver._evalmon</span> </td>
+                      </tr><tr>
+                        <th>391</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._total_evals = self._bestSolver.evaluations</span> </td>
+                      </tr><tr>
+                        <th>392</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for solver in self._allSolvers[1:]:</span> </td>
+                      </tr><tr>
+                        <th>393</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._total_evals += solver.evaluations # add func evals</span> </td>
+                      </tr><tr>
+                        <th>394</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if solver.bestEnergy &lt; self._bestSolver.bestEnergy:</span> </td>
+                      </tr><tr>
+                        <th>395</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._bestSolver = solver</span> </td>
+                      </tr><tr>
+                        <th>396</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bestpath = solver._stepmon</span> </td>
+                      </tr><tr>
+                        <th>397</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; besteval = solver._evalmon</span> </td>
+                      </tr><tr>
+                        <th>398</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>399</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # return results to internals</span> </td>
+                      </tr><tr>
+                        <th>400</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.population = self._bestSolver.population #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>401</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy = self._bestSolver.popEnergy #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>402</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = self._bestSolver.bestSolution #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>403</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = self._bestSolver.bestEnergy</span> </td>
+                      </tr><tr>
+                        <th>404</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution = self._bestSolver.trialSolution #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>405</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._fcalls = self._bestSolver._fcalls #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>406</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = self._bestSolver._maxiter</span> </td>
+                      </tr><tr>
+                        <th>407</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = self._bestSolver._maxfun</span> </td>
+                      </tr><tr>
+                        <th>408</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>409</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # write 'bests' to monitors&nbsp; #XXX: non-best monitors may be useful too</span> </td>
+                      </tr><tr>
+                        <th>410</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon = bestpath #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>411</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._evalmon = besteval #XXX: pointer? copy?</span> </td>
+                      </tr><tr>
+                        <th>412</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history = None</span> </td>
+                      </tr><tr>
+                        <th>413</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.solution_history = None</span> </td>
+                      </tr><tr>
+                        <th>414</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#from mystic.tools import isNull</span> </td>
+                      </tr><tr>
+                        <th>415</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#if isNull(bestpath):</span> </td>
+                      </tr><tr>
+                        <th>416</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; self._stepmon = bestpath</span> </td>
+                      </tr><tr>
+                        <th>417</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#else:</span> </td>
+                      </tr><tr>
+                        <th>418</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; for i in range(len(bestpath.y)):</span> </td>
+                      </tr><tr>
+                        <th>419</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(bestpath.x[i], bestpath.y[i], self.id)</span> </td>
+                      </tr><tr>
+                        <th>420</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; &nbsp; &nbsp; #XXX: could apply callback here, or in exec'd code</span> </td>
+                      </tr><tr>
+                        <th>421</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#if isNull(besteval):</span> </td>
+                      </tr><tr>
+                        <th>422</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; self._evalmon = besteval</span> </td>
+                      </tr><tr>
+                        <th>423</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#else:</span> </td>
+                      </tr><tr>
+                        <th>424</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; for i in range(len(besteval.y)):</span> </td>
+                      </tr><tr>
+                        <th>425</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; &nbsp; &nbsp; self._evalmon(besteval.x[i], besteval.y[i])</span> </td>
+                      </tr><tr>
+                        <th>426</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                      </tr><tr>
+                        <th>427</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>428</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # restore default handler for signal interrupts</span> </td>
+                      </tr><tr>
+                        <th>429</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint:</span> </td>
+                      </tr><tr>
+                        <th>430</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                      </tr><tr>
+                        <th>431</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>432</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # log any termination messages</span> </td>
+                      </tr><tr>
+                        <th>433</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; msg = self.Terminated(disp=disp, info=True)</span> </td>
+                      </tr><tr>
+                        <th>434</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if msg: self._stepmon.info('STOP("%s")' % msg)</span> </td>
+                      </tr><tr>
+                        <th>435</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # save final state</span> </td>
+                      </tr><tr>
+                        <th>436</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._AbstractSolver__save_state(force=True)</span> </td>
+                      </tr><tr>
+                        <th>437</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>106</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return samplepts(lower,upper,npts)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>438</th><th>107</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>439</th><th>108</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/860/mystic/mystic/ensemble.py?format=diff&amp;new=860" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/860/mystic/mystic/ensemble.py?format=zip&amp;new=860" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/860/mystic/mystic/ensemble.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:07 GMT -->
+</html>

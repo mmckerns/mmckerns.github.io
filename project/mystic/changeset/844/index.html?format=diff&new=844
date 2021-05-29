@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/844/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:22:08 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 844 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="prev" href="../843.html" title="Changeset 843" />
+        <link rel="last" href="../862.html" title="Changeset 862" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/844/?format=diff&amp;new=844" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/844/?format=zip&amp;new=844" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../845.html" title="Changeset 845" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="../1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+        <link rel="icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://trac.mystic.cacr.caltech.edu/"><img src="http://www.cacr.caltech.edu/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://trac.mystic.cacr.caltech.edu/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../843.html" title="Changeset 843">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="../845.html" title="Changeset 845">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 844</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             11/23/15 07:32:25
+             (<a class="timeline" href="http://trac.mystic.cacr.caltech.edu/project/mystic/timeline?from=2015-11-23T07%3A32%3A25-08%3A00&amp;precision=second" title="2015-11-23T07:32:25-08:00 in Timeline">6 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+check if handler enabled before using signal (so solver works in <a class="missing wiki">ThreadPool?</a>)<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic?rev=844">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>3 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples3/test_searcher.py?rev=844">
+              examples3/test_searcher.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=844">
+              mystic/abstract_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=844">
+              mystic/ensemble.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">4 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="mystic/examples3/test_searcher.html" title="Show the changeset 844 restricted to mystic/examples3/test_searcher.py">mystic/examples3/test_searcher.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 842">
+                    <a title="Show revision 842 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples3/test_searcher.py?rev=842#L10">
+                      r842</a>
+                  </th>
+                  <th title="Revision 844">
+                    <a title="Show revision 844 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples3/test_searcher.py?rev=844#L10">
+                      r844</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>10</th><td class="l"><span>#&nbsp; &nbsp;start = time.time()</span> </td>
+                  </tr><tr>
+                          <th>11</th><th>11</th><td class="l"><span>&nbsp; &nbsp; # if available, use a multiprocessing worker pool</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>12</th><th> </th><td class="l"><span>&nbsp; &nbsp; try: #NOTE: <del>ThreadPool and ParallelPool fail</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>12</th><td class="r"><span>&nbsp; &nbsp; try: #NOTE: <ins>ParallelPool fails</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>13</th><th>13</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from pathos.helpers import freeze_support</span> </td>
+                  </tr><tr>
+                          <th>14</th><th>14</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; freeze_support()</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="mystic/mystic/abstract_solver.html" title="Show the changeset 844 restricted to mystic/mystic/abstract_solver.py">mystic/mystic/abstract_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 843">
+                    <a title="Show revision 843 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=843#L824">
+                      r843</a>
+                  </th>
+                  <th title="Revision 844">
+                    <a title="Show revision 844 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=844#L824">
+                      r844</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>824</th><th>824</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>825</th><th>825</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # activate signal handler</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>826</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#import threading as thread</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>827</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#mainthread = isinstance(thread.current_thread(), thread._MainThread)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>828</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#if mainthread: #XXX: if not mainthread, signal will raise ValueError</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>826</th><th>829</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import signal</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>827</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint: signal.signal(signal.SIGINT,self.signal_handler)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>830</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>831</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,self.signal_handler)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>828</th><th>832</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>829</th><th>833</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # register: cost, termination, ExtraArgs</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=843#L837">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=844#L841">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>837</th><th>841</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>838</th><th>842</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # restore default handler for signal interrupts</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>839</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>843</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>844</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>840</th><th>845</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>841</th><th>846</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="mystic/mystic/ensemble.html" title="Show the changeset 844 restricted to mystic/mystic/ensemble.py">mystic/mystic/ensemble.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 793">
+                    <a title="Show revision 793 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=793#L106">
+                      r793</a>
+                  </th>
+                  <th title="Revision 844">
+                    <a title="Show revision 844 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=844#L106">
+                      r844</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>106</th><th>106</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>107</th><th>107</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # activate signal_handler</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>108</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#import threading as thread</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>109</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#mainthread = isinstance(thread.current_thread(), thread._MainThread)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>110</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#if mainthread: #XXX: if not mainthread, signal will raise ValueError</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>108</th><th>111</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import signal</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>109</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint: signal.signal(signal.SIGINT,self.signal_handler)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>112</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>113</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,self.signal_handler)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>110</th><th>114</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>111</th><th>115</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # register termination function</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=793#L228">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=844#L232">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>228</th><th>232</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>229</th><th>233</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # restore default handler for signal interrupts</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>230</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>234</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>235</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>231</th><th>236</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>232</th><th>237</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # log any termination messages</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=793#L303">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=844#L308">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>303</th><th>308</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>304</th><th>309</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # activate signal_handler</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>310</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#import threading as thread</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>311</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#mainthread = isinstance(thread.current_thread(), thread._MainThread)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>312</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#if mainthread: #XXX: if not mainthread, signal will raise ValueError</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>305</th><th>313</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import signal</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>306</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint: signal.signal(signal.SIGINT,self.signal_handler)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>314</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>315</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,self.signal_handler)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>307</th><th>316</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>308</th><th>317</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # register termination function</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=793#L418">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=844#L427">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>418</th><th>427</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>419</th><th>428</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # restore default handler for signal interrupts</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>420</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>429</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>430</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>421</th><th>431</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>422</th><th>432</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # log any termination messages</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/844/?format=diff&amp;new=844" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/844/?format=zip&amp;new=844" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://www.cacr.caltech.edu/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://www.cacr.caltech.edu/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://www.cacr.caltech.edu/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://www.cacr.caltech.edu/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://www.cacr.caltech.edu/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://www.cacr.caltech.edu/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://www.cacr.caltech.edu/projects/mystic">http://www.cacr.caltech.edu/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/844/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:22:10 GMT -->
+</html>

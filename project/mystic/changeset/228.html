@@ -1,0 +1,988 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/228 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:36:41 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 228 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="227.html" title="Changeset 227" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/228?format=diff&amp;new=228" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/228?format=zip&amp;new=228" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="229.html" title="Changeset 229" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="227.html" title="Changeset 227">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="229.html" title="Changeset 229">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 228</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             05/13/10 20:02:01
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-05-13T20%3A02%3A01-07%3A00&amp;precision=second" title="2010-05-13T20:02:01-07:00 in Timeline">6 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+essentially killed off mpimystic branch, moved to "branches" directory<br />
+moved mpimystic/examples to mystic/examples <br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="rem"></dt><dd>5 deleted</dd>
+              <dt class="mod"></dt><dd>2 edited</dd>
+              <dt class="cp"></dt><dd>6 copied</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/mpimystic?rev=228">
+              branches/mpimystic
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/mpimystic?rev=224" title="Show original file (revision 224)">
+                mpimystic</a>)</em></small>
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/mpimystic/examples/Make.mm?rev=228">
+              branches/mpimystic/examples/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">1 diff</a>)
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples/chebyshev8.py?rev=196" title="Show what was removed (content at revision 196)">
+              branches/mpimystic/examples/chebyshev8.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples/chebyshev8b.py?rev=196" title="Show what was removed (content at revision 196)">
+              branches/mpimystic/examples/chebyshev8b.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve.py?rev=224" title="Show what was removed (content at revision 224)">
+              branches/mpimystic/examples/ezmap_desolve.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve_rosen.py?rev=224" title="Show what was removed (content at revision 224)">
+              branches/mpimystic/examples/ezmap_desolve_rosen.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples/rosen.py?rev=196" title="Show what was removed (content at revision 196)">
+              branches/mpimystic/examples/rosen.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/Make.mm?rev=228">
+              mystic/examples/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">1 diff</a>)
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/ezmap_desolve.py?rev=228">
+              mystic/examples/ezmap_desolve.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve.py?rev=224" title="Show original file (revision 224)">
+                mpimystic/examples/ezmap_desolve.py</a>)</em></small>
+              (<a title="Show differences" href="#file8">5 diffs</a>)
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/ezmap_desolve_rosen.py?rev=228">
+              mystic/examples/ezmap_desolve_rosen.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve_rosen.py?rev=224" title="Show original file (revision 224)">
+                mpimystic/examples/ezmap_desolve_rosen.py</a>)</em></small>
+              (<a title="Show differences" href="#file9">4 diffs</a>)
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/raw_chebyshev8.py?rev=228">
+              mystic/examples/raw_chebyshev8.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples/chebyshev8.py?rev=196" title="Show original file (revision 196)">
+                mpimystic/examples/chebyshev8.py</a>)</em></small>
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/raw_chebyshev8b.py?rev=228">
+              mystic/examples/raw_chebyshev8b.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples/chebyshev8b.py?rev=196" title="Show original file (revision 196)">
+                mpimystic/examples/chebyshev8b.py</a>)</em></small>
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/raw_rosen.py?rev=228">
+              mystic/examples/raw_rosen.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples/rosen.py?rev=196" title="Show original file (revision 196)">
+                mpimystic/examples/rosen.py</a>)</em></small>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file1">
+          <a href="228/branches/mpimystic/examples/Make.html" title="Show the changeset 228 restricted to branches/mpimystic/examples/Make.mm">branches/mpimystic/examples/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/Make.mm?rev=224#L24">
+                      r224</a>
+                  </th>
+                  <th title="Revision 228">
+                    <a title="Show revision 228 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/mpimystic/examples/Make.mm?rev=228#L24">
+                      r228</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>24</th><td class="l"><span>#EXPORT_PYTHON_MODULES = \</span> </td>
+                  </tr><tr>
+                          <th>25</th><th>25</th><td class="l"><span>EXPORT_BINS = \</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>26</th><th> </th><td class="l"><del>&nbsp; &nbsp; ezmap_desolve.py \</del> </td>
+                  </tr><tr>
+                          <th>27</th><th> </th><td class="l"><del>&nbsp; &nbsp; ezmap_desolve_rosen.py \</del> </td>
+                  </tr><tr>
+                          <th>28</th><th> </th><td class="l"><del>&nbsp; &nbsp; chebyshev8.py \</del> </td>
+                  </tr><tr>
+                          <th>29</th><th> </th><td class="l"><del>&nbsp; &nbsp; chebyshev8b.py \</del> </td>
+                  </tr><tr class="last">
+                          <th>30</th><th> </th><td class="l"><del>&nbsp; &nbsp; rosen.py \</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>26</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>32</th><th>27</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="228/mystic/examples/Make.html" title="Show the changeset 228 restricted to mystic/examples/Make.mm">mystic/examples/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 133">
+                    <a title="Show revision 133 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/Make.mm?rev=133#L40">
+                      r133</a>
+                  </th>
+                  <th title="Revision 228">
+                    <a title="Show revision 228 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/Make.mm?rev=228#L40">
+                      r228</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>40</th><th>40</th><td class="l"><span>&nbsp; &nbsp; example11.py \</span> </td>
+                  </tr><tr>
+                          <th>41</th><th>41</th><td class="l"><span>&nbsp; &nbsp; example12.py \</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>42</th><td class="r"><ins>&nbsp; &nbsp; ezmap_desolve.py \</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>43</th><td class="r"><ins>&nbsp; &nbsp; ezmap_desolve_rosen.py \</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>44</th><td class="l"><span>&nbsp; &nbsp; forward_model.py \</span> </td>
+                  </tr><tr>
+                          <th>43</th><th>45</th><td class="l"><span>#&nbsp; &nbsp;gplot_test_ffit.py \</span> </td>
+                  </tr><tr>
+                          <th>44</th><th>46</th><td class="l"><span>##&nbsp; metropolis.py \</span> </td>
+                  </tr><tr>
+                          <th>45</th><th>47</th><td class="l"><span>&nbsp; &nbsp; mpl_corana.py \</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>48</th><td class="r"><ins>&nbsp; &nbsp; raw_chebyshev8.py \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>49</th><td class="r"><ins>&nbsp; &nbsp; raw_chebyshev8b.py \</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>50</th><td class="r"><ins>&nbsp; &nbsp; raw_rosen.py \</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>51</th><td class="l"><span>&nbsp; &nbsp; rosetta_parabola.py \</span> </td>
+                  </tr><tr>
+                          <th>47</th><th>52</th><td class="l"><span>&nbsp; &nbsp; rosetta_mogi.py \</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file8">
+          <a href="228/mystic/examples/ezmap_desolve.html" title="Show the changeset 228 restricted to mystic/examples/ezmap_desolve.py">mystic/examples/ezmap_desolve.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve.py?rev=224#L1">
+                      r224</a>
+                  </th>
+                  <th title="Revision 228">
+                    <a title="Show revision 228 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/ezmap_desolve.py?rev=228#L1">
+                      r228</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>2</th><td class="r"><ins>#Adapted from parallel_desolve.py by mmckerns@caltech.edu</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>3</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>"""</span> </td>
+                      </tr><tr>
+                        <th>4</th><th> </th><td class="l"><span>Adapted from parallel_desolve.py by mmckerns@caltech.edu</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>4</th><td class="r"><span>__doc__ = """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>5</th><td class="r"><span># Tests MPI version of Storn and Price's Polynomial 'Fitting' Problem.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>6</th><td class="r"><span># </span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span># Exact answer: Chebyshev Polynomial of the first kind. T8(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>8</th><td class="r"><span>&nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>9</th><td class="r"><span># Reference:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>10</th><td class="r"><span>#</span> </td>
+                      </tr><tr>
+                        <th> </th><th>11</th><td class="r"><span># [1] Storn, R. and Price, K. Differential Evolution - A Simple and Efficient</span> </td>
+                      </tr><tr>
+                        <th> </th><th>12</th><td class="r"><span># Heuristic for Global Optimization over Continuous Spaces. Journal of Global</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>13</th><td class="r"><span># Optimization 11: 341-359, 1997.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>14</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>6</th><th> </th><td class="l"><span>Tests MPI version of Storn and Price's Polynomial 'Fitting' Problem.</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span>Exact answer: Chebyshev Polynomial of the first kind. T8(x)</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span>Reference:</span> </td>
+                      </tr><tr>
+                        <th>11</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>12</th><th> </th><td class="l"><span>[1] Storn, R. and Price, K. Differential Evolution - A Simple and Efficient</span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>Heuristic for Global Optimization over Continuous Spaces. Journal of Global</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>Optimization 11: 341-359, 1997.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>15</th><td class="r"><span># To run in parallel:&nbsp; (must install 'pyina')</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>16</th><td class="r"><span>mpipython.exe ezmap_desolve.py</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>17</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>16</th><th>18</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>17</th><th> </th><td class="l"><span>import pyina.launchers as launchers</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>19</th><td class="r"><span>try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span>&nbsp; import pyina.launchers as launchers</span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>&nbsp; from pyina.launchers import mpirun_launcher</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span>&nbsp; from pyina.mappers import equalportion_mapper</span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span>&nbsp; from pyina.ez_map import ez_map2 as ez_map</span> </td>
+                      </tr><tr>
+                        <th> </th><th>24</th><td class="r"><span>except:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>25</th><td class="r"><span>&nbsp; print __doc__</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>18</th><th>26</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>19</th><th> </th><td class="l"><del>doc = __doc__ + """</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>27</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>21</th><th> </th><td class="l"><span>%(launchers)s</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>""" % { 'file' : __file__, 'launchers' : launchers.getstr({'file':__file__, 'timelimit':'00:05'}) }</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>from mystic.differential_evolution import DifferentialEvolutionSolver2 as DESolve</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>from mpimystic.differential_evolution_ezmap import ezDESolver as pDESolve</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>from pyina.launchers import mpirun_launcher</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>from pyina.mappers import equalportion_mapper</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>28</th><td class="r"><span>from mystic.differential_evolution import DifferentialEvolutionSolver2</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>29</th><td class="l"><span>from mystic.termination import ChangeOverGeneration, VTR</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>30</th><td class="l"><span>from mystic.strategy import Best1Exp</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve.py?rev=224#L31">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/ezmap_desolve.py?rev=228#L32">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>32</th><td class="l"><span>from mystic.models.poly import poly1d</span> </td>
+                  </tr><tr>
+                          <th>32</th><th>33</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>33</th><th> </th><td class="l"><span>from <del>chebyshev8 import chebyshev8cost as ChebyshevCost&nbsp; &nbsp; </del>&nbsp; &nbsp; &nbsp; # no globals</span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span>#from <del>chebyshev8b import chebyshev8cost as ChebyshevCost&nbsp; &nbsp; </del>&nbsp; &nbsp; # use globals</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>34</th><td class="r"><span>from <ins>raw_chebyshev8 import chebyshev8cost as ChebyshevCost</ins>&nbsp; &nbsp; &nbsp; # no globals</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>35</th><td class="r"><span>#from <ins>raw_chebyshev8b import chebyshev8cost as ChebyshevCost</ins>&nbsp; &nbsp; # use globals</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>36</th><td class="l"><span>#from mystic.models.poly import chebyshev8cost as ChebyshevCost # no helper</span> </td>
+                  </tr><tr>
+                          <th>36</th><th>37</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve.py?rev=224#L44">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/ezmap_desolve.py?rev=228#L45">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>44</th><th>45</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>45</th><th>46</th><td class="l"><span>if __name__=='__main__':</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>46</th><th> </th><td class="l"><del>&nbsp; &nbsp; import pyina</del> </td>
+                  </tr><tr>
+                          <th>47</th><th> </th><td class="l"><del>&nbsp; &nbsp; pyina.ensure_mpi(doc)</del> </td>
+                  </tr><tr class="last">
+                          <th>48</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>49</th><th>47</th><td class="l"><span>&nbsp; &nbsp; def print_solution(func):</span> </td>
+                  </tr><tr>
+                          <th>50</th><th>48</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; print poly1d(func)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve.py?rev=224#L56">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/ezmap_desolve.py?rev=228#L54">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>54</th><td class="l"><span>&nbsp; &nbsp; random_seed(seed)</span> </td>
+                  </tr><tr>
+                          <th>57</th><th>55</th><td class="l"><span>&nbsp; &nbsp; print "first sequential..."</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>58</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver = D<del>ESolve(ND,NP)&nbsp; #XXX: sequential DESolver</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>56</th><td class="r"><span>&nbsp; &nbsp; solver = D<ins>ifferentialEvolutionSolver2(ND,NP)&nbsp; #XXX: sequential</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>59</th><th>57</th><td class="l"><span>&nbsp; &nbsp; solver.SetRandomInitialPoints(min=[-100.0]*ND, max=[100.0]*ND)</span> </td>
+                  </tr><tr>
+                          <th>60</th><th>58</th><td class="l"><span>&nbsp; &nbsp; solver.SetEvaluationLimits(maxiter=MAX_GENERATIONS)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve.py?rev=224#L68">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/ezmap_desolve.py?rev=228#L66">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>66</th><td class="l"><span>&nbsp; &nbsp; random_seed(seed)</span> </td>
+                  </tr><tr>
+                          <th>69</th><th>67</th><td class="l"><span>&nbsp; &nbsp; print "\n and now parallel..."</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>70</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver<del>&nbsp;= pDESolve(ND,NP)&nbsp; #XXX: parallel DESolver</del></span> </td>
+                      </tr><tr>
+                        <th>71</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver<del>.SetMapper(</del>equalportion_mapper)</span> </td>
+                      </tr><tr>
+                        <th>72</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver<del></del>.SetLauncher(mpirun_launcher, NNODES)</span> </td>
+                      </tr><tr>
+                        <th>73</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver<del></del>.SetRandomInitialPoints(min=[-100.0]*ND, max=[100.0]*ND)</span> </td>
+                      </tr><tr>
+                        <th>74</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver<del></del>.SetEvaluationLimits(maxiter=MAX_GENERATIONS)</span> </td>
+                      </tr><tr>
+                        <th>75</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver<del></del>.Solve(ChebyshevCost, VTR(0.01), strategy=Best1Exp, \</span> </td>
+                      </tr><tr>
+                        <th>76</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del></del>StepMonitor=psow, CrossProbability=1.0, ScalingFactor=0.9, \</span> </td>
+                      </tr><tr>
+                        <th>77</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del></del>disp=1)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>68</th><td class="r"><span>&nbsp; &nbsp; solver<ins>2 = DifferentialEvolutionSolver2(ND,NP)&nbsp; #XXX: parallel</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>69</th><td class="r"><span>&nbsp; &nbsp; solver<ins>2.SetMapper(ez_map, </ins>equalportion_mapper)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>70</th><td class="r"><span>&nbsp; &nbsp; solver<ins>2</ins>.SetLauncher(mpirun_launcher, NNODES)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>71</th><td class="r"><span>&nbsp; &nbsp; solver<ins>2</ins>.SetRandomInitialPoints(min=[-100.0]*ND, max=[100.0]*ND)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>72</th><td class="r"><span>&nbsp; &nbsp; solver<ins>2</ins>.SetEvaluationLimits(maxiter=MAX_GENERATIONS)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>73</th><td class="r"><span>&nbsp; &nbsp; solver<ins>2</ins>.Solve(ChebyshevCost, VTR(0.01), strategy=Best1Exp, \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>&nbsp;</ins>StepMonitor=psow, CrossProbability=1.0, ScalingFactor=0.9, \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>&nbsp;</ins>disp=1)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>78</th><th>76</th><td class="l"><span>&nbsp; &nbsp; print ""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>79</th><th> </th><td class="l"><span>&nbsp; &nbsp; print_solution( solver<del></del>.Solution() )</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>77</th><td class="r"><span>&nbsp; &nbsp; print_solution( solver<ins>2</ins>.Solution() )</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>80</th><th>78</th><td class="l"><span>&nbsp; &nbsp; #'''</span> </td>
+                  </tr><tr>
+                          <th>81</th><th>79</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file9">
+          <a href="228/mystic/examples/ezmap_desolve_rosen.html" title="Show the changeset 228 restricted to mystic/examples/ezmap_desolve_rosen.py">mystic/examples/ezmap_desolve_rosen.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve_rosen.py?rev=224#L1">
+                      r224</a>
+                  </th>
+                  <th title="Revision 228">
+                    <a title="Show revision 228 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/ezmap_desolve_rosen.py?rev=228#L1">
+                      r228</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>2</th><td class="r"><ins>#Adapted from parallel_desolve.py by mmckerns@caltech.edu</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>3</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>"""</span> </td>
+                      </tr><tr>
+                        <th>4</th><th> </th><td class="l"><span>Adapted from parallel_desolve.py by mmckerns@caltech.edu</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>4</th><td class="r"><span>__doc__ = """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>5</th><td class="r"><span># Tests MPI version of Storn and Price's Polynomial 'Fitting' Problem.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>6</th><td class="r"><span># </span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span># Exact answer: [1,1,1]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>8</th><td class="r"><span>&nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>9</th><td class="r"><span># Reference:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>10</th><td class="r"><span>#</span> </td>
+                      </tr><tr>
+                        <th> </th><th>11</th><td class="r"><span># [1] Storn, R. and Price, K. Differential Evolution - A Simple and Efficient</span> </td>
+                      </tr><tr>
+                        <th> </th><th>12</th><td class="r"><span># Heuristic for Global Optimization over Continuous Spaces. Journal of Global</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>13</th><td class="r"><span># Optimization 11: 341-359, 1997.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>14</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>6</th><th> </th><td class="l"><span>Tests MPI version of Storn and Price's Polynomial 'Fitting' Problem.</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span>Exact answer: [1,1,1]</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span>Reference:</span> </td>
+                      </tr><tr>
+                        <th>11</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>12</th><th> </th><td class="l"><span>[1] Storn, R. and Price, K. Differential Evolution - A Simple and Efficient</span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>Heuristic for Global Optimization over Continuous Spaces. Journal of Global</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>Optimization 11: 341-359, 1997.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>15</th><td class="r"><span># To run in parallel:&nbsp; (must install 'pyina')</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>16</th><td class="r"><span>mpipython.exe ezmap_desolve_rosen.py</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>17</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>16</th><th>18</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>17</th><th> </th><td class="l"><span>import pyina.launchers as launchers</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>19</th><td class="r"><span>try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span>&nbsp; import pyina.launchers as launchers</span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>&nbsp; from pyina.launchers import mpirun_launcher</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span>&nbsp; from pyina.mappers import equalportion_mapper</span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span>&nbsp; from pyina.ez_map import ez_map2 as ez_map</span> </td>
+                      </tr><tr>
+                        <th> </th><th>24</th><td class="r"><span>except:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>25</th><td class="r"><span>&nbsp; print __doc__</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>18</th><th>26</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>19</th><th> </th><td class="l"><del>doc = __doc__ + """</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>27</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>21</th><th> </th><td class="l"><span>%(launchers)s</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>""" % { 'file' : __file__, 'launchers' : launchers.getstr({'file':__file__, 'timelimit':'00:05'}) }</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>from mystic.differential_evolution import DifferentialEvolutionSolver2 as DESolve</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>from mpimystic.differential_evolution_ezmap import ezDESolver as pDESolve</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>from pyina.launchers import mpirun_launcher</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>from pyina.mappers import equalportion_mapper</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>28</th><td class="r"><span>from mystic.differential_evolution import DifferentialEvolutionSolver2</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>29</th><td class="l"><span>from mystic.termination import ChangeOverGeneration, VTR</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>30</th><td class="l"><span>from mystic.strategy import Best1Exp</span> </td>
+                  </tr><tr>
+                          <th>30</th><th>31</th><td class="l"><span>from mystic.tools import VerboseSow, random_seed</span> </td>
+                  </tr><tr>
+                          <th>31</th><th>32</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>32</th><th> </th><td class="l"><span>#from r<del>osen import rosen as myCost&nbsp; &nbsp; </del>&nbsp; &nbsp; &nbsp;# ez_map needs a helper function</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>33</th><td class="r"><span>#from r<ins>aw_rosen import rosen as myCost</ins>&nbsp; &nbsp; &nbsp;# ez_map needs a helper function</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>33</th><th>34</th><td class="l"><span>from mystic.models import rosen as myCost&nbsp; # ez_map2 doesn't require help</span> </td>
+                  </tr><tr>
+                          <th>34</th><th>35</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve_rosen.py?rev=224#L45">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/ezmap_desolve_rosen.py?rev=228#L46">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>46</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>46</th><th>47</th><td class="l"><span>if __name__=='__main__':</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>47</th><th> </th><td class="l"><del>&nbsp; &nbsp; import pyina</del> </td>
+                  </tr><tr>
+                          <th>48</th><th> </th><td class="l"><del>&nbsp; &nbsp; pyina.ensure_mpi(doc)</del> </td>
+                  </tr><tr class="last">
+                          <th>49</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>48</th><td class="l"><span>&nbsp; &nbsp; def print_solution(func):</span> </td>
+                  </tr><tr>
+                          <th>51</th><th>49</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; print func</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve_rosen.py?rev=224#L57">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/ezmap_desolve_rosen.py?rev=228#L55">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>57</th><th>55</th><td class="l"><span>&nbsp; &nbsp; random_seed(seed)</span> </td>
+                  </tr><tr>
+                          <th>58</th><th>56</th><td class="l"><span>&nbsp; &nbsp; print "first sequential..."</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>59</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver = D<del>ESolve(ND,NP)&nbsp; #XXX: sequential DESolver</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>57</th><td class="r"><span>&nbsp; &nbsp; solver = D<ins>ifferentialEvolutionSolver2(ND,NP)&nbsp; #XXX: sequential</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>60</th><th>58</th><td class="l"><span>&nbsp; &nbsp; solver.SetRandomInitialPoints(min=[-100.0]*ND, max=[100.0]*ND)</span> </td>
+                  </tr><tr>
+                          <th>61</th><th>59</th><td class="l"><span>&nbsp; &nbsp; solver.SetEvaluationLimits(maxiter=MAX_GENERATIONS)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve_rosen.py?rev=224#L68">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/ezmap_desolve_rosen.py?rev=228#L66">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>66</th><td class="l"><span>&nbsp; &nbsp; random_seed(seed)</span> </td>
+                  </tr><tr>
+                          <th>69</th><th>67</th><td class="l"><span>&nbsp; &nbsp; print "\n and now parallel..."</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>70</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver<del>&nbsp;= pDESolve(ND,NP)&nbsp; #XXX: parallel DESolver</del></span> </td>
+                      </tr><tr>
+                        <th>71</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver<del>.SetMapper(</del>equalportion_mapper)</span> </td>
+                      </tr><tr>
+                        <th>72</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver<del></del>.SetLauncher(mpirun_launcher, NNODES)</span> </td>
+                      </tr><tr>
+                        <th>73</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver<del></del>.SetRandomInitialPoints(min=[-100.0]*ND, max=[100.0]*ND)</span> </td>
+                      </tr><tr>
+                        <th>74</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver<del></del>.SetEvaluationLimits(maxiter=MAX_GENERATIONS)</span> </td>
+                      </tr><tr>
+                        <th>75</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver<del></del>.Solve(myCost, VTR(TOL), strategy=Best1Exp, \</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>68</th><td class="r"><span>&nbsp; &nbsp; solver<ins>2 = DifferentialEvolutionSolver2(ND,NP)&nbsp; #XXX: parallel</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>69</th><td class="r"><span>&nbsp; &nbsp; solver<ins>2.SetMapper(ez_map, </ins>equalportion_mapper)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>70</th><td class="r"><span>&nbsp; &nbsp; solver<ins>2</ins>.SetLauncher(mpirun_launcher, NNODES)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>71</th><td class="r"><span>&nbsp; &nbsp; solver<ins>2</ins>.SetRandomInitialPoints(min=[-100.0]*ND, max=[100.0]*ND)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>72</th><td class="r"><span>&nbsp; &nbsp; solver<ins>2</ins>.SetEvaluationLimits(maxiter=MAX_GENERATIONS)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>73</th><td class="r"><span>&nbsp; &nbsp; solver<ins>2</ins>.Solve(myCost, VTR(TOL), strategy=Best1Exp, \</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>76</th><th>74</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StepMonitor=psow, CrossProbability=CROSS, ScalingFactor=SCALE, \</span> </td>
+                  </tr><tr>
+                          <th>77</th><th>75</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; disp=1)</span> </td>
+                  </tr><tr>
+                          <th>78</th><th>76</th><td class="l"><span>&nbsp; &nbsp; print ""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>79</th><th> </th><td class="l"><span>&nbsp; &nbsp; print_solution( solver<del></del>.Solution() )</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>77</th><td class="r"><span>&nbsp; &nbsp; print_solution( solver<ins>2</ins>.Solution() )</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>80</th><th>78</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>81</th><th>79</th><td class="l"><span># end of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/228?format=diff&amp;new=228" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/228?format=zip&amp;new=228" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/228 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:36:47 GMT -->
+</html>

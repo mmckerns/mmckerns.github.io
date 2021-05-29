@@ -1,0 +1,852 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/log/mystic/models by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:01:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      mystic/models (log) – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/log/mystic/models?format=rss&amp;limit=100&amp;mode=stop_on_copy" type="application/rss+xml" class="rss" title="RSS Feed" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/log/mystic/models?format=changelog&amp;limit=100&amp;mode=stop_on_copy" type="text/plain" title="ChangeLog" />
+        <link rel="up" href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=862" title="Parent directory" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/browser.css" type="text/css" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="../../browser/mystic/models.html">View Latest Revision</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="log">
+      <h1>
+<a class="pathentry first" href="http://mmckerns.github.io/project/mystic/browser?rev=862" title="Go to repository root">source:</a>
+<a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=862" title="View mystic">mystic</a><span class="pathentry sep">/</span><a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=862" title="View models">models</a>
+<span class="pathentry sep">@</span>
+  <a class="pathentry" href="../../changeset/862.html" title="View changeset 862">862</a>
+<br style="clear: both" />
+</h1>
+      <form id="prefs" action="#" method="get">
+        <div>
+          <input type="hidden" name="action" value="stop_on_copy" />
+          <div class="choice">
+            <fieldset>
+              <legend>Revision Log Mode:</legend>
+              <label>
+                <input type="radio" id="stop_on_copy" name="mode" value="stop_on_copy" checked="checked" />
+                Stop on copy
+              </label>
+              <label>
+                <input type="radio" id="follow_copy" name="mode" value="follow_copy" />
+                Follow copies
+              </label>
+              <label>
+                <input type="radio" id="path_history" name="mode" value="path_history" />
+                Show only adds and deletes
+              </label>
+            </fieldset>
+          </div>
+          <label>
+              View log starting at
+              <input type="text" id="rev" name="rev" value="862" size="5" />
+            </label>
+            <label>
+              and back to
+              <input type="text" id="stop_rev" name="stop_rev" size="5" />
+            </label><br />
+          <label>
+              Show at most
+              <input type="text" id="limit" name="limit" value="100" size="3" maxlength="3" />
+              revisions per page.
+            </label><br />
+          <label>
+            <input type="checkbox" id="verbose" name="verbose" />
+            Show full log messages
+          </label>
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Update" />
+        </div>
+      </form>
+      <div class="diff">
+        <div class="legend" id="file-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+            <dt class="cp"></dt><dd>Copied or renamed</dd>
+          </dl>
+        </div>
+      </div>
+      <form class="printableform" action="http://mmckerns.github.io/project/mystic/changeset" method="get">
+        <div class="buttons">
+          <input type="hidden" name="reponame" />
+          <input type="submit" value="View changes" title="Diff from Old Revision to New Revision (as selected in the Diff column)" />
+        </div>
+        <table class="listing chglist">
+          <thead>
+            <tr>
+              <th class="diff" title="Old / New">Diff</th>
+              <th class="change"></th>
+              <th class="rev">Rev</th>
+              <th class="age">Age</th>
+              <th class="author">Author</th>
+              <th class="summary">Log Message</th>
+            </tr>
+          </thead>
+          <tbody>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="855@mystic/models" title="From [855]" />
+                    <input type="radio" name="new" value="855@mystic/models" checked="checked" title="To [855]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=855" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=855" title="Browse at revision 855">
+                        @855</a>
+                        <a class="chgset" href="../../changeset/855/mystic/models.html" title="View changeset [855] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-01-01T19%3A05%3A11-08%3A00&amp;precision=second" title="2016-01-01T19:05:11-08:00 in Timeline">5 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        updated copyright to 2016
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="845@mystic/models" title="From [845]" />
+                    <input type="radio" name="new" value="845@mystic/models" title="To [845]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=845" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=845" title="Browse at revision 845">
+                        @845</a>
+                        <a class="chgset" href="../../changeset/845/mystic/models.html" title="View changeset [845] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-11-23T13%3A44%3A05-08%3A00&amp;precision=second" title="2015-11-23T13:44:05-08:00 in Timeline">6 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        wrap mystic.models bound instances in functions (better for dill.source)
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="792@mystic/models" title="From [792]" />
+                    <input type="radio" name="new" value="792@mystic/models" title="To [792]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=792" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=792" title="Browse at revision 792">
+                        @792</a>
+                        <a class="chgset" href="../../changeset/792/mystic/models.html" title="View changeset [792] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-10T13%3A01%3A55-07%3A00&amp;precision=second" title="2015-06-10T13:01:55-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        for speed, use contains instead of get and has_key
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="776@mystic/models" title="From [776]" />
+                    <input type="radio" name="new" value="776@mystic/models" title="To [776]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=776" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=776" title="Browse at revision 776">
+                        @776</a>
+                        <a class="chgset" href="../../changeset/776/mystic/models.html" title="View changeset [776] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-01-02T06%3A51%3A14-08%3A00&amp;precision=second" title="2015-01-02T06:51:14-08:00 in Timeline">17 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        copyright updated to 2015; added to examples2
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="772@mystic/models" title="From [772]" />
+                    <input type="radio" name="new" value="772@mystic/models" title="To [772]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=772" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=772" title="Browse at revision 772">
+                        @772</a>
+                        <a class="chgset" href="../../changeset/772/mystic/models.html" title="View changeset [772] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-11-21T14%3A33%3A33-08%3A00&amp;precision=second" title="2014-11-21T14:33:33-08:00 in Timeline">18 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: remove stray random.seed causing seeding of random number generation; …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="766@mystic/models" title="From [766]" />
+                    <input type="radio" name="new" value="766@mystic/models" title="To [766]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=766" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=766" title="Browse at revision 766">
+                        @766</a>
+                        <a class="chgset" href="../../changeset/766/mystic/models.html" title="View changeset [766] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-10-23T15%3A06%3A42-07%3A00&amp;precision=second" title="2014-10-23T15:06:42-07:00 in Timeline">19 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved corana, griewangk, and zimmermann to storn to fix pickling of …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="752@mystic/models" title="From [752]" />
+                    <input type="radio" name="new" value="752@mystic/models" title="To [752]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=752" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=752" title="Browse at revision 752">
+                        @752</a>
+                        <a class="chgset" href="../../changeset/752/mystic/models.html" title="View changeset [752] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-09-25T11%3A24%3A52-07%3A00&amp;precision=second" title="2014-09-25T11:24:52-07:00 in Timeline">20 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved trott to wolfram; added schittkowski; solver_test_suite uses models
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="751@mystic/models" title="From [751]" />
+                    <input type="radio" name="new" value="751@mystic/models" title="To [751]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=751" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=751" title="Browse at revision 751">
+                        @751</a>
+                        <a class="chgset" href="../../changeset/751/mystic/models.html" title="View changeset [751] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-09-23T18%3A22%3A45-07%3A00&amp;precision=second" title="2014-09-23T18:22:45-07:00 in Timeline">20 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added functions: sphere, peaks, venkat91, schwefel, ellipsoid, rastrigin …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="750@mystic/models" title="From [750]" />
+                    <input type="radio" name="new" value="750@mystic/models" title="To [750]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=750" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=750" title="Browse at revision 750">
+                        @750</a>
+                        <a class="chgset" href="../../changeset/750/mystic/models.html" title="View changeset [750] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-09-07T16%3A12%3A20-07%3A00&amp;precision=second" title="2014-09-07T16:12:20-07:00 in Timeline">21 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        clean forward_model docs; removed <a class="missing wiki">ForwardModel?</a>1; fix: observations in sum; …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="731@mystic/models" title="From [731]" />
+                    <input type="radio" name="new" value="731@mystic/models" title="To [731]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=731" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=731" title="Browse at revision 731">
+                        @731</a>
+                        <a class="chgset" href="../../changeset/731/mystic/models.html" title="View changeset [731] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-07-26T08%3A08%3A22-07%3A00&amp;precision=second" title="2014-07-26T08:08:22-07:00 in Timeline">22 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        removed old Makefiles
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="726@mystic/models" title="From [726]" />
+                    <input type="radio" name="new" value="726@mystic/models" title="To [726]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=726" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=726" title="Browse at revision 726">
+                        @726</a>
+                        <a class="chgset" href="../../changeset/726/mystic/models.html" title="View changeset [726] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-07-18T18%3A40%3A11-07%3A00&amp;precision=second" title="2014-07-18T18:40:11-07:00 in Timeline">22 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        change tools so each wrap_* uses different name for 'function' (for …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="721@mystic/models" title="From [721]" />
+                    <input type="radio" name="new" value="721@mystic/models" title="To [721]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=721" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=721" title="Browse at revision 721">
+                        @721</a>
+                        <a class="chgset" href="../../changeset/721/mystic/models.html" title="View changeset [721] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-07-16T08%3A16%3A57-07%3A00&amp;precision=second" title="2014-07-16T08:16:57-07:00 in Timeline">22 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        use seterr to ignore warnings in constraints solver and wrap_bounds
+fix: …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="713@mystic/models" title="From [713]" />
+                    <input type="radio" name="new" value="713@mystic/models" title="To [713]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=713" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=713" title="Browse at revision 713">
+                        @713</a>
+                        <a class="chgset" href="../../changeset/713/mystic/models.html" title="View changeset [713] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-04-03T12%3A44%3A55-07%3A00&amp;precision=second" title="2014-04-03T12:44:55-07:00 in Timeline">2 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added license and copyright to each file
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="693@mystic/models" title="From [693]" />
+                    <input type="radio" name="new" value="693@mystic/models" title="To [693]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=693" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=693" title="Browse at revision 693">
+                        @693</a>
+                        <a class="chgset" href="../../changeset/693/mystic/models.html" title="View changeset [693] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-06-22T11%3A15%3A56-07%3A00&amp;precision=second" title="2013-06-22T11:15:56-07:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add model_helper, forgot to commit it previously
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="674@mystic/models" title="From [674]" />
+                    <input type="radio" name="new" value="674@mystic/models" title="To [674]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=674" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=674" title="Browse at revision 674">
+                        @674</a>
+                        <a class="chgset" href="../../changeset/674/mystic/models.html" title="View changeset [674] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-06-03T12%3A03%3A43-07%3A00&amp;precision=second" title="2013-06-03T12:03:43-07:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        made chebyshev easier to serialize; updated pathos/pyina examples
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="531@mystic/models" title="From [531]" />
+                    <input type="radio" name="new" value="531@mystic/models" title="To [531]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=531" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=531" title="Browse at revision 531">
+                        @531</a>
+                        <a class="chgset" href="../../changeset/531/mystic/models.html" title="View changeset [531] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-06-08T16%3A39%3A28-07%3A00&amp;precision=second" title="2012-06-08T16:39:28-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added support for 2,4,6-order chebyshev polynomials
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="415@mystic/models" title="From [415]" />
+                    <input type="radio" name="new" value="415@mystic/models" title="To [415]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=415" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=415" title="Browse at revision 415">
+                        @415</a>
+                        <a class="chgset" href="../../changeset/415/mystic/models.html" title="View changeset [415] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-08-25T06%3A12%3A51-07%3A00&amp;precision=second" title="2010-08-25T06:12:51-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        bugfix: rosen derivative &amp; hessian now active code
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="236@mystic/models" title="From [236]" />
+                    <input type="radio" name="new" value="236@mystic/models" title="To [236]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=236" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=236" title="Browse at revision 236">
+                        @236</a>
+                        <a class="chgset" href="../../changeset/236/mystic/models.html" title="View changeset [236] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-05-16T16%3A01%3A28-07%3A00&amp;precision=second" title="2010-05-16T16:01:28-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        created "math" subdirectory, migrated "grid" and "poly" tools
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="143@mystic/models" title="From [143]" />
+                    <input type="radio" name="new" value="143@mystic/models" title="To [143]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=143" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=143" title="Browse at revision 143">
+                        @143</a>
+                        <a class="chgset" href="../../changeset/143/mystic/models.html" title="View changeset [143] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-05-14T23%3A39%3A43-07%3A00&amp;precision=second" title="2009-05-14T23:39:43-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fixed formatting for epydoc
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="142@mystic/models" title="From [142]" />
+                    <input type="radio" name="new" value="142@mystic/models" title="To [142]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=142" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=142" title="Browse at revision 142">
+                        @142</a>
+                        <a class="chgset" href="../../changeset/142/mystic/models.html" title="View changeset [142] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-05-14T18%3A16%3A23-07%3A00&amp;precision=second" title="2009-05-14T18:16:23-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added documentation within mystic.forward_model and mystic.models …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="124@mystic/models" title="From [124]" />
+                    <input type="radio" name="new" value="124@mystic/models" title="To [124]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=124" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=124" title="Browse at revision 124">
+                        @124</a>
+                        <a class="chgset" href="../../changeset/124/mystic/models.html" title="View changeset [124] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-24T11%3A21%3A27-07%3A00&amp;precision=second" title="2009-03-24T11:21:27-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        coerce source to mostly play nice with epydoc;
+added epydoc config file
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="121@mystic/models" title="From [121]" />
+                    <input type="radio" name="new" value="121@mystic/models" title="To [121]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=121" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=121" title="Browse at revision 121">
+                        @121</a>
+                        <a class="chgset" href="../../changeset/121/mystic/models.html" title="View changeset [121] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-22T23%3A29%3A45-07%3A00&amp;precision=second" title="2009-03-22T23:29:45-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        migrated handler to abstract_solver by building _handlerFactory;
+minor …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="118@mystic/models" title="From [118]" />
+                    <input type="radio" name="new" value="118@mystic/models" title="To [118]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=118" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=118" title="Browse at revision 118">
+                        @118</a>
+                        <a class="chgset" href="../../changeset/118/mystic/models.html" title="View changeset [118] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-20T12%3A09%3A08-07%3A00&amp;precision=second" title="2009-03-20T12:09:08-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        migrated <a class="missing wiki">AbstractModel?</a> and <a class="missing wiki">AbstractFunction?</a> to abstract_model;
+bugfix for …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="108@mystic/models" title="From [108]" />
+                    <input type="radio" name="new" value="108@mystic/models" title="To [108]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=108" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=108" title="Browse at revision 108">
+                        @108</a>
+                        <a class="chgset" href="../../changeset/108/mystic/models.html" title="View changeset [108] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-10T00%3A06%3A20-07%3A00&amp;precision=second" title="2009-03-10T00:06:20-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fixed typo in several model docs;
+built the circle model, a basic standard …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="99@mystic/models" title="From [99]" />
+                    <input type="radio" name="new" value="99@mystic/models" title="To [99]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=99" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=99" title="Browse at revision 99">
+                        @99</a>
+                        <a class="chgset" href="../../changeset/99/mystic/models.html" title="View changeset [99] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-19T10%3A11%3A48-08%3A00&amp;precision=second" title="2009-02-19T10:11:48-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        minor shortcut for speedup
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="98@mystic/models" title="From [98]" />
+                    <input type="radio" name="new" value="98@mystic/models" title="To [98]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=98" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=98" title="Browse at revision 98">
+                        @98</a>
+                        <a class="chgset" href="../../changeset/98/mystic/models.html" title="View changeset [98] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-19T08%3A49%3A37-08%3A00&amp;precision=second" title="2009-02-19T08:49:37-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        replace use of numpy in models where not needed, increase model speed
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="94@mystic/models" title="From [94]" />
+                    <input type="radio" name="new" value="94@mystic/models" title="To [94]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=94" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=94" title="Browse at revision 94">
+                        @94</a>
+                        <a class="chgset" href="../../changeset/94/mystic/models.html" title="View changeset [94] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-17T10%3A08%3A02-08%3A00&amp;precision=second" title="2009-02-17T10:08:02-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        merged the new 'model refactor' branch back into the trunk;
+slightly …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="92@mystic/models" title="From [92]" />
+                    <input type="radio" name="new" value="92@mystic/models" title="To [92]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=92" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=92" title="Browse at revision 92">
+                        @92</a>
+                        <a class="chgset" href="../../changeset/92/mystic/models.html" title="View changeset [92] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-16T18%3A41%3A35-08%3A00&amp;precision=second" title="2009-02-16T18:41:35-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fixed small bug in Make.mm files
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="89@mystic/models" title="From [89]" />
+                    <input type="radio" name="new" value="89@mystic/models" title="To [89]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/models?rev=89" title="View log starting at this revision">
+                        <span class="copy"></span>
+                        <span class="comment">(copy)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=89" title="Browse at revision 89">
+                        @89</a>
+                        <a class="chgset" href="../../changeset/89/mystic/models.html" title="View changeset [89] restricted to mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-11T15%3A16%3A06-08%3A00&amp;precision=second" title="2009-02-11T15:16:06-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        restructured top-level to have trunk for mystic &amp; pyina (also branches)
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td></td>
+                  <td class="copyfrom_path" colspan="6" style="padding-left: 1em">
+                    copied from <a href="http://mmckerns.github.io/project/mystic/browser/branches/merge-pyina-at-r87/trunk/mystic/models?rev=88">branches/merge-pyina-at-r87/trunk/mystic/models</a>:
+                  </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="88@branches/merge-pyina-at-r87/trunk/mystic/models" checked="checked" title="From [88]" />
+                    <input type="radio" name="new" value="88@branches/merge-pyina-at-r87/trunk/mystic/models" title="To [88]" />
+                  </td>
+                    <td class="change" style="padding-left: 2em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/branches/merge-pyina-at-r87/trunk/mystic/models?rev=88" title="View log starting at this revision">
+                        <span class="add"></span>
+                        <span class="comment">(add)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/branches/merge-pyina-at-r87/trunk/mystic/models?rev=88" title="Browse at revision 88">
+                        @88</a>
+                        <a class="chgset" href="../../changeset/88/branches/merge-pyina-at-r87/trunk/mystic/models.html" title="View changeset [88] restricted to branches/merge-pyina-at-r87/trunk/mystic/models"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-11T14%3A26%3A22-08%3A00&amp;precision=second" title="2009-02-11T14:26:22-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added branch that merges mystic/trunk and branches/pyina at <a class="changeset" href="../../changeset/87.html" title="added tools.wrap_bounds; added range bounds to fmin (modified from ...">r87</a>;
+reduced …
+                    </td>
+                </tr>
+          </tbody>
+        </table>
+        <div class="buttons">
+          <input type="submit" value="View changes" title="Diff from Old Revision to New Revision (as selected in the Diff column)" />
+        </div>
+      </form>
+      <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracRevisionLog.html">TracRevisionLog</a>
+        for help on using the revision log.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/log/mystic/models?format=rss&amp;limit=100&amp;mode=stop_on_copy" class="rss">RSS Feed</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/log/mystic/models?format=changelog&amp;limit=100&amp;mode=stop_on_copy">ChangeLog</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/log/mystic/models by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:02:23 GMT -->
+</html>

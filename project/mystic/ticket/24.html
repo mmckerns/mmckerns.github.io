@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/ticket/24 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:51:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      #24 (complete 0.1a1 release documentation)
+     – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="23.html" title="Ticket #23" />
+        <link rel="last" href="257.html" title="Ticket #257" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/ticket/24?format=csv" type="text/csv" class="csv" title="Comma-delimited Text" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/ticket/24?format=tab" type="text/tab-separated-values" class="tab" title="Tab-delimited Text" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/ticket/24?format=rss" type="application/rss+xml" class="rss" title="RSS Feed" />
+        <link rel="next" href="25.html" title="Ticket #25" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/ticket.css" type="text/css" />
+        <link rel="first" href="1.html" title="Ticket #1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript">
+      var auto_preview_timeout=2.0;
+      var form_token="29dfe7d61594daee56a0f88e";
+    </script>
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/folding.js"></script><script type="text/javascript" src="../chrome/common/js/wikitoolbar.js"></script><script type="text/javascript" src="../chrome/common/js/resizer.js"></script><script type="text/javascript" src="../chrome/common/js/auto_preview.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("div.description").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $(".foldable").enableFolding(false, true);
+        var args = {realm: "ticket", id: 24, escape_newlines: 0}
+        $("#comment").autoPreview("/project/mystic/wiki_render", args, function(textarea, text, rendered) {
+            $("#ticketchange div.comment").html(rendered);
+            if (rendered)
+              $("#ticketchange").show();
+            else if ($("#ticketchange ul.changes").length == 0)
+              $("#ticketchange").hide();
+        });
+        $("#trac-comment-editor textarea").autoPreview("/project/mystic/wiki_render", args,
+                                                       function(textarea, text, rendered) {
+          var comment = $("#trac-comment-editor").next("div.comment");
+          comment.html(rendered);
+          if (rendered)
+            comment.show();
+          else
+            comment.hide();
+        });
+        $("#modify").parent().toggleClass("collapsed");
+        $(".trac-topnav a").click(function() { $("#modify").parent().removeClass("collapsed"); });
+        /* only enable control elements for the currently selected action */
+        var actions = $("#action input[name='action']");
+        function updateActionFields() {
+          actions.each(function () {
+            $(this).siblings().find("*[id]").enable($(this).checked());
+            $(this).siblings().filter("*[id]").enable($(this).checked());
+          });
+        }
+        actions.click(updateActionFields);
+        updateActionFields();
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li class="active"><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="23.html" title="Ticket #23">Previous Ticket</a></span></li><li class="last"><span><a class="next" href="25.html" title="Ticket #25">Next Ticket</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="ticket">
+      <h1 id="trac-ticket-title">
+          <a href="24.html">Ticket #24</a>
+          <span class="status">(closed task: worksforme)</span>
+      </h1>
+      <div id="ticket">
+  <div class="date">
+    <p>Opened <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-19T23%3A11%3A37-07%3A00&amp;precision=second" title="2009-03-19T23:11:37-07:00 in Timeline">7 years</a> ago</p>
+    <p>Last modified <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-27T11%3A14%3A17-07%3A00&amp;precision=second" title="2009-03-27T11:14:17-07:00 in Timeline">7 years</a> ago</p>
+  </div>
+  <h2 class="summary searchable">complete 0.1a1 release documentation</h2>
+  <table class="properties">
+    <tr>
+      <th id="h_reporter">Reported by:</th>
+      <td headers="h_reporter" class="searchable">
+        <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;reporter=mmckerns">mmckerns</a>
+      </td>
+      <th id="h_owner">Owned by:</th>
+      <td headers="h_owner">
+        <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;owner=mmckerns">mmckerns</a>
+      </td>
+    </tr>
+    <tr>
+        <th id="h_priority">
+          Priority:
+        </th>
+        <td headers="h_priority">
+              <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;priority=blocker">blocker</a>
+        </td>
+        <th id="h_milestone">
+          Milestone:
+        </th>
+        <td headers="h_milestone">
+              <a class="closed milestone" href="../milestone/mystic-6.html">mystic-0.1a1</a>
+        </td>
+    </tr><tr>
+        <th id="h_component">
+          Component:
+        </th>
+        <td headers="h_component">
+              <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;component=mystic.docs">mystic.docs</a>
+        </td>
+        <th id="h_keywords">
+          Keywords:
+        </th>
+        <td headers="h_keywords" class="searchable">
+              <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;keywords=%7Erelease">release</a>
+        </td>
+    </tr><tr>
+        <th id="h_cc">
+          Cc:
+        </th>
+        <td headers="h_cc" class="searchable">
+        </td>
+        <th>
+        </th>
+        <td>
+        </td>
+    </tr>
+  </table>
+  <div class="description">
+    <h3 id="comment:description">
+      Description
+    </h3>
+    <div class="searchable">
+      <p>
+The mystic <a class="closed milestone" href="../milestone/mystic-6.html">mystic-0.1a1</a> release is missing some documentation beyond that noted in tickets <a class="closed ticket" href="18.html" title="defect: DESolver needs much better documentation (closed: fixed)">#18</a>, <a class="closed ticket" href="19.html" title="task: initial build of epydoc for mystic (closed: worksforme)">#19</a>, <a class="closed ticket" href="20.html" title="task: provide release-worthy wiki front-page summary content (closed: duplicate)">#20</a>, and <a class="closed ticket" href="21.html" title="task: link good examples to tutorials wiki page (closed: duplicate)">#21</a> (source, epydoc, front page, and tutorials, respectively).  A High-level design diagram and a user guide should also be included, although the source+epydoc may serve as the backbone for the user guide.
+</p>
+<p>
+The license, list of authors/contributors, acknowledgements/funding, and the download tarball itself all need to be added. 
+</p>
+
+    </div>
+  </div>
+</div>
+          
+
+        <div>
+          <h2 class="foldable">Change History</h2>
+          <div id="changelog">
+              <div class="change" id="trac-change-1">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:1" class="cnum">
+      <a href="#comment:1">comment:1</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-19T23%3A12%3A01-07%3A00&amp;precision=second" title="2009-03-19T23:12:01-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+  <ul class="changes">
+    <li>
+      <strong>Status</strong>
+        changed from <em>new</em> to <em>assigned</em>
+    </li>
+  </ul>
+    <div class="comment searchable">
+      
+      
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-2">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:2" class="cnum">
+      <a href="#comment:2">comment:2</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-19T23%3A27%3A05-07%3A00&amp;precision=second" title="2009-03-19T23:27:05-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+License note, list of authors, and acknowledgements should be on the wiki front page.
+Tutorials should be on their own page, and heavily leverage (comments in) existing code.
+Tutorials should be linked from the front page.
+</p>
+<p>
+The download tarballs should be linked from the front page and the release page.  Same for the user manual
+(or better called, a reference manual). High-level design diagram can be included in the reference manual.
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-3">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:3" class="cnum">
+      <a href="#comment:3">comment:3</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-20T18%3A37%3A14-07%3A00&amp;precision=second" title="2009-03-20T18:37:14-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+Here's an idea:
+</p>
+<p>
+The milestone pages provide a relatively nice release summary... by adding a little more wiki content, it could serve as a nice back-of-the box version-specific release page.  General information, introduction, and the majority of wiki links would stay on the <a class="wiki" href="../wiki/WikiStart.html">WikiStart</a> page.
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-4">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:4" class="cnum">
+      <a href="#comment:4">comment:4</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-20T18%3A46%3A15-07%3A00&amp;precision=second" title="2009-03-20T18:46:15-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+transferring leftovers from ticket <a class="closed ticket" href="18.html" title="defect: DESolver needs much better documentation (closed: fixed)">#18</a>, each minimal solver interface needs source documentation
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-5">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:5" class="cnum">
+      <a href="#comment:5">comment:5</a>
+    </span>
+                          <span>follow-up:</span>
+      <a href="#comment:6">↓ 6</a>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-20T19%3A21%3A19-07%3A00&amp;precision=second" title="2009-03-20T19:21:19-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+minimal solver interfaces for fmin and fmin_powell added in <a class="changeset" href="../changeset/120.html" title="added docs for minimal solvers fmin &amp; fmin_powell
+">r120</a>
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-6">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:6" class="cnum">
+      <a href="#comment:6">comment:6</a>
+    </span>
+                        in reply to:
+      <a href="#comment:5">↑ 5</a>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-20T19%3A22%3A58-07%3A00&amp;precision=second" title="2009-03-20T19:22:58-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+Replying to <a href="24.html#comment:5" title="Comment 5 for Ticket #24">mmckerns</a>:
+</p>
+<blockquote class="citation">
+<p>
+minimal solver interfaces for fmin and fmin_powell added in <a class="changeset" href="../changeset/120.html" title="added docs for minimal solvers fmin &amp; fmin_powell
+">r120</a>
+</p>
+</blockquote>
+<p>
+I meant, documentation for fmin &amp; fmin_powell
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-7">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:7" class="cnum">
+      <a href="#comment:7">comment:7</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-22T23%3A31%3A54-07%3A00&amp;precision=second" title="2009-03-22T23:31:54-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+minimal solver interface doc added for diffev in <a class="changeset" href="../changeset/121.html" title="migrated handler to abstract_solver by building _handlerFactory;
+minor ...">r121</a>
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-8">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:8" class="cnum">
+      <a href="#comment:8">comment:8</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-23T17%3A14%3A55-07%3A00&amp;precision=second" title="2009-03-23T17:14:55-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+added remaining <a class="closed milestone" href="../milestone/mystic-6.html">mystic-0.1a1</a> module and method documentation (except for mystic.forward_model) in <a class="changeset" href="../changeset/123.html" title="most of remaining module and method documentation for mystic-0.1a1; ...">r123</a>
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-9">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:9" class="cnum">
+      <a href="#comment:9">comment:9</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-24T18%3A34%3A19-07%3A00&amp;precision=second" title="2009-03-24T18:34:19-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+license and authors added to <a class="ext-link" href="http://docs.danse.us/mystic"><span class="icon"> </span>http://docs.danse.us/mystic</a>.
+</p>
+<p>
+Should repeat on wiki.
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-10">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:10" class="cnum">
+      <a href="#comment:10">comment:10</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-25T23%3A05%3A29-07%3A00&amp;precision=second" title="2009-03-25T23:05:29-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+User's guide for <a class="closed milestone" href="../milestone/mystic-6.html">mystic-0.1a1</a> will follow general guidelines as in ticket <a class="closed ticket" href="27.html" title="task: build user's guide from tutorial examples and reference manual (closed: worksforme)">#27</a>,
+however will be reduced to a wiki index page with links to the source code for the tutorial examples,
+and a link to the reference manual.  A more robust user's guide is put off until a later release.
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-11">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:11" class="cnum">
+      <a href="#comment:11">comment:11</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-25T23%3A28%3A42-07%3A00&amp;precision=second" title="2009-03-25T23:28:42-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+Transferring leftovers from tickets <a class="closed ticket" href="20.html" title="task: provide release-worthy wiki front-page summary content (closed: duplicate)">#20</a> &amp; <a class="closed ticket" href="21.html" title="task: link good examples to tutorials wiki page (closed: duplicate)">#21</a>.
+</p>
+<p>
+Release content still to do...
+</p>
+<p>
+Front page content:
+</p>
+<ul><li>short summary/introduction/vision
+</li><li>teaser example with some nice pictures
+</li><li>link to user guide
+</li><li>link to reference manual
+</li><li>link to installation instructions
+</li><li>link to license
+</li><li>version number &amp; link to distribution
+</li><li>author/contributor list and contact information
+</li><li>acknowledgments and funding
+</li></ul><p>
+Somehow should utilize the specific (milestone) release page.
+Somehow should integrate the high-level design diagram.
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-12">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:12" class="cnum">
+      <a href="#comment:12">comment:12</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-25T23%3A29%3A42-07%3A00&amp;precision=second" title="2009-03-25T23:29:42-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+High-level design diagram deferred to later release, see ticket <a class="closed ticket" href="28.html" title="task: high-level design diagram is needed (closed: worksforme)">#28</a>.
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-13">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:13" class="cnum">
+      <a href="#comment:13">comment:13</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-26T11%3A26%3A55-07%3A00&amp;precision=second" title="2009-03-26T11:26:55-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+committed tutorial examples in <a class="changeset" href="../changeset/126.html" title="added tutorial examples (see ticket #24);
+commented out addModelNew (see ...">r126</a>
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-14">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:14" class="cnum">
+      <a href="#comment:14">comment:14</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-27T11%3A14%3A17-07%3A00&amp;precision=second" title="2009-03-27T11:14:17-07:00 in Timeline">7 years</a> ago by mmckerns
+                </h3>
+                
+  <ul class="changes">
+    <li>
+      <strong>Status</strong>
+        changed from <em>assigned</em> to <em>closed</em>
+    </li><li>
+      <strong>Resolution</strong>
+        set to <em>worksforme</em>
+    </li>
+  </ul>
+    <div class="comment searchable">
+      
+      <p>
+All front page content added except a teaser example with nice pictures.  Example and pictures deferred to a later release, see ticket <a class="closed ticket" href="31.html" title="task: augment Tutorial's links to source with text and pictures (closed: worksforme)">#31</a>.
+</p>
+<p>
+Nothing left that hasn't been deferred to other tickets... thus we are done.
+</p>
+
+    </div>
+
+              </div>
+          </div>
+        </div>
+      <div id="help"><strong>Note:</strong> See
+        <a href="../wiki/TracTickets.html">TracTickets</a> for help on using
+        tickets.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/ticket/24?format=csv" class="csv">Comma-delimited Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/ticket/24?format=tab" class="tab">Tab-delimited Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/ticket/24?format=rss" class="rss">RSS Feed</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/ticket/24 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:51:07 GMT -->
+</html>

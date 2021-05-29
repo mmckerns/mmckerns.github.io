@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/794/mystic/mystic/scipy_optimize.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 794 for mystic/mystic/scipy_optimize.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/794/mystic/mystic/scipy_optimize.py?format=diff&amp;new=794" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/794/mystic/mystic/scipy_optimize.py?format=zip&amp;new=794" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../795/mystic/mystic/scipy_optimize.html" title="Changeset 795 for mystic/mystic/scipy_optimize.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../792/mystic/mystic/scipy_optimize.html" title="Changeset 792 for mystic/mystic/scipy_optimize.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../792/mystic/mystic/scipy_optimize.html" title="Changeset 792 for mystic/mystic/scipy_optimize.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../795/mystic/mystic/scipy_optimize.html" title="Changeset 795 for mystic/mystic/scipy_optimize.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../794.html">794</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=794">mystic/mystic/scipy_optimize.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             06/12/15 17:08:44
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-12T17%3A08%3A44-07%3A00&amp;precision=second" title="2015-06-12T17:08:44-07:00 in Timeline">11 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+add _update_objective and _live, to queue state changes to cost, penalty, etc;<br />
+enable _clipGuess to randomize within <a class="missing wiki">RangeBoundary?</a>, use numpy.clip;<br />
+move bulk of _bootstrap into <a class="missing wiki">SetObjective?</a>, for better method-order freedom;<br />
+_decorate_objective less likely to produce a uniform population;<br />
+rename _Finalize to Finalize; Step responds to change in state more like Solve<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=794">
+              mystic/mystic/scipy_optimize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">4 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="scipy_optimize.html" title="Show the changeset 794 restricted to mystic/mystic/scipy_optimize.py">mystic/mystic/scipy_optimize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 792">
+                    <a title="Show revision 792 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=792#L63">
+                      r792</a>
+                  </th>
+                  <th title="Revision 794">
+                    <a title="Show revision 794 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=794#L63">
+                      r794</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>63</th><th>63</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>64</th><th>64</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>65</th><th> </th><td class="l"><span>from mystic.tools import unpair</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>65</th><td class="r"><span>from mystic.tools import wrap_function, unpair, wrap_nested</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>66</th><td class="r"><span>from mystic.tools import wrap_bounds, wrap_penalty, reduced</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>66</th><th>67</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>67</th><th>68</th><td class="l"><span>import numpy</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=792#L142">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=794#L143">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>142</th><th>143</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>143</th><th>144</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>145</th><td class="r"><ins>&nbsp; &nbsp; def _decorate_objective(self, cost, ExtraArgs=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>146</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """decorate the cost function with bounds, penalties, monitors, etc"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>147</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #print ("@", cost, ExtraArgs, max)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>148</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; raw = cost</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>149</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if ExtraArgs is None: ExtraArgs = ()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>150</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._fcalls, cost = wrap_function(cost, ExtraArgs, self._evalmon)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>151</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if self._useStrictRange:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>152</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if self.generations:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>153</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #NOTE: pop[0] was best, may not be after resetting simplex</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>154</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i,j in enumerate(self._setSimplexWithinRangeBoundary()):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>155</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[i+1] = self.population[0].copy()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>156</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[i+1][i] = j</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>157</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>158</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[0] = self._clipGuessWithinRangeBoundary(self.population[0])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>159</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cost = wrap_bounds(cost, self._strictMin, self._strictMax)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>160</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cost = wrap_penalty(cost, self._penalty)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>161</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cost = wrap_nested(cost, self._constraints)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>162</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if self._reducer:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>163</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#cost = reduced(*self._reducer)(cost) # was self._reducer = (f,bool)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>164</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cost = reduced(self._reducer, arraylike=True)(cost)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>165</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # hold on to the 'wrapped' and 'raw' cost function</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>166</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._cost = (cost, raw, ExtraArgs)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>167</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._live = True</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>168</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return cost</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>169</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>144</th><th>170</th><td class="l"><span>&nbsp; &nbsp; def _Step(self, cost=None, ExtraArgs=None, **kwds):</span> </td>
+                  </tr><tr>
+                          <th>145</th><th>171</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """perform a single optimization iteration</span> </td>
+                  </tr><tr>
+                          <th>146</th><th>172</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Note that ExtraArgs should be a *tuple* of extra arguments"""</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>147</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _decorate_objective</del> </td>
+                  </tr><tr class="last">
+                          <th>148</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>149</th><th>173</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                  </tr><tr>
+                          <th>150</th><th>174</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = self._process_inputs(kwds)</span> </td>
+                  </tr><tr>
+                          <th>151</th><th>175</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for key in settings:</span> </td>
+                  </tr><tr>
+                          <th>152</th><th>176</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exec "%s = settings['%s']" % (key,key)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>177</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>178</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _decorate_objective</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>179</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>153</th><th>180</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>154</th><th>181</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; rho = 1; chi = 2; psi = 0.5; sigma = 0.5;</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=792#L466">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=794#L493">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>466</th><th>493</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """perform a single optimization iteration</span> </td>
+                  </tr><tr>
+                          <th>467</th><th>494</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Note that ExtraArgs should be a *tuple* of extra arguments"""</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>468</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _decorate_objective</del> </td>
+                  </tr><tr class="last">
+                          <th>469</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>470</th><th>495</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                  </tr><tr>
+                          <th>471</th><th>496</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = self._process_inputs(kwds)</span> </td>
+                  </tr><tr>
+                          <th>472</th><th>497</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for key in settings:</span> </td>
+                  </tr><tr>
+                          <th>473</th><th>498</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exec "%s = settings['%s']" % (key,key)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>499</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>500</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _decorate_objective</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>501</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>474</th><th>502</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>475</th><th>503</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; direc = self._direc #XXX: throws Error if direc=None after generation=0</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=792#L575">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=794#L603">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>575</th><th>603</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return #XXX: call Terminated ?</span> </td>
+                  </tr><tr>
+                          <th>576</th><th>604</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>577</th><th> </th><td class="l"><span>&nbsp; &nbsp; def <del>_</del>Finalize(self, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>605</th><td class="r"><span>&nbsp; &nbsp; def <ins></ins>Finalize(self, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>578</th><th>606</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """cleanup upon exiting the main optimization loop"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>579</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history = None # resync with 'best' energy</span> </td>
+                      </tr><tr>
+                        <th>580</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(self.bestSolution, self.bestEnergy, self.id)</span> </td>
+                      </tr><tr>
+                        <th>581</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # if savefrequency matches, then save state</span> </td>
+                      </tr><tr>
+                        <th>582</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._AbstractSolver__save_state()</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>607</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self.energy_history != None:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>608</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.energy_history = None # resync with 'best' energy</span> </td>
+                      </tr><tr>
+                        <th> </th><th>609</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(self.bestSolution, self.bestEnergy, self.id)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>610</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # if savefrequency matches, then save state</span> </td>
+                      </tr><tr>
+                        <th> </th><th>611</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._AbstractSolver__save_state()</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>612</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._live = False</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>583</th><th>613</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>584</th><th>614</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/794/mystic/mystic/scipy_optimize.py?format=diff&amp;new=794" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/794/mystic/mystic/scipy_optimize.py?format=zip&amp;new=794" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/794/mystic/mystic/scipy_optimize.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:23 GMT -->
+</html>

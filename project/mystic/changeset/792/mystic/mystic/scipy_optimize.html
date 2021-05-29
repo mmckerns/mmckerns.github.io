@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/792/mystic/mystic/scipy_optimize.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 792 for mystic/mystic/scipy_optimize.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/792/mystic/mystic/scipy_optimize.py?format=diff&amp;new=792" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/792/mystic/mystic/scipy_optimize.py?format=zip&amp;new=792" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../794/mystic/mystic/scipy_optimize.html" title="Changeset 794 for mystic/mystic/scipy_optimize.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../791/mystic/mystic/scipy_optimize.html" title="Changeset 791 for mystic/mystic/scipy_optimize.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../791/mystic/mystic/scipy_optimize.html" title="Changeset 791 for mystic/mystic/scipy_optimize.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../794/mystic/mystic/scipy_optimize.html" title="Changeset 794 for mystic/mystic/scipy_optimize.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../792.html">792</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=792">mystic/mystic/scipy_optimize.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             06/10/15 13:01:55
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-10T13%3A01%3A55-07%3A00&amp;precision=second" title="2015-06-10T13:01:55-07:00 in Timeline">11 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+for speed, use contains instead of get and has_key<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=792">
+              mystic/mystic/scipy_optimize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">5 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="scipy_optimize.html" title="Show the changeset 792 restricted to mystic/mystic/scipy_optimize.py">mystic/mystic/scipy_optimize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=791#L363">
+                      r791</a>
+                  </th>
+                  <th title="Revision 792">
+                    <a title="Show revision 792 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=792#L363">
+                      r792</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>363</th><th>363</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>364</th><th>364</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>365</th><th> </th><td class="l"><span>&nbsp; &nbsp; handler = False</span> </td>
+                      </tr><tr>
+                        <th>366</th><th> </th><td class="l"><span>&nbsp; &nbsp; if kwds.has_key('handler'):</span> </td>
+                      </tr><tr>
+                        <th>367</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; handler = kwds['handler']</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>365</th><td class="r"><span>&nbsp; &nbsp; handler = kwds['handler'] if 'handler' in kwds else False</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>368</th><th>366</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>369</th><th>367</th><td class="l"><span>&nbsp; &nbsp; from mystic.monitors import Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>370</th><th> </th><td class="l"><span>&nbsp; &nbsp; stepmon = Monitor()</span> </td>
+                      </tr><tr>
+                        <th>371</th><th> </th><td class="l"><span>&nbsp; &nbsp; evalmon = Monitor()</span> </td>
+                      </tr><tr>
+                        <th>372</th><th> </th><td class="l"><span>&nbsp; &nbsp; if kwds.has_key('itermon'):</span> </td>
+                      </tr><tr>
+                        <th>373</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; stepmon = kwds['itermon']</span> </td>
+                      </tr><tr>
+                        <th>374</th><th> </th><td class="l"><span>&nbsp; &nbsp; if kwds.has_key('evalmon'):</span> </td>
+                      </tr><tr>
+                        <th>375</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; evalmon = kwds['evalmon']</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>368</th><td class="r"><span>&nbsp; &nbsp; stepmon = kwds['itermon'] if 'itermon' in kwds else Monitor()</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>369</th><td class="r"><span>&nbsp; &nbsp; evalmon = kwds['evalmon'] if 'evalmon' in kwds else Monitor()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>376</th><th>370</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>377</th><th>371</th><td class="l"><span>&nbsp; &nbsp; if xtol: #if tolerance in x is provided, use CandidateRelativeTolerance</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=791#L386">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=792#L380">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>386</th><th>380</th><td class="l"><span>&nbsp; &nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>387</th><th>381</th><td class="l"><span>&nbsp; &nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>388</th><th> </th><td class="l"><span>&nbsp; &nbsp; if kwds.has_key('penalty'):</span> </td>
+                      </tr><tr>
+                        <th>389</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; penalty = kwds['penalty']</span> </td>
+                      </tr><tr>
+                        <th>390</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetPenalty(penalty)</span> </td>
+                      </tr><tr>
+                        <th>391</th><th> </th><td class="l"><span>&nbsp; &nbsp; if kwds.has_key('constraints'):</span> </td>
+                      </tr><tr>
+                        <th>392</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints = kwds['constraints']</span> </td>
+                      </tr><tr>
+                        <th>393</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetConstraints(constraints)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>382</th><td class="r"><span>&nbsp; &nbsp; if 'penalty' in kwds:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>383</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetPenalty(kwds['penalty'])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>384</th><td class="r"><span>&nbsp; &nbsp; if 'constraints' in kwds:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>385</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetConstraints(kwds['constraints'])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>394</th><th>386</th><td class="l"><span>&nbsp; &nbsp; if bounds is not None:</span> </td>
+                  </tr><tr>
+                          <th>395</th><th>387</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; minb,maxb = unpair(bounds)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=791#L602">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=792#L594">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>602</th><th>594</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; direc=self._direc&nbsp; &nbsp; #initial direction set</span> </td>
+                  </tr><tr>
+                          <th>603</th><th>595</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [settings.update({i:j}) for (i,j) in kwds.items() if i in settings]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>604</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._direc = kwds<del>.get('direc', direc)</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>596</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._direc = kwds<ins>['direc'] if 'direc' in kwds else direc</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>605</th><th>597</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.xtol = settings['xtol']</span> </td>
+                  </tr><tr>
+                          <th>606</th><th>598</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return settings</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=791#L706">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=792#L698">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>706</th><th>698</th><td class="l"><span>&nbsp; &nbsp; #&nbsp; &nbsp; &nbsp; &nbsp; - should just pass 'direc', and then hands-off ?&nbsp; How return it ?</span> </td>
+                  </tr><tr>
+                          <th>707</th><th>699</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>708</th><th> </th><td class="l"><span>&nbsp; &nbsp; handler = False</span> </td>
+                      </tr><tr>
+                        <th>709</th><th> </th><td class="l"><span>&nbsp; &nbsp; if kwds.has_key('handler'):</span> </td>
+                      </tr><tr>
+                        <th>710</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; handler = kwds['handler']</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>700</th><td class="r"><span>&nbsp; &nbsp; handler = kwds['handler'] if 'handler' in kwds else False</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>711</th><th>701</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>712</th><th>702</th><td class="l"><span>&nbsp; &nbsp; from mystic.monitors import Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>713</th><th> </th><td class="l"><span>&nbsp; &nbsp; stepmon = Monitor()</span> </td>
+                      </tr><tr>
+                        <th>714</th><th> </th><td class="l"><span>&nbsp; &nbsp; evalmon = Monitor()</span> </td>
+                      </tr><tr>
+                        <th>715</th><th> </th><td class="l"><span>&nbsp; &nbsp; if kwds.has_key('itermon'):</span> </td>
+                      </tr><tr>
+                        <th>716</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; stepmon = kwds['itermon']</span> </td>
+                      </tr><tr>
+                        <th>717</th><th> </th><td class="l"><span>&nbsp; &nbsp; if kwds.has_key('evalmon'):</span> </td>
+                      </tr><tr>
+                        <th>718</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; evalmon = kwds['evalmon']</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>703</th><td class="r"><span>&nbsp; &nbsp; stepmon = kwds['itermon'] if 'itermon' in kwds else Monitor()</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>704</th><td class="r"><span>&nbsp; &nbsp; evalmon = kwds['evalmon'] if 'evalmon' in kwds else Monitor()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>719</th><th>705</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>720</th><th>706</th><td class="l"><span>&nbsp; &nbsp; gtol = 2 # termination generations (scipy: 2, default: 10)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>721</th><th> </th><td class="l"><span>&nbsp; &nbsp; if kwds.has_key('gtol'):</span> </td>
+                      </tr><tr>
+                        <th>722</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; gtol = kwds['gtol']</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>707</th><td class="r"><span>&nbsp; &nbsp; if 'gtol' in kwds: gtol = kwds['gtol']</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>723</th><th>708</th><td class="l"><span>&nbsp; &nbsp; if gtol: #if number of generations is provided, use NCOG</span> </td>
+                  </tr><tr>
+                          <th>724</th><th>709</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=791#L733">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=792#L718">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>733</th><th>718</th><td class="l"><span>&nbsp; &nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>734</th><th>719</th><td class="l"><span>&nbsp; &nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>735</th><th> </th><td class="l"><span>&nbsp; &nbsp; if kwds.has_key('penalty'):</span> </td>
+                      </tr><tr>
+                        <th>736</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; penalty = kwds['penalty']</span> </td>
+                      </tr><tr>
+                        <th>737</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetPenalty(penalty)</span> </td>
+                      </tr><tr>
+                        <th>738</th><th> </th><td class="l"><span>&nbsp; &nbsp; if kwds.has_key('constraints'):</span> </td>
+                      </tr><tr>
+                        <th>739</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints = kwds['constraints']</span> </td>
+                      </tr><tr>
+                        <th>740</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetConstraints(constraints)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>720</th><td class="r"><span>&nbsp; &nbsp; if 'penalty' in kwds:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>721</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetPenalty(kwds['penalty'])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>722</th><td class="r"><span>&nbsp; &nbsp; if 'constraints' in kwds:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>723</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetConstraints(kwds['constraints'])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>741</th><th>724</th><td class="l"><span>&nbsp; &nbsp; if bounds is not None:</span> </td>
+                  </tr><tr>
+                          <th>742</th><th>725</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; minb,maxb = unpair(bounds)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/792/mystic/mystic/scipy_optimize.py?format=diff&amp;new=792" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/792/mystic/mystic/scipy_optimize.py?format=zip&amp;new=792" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/792/mystic/mystic/scipy_optimize.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:23 GMT -->
+</html>

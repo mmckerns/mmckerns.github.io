@@ -1,0 +1,2478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/687/branches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:12:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 687 for branches – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/687/branches?format=diff&amp;new=687" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/687/branches?format=zip&amp;new=687" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../688/branches.html" title="Changeset 688 for branches" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../678/branches.html" title="Changeset 678 for branches" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../678/branches.html" title="Changeset 678 for branches">Previous Change</a></span></li><li class="last"><span><a class="next" href="../688/branches.html" title="Changeset 688 for branches">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../687.html">687</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches?rev=687">branches</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             06/15/13 18:43:09
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-06-15T18%3A43%3A09-07%3A00&amp;precision=second" title="2013-06-15T18:43:09-07:00 in Timeline">3 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+renaming of some of the measure methods, including dirac_measure to measure<br />
+moved dirac_measure.py to discrete.py, and paramtrans to distance<br />
+added isinstance to tools; added min, max, ess_min, ess_max to measures<br />
+moved dirac_measure.coords to dirac_measure.positions<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/branches?rev=687">branches</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>21 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=687">
+              UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">5 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=687">
+              UQ/math/examples2/TEST_OUQ_surrogate_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">5 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MINMAX_StAlData.py?rev=687">
+              UQ/math/legacy/MINMAX_StAlData.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=687">
+              UQ/math/legacy/MM_OUQ_StAlData.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dData.py?rev=687">
+              UQ/math/legacy/TEST_OUQ_1dData.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py?rev=687">
+              UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">5 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py?rev=687">
+              UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">5 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StAlData.py?rev=687">
+              UQ/math/legacy/TEST_OUQ_StAlData.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py?rev=687">
+              UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file8">5 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=687">
+              UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file9">5 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/conf_hausd.py?rev=687">
+              UQ/math/legacy/envelope/conf_hausd.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file10">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/envelope.py?rev=687">
+              UQ/math/legacy/envelope/envelope.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file11">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/hausdorff.py?rev=687">
+              UQ/math/legacy/envelope/hausdorff.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file12">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/sausage.py?rev=687">
+              UQ/math/legacy/envelope/sausage.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file13">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/test_ExampleDataset.py?rev=687">
+              UQ/math/legacy/test_ExampleDataset.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file14">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/test_StAlDataset.py?rev=687">
+              UQ/math/legacy/test_StAlDataset.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file15">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/test_graph_dist.py?rev=687">
+              UQ/math/legacy/test_graph_dist.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file16">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_1dSurr_diam.py?rev=687">
+              UQ/math/sausage/TEST_OUQ_1dSurr_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file17">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_StStSurr.py?rev=687">
+              UQ/math/sausage/TEST_OUQ_StStSurr.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file18">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/TEST_OUQ_surrogate_diam_collapse.py?rev=687">
+              collapse/TEST_OUQ_surrogate_diam_collapse.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file19">5 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/collapse_code.py?rev=687">
+              collapse/collapse_code.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file20">2 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.html" title="Show the changeset 687 restricted to branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py">branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 575">
+                    <a title="Show revision 575 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=575#L68">
+                      r575</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=687#L68">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>68</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>69</th><th>69</th><td class="l"><span>&nbsp; from mystic.math.measures import split_param</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>70</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import product_measure</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>70</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import product_measure</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>71</th><th>71</th><td class="l"><span>&nbsp; from mystic.math import almostEqual</span> </td>
+                  </tr><tr>
+                          <th>72</th><th>72</th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=575#L114">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=687#L114">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>114</th><th>114</th><td class="l"><span>&nbsp; &nbsp; # impose expectation on product measure</span> </td>
+                  </tr><tr>
+                          <th>115</th><th>115</th><td class="l"><span>&nbsp; &nbsp; ##################### begin function-specific #####################</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>116</th><th> </th><td class="l"><span>&nbsp; &nbsp; E = float(c.<del>get_</del>expect(model))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>116</th><td class="r"><span>&nbsp; &nbsp; E = float(c.<ins></ins>expect(model))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>117</th><th>117</th><td class="l"><span>&nbsp; &nbsp; if not (E &lt;= float(target[0] + error[0])) \</span> </td>
+                  </tr><tr>
+                          <th>118</th><th>118</th><td class="l"><span>&nbsp; &nbsp; or not (float(target[0] - error[0]) &lt;= E):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=575#L130">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=687#L130">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>130</th><th>130</th><td class="l"><span>&nbsp; &nbsp; #XXX: apply 'filters' to catch errors in constraints solver (necessary ?)</span> </td>
+                  </tr><tr>
+                          <th>131</th><th>131</th><td class="l"><span>&nbsp; &nbsp; ##################### begin function-specific #####################</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>132</th><th> </th><td class="l"><span>&nbsp; &nbsp; E = float(c.<del>get_</del>expect(model))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>132</th><td class="r"><span>&nbsp; &nbsp; E = float(c.<ins></ins>expect(model))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>133</th><th>133</th><td class="l"><span>&nbsp; &nbsp; if E &gt; (target[0] + error[0]) or E &lt; (target[0] - error[0]):</span> </td>
+                  </tr><tr>
+                          <th>134</th><th>134</th><td class="l"><span>&nbsp; &nbsp; &nbsp; if debug: print "skipping expect: %s" % E</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=575#L238">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=687#L238">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>238</th><th>238</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>239</th><th>239</th><td class="l"><span>&nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>240</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import product_measure</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>240</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import product_measure</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>241</th><th>241</th><td class="l"><span>&nbsp; c = product_measure()</span> </td>
+                  </tr><tr>
+                          <th>242</th><th>242</th><td class="l"><span>&nbsp; c.load(solved,npts)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=575#L246">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=687#L246">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>246</th><th>246</th><td class="l"><span>&nbsp;</span> </td>
+                  </tr><tr>
+                          <th>247</th><th>247</th><td class="l"><span>&nbsp; # XXX: 4D-expect</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>248</th><th> </th><td class="l"><span>&nbsp; print "expect: %s" % str( c.<del>get_</del>expect(model) )</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>248</th><td class="r"><span>&nbsp; print "expect: %s" % str( c.<ins></ins>expect(model) )</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>249</th><th>249</th><td class="l"><span>&nbsp; print "var (x): %s" % str( c[0].var )&nbsp; &nbsp;# var(h)</span> </td>
+                  </tr><tr>
+                          <th>250</th><th>250</th><td class="l"><span>&nbsp; print "mean(x): %s" % str( c[0].mean )&nbsp; # mean(h)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.html" title="Show the changeset 687 restricted to branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py">branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 575">
+                    <a title="Show revision 575 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=575#L68">
+                      r575</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=687#L68">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>68</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>69</th><th>69</th><td class="l"><span>&nbsp; from mystic.math.measures import split_param</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>70</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import product_measure</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>70</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import product_measure</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>71</th><th>71</th><td class="l"><span>&nbsp; from mystic.math import almostEqual</span> </td>
+                  </tr><tr>
+                          <th>72</th><th>72</th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=575#L94">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=687#L94">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>94</th><th>94</th><td class="l"><span>&nbsp; &nbsp; # impose expectation on product measure</span> </td>
+                  </tr><tr>
+                          <th>95</th><th>95</th><td class="l"><span>&nbsp; &nbsp; ##################### begin function-specific #####################</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>96</th><th> </th><td class="l"><span>&nbsp; &nbsp; E = float(c.<del>get_</del>expect(model))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>96</th><td class="r"><span>&nbsp; &nbsp; E = float(c.<ins></ins>expect(model))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>97</th><th>97</th><td class="l"><span>&nbsp; &nbsp; if not (E &lt;= float(target[0] + error[0])) \</span> </td>
+                  </tr><tr>
+                          <th>98</th><th>98</th><td class="l"><span>&nbsp; &nbsp; or not (float(target[0] - error[0]) &lt;= E):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=575#L106">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=687#L106">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>106</th><th>106</th><td class="l"><span>&nbsp; &nbsp; c = product_measure()</span> </td>
+                  </tr><tr>
+                          <th>107</th><th>107</th><td class="l"><span>&nbsp; &nbsp; c.load(rv, npts)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>108</th><th> </th><td class="l"><span>&nbsp; &nbsp; E = float(c.<del>get_</del>expect(model))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>108</th><td class="r"><span>&nbsp; &nbsp; E = float(c.<ins></ins>expect(model))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>109</th><th>109</th><td class="l"><span>&nbsp; &nbsp; if E &gt; (target[0] + error[0]) or E &lt; (target[0] - error[0]):</span> </td>
+                  </tr><tr>
+                          <th>110</th><th>110</th><td class="l"><span>&nbsp; &nbsp; &nbsp; if debug: print "skipping expect: %s" % E</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=575#L190">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=687#L190">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>190</th><th>190</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>191</th><th>191</th><td class="l"><span>&nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>192</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import product_measure</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>192</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import product_measure</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>193</th><th>193</th><td class="l"><span>&nbsp; c = product_measure()</span> </td>
+                  </tr><tr>
+                          <th>194</th><th>194</th><td class="l"><span>&nbsp; c.load(solved,npts)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=575#L197">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=687#L197">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>197</th><th>197</th><td class="l"><span>&nbsp; print "solved: [wz,z]\n%s" % array(zip(c[2].weights,c[2].coords))</span> </td>
+                  </tr><tr>
+                          <th>198</th><th>198</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>199</th><th> </th><td class="l"><span>&nbsp; print "expect: %s" % str( c.<del>get_</del>expect(model) )</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>199</th><td class="r"><span>&nbsp; print "expect: %s" % str( c.<ins></ins>expect(model) )</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>200</th><th>200</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>201</th><th>201</th><td class="l"><span># EOF</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="branches/UQ/math/legacy/MINMAX_StAlData.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/MINMAX_StAlData.py">branches/UQ/math/legacy/MINMAX_StAlData.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 585">
+                    <a title="Show revision 585 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MINMAX_StAlData.py?rev=585#L67">
+                      r585</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MINMAX_StAlData.py?rev=687#L67">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>67</th><th>67</th><td class="l"><span>def maximize(params,npts,bounds):</span> </td>
+                  </tr><tr>
+                          <th>68</th><th>68</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>69</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>69</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>70</th><th>70</th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                  </tr><tr>
+                          <th>71</th><th>71</th><td class="l"><span>&nbsp; target,error = params</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MINMAX_StAlData.py?rev=585#L104">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MINMAX_StAlData.py?rev=687#L104">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>104</th><th>104</th><td class="l"><span>&nbsp; &nbsp; ##################### begin function-specific #####################</span> </td>
+                  </tr><tr>
+                          <th>105</th><th>105</th><td class="l"><span>&nbsp; &nbsp; # impose norm on the weights of the discrete measures</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>106</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.math.di<del>rac_measur</del>e import norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>106</th><td class="r"><span>&nbsp; &nbsp; from mystic.math.di<ins>scret</ins>e import norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>107</th><th>107</th><td class="l"><span>&nbsp; &nbsp; constrain = factory(npts)</span> </td>
+                  </tr><tr>
+                          <th>108</th><th>108</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MINMAX_StAlData.py?rev=585#L167">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MINMAX_StAlData.py?rev=687#L167">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>167</th><th>167</th><td class="l"><span>&nbsp; nz = 1&nbsp; #NOTE: SET THE NUMBER OF 'v' POINTS HERE!</span> </td>
+                  </tr><tr>
+                          <th>168</th><th>168</th><td class="l"><span>&nbsp; npts = (nx,ny,nz)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>169</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import _npts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>169</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import _npts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>170</th><th>170</th><td class="l"><span>&nbsp; _n = _npts(npts)</span> </td>
+                  </tr><tr>
+                          <th>171</th><th>171</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MINMAX_StAlData.py?rev=585#L229">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MINMAX_StAlData.py?rev=687#L229">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>229</th><th>229</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>230</th><th>230</th><td class="l"><span>&nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>231</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>231</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>232</th><th>232</th><td class="l"><span>&nbsp; c = scenario()</span> </td>
+                  </tr><tr>
+                          <th>233</th><th>233</th><td class="l"><span>&nbsp; c.load(solved,npts)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="branches/UQ/math/legacy/MM_OUQ_StAlData.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/MM_OUQ_StAlData.py">branches/UQ/math/legacy/MM_OUQ_StAlData.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=675#L75">
+                      r675</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=687#L75">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>75</th><th>75</th><td class="l"><span>def maximize(params,npts,bounds):</span> </td>
+                  </tr><tr>
+                          <th>76</th><th>76</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>77</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>77</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>78</th><th>78</th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                  </tr><tr>
+                          <th>79</th><th>79</th><td class="l"><span>&nbsp; target,error = params</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=675#L112">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=687#L112">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>112</th><th>112</th><td class="l"><span>&nbsp; &nbsp; ##################### begin function-specific #####################</span> </td>
+                  </tr><tr>
+                          <th>113</th><th>113</th><td class="l"><span>&nbsp; &nbsp; # impose mean on the values of the product measure</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>114</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.math.di<del>rac_measur</del>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>114</th><td class="r"><span>&nbsp; &nbsp; from mystic.math.di<ins>scret</ins>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>115</th><th>115</th><td class="l"><span>&nbsp; &nbsp; constrain = factory((target[0],error[0]), npts)</span> </td>
+                  </tr><tr>
+                          <th>116</th><th>116</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=675#L196">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=687#L196">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>196</th><th>196</th><td class="l"><span>&nbsp; nz = 2&nbsp; #NOTE: SET THE NUMBER OF 'v' POINTS HERE!</span> </td>
+                  </tr><tr>
+                          <th>197</th><th>197</th><td class="l"><span>&nbsp; npts = (nx,ny,nz)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>198</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import _npts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>198</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import _npts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>199</th><th>199</th><td class="l"><span>&nbsp; _n = _npts(npts)</span> </td>
+                  </tr><tr>
+                          <th>200</th><th>200</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=675#L260">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=687#L260">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>260</th><th>260</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>261</th><th>261</th><td class="l"><span>&nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>262</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>262</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>263</th><th>263</th><td class="l"><span>&nbsp; c = scenario()</span> </td>
+                  </tr><tr>
+                          <th>264</th><th>264</th><td class="l"><span>&nbsp; c.load(solved,npts)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="branches/UQ/math/legacy/TEST_OUQ_1dData.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/TEST_OUQ_1dData.py">branches/UQ/math/legacy/TEST_OUQ_1dData.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 585">
+                    <a title="Show revision 585 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dData.py?rev=585#L71">
+                      r585</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dData.py?rev=687#L71">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>71</th><th>71</th><td class="l"><span>def maximize(params,npts,bounds):</span> </td>
+                  </tr><tr>
+                          <th>72</th><th>72</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>73</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>73</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>74</th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                  </tr><tr>
+                          <th>75</th><th>75</th><td class="l"><span>&nbsp; target,error = params</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dData.py?rev=585#L108">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dData.py?rev=687#L108">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>108</th><th>108</th><td class="l"><span>&nbsp; &nbsp; ##################### begin function-specific #####################</span> </td>
+                  </tr><tr>
+                          <th>109</th><th>109</th><td class="l"><span>&nbsp; &nbsp; # impose mean on the values of the product measure</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>110</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.math.di<del>rac_measur</del>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>110</th><td class="r"><span>&nbsp; &nbsp; from mystic.math.di<ins>scret</ins>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>111</th><th>111</th><td class="l"><span>&nbsp; &nbsp; constrain = factory((target[0],error[0]), npts)</span> </td>
+                  </tr><tr>
+                          <th>112</th><th>112</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dData.py?rev=585#L192">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dData.py?rev=687#L192">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>192</th><th>192</th><td class="l"><span>&nbsp; nz = 1&nbsp; #NOTE: SET THE NUMBER OF 'v' POINTS HERE!</span> </td>
+                  </tr><tr>
+                          <th>193</th><th>193</th><td class="l"><span>&nbsp; npts = (nx,ny,nz)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>194</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import _npts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>194</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import _npts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>195</th><th>195</th><td class="l"><span>&nbsp; _n = _npts(npts)</span> </td>
+                  </tr><tr>
+                          <th>196</th><th>196</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dData.py?rev=585#L256">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dData.py?rev=687#L256">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>256</th><th>256</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>257</th><th>257</th><td class="l"><span>&nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>258</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>258</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>259</th><th>259</th><td class="l"><span>&nbsp; c = scenario()</span> </td>
+                  </tr><tr>
+                          <th>260</th><th>260</th><td class="l"><span>&nbsp; c.load(solved,npts)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py">branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 588">
+                    <a title="Show revision 588 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py?rev=588#L73">
+                      r588</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py?rev=687#L73">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>73</th><th>73</th><td class="l"><span>def maximize(params,npts,bounds,printmon=None,**kwds):</span> </td>
+                  </tr><tr>
+                          <th>74</th><th>74</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>75</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>76</th><th>76</th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                  </tr><tr>
+                          <th>77</th><th>77</th><td class="l"><span>&nbsp; target,error = params</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py?rev=588#L110">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py?rev=687#L110">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>110</th><th>110</th><td class="l"><span>&nbsp; &nbsp; ##################### begin function-specific #####################</span> </td>
+                  </tr><tr>
+                          <th>111</th><th>111</th><td class="l"><span>&nbsp; &nbsp; # impose mean on the values of the product measure</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>112</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.math.di<del>rac_measur</del>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>112</th><td class="r"><span>&nbsp; &nbsp; from mystic.math.di<ins>scret</ins>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>113</th><th>113</th><td class="l"><span>&nbsp; &nbsp; constrain = factory((target[0],error[0]), npts)</span> </td>
+                  </tr><tr>
+                          <th>114</th><th>114</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py?rev=588#L203">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py?rev=687#L203">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>203</th><th>203</th><td class="l"><span>&nbsp; nz = 1&nbsp; #NOTE: SET THE NUMBER OF 'v' POINTS HERE!</span> </td>
+                  </tr><tr>
+                          <th>204</th><th>204</th><td class="l"><span>&nbsp; npts = (nx,ny,nz)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>205</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import _npts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>205</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import _npts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>206</th><th>206</th><td class="l"><span>&nbsp; _n = _npts(npts)</span> </td>
+                  </tr><tr>
+                          <th>207</th><th>207</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py?rev=588#L271">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py?rev=687#L271">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>271</th><th>271</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>272</th><th>272</th><td class="l"><span>&nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>273</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>273</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>274</th><th>274</th><td class="l"><span>&nbsp; c = scenario()</span> </td>
+                  </tr><tr>
+                          <th>275</th><th>275</th><td class="l"><span>&nbsp; c.load(solved,npts)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py?rev=588#L294">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_CxCy.py?rev=687#L294">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>294</th><th>294</th><td class="l"><span>&nbsp; try: _Cx = max(Cx)</span> </td>
+                  </tr><tr>
+                          <th>295</th><th>295</th><td class="l"><span>&nbsp; except TypeError: _Cx = Cx</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>296</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import graphical_distance</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>296</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import graphical_distance</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>297</th><th>297</th><td class="l"><span>&nbsp; Ry = graphical_distance(model, c, ytol=Cy, xtol=Cx, cutoff=0.0,</span> </td>
+                  </tr><tr>
+                          <th>298</th><th>298</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; imax=0, hausdorff=hausdorff)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py">branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 586">
+                    <a title="Show revision 586 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py?rev=586#L73">
+                      r586</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py?rev=687#L73">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>73</th><th>73</th><td class="l"><span>def maximize(params,npts,bounds,printmon=None,**kwds):</span> </td>
+                  </tr><tr>
+                          <th>74</th><th>74</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>75</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>76</th><th>76</th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                  </tr><tr>
+                          <th>77</th><th>77</th><td class="l"><span>&nbsp; target,error = params</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py?rev=586#L110">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py?rev=687#L110">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>110</th><th>110</th><td class="l"><span>&nbsp; &nbsp; ##################### begin function-specific #####################</span> </td>
+                  </tr><tr>
+                          <th>111</th><th>111</th><td class="l"><span>&nbsp; &nbsp; # impose mean on the values of the product measure</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>112</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.math.di<del>rac_measur</del>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>112</th><td class="r"><span>&nbsp; &nbsp; from mystic.math.di<ins>scret</ins>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>113</th><th>113</th><td class="l"><span>&nbsp; &nbsp; constrain = factory((target[0],error[0]), npts)</span> </td>
+                  </tr><tr>
+                          <th>114</th><th>114</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py?rev=586#L202">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py?rev=687#L202">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>202</th><th>202</th><td class="l"><span>&nbsp; nz = 1&nbsp; #NOTE: SET THE NUMBER OF 'v' POINTS HERE!</span> </td>
+                  </tr><tr>
+                          <th>203</th><th>203</th><td class="l"><span>&nbsp; npts = (nx,ny,nz)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>204</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import _npts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>204</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import _npts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>205</th><th>205</th><td class="l"><span>&nbsp; _n = _npts(npts)</span> </td>
+                  </tr><tr>
+                          <th>206</th><th>206</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py?rev=586#L270">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py?rev=687#L270">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>270</th><th>270</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>271</th><th>271</th><td class="l"><span>&nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>272</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>272</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>273</th><th>273</th><td class="l"><span>&nbsp; c = scenario()</span> </td>
+                  </tr><tr>
+                          <th>274</th><th>274</th><td class="l"><span>&nbsp; c.load(solved,npts)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py?rev=586#L292">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_1dSurr_Cy.py?rev=687#L292">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>292</th><th>292</th><td class="l"><span>&nbsp; try: _Cx = max(Cx)</span> </td>
+                  </tr><tr>
+                          <th>293</th><th>293</th><td class="l"><span>&nbsp; except TypeError: _Cx = Cx</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>294</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import graphical_distance</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>294</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import graphical_distance</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>295</th><th>295</th><td class="l"><span>&nbsp; Ry = graphical_distance(model, c, ytol=Cy, xtol=Cx, cutoff=0.0, imax=0)</span> </td>
+                  </tr><tr>
+                          <th>296</th><th>296</th><td class="l"><span>&nbsp; printmon.info("vertical_distance: %s &lt;= %s" % (Ry, Cy + _Cx))</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="branches/UQ/math/legacy/TEST_OUQ_StAlData.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/TEST_OUQ_StAlData.py">branches/UQ/math/legacy/TEST_OUQ_StAlData.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 585">
+                    <a title="Show revision 585 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StAlData.py?rev=585#L71">
+                      r585</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StAlData.py?rev=687#L71">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>71</th><th>71</th><td class="l"><span>def maximize(params,npts,bounds):</span> </td>
+                  </tr><tr>
+                          <th>72</th><th>72</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>73</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>73</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>74</th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                  </tr><tr>
+                          <th>75</th><th>75</th><td class="l"><span>&nbsp; target,error = params</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StAlData.py?rev=585#L108">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StAlData.py?rev=687#L108">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>108</th><th>108</th><td class="l"><span>&nbsp; &nbsp; ##################### begin function-specific #####################</span> </td>
+                  </tr><tr>
+                          <th>109</th><th>109</th><td class="l"><span>&nbsp; &nbsp; # impose mean on the values of the product measure</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>110</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.math.di<del>rac_measur</del>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>110</th><td class="r"><span>&nbsp; &nbsp; from mystic.math.di<ins>scret</ins>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>111</th><th>111</th><td class="l"><span>&nbsp; &nbsp; constrain = factory((target[0],error[0]), npts)</span> </td>
+                  </tr><tr>
+                          <th>112</th><th>112</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StAlData.py?rev=585#L193">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StAlData.py?rev=687#L193">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>193</th><th>193</th><td class="l"><span>&nbsp; nz = 2&nbsp; #NOTE: SET THE NUMBER OF 'v' POINTS HERE!</span> </td>
+                  </tr><tr>
+                          <th>194</th><th>194</th><td class="l"><span>&nbsp; npts = (nx,ny,nz)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>195</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import _npts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>195</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import _npts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>196</th><th>196</th><td class="l"><span>&nbsp; _n = _npts(npts)</span> </td>
+                  </tr><tr>
+                          <th>197</th><th>197</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StAlData.py?rev=585#L257">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StAlData.py?rev=687#L257">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>257</th><th>257</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>258</th><th>258</th><td class="l"><span>&nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>259</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>259</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>260</th><th>260</th><td class="l"><span>&nbsp; c = scenario()</span> </td>
+                  </tr><tr>
+                          <th>261</th><th>261</th><td class="l"><span>&nbsp; c.load(solved,npts)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file8">
+          <a href="branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py">branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 585">
+                    <a title="Show revision 585 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py?rev=585#L70">
+                      r585</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py?rev=687#L70">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>70</th><th>70</th><td class="l"><span>def maximize(params,npts,bounds):</span> </td>
+                  </tr><tr>
+                          <th>71</th><th>71</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>72</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>72</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>73</th><th>73</th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                  </tr><tr>
+                          <th>74</th><th>74</th><td class="l"><span>&nbsp; target,error = params</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py?rev=585#L107">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py?rev=687#L107">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>107</th><th>107</th><td class="l"><span>&nbsp; &nbsp; ##################### begin function-specific #####################</span> </td>
+                  </tr><tr>
+                          <th>108</th><th>108</th><td class="l"><span>&nbsp; &nbsp; # impose mean on the values of the product measure</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>109</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.math.di<del>rac_measur</del>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>109</th><td class="r"><span>&nbsp; &nbsp; from mystic.math.di<ins>scret</ins>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>110</th><th>110</th><td class="l"><span>&nbsp; &nbsp; constrain = factory((target[0],error[0]), npts)</span> </td>
+                  </tr><tr>
+                          <th>111</th><th>111</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py?rev=585#L194">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py?rev=687#L194">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>194</th><th>194</th><td class="l"><span>&nbsp; nz = 1&nbsp; #NOTE: SET THE NUMBER OF 'v' POINTS HERE!</span> </td>
+                  </tr><tr>
+                          <th>195</th><th>195</th><td class="l"><span>&nbsp; npts = (nx,ny,nz)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>196</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import _npts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>196</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import _npts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>197</th><th>197</th><td class="l"><span>&nbsp; _n = _npts(npts)</span> </td>
+                  </tr><tr>
+                          <th>198</th><th>198</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py?rev=585#L257">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py?rev=687#L257">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>257</th><th>257</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>258</th><th>258</th><td class="l"><span>&nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>259</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>259</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>260</th><th>260</th><td class="l"><span>&nbsp; c = scenario()</span> </td>
+                  </tr><tr>
+                          <th>261</th><th>261</th><td class="l"><span>&nbsp; c.load(solved,npts)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py?rev=585#L273">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/TEST_OUQ_StStSurr_Cy.py?rev=687#L273">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>273</th><th>273</th><td class="l"><span>&nbsp; try: _Cx = max(Cx)</span> </td>
+                  </tr><tr>
+                          <th>274</th><th>274</th><td class="l"><span>&nbsp; except TypeError: _Cx = Cx</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>275</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import graphical_distance</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>275</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import graphical_distance</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>276</th><th>276</th><td class="l"><span>&nbsp; Ry = graphical_distance(model, c, ytol=Cy, xtol=Cx, cutoff=0.0, imax=0)</span> </td>
+                  </tr><tr>
+                          <th>277</th><th>277</th><td class="l"><span>&nbsp; print "vertical_distance: %s &lt;= %s" % (Ry, Cy + _Cx)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file9">
+          <a href="branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py">branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=675#L98">
+                      r675</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=687#L98">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>98</th><th>98</th><td class="l"><span>def maximize(params,npts,bounds,initial=None,job='',printmon=None):</span> </td>
+                  </tr><tr>
+                          <th>99</th><th>99</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>100</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>100</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>101</th><th>101</th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                  </tr><tr>
+                          <th>102</th><th>102</th><td class="l"><span>&nbsp; target,error = params</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=675#L140">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=687#L140">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>140</th><th>140</th><td class="l"><span>&nbsp; &nbsp; ##################### begin function-specific #####################</span> </td>
+                  </tr><tr>
+                          <th>141</th><th>141</th><td class="l"><span>&nbsp; &nbsp; # impose mean on the values of the product measure</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>142</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.math.di<del>rac_measur</del>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>142</th><td class="r"><span>&nbsp; &nbsp; from mystic.math.di<ins>scret</ins>e import mean_y_norm_wts_constraintsFactory as factory</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>143</th><th>143</th><td class="l"><span>&nbsp; &nbsp; constrain = factory((target[0],error[0]), npts)</span> </td>
+                  </tr><tr>
+                          <th>144</th><th>144</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=675#L250">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=687#L250">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>250</th><th>250</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>251</th><th>251</th><td class="l"><span>&nbsp; npts = (nx,ny,nz)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>252</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import _npts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>252</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import _npts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>253</th><th>253</th><td class="l"><span>&nbsp; _n = _npts(npts)</span> </td>
+                  </tr><tr>
+                          <th>254</th><th>254</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=675#L316">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=687#L316">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>316</th><th>316</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>317</th><th>317</th><td class="l"><span>&nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>318</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>318</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>319</th><th>319</th><td class="l"><span>&nbsp; c = scenario()</span> </td>
+                  </tr><tr>
+                          <th>320</th><th>320</th><td class="l"><span>&nbsp; c.load(solved,npts)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=675#L333">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=687#L333">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>333</th><th>333</th><td class="l"><span># try: _Cx = max(Cx)</span> </td>
+                  </tr><tr>
+                          <th>334</th><th>334</th><td class="l"><span># except TypeError: _Cx = Cx</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>335</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import graphical_distance</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>335</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import graphical_distance</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>336</th><th>336</th><td class="l"><span>&nbsp; Ry = graphical_distance(model, c, ytol=Cy, xtol=Cx, cutoff=0.0, \</span> </td>
+                  </tr><tr>
+                          <th>337</th><th>337</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; imax=0, ipop=cde, hausdorff=hausdorff)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file10">
+          <a href="branches/UQ/math/legacy/envelope/conf_hausd.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/envelope/conf_hausd.py">branches/UQ/math/legacy/envelope/conf_hausd.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 592">
+                    <a title="Show revision 592 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/conf_hausd.py?rev=592#L36">
+                      r592</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/conf_hausd.py?rev=687#L36">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>36</th><th>36</th><td class="l"><span>&nbsp; &nbsp; &nbsp;</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>37</th><td class="l"><span># COMPUTING HAUSDORFF DISTANCES</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>38</th><th> </th><td class="l"><span>from mystic.math.<del>paramtrans</del> import graphical_distance</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>38</th><td class="r"><span>from mystic.math.<ins>distance</ins> import graphical_distance</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>39</th><td class="l"><span>d_hausdorff = graphical_distance(model, d, ytol=0, xtol=(2.5,2.5, 0.0), cutoff=0.0, imax=100, hausdorff=(5.0, 5.0, 0.0, 25.0))</span> </td>
+                  </tr><tr>
+                          <th>40</th><th>40</th><td class="l"><span>if debug:</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file11">
+          <a href="branches/UQ/math/legacy/envelope/envelope.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/envelope/envelope.py">branches/UQ/math/legacy/envelope/envelope.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/envelope.py?rev=675#L15">
+                      r675</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/envelope.py?rev=687#L15">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>15</th><td class="l"><span>debug = False</span> </td>
+                  </tr><tr>
+                          <th>16</th><th>16</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>17</th><th> </th><td class="l"><span>from mystic.math.<del>paramtrans</del> import infeasibility, _get_xy</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>17</th><td class="r"><span>from mystic.math.<ins>distance</ins> import infeasibility, _get_xy</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>18</th><th>18</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>19</th><th>19</th><td class="l"><span>def graphical_distance(model, points, **kwds):</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file12">
+          <a href="branches/UQ/math/legacy/envelope/hausdorff.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/envelope/hausdorff.py">branches/UQ/math/legacy/envelope/hausdorff.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 621">
+                    <a title="Show revision 621 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/hausdorff.py?rev=621#L19">
+                      r621</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/hausdorff.py?rev=687#L19">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>19</th><th>19</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>20</th><th>20</th><td class="l"><span># build a scenario</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>21</th><th> </th><td class="l"><span>from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>21</th><td class="r"><span>from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>22</th><td class="l"><span>c = scenario()</span> </td>
+                  </tr><tr>
+                          <th>23</th><th>23</th><td class="l"><span>c.load(solved, npts)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/hausdorff.py?rev=621#L53">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/hausdorff.py?rev=687#L53">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>53</th><td class="l"><span>#"""</span> </td>
+                  </tr><tr>
+                          <th>54</th><th>54</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>55</th><th> </th><td class="l"><span>#from mystic.math.<del>paramtrans</del> import graphical_distance</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>55</th><td class="r"><span>#from mystic.math.<ins>distance</ins> import graphical_distance</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>56</th><td class="l"><span>from envelope import graphical_distance</span> </td>
+                  </tr><tr>
+                          <th>57</th><th>57</th><td class="l"><span>from numpy import set_printoptions</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file13">
+          <a href="branches/UQ/math/legacy/envelope/sausage.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/envelope/sausage.py">branches/UQ/math/legacy/envelope/sausage.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/sausage.py?rev=601#L18">
+                      r601</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/sausage.py?rev=687#L18">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>18</th><th>18</th><td class="l"><span>&nbsp; &nbsp; exec("%s = %s" % (str(k),repr(v))) #XXX: HACK</span> </td>
+                  </tr><tr>
+                          <th>19</th><th>19</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>20</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>20</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>21</th><th>21</th><td class="l"><span>&nbsp; c = scenario()</span> </td>
+                  </tr><tr>
+                          <th>22</th><th>22</th><td class="l"><span>&nbsp; c.load(params, pts)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/sausage.py?rev=601#L28">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/sausage.py?rev=687#L28">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>28</th><td class="l"><span>&nbsp; yo = asarray(c.values)</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>29</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import impose_valid</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>30</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import impose_valid</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>31</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>32</th><th>32</th><td class="l"><span>&nbsp; # fixed x values as bounds</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file14">
+          <a href="branches/UQ/math/legacy/test_ExampleDataset.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/test_ExampleDataset.py">branches/UQ/math/legacy/test_ExampleDataset.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 569">
+                    <a title="Show revision 569 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/test_ExampleDataset.py?rev=569#L31">
+                      r569</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/test_ExampleDataset.py?rev=687#L31">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>31</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>32</th><th>32</th><td class="l"><span>&nbsp; # Check shortness</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import lipschitz_distance, graphical_distance</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>33</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import lipschitz_distance, graphical_distance</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>34</th><td class="l"><span>&nbsp; print("\nshort: %s" % ex1d_data.short())</span> </td>
+                  </tr><tr>
+                          <th>35</th><th>35</th><td class="l"><span>&nbsp; L = ex1d_data.lipschitz;</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file15">
+          <a href="branches/UQ/math/legacy/test_StAlDataset.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/test_StAlDataset.py">branches/UQ/math/legacy/test_StAlDataset.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 569">
+                    <a title="Show revision 569 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/test_StAlDataset.py?rev=569#L21">
+                      r569</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/test_StAlDataset.py?rev=687#L21">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>21</th><th>21</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>22</th><th>22</th><td class="l"><span>&nbsp; # Check shortness</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>23</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import lipschitz_distance, graphical_distance</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>23</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import lipschitz_distance, graphical_distance</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>24</th><td class="l"><span>&nbsp; print("\nshort: %s" % st_al_data.short())</span> </td>
+                  </tr><tr>
+                          <th>25</th><th>25</th><td class="l"><span>&nbsp; L = st_al_data.lipschitz;</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file16">
+          <a href="branches/UQ/math/legacy/test_graph_dist.html" title="Show the changeset 687 restricted to branches/UQ/math/legacy/test_graph_dist.py">branches/UQ/math/legacy/test_graph_dist.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 588">
+                    <a title="Show revision 588 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/test_graph_dist.py?rev=588#L33">
+                      r588</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/test_graph_dist.py?rev=687#L33">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>33</th><th>33</th><td class="l"><span>for i in d: print i</span> </td>
+                  </tr><tr>
+                          <th>34</th><th>34</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>35</th><th> </th><td class="l"><span>from mystic.math.<del>paramtrans</del> import graphical_distance</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>35</th><td class="r"><span>from mystic.math.<ins>distance</ins> import graphical_distance</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>36</th><th>36</th><td class="l"><span>from numpy import set_printoptions</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>37</th><td class="l"><span>set_printoptions(suppress=True)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file17">
+          <a href="branches/UQ/math/sausage/TEST_OUQ_1dSurr_diam.html" title="Show the changeset 687 restricted to branches/UQ/math/sausage/TEST_OUQ_1dSurr_diam.py">branches/UQ/math/sausage/TEST_OUQ_1dSurr_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 588">
+                    <a title="Show revision 588 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_1dSurr_diam.py?rev=588#L72">
+                      r588</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_1dSurr_diam.py?rev=687#L72">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>72</th><th>72</th><td class="l"><span>def maximize(params,npts,bounds):</span> </td>
+                  </tr><tr>
+                          <th>73</th><th>73</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>74</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>75</th><th>75</th><td class="l"><span>&nbsp; from mystic.math import almostEqual</span> </td>
+                  </tr><tr>
+                          <th>76</th><th>76</th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_1dSurr_diam.py?rev=588#L189">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_1dSurr_diam.py?rev=687#L189">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>189</th><th>189</th><td class="l"><span>&nbsp; nz = 1&nbsp; #NOTE: SET THE NUMBER OF 'v' POINTS HERE!</span> </td>
+                  </tr><tr>
+                          <th>190</th><th>190</th><td class="l"><span>&nbsp; npts = (nx,ny,nz)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>191</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import _npts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>191</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import _npts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>192</th><th>192</th><td class="l"><span>&nbsp; _n = _npts(npts)</span> </td>
+                  </tr><tr>
+                          <th>193</th><th>193</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_1dSurr_diam.py?rev=588#L253">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_1dSurr_diam.py?rev=687#L253">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>253</th><th>253</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>254</th><th>254</th><td class="l"><span>&nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>255</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>255</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>256</th><th>256</th><td class="l"><span>&nbsp; c = scenario()</span> </td>
+                  </tr><tr>
+                          <th>257</th><th>257</th><td class="l"><span>&nbsp; c.load(solved,npts)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file18">
+          <a href="branches/UQ/math/sausage/TEST_OUQ_StStSurr.html" title="Show the changeset 687 restricted to branches/UQ/math/sausage/TEST_OUQ_StStSurr.py">branches/UQ/math/sausage/TEST_OUQ_StStSurr.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 588">
+                    <a title="Show revision 588 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_StStSurr.py?rev=588#L71">
+                      r588</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_StStSurr.py?rev=687#L71">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>71</th><th>71</th><td class="l"><span>def maximize(params,npts,bounds):</span> </td>
+                  </tr><tr>
+                          <th>72</th><th>72</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>73</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>73</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>74</th><td class="l"><span>&nbsp; from mystic.math import almostEqual</span> </td>
+                  </tr><tr>
+                          <th>75</th><th>75</th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_StStSurr.py?rev=588#L201">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_StStSurr.py?rev=687#L201">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>201</th><th>201</th><td class="l"><span>&nbsp; nz = 1&nbsp; #NOTE: SET THE NUMBER OF 'v' POINTS HERE!</span> </td>
+                  </tr><tr>
+                          <th>202</th><th>202</th><td class="l"><span>&nbsp; npts = (nx,ny,nz)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>203</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import _npts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>203</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import _npts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>204</th><th>204</th><td class="l"><span>&nbsp; _n = _npts(npts)</span> </td>
+                  </tr><tr>
+                          <th>205</th><th>205</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_StStSurr.py?rev=588#L265">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/sausage/TEST_OUQ_StStSurr.py?rev=687#L265">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>265</th><th>265</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>266</th><th>266</th><td class="l"><span>&nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>267</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>267</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>268</th><th>268</th><td class="l"><span>&nbsp; c = scenario()</span> </td>
+                  </tr><tr>
+                          <th>269</th><th>269</th><td class="l"><span>&nbsp; c.load(solved,npts)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file19">
+          <a href="branches/collapse/TEST_OUQ_surrogate_diam_collapse.html" title="Show the changeset 687 restricted to branches/collapse/TEST_OUQ_surrogate_diam_collapse.py">branches/collapse/TEST_OUQ_surrogate_diam_collapse.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 576">
+                    <a title="Show revision 576 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/TEST_OUQ_surrogate_diam_collapse.py?rev=576#L58">
+                      r576</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/TEST_OUQ_surrogate_diam_collapse.py?rev=687#L58">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>58</th><th>58</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>59</th><th>59</th><td class="l"><span>&nbsp; from mystic.math.measures import split_param</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>60</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import product_measure</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>60</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import product_measure</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>61</th><td class="l"><span>&nbsp; from mystic.math import almostEqual</span> </td>
+                  </tr><tr>
+                          <th>62</th><th>62</th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/TEST_OUQ_surrogate_diam_collapse.py?rev=576#L84">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/TEST_OUQ_surrogate_diam_collapse.py?rev=687#L84">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>84</th><th>84</th><td class="l"><span>&nbsp; &nbsp; # impose expectation on product measure</span> </td>
+                  </tr><tr>
+                          <th>85</th><th>85</th><td class="l"><span>&nbsp; &nbsp; ##################### begin function-specific #####################</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>86</th><th> </th><td class="l"><span>&nbsp; &nbsp; E = float(c.<del>get_</del>expect(model))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>86</th><td class="r"><span>&nbsp; &nbsp; E = float(c.<ins></ins>expect(model))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>87</th><th>87</th><td class="l"><span>&nbsp; &nbsp; if not (E &lt;= float(target[0] + error[0])) \</span> </td>
+                  </tr><tr>
+                          <th>88</th><th>88</th><td class="l"><span>&nbsp; &nbsp; or not (float(target[0] - error[0]) &lt;= E):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/TEST_OUQ_surrogate_diam_collapse.py?rev=576#L96">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/TEST_OUQ_surrogate_diam_collapse.py?rev=687#L96">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>96</th><th>96</th><td class="l"><span>&nbsp; &nbsp; c = product_measure()</span> </td>
+                  </tr><tr>
+                          <th>97</th><th>97</th><td class="l"><span>&nbsp; &nbsp; c.load(rv, npts)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>98</th><th> </th><td class="l"><span>&nbsp; &nbsp; E = float(c.<del>get_</del>expect(model))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>98</th><td class="r"><span>&nbsp; &nbsp; E = float(c.<ins></ins>expect(model))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>99</th><th>99</th><td class="l"><span>&nbsp; &nbsp; if E &gt; (target[0] + error[0]) or E &lt; (target[0] - error[0]):</span> </td>
+                  </tr><tr>
+                          <th>100</th><th>100</th><td class="l"><span>&nbsp; &nbsp; &nbsp; if debug: print "skipping expect: %s" % E</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/TEST_OUQ_surrogate_diam_collapse.py?rev=576#L188">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/TEST_OUQ_surrogate_diam_collapse.py?rev=687#L188">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>188</th><th>188</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>189</th><th>189</th><td class="l"><span>&nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>190</th><th> </th><td class="l"><span>&nbsp; from mystic.math.di<del>rac_measur</del>e import product_measure</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>190</th><td class="r"><span>&nbsp; from mystic.math.di<ins>scret</ins>e import product_measure</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>191</th><th>191</th><td class="l"><span>&nbsp; c = product_measure()</span> </td>
+                  </tr><tr>
+                          <th>192</th><th>192</th><td class="l"><span>&nbsp; c.load(solved,npts)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/TEST_OUQ_surrogate_diam_collapse.py?rev=576#L195">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/TEST_OUQ_surrogate_diam_collapse.py?rev=687#L195">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>195</th><th>195</th><td class="l"><span>&nbsp; print "solved: [wz,z]\n%s" % array(zip(c[2].weights,c[2].coords))</span> </td>
+                  </tr><tr>
+                          <th>196</th><th>196</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>197</th><th> </th><td class="l"><span>&nbsp; print "expect: %s" % str( c.<del>get_</del>expect(model) )</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>197</th><td class="r"><span>&nbsp; print "expect: %s" % str( c.<ins></ins>expect(model) )</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>198</th><th>198</th><td class="l"><span>&nbsp; </span> </td>
+                  </tr><tr>
+                          <th>199</th><th>199</th><td class="l"><span>&nbsp; elapsed = (clock() - start)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file20">
+          <a href="branches/collapse/collapse_code.html" title="Show the changeset 687 restricted to branches/collapse/collapse_code.py">branches/collapse/collapse_code.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 576">
+                    <a title="Show revision 576 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/collapse_code.py?rev=576#L37">
+                      r576</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/collapse_code.py?rev=687#L37">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>37</th><th>37</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>38</th><th>38</th><td class="l"><span>def _set_weight_to_zero(rv, npts, axisW, indexW):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.math.di<del>rac_measur</del>e import product_measure</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>39</th><td class="r"><span>&nbsp; &nbsp; from mystic.math.di<ins>scret</ins>e import product_measure</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>40</th><th>40</th><td class="l"><span>&nbsp; &nbsp; c = product_measure()</span> </td>
+                  </tr><tr>
+                          <th>41</th><th>41</th><td class="l"><span>&nbsp; &nbsp; c.load(rv, npts)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/collapse_code.py?rev=576#L44">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/collapse_code.py?rev=687#L44">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>44</th><th>44</th><td class="l"><span>&nbsp; </span> </td>
+                  </tr><tr>
+                          <th>45</th><th>45</th><td class="l"><span>def _set_same_positions(rv, npts, axisP, index1, index2):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>46</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.math.di<del>rac_measur</del>e import product_measure</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>46</th><td class="r"><span>&nbsp; &nbsp; from mystic.math.di<ins>scret</ins>e import product_measure</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>47</th><th>47</th><td class="l"><span>&nbsp; &nbsp; c = product_measure()</span> </td>
+                  </tr><tr>
+                          <th>48</th><th>48</th><td class="l"><span>&nbsp; &nbsp; c.load(rv, npts)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/687/branches?format=diff&amp;new=687" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/687/branches?format=zip&amp;new=687" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/687/branches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:12:51 GMT -->
+</html>

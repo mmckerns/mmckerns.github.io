@@ -1,0 +1,604 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/129 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:37:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 129 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="128.html" title="Changeset 128" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/129?format=diff&amp;new=129" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/129?format=zip&amp;new=129" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="130.html" title="Changeset 130" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="128.html" title="Changeset 128">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="130.html" title="Changeset 130">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 129</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             03/27/09 14:32:08
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-27T14%3A32%3A08-07%3A00&amp;precision=second" title="2009-03-27T14:32:08-07:00 in Timeline">7 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+added releases branch;<br />
+added a bit more doc to example12;<br />
+modified setup.py to work with setuptools<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="add"></dt><dd>1 added</dd>
+              <dt class="mod"></dt><dd>2 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/example12.py?rev=129">
+              mystic/examples/example12.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/setup.py?rev=129">
+              mystic/setup.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">2 diffs</a>)
+            </li><li>
+          <div class="add"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/releases?rev=129">
+              releases
+            </a>
+          <span class="comment">(added)</span>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="129/mystic/examples/example12.html" title="Show the changeset 129 restricted to mystic/examples/example12.py">mystic/examples/example12.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 126">
+                    <a title="Show revision 126 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/example12.py?rev=126#L53">
+                      r126</a>
+                  </th>
+                  <th title="Revision 129">
+                    <a title="Show revision 129 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/example12.py?rev=129#L53">
+                      r129</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>53</th><td class="l"><span>&nbsp; &nbsp; return x,y</span> </td>
+                  </tr><tr>
+                          <th>54</th><th>54</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>55</th><td class="r"><ins># draw the plot</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>56</th><td class="r"><ins>def plot_frame(label=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>57</th><td class="r"><ins>&nbsp; &nbsp; pylab.close()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>58</th><td class="r"><ins>&nbsp; &nbsp; pylab.suptitle("fitting noisy 5th-order polynomial coefficients")</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>59</th><td class="r"><ins>&nbsp; &nbsp; pylab.xlabel("x")</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>60</th><td class="r"><ins>&nbsp; &nbsp; pylab.ylabel("f(x)")</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>61</th><td class="r"><ins>&nbsp; &nbsp; return</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>62</th><td class="r"><ins>&nbsp;</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>55</th><th>63</th><td class="l"><span># plot the polynomial</span> </td>
+                  </tr><tr>
+                          <th>56</th><th>64</th><td class="l"><span>def plot_data(evalpts,datapts,style='k.'):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/example12.py?rev=126#L62">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/example12.py?rev=129#L70">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>62</th><th>70</th><td class="l"><span>&nbsp; &nbsp; x,y = data(params)</span> </td>
+                  </tr><tr>
+                          <th>63</th><th>71</th><td class="l"><span>&nbsp; &nbsp; plot_data(x,y,style)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>72</th><td class="r"><ins>&nbsp; &nbsp; pylab.legend(["Data","Fitted"])</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>64</th><th>73</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>65</th><th>74</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/example12.py?rev=126#L77">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/example12.py?rev=129#L86">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>77</th><th>86</th><td class="l"><span>&nbsp; &nbsp; x,datapts = noisy_data(target)</span> </td>
+                  </tr><tr>
+                          <th>78</th><th>87</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>79</th><th> </th><td class="l"><span>&nbsp; &nbsp; # plot observed and target data</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>88</th><td class="r"><span>&nbsp; &nbsp; # plot observed data</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>89</th><td class="r"><span>&nbsp; &nbsp; plot_frame()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>80</th><th>90</th><td class="l"><span>&nbsp; &nbsp; plot_data(x,datapts)</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>81</th><th> </th><td class="l"><del>&nbsp; &nbsp; plot_solution(target)</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>82</th><th>91</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>83</th><th>92</th><td class="l"><span>&nbsp; &nbsp; # generate cost function</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/example12.py?rev=126#L92">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/example12.py?rev=129#L101">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>92</th><th>101</th><td class="l"><span>&nbsp;</span> </td>
+                  </tr><tr>
+                          <th>93</th><th>102</th><td class="l"><span>&nbsp; &nbsp; # plot solution versus target coefficients</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>94</th><th> </th><td class="l"><span>&nbsp; &nbsp; plot_solution(solution<del>,'r-'</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>103</th><td class="r"><span>&nbsp; &nbsp; plot_solution(solution<ins></ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>95</th><th>104</th><td class="l"><span>&nbsp; &nbsp; getch() </span> </td>
+                  </tr><tr>
+                          <th>96</th><th>105</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="129/mystic/setup.html" title="Show the changeset 129 restricted to mystic/setup.py">mystic/setup.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 125">
+                    <a title="Show revision 125 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/setup.py?rev=125#L1">
+                      r125</a>
+                  </th>
+                  <th title="Revision 129">
+                    <a title="Show revision 129 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/setup.py?rev=129#L1">
+                      r129</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                      </tr><tr>
+                        <th>4</th><th> </th><td class="l"><span>#</span> </td>
+                      </tr><tr>
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Patrick Hung &amp; Mike McKerns, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-2009&nbsp; All Rights Reserved</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span>#</span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>#</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>3</th><td class="r"><span># Michael McKerns</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>4</th><td class="r"><span># mmckerns@caltech.edu</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>5</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>11</th><th> </th><td class="l"><span>from distutils.core import setup</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>6</th><td class="r"><span># check if easy_install is available</span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span>try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>8</th><td class="r"><span>#&nbsp; &nbsp;import __force_distutils__ #XXX: uncomment to force use of distutills</span> </td>
+                      </tr><tr>
+                        <th> </th><th>9</th><td class="r"><span>&nbsp; &nbsp; from setuptools import setup</span> </td>
+                      </tr><tr>
+                        <th> </th><th>10</th><td class="r"><span>&nbsp; &nbsp; has_setuptools = True</span> </td>
+                      </tr><tr>
+                        <th> </th><th>11</th><td class="r"><span>except ImportError:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>12</th><td class="r"><span>&nbsp; &nbsp; from distutils.core import setup</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>13</th><td class="r"><span>&nbsp; &nbsp; has_setuptools = False</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>14</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>13</th><th> </th><td class="l"><span>setup(</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>&nbsp; &nbsp; name="mystic",</span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>&nbsp; &nbsp; version="0.1a1",</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>&nbsp; &nbsp; author="Mike McKerns, Patrick Hung"</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>&nbsp; &nbsp; maintainer="Mike McKerns",</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>&nbsp; &nbsp; maintainer_email="mmckerns@caltech.edu",</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; license="BSD",</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>&nbsp; &nbsp; platforms=["any"],</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp; &nbsp; description="Interactive Inversion Analysis Framework",</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>&nbsp; &nbsp; classifiers=(</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; "Intended Audience :: Developers",</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; "Programming Language :: Python",</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; "Development Status :: 2 - Pre-Alpha",</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; "Topic :: Physics Programming"),</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>15</th><td class="r"><span># build the 'setup' call</span> </td>
+                      </tr><tr>
+                        <th> </th><th>16</th><td class="r"><span>setup_code = """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>17</th><td class="r"><span>setup(name='mystic',</span> </td>
+                      </tr><tr>
+                        <th> </th><th>18</th><td class="r"><span>&nbsp; &nbsp; &nbsp; version='0.1a1',</span> </td>
+                      </tr><tr>
+                        <th> </th><th>19</th><td class="r"><span>&nbsp; &nbsp; &nbsp; description='a simple interactive inversion analysis framework',</span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span>&nbsp; &nbsp; &nbsp; author = 'Mike McKerns, Patrick Hung',</span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>&nbsp; &nbsp; &nbsp; maintainer = 'Mike McKerns',</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span>&nbsp; &nbsp; &nbsp; maintainer_email = 'mmckerns@caltech.edu',</span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span>&nbsp; &nbsp; &nbsp; license = 'BSD',</span> </td>
+                      </tr><tr>
+                        <th> </th><th>24</th><td class="r"><span>&nbsp; &nbsp; &nbsp; platforms = ['any'],</span> </td>
+                      </tr><tr>
+                        <th> </th><th>25</th><td class="r"><span>&nbsp; &nbsp; &nbsp; url = 'http://mmckerns.github.io/~mmckerns',</span> </td>
+                      </tr><tr>
+                        <th> </th><th>26</th><td class="r"><span>&nbsp; &nbsp; &nbsp; classifiers = ('Intended Audience :: Developers',</span> </td>
+                      </tr><tr>
+                        <th> </th><th>27</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'Programming Language :: Python',</span> </td>
+                      </tr><tr>
+                        <th> </th><th>28</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'Development Status :: 2 - Pre-Alpha',</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>29</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'Topic :: Physics Programming'),</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>27</th><th>30</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; &nbsp; packages=['mystic','mystic.models'],</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; package_dir={'mystic':'mystic','mystic.models':'models'},</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>31</th><td class="r"><span>&nbsp; &nbsp; &nbsp; packages = ['mystic','mystic.models'],</span> </td>
+                      </tr><tr>
+                        <th> </th><th>32</th><td class="r"><span>&nbsp; &nbsp; &nbsp; package_dir = {'mystic':'mystic','mystic.models':'models'},</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>33</th><td class="r"><span>"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>30</th><th>34</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; &nbsp; scripts=[])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>35</th><td class="r"><span># add dependencies</span> </td>
+                      </tr><tr>
+                        <th> </th><th>36</th><td class="r"><span>numpy_version = '&gt;=1.0'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>37</th><td class="r"><span>matplotlib_version = '&gt;=0.91'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>38</th><td class="r"><span>if has_setuptools:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>39</th><td class="r"><span>&nbsp; &nbsp; setup_code += """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>40</th><td class="r"><span>&nbsp; &nbsp; &nbsp; install_requires = ('numpy%s'),</span> </td>
+                      </tr><tr>
+                        <th> </th><th>41</th><td class="r"><span>""" % numpy_version</span> </td>
+                      </tr><tr>
+                        <th> </th><th>42</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>43</th><td class="r"><span># close 'setup' call</span> </td>
+                      </tr><tr>
+                        <th> </th><th>44</th><td class="r"><span>setup_code += """&nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>45</th><td class="r"><span>&nbsp; &nbsp; &nbsp; scripts=[])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>46</th><td class="r"><span>"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>47</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>48</th><td class="r"><span># exec the 'setup' code</span> </td>
+                      </tr><tr>
+                        <th> </th><th>49</th><td class="r"><span>exec setup_code</span> </td>
+                      </tr><tr>
+                        <th> </th><th>50</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>51</th><td class="r"><span># if dependencies are missing, print a warning</span> </td>
+                      </tr><tr>
+                        <th> </th><th>52</th><td class="r"><span>try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>53</th><td class="r"><span>&nbsp; &nbsp; import numpy</span> </td>
+                      </tr><tr>
+                        <th> </th><th>54</th><td class="r"><span>&nbsp; &nbsp; import matplotlib</span> </td>
+                      </tr><tr>
+                        <th> </th><th>55</th><td class="r"><span>except ImportError:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>56</th><td class="r"><span>&nbsp; &nbsp; print "\n***********************************************************"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>57</th><td class="r"><span>&nbsp; &nbsp; print "WARNING: One of the following dependencies is unresolved:"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>58</th><td class="r"><span>&nbsp; &nbsp; print "&nbsp; &nbsp; numpy %s" % numpy_version</span> </td>
+                      </tr><tr>
+                        <th> </th><th>59</th><td class="r"><span>&nbsp; &nbsp; print "&nbsp; &nbsp; matplotlib %s (optional)" % matplotlib_version</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>60</th><td class="r"><span>&nbsp; &nbsp; print "***********************************************************\n"</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>32</th><th>61</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>33</th><th>62</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/setup.py?rev=125#L35">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/setup.py?rev=129#L64">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>64</th><td class="l"><span>&nbsp; &nbsp; pass</span> </td>
+                  </tr><tr>
+                          <th>36</th><th>65</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>37</th><th> </th><td class="l"><span># <del>E</del>nd of file</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>66</th><td class="r"><span># <ins>e</ins>nd of file</span> </td>
+                      </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/129?format=diff&amp;new=129" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/129?format=zip&amp;new=129" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/129 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:37:15 GMT -->
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/ticket/94 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:10:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      #94 (provide control of parallel and distributed jobs)
+     – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="92.html" title="Ticket #92" />
+        <link rel="last" href="209.html" title="Ticket #209" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/ticket/94?format=csv" type="text/csv" class="csv" title="Comma-delimited Text" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/ticket/94?format=tab" type="text/tab-separated-values" class="tab" title="Tab-delimited Text" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/ticket/94?format=rss" type="application/rss+xml" class="rss" title="RSS Feed" />
+        <link rel="up" href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;order=priority" />
+        <link rel="next" href="96.html" title="Ticket #96" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/ticket.css" type="text/css" />
+        <link rel="first" href="162.html" title="Ticket #162" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript">
+      var auto_preview_timeout=2.0;
+      var form_token="29dfe7d61594daee56a0f88e";
+    </script>
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/folding.js"></script><script type="text/javascript" src="../chrome/common/js/wikitoolbar.js"></script><script type="text/javascript" src="../chrome/common/js/resizer.js"></script><script type="text/javascript" src="../chrome/common/js/auto_preview.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("div.description").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $(".foldable").enableFolding(false, true);
+        var args = {realm: "ticket", id: 94, escape_newlines: 0}
+        $("#comment").autoPreview("/project/mystic/wiki_render", args, function(textarea, text, rendered) {
+            $("#ticketchange div.comment").html(rendered);
+            if (rendered)
+              $("#ticketchange").show();
+            else if ($("#ticketchange ul.changes").length == 0)
+              $("#ticketchange").hide();
+        });
+        $("#trac-comment-editor textarea").autoPreview("/project/mystic/wiki_render", args,
+                                                       function(textarea, text, rendered) {
+          var comment = $("#trac-comment-editor").next("div.comment");
+          comment.html(rendered);
+          if (rendered)
+            comment.show();
+          else
+            comment.hide();
+        });
+        $("#modify").parent().toggleClass("collapsed");
+        $(".trac-topnav a").click(function() { $("#modify").parent().removeClass("collapsed"); });
+        /* only enable control elements for the currently selected action */
+        var actions = $("#action input[name='action']");
+        function updateActionFields() {
+          actions.each(function () {
+            $(this).siblings().find("*[id]").enable($(this).checked());
+            $(this).siblings().filter("*[id]").enable($(this).checked());
+          });
+        }
+        actions.click(updateActionFields);
+        updateActionFields();
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li class="active"><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="92.html" title="Ticket #92">Previous Ticket</a></span></li><li><a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;order=priority">Back to Query</a></li><li class="last"><span><a class="next" href="96.html" title="Ticket #96">Next Ticket</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="ticket">
+      <h1 id="trac-ticket-title">
+          <a href="94.html">Ticket #94</a>
+          <span class="status">(new defect)</span>
+      </h1>
+      <div id="ticket">
+  <div class="date">
+    <p>Opened <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-04-22T12%3A13%3A07-07%3A00&amp;precision=second" title="2010-04-22T12:13:07-07:00 in Timeline">6 years</a> ago</p>
+    <p>Last modified <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-07-20T14%3A46%3A55-07%3A00&amp;precision=second" title="2010-07-20T14:46:55-07:00 in Timeline">6 years</a> ago</p>
+  </div>
+  <h2 class="summary searchable">provide control of parallel and distributed jobs</h2>
+  <table class="properties">
+    <tr>
+      <th id="h_reporter">Reported by:</th>
+      <td headers="h_reporter" class="searchable">
+        <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;reporter=mmckerns">mmckerns</a>
+      </td>
+      <th id="h_owner">Owned by:</th>
+      <td headers="h_owner">
+        <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;owner=mmckerns">mmckerns</a>
+      </td>
+    </tr>
+    <tr>
+        <th id="h_priority">
+          Priority:
+        </th>
+        <td headers="h_priority">
+              <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;priority=major">major</a>
+        </td>
+        <th id="h_milestone">
+          Milestone:
+        </th>
+        <td headers="h_milestone">
+              <a class="milestone" href="../milestone/mystic-dev.html">mystic-dev</a>
+        </td>
+    </tr><tr>
+        <th id="h_component">
+          Component:
+        </th>
+        <td headers="h_component">
+              <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;component=pathos">pathos</a>
+        </td>
+        <th id="h_keywords">
+          Keywords:
+        </th>
+        <td headers="h_keywords" class="searchable">
+        </td>
+    </tr><tr>
+        <th id="h_cc">
+          Cc:
+        </th>
+        <td headers="h_cc" class="searchable">
+        </td>
+        <th>
+        </th>
+        <td>
+        </td>
+    </tr>
+  </table>
+  <div class="description">
+    <h3 id="comment:description">
+      Description
+      <span class="lastmod" title="2010-07-20 21:46:55+00:00">
+        (last modified by mmckerns)
+        (<a href="http://mmckerns.github.io/project/mystic/ticket/94?action=diff&amp;version=5">diff</a>)
+      </span>
+    </h3>
+    <div class="searchable">
+      <p>
+provide control of parallel and distributed jobs
+</p>
+<p>
+currently the handling mechanism fails
+</p>
+
+    </div>
+  </div>
+</div>
+          
+
+        <div>
+          <h2 class="foldable">Change History</h2>
+          <div id="changelog">
+              <div class="change" id="trac-change-1">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:1" class="cnum">
+      <a href="#comment:1">comment:1</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-04-23T11%3A58%3A10-07%3A00&amp;precision=second" title="2010-04-23T11:58:10-07:00 in Timeline">6 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+implementation of monitors, termination, and "condition" that are not as closely
+tied to solvers are being developed by Paul Kienzle in an
+<a class="ext-link" href="http://danse.us/trac/reflectometry/browser/branches/pak2010/mystic"><span class="icon"> </span>alternate branch of mystic</a>
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-2">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:2" class="cnum">
+      <a href="#comment:2">comment:2</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-05-14T06%3A16%3A28-07%3A00&amp;precision=second" title="2010-05-14T06:16:28-07:00 in Timeline">6 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+from ticket <a class="closed ticket" href="70.html" title="defect: signal handler doesn't work in parallel DE solver (closed: worksforme)">#70</a>  -- "signal handler doesn't work in parallel DE solver. Regardless of whether signal handler is enabled or disabled, a Ctrl-C will kill the execution."
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-3">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:3" class="cnum">
+      <a href="#comment:3">comment:3</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-07-06T23%3A54%3A33-07%3A00&amp;precision=second" title="2010-07-06T23:54:33-07:00 in Timeline">6 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+extending the Sow to log  __call__(x, y, id=None) allows an automated way to 'id' each member of the map (for a particular iteration).  Thus the call to <a class="missing wiki">StepMonitors?</a> should take <a class="missing wiki">StepMonitor?</a>(self.bestSolution[:], self.bestEnergy, self.id).
+</p>
+<p>
+Solvers will have self.id = None by default... however for abstract_map_solvers (or abstract_nested_solvers ?), the self.id for a nested solver is set to the positional id within the map funciton.  Hence, when an optimization is run on a particular node, the nested solver's self.id will log a unique id for all iterations of the nested solver (during the map). 
+</p>
+<p>
+This solution will impact the existing log readers as well (because "iteration" should be logged as the tuple of "iteration" and "id").
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-4">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:4" class="cnum">
+      <a href="#comment:4">comment:4</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-07-07T12%3A23%3A59-07%3A00&amp;precision=second" title="2010-07-07T12:23:59-07:00 in Timeline">6 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+added solver.id and monitoring of solver.id in <a class="changeset" href="../changeset/296.html" title="extended Sows/Solvers to log solver 'rank' (see ticket #94)
+">r296</a>
+</p>
+<p>
+need to modify "log_reader" to use solver.id
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-5">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:5" class="cnum">
+      <a href="#comment:5">comment:5</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-07-20T14%3A46%3A55-07%3A00&amp;precision=second" title="2010-07-20T14:46:55-07:00 in Timeline">6 years</a> ago by mmckerns
+                </h3>
+                
+  <ul class="changes">
+    <li>
+      <strong>Description</strong>
+        modified (<a href="http://mmckerns.github.io/project/mystic/ticket/94?action=diff&amp;version=5">diff</a>)
+    </li><li>
+      <strong>Summary</strong>
+        changed from <em>provide monitoring and control of parallel and distributed jobs</em> to <em>provide control of parallel and distributed jobs</em>
+    </li>
+  </ul>
+    <div class="comment searchable">
+      
+      <p>
+splitting "monitoring" off to ticket <a class="new ticket" href="125.html" title="enhancement: provide monitoring of parallel and distributed jobs (new)">#125</a>; this ticket will continue to focus on "control".
+</p>
+
+    </div>
+
+              </div>
+          </div>
+        </div>
+      <div id="help"><strong>Note:</strong> See
+        <a href="../wiki/TracTickets.html">TracTickets</a> for help on using
+        tickets.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/ticket/94?format=csv" class="csv">Comma-delimited Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/ticket/94?format=tab" class="tab">Tab-delimited Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/ticket/94?format=rss" class="rss">RSS Feed</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/ticket/94 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:10:47 GMT -->
+</html>

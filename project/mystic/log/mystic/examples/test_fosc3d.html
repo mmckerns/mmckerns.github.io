@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:55:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      mystic/examples/test_fosc3d.py (log) – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../search.html" />
+        <link rel="help" href="../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?format=rss&amp;limit=100&amp;mode=stop_on_copy" type="application/rss+xml" class="rss" title="RSS Feed" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?format=changelog&amp;limit=100&amp;mode=stop_on_copy" type="text/plain" title="ChangeLog" />
+        <link rel="up" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples?rev=862" title="Parent directory" />
+        <link rel="start" href="../../../wiki.html" />
+        <link rel="stylesheet" href="../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/browser.css" type="text/css" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../login.html">Login</a></li><li><a href="../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../about.html">About Trac</a></li><li class="last"><a href="../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../wiki.html">Wiki</a></li><li><a href="../../../timeline.html">Timeline</a></li><li><a href="../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../browser.html">Browse Source</a></li><li><a href="../../../query.html">View Tickets</a></li><li class="last"><a href="../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="../../../browser/mystic/examples/test_fosc3d.html">View Latest Revision</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="log">
+      <h1>
+<a class="pathentry first" href="http://mmckerns.github.io/project/mystic/browser?rev=862" title="Go to repository root">source:</a>
+<a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=862" title="View mystic">mystic</a><span class="pathentry sep">/</span><a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples?rev=862" title="View examples">examples</a><span class="pathentry sep">/</span><a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=862" title="View test_fosc3d.py">test_fosc3d.py</a>
+<span class="pathentry sep">@</span>
+  <a class="pathentry" href="../../../changeset/862.html" title="View changeset 862">862</a>
+<br style="clear: both" />
+</h1>
+      <form id="prefs" action="#" method="get">
+        <div>
+          <input type="hidden" name="action" value="stop_on_copy" />
+          <div class="choice">
+            <fieldset>
+              <legend>Revision Log Mode:</legend>
+              <label>
+                <input type="radio" id="stop_on_copy" name="mode" value="stop_on_copy" checked="checked" />
+                Stop on copy
+              </label>
+              <label>
+                <input type="radio" id="follow_copy" name="mode" value="follow_copy" />
+                Follow copies
+              </label>
+              <label>
+                <input type="radio" id="path_history" name="mode" value="path_history" />
+                Show only adds and deletes
+              </label>
+            </fieldset>
+          </div>
+          <label>
+              View log starting at
+              <input type="text" id="rev" name="rev" value="862" size="5" />
+            </label>
+            <label>
+              and back to
+              <input type="text" id="stop_rev" name="stop_rev" size="5" />
+            </label><br />
+          <label>
+              Show at most
+              <input type="text" id="limit" name="limit" value="100" size="3" maxlength="3" />
+              revisions per page.
+            </label><br />
+          <label>
+            <input type="checkbox" id="verbose" name="verbose" />
+            Show full log messages
+          </label>
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Update" />
+        </div>
+      </form>
+      <div class="diff">
+        <div class="legend" id="file-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+            <dt class="cp"></dt><dd>Copied or renamed</dd>
+          </dl>
+        </div>
+      </div>
+      <form class="printableform" action="http://mmckerns.github.io/project/mystic/changeset" method="get">
+        <div class="buttons">
+          <input type="hidden" name="reponame" />
+          <input type="submit" value="View changes" title="Diff from Old Revision to New Revision (as selected in the Diff column)" />
+        </div>
+        <table class="listing chglist">
+          <thead>
+            <tr>
+              <th class="diff" title="Old / New">Diff</th>
+              <th class="change"></th>
+              <th class="rev">Rev</th>
+              <th class="age">Age</th>
+              <th class="author">Author</th>
+              <th class="summary">Log Message</th>
+            </tr>
+          </thead>
+          <tbody>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="855@mystic/examples/test_fosc3d.py" title="From [855]" />
+                    <input type="radio" name="new" value="855@mystic/examples/test_fosc3d.py" checked="checked" title="To [855]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=855" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=855" title="Browse at revision 855">
+                        @855</a>
+                        <a class="chgset" href="../../../changeset/855/mystic/examples/test_fosc3d.html" title="View changeset [855] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-01-01T19%3A05%3A11-08%3A00&amp;precision=second" title="2016-01-01T19:05:11-08:00 in Timeline">5 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        updated copyright to 2016
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="776@mystic/examples/test_fosc3d.py" title="From [776]" />
+                    <input type="radio" name="new" value="776@mystic/examples/test_fosc3d.py" title="To [776]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=776" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=776" title="Browse at revision 776">
+                        @776</a>
+                        <a class="chgset" href="../../../changeset/776/mystic/examples/test_fosc3d.html" title="View changeset [776] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-01-02T06%3A51%3A14-08%3A00&amp;precision=second" title="2015-01-02T06:51:14-08:00 in Timeline">17 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        copyright updated to 2015; added to examples2
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="772@mystic/examples/test_fosc3d.py" title="From [772]" />
+                    <input type="radio" name="new" value="772@mystic/examples/test_fosc3d.py" title="To [772]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=772" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=772" title="Browse at revision 772">
+                        @772</a>
+                        <a class="chgset" href="../../../changeset/772/mystic/examples/test_fosc3d.html" title="View changeset [772] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-11-21T14%3A33%3A33-08%3A00&amp;precision=second" title="2014-11-21T14:33:33-08:00 in Timeline">18 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: remove stray random.seed causing seeding of random number generation; …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="723@mystic/examples/test_fosc3d.py" title="From [723]" />
+                    <input type="radio" name="new" value="723@mystic/examples/test_fosc3d.py" title="To [723]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=723" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=723" title="Browse at revision 723">
+                        @723</a>
+                        <a class="chgset" href="../../../changeset/723/mystic/examples/test_fosc3d.html" title="View changeset [723] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-07-16T18%3A50%3A44-07%3A00&amp;precision=second" title="2014-07-16T18:50:44-07:00 in Timeline">22 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        rm: test_mogi_leastsq; remove scipy dependency where exists in …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="721@mystic/examples/test_fosc3d.py" title="From [721]" />
+                    <input type="radio" name="new" value="721@mystic/examples/test_fosc3d.py" title="To [721]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=721" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=721" title="Browse at revision 721">
+                        @721</a>
+                        <a class="chgset" href="../../../changeset/721/mystic/examples/test_fosc3d.html" title="View changeset [721] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-07-16T08%3A16%3A57-07%3A00&amp;precision=second" title="2014-07-16T08:16:57-07:00 in Timeline">22 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        use seterr to ignore warnings in constraints solver and wrap_bounds
+fix: …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="713@mystic/examples/test_fosc3d.py" title="From [713]" />
+                    <input type="radio" name="new" value="713@mystic/examples/test_fosc3d.py" title="To [713]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=713" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=713" title="Browse at revision 713">
+                        @713</a>
+                        <a class="chgset" href="../../../changeset/713/mystic/examples/test_fosc3d.html" title="View changeset [713] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-04-03T12%3A44%3A55-07%3A00&amp;precision=second" title="2014-04-03T12:44:55-07:00 in Timeline">2 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added license and copyright to each file
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="625@mystic/examples/test_fosc3d.py" title="From [625]" />
+                    <input type="radio" name="new" value="625@mystic/examples/test_fosc3d.py" title="To [625]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=625" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=625" title="Browse at revision 625">
+                        @625</a>
+                        <a class="chgset" href="../../../changeset/625/mystic/examples/test_fosc3d.html" title="View changeset [625] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-28T18%3A47%3A57-08%3A00&amp;precision=second" title="2012-12-28T18:47:57-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added <a class="missing wiki">EvaluationLimits?</a> as termination condition;
+termination from …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="465@mystic/examples/test_fosc3d.py" title="From [465]" />
+                    <input type="radio" name="new" value="465@mystic/examples/test_fosc3d.py" title="To [465]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=465" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=465" title="Browse at revision 465">
+                        @465</a>
+                        <a class="chgset" href="../../../changeset/465/mystic/examples/test_fosc3d.html" title="View changeset [465] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-01T23%3A05%3A59-07%3A00&amp;precision=second" title="2011-07-01T23:05:59-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        all solvers import through 'solvers', and tools through 'tools'
+renamed …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="117@mystic/examples/test_fosc3d.py" title="From [117]" />
+                    <input type="radio" name="new" value="117@mystic/examples/test_fosc3d.py" title="To [117]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=117" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=117" title="Browse at revision 117">
+                        @117</a>
+                        <a class="chgset" href="../../../changeset/117/mystic/examples/test_fosc3d.html" title="View changeset [117] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-18T16%3A17%3A21-07%3A00&amp;precision=second" title="2009-03-18T16:17:21-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        DEsolvers now comply with abstract_solver.Solve interface (ticket <a class="closed ticket" href="../../../ticket/4.html" title="defect: DE solver doesn't comply to abstract_solver interface (closed: fixed)">#4</a>); …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="111@mystic/examples/test_fosc3d.py" title="From [111]" />
+                    <input type="radio" name="new" value="111@mystic/examples/test_fosc3d.py" title="To [111]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=111" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=111" title="Browse at revision 111">
+                        @111</a>
+                        <a class="chgset" href="../../../changeset/111/mystic/examples/test_fosc3d.html" title="View changeset [111] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-11T11%3A33%3A05-07%3A00&amp;precision=second" title="2009-03-11T11:33:05-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        created <a class="missing wiki">SetEvaluationLimits?</a> method in abstract_solver;
+propagated changes …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="106@mystic/examples/test_fosc3d.py" title="From [106]" />
+                    <input type="radio" name="new" value="106@mystic/examples/test_fosc3d.py" title="To [106]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=106" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=106" title="Browse at revision 106">
+                        @106</a>
+                        <a class="chgset" href="../../../changeset/106/mystic/examples/test_fosc3d.html" title="View changeset [106] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-26T11%3A53%3A36-08%3A00&amp;precision=second" title="2009-02-26T11:53:36-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        removed scipy dependency where solver available in mystic
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="95@mystic/examples/test_fosc3d.py" title="From [95]" />
+                    <input type="radio" name="new" value="95@mystic/examples/test_fosc3d.py" title="To [95]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=95" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=95" title="Browse at revision 95">
+                        @95</a>
+                        <a class="chgset" href="../../../changeset/95/mystic/examples/test_fosc3d.html" title="View changeset [95] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-17T14%3A34%3A41-08%3A00&amp;precision=second" title="2009-02-17T14:34:41-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        refactored major filters, strategies into filters.py and strategy.py; …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="94@mystic/examples/test_fosc3d.py" title="From [94]" />
+                    <input type="radio" name="new" value="94@mystic/examples/test_fosc3d.py" title="To [94]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=94" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=94" title="Browse at revision 94">
+                        @94</a>
+                        <a class="chgset" href="../../../changeset/94/mystic/examples/test_fosc3d.html" title="View changeset [94] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-17T10%3A08%3A02-08%3A00&amp;precision=second" title="2009-02-17T10:08:02-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        merged the new 'model refactor' branch back into the trunk;
+slightly …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="89@mystic/examples/test_fosc3d.py" title="From [89]" />
+                    <input type="radio" name="new" value="89@mystic/examples/test_fosc3d.py" title="To [89]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?rev=89" title="View log starting at this revision">
+                        <span class="copy"></span>
+                        <span class="comment">(copy)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_fosc3d.py?rev=89" title="Browse at revision 89">
+                        @89</a>
+                        <a class="chgset" href="../../../changeset/89/mystic/examples/test_fosc3d.html" title="View changeset [89] restricted to mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-11T15%3A16%3A06-08%3A00&amp;precision=second" title="2009-02-11T15:16:06-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        restructured top-level to have trunk for mystic &amp; pyina (also branches)
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td></td>
+                  <td class="copyfrom_path" colspan="6" style="padding-left: 1em">
+                    copied from <a href="http://mmckerns.github.io/project/mystic/browser/branches/merge-pyina-at-r87/trunk/mystic/examples/test_fosc3d.py?rev=88">branches/merge-pyina-at-r87/trunk/mystic/examples/test_fosc3d.py</a>:
+                  </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="88@branches/merge-pyina-at-r87/trunk/mystic/examples/test_fosc3d.py" checked="checked" title="From [88]" />
+                    <input type="radio" name="new" value="88@branches/merge-pyina-at-r87/trunk/mystic/examples/test_fosc3d.py" title="To [88]" />
+                  </td>
+                    <td class="change" style="padding-left: 2em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/branches/merge-pyina-at-r87/trunk/mystic/examples/test_fosc3d.py?rev=88" title="View log starting at this revision">
+                        <span class="add"></span>
+                        <span class="comment">(add)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/branches/merge-pyina-at-r87/trunk/mystic/examples/test_fosc3d.py?rev=88" title="Browse at revision 88">
+                        @88</a>
+                        <a class="chgset" href="../../../changeset/88/branches/merge-pyina-at-r87/trunk/mystic/examples/test_fosc3d.html" title="View changeset [88] restricted to branches/merge-pyina-at-r87/trunk/mystic/examples/test_fosc3d.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-11T14%3A26%3A22-08%3A00&amp;precision=second" title="2009-02-11T14:26:22-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added branch that merges mystic/trunk and branches/pyina at <a class="changeset" href="../../../changeset/87.html" title="added tools.wrap_bounds; added range bounds to fmin (modified from ...">r87</a>;
+reduced …
+                    </td>
+                </tr>
+          </tbody>
+        </table>
+        <div class="buttons">
+          <input type="submit" value="View changes" title="Diff from Old Revision to New Revision (as selected in the Diff column)" />
+        </div>
+      </form>
+      <div id="help"><strong>Note:</strong> See <a href="../../../wiki/TracRevisionLog.html">TracRevisionLog</a>
+        for help on using the revision log.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?format=rss&amp;limit=100&amp;mode=stop_on_copy" class="rss">RSS Feed</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py?format=changelog&amp;limit=100&amp;mode=stop_on_copy">ChangeLog</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/log/mystic/examples/test_fosc3d.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:55:20 GMT -->
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/779/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:26:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 779 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="prev" href="../778.html" title="Changeset 778" />
+        <link rel="last" href="../862.html" title="Changeset 862" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/779/?format=diff&amp;new=779" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/779/?format=zip&amp;new=779" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../780.html" title="Changeset 780" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="../1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+        <link rel="icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://trac.mystic.cacr.caltech.edu/"><img src="http://www.cacr.caltech.edu/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://trac.mystic.cacr.caltech.edu/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../778.html" title="Changeset 778">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="../780.html" title="Changeset 780">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 779</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             01/12/15 16:44:03
+             (<a class="timeline" href="http://trac.mystic.cacr.caltech.edu/project/mystic/timeline?from=2015-01-12T16%3A44%3A03-08%3A00&amp;precision=second" title="2015-01-12T16:44:03-08:00 in Timeline">16 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+add gamma and lgamma, update erf<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/_math/stats.py?rev=779">
+              mystic/_math/stats.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="mystic/_math/stats.html" title="Show the changeset 779 restricted to mystic/_math/stats.py">mystic/_math/stats.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/_math/stats.py?rev=776#L16">
+                      r776</a>
+                  </th>
+                  <th title="Revision 779">
+                    <a title="Show revision 779 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/_math/stats.py?rev=779#L16">
+                      r779</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>16</th><th>16</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>17</th><th>17</th><td class="l"><span>def erf(x):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>18</th><th> </th><td class="l"><span>&nbsp; """Error function approximation. </span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>Source: http://www.johndcook.com/python_erf.html</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>"""</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp; # constants</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>&nbsp; a1 =&nbsp; 0.254829592</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>&nbsp; a2 = -0.284496736</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>&nbsp; a3 =&nbsp; 1.421413741</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>&nbsp; a4 = -1.453152027</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; a5 =&nbsp; 1.061405429</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>&nbsp; p&nbsp; =&nbsp; 0.3275911</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; # Save the sign of x</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; sign = 1</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; if x &lt; 0:</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp; sign = -1</span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; x = abs(x)</span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>&nbsp; # A&amp;S formula 7.1.26</span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span>&nbsp; t = 1.0/(1.0 + p*x)</span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span>&nbsp; y = 1.0 - (((((a5*t + a4)*t) + a3)*t + a2)*t + a1)*t*math.exp(-x*x)</span> </td>
+                      </tr><tr>
+                        <th>38</th><th> </th><td class="l"><span>&nbsp; return sign*y</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>18</th><td class="r"><span>&nbsp; &nbsp; "evaluate the error function at x" </span> </td>
+                      </tr><tr>
+                        <th> </th><th>19</th><td class="r"><span>&nbsp; &nbsp; try:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from math import erf</span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>&nbsp; &nbsp; except ImportError:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; from ctypes import util, CDLL, c_double</span> </td>
+                      </tr><tr>
+                        <th> </th><th>24</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; erf = CDLL(util.find_library('m')).erf</span> </td>
+                      </tr><tr>
+                        <th> </th><th>25</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; erf.argtypes = [c_double]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>26</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; erf.restype = c_double</span> </td>
+                      </tr><tr>
+                        <th> </th><th>27</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; except ImportError:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>28</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; erf = _erf</span> </td>
+                      </tr><tr>
+                        <th> </th><th>29</th><td class="r"><span>&nbsp; &nbsp; if hasattr(x, '__len__'):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>30</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from numpy import vectorize</span> </td>
+                      </tr><tr>
+                        <th> </th><th>31</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; erf = vectorize(erf)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>32</th><td class="r"><span>&nbsp; &nbsp; return erf(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>33</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>34</th><td class="r"><span>def gamma(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>35</th><td class="r"><span>&nbsp; &nbsp; "evaluate the gamma function at x"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>36</th><td class="r"><span>&nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>37</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from math import gamma</span> </td>
+                      </tr><tr>
+                        <th> </th><th>38</th><td class="r"><span>&nbsp; &nbsp; except ImportError:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>39</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>40</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; from ctypes import util, CDLL, c_double</span> </td>
+                      </tr><tr>
+                        <th> </th><th>41</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gamma = CDLL(util.find_library('m')).gamma</span> </td>
+                      </tr><tr>
+                        <th> </th><th>42</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gamma.argtypes = [c_double]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>43</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gamma.restype = c_double</span> </td>
+                      </tr><tr>
+                        <th> </th><th>44</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; except ImportError:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>45</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gamma = _gamma</span> </td>
+                      </tr><tr>
+                        <th> </th><th>46</th><td class="r"><span>&nbsp; &nbsp; if hasattr(x, '__len__'):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>47</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from numpy import vectorize</span> </td>
+                      </tr><tr>
+                        <th> </th><th>48</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; gamma = vectorize(gamma)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>49</th><td class="r"><span>&nbsp; &nbsp; return gamma(x) </span> </td>
+                      </tr><tr>
+                        <th> </th><th>50</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>51</th><td class="r"><span>def lgamma(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>52</th><td class="r"><span>&nbsp; &nbsp; "evaluate the natual log of the abs value of the gamma function at x"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>53</th><td class="r"><span>&nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>54</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from math import lgamma</span> </td>
+                      </tr><tr>
+                        <th> </th><th>55</th><td class="r"><span>&nbsp; &nbsp; except ImportError:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>56</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>57</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; from ctypes import util, CDLL, c_double</span> </td>
+                      </tr><tr>
+                        <th> </th><th>58</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lgamma = CDLL(util.find_library('m')).lgamma</span> </td>
+                      </tr><tr>
+                        <th> </th><th>59</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lgamma.argtypes = [c_double]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>60</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lgamma.restype = c_double</span> </td>
+                      </tr><tr>
+                        <th> </th><th>61</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; except ImportError:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>62</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lgamma = _lgamma</span> </td>
+                      </tr><tr>
+                        <th> </th><th>63</th><td class="r"><span>&nbsp; &nbsp; if hasattr(x, '__len__'):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>64</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from numpy import vectorize</span> </td>
+                      </tr><tr>
+                        <th> </th><th>65</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; lgamma = vectorize(lgamma)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>66</th><td class="r"><span>&nbsp; &nbsp; return lgamma(x) </span> </td>
+                      </tr><tr>
+                        <th> </th><th>67</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>68</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>69</th><td class="r"><span>def _erf(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>70</th><td class="r"><span>&nbsp; &nbsp; "approximate the error function at x"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>71</th><td class="r"><span>&nbsp; &nbsp; # Source: http://picomath.org/python/erf.py.html</span> </td>
+                      </tr><tr>
+                        <th> </th><th>72</th><td class="r"><span>&nbsp; &nbsp; a1 =&nbsp; 0.254829592</span> </td>
+                      </tr><tr>
+                        <th> </th><th>73</th><td class="r"><span>&nbsp; &nbsp; a2 = -0.284496736</span> </td>
+                      </tr><tr>
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; &nbsp; a3 =&nbsp; 1.421413741</span> </td>
+                      </tr><tr>
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; &nbsp; a4 = -1.453152027</span> </td>
+                      </tr><tr>
+                        <th> </th><th>76</th><td class="r"><span>&nbsp; &nbsp; a5 =&nbsp; 1.061405429</span> </td>
+                      </tr><tr>
+                        <th> </th><th>77</th><td class="r"><span>&nbsp; &nbsp; p&nbsp; =&nbsp; 0.3275911</span> </td>
+                      </tr><tr>
+                        <th> </th><th>78</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>79</th><td class="r"><span>&nbsp; &nbsp; # Save the sign of x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>80</th><td class="r"><span>&nbsp; &nbsp; sign = 1</span> </td>
+                      </tr><tr>
+                        <th> </th><th>81</th><td class="r"><span>&nbsp; &nbsp; if x &lt; 0:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>82</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; sign = -1</span> </td>
+                      </tr><tr>
+                        <th> </th><th>83</th><td class="r"><span>&nbsp; &nbsp; x = abs(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>84</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>85</th><td class="r"><span>&nbsp; &nbsp; # A&amp;S formula 7.1.26</span> </td>
+                      </tr><tr>
+                        <th> </th><th>86</th><td class="r"><span>&nbsp; &nbsp; t = 1.0/(1.0 + p*x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>87</th><td class="r"><span>&nbsp; &nbsp; y = 1.0 - (((((a5*t + a4)*t) + a3)*t + a2)*t + a1)*t*math.exp(-x*x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>88</th><td class="r"><span>&nbsp; &nbsp; return sign*y</span> </td>
+                      </tr><tr>
+                        <th> </th><th>89</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>90</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>91</th><td class="r"><span>def _gamma(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>92</th><td class="r"><span>&nbsp; &nbsp; "approximate the gamma function at x"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>93</th><td class="r"><span>&nbsp; &nbsp; # Source: http://picomath.org/python/gamma.py.html</span> </td>
+                      </tr><tr>
+                        <th> </th><th>94</th><td class="r"><span>&nbsp; &nbsp; if x &lt;= 0:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>95</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; raise ValueError("Invalid input")</span> </td>
+                      </tr><tr>
+                        <th> </th><th>96</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>97</th><td class="r"><span>&nbsp; &nbsp; # Split the function domain into three intervals:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>98</th><td class="r"><span>&nbsp; &nbsp; # (0, 0.001), [0.001, 12), and (12, infinity)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>99</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>100</th><td class="r"><span>&nbsp; &nbsp; ###########################################################################</span> </td>
+                      </tr><tr>
+                        <th> </th><th>101</th><td class="r"><span>&nbsp; &nbsp; # First interval: (0, 0.001)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>102</th><td class="r"><span>&nbsp; &nbsp; #</span> </td>
+                      </tr><tr>
+                        <th> </th><th>103</th><td class="r"><span>&nbsp; &nbsp; # For small x, 1/Gamma(x) has power series x + gamma x^2&nbsp; - ...</span> </td>
+                      </tr><tr>
+                        <th> </th><th>104</th><td class="r"><span>&nbsp; &nbsp; # So in this range, 1/Gamma(x) = x + gamma x^2 with error order of x^3.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>105</th><td class="r"><span>&nbsp; &nbsp; # The relative error over this interval is less than 6e-7.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>106</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>107</th><td class="r"><span>&nbsp; &nbsp; gamma = 0.577215664901532860606512090 # Euler's gamma constant</span> </td>
+                      </tr><tr>
+                        <th> </th><th>108</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>109</th><td class="r"><span>&nbsp; &nbsp; if x &lt; 0.001:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>110</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return 1.0/(x*(1.0 + gamma*x))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>111</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>112</th><td class="r"><span>&nbsp; &nbsp; ###########################################################################</span> </td>
+                      </tr><tr>
+                        <th> </th><th>113</th><td class="r"><span>&nbsp; &nbsp; # Second interval: [0.001, 12)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>114</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>115</th><td class="r"><span>&nbsp; &nbsp; if x &lt; 12.0:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>116</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # The algorithm directly approximates gamma over (1,2) and uses</span> </td>
+                      </tr><tr>
+                        <th> </th><th>117</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # reduction identities to reduce other arguments to this interval.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>118</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>119</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; y = x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>120</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; n = 0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>121</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; arg_was_less_than_one = (y &lt; 1.0)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>122</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>123</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # Add or subtract integers as necessary to bring y into (1,2)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>124</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # Will correct for this below</span> </td>
+                      </tr><tr>
+                        <th> </th><th>125</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if arg_was_less_than_one:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>126</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y += 1.0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>127</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>128</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; n = int(math.floor(y)) - 1&nbsp; # will use n later</span> </td>
+                      </tr><tr>
+                        <th> </th><th>129</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y -= n</span> </td>
+                      </tr><tr>
+                        <th> </th><th>130</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>131</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # numerator coefficients for approximation over the interval (1,2)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>132</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; p = [</span> </td>
+                      </tr><tr>
+                        <th> </th><th>133</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -1.71618513886549492533811E+0,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>134</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.47656508055759199108314E+1,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>135</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -3.79804256470945635097577E+2,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>136</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6.29331155312818442661052E+2,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>137</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;8.66966202790413211295064E+2,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>138</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -3.14512729688483675254357E+4,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>139</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -3.61444134186911729807069E+4,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>140</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;6.64561438202405440627855E+4</span> </td>
+                      </tr><tr>
+                        <th> </th><th>141</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>142</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>143</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # denominator coefficients for approximation over the interval (1,2)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>144</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; q = [</span> </td>
+                      </tr><tr>
+                        <th> </th><th>145</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -3.08402300119738975254353E+1,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>146</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;3.15350626979604161529144E+2,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>147</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -1.01515636749021914166146E+3,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>148</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -3.10777167157231109440444E+3,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>149</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2.25381184209801510330112E+4,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>150</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4.75584627752788110767815E+3,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>151</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -1.34659959864969306392456E+5,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>152</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -1.15132259675553483497211E+5</span> </td>
+                      </tr><tr>
+                        <th> </th><th>153</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>154</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>155</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; num = 0.0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>156</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; den = 1.0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>157</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>158</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; z = y - 1</span> </td>
+                      </tr><tr>
+                        <th> </th><th>159</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; for i in range(8):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>160</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; num = (num + p[i])*z</span> </td>
+                      </tr><tr>
+                        <th> </th><th>161</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; den = den*z + q[i]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>162</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; result = num/den + 1.0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>163</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>164</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # Apply correction if argument was not initially in (1,2)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>165</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if arg_was_less_than_one:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>166</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Use identity gamma(z) = gamma(z+1)/z</span> </td>
+                      </tr><tr>
+                        <th> </th><th>167</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # The variable "result" now holds gamma of the original y + 1</span> </td>
+                      </tr><tr>
+                        <th> </th><th>168</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Thus we use y-1 to get back the orginal y.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>169</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; result /= (y-1.0)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>170</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>171</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Use the identity gamma(z+n) = z*(z+1)* ... *(z+n-1)*gamma(z)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>172</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for _ in range(n):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>173</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; result *= y</span> </td>
+                      </tr><tr>
+                        <th> </th><th>174</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y += 1</span> </td>
+                      </tr><tr>
+                        <th> </th><th>175</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>176</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return result</span> </td>
+                      </tr><tr>
+                        <th> </th><th>177</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>178</th><td class="r"><span>&nbsp; &nbsp; ###########################################################################</span> </td>
+                      </tr><tr>
+                        <th> </th><th>179</th><td class="r"><span>&nbsp; &nbsp; # Third interval: [12, infinity)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>180</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>181</th><td class="r"><span>&nbsp; &nbsp; if x &gt; 171.624:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>182</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # Correct answer too large to display. </span> </td>
+                      </tr><tr>
+                        <th> </th><th>183</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return 1.0/0 # float infinity</span> </td>
+                      </tr><tr>
+                        <th> </th><th>184</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>185</th><td class="r"><span>&nbsp; &nbsp; return math.exp(log_gamma(x))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>186</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>187</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>188</th><td class="r"><span>def _lgamma(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>189</th><td class="r"><span>&nbsp; &nbsp; "approximate the natual log of the abs value of the gamma function at x"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>190</th><td class="r"><span>&nbsp; &nbsp; # Source: http://picomath.org/python/gamma.py.html</span> </td>
+                      </tr><tr>
+                        <th> </th><th>191</th><td class="r"><span>&nbsp; &nbsp; if x &lt;= 0:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>192</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; raise ValueError("Invalid input")</span> </td>
+                      </tr><tr>
+                        <th> </th><th>193</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>194</th><td class="r"><span>&nbsp; &nbsp; if x &lt; 12.0:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>195</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return math.log(abs(gamma(x)))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>196</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>197</th><td class="r"><span>&nbsp; &nbsp; # Abramowitz and Stegun 6.1.41</span> </td>
+                      </tr><tr>
+                        <th> </th><th>198</th><td class="r"><span>&nbsp; &nbsp; # Asymptotic series should be good to at least 11 or 12 figures</span> </td>
+                      </tr><tr>
+                        <th> </th><th>199</th><td class="r"><span>&nbsp; &nbsp; # For error analysis, see Whittiker and Watson</span> </td>
+                      </tr><tr>
+                        <th> </th><th>200</th><td class="r"><span>&nbsp; &nbsp; # A Course in Modern Analysis (1927), page 252</span> </td>
+                      </tr><tr>
+                        <th> </th><th>201</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>202</th><td class="r"><span>&nbsp; &nbsp; c = [</span> </td>
+                      </tr><tr>
+                        <th> </th><th>203</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.0/12.0,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>204</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; -1.0/360.0,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>205</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.0/1260.0,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>206</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; -1.0/1680.0,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>207</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.0/1188.0,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>208</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; -691.0/360360.0,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>209</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;1.0/156.0,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>210</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; -3617.0/122400.0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>211</th><td class="r"><span>&nbsp; &nbsp; ]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>212</th><td class="r"><span>&nbsp; &nbsp; z = 1.0/(x*x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>213</th><td class="r"><span>&nbsp; &nbsp; sum = c[7]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>214</th><td class="r"><span>&nbsp; &nbsp; for i in range(6, -1, -1):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>215</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; sum *= z</span> </td>
+                      </tr><tr>
+                        <th> </th><th>216</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; sum += c[i]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>217</th><td class="r"><span>&nbsp; &nbsp; series = sum/x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>218</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>219</th><td class="r"><span>&nbsp; &nbsp; halfLogTwoPi = 0.91893853320467274178032973640562</span> </td>
+                      </tr><tr>
+                        <th> </th><th>220</th><td class="r"><span>&nbsp; &nbsp; logGamma = (x - 0.5)*math.log(x) - x + halfLogTwoPi + series</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>221</th><td class="r"><span>&nbsp; &nbsp; return logGamma</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>222</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>40</th><th>223</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/779/?format=diff&amp;new=779" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/779/?format=zip&amp;new=779" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://www.cacr.caltech.edu/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://www.cacr.caltech.edu/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://www.cacr.caltech.edu/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://www.cacr.caltech.edu/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://www.cacr.caltech.edu/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://www.cacr.caltech.edu/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://www.cacr.caltech.edu/projects/mystic">http://www.cacr.caltech.edu/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/779/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:26:54 GMT -->
+</html>

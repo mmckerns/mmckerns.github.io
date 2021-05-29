@@ -1,0 +1,1699 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/339 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:41:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 339 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="338.html" title="Changeset 338" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/339?format=diff&amp;new=339" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/339?format=zip&amp;new=339" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="340.html" title="Changeset 340" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="338.html" title="Changeset 338">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="340.html" title="Changeset 340">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 339</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             07/21/10 10:33:45
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-07-21T10%3A33%3A45-07%3A00&amp;precision=second" title="2010-07-21T10:33:45-07:00 in Timeline">6 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">altafang</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+Adding more test problems and tests to the Mystic test suite. Added comparison of a simple constrained QP to scipy's constrained optimizer.<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1?rev=339">branches/alta/mystic-0.2a1</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>3 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/mystic_test_suite.py?rev=339">
+              mystic_test_suite.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_cvxopt_qp.py?rev=339">
+              test_constraints_cvxopt_qp.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_problems_unconstrained.py?rev=339">
+              test_problems_unconstrained.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="339/branches/alta/mystic-0.2a1/mystic_test_suite.html" title="Show the changeset 339 restricted to branches/alta/mystic-0.2a1/mystic_test_suite.py">branches/alta/mystic-0.2a1/mystic_test_suite.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 331">
+                    <a title="Show revision 331 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/mystic_test_suite.py?rev=331#L4">
+                      r331</a>
+                  </th>
+                  <th title="Revision 339">
+                    <a title="Show revision 339 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/mystic_test_suite.py?rev=339#L4">
+                      r339</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>5</th><th>5</th><td class="l"><span>import unittest</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>6</th><td class="r"><ins>from math import *</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>7</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>7</th><th>8</th><td class="l"><span>disp = True # Flag for whether to display number of iterations and </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/mystic_test_suite.py?rev=331#L1469">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/mystic_test_suite.py?rev=339#L1470">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1469</th><th>1470</th><td class="l"><span>#---------------------------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>1470</th><th>1471</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>1472</th><td class="r"><ins>##############################################################################</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>1473</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1471</th><th>1474</th><td class="l"><span>class TestVenkataraman91(unittest.TestCase):</span> </td>
+                  </tr><tr>
+                          <th>1472</th><th>1475</th><td class="l"><span>&nbsp; &nbsp; """Test the optimization found in Example 9.1, page 442, in</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/mystic_test_suite.py?rev=331#L1656">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/mystic_test_suite.py?rev=339#L1659">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1656</th><th>1659</th><td class="l"><span>&nbsp; &nbsp; # Note: No CRT becaues that requires a solver that uses solver.population.</span> </td>
+                  </tr><tr>
+                          <th>1657</th><th>1660</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>1661</th><td class="r"><ins>##############################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1662</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1663</th><td class="r"><ins>class TestSchwefel(unittest.TestCase):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1664</th><td class="r"><ins>&nbsp; &nbsp; """Test Schwefel's function in 2 dimensions."""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1665</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1666</th><td class="r"><ins>&nbsp; &nbsp; def setUp(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1667</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from test_problems_unconstrained import schwefel</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1668</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.costfunction = schwefel</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1669</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.ND = 2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1670</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.expected = [420.9687]*self.ND</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1671</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.min = [-500.0]*self.ND</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1672</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.max = [500.0]*self.ND</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1673</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.maxiter = 10000</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1674</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.nplaces = -1 # Precision of answer</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1675</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1676</th><td class="r"><ins>&nbsp; &nbsp; def _run_solver(self, **kwds):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1677</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic import Sow</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1678</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; import numpy</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1679</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.tools import random_seed</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1680</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; random_seed(123)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1681</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; esow = Sow()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1682</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ssow = Sow() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1683</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1684</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver = self.solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1685</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetRandomInitialPoints(self.min, self.max)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1686</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetEvaluationLimits(maxiter=self.maxiter)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1687</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetStrictRanges(self.min, self.max)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1688</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.Solve(self.costfunction, self.term, EvaluationMonitor=esow,\</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1689</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;StepMonitor=ssow, **kwds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1690</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; sol = solver.Solution()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1691</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1692</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # Verify solution is close to expected</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1693</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; for i in range(len(sol)):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1694</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.assertAlmostEqual(sol[i], self.expected[i], self.nplaces)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1695</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1696</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if disp:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1697</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Print the number of iterations and function evaluations</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1698</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; iters = len(ssow.x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1699</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; func_evals = len(esow.x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1700</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "\nNumber of iterations = ", iters</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1701</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Number of function evaluations = ", func_evals</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1702</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1703</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver_VTR(self): # Default for this solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1704</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1705</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTR</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1706</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1707</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1708</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1709</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = VTR()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1710</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1711</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1712</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1713</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver_COG(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1714</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1715</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import ChangeOverGeneration as COG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1716</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1717</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1718</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1719</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = COG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1720</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1721</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1722</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1723</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver_NCOG(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1724</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1725</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1726</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1727</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1728</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1729</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = NCOG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1730</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1731</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1732</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1733</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver_CRT(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1734</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1735</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1736</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1737</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1738</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1739</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = CRT()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1740</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1741</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1742</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1743</th><td class="r"><ins>#--------------------------------------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1744</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1745</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver2_VTR(self): # Default for this solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1746</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1747</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTR</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1748</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1749</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1750</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver2(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1751</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = VTR()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1752</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1753</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1754</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1755</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver2_COG(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1756</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1757</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import ChangeOverGeneration as COG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1758</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1759</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1760</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver2(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1761</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = COG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1762</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1763</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1764</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1765</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver2_NCOG(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1766</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1767</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1768</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1769</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1770</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver2(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1771</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = NCOG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1772</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1773</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1774</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1775</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver2_CRT(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1776</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1777</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1778</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1779</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1780</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver2(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1781</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = CRT()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1782</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1783</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1784</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1785</th><td class="r"><ins>#-------------------------------------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1786</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1787</th><td class="r"><ins>&nbsp; &nbsp; def test_NelderMeadSimplexSolver_CRT(self): # Default for this solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1788</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import NelderMeadSimplexSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1789</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1790</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1791</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = NelderMeadSimplexSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1792</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = CRT()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1793</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1794</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1795</th><td class="r"><ins>&nbsp; &nbsp; def test_NelderMeadSimplexSolver_VTR(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1796</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import NelderMeadSimplexSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1797</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTR</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1798</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1799</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = NelderMeadSimplexSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1800</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = VTR()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1801</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1802</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1803</th><td class="r"><ins>&nbsp; &nbsp; def test_NelderMeadSimplexSolver_COG(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1804</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import NelderMeadSimplexSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1805</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import ChangeOverGeneration as COG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1806</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1807</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = NelderMeadSimplexSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1808</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = COG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1809</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1810</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1811</th><td class="r"><ins>&nbsp; &nbsp; def test_NelderMeadSimplexSolver_NCOG(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1812</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import NelderMeadSimplexSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1813</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1814</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1815</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = NelderMeadSimplexSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1816</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = NCOG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1817</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1818</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1819</th><td class="r"><ins>#--------------------------------------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1820</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1821</th><td class="r"><ins>&nbsp; &nbsp; def test_PowellDirectionalSolver_NCOG(self): # Default for this solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1822</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import PowellDirectionalSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1823</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1824</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1825</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = PowellDirectionalSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1826</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = NCOG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1827</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1828</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1829</th><td class="r"><ins>&nbsp; &nbsp; def test_PowellDirectionalSolver_COG(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1830</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import PowellDirectionalSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1831</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import ChangeOverGeneration as COG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1832</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1833</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = PowellDirectionalSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1834</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = COG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1835</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1836</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1837</th><td class="r"><ins>&nbsp; &nbsp; def test_PowellDirectionalSolver_VTR(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1838</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import PowellDirectionalSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1839</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTR</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1840</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1841</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = PowellDirectionalSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1842</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = VTR()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1843</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1844</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1845</th><td class="r"><ins>&nbsp; &nbsp; # Note: No CRT becaues that requires a solver that uses solver.population.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1846</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1847</th><td class="r"><ins>##############################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1848</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1849</th><td class="r"><ins>class TestEasom(unittest.TestCase):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1850</th><td class="r"><ins>&nbsp; &nbsp; """Test Easom's function."""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1851</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1852</th><td class="r"><ins>&nbsp; &nbsp; def setUp(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1853</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from test_problems_unconstrained import easom</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1854</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.costfunction = easom</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1855</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.ND = 2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1856</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.expected = [pi]*self.ND</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1857</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.min = [-100.]*self.ND</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1858</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.max = [100.]*self.ND</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1859</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.maxiter = 10000</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1860</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.nplaces = -1 # Precision of answer</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1861</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1862</th><td class="r"><ins>&nbsp; &nbsp; def _run_solver(self, **kwds):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1863</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic import Sow</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1864</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; import numpy</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1865</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.tools import random_seed</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1866</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; random_seed(123)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1867</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; esow = Sow()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1868</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ssow = Sow() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1869</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1870</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver = self.solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1871</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetRandomInitialPoints(self.min, self.max)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1872</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetEvaluationLimits(maxiter=self.maxiter)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1873</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetStrictRanges(self.min, self.max)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1874</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.Solve(self.costfunction, self.term, EvaluationMonitor=esow,\</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1875</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;StepMonitor=ssow, **kwds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1876</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; sol = solver.Solution()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1877</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1878</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # Verify solution is close to expected</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1879</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; for i in range(len(sol)):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1880</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.assertAlmostEqual(sol[i], self.expected[i], self.nplaces)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1881</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1882</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if disp:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1883</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Print the number of iterations and function evaluations</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1884</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; iters = len(ssow.x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1885</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; func_evals = len(esow.x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1886</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "\nNumber of iterations = ", iters</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1887</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Number of function evaluations = ", func_evals</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1888</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1889</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver_VTR(self): # Default for this solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1890</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1891</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTR</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1892</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1893</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1894</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1895</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = VTR()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1896</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1897</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1898</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1899</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver_COG(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1900</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1901</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import ChangeOverGeneration as COG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1902</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1903</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1904</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1905</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = COG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1906</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1907</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1908</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1909</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver_NCOG(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1910</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1911</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1912</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1913</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1914</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1915</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = NCOG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1916</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1917</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1918</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1919</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver_CRT(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1920</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1921</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1922</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1923</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1924</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1925</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = CRT()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1926</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1927</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1928</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1929</th><td class="r"><ins>#--------------------------------------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1930</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1931</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver2_VTR(self): # Default for this solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1932</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1933</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTR</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1934</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1935</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1936</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver2(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1937</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = VTR()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1938</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1939</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1940</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1941</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver2_COG(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1942</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1943</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import ChangeOverGeneration as COG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1944</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1945</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1946</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver2(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1947</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = COG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1948</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1949</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1950</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1951</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver2_NCOG(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1952</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1953</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1954</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1955</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1956</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver2(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1957</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = NCOG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1958</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1959</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1960</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1961</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver2_CRT(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1962</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1963</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1964</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1965</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1966</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver2(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1967</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = CRT()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1968</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1969</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1970</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1971</th><td class="r"><ins>#-------------------------------------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1972</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1973</th><td class="r"><ins>&nbsp; &nbsp; def test_NelderMeadSimplexSolver_CRT(self): # Default for this solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1974</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import NelderMeadSimplexSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1975</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1976</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1977</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = NelderMeadSimplexSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1978</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = CRT()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1979</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1980</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1981</th><td class="r"><ins>&nbsp; &nbsp; def test_NelderMeadSimplexSolver_VTR(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1982</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import NelderMeadSimplexSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1983</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTR</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1984</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1985</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = NelderMeadSimplexSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1986</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = VTR()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1987</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1988</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1989</th><td class="r"><ins>&nbsp; &nbsp; def test_NelderMeadSimplexSolver_COG(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1990</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import NelderMeadSimplexSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1991</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import ChangeOverGeneration as COG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1992</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1993</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = NelderMeadSimplexSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1994</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = COG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1995</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1996</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1997</th><td class="r"><ins>&nbsp; &nbsp; def test_NelderMeadSimplexSolver_NCOG(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1998</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import NelderMeadSimplexSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1999</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2000</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2001</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = NelderMeadSimplexSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2002</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = NCOG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2003</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2004</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2005</th><td class="r"><ins>#--------------------------------------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2006</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2007</th><td class="r"><ins>&nbsp; &nbsp; def test_PowellDirectionalSolver_NCOG(self): # Default for this solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2008</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import PowellDirectionalSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2009</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2010</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2011</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = PowellDirectionalSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2012</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = NCOG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2013</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2014</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2015</th><td class="r"><ins>&nbsp; &nbsp; def test_PowellDirectionalSolver_COG(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2016</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import PowellDirectionalSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2017</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import ChangeOverGeneration as COG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2018</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2019</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = PowellDirectionalSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2020</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = COG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2021</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2022</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2023</th><td class="r"><ins>&nbsp; &nbsp; def test_PowellDirectionalSolver_VTR(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2024</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import PowellDirectionalSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2025</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTR</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2026</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2027</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = PowellDirectionalSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2028</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = VTR()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2029</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2030</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2031</th><td class="r"><ins>&nbsp; &nbsp; # Note: No CRT becaues that requires a solver that uses solver.population.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2032</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2033</th><td class="r"><ins>##############################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2034</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2035</th><td class="r"><ins>class TestRotatedEllipsoid(unittest.TestCase):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2036</th><td class="r"><ins>&nbsp; &nbsp; """Test the rotated ellipsoid function in 2 dimensions."""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2037</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2038</th><td class="r"><ins>&nbsp; &nbsp; def setUp(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2039</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from test_problems_unconstrained import rotated_ellipsoid</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2040</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.costfunction = rotated_ellipsoid</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2041</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.ND = 2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2042</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.expected = [0.]*self.ND</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2043</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.min = [-65.536]*self.ND</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2044</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.max = [65.536]*self.ND</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2045</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.maxiter = 10000</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2046</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.nplaces = -1 # Precision of answer</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2047</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2048</th><td class="r"><ins>&nbsp; &nbsp; def _run_solver(self, **kwds):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2049</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic import Sow</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2050</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; import numpy</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2051</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.tools import random_seed</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2052</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; random_seed(123)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2053</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; esow = Sow()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2054</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ssow = Sow() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2055</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2056</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver = self.solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2057</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetRandomInitialPoints(self.min, self.max)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2058</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetEvaluationLimits(maxiter=self.maxiter)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2059</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetStrictRanges(self.min, self.max)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2060</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.Solve(self.costfunction, self.term, EvaluationMonitor=esow,\</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2061</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;StepMonitor=ssow, **kwds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2062</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; sol = solver.Solution()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2063</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2064</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # Verify solution is close to expected</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2065</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; for i in range(len(sol)):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2066</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.assertAlmostEqual(sol[i], self.expected[i], self.nplaces)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2067</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2068</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if disp:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2069</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Print the number of iterations and function evaluations</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2070</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; iters = len(ssow.x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2071</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; func_evals = len(esow.x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2072</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "\nNumber of iterations = ", iters</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2073</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Number of function evaluations = ", func_evals</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2074</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2075</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver_VTR(self): # Default for this solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2076</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2077</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTR</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2078</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2079</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2080</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2081</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = VTR()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2082</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2083</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2084</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2085</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver_COG(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2086</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2087</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import ChangeOverGeneration as COG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2088</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2089</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2090</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2091</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = COG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2092</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2093</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2094</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2095</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver_NCOG(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2096</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2097</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2098</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2099</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2100</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2101</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = NCOG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2102</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2103</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2104</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2105</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver_CRT(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2106</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2107</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2108</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2109</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2110</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2111</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = CRT()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2112</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2113</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2114</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2115</th><td class="r"><ins>#--------------------------------------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2116</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2117</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver2_VTR(self): # Default for this solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2118</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2119</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTR</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2120</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2121</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2122</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver2(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2123</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = VTR()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2124</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2125</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2126</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2127</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver2_COG(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2128</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2129</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import ChangeOverGeneration as COG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2130</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2131</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2132</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver2(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2133</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = COG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2134</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2135</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2136</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2137</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver2_NCOG(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2138</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2139</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2140</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2141</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2142</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver2(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2143</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = NCOG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2144</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2145</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2146</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2147</th><td class="r"><ins>&nbsp; &nbsp; def test_DifferentialEvolutionSolver2_CRT(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2148</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2149</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2150</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2151</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.NP = 100 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2152</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = DifferentialEvolutionSolver2(self.ND, self.NP)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2153</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = CRT()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2154</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Rand1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2155</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver( strategy=Rand1Bin )</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2156</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2157</th><td class="r"><ins>#-------------------------------------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2158</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2159</th><td class="r"><ins>&nbsp; &nbsp; def test_NelderMeadSimplexSolver_CRT(self): # Default for this solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2160</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import NelderMeadSimplexSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2161</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2162</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2163</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = NelderMeadSimplexSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2164</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = CRT()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2165</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2166</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2167</th><td class="r"><ins>&nbsp; &nbsp; def test_NelderMeadSimplexSolver_VTR(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2168</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import NelderMeadSimplexSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2169</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTR</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2170</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2171</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = NelderMeadSimplexSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2172</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = VTR()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2173</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2174</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2175</th><td class="r"><ins>&nbsp; &nbsp; def test_NelderMeadSimplexSolver_COG(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2176</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import NelderMeadSimplexSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2177</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import ChangeOverGeneration as COG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2178</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2179</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = NelderMeadSimplexSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2180</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = COG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2181</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2182</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2183</th><td class="r"><ins>&nbsp; &nbsp; def test_NelderMeadSimplexSolver_NCOG(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2184</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import NelderMeadSimplexSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2185</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2186</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2187</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = NelderMeadSimplexSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2188</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = NCOG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2189</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2190</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2191</th><td class="r"><ins>#--------------------------------------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2192</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2193</th><td class="r"><ins>&nbsp; &nbsp; def test_PowellDirectionalSolver_NCOG(self): # Default for this solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2194</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import PowellDirectionalSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2195</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2196</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2197</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = PowellDirectionalSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2198</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = NCOG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2199</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2200</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2201</th><td class="r"><ins>&nbsp; &nbsp; def test_PowellDirectionalSolver_COG(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2202</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import PowellDirectionalSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2203</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import ChangeOverGeneration as COG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2204</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2205</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = PowellDirectionalSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2206</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = COG()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2207</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2208</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2209</th><td class="r"><ins>&nbsp; &nbsp; def test_PowellDirectionalSolver_VTR(self): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2210</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from scipy_optimize import PowellDirectionalSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2211</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTR</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2212</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tol = 1e-7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2213</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solver = PowellDirectionalSolver(self.ND)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2214</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.term = VTR()#tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2215</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._run_solver()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2216</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2217</th><td class="r"><ins>&nbsp; &nbsp; # Note: No CRT becaues that requires a solver that uses solver.population.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2218</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>2219</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1658</th><th>2220</th><td class="l"><span>#---------------------------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>1659</th><th>2221</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/mystic_test_suite.py?rev=331#L1667">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/mystic_test_suite.py?rev=339#L2229">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1667</th><th>2229</th><td class="l"><span>&nbsp; &nbsp; suite7 = unittest.TestLoader().loadTestsFromTestCase(TestGriewangk)</span> </td>
+                  </tr><tr>
+                          <th>1668</th><th>2230</th><td class="l"><span>&nbsp; &nbsp; suite8 = unittest.TestLoader().loadTestsFromTestCase(TestPeaks) </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>1669</th><th> </th><td class="l"><span>&nbsp; &nbsp; suite9 = unittest.TestLoader().loadTestsFromTestCase(TestVenkataraman91)&nbsp; </span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>2231</th><td class="r"><span>&nbsp; &nbsp; suite9 = unittest.TestLoader().loadTestsFromTestCase(TestVenkataraman91)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>2232</th><td class="r"><span>&nbsp; &nbsp; suite10 = unittest.TestLoader().loadTestsFromTestCase(TestSchwefel)&nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>2233</th><td class="r"><span>&nbsp; &nbsp; suite11 = unittest.TestLoader().loadTestsFromTestCase(TestEasom)&nbsp; </span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>2234</th><td class="r"><span>&nbsp; &nbsp; suite12 = unittest.TestLoader().loadTestsFromTestCase(TestRotatedEllipsoid) </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1670</th><th>2235</th><td class="l"><span>&nbsp; &nbsp; # Comment out suites in the list below to test specific test cost functions only</span> </td>
+                  </tr><tr>
+                          <th>1671</th><th>2236</th><td class="l"><span>&nbsp; &nbsp; # (Testing all the problems will take some time)</span> </td>
+                  </tr><tr>
+                          <th>1672</th><th>2237</th><td class="l"><span>&nbsp; &nbsp; allsuites = unittest.TestSuite([suite1, suite2, suite3, suite4, suite5, \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>1673</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; suite6, suite7, suite8, suite9])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>2238</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; suite6, suite7, suite8, suite9, suite10, \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>2239</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; suite11, suite12])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1674</th><th>2240</th><td class="l"><span>&nbsp; &nbsp; unittest.TextTestRunner(verbosity=2).run(allsuites)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="339/branches/alta/mystic-0.2a1/test_constraints_cvxopt_qp.html" title="Show the changeset 339 restricted to branches/alta/mystic-0.2a1/test_constraints_cvxopt_qp.py">branches/alta/mystic-0.2a1/test_constraints_cvxopt_qp.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 338">
+                    <a title="Show revision 338 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_cvxopt_qp.py?rev=338#L49">
+                      r338</a>
+                  </th>
+                  <th title="Revision 339">
+                    <a title="Show revision 339 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_cvxopt_qp.py?rev=339#L49">
+                      r339</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>49</th><th>49</th><td class="l"><span>&nbsp; &nbsp; print soln.xf</span> </td>
+                  </tr><tr>
+                          <th>50</th><th>50</th><td class="l"><span>&nbsp; &nbsp; Solution: {x1: array([ 0.2500267]), x2: array([ 0.7499733])}</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>51</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>52</th><td class="r"><ins>&nbsp; &nbsp; Scipy.optimize.fmin_slsqp code and results:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>53</th><td class="r"><ins>&nbsp; &nbsp; -------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>54</th><td class="r"><ins>&nbsp; &nbsp; from scipy.optimize import fmin_slsqp</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>55</th><td class="r"><ins>&nbsp; &nbsp; def func(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>56</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; x1 = x[0]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>57</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; x2 = x[1]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>58</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return 2.*x1**2 + x2**2 + x1*x2 + x1 + x2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>59</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>60</th><td class="r"><ins>&nbsp; &nbsp; def ineqcon1(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>61</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return x[0]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>62</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>63</th><td class="r"><ins>&nbsp; &nbsp; def ineqcon2(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>64</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return x[1]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>65</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>66</th><td class="r"><ins>&nbsp; &nbsp; def eqcon1(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>67</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return x[0] + x[1] - 1.0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>68</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>69</th><td class="r"><ins>&nbsp; &nbsp; x0 = [1., 1.]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>70</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>71</th><td class="r"><ins>&nbsp; &nbsp; print fmin_slsqp(func, x0, eqcons=[eqcon1], ieqcons=[ineqcon1, ineqcon2])</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>72</th><td class="r"><ins>&nbsp; &nbsp; Solution: [ 0.25&nbsp; 0.75]</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>51</th><th>73</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>74</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_cvxopt_qp.py?rev=338#L75">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_cvxopt_qp.py?rev=339#L97">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>75</th><th>97</th><td class="l"><span># Wrap the constraints to the cost function</span> </td>
+                  </tr><tr>
+                          <th>76</th><th>98</th><td class="l"><span>from constraint_tools import wrap_constraints_to_cost</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>77</th><th> </th><td class="l"><span>wrapped_costfunc = wrap_constraints_to_cost(constraints_string, ndim, costfunc)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>99</th><td class="r"><span>wrapped_costfunc = wrap_constraints_to_cost(constraints_string, ndim, costfunc,\</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>100</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; penalty=1e7)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>78</th><th>101</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>79</th><th>102</th><td class="l"><span># Solve the constrained optimization problem with a one-line interface</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="339/branches/alta/mystic-0.2a1/test_problems_unconstrained.html" title="Show the changeset 339 restricted to branches/alta/mystic-0.2a1/test_problems_unconstrained.py">branches/alta/mystic-0.2a1/test_problems_unconstrained.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 338">
+                    <a title="Show revision 338 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_problems_unconstrained.py?rev=338#L96">
+                      r338</a>
+                  </th>
+                  <th title="Revision 339">
+                    <a title="Show revision 339 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_problems_unconstrained.py?rev=339#L96">
+                      r339</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>96</th><th>96</th><td class="l"><span>inverted for minimization.' - http://www.geatbx.com/docu/fcnindex-01.html</span> </td>
+                  </tr><tr>
+                          <th>97</th><th>97</th><td class="l"><span>Global minimum f(x1, x2) = -1 at (x1, x2) = (pi, pi)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>98</th><th> </th><td class="l"><span>xi in <del>-100, 100</del>. 2-dimensional."""</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>98</th><td class="r"><span>xi in <ins>[-100, 100]</ins>. 2-dimensional."""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>99</th><th>99</th><td class="l"><span>&nbsp; &nbsp; x1 = x[0]</span> </td>
+                  </tr><tr>
+                          <th>100</th><th>100</th><td class="l"><span>&nbsp; &nbsp; x2 = x[1]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>101</th><th> </th><td class="l"><span>&nbsp; &nbsp; return -cos(x1)*cos(x2)*exp(-(x1-pi)**2 <del>+</del> (x2 - pi)**2)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>101</th><td class="r"><span>&nbsp; &nbsp; return -cos(x1)*cos(x2)*exp(-(x1-pi)**2 <ins>-</ins> (x2 - pi)**2)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>102</th><th>102</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>103</th><th>103</th><td class="l"><span>#print "Easom:", easom([pi, pi])</span> </td>
+                  </tr><tr>
+                          <th>104</th><th>104</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>105</th><td class="r"><ins>def goldstein_price(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>106</th><td class="r"><ins>&nbsp; &nbsp; """Goldstein-Price function. Global minimum f(x1, x2) = 3 at </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>107</th><td class="r"><ins>(x1, x2) = (0, -1)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>108</th><td class="r"><ins>x1, x2 in [-2., 2.]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>109</th><td class="r"><ins>2-dimensional.&nbsp; http://www.geatbx.com/docu/fcnindex-01.html"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>110</th><td class="r"><ins>&nbsp; &nbsp; x1 = x[0]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>111</th><td class="r"><ins>&nbsp; &nbsp; x2 = x[1]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>112</th><td class="r"><ins>&nbsp; &nbsp; return (1.+(x1+x2+1.)**2*(19.-14.*x1+3.*x1**2-14.*x2+6.*x1*x2+3.*x2**2))*\</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>113</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(30.+(2.*x1-3.*x2)**2*(18.-32.*x1+12.*x1**2+48.*x2-36.*x1*x2+\</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>114</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 27.*x2**2))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>115</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>116</th><td class="r"><ins>#print "Goldstein-Price:", goldstein_price([0., -1.])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>117</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>118</th><td class="r"><ins>def rotated_ellipsoid(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>119</th><td class="r"><ins>&nbsp; &nbsp; """'An extension of the axis parallel hyper-ellipsoid is Schwefel's </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>120</th><td class="r"><ins>function1.2. With respect to the coordinate axes, this function produces </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>121</th><td class="r"><ins>rotated hyper-ellipsoids. It is continuous, convex and unimodal.' </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>122</th><td class="r"><ins>- http://www.geatbx.com/docu/fcnindex-01.html</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>123</th><td class="r"><ins>xi in [-65.536, 65.536]. n-dimensional.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>124</th><td class="r"><ins>global minimum f(x)=0 at xi=0."""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>125</th><td class="r"><ins>&nbsp; &nbsp; result = 0.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>126</th><td class="r"><ins>&nbsp; &nbsp; for i in range(len(x)):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>127</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; s = 0.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>128</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; for j in range(i+1):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>129</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s += x[j]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>130</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; result += s**2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>131</th><td class="r"><ins>&nbsp; &nbsp; return result</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>132</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>133</th><td class="r"><ins>#print "Rotated Ellipsoid:", rotated_ellipsoid([0., 0.])</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>134</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/339?format=diff&amp;new=339" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/339?format=zip&amp;new=339" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/339 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:41:40 GMT -->
+</html>

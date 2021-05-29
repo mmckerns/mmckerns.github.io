@@ -1,0 +1,324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/862/mystic/_math/__init__.py by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:21:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 862 for mystic/_math/__init__.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/862/mystic/_math/__init__.py?format=diff&amp;new=862" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/862/mystic/_math/__init__.py?format=zip&amp;new=862" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../855/mystic/_math/__init__.html" title="Changeset 855 for mystic/_math/__init__.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../855/mystic/_math/__init__.html" title="Changeset 855 for mystic/_math/__init__.py">Previous Change</a></span></li><li class="last"><span class="missing">Next Change &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../862.html">862</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/__init__.py?rev=862">mystic/_math/__init__.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             04/18/16 14:14:14
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-04-18T14%3A14%3A14-07%3A00&amp;precision=second" title="2016-04-18T14:14:14-07:00 in Timeline">4 weeks</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+add mystic.math.Distribution; use it for <a class="missing wiki">InitialPoints?</a>, ensemble Distribution<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/__init__.py?rev=862">
+              mystic/_math/__init__.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="__init__.html" title="Show the changeset 862 restricted to mystic/_math/__init__.py">mystic/_math/__init__.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 855">
+                    <a title="Show revision 855 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/__init__.py?rev=855#L29">
+                      r855</a>
+                  </th>
+                  <th title="Revision 862">
+                    <a title="Show revision 862 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/__init__.py?rev=862#L29">
+                      r862</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>29</th><td class="l"><span>&nbsp; &nbsp; samplepts&nbsp; &nbsp; -- generate a set of randomly sampled points </span> </td>
+                  </tr><tr>
+                          <th>30</th><th>30</th><td class="l"><span>&nbsp; &nbsp; almostEqual&nbsp; -- test if equal within some absolute or relative tolerance</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>31</th><td class="r"><ins>&nbsp; &nbsp; Distribution -- generate a sampling distribution instance</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>32</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>32</th><th>33</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/__init__.py?rev=855#L43">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/__init__.py?rev=862#L44">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>43</th><th>44</th><td class="l"><span>import distance as paramtrans</span> </td>
+                  </tr><tr>
+                          <th>44</th><th>45</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>46</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>47</th><td class="r"><ins># distribution object</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>48</th><td class="r"><ins>class Distribution(object):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>49</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>50</th><td class="r"><ins>Sampling distribution for mystic optimizers</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>51</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>52</th><td class="r"><ins>&nbsp; &nbsp; def __init__(self, generator=None, *args, **kwds):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>53</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>54</th><td class="r"><ins>generate a sampling distribution with interface dist(size=None)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>55</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>56</th><td class="r"><ins>input::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>57</th><td class="r"><ins>&nbsp; &nbsp; - generator: a 'distribution' method from scipy.stats or numpy.random</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>58</th><td class="r"><ins>&nbsp; &nbsp; - args: positional arguments for the distribtution object</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>59</th><td class="r"><ins>&nbsp; &nbsp; - kwds: keyword arguments for the distribution object</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>60</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>61</th><td class="r"><ins>note::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>62</th><td class="r"><ins>&nbsp; &nbsp; this method only accepts numpy.random methods with the keyword 'size'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>63</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>64</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.tools import random_state</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>65</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; rng = random_state(module='numpy.random')</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>66</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if generator is None: generator = rng.random</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>67</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if getattr(generator, 'rvs', False): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>68</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; d = generator(*args, **kwds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>69</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.rvs = lambda size=None: d.rvs(size=size, random_state=rng)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>70</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>71</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; d = getattr(rng, generator.__name__)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>72</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.rvs = lambda size=None: d(size=size, *args, **kwds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>73</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>74</th><td class="r"><ins>&nbsp; &nbsp; def __call__(self, size=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>75</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """generate a sample of given size (tuple) from the distribution"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>76</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return self.rvs(size)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>77</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>78</th><td class="l"><span># end of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/862/mystic/_math/__init__.py?format=diff&amp;new=862" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/862/mystic/_math/__init__.py?format=zip&amp;new=862" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/862/mystic/_math/__init__.py by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:21:40 GMT -->
+</html>

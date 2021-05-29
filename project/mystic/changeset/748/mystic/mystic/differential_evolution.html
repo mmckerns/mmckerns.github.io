@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/748/mystic/mystic/differential_evolution.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 03:12:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 748 for mystic/mystic/differential_evolution.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/748/mystic/mystic/differential_evolution.py?format=diff&amp;new=748" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/748/mystic/mystic/differential_evolution.py?format=zip&amp;new=748" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../758/mystic/mystic/differential_evolution.html" title="Changeset 758 for mystic/mystic/differential_evolution.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../737/mystic/mystic/differential_evolution.html" title="Changeset 737 for mystic/mystic/differential_evolution.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../737/mystic/mystic/differential_evolution.html" title="Changeset 737 for mystic/mystic/differential_evolution.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../758/mystic/mystic/differential_evolution.html" title="Changeset 758 for mystic/mystic/differential_evolution.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../748.html">748</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=748">mystic/mystic/differential_evolution.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             08/12/14 11:13:17
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-08-12T11%3A13%3A17-07%3A00&amp;precision=second" title="2014-08-12T11:13:17-07:00 in Timeline">22 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+add solver one-liners for ensemble solvers; fix: reducer in ensemble solvers<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=748">
+              mystic/mystic/differential_evolution.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">6 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="differential_evolution.html" title="Show the changeset 748 restricted to mystic/mystic/differential_evolution.py">mystic/mystic/differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 737">
+                    <a title="Show revision 737 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=737#L284">
+                      r737</a>
+                  </th>
+                  <th title="Revision 748">
+                    <a title="Show revision 748 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=748#L284">
+                      r748</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>284</th><th>284</th><td class="l"><span>Description:</span> </td>
+                  </tr><tr>
+                          <th>285</th><th>285</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>286</th><th> </th><td class="l"><span>&nbsp; &nbsp; Uses a differential evolution algorith<del></del> to find the minimum of</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>286</th><td class="r"><span>&nbsp; &nbsp; Uses a differential evolution algorith<ins>m</ins> to find the minimum of</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>287</th><th>287</th><td class="l"><span>&nbsp; &nbsp; a function of one or more variables.</span> </td>
+                  </tr><tr>
+                          <th>288</th><th>288</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=737#L439">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=748#L439">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>439</th><th>439</th><td class="l"><span>Description:</span> </td>
+                  </tr><tr>
+                          <th>440</th><th>440</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>441</th><th> </th><td class="l"><span>&nbsp; &nbsp; Uses a differential evolution algorith<del></del> to find the minimum of</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>441</th><td class="r"><span>&nbsp; &nbsp; Uses a differential evolution algorith<ins>m</ins> to find the minimum of</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>442</th><th>442</th><td class="l"><span>&nbsp; &nbsp; a function of one or more variables. This implementation holds</span> </td>
+                  </tr><tr>
+                          <th>443</th><th>443</th><td class="l"><span>&nbsp; &nbsp; the current generation invariant until the end of each iteration.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=737#L478">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=748#L478">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>478</th><th>478</th><td class="l"><span>Description:</span> </td>
+                  </tr><tr>
+                          <th>479</th><th>479</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>480</th><th> </th><td class="l"><span>&nbsp; &nbsp; Uses Storn &amp; Prices's differential evolution algorith<del></del> to find the minimum</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>480</th><td class="r"><span>&nbsp; &nbsp; Uses Storn &amp; Prices's differential evolution algorith<ins>m</ins> to find the minimum</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>481</th><th>481</th><td class="l"><span>&nbsp; &nbsp; of a function of one or more variables. Mimics a scipy.optimize style</span> </td>
+                  </tr><tr>
+                          <th>482</th><th>482</th><td class="l"><span>&nbsp; &nbsp; interface.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=737#L506">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=748#L506">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>506</th><th>506</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                  </tr><tr>
+                          <th>507</th><th>507</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; current parameter vector.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>508</th><th> </th><td class="l"><span>&nbsp; &nbsp; handler -- boolean - enable/disable handling of interrupt signal<del></del></span> </td>
+                      </tr><tr>
+                        <th>509</th><th> </th><td class="l"><span>&nbsp; &nbsp; strategy -- strategy - override the default mutation strategy<del></del></span> </td>
+                      </tr><tr>
+                        <th>510</th><th> </th><td class="l"><span>&nbsp; &nbsp; itermon -- monitor - override the default GenerationMonitor<del></del></span> </td>
+                      </tr><tr>
+                        <th>511</th><th> </th><td class="l"><span>&nbsp; &nbsp; evalmon -- monitor - override the default EvaluationMonitor<del></del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>508</th><td class="r"><span>&nbsp; &nbsp; handler -- boolean - enable/disable handling of interrupt signal<ins>.</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>509</th><td class="r"><span>&nbsp; &nbsp; strategy -- strategy - override the default mutation strategy<ins>.</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>510</th><td class="r"><span>&nbsp; &nbsp; itermon -- monitor - override the default GenerationMonitor<ins>.</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>511</th><td class="r"><span>&nbsp; &nbsp; evalmon -- monitor - override the default EvaluationMonitor<ins>.</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>512</th><th>512</th><td class="l"><span>&nbsp; &nbsp; constraints -- an optional user-supplied function.&nbsp; It is called as</span> </td>
+                  </tr><tr>
+                          <th>513</th><th>513</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints(xk), where xk is the current parameter vector.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=737#L548">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=748#L548">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>548</th><th>548</th><td class="l"><span>Description:</span> </td>
+                  </tr><tr>
+                          <th>549</th><th>549</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>550</th><th> </th><td class="l"><span>&nbsp; &nbsp; Uses a differential evolution algorith<del></del> to find the minimum of</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>550</th><td class="r"><span>&nbsp; &nbsp; Uses a differential evolution algorith<ins>m</ins> to find the minimum of</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>551</th><th>551</th><td class="l"><span>&nbsp; &nbsp; a function of one or more variables. Mimics a scipy.optimize style</span> </td>
+                  </tr><tr>
+                          <th>552</th><th>552</th><td class="l"><span>&nbsp; &nbsp; interface.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=737#L576">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=748#L576">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>576</th><th>576</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                  </tr><tr>
+                          <th>577</th><th>577</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; current parameter vector.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>578</th><th> </th><td class="l"><span>&nbsp; &nbsp; handler -- boolean - enable/disable handling of interrupt signal<del></del></span> </td>
+                      </tr><tr>
+                        <th>579</th><th> </th><td class="l"><span>&nbsp; &nbsp; strategy -- strategy - override the default mutation strategy<del></del></span> </td>
+                      </tr><tr>
+                        <th>580</th><th> </th><td class="l"><span>&nbsp; &nbsp; itermon -- monitor - override the default GenerationMonitor<del></del></span> </td>
+                      </tr><tr>
+                        <th>581</th><th> </th><td class="l"><span>&nbsp; &nbsp; evalmon -- monitor - override the default EvaluationMonitor<del></del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>578</th><td class="r"><span>&nbsp; &nbsp; handler -- boolean - enable/disable handling of interrupt signal<ins>.</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>579</th><td class="r"><span>&nbsp; &nbsp; strategy -- strategy - override the default mutation strategy<ins>.</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>580</th><td class="r"><span>&nbsp; &nbsp; itermon -- monitor - override the default GenerationMonitor<ins>.</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>581</th><td class="r"><span>&nbsp; &nbsp; evalmon -- monitor - override the default EvaluationMonitor<ins>.</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>582</th><th>582</th><td class="l"><span>&nbsp; &nbsp; constraints -- an optional user-supplied function.&nbsp; It is called as</span> </td>
+                  </tr><tr>
+                          <th>583</th><th>583</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints(xk), where xk is the current parameter vector.</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/748/mystic/mystic/differential_evolution.py?format=diff&amp;new=748" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/748/mystic/mystic/differential_evolution.py?format=zip&amp;new=748" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/748/mystic/mystic/differential_evolution.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 03:12:04 GMT -->
+</html>

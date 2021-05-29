@@ -1,0 +1,666 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/browser/releases/mystic-0.1a1-patch1.diff by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:39:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      mystic-0.1a1-patch1.diff in releases
+     – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/browser/releases/mystic-0.1a1-patch1.diff?format=txt" type="text/plain" title="Plain Text" /><link rel="alternate" href="../../export/862/releases/mystic-0.1a1-patch1.diff" type="text/x-diff; charset=iso-8859-15" title="Original Format" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/browser.css" type="text/css" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="../../chrome/common/js/folding.js"></script><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#jumploc input").hide();
+        $("#jumploc select").change(function () {
+          this.parentNode.parentNode.submit();
+        });
+          $('#preview table.code').enableCollapsibleColumns($('#preview table.code thead th.content'));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="http://mmckerns.github.io/project/mystic/browser/releases/mystic-0.1a1-patch1.diff?annotate=blame&amp;rev=131" title="Annotate each line with the last changed revision (this can be time consuming...)">Annotate</a></li><li class="last"><a href="../../log/releases/mystic-0.1a1-patch1.html">Revision Log</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="browser">
+          <h1>
+<a class="pathentry first" href="http://mmckerns.github.io/project/mystic/browser?order=name" title="Go to repository root">source:</a>
+<a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/releases?order=name" title="View releases">releases</a><span class="pathentry sep">/</span><a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/releases/mystic-0.1a1-patch1.diff?order=name" title="View mystic-0.1a1-patch1.diff">mystic-0.1a1-patch1.diff</a>
+<span class="pathentry sep">@</span>
+  <a class="pathentry" href="../../changeset/131.html" title="View changeset 131">131</a>
+<br style="clear: both" />
+</h1>
+        <div id="jumprev">
+          <form action="#" method="get">
+            <div>
+              <label for="rev">
+                View revision:</label>
+              <input type="text" id="rev" name="rev" size="6" />
+            </div>
+          </form>
+        </div>
+        <div id="jumploc">
+          <form action="#" method="get">
+            <div class="buttons">
+              <label for="preselected">Visit:</label>
+              <select id="preselected" name="preselected">
+                <option selected="selected"></option>
+                <optgroup label="branches">
+                  <option value="/project/mystic/browser/branches/alta">branches/alta</option><option value="/project/mystic/browser/branches/collapse">branches/collapse</option><option value="/project/mystic/browser/branches/cvxopt">branches/cvxopt</option><option value="/project/mystic/browser/branches/decorate">branches/decorate</option><option value="/project/mystic/browser/branches/dummy">branches/dummy</option><option value="/project/mystic/browser/branches/mpimystic">branches/mpimystic</option><option value="/project/mystic/browser/branches/ooe-tests">branches/ooe-tests</option><option value="/project/mystic/browser/branches/pp">branches/pp</option><option value="/project/mystic/browser/branches/UQ">branches/UQ</option>
+                </optgroup>
+              </select>
+              <input type="submit" value="Go!" title="Jump to the chosen preselected path" />
+            </div>
+          </form>
+        </div>
+      <table id="info" summary="Revision info">
+        <tr>
+          <th scope="col">Revision <a href="../../changeset/131.html">131</a>,
+            <span title="6218 bytes">6.1 KB</span>
+            checked in by mmckerns, <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-29T13%3A09%3A27-07%3A00&amp;precision=second" title="2009-03-29T13:09:27-07:00 in Timeline">7 years</a> ago
+            (<a href="../../changeset/131/releases/mystic-0.1a1-patch1.html">diff</a>)</th>
+        </tr>
+        <tr>
+          <td class="message searchable">
+              <p>
+added patch1 for mystic-0.1a1 (see ticket <a class="closed ticket" href="../../ticket/39.html" title="defect: use title instead of suptitle to support older matplotlib (closed: fixed)">#39</a>), fixed <a class="closed ticket" href="../../ticket/39.html" title="defect: use title instead of suptitle to support older matplotlib (closed: fixed)">#39</a> in trunk<br />
+</p>
+          </td>
+        </tr>
+      </table>
+      <div id="preview" class="searchable">
+        
+  <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2>
+          <a>mystic-0.1a1/examples/example10.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File mystic-0.1a1/examples/example10.py (revision 130)">
+                  </th>
+                  <th title="File mystic-0.1a1/examples/example10.py (working copy)">
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>31</th><td class="l"><span># draw the plot</span> </td>
+                  </tr><tr>
+                          <th>32</th><th>32</th><td class="l"><span>def plot_frame(label=None):</span> </td>
+                  </tr><tr>
+                          <th>33</th><th>33</th><td class="l"><span>&nbsp; &nbsp; pylab.close()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>34</th><th> </th><td class="l"><span>&nbsp; &nbsp; pylab.<del>sup</del>title("8th-order Chebyshev coefficient convergence")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>34</th><td class="r"><span>&nbsp; &nbsp; pylab.<ins></ins>title("8th-order Chebyshev coefficient convergence")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>35</th><td class="l"><span>&nbsp; &nbsp; pylab.xlabel("Differential Evolution %s" % label)</span> </td>
+                  </tr><tr>
+                          <th>36</th><th>36</th><td class="l"><span>&nbsp; &nbsp; pylab.ylabel("Chi-Squared")</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>37</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>mystic-0.1a1/examples/example02.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File mystic-0.1a1/examples/example02.py (revision 130)">
+                  </th>
+                  <th title="File mystic-0.1a1/examples/example02.py (working copy)">
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>42</th><td class="l"><span>&nbsp; &nbsp; pylab.plot([solution[0]],[rosen(solution)],'bo')</span> </td>
+                  </tr><tr>
+                          <th>43</th><th>43</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>44</th><th>44</th><td class="l"><span>&nbsp; &nbsp; # draw the plot</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>45</th><th> </th><td class="l"><span>&nbsp; &nbsp; pylab.<del>sup</del>title("minimium of Rosenbrock's function")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>45</th><td class="r"><span>&nbsp; &nbsp; pylab.<ins></ins>title("minimium of Rosenbrock's function")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>46</th><td class="l"><span>&nbsp; &nbsp; pylab.xlabel("x, y, z")</span> </td>
+                  </tr><tr>
+                          <th>47</th><th>47</th><td class="l"><span>&nbsp; &nbsp; pylab.ylabel("f(i) = Rosenbrock's function")</span> </td>
+                  </tr><tr>
+                          <th>48</th><th>48</th><td class="l"><span>&nbsp; &nbsp; pylab.legend(["f(x,1,1)","f(1,y,1)","f(1,1,z)"])</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>mystic-0.1a1/examples/example12.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File mystic-0.1a1/examples/example12.py (revision 130)">
+                  </th>
+                  <th title="File mystic-0.1a1/examples/example12.py (working copy)">
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>55</th><th>55</th><td class="l"><span># draw the plot</span> </td>
+                  </tr><tr>
+                          <th>56</th><th>56</th><td class="l"><span>def plot_frame(label=None):</span> </td>
+                  </tr><tr>
+                          <th>57</th><th>57</th><td class="l"><span>&nbsp; &nbsp; pylab.close()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>58</th><th> </th><td class="l"><span>&nbsp; &nbsp; pylab.<del>sup</del>title("fitting noisy 5th-order polynomial coefficients")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>58</th><td class="r"><span>&nbsp; &nbsp; pylab.<ins></ins>title("fitting noisy 5th-order polynomial coefficients")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>59</th><th>59</th><td class="l"><span>&nbsp; &nbsp; pylab.xlabel("x")</span> </td>
+                  </tr><tr>
+                          <th>60</th><th>60</th><td class="l"><span>&nbsp; &nbsp; pylab.ylabel("f(x)")</span> </td>
+                  </tr><tr>
+                          <th>61</th><th>61</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>mystic-0.1a1/examples/example04.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File mystic-0.1a1/examples/example04.py (revision 130)">
+                  </th>
+                  <th title="File mystic-0.1a1/examples/example04.py (working copy)">
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>25</th><th>25</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>26</th><th>26</th><td class="l"><span># draw the plot</span> </td>
+                  </tr><tr>
+                          <th>27</th><th>27</th><td class="l"><span>def plot_frame():</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; &nbsp; pylab.<del>sup</del>title("Rosenbrock parameter convergence")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>28</th><td class="r"><span>&nbsp; &nbsp; pylab.<ins></ins>title("Rosenbrock parameter convergence")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>29</th><td class="l"><span>&nbsp; &nbsp; pylab.xlabel("Nelder-Mead solver iterations")</span> </td>
+                  </tr><tr>
+                          <th>30</th><th>30</th><td class="l"><span>&nbsp; &nbsp; pylab.ylabel("parameter value")</span> </td>
+                  </tr><tr>
+                          <th>31</th><th>31</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>mystic-0.1a1/examples/example06.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File mystic-0.1a1/examples/example06.py (revision 130)">
+                  </th>
+                  <th title="File mystic-0.1a1/examples/example06.py (working copy)">
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>24</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>25</th><th>25</th><td class="l"><span># draw the plot</span> </td>
+                  </tr><tr>
+                          <th>26</th><th>26</th><td class="l"><span>def plot_exact():</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>27</th><th> </th><td class="l"><span>&nbsp; &nbsp; pylab.<del>sup</del>title("fitting 8th-order Chebyshev polynomial coefficients")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>27</th><td class="r"><span>&nbsp; &nbsp; pylab.<ins></ins>title("fitting 8th-order Chebyshev polynomial coefficients")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>28</th><td class="l"><span>&nbsp; &nbsp; pylab.xlabel("x")</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>29</th><td class="l"><span>&nbsp; &nbsp; pylab.ylabel("f(x)")</span> </td>
+                  </tr><tr>
+                          <th>30</th><th>30</th><td class="l"><span>&nbsp; &nbsp; import numpy</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>mystic-0.1a1/examples/example08.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File mystic-0.1a1/examples/example08.py (revision 130)">
+                  </th>
+                  <th title="File mystic-0.1a1/examples/example08.py (working copy)">
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>30</th><th>30</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>31</th><th>31</th><td class="l"><span># draw the plot</span> </td>
+                  </tr><tr>
+                          <th>32</th><th>32</th><td class="l"><span>def plot_exact():</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; &nbsp; pylab.<del>sup</del>title("fitting 8th-order Chebyshev polynomial coefficients")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>33</th><td class="r"><span>&nbsp; &nbsp; pylab.<ins></ins>title("fitting 8th-order Chebyshev polynomial coefficients")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>34</th><td class="l"><span>&nbsp; &nbsp; pylab.xlabel("x")</span> </td>
+                  </tr><tr>
+                          <th>35</th><th>35</th><td class="l"><span>&nbsp; &nbsp; pylab.ylabel("f(x)")</span> </td>
+                  </tr><tr>
+                          <th>36</th><th>36</th><td class="l"><span>&nbsp; &nbsp; import numpy</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>mystic-0.1a1/examples/example11.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File mystic-0.1a1/examples/example11.py (revision 130)">
+                  </th>
+                  <th title="File mystic-0.1a1/examples/example11.py (working copy)">
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>31</th><td class="l"><span># draw the plot</span> </td>
+                  </tr><tr>
+                          <th>32</th><th>32</th><td class="l"><span>def plot_frame(label=None):</span> </td>
+                  </tr><tr>
+                          <th>33</th><th>33</th><td class="l"><span>&nbsp; &nbsp; pylab.close()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>34</th><th> </th><td class="l"><span>&nbsp; &nbsp; pylab.<del>sup</del>title("8th-order Chebyshev coefficient convergence")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>34</th><td class="r"><span>&nbsp; &nbsp; pylab.<ins></ins>title("8th-order Chebyshev coefficient convergence")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>35</th><td class="l"><span>&nbsp; &nbsp; pylab.xlabel("Nelder-Mead Simplex Solver %s" % label)</span> </td>
+                  </tr><tr>
+                          <th>36</th><th>36</th><td class="l"><span>&nbsp; &nbsp; pylab.ylabel("Chi-Squared")</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>37</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="#L51">…</a></th>
+                  <th><a href="#L51">…</a></th>
+                  <td><em></em> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>51</th><th>51</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>52</th><th>52</th><td class="l"><span># draw the plot</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>53</th><td class="l"><span>def plot_exact():</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; pylab.<del>sup</del>title("fitting 8th-order Chebyshev polynomial coefficients")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>54</th><td class="r"><span>&nbsp; &nbsp; pylab.<ins></ins>title("fitting 8th-order Chebyshev polynomial coefficients")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>55</th><th>55</th><td class="l"><span>&nbsp; &nbsp; pylab.xlabel("x")</span> </td>
+                  </tr><tr>
+                          <th>56</th><th>56</th><td class="l"><span>&nbsp; &nbsp; pylab.ylabel("f(x)")</span> </td>
+                  </tr><tr>
+                          <th>57</th><th>57</th><td class="l"><span>&nbsp; &nbsp; import numpy</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>mystic-0.1a1/examples/example03.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File mystic-0.1a1/examples/example03.py (revision 130)">
+                  </th>
+                  <th title="File mystic-0.1a1/examples/example03.py (working copy)">
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>36</th><th>36</th><td class="l"><span>&nbsp; &nbsp; pylab.plot([i[2] for i in allvecs])</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>37</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>38</th><th>38</th><td class="l"><span>&nbsp; &nbsp; # draw the plot</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; &nbsp; pylab.<del>sup</del>title("Rosenbrock parameter convergence")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>39</th><td class="r"><span>&nbsp; &nbsp; pylab.<ins></ins>title("Rosenbrock parameter convergence")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>40</th><th>40</th><td class="l"><span>&nbsp; &nbsp; pylab.xlabel("Nelder-Mead solver iterations")</span> </td>
+                  </tr><tr>
+                          <th>41</th><th>41</th><td class="l"><span>&nbsp; &nbsp; pylab.ylabel("parameter value")</span> </td>
+                  </tr><tr>
+                          <th>42</th><th>42</th><td class="l"><span>&nbsp; &nbsp; pylab.legend(["x", "y", "z"])</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>mystic-0.1a1/examples/example07.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File mystic-0.1a1/examples/example07.py (revision 130)">
+                  </th>
+                  <th title="File mystic-0.1a1/examples/example07.py (working copy)">
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>25</th><th>25</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>26</th><th>26</th><td class="l"><span># draw the plot</span> </td>
+                  </tr><tr>
+                          <th>27</th><th>27</th><td class="l"><span>def plot_exact():</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; &nbsp; pylab.<del>sup</del>title("fitting 8th-order Chebyshev polynomial coefficients")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>28</th><td class="r"><span>&nbsp; &nbsp; pylab.<ins></ins>title("fitting 8th-order Chebyshev polynomial coefficients")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>29</th><td class="l"><span>&nbsp; &nbsp; pylab.xlabel("x")</span> </td>
+                  </tr><tr>
+                          <th>30</th><th>30</th><td class="l"><span>&nbsp; &nbsp; pylab.ylabel("f(x)")</span> </td>
+                  </tr><tr>
+                          <th>31</th><th>31</th><td class="l"><span>&nbsp; &nbsp; import numpy</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>mystic-0.1a1/examples/example09.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File mystic-0.1a1/examples/example09.py (revision 130)">
+                  </th>
+                  <th title="File mystic-0.1a1/examples/example09.py (working copy)">
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>32</th><th>32</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>33</th><th>33</th><td class="l"><span># draw the plot</span> </td>
+                  </tr><tr>
+                          <th>34</th><th>34</th><td class="l"><span>def plot_exact():</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>35</th><th> </th><td class="l"><span>&nbsp; &nbsp; pylab.<del>sup</del>title("fitting 8th-order Chebyshev polynomial coefficients")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>35</th><td class="r"><span>&nbsp; &nbsp; pylab.<ins></ins>title("fitting 8th-order Chebyshev polynomial coefficients")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>36</th><th>36</th><td class="l"><span>&nbsp; &nbsp; pylab.xlabel("x")</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>37</th><td class="l"><span>&nbsp; &nbsp; pylab.ylabel("f(x)")</span> </td>
+                  </tr><tr>
+                          <th>38</th><th>38</th><td class="l"><span>&nbsp; &nbsp; import numpy</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2>
+          <a>mystic-0.1a1/examples/README</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="File mystic-0.1a1/examples/README (revision 130)">
+                  </th>
+                  <th title="File mystic-0.1a1/examples/README (working copy)">
+                  </th>
+                  <td><em></em> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>== Notes on mystic examples ==</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>2</th><td class="r"><ins>NOTE: for all examples that use matplotlib, please use the TKAgg backend.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>3</th><td class="r"><ins>Thus, run the examples like this:&nbsp; "python example04.py -dTKAgg"</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>4</th><td class="r"><ins>(see ticket #36 for more details).</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>5</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>3</th><th>6</th><td class="l"><span>Dependencies:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>4</th><th> </th><td class="l"><span>&nbsp;- All examples with prefix "example" should run without new dependencies, and are intended as a tutorial<del>. (i.e. TRY THESE FIRST)</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>7</th><td class="r"><span>&nbsp;- All examples with prefix "example" should run without new dependencies, and are intended as a tutorial<ins>&nbsp;(i.e. TRY THESE FIRST).</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>8</th><td class="l"><span>&nbsp;- All examples with prefix "test_" should run without new dependencies.</span> </td>
+                  </tr><tr>
+                          <th>6</th><th>9</th><td class="l"><span>&nbsp;- All examples with prefix "gplot_" requres gnuplot-py to be installed.</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>10</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+
+      </div>
+      <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracBrowser.html">TracBrowser</a>
+        for help on using the repository browser.</div>
+      <div id="anydiff">
+        <form action="http://mmckerns.github.io/project/mystic/diff" method="get">
+          <div class="buttons">
+            <input type="hidden" name="new_path" value="/releases/mystic-0.1a1-patch1.diff" />
+            <input type="hidden" name="old_path" value="/releases/mystic-0.1a1-patch1.diff" />
+            <input type="hidden" name="new_rev" />
+            <input type="hidden" name="old_rev" />
+            <input type="submit" value="View changes..." title="Select paths and revs for Diff" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/browser/releases/mystic-0.1a1-patch1.diff?format=txt">Plain Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="../../export/862/releases/mystic-0.1a1-patch1.diff">Original Format</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/browser/releases/mystic-0.1a1-patch1.diff by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:39:20 GMT -->
+</html>

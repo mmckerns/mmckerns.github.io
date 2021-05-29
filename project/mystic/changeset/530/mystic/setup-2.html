@@ -1,0 +1,836 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/530/mystic/setup.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 03:12:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 530 for mystic/setup.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../search.html" />
+        <link rel="help" href="../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/530/mystic/setup.py?format=diff&amp;new=530" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/530/mystic/setup.py?format=zip&amp;new=530" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../569/mystic/setup.html" title="Changeset 569 for mystic/setup.py" />
+        <link rel="start" href="../../../wiki.html" />
+        <link rel="stylesheet" href="../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../475/mystic/setup.html" title="Changeset 475 for mystic/setup.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../login.html">Login</a></li><li><a href="../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../about.html">About Trac</a></li><li class="last"><a href="../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../wiki.html">Wiki</a></li><li><a href="../../../timeline.html">Timeline</a></li><li><a href="../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../browser.html">Browse Source</a></li><li><a href="../../../query.html">View Tickets</a></li><li class="last"><a href="../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../475/mystic/setup.html" title="Changeset 475 for mystic/setup.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../569/mystic/setup.html" title="Changeset 569 for mystic/setup.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../530.html">530</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/setup.py?rev=530">mystic/setup.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             05/06/12 10:57:22
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-05-06T10%3A57%3A22-07%3A00&amp;precision=second" title="2012-05-06T10:57:22-07:00 in Timeline">4 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+enable better versioning in setup.py init.py; add setup.cfg;<br />
+autogenerate README and XXX.info (with versioned information)<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/setup.py?rev=530">
+              mystic/setup.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">3 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="setup-2.html" title="Show the changeset 530 restricted to mystic/setup.py">mystic/setup.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 475">
+                    <a title="Show revision 475 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/setup.py?rev=475#L3">
+                      r475</a>
+                  </th>
+                  <th title="Revision 530">
+                    <a title="Show revision 530 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/setup.py?rev=530#L3">
+                      r530</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Michael McKerns</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># mmckerns@caltech.edu</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>5</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>6</th><td class="r"><ins>from __future__ import with_statement</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>7</th><td class="r"><ins>import os</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>8</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>9</th><td class="r"><ins># set version numbers</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>10</th><td class="r"><ins>stable_version = '0.2a1'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>11</th><td class="r"><ins>target_version = '0.2a2'</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>12</th><td class="r"><ins>is_release = False</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>13</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>6</th><th>14</th><td class="l"><span># check if easy_install is available</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/setup.py?rev=475#L13">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/setup.py?rev=530#L21">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>13</th><th>21</th><td class="l"><span>&nbsp; &nbsp; has_setuptools = False</span> </td>
+                  </tr><tr>
+                          <th>14</th><th>22</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>23</th><td class="r"><ins># generate version number</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>24</th><td class="r"><ins>if os.path.exists('mystic/info.py'):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>25</th><td class="r"><ins>&nbsp; &nbsp; # is a source distribution, so use existing version</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>26</th><td class="r"><ins>&nbsp; &nbsp; from mystic.info import this_version</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>27</th><td class="r"><ins>elif stable_version == target_version:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>28</th><td class="r"><ins>&nbsp; &nbsp; # we are building a stable release</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>29</th><td class="r"><ins>&nbsp; &nbsp; this_version = target_version</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>30</th><td class="r"><ins>else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>31</th><td class="r"><ins>&nbsp; &nbsp; # we are building a distribution</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>32</th><td class="r"><ins>&nbsp; &nbsp; this_version = target_version + '.dev'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>33</th><td class="r"><ins>&nbsp; &nbsp; if is_release:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>34</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; from datetime import date</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>35</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; today = "".join(date.isoformat(date.today()).split('-'))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>36</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; this_version += "-" + today</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>37</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>38</th><td class="r"><ins># get the license info</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>39</th><td class="r"><ins>with open('LICENSE') as file:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>40</th><td class="r"><ins>&nbsp; &nbsp; license_text = file.read()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>41</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>42</th><td class="r"><ins># generate the readme text</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>43</th><td class="r"><ins>long_description = \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>44</th><td class="r"><ins>"""------------------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>45</th><td class="r"><ins>mystic: a simple model-independent inversion framework</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>46</th><td class="r"><ins>------------------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>47</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>48</th><td class="r"><ins>The mystic framework provides a collection of optimization algorithms</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>49</th><td class="r"><ins>and tools that allows the user to more robustly (and readily) solve</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>50</th><td class="r"><ins>optimization problems. All optimization algorithms included in mystic</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>51</th><td class="r"><ins>provide workflow at the fitting layer, not just access to the algorithms</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>52</th><td class="r"><ins>as function calls. Mystic gives the user fine-grained power to both</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>53</th><td class="r"><ins>monitor and steer optimizations as the fit processes are running.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>54</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>55</th><td class="r"><ins>Where possible, mystic optimizers share a common interface, and thus can</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>56</th><td class="r"><ins>be easily swapped without the user having to write any new code. Mystic</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>57</th><td class="r"><ins>solvers all conform to a solver API, thus also have common method calls</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>58</th><td class="r"><ins>to configure and launch an optimization job. For more details, see</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>59</th><td class="r"><ins>`mystic.abstract_solver`. The API also makes it easy to bind a favorite</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>60</th><td class="r"><ins>3rd party solver into the mystic framework.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>61</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>62</th><td class="r"><ins>By providing a robust interface designed to allow the user to easily</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>63</th><td class="r"><ins>configure and control solvers, mystic reduces the barrier to implementing</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>64</th><td class="r"><ins>a target fitting problem as stable code. Thus the user can focus on</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>65</th><td class="r"><ins>building their physical models, and not spend time hacking together an</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>66</th><td class="r"><ins>interface to optimization code.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>67</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>68</th><td class="r"><ins>Mystic is in the early development stages, and any user feedback is</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>69</th><td class="r"><ins>highly appreciated. Contact Mike McKerns [mmckerns at caltech dot edu]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>70</th><td class="r"><ins>with comments, suggestions, and any bugs you may find.&nbsp; A list of known</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>71</th><td class="r"><ins>issues is maintained at http://dev.danse.us/trac/mystic/query.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>72</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>73</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>74</th><td class="r"><ins>Major Features</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>75</th><td class="r"><ins>==============</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>76</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>77</th><td class="r"><ins>Mystic provides a stock set of configurable, controllable solvers with::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>78</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>79</th><td class="r"><ins>&nbsp; &nbsp; - a common interface</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>80</th><td class="r"><ins>&nbsp; &nbsp; - the ability to impose solver-independent bounds constraints</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>81</th><td class="r"><ins>&nbsp; &nbsp; - the ability to apply solver-independent monitors</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>82</th><td class="r"><ins>&nbsp; &nbsp; - the ability to configure solver-independent termination conditions</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>83</th><td class="r"><ins>&nbsp; &nbsp; - a control handler yielding: [pause, continue, exit, and user_callback]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>84</th><td class="r"><ins>&nbsp; &nbsp; - ease in selecting initial conditions: [initial_guess, random]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>85</th><td class="r"><ins>&nbsp; &nbsp; - ease in selecting mutation strategies (for differential evolution)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>86</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>87</th><td class="r"><ins>To get up and running quickly, mystic also provides infrastructure to::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>88</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>89</th><td class="r"><ins>&nbsp; &nbsp; - easily generate a fit model (several example models are included)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>90</th><td class="r"><ins>&nbsp; &nbsp; - configure and auto-generate a cost function from a model</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>91</th><td class="r"><ins>&nbsp; &nbsp; - extend fit jobs to parallel &amp; distributed resources</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>92</th><td class="r"><ins>&nbsp; &nbsp; - couple models with optimization parameter constraints [COMING SOON]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>93</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>94</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>95</th><td class="r"><ins>Current Release</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>96</th><td class="r"><ins>===============</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>97</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>98</th><td class="r"><ins>The latest stable release version is mystic-%(relver)s. You can download it here.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>99</th><td class="r"><ins>The latest stable version of mystic is always available at:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>100</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>101</th><td class="r"><ins>&nbsp; &nbsp; http://dev.danse.us/trac/mystic</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>102</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>103</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>104</th><td class="r"><ins>Development Release</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>105</th><td class="r"><ins>===================</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>106</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>107</th><td class="r"><ins>If you like living on the edge, and don't mind the promise</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>108</th><td class="r"><ins>of a little instability, you can get the latest development</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>109</th><td class="r"><ins>release with all the shiny new features at:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>110</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>111</th><td class="r"><ins>&nbsp; &nbsp; http://dev.danse.us/packages.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>112</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>113</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>114</th><td class="r"><ins>Installation</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>115</th><td class="r"><ins>============</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>116</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>117</th><td class="r"><ins>Mystic is packaged to install from source, so you must</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>118</th><td class="r"><ins>download the tarball, unzip, and run the installer::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>119</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>120</th><td class="r"><ins>&nbsp; &nbsp; [download]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>121</th><td class="r"><ins>&nbsp; &nbsp; $ tar -xvzf mystic-%(thisver)s.tgz</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>122</th><td class="r"><ins>&nbsp; &nbsp; $ cd mystic-%(thisver)s</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>123</th><td class="r"><ins>&nbsp; &nbsp; $ python setup py build</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>124</th><td class="r"><ins>&nbsp; &nbsp; $ python setup py install</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>125</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>126</th><td class="r"><ins>You will be warned of any missing dependencies and/or settings</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>127</th><td class="r"><ins>after you run the "build" step above. Mystic depends on numpy</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>128</th><td class="r"><ins>and sympy, so you should install them first. There are several</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>129</th><td class="r"><ins>functions within mystic where scipy is used if it is available;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>130</th><td class="r"><ins>however, scipy is an optional dependency. Having matplotlib installed</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>131</th><td class="r"><ins>is necessary for running several of the examples, and you should</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>132</th><td class="r"><ins>probably go get it even though it's not required. Matplotlib is</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>133</th><td class="r"><ins>also required by mystic's "analysis viewers".</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>134</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>135</th><td class="r"><ins>Alternately, mystic can be installed with easy_install::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>136</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>137</th><td class="r"><ins>&nbsp; &nbsp; [download]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>138</th><td class="r"><ins>&nbsp; &nbsp; $ easy_install -f . mystic</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>139</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>140</th><td class="r"><ins>For Windows users, source code and examples are available in zip format.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>141</th><td class="r"><ins>A binary installer is also provided::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>142</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>143</th><td class="r"><ins>&nbsp; &nbsp; [download]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>144</th><td class="r"><ins>&nbsp; &nbsp; [double-click]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>145</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>146</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>147</th><td class="r"><ins>Requirements</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>148</th><td class="r"><ins>============</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>149</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>150</th><td class="r"><ins>Mystic requires::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>151</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>152</th><td class="r"><ins>&nbsp; &nbsp; - python, version &gt;= 2.5, version &lt; 3.0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>153</th><td class="r"><ins>&nbsp; &nbsp; - numpy, version &gt;= 1.0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>154</th><td class="r"><ins>&nbsp; &nbsp; - sympy, version &gt;= 0.6.7</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>155</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>156</th><td class="r"><ins>Optional requirements::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>157</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>158</th><td class="r"><ins>&nbsp; &nbsp; - setuptools, version &gt;= 0.6</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>159</th><td class="r"><ins>&nbsp; &nbsp; - matplotlib, version &gt;= 0.91</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>160</th><td class="r"><ins>&nbsp; &nbsp; - scipy, version &gt;= 0.6.0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>161</th><td class="r"><ins>&nbsp; &nbsp; - pathos, version &gt;= 0.2a.dev</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>162</th><td class="r"><ins>&nbsp; &nbsp; - pyina, version &gt;= 0.2a.dev</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>163</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>164</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>165</th><td class="r"><ins>Usage Notes</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>166</th><td class="r"><ins>===========</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>167</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>168</th><td class="r"><ins>Probably the best way to get started is to look at a few of the</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>169</th><td class="r"><ins>examples provided within mystic. See `mystic.examples` for a</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>170</th><td class="r"><ins>set of scripts that demonstrate the configuration and launching of </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>171</th><td class="r"><ins>optimization jobs for one of the sample models in `mystic.models`.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>172</th><td class="r"><ins>Many of the included examples are standard optimization test problems.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>173</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>174</th><td class="r"><ins>Instructions on building a new model are in `mystic.models.abstract_model`.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>175</th><td class="r"><ins>Mystic provides base classes for two types of models::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>176</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>177</th><td class="r"><ins>&nbsp; &nbsp; - AbstractFunction&nbsp; &nbsp;[evaluates f(x) for given evaluation points x]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>178</th><td class="r"><ins>&nbsp; &nbsp; - AbstractModel&nbsp; &nbsp; &nbsp; [generates f(x,p) for given coefficients p]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>179</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>180</th><td class="r"><ins>It is, however, not necessary to use the base classes in your own model.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>181</th><td class="r"><ins>Mystic also provides some convienence functions to help you build a</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>182</th><td class="r"><ins>model instance and a cost function instance on-the-fly. For more</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>183</th><td class="r"><ins>information, see `mystic.mystic.forward_model`.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>184</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>185</th><td class="r"><ins>All mystic solvers are highly configurable, and provide a robust set of</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>186</th><td class="r"><ins>methods to help customize the solver for your particular optimization</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>187</th><td class="r"><ins>problem. For each solver, a minimal interface is also provided for users</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>188</th><td class="r"><ins>who prefer to configure their solvers in a single function call. For more</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>189</th><td class="r"><ins>information, see `mystic.mystic.abstract_solver` for the solver API, and</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>190</th><td class="r"><ins>each of the individual solvers for their minimal (non-API compliant)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>191</th><td class="r"><ins>interface.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>192</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>193</th><td class="r"><ins>Mystic extends the solver API to parallel computing by providing a solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>194</th><td class="r"><ins>class that utilizes the parallel map-reduce algorithm. Mystic includes</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>195</th><td class="r"><ins>a set of defaults in `mystic.mystic.python_map` that mirror the behavior</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>196</th><td class="r"><ins>of serial python and the built-in python map function. Mystic solvers</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>197</th><td class="r"><ins>built on map-reduce can utilize the distributed and parallel tools provided</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>198</th><td class="r"><ins>by the `pathos` package, and thus with little new code solvers are</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>199</th><td class="r"><ins>extended to high-performance computing. For more information, see</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>200</th><td class="r"><ins>`mystic.mystic.abstract_map_solver`, `mystic.mystic.abstract_nested_solver`,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>201</th><td class="r"><ins>and the pathos documentation at http://dev.danse.us/trac/pathos.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>202</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>203</th><td class="r"><ins>Important classes and functions are found here::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>204</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>205</th><td class="r"><ins>&nbsp; &nbsp; - mystic.mystic.solvers&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [solver optimization algorithms]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>206</th><td class="r"><ins>&nbsp; &nbsp; - mystic.mystic.termination&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [solver termination conditions]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>207</th><td class="r"><ins>&nbsp; &nbsp; - mystic.mystic.strategy&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[solver population mutation strategies]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>208</th><td class="r"><ins>&nbsp; &nbsp; - mystic.mystic.monitors&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[optimization monitors]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>209</th><td class="r"><ins>&nbsp; &nbsp; - mystic.mystic.tools&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [function wrappers, etc]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>210</th><td class="r"><ins>&nbsp; &nbsp; - mystic.mystic.forward_model&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [cost function generator]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>211</th><td class="r"><ins>&nbsp; &nbsp; - mystic.models&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [a collection of standard models]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>212</th><td class="r"><ins>&nbsp; &nbsp; - mystic.math&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [some mathematical functions and tools]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>213</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>214</th><td class="r"><ins>Solver and model API definitions are found here::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>215</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>216</th><td class="r"><ins>&nbsp; &nbsp; - mystic.mystic.abstract_solver&nbsp; &nbsp; &nbsp; &nbsp; [the solver API definition]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>217</th><td class="r"><ins>&nbsp; &nbsp; - mystic.mystic.abstract_map_solver&nbsp; &nbsp; [the parallel solver API]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>218</th><td class="r"><ins>&nbsp; &nbsp; - mystic.mystic.abstract_nested_solver [the nested solver API]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>219</th><td class="r"><ins>&nbsp; &nbsp; - mystic.models.abstract_model&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[the model API definition]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>220</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>221</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>222</th><td class="r"><ins>License</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>223</th><td class="r"><ins>=======</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>224</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>225</th><td class="r"><ins>Mystic is distributed under a modified BSD license.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>226</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>227</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; import mystic</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>228</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; print mystic.license()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>229</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>230</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>231</th><td class="r"><ins>Citation</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>232</th><td class="r"><ins>========</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>233</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>234</th><td class="r"><ins>If you use mystic to do research that leads to publication,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>235</th><td class="r"><ins>we ask that you acknowledge use of mystic by citing the</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>236</th><td class="r"><ins>following in your publication::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>237</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>238</th><td class="r"><ins>&nbsp; &nbsp; M.M. McKerns, L. Strand, T. Sullivan, A. Fang, M.A.G. Aivazis,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>239</th><td class="r"><ins>&nbsp; &nbsp; "Building a framework for predictive science", Proceedings of</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>240</th><td class="r"><ins>&nbsp; &nbsp; the 10th Python in Science Conference, 2011;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>241</th><td class="r"><ins>&nbsp; &nbsp; http://arxiv.org/pdf/1202.1056</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>242</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>243</th><td class="r"><ins>&nbsp; &nbsp; Michael McKerns, Patrick Hung, and Michael Aivazis,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>244</th><td class="r"><ins>&nbsp; &nbsp; "mystic: a simple model-independent inversion framework", 2009- ;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>245</th><td class="r"><ins>&nbsp; &nbsp; http://dev.danse.us/trac/mystic</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>246</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>247</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>248</th><td class="r"><ins>More Information</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>249</th><td class="r"><ins>================</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>250</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>251</th><td class="r"><ins>Please see http://dev.danse.us/trac/mystic or http://arxiv.org/pdf/1202.1056 for further information.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>252</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>253</th><td class="r"><ins>""" % {'relver' : stable_version, 'thisver' : this_version}</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>254</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>255</th><td class="r"><ins># write readme file</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>256</th><td class="r"><ins>with open('README', 'w') as file:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>257</th><td class="r"><ins>&nbsp; &nbsp; file.write(long_description)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>258</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>259</th><td class="r"><ins># generate 'info' file contents</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>260</th><td class="r"><ins>def write_info_py(filename='mystic/info.py'):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>261</th><td class="r"><ins>&nbsp; &nbsp; contents = """# THIS FILE GENERATED FROM SETUP.PY</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>262</th><td class="r"><ins>this_version = '%(this_version)s'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>263</th><td class="r"><ins>stable_version = '%(stable_version)s'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>264</th><td class="r"><ins>readme = '''%(long_description)s'''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>265</th><td class="r"><ins>license = '''%(license_text)s'''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>266</th><td class="r"><ins>"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>267</th><td class="r"><ins>&nbsp; &nbsp; with open(filename, 'w') as file:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>268</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; file.write(contents % {'this_version' : this_version,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>269</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'stable_version' : stable_version,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>270</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'long_description' : long_description,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>271</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'license_text' : license_text })</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>272</th><td class="r"><ins>&nbsp; &nbsp; return</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>273</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>274</th><td class="r"><ins># write info file</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>275</th><td class="r"><ins>write_info_py()</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>276</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>277</th><td class="l"><span># build the 'setup' call</span> </td>
+                  </tr><tr>
+                          <th>16</th><th>278</th><td class="l"><span>setup_code = """</span> </td>
+                  </tr><tr>
+                          <th>17</th><th>279</th><td class="l"><span>setup(name='mystic',</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>18</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; version='<del>0.2a2.dev</del>',</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>280</th><td class="r"><span>&nbsp; &nbsp; &nbsp; version='<ins>%s</ins>',</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>19</th><th>281</th><td class="l"><span>&nbsp; &nbsp; &nbsp; description='a simple interactive inversion analysis framework',</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>282</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; long_description = '''%s''',</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>283</th><td class="l"><span>&nbsp; &nbsp; &nbsp; author = 'Mike McKerns',</span> </td>
+                  </tr><tr>
+                          <th>21</th><th>284</th><td class="l"><span>&nbsp; &nbsp; &nbsp; maintainer = 'Mike McKerns',</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/setup.py?rev=475#L31">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/setup.py?rev=530#L294">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>294</th><td class="l"><span>&nbsp; &nbsp; &nbsp; package_dir = {'mystic':'mystic','mystic.models':'models',</span> </td>
+                  </tr><tr>
+                          <th>32</th><th>295</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'mystic.math':'_math'},</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>33</th><th> </th><td class="l"><span>"""<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>296</th><td class="r"><span>"""<ins>&nbsp;% (target_version, long_description)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>297</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>35</th><th>298</th><td class="l"><span># add dependencies</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/530/mystic/setup.py?format=diff&amp;new=530" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/530/mystic/setup.py?format=zip&amp;new=530" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/530/mystic/setup.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 03:12:10 GMT -->
+</html>

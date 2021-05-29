@@ -1,0 +1,910 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/464/DEV_TODO by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:40:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 464 for DEV_TODO – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/464/DEV_TODO?format=diff&amp;new=464" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/464/DEV_TODO?format=zip&amp;new=464" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../240/DEV_TODO.html" title="Changeset 240 for DEV_TODO" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../240/DEV_TODO.html" title="Changeset 240 for DEV_TODO">Previous Change</a></span></li><li class="last"><span class="missing">Next Change &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../464.html">464</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/DEV_TODO?rev=464">DEV_TODO</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             06/30/11 19:22:20
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-06-30T19%3A22%3A20-07%3A00&amp;precision=second" title="2011-06-30T19:22:20-07:00 in Timeline">5 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+updated citation, todo's from scipy pub<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/DEV_TODO?rev=464">
+              DEV_TODO
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="DEV_TODO.html" title="Show the changeset 464 restricted to DEV_TODO">DEV_TODO</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 240">
+                    <a title="Show revision 240 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/DEV_TODO?rev=240#L1">
+                      r240</a>
+                  </th>
+                  <th title="Revision 464">
+                    <a title="Show revision 464 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/DEV_TODO?rev=464#L1">
+                      r464</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>1</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2</th><td class="r"><ins>#&nbsp; &nbsp;M.M. McKerns, L. Strand, T. Sullivan, A. Fang, M.A.G. Aivazis,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>3</th><td class="r"><ins>#&nbsp; &nbsp;"Building a framework for predictive science", Proceedings of</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>4</th><td class="r"><ins>#&nbsp; &nbsp;the 10th Python in Science Conference, (submitted 2011).</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>5</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>6</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>7</th><td class="r"><ins># the function to be minimized and initial values </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>8</th><td class="r"><ins>from mystic.models import rosen as my_model </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>9</th><td class="r"><ins>x0 = [0.8, 1.2, 0.7] </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>10</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>11</th><td class="r"><ins># configure the solver and obtain the solution </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>12</th><td class="r"><ins>from mystic.solvers import fmin </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>13</th><td class="r"><ins>solution = fmin(my_model, x0)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>14</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>15</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>16</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>17</th><td class="r"><ins># the function to be minimized and initial values </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>18</th><td class="r"><ins>from mystic.models import rosen as my_model </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>19</th><td class="r"><ins>x0 = [0.8, 1.2, 0.7] </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>20</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>21</th><td class="r"><ins># get monitor and termination condition objects </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>22</th><td class="r"><ins>from mystic.monitors import Monitor, VerboseMonitor </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>23</th><td class="r"><ins>stepmon = VerboseMonitor(5) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>24</th><td class="r"><ins>evalmon = Monitor() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>25</th><td class="r"><ins>from mystic.termination import ChangeOverGeneration </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>26</th><td class="r"><ins>COG = ChangeOverGeneration() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>27</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>28</th><td class="r"><ins># instantiate and configure the solver </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>29</th><td class="r"><ins>from mystic.solvers import NelderMeadSimplexSolver </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>30</th><td class="r"><ins>solver = NelderMeadSimplexSolver(len(x0)) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>31</th><td class="r"><ins>solver.SetInitialPoints(x0) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>32</th><td class="r"><ins>solver.SetGenerationMonitor(stepmon) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>33</th><td class="r"><ins>solver.SetEvaluationMonitor(evalmon) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>34</th><td class="r"><ins>solver.Solve(my_model, COG) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>35</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>36</th><td class="r"><ins># obtain the solution </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>37</th><td class="r"><ins>solution = solver.bestSolution </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>38</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>39</th><td class="r"><ins># obtain diagnostic information </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>40</th><td class="r"><ins>function_evals = solver.evaluations </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>41</th><td class="r"><ins>iterations = solver.generations </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>42</th><td class="r"><ins>cost = solver.bestEnergy </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>43</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>44</th><td class="r"><ins># modify the solver configuration, and continue </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>45</th><td class="r"><ins>COG = ChangeOverGeneration(tolerance=1e-8) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>46</th><td class="r"><ins>solver.Solve(my_model, COG) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>47</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>48</th><td class="r"><ins># obtain the new solution </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>49</th><td class="r"><ins>solution = solver.bestSolution</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>50</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>51</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>52</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>53</th><td class="r"><ins># a user-provided constraints function </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>54</th><td class="r"><ins>def constrain(x): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>55</th><td class="r"><ins>&nbsp; x[1] = x[0] </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>56</th><td class="r"><ins>&nbsp; return x </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>57</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>58</th><td class="r"><ins># the function to be minimized and the bounds </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>59</th><td class="r"><ins>from mystic.models import rosen as my_model </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>60</th><td class="r"><ins>lb = [0.0, 0.0, 0.0] </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>61</th><td class="r"><ins>ub = [2.0, 2.0, 2.0] </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>62</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>63</th><td class="r"><ins># get termination condition object </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>64</th><td class="r"><ins>from mystic.termination import ChangeOverGeneration </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>65</th><td class="r"><ins>COG = ChangeOverGeneration() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>66</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>67</th><td class="r"><ins># instantiate and configure the solver </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>68</th><td class="r"><ins>from mystic.solvers import NelderMeadSimplexSolver </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>69</th><td class="r"><ins>solver = NelderMeadSimplexSolver(len(x0)) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>70</th><td class="r"><ins>solver.SetRandomInitialPoints(lb, ub) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>71</th><td class="r"><ins>solver.SetStrictRanges(lb, ub) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>72</th><td class="r"><ins>solver.SetConstraints(constrain) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>73</th><td class="r"><ins>solver.Solve(my_model, COG) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>74</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>75</th><td class="r"><ins># obtain the solution </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>76</th><td class="r"><ins>solution = solver.bestSolution </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>77</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>78</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>79</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>80</th><td class="r"><ins># a user-provided constraints function </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>81</th><td class="r"><ins>constraints = """ </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>82</th><td class="r"><ins>x2 = x1 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>83</th><td class="r"><ins>""" </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>84</th><td class="r"><ins>from mystic.constraints import parse </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>85</th><td class="r"><ins>constrain = parse(constraints) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>86</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>87</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>88</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>89</th><td class="r"><ins># generate a model from a stock 'model factory'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>90</th><td class="r"><ins>from mystic.models.lorentzian import Lorentzian </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>91</th><td class="r"><ins>lorentz = Lorentzian(coeffs) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>92</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>93</th><td class="r"><ins># evaluate the model </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>94</th><td class="r"><ins>y = lorentz(x) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>95</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>96</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>97</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>98</th><td class="r"><ins># a user-provided model function </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>99</th><td class="r"><ins>def identify(x) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>100</th><td class="r"><ins>&nbsp; return x </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>101</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>102</th><td class="r"><ins># add pathos infrastructure (included in mystic) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>103</th><td class="r"><ins>from mystic.tools import modelFactory, Monitor </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>104</th><td class="r"><ins>evalmon = Monitor() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>105</th><td class="r"><ins>my_model = modelFactory(identify, monitor=evalmon) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>106</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>107</th><td class="r"><ins># evaluate the model </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>108</th><td class="r"><ins>y = my_model(x) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>109</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>110</th><td class="r"><ins># evaluate the model with a map function </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>111</th><td class="r"><ins>from mystic.tools import PythonMap </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>112</th><td class="r"><ins>my_map = PythonMap() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>113</th><td class="r"><ins>z = my_map(my_model, range(10)) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>114</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>115</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>116</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>117</th><td class="r"><ins># a user-provided model function </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>118</th><td class="r"><ins>def identify(x) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>119</th><td class="r"><ins>&nbsp; return x </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>120</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>121</th><td class="r"><ins># cast the model as a distributed service </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>122</th><td class="r"><ins>from pathos.servers import sshServer</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>123</th><td class="r"><ins>id = 'foo.caltech.edu:50000:spike42'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>124</th><td class="r"><ins>my_proxy = sshServer(identify, server=id) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>125</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>126</th><td class="r"><ins># evaluate the model via proxy </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>127</th><td class="r"><ins>y = my_proxy(x) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>128</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>129</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>130</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>131</th><td class="r"><ins># a user-provided model function </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>132</th><td class="r"><ins>def identify(x) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>133</th><td class="r"><ins>&nbsp; return x </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>134</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>135</th><td class="r"><ins># select and configure a parallel map </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>136</th><td class="r"><ins>from pathos.maps import ipcPool </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>137</th><td class="r"><ins>my_map = ipcPool(2, servers=['foo.caltech.edu']) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>138</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>139</th><td class="r"><ins># evaluate the model in parallel </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>140</th><td class="r"><ins>z = my_map(identify, range(10)) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>141</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>142</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>143</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>144</th><td class="r"><ins># configure and build map </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>145</th><td class="r"><ins>from pathos.launchers import ipc </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>146</th><td class="r"><ins>from pathos.strategies import pool</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>147</th><td class="r"><ins>from pathos.tools import mapFactory </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>148</th><td class="r"><ins>my_map = mapFactory(launcher=ipc, strategy=pool) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>149</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>150</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>151</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>152</th><td class="r"><ins># establish a tunnel </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>153</th><td class="r"><ins>from pathos.tunnel import sshTunnel </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>154</th><td class="r"><ins>uid = 'foo.caltech.edu:12345:tunnel69'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>155</th><td class="r"><ins>tunnel_proxy = sshTunnel(uid) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>156</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>157</th><td class="r"><ins># inspect the ports </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>158</th><td class="r"><ins>localport = tunnel_proxy.lport </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>159</th><td class="r"><ins>remoteport = tunnel_proxy.rport </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>160</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>161</th><td class="r"><ins># a user-provided model function </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>162</th><td class="r"><ins>def identify(x) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>163</th><td class="r"><ins>&nbsp; return x </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>164</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>165</th><td class="r"><ins># cast the model as a distributed service </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>166</th><td class="r"><ins>from pathos.servers import ipcServer </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>167</th><td class="r"><ins>id = 'localhost:%s:bug01' % localport </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>168</th><td class="r"><ins>my_proxy = ipcServer(identify, server=id) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>169</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>170</th><td class="r"><ins># evaluate the model via tunneled proxy </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>171</th><td class="r"><ins>y = my_proxy(x) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>172</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>173</th><td class="r"><ins># disconnect the tunnel </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>174</th><td class="r"><ins>tunnel_proxy.disconnect() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>175</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>176</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>177</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>178</th><td class="r"><ins># configure and build map </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>179</th><td class="r"><ins>from pyina.launchers import mpirun </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>180</th><td class="r"><ins>from pyina.strategies import carddealer as card </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>181</th><td class="r"><ins>from pyina.tools import mapFactory </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>182</th><td class="r"><ins>my_map = mapFactory(4, launcher=mpirun, strategy=card) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>183</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>184</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>185</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>186</th><td class="r"><ins># the function to be minimized and the bounds </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>187</th><td class="r"><ins>from mystic.models import rosen as my_model </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>188</th><td class="r"><ins>lb = [0.0, 0.0, 0.0] </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>189</th><td class="r"><ins>ub = [2.0, 2.0, 2.0] </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>190</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>191</th><td class="r"><ins># get termination condition object </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>192</th><td class="r"><ins>from mystic.termination import ChangeOverGeneration </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>193</th><td class="r"><ins>COG = ChangeOverGeneration() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>194</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>195</th><td class="r"><ins># select the parallel launch configuration </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>196</th><td class="r"><ins>from pyina.maps import MpirunCarddealer </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>197</th><td class="r"><ins>my_map = MpirunCarddealer(4) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>198</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>199</th><td class="r"><ins># instantiate and configure the solver </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>200</th><td class="r"><ins>from mystic.solvers import DifferentialEvolutionSolver </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>201</th><td class="r"><ins>solver = DifferentialEvolutionSolver(len(lb), 20) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>202</th><td class="r"><ins>solver.SetRandomInitialPoints(lb, ub) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>203</th><td class="r"><ins>solver.SetStrictRanges(lb, ub) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>204</th><td class="r"><ins>solver.SetEvaluationMap(my_map) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>205</th><td class="r"><ins>solver.Solve(my_model, COG) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>206</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>207</th><td class="r"><ins># obtain the solution </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>208</th><td class="r"><ins>solution = solver.bestSolution </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>209</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>210</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>211</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>212</th><td class="r"><ins># the function to be minimized and the bounds </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>213</th><td class="r"><ins>from mystic.models import rosen as my_model </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>214</th><td class="r"><ins>lb = [0.0, 0.0, 0.0] </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>215</th><td class="r"><ins>ub = [2.0, 2.0, 2.0] </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>216</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>217</th><td class="r"><ins># get monitor and termination condition objects </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>218</th><td class="r"><ins>from mystic.monitors import LoggingMonitor </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>219</th><td class="r"><ins>stepmon = LoggingMonitor(1, âlog.txtâ) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>220</th><td class="r"><ins>from mystic.termination import ChangeOverGeneration </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>221</th><td class="r"><ins>COG = ChangeOverGeneration() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>222</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>223</th><td class="r"><ins># select the parallel launch configuration </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>224</th><td class="r"><ins>from pyina.maps import TorqueMpirunCarddealer </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>225</th><td class="r"><ins>my_map = TorqueMpirunCarddealer(â5:ppn=4â) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>226</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>227</th><td class="r"><ins># instantiate and configure the nested solver </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>228</th><td class="r"><ins>from mystic.solvers import PowellDirectionalSolver </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>229</th><td class="r"><ins>my_solver = PowellDirectionalSolver(len(lb)) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>230</th><td class="r"><ins>my_solver.SetStrictRanges(lb, ub) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>231</th><td class="r"><ins>my_solver.SetEvaluationLimits(50) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>232</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>233</th><td class="r"><ins># instantiate and configure the outer solver </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>234</th><td class="r"><ins>from mystic.solvers import BuckshotSolver </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>235</th><td class="r"><ins>solver = BuckshotSolver(len(lb), 20) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>236</th><td class="r"><ins>solver.SetRandomInitialPoints(lb, ub) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>237</th><td class="r"><ins>solver.SetGenerationMonitor(stepmon) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>238</th><td class="r"><ins>solver.SetNestedSolver(my_solver) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>239</th><td class="r"><ins>solver.SetSolverMap(my_map) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>240</th><td class="r"><ins>solver.Solve(my_model, COG) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>241</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>242</th><td class="r"><ins># obtain the solution </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>243</th><td class="r"><ins>solution = solver.bestSolution</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>244</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>245</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>246</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>247</th><td class="r"><ins># prepare a (F(X) - G)**2 a metric </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>248</th><td class="r"><ins>def costFactory(my_model, my_data): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>249</th><td class="r"><ins>&nbsp; def cost(param): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>250</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>251</th><td class="r"><ins>&nbsp; &nbsp; # compute the cost </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>252</th><td class="r"><ins>&nbsp; &nbsp; return ( my_model(param) - my_data )**2 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>253</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>254</th><td class="r"><ins>&nbsp; return cost </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>255</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>256</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>257</th><td class="r"><ins>'''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>258</th><td class="r"><ins>The calculation of the diameter is performed as a nested</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>259</th><td class="r"><ins>optimization, as shown above for the BuckshotSolver. Each</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>260</th><td class="r"><ins>inner optimization is a calculation of a component</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>261</th><td class="r"><ins>suboscillation, using the a global optimizer </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>262</th><td class="r"><ins>(such as DifferentialEvolutionSolver) and the cost </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>263</th><td class="r"><ins>metric shown above.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>264</th><td class="r"><ins>'''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>265</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>266</th><td class="r"><ins># prepare a (F(X) - F(X'))**2 cost metric </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>267</th><td class="r"><ins>def suboscillationFactory(my_model, i): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>268</th><td class="r"><ins>&nbsp; def cost(param): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>269</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>270</th><td class="r"><ins>&nbsp; &nbsp; # get X and X' (Xi' is appended to X at param[-1]) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>271</th><td class="r"><ins>&nbsp; &nbsp; x = param[:-1] </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>272</th><td class="r"><ins>&nbsp; &nbsp; x_prime = param[:i] + param[-1:] + param[i+1:-1] </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>273</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>274</th><td class="r"><ins>&nbsp; &nbsp; # compute the suboscillation </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>275</th><td class="r"><ins>&nbsp; &nbsp; return -( my_model(x) - my_model(x_prime) )**2 </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>276</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>277</th><td class="r"><ins>&nbsp; return cost</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>278</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>279</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>280</th><td class="r"><ins>'''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>281</th><td class="r"><ins>Global optimizations used in solving OUQ problems are </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>282</th><td class="r"><ins>composed in the same manner as shown above for the </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>283</th><td class="r"><ins>DifferentialEvolutionSolver.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>284</th><td class="r"><ins>'''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>285</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>286</th><td class="r"><ins># OUQ requires bounds in a very specific form... </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>287</th><td class="r"><ins># param = [wxi]*nx + [xi]*nx + [wyi]*ny + [yi]*ny + [wzi]*nz + [zi]*nz </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>288</th><td class="r"><ins>npts = (nx,ny,nz) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>289</th><td class="r"><ins>lb = (nx * w_lower) + (nx * x_lower) \ </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>290</th><td class="r"><ins>&nbsp; &nbsp;+ (ny * w_lower) + (ny * y_lower) \ </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>291</th><td class="r"><ins>&nbsp; &nbsp;+ (nz * w_lower) + (nz * z_lower) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>292</th><td class="r"><ins>ub = (nx * w_upper) + (nx * x_upper) \ </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>293</th><td class="r"><ins>&nbsp; &nbsp;+ (ny * w_upper) + (ny * y_upper) \ </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>294</th><td class="r"><ins>&nbsp; &nbsp;+ (nz * w_upper) + (nz * z_upper) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>295</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>296</th><td class="r"><ins>from mystic.math.measures import split_param </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>297</th><td class="r"><ins>from mystic.math.dirac_measure import product_measure </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>298</th><td class="r"><ins>from mystic.math import almostEqual </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>299</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>300</th><td class="r"><ins># split bounds into weight-only &amp; sample-only </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>301</th><td class="r"><ins>w_lb, m_lb = split_param(lb, npts) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>302</th><td class="r"><ins>w_ub, m_ub = split_param(ub, npts) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>303</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>304</th><td class="r"><ins># generate constraints function </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>305</th><td class="r"><ins>def constraints(param): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>306</th><td class="r"><ins>&nbsp; prodmeasure = product_measure() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>307</th><td class="r"><ins>&nbsp; prodmeasure.load(param, npts) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>308</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>309</th><td class="r"><ins>&nbsp; # impose norm on measures </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>310</th><td class="r"><ins>&nbsp; for measure in prodmeasure: </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>311</th><td class="r"><ins>&nbsp; &nbsp; if not almostEqual(float(measure.mass), 1.0): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>312</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; measure.normalize() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>313</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>314</th><td class="r"><ins>&nbsp; # impose expectation on product measure </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>315</th><td class="r"><ins>&nbsp; E = float(prodmeasure.get_expect(my_model)) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>316</th><td class="r"><ins>&nbsp; &nbsp; if not (E &lt;= float(target_mean + error)) \ </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>317</th><td class="r"><ins>&nbsp; &nbsp; or not (float(target_mean - error) &lt;= E):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>318</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; prodmeasure.set_expect((target_mean, error), my_model, (m_lb, m_ub)) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>319</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>320</th><td class="r"><ins>&nbsp; # extract weights and positions </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>321</th><td class="r"><ins>&nbsp; return prodmeasure.flatten() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>322</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>323</th><td class="r"><ins># generate maximizing function </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>324</th><td class="r"><ins>def cost(param): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>325</th><td class="r"><ins>&nbsp; prodmeasure = product_measure() </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>326</th><td class="r"><ins>&nbsp; prodmeasure.load(param, npts) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>327</th><td class="r"><ins>&nbsp; return MINMAX * prodmeasure.pof(my_model)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>328</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>329</th><td class="r"><ins>#####################################################################</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>330</th><td class="r"><ins>"""</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>331</th><td class="l"><span>DIRECT:</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>332</th><td class="l"><span>* Add more python optimizers: scipy, OpenOpt, PARK (snobfit)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/DEV_TODO?rev=240#L17">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/DEV_TODO?rev=464#L347">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>17</th><th>347</th><td class="l"><span>* &lt;-- Find OpenOpt's model &amp; optimizer API --&gt;</span> </td>
+                  </tr><tr>
+                          <th>18</th><th>348</th><td class="l"><span>* &lt;-- Find DAKOTA's model &amp; optimizer API --&gt;</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>349</th><td class="r"><ins>"""</ins> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/464/DEV_TODO?format=diff&amp;new=464" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/464/DEV_TODO?format=zip&amp;new=464" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/464/DEV_TODO by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:40:30 GMT -->
+</html>

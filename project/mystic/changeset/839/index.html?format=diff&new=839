@@ -1,0 +1,864 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/839/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:22:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 839 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="prev" href="../838.html" title="Changeset 838" />
+        <link rel="last" href="../862.html" title="Changeset 862" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/839/?format=diff&amp;new=839" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/839/?format=zip&amp;new=839" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../840.html" title="Changeset 840" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="../1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+        <link rel="icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://trac.mystic.cacr.caltech.edu/"><img src="http://www.cacr.caltech.edu/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://trac.mystic.cacr.caltech.edu/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../838.html" title="Changeset 838">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="../840.html" title="Changeset 840">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 839</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             10/24/15 08:43:05
+             (<a class="timeline" href="http://trac.mystic.cacr.caltech.edu/project/mystic/timeline?from=2015-10-24T08%3A43%3A05-07%3A00&amp;precision=second" title="2015-10-24T08:43:05-07:00 in Timeline">7 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+fix spelling error for suppress<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic?rev=839">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>8 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/test_svc1.py?rev=839">
+              examples/test_svc1.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/test_svc2.py?rev=839">
+              examples/test_svc2.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/test_svr1.py?rev=839">
+              examples/test_svr1.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/test_svr2.py?rev=839">
+              examples/test_svr2.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples_other/test_smo1.py?rev=839">
+              examples_other/test_smo1.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=839">
+              mystic/_symbolic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/symbolic.py?rev=839">
+              mystic/symbolic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=839">
+              mystic/tools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">5 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="mystic/examples/test_svc1.html" title="Show the changeset 839 restricted to mystic/examples/test_svc1.py">mystic/examples/test_svc1.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 835">
+                    <a title="Show revision 835 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/test_svc1.py?rev=835#L50">
+                      r835</a>
+                  </th>
+                  <th title="Revision 839">
+                    <a title="Show revision 839 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/test_svc1.py?rev=839#L50">
+                      r839</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>50</th><td class="l"><span>constrain = constraint(solvers(solve(constrain,target=['x0'])))</span> </td>
+                  </tr><tr>
+                          <th>51</th><th>51</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>52</th><th> </th><td class="l"><span>from mystic import sup<del></del>ressed</span> </td>
+                      </tr><tr>
+                        <th>53</th><th> </th><td class="l"><span>@sup<del></del>ressed(1e-5)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>52</th><td class="r"><span>from mystic import sup<ins>p</ins>ressed</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>53</th><td class="r"><span>@sup<ins>p</ins>ressed(1e-5)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>54</th><td class="l"><span>def conserve(x):</span> </td>
+                  </tr><tr>
+                          <th>55</th><th>55</th><td class="l"><span>&nbsp; &nbsp; return constrain(x)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="mystic/examples/test_svc2.html" title="Show the changeset 839 restricted to mystic/examples/test_svc2.py">mystic/examples/test_svc2.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 835">
+                    <a title="Show revision 835 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/test_svc2.py?rev=835#L70">
+                      r835</a>
+                  </th>
+                  <th title="Revision 839">
+                    <a title="Show revision 839 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/test_svc2.py?rev=839#L70">
+                      r839</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>70</th><th>70</th><td class="l"><span>#constrain = constraint(solvers(solve(constrain)))</span> </td>
+                  </tr><tr>
+                          <th>71</th><th>71</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>72</th><th> </th><td class="l"><span>from mystic import sup<del></del>ressed</span> </td>
+                      </tr><tr>
+                        <th>73</th><th> </th><td class="l"><span>@sup<del></del>ressed(5e-2)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>72</th><td class="r"><span>from mystic import sup<ins>p</ins>ressed</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>73</th><td class="r"><span>@sup<ins>p</ins>ressed(5e-2)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>74</th><td class="l"><span>def conserve(x):</span> </td>
+                  </tr><tr>
+                          <th>75</th><th>75</th><td class="l"><span>&nbsp; &nbsp; return constrain(x)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="mystic/examples/test_svr1.html" title="Show the changeset 839 restricted to mystic/examples/test_svr1.py">mystic/examples/test_svr1.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 835">
+                    <a title="Show revision 835 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/test_svr1.py?rev=835#L47">
+                      r835</a>
+                  </th>
+                  <th title="Revision 839">
+                    <a title="Show revision 839 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/test_svr1.py?rev=839#L47">
+                      r839</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>47</th><th>47</th><td class="l"><span>constrain = constraint(solvers(solve(constrain,target=['x0'])))</span> </td>
+                  </tr><tr>
+                          <th>48</th><th>48</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>49</th><th> </th><td class="l"><span>from mystic import sup<del></del>ressed</span> </td>
+                      </tr><tr>
+                        <th>50</th><th> </th><td class="l"><span>@sup<del></del>ressed(1e-5)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>49</th><td class="r"><span>from mystic import sup<ins>p</ins>ressed</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>50</th><td class="r"><span>@sup<ins>p</ins>ressed(1e-5)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>51</th><th>51</th><td class="l"><span>def conserve(x):</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>52</th><td class="l"><span>&nbsp; &nbsp; return constrain(x)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="mystic/examples/test_svr2.html" title="Show the changeset 839 restricted to mystic/examples/test_svr2.py">mystic/examples/test_svr2.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 830">
+                    <a title="Show revision 830 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/test_svr2.py?rev=830#L49">
+                      r830</a>
+                  </th>
+                  <th title="Revision 839">
+                    <a title="Show revision 839 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/test_svr2.py?rev=839#L49">
+                      r839</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>49</th><th>49</th><td class="l"><span>constrain = constraint(solvers(solve(constrain,target=['x0'])))</span> </td>
+                  </tr><tr>
+                          <th>50</th><th>50</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>51</th><th> </th><td class="l"><span>from mystic import sup<del></del>ressed</span> </td>
+                      </tr><tr>
+                        <th>52</th><th> </th><td class="l"><span>@sup<del></del>ressed(1e-5)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>51</th><td class="r"><span>from mystic import sup<ins>p</ins>ressed</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>52</th><td class="r"><span>@sup<ins>p</ins>ressed(1e-5)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>53</th><td class="l"><span>def conserve(x):</span> </td>
+                  </tr><tr>
+                          <th>54</th><th>54</th><td class="l"><span>&nbsp; &nbsp; return constrain(x)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="mystic/examples_other/test_smo1.html" title="Show the changeset 839 restricted to mystic/examples_other/test_smo1.py">mystic/examples_other/test_smo1.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 829">
+                    <a title="Show revision 829 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples_other/test_smo1.py?rev=829#L44">
+                      r829</a>
+                  </th>
+                  <th title="Revision 839">
+                    <a title="Show revision 839 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples_other/test_smo1.py?rev=839#L44">
+                      r839</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>44</th><th>44</th><td class="l"><span>constrain = constraint(solvers(solve(constrain,target=['x0'])))</span> </td>
+                  </tr><tr>
+                          <th>45</th><th>45</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>46</th><th> </th><td class="l"><span>from mystic import sup<del></del>ressed</span> </td>
+                      </tr><tr>
+                        <th>47</th><th> </th><td class="l"><span>@sup<del></del>ressed(1e-5)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>46</th><td class="r"><span>from mystic import sup<ins>p</ins>ressed</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>47</th><td class="r"><span>@sup<ins>p</ins>ressed(1e-5)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>48</th><td class="l"><span>def conserve(x):</span> </td>
+                  </tr><tr>
+                          <th>49</th><th>49</th><td class="l"><span>&nbsp; &nbsp; return constrain(x)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="mystic/mystic/_symbolic.html" title="Show the changeset 839 restricted to mystic/mystic/_symbolic.py">mystic/mystic/_symbolic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 832">
+                    <a title="Show revision 832 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=832#L268">
+                      r832</a>
+                  </th>
+                  <th title="Revision 839">
+                    <a title="Show revision 839 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=839#L268">
+                      r839</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>268</th><th>268</th><td class="l"><span>&nbsp; &nbsp; nvars = None</span> </td>
+                  </tr><tr>
+                          <th>269</th><th>269</th><td class="l"><span>&nbsp; &nbsp; permute = False # if True, return all permutations</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>270</th><th> </th><td class="l"><span>&nbsp; &nbsp; warn = True&nbsp; # if True, don't sup<del></del>ress warnings</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>270</th><td class="r"><span>&nbsp; &nbsp; warn = True&nbsp; # if True, don't sup<ins>p</ins>ress warnings</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>271</th><th>271</th><td class="l"><span>&nbsp; &nbsp; verbose = False&nbsp; # if True, print debug info</span> </td>
+                  </tr><tr>
+                          <th>272</th><th>272</th><td class="l"><span>&nbsp; &nbsp; #-----------------------undocumented-------------------------------</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=832#L437">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=839#L437">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>437</th><th>437</th><td class="l"><span>&nbsp; &nbsp; nvars = None</span> </td>
+                  </tr><tr>
+                          <th>438</th><th>438</th><td class="l"><span>&nbsp; &nbsp; permute = False # if True, return all permutations</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>439</th><th> </th><td class="l"><span>&nbsp; &nbsp; warn = True&nbsp; # if True, don't sup<del></del>ress warnings</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>439</th><td class="r"><span>&nbsp; &nbsp; warn = True&nbsp; # if True, don't sup<ins>p</ins>ress warnings</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>440</th><th>440</th><td class="l"><span>&nbsp; &nbsp; verbose = False&nbsp; # if True, print debug info</span> </td>
+                  </tr><tr>
+                          <th>441</th><th>441</th><td class="l"><span>&nbsp; &nbsp; #-----------------------undocumented-------------------------------</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=832#L635">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=839#L635">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>635</th><th>635</th><td class="l"><span>&nbsp; &nbsp; #-----------------------undocumented-------------------------------</span> </td>
+                  </tr><tr>
+                          <th>636</th><th>636</th><td class="l"><span>&nbsp; &nbsp;#kwds['permute'] = False # if True, return all permutations</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>637</th><th> </th><td class="l"><span>&nbsp; &nbsp; kwds['warn'] = False&nbsp; # if True, don't sup<del></del>ress warnings</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>637</th><td class="r"><span>&nbsp; &nbsp; kwds['warn'] = False&nbsp; # if True, don't sup<ins>p</ins>ress warnings</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>638</th><th>638</th><td class="l"><span>&nbsp; &nbsp; kwds['verbose'] = False&nbsp; # if True, print debug info</span> </td>
+                  </tr><tr>
+                          <th>639</th><th>639</th><td class="l"><span>&nbsp; &nbsp; #------------------------------------------------------------------</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=832#L704">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=839#L704">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>704</th><th>704</th><td class="l"><span>&nbsp; &nbsp; nvars = None</span> </td>
+                  </tr><tr>
+                          <th>705</th><th>705</th><td class="l"><span>&nbsp; &nbsp; permute = False # if True, return all permutations</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>706</th><th> </th><td class="l"><span>&nbsp; &nbsp; warn = True&nbsp; # if True, don't sup<del></del>ress warnings</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>706</th><td class="r"><span>&nbsp; &nbsp; warn = True&nbsp; # if True, don't sup<ins>p</ins>ress warnings</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>707</th><th>707</th><td class="l"><span>&nbsp; &nbsp; verbose = False # if True, print details from _classify_variables</span> </td>
+                  </tr><tr>
+                          <th>708</th><th>708</th><td class="l"><span>&nbsp; &nbsp; #-----------------------undocumented-------------------------------</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="mystic/mystic/symbolic.html" title="Show the changeset 839 restricted to mystic/mystic/symbolic.py">mystic/mystic/symbolic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 832">
+                    <a title="Show revision 832 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/symbolic.py?rev=832#L198">
+                      r832</a>
+                  </th>
+                  <th title="Revision 839">
+                    <a title="Show revision 839 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/symbolic.py?rev=839#L198">
+                      r839</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>198</th><th>198</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; after, before = eval(after, locals_), eval(before, locals_)</span> </td>
+                  </tr><tr>
+                          <th>199</th><th>199</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>200</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; except ValueError as error:<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>200</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; except ValueError as error:<ins>&nbsp; #FIXME: python2.5</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>201</th><th>201</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if error.message.startswith('negative number') and \</span> </td>
+                  </tr><tr>
+                          <th>202</th><th>202</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;error.message.endswith('raised to a fractional power'):</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="mystic/mystic/tools.html" title="Show the changeset 839 restricted to mystic/mystic/tools.py">mystic/mystic/tools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 826">
+                    <a title="Show revision 826 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=826#L36">
+                      r826</a>
+                  </th>
+                  <th title="Revision 839">
+                    <a title="Show revision 839 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=839#L36">
+                      r839</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>36</th><th>36</th><td class="l"><span>&nbsp; &nbsp; - insert_missing: return a sequence with the 'missing' elements inserted</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>37</th><td class="l"><span>&nbsp; &nbsp; - clipped: generate a function where values outside of bounds are clipped</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>38</th><th> </th><td class="l"><span>&nbsp; &nbsp; - sup<del>ressed: generate a function where values less than tol are su</del>pressed</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; &nbsp; - sup<del>ress: su</del>press small values less than tol</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>38</th><td class="r"><span>&nbsp; &nbsp; - sup<ins>pressed: generate a function where values less than tol are sup</ins>pressed</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>39</th><td class="r"><span>&nbsp; &nbsp; - sup<ins>press: sup</ins>press small values less than tol</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>40</th><th>40</th><td class="l"><span>&nbsp; &nbsp; - unpair: convert a 1D array of N pairs to two 1D arrays of N values</span> </td>
+                  </tr><tr>
+                          <th>41</th><th>41</th><td class="l"><span>&nbsp; &nbsp; - src: extract source code from a python code object</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=826#L381">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=839#L381">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>381</th><th>381</th><td class="l"><span>&nbsp; &nbsp; if bounds:</span> </td>
+                  </tr><tr>
+                          <th>382</th><th>382</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; def function_wrapper(x):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>383</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; settings = seterr(all='ignore') #XXX: slow to sup<del></del>ress warnings?</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>383</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; settings = seterr(all='ignore') #XXX: slow to sup<ins>p</ins>ress warnings?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>384</th><th>384</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if any((x&lt;min)|(x&gt;max)): #if violate bounds, evaluate as inf</span> </td>
+                  </tr><tr>
+                          <th>385</th><th>385</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; seterr(**settings)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=826#L568">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=839#L568">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>568</th><th>568</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>569</th><th>569</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>570</th><th> </th><td class="l"><span>def sup<del></del>ress(x, tol=1e-8, clip=True):</span> </td>
+                      </tr><tr>
+                        <th>571</th><th> </th><td class="l"><span>&nbsp; &nbsp; """sup<del></del>ress small values less than tol"""</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>570</th><td class="r"><span>def sup<ins>p</ins>ress(x, tol=1e-8, clip=True):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>571</th><td class="r"><span>&nbsp; &nbsp; """sup<ins>p</ins>ress small values less than tol"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>572</th><th>572</th><td class="l"><span>&nbsp; &nbsp; from numpy import asarray, abs</span> </td>
+                  </tr><tr>
+                          <th>573</th><th>573</th><td class="l"><span>&nbsp; &nbsp; x = asarray(list(x))</span> </td>
+                  </tr><tr>
+                          <th>574</th><th>574</th><td class="l"><span>&nbsp; &nbsp; mask = abs(x) &lt; tol</span> </td>
+                  </tr><tr>
+                          <th>575</th><th>575</th><td class="l"><span>&nbsp; &nbsp; if not clip:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>576</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # preserve sum by spreading sup<del></del>ressed values to the non-zero elements</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>576</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # preserve sum by spreading sup<ins>p</ins>ressed values to the non-zero elements</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>577</th><th>577</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x[mask==False] = (x + sum(x[mask])/(len(mask)-sum(mask)))[mask==False]</span> </td>
+                  </tr><tr>
+                          <th>578</th><th>578</th><td class="l"><span>&nbsp; &nbsp; x[mask] = 0.0</span> </td>
+                  </tr><tr>
+                          <th>579</th><th>579</th><td class="l"><span>&nbsp; &nbsp; return x.tolist()</span> </td>
+                  </tr><tr>
+                          <th>580</th><th>580</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>581</th><th> </th><td class="l"><span>def sup<del></del>ressed(tol=1e-8, exit=False, clip=True):</span> </td>
+                      </tr><tr>
+                        <th>582</th><th> </th><td class="l"><span>&nbsp; &nbsp; """generate a function, where values less than tol are sup<del></del>ressed</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>581</th><td class="r"><span>def sup<ins>p</ins>ressed(tol=1e-8, exit=False, clip=True):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>582</th><td class="r"><span>&nbsp; &nbsp; """generate a function, where values less than tol are sup<ins>p</ins>ressed</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>583</th><th>583</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>584</th><th>584</th><td class="l"><span>For example,</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>585</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; @sup<del></del>ressed(1e-8)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>585</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; @sup<ins>p</ins>ressed(1e-8)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>586</th><th>586</th><td class="l"><span>&nbsp; &nbsp; ... def square(x):</span> </td>
+                  </tr><tr>
+                          <th>587</th><th>587</th><td class="l"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;return [i**2 for i in x]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=826#L591">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=839#L591">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>591</th><th>591</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; </span> </td>
+                  </tr><tr>
+                          <th>592</th><th>592</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; from mystic.math.measures import normalize</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>593</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; @sup<del></del>ressed(1e-8, exit=True, clip=False)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>593</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; @sup<ins>p</ins>ressed(1e-8, exit=True, clip=False)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>594</th><th>594</th><td class="l"><span>&nbsp; &nbsp; ... def norm(x):</span> </td>
+                  </tr><tr>
+                          <th>595</th><th>595</th><td class="l"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;return normalize(x, mass=1)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=826#L603">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=839#L603">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>603</th><th>603</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if exit:</span> </td>
+                  </tr><tr>
+                          <th>604</th><th>604</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; def func(x, *args, **kwds):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>605</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return sup<del></del>ress(f(x, *args, **kwds), tol, clip)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>605</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return sup<ins>p</ins>ress(f(x, *args, **kwds), tol, clip)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>606</th><th>606</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                  </tr><tr>
+                          <th>607</th><th>607</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; def func(x, *args, **kwds):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>608</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return f(sup<del></del>ress(x, tol, clip), *args, **kwds)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>608</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return f(sup<ins>p</ins>ress(x, tol, clip), *args, **kwds)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>609</th><th>609</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; func.__wrapped__ = f</span> </td>
+                  </tr><tr>
+                          <th>610</th><th>610</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; func.__doc__ = f.__doc__</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/839/?format=diff&amp;new=839" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/839/?format=zip&amp;new=839" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://www.cacr.caltech.edu/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://www.cacr.caltech.edu/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://www.cacr.caltech.edu/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://www.cacr.caltech.edu/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://www.cacr.caltech.edu/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://www.cacr.caltech.edu/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://www.cacr.caltech.edu/projects/mystic">http://www.cacr.caltech.edu/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/839/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:22:37 GMT -->
+</html>

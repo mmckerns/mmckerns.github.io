@@ -1,0 +1,67 @@
+Index: mystic-0.2a1/mystic/tools.py
+===================================================================
+--- mystic-0.2a1/mystic/tools.py	(revision 245)
++++ mystic-0.2a1/mystic/tools.py	(working copy)
+@@ -132,6 +132,8 @@
+         self._y = []   
+ 
+     def __call__(self, x, y):
++        from numpy import ndarray
++        if isinstance(x,ndarray): x = list(x)
+         self._x.append(x)
+         self._y.append(y)
+      
+@@ -153,14 +155,16 @@
+     """
+     import numpy
+     def __init__(self, interval = 10, xinterval = numpy.inf):
+-        Sow.__init__(self)
++       #Sow.__init__(self)
++        super(VerboseSow,self).__init__()
+         self._step = 0
+         self._yinterval = interval
+         self._xinterval = xinterval
+         return
+     def __call__(self, x, y):
+         from numpy import ndarray
+-        Sow.__call__(self, x, y)
++       #Sow.__call__(self, x, y)
++        super(VerboseSow,self).__call__(x, y)
+         if isinstance(y,(list,ndarray)):
+             y = y[0] #XXX: get the "best" fit... which should be in y[0]
+         if isinstance(x[0],(list,ndarray)): #XXX: x should always be iterable
+@@ -182,7 +186,8 @@
+     import numpy
+     def __init__(self, interval=1, filename='log.txt', new=False):
+         import datetime
+-        Sow.__init__(self)
++       #Sow.__init__(self)
++        super(LoggingSow,self).__init__()
+         self._filename = filename
+         self._step = 0
+         self._yinterval = interval
+@@ -197,7 +202,8 @@
+     def __call__(self, x, y):
+         self._file = open(self._filename,'a')
+         from numpy import ndarray
+-        Sow.__call__(self, x, y)
++       #Sow.__call__(self, x, y)
++        super(LoggingSow,self).__call__(x, y)
+         if isinstance(y,(list,ndarray)):
+             y = y[0] #XXX: get the "best" fit... which should be in y[0]
+         if isinstance(x[0],(list,ndarray)): #XXX: x should always be iterable
+Index: mystic-0.2a1/examples/test_mogi.py
+===================================================================
+--- mystic-0.2a1/examples/test_mogi.py	(revision 245)
++++ mystic-0.2a1/examples/test_mogi.py	(working copy)
+@@ -114,8 +114,8 @@
+     #
+     desol, dstepmon = de_solve()
+     print "desol: ", desol
+-    print "dstepmon 10: ", dstepmon.x[50]
+-    print "dstepmon 20: ", dstepmon.x[100]
++    print "dstepmon 50: ", dstepmon.x[50]
++    print "dstepmon 100: ", dstepmon.x[100]
+     #
+     # this will try to use nelder_mean from a relatively "near by" point (very sensitive)
+     point = [1234., -500., 10., 0.001] # both cg and nm does fine

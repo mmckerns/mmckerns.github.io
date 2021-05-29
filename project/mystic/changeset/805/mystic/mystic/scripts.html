@@ -1,0 +1,1235 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/805/mystic/mystic/scripts.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 805 for mystic/mystic/scripts.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/805/mystic/mystic/scripts.py?format=diff&amp;new=805" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/805/mystic/mystic/scripts.py?format=zip&amp;new=805" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../806/mystic/mystic/scripts.html" title="Changeset 806 for mystic/mystic/scripts.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../804/mystic/mystic/model_plotter.html" title="Changeset 804 for mystic/mystic/scripts.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../804/mystic/mystic/model_plotter.html" title="Changeset 804 for mystic/mystic/scripts.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../806/mystic/mystic/scripts.html" title="Changeset 806 for mystic/mystic/scripts.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../805.html">805</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805">mystic/mystic/scripts.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             07/16/15 19:32:53
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-07-16T19%3A32%3A53-07%3A00&amp;precision=second" title="2015-07-16T19:32:53-07:00 in Timeline">10 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+made model_plotter function more function-like<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mv"></dt><dd>1 moved</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mv"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805">
+              mystic/mystic/scripts.py
+            </a>
+          <span class="comment">(moved)</span>
+            <small><em>(moved from <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804" title="Show original file (revision 804)">
+                mystic/mystic/model_plotter.py</a>)</em></small>
+              (<a title="Show differences" href="#file0">20 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="scripts.html" title="Show the changeset 805 restricted to mystic/mystic/scripts.py">mystic/mystic/scripts.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 804">
+                    <a title="Show revision 804 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L1">
+                      r804</a>
+                  </th>
+                  <th title="Revision 805">
+                    <a title="Show revision 805 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L1">
+                      r805</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span># Author: <del>Patrick Hung (patrickh @caltech</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>3</th><td class="r"><span># Author: <ins>Mike McKerns (mmckerns @caltech and @uqfoundation</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Jean-Christophe Fillion-Robin (jchris.fillionr @kitware.com)</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>5</th><td class="l"><span># Copyright (c) 1997-2015 California Institute of Technology.</span> </td>
+                  </tr><tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>8</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>__doc__ = """</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span>mystic_model_plotter.py [options] model (filename)</span> </td>
+                      </tr><tr>
+                        <th>11</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>12</th><th> </th><td class="l"><span>generate surface contour plots for model, specified by full import path</span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>generate model trajectory from logfile (or solver restart file), if provided</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>The option "bounds" takes an indicator string, where the bounds should</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>be given as comma-separated slices. For example, using bounds = "-1:10, 0:20"</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>will set the lower and upper bounds for x to be (-1,10) and y to be (0,20).</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>The "step" can also be given, to control the number of lines plotted in the</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>grid. Thus "-1:10:.1, 0:20" would set the bounds as above, but use increments</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>of .1 along x and the default step along y.&nbsp; For models with &gt; 2D, the bounds</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>can be used to specify 2 dimensions plus fixed values for remaining dimensions.</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>Thus, "-1:10, 0:20, 1.0" would plot the 2D surface where the z-axis was fixed</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>at z=1.0.</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>The option "label" takes comma-separated strings. For example, label = "x,y,"</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>will place 'x' on the x-axis, 'y' on the y-axis, and nothing on the z-axis.</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>LaTeX is also accepted. For example, label = "$ h $, $ {\\alpha}$, $ v$" will</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>label the axes with standard LaTeX math formatting. Note that the leading</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>space is required, while a trailing space aligns the text with the axis</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>instead of the plot frame.</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>The option "reduce" can be given to reduce the output of a model to a scalar,</span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>thus converting 'model(params)' to 'reduce(model(params))'. A reducer is given</span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span>by the import path (e.g. 'numpy.add'). The option "scale" will convert the plot</span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>to log-scale, and scale the cost by 'z=log(4*z*scale+1)+2'. This is useful for</span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span>visualizing small contour changes around the minimium. If using log-scale</span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span>produces negative numbers, the option "shift" can be used to shift the cost</span> </td>
+                      </tr><tr>
+                        <th>38</th><th> </th><td class="l"><span>by 'z=z+shift'. Both shift and scale are intended to help visualize contours.</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>40</th><th> </th><td class="l"><span>Required Inputs:</span> </td>
+                      </tr><tr>
+                        <th>41</th><th> </th><td class="l"><span>&nbsp; model&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;full import path for the model (e.g. mystic.models.rosen)</span> </td>
+                      </tr><tr>
+                        <th>42</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>43</th><th> </th><td class="l"><span>Additional Inputs:</span> </td>
+                      </tr><tr>
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; filename&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; name of the convergence logfile (e.g. log.txt)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>8</th><td class="r"><span>__doc__ = \</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>9</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>10</th><td class="r"><ins>functional interfaces for mystic's visual analytics scripts</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>11</th><td class="r"><ins>"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>12</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>13</th><td class="r"><ins>__all__ = ['model_plotter',]</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>14</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>15</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>47</th><th>16</th><td class="l"><span>from mpl_toolkits.mplot3d import axes3d</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L53">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L22">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>22</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>54</th><th>23</th><td class="l"><span>#XXX: better if reads single id only? (e.g. same interface as read_history)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>55</th><th> </th><td class="l"><span>def <del></del>get_history(source, ids=None):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>24</th><td class="r"><span>def <ins>_</ins>get_history(source, ids=None):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>25</th><td class="l"><span>&nbsp; &nbsp; """get params and cost from the given source</span> </td>
+                  </tr><tr>
+                          <th>57</th><th>26</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L86">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L55">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>86</th><th>55</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>87</th><th>56</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>88</th><th> </th><td class="l"><span>def <del></del>get_instance(location, *args, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>57</th><td class="r"><span>def <ins>_</ins>get_instance(location, *args, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>89</th><th>58</th><td class="l"><span>&nbsp; &nbsp; """given the import location of a model or model class, return the model</span> </td>
+                  </tr><tr>
+                          <th>90</th><th>59</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L99">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L68">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>99</th><th>68</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>100</th><th>69</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>101</th><th> </th><td class="l"><span>def <del></del>parse_input(option):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>70</th><td class="r"><span>def <ins>_</ins>parse_input(option):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>102</th><th>71</th><td class="l"><span>&nbsp; &nbsp; """parse 'option' string into 'select', 'axes', and 'mask'</span> </td>
+                  </tr><tr>
+                          <th>103</th><th>72</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L107">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L76">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>107</th><th>76</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>108</th><th>77</th><td class="l"><span>For example,</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>109</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; select, axes, mask = <del></del>parse_input("-1:10:.1, 0.0, 5.0, -50:50:.5")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>78</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; select, axes, mask = <ins>_</ins>parse_input("-1:10:.1, 0.0, 5.0, -50:50:.5")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>110</th><th>79</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; select</span> </td>
+                  </tr><tr>
+                          <th>111</th><th>80</th><td class="l"><span>&nbsp; &nbsp; [0, 3]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L129">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L98">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>129</th><th>98</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>130</th><th>99</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>131</th><th> </th><td class="l"><span>def <del></del>parse_axes(option, grid=True):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>100</th><td class="r"><span>def <ins>_</ins>parse_axes(option, grid=True):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>132</th><th>101</th><td class="l"><span>&nbsp; &nbsp; """parse option string into grid axes; using modified numpy.ogrid notation</span> </td>
+                  </tr><tr>
+                          <th>133</th><th>102</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L176">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L145">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>176</th><th>145</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>177</th><th>146</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>178</th><th> </th><td class="l"><span>def <del></del>draw_projection(x, cost, scale=True, shift=False, style=None, figure=None):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>147</th><td class="r"><span>def <ins>_</ins>draw_projection(x, cost, scale=True, shift=False, style=None, figure=None):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>179</th><th>148</th><td class="l"><span>&nbsp; &nbsp; """draw a solution trajectory (for overlay on a 1D plot)</span> </td>
+                  </tr><tr>
+                          <th>180</th><th>149</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L206">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L175">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>206</th><th>175</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>207</th><th>176</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>208</th><th> </th><td class="l"><span>def <del></del>draw_trajectory(x, y, cost=None, scale=True, shift=False, style=None, figure=None):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>177</th><td class="r"><span>def <ins>_</ins>draw_trajectory(x, y, cost=None, scale=True, shift=False, style=None, figure=None):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>209</th><th>178</th><td class="l"><span>&nbsp; &nbsp; """draw a solution trajectory (for overlay on a contour plot)</span> </td>
+                  </tr><tr>
+                          <th>210</th><th>179</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L241">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L210">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>241</th><th>210</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>242</th><th>211</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>243</th><th> </th><td class="l"><span>def <del></del>draw_slice(f, x, y=None, scale=True, shift=False):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>212</th><td class="r"><span>def <ins>_</ins>draw_slice(f, x, y=None, scale=True, shift=False):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>244</th><th>213</th><td class="l"><span>&nbsp; &nbsp; """plot a slice of a 2D function 'f' in 1D</span> </td>
+                  </tr><tr>
+                          <th>245</th><th>214</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L281">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L250">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>281</th><th>250</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>282</th><th>251</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>283</th><th> </th><td class="l"><span>def <del></del>draw_contour(f, x, y=None, surface=False, fill=True, scale=True, shift=False, density=5):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>252</th><td class="r"><span>def <ins>_</ins>draw_contour(f, x, y=None, surface=False, fill=True, scale=True, shift=False, density=5):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>284</th><th>253</th><td class="l"><span>&nbsp; &nbsp; """draw a contour plot for a given 2D function 'f'</span> </td>
+                  </tr><tr>
+                          <th>285</th><th>254</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L328">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L297">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>328</th><th>297</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>329</th><th>298</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>330</th><th> </th><td class="l"><span>def model_plotter(cmdargs=[]):</span> </td>
+                      </tr><tr>
+                        <th>331</th><th> </th><td class="l"><span>&nbsp; &nbsp; """convenience function providing a function interface to the model</span> </td>
+                      </tr><tr>
+                        <th>332</th><th> </th><td class="l"><span>&nbsp; &nbsp; plotter. The ``cmdargs`` can either be a :class:`basestring` or</span> </td>
+                      </tr><tr>
+                        <th>333</th><th> </th><td class="l"><span>&nbsp; &nbsp; a :class:`list`.</span> </td>
+                      </tr><tr>
+                        <th>334</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>335</th><th> </th><td class="l"><span>&nbsp; &nbsp; See ``mystic.model_plotter`` module documentation for a complete</span> </td>
+                      </tr><tr>
+                        <th>336</th><th> </th><td class="l"><span>&nbsp; &nbsp; description of the model plotter and its associated arguments.</span> </td>
+                      </tr><tr>
+                        <th>337</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>338</th><th> </th><td class="l"><span>&nbsp; &nbsp; Examples:</span> </td>
+                      </tr><tr>
+                        <th>339</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>340</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; from mystic.model_plotter import model_plotter</span> </td>
+                      </tr><tr>
+                        <th>341</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; model_plotter(cmdargs='mystic.models.zimmermann log.txt -b "-5:10:.1, -5:10:.1" -d -x 1')</span> </td>
+                      </tr><tr>
+                        <th>342</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>343</th><th> </th><td class="l"><span>&nbsp; &nbsp; or</span> </td>
+                      </tr><tr>
+                        <th>344</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>345</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; from mystic.model_plotter import model_plotter</span> </td>
+                      </tr><tr>
+                        <th>346</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; model_plotter(cmdargs=['mystic.models.zimmermann', 'log.txt', '-b', '-5:10:.1, -5:10:.1', '-d', '-x', '1'])</span> </td>
+                      </tr><tr>
+                        <th>347</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>348</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>349</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>350</th><th> </th><td class="l"><span>&nbsp; &nbsp; if isinstance(cmdargs, basestring):</span> </td>
+                      </tr><tr>
+                        <th>351</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import shlex</span> </td>
+                      </tr><tr>
+                        <th>352</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs = shlex.split(cmdargs)</span> </td>
+                      </tr><tr>
+                        <th>353</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>354</th><th> </th><td class="l"><span>&nbsp; &nbsp; if not isinstance(cmdargs, list):</span> </td>
+                      </tr><tr>
+                        <th>355</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; raise Exception("'cmdargs' is expected to either be a list or a string")</span> </td>
+                      </tr><tr>
+                        <th>356</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>299</th><td class="r"><span>def model_plotter(model, logfile=None, **kwds):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>300</th><td class="r"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>301</th><td class="r"><span>generate surface contour plots for model, specified by full import path</span> </td>
+                      </tr><tr>
+                        <th> </th><th>302</th><td class="r"><span>generate model trajectory from logfile (or solver restart file), if provided</span> </td>
+                      </tr><tr>
+                        <th> </th><th>303</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>304</th><td class="r"><span>Available from the command shell as:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>305</th><td class="r"><span>&nbsp; mystic_model_plotter.py model (filename) [options]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>306</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>307</th><td class="r"><span>or as a function call as:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>308</th><td class="r"><span>&nbsp; mystic.model_plotter(model, filename=None, **options)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>309</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>310</th><td class="r"><span>The option "bounds" takes an indicator string, where the bounds should</span> </td>
+                      </tr><tr>
+                        <th> </th><th>311</th><td class="r"><span>be given as comma-separated slices. For example, using bounds = "-1:10, 0:20"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>312</th><td class="r"><span>will set the lower and upper bounds for x to be (-1,10) and y to be (0,20).</span> </td>
+                      </tr><tr>
+                        <th> </th><th>313</th><td class="r"><span>The "step" can also be given, to control the number of lines plotted in the</span> </td>
+                      </tr><tr>
+                        <th> </th><th>314</th><td class="r"><span>grid. Thus "-1:10:.1, 0:20" would set the bounds as above, but use increments</span> </td>
+                      </tr><tr>
+                        <th> </th><th>315</th><td class="r"><span>of .1 along x and the default step along y.&nbsp; For models with &gt; 2D, the bounds</span> </td>
+                      </tr><tr>
+                        <th> </th><th>316</th><td class="r"><span>can be used to specify 2 dimensions plus fixed values for remaining dimensions.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>317</th><td class="r"><span>Thus, "-1:10, 0:20, 1.0" would plot the 2D surface where the z-axis was fixed</span> </td>
+                      </tr><tr>
+                        <th> </th><th>318</th><td class="r"><span>at z=1.0.&nbsp; When called from a script, slice objects can be used instead of a</span> </td>
+                      </tr><tr>
+                        <th> </th><th>319</th><td class="r"><span>string, thus "-1:10:.1, 0:20, 1.0" becomes (slice(-1,10,.1), slice(20), 1.0).</span> </td>
+                      </tr><tr>
+                        <th> </th><th>320</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>321</th><td class="r"><span>The option "label" takes comma-separated strings. For example, label = "x,y,"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>322</th><td class="r"><span>will place 'x' on the x-axis, 'y' on the y-axis, and nothing on the z-axis.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>323</th><td class="r"><span>LaTeX is also accepted. For example, label = "$ h $, $ {\\alpha}$, $ v$" will</span> </td>
+                      </tr><tr>
+                        <th> </th><th>324</th><td class="r"><span>label the axes with standard LaTeX math formatting. Note that the leading</span> </td>
+                      </tr><tr>
+                        <th> </th><th>325</th><td class="r"><span>space is required, while a trailing space aligns the text with the axis</span> </td>
+                      </tr><tr>
+                        <th> </th><th>326</th><td class="r"><span>instead of the plot frame.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>327</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>328</th><td class="r"><span>The option "reduce" can be given to reduce the output of a model to a scalar,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>329</th><td class="r"><span>thus converting 'model(params)' to 'reduce(model(params))'. A reducer is given</span> </td>
+                      </tr><tr>
+                        <th> </th><th>330</th><td class="r"><span>by the import path (e.g. 'numpy.add'). The option "scale" will convert the plot</span> </td>
+                      </tr><tr>
+                        <th> </th><th>331</th><td class="r"><span>to log-scale, and scale the cost by 'z=log(4*z*scale+1)+2'. This is useful for</span> </td>
+                      </tr><tr>
+                        <th> </th><th>332</th><td class="r"><span>visualizing small contour changes around the minimium. If using log-scale</span> </td>
+                      </tr><tr>
+                        <th> </th><th>333</th><td class="r"><span>produces negative numbers, the option "shift" can be used to shift the cost</span> </td>
+                      </tr><tr>
+                        <th> </th><th>334</th><td class="r"><span>by 'z=z+shift'. Both shift and scale are intended to help visualize contours.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>335</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>336</th><td class="r"><span>Required Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>337</th><td class="r"><span>&nbsp; model&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;full import path for the model (e.g. mystic.models.rosen)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>338</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>339</th><td class="r"><span>Additional Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>340</th><td class="r"><span>&nbsp; filename&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; name of the convergence logfile (e.g. log.txt)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>341</th><td class="r"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>357</th><th>342</th><td class="l"><span>&nbsp; &nbsp; #FIXME: should be able to:</span> </td>
+                  </tr><tr>
+                          <th>358</th><th>343</th><td class="l"><span>&nbsp; &nbsp; # - apply a constraint as a region of NaN -- apply when 'xx,yy=x[ij],y[ij]'</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L368">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L353">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>368</th><th>353</th><td class="l"><span>&nbsp; &nbsp; # - if trajectory outside contour grid, will increase bounds</span> </td>
+                  </tr><tr>
+                          <th>369</th><th>354</th><td class="l"><span>&nbsp; &nbsp; #&nbsp; &nbsp;(see support_hypercube.py for how to fix bounds)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>355</th><td class="r"><ins>&nbsp; &nbsp; import shlex</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>356</th><td class="r"><ins>&nbsp; &nbsp; _model = None</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>357</th><td class="r"><ins>&nbsp; &nbsp; _reducer = None</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>358</th><td class="r"><ins>&nbsp; &nbsp; _solver = None</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>359</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>360</th><td class="r"><ins>&nbsp; &nbsp; # handle the special case where list is provided by sys.argv</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>361</th><td class="r"><ins>&nbsp; &nbsp; if isinstance(model, (list,tuple)) and not logfile and not kwds:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>362</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs = model # (above is used by script to parse command line)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>363</th><td class="r"><ins>&nbsp; &nbsp; elif isinstance(model, basestring) and not logfile and not kwds:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>364</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs = shlex.split(model)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>365</th><td class="r"><ins>&nbsp; &nbsp; # 'everything else' is essentially the functional interface</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>366</th><td class="r"><ins>&nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>367</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; out = kwds.get('out', None)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>368</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; bounds = kwds.get('bounds', None)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>369</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; label = kwds.get('label', None)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>370</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; nid = kwds.get('nid', None)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>371</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; iter = kwds.get('iter', None)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>372</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; reduce = kwds.get('reduce', None)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>373</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; scale = kwds.get('scale', None)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>374</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; shift = kwds.get('shift', None)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>375</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; fill = kwds.get('fill', False)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>376</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; depth = kwds.get('depth', False)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>377</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; dots = kwds.get('dots', False)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>378</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; join = kwds.get('join', False)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>379</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>380</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # special case: bounds passed as list of slices</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>381</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if not isinstance(bounds, (basestring, type(None))):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>382</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cmdargs = ''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>383</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for b in bounds:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>384</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if isinstance(b, slice):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>385</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cmdargs += "{}:{}:{}, ".format(b.start, b.stop, b.step)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>386</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>387</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cmdargs += "{}, ".format(b)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>388</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bounds = cmdargs[:-2]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>389</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>390</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # special case: model passed as model instance</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>391</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#model.__doc__.split('using::')[1].split()[0].strip()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>392</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if callable(model): _model, model = model, "None"</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>393</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if callable(reduce): _reducer, reduce = reduce, None</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>394</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>395</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # handle logfile if given</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>396</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if logfile: model += ' ' + logfile</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>397</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>398</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # process "commandline" arguments</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>399</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs = ''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>400</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if out is None else '--out={} '.format(out)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>401</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if bounds is None else '--bounds="{}" '.format(bounds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>402</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if label is None else '--label={} '.format(label)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>403</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if nid is None else '--nid={} '.format(nid)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>404</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if iter is None else '--iter={} '.format(iter)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>405</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if reduce is None else '--reduce={} '.format(reduce)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>406</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if scale is None else '--scale={} '.format(scale)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>407</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if shift is None else '--shift={} '.format(shift)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>408</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if fill == False else '--fill '</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>409</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if depth == False else '--depth '</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>410</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if dots == False else '--dots '</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>411</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if join == False else '--join '</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>412</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs = model.split() + shlex.split(cmdargs)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>370</th><th>413</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>371</th><th>414</th><td class="l"><span>&nbsp; &nbsp; #XXX: note that 'argparse' is new as of python2.7</span> </td>
+                  </tr><tr>
+                          <th>372</th><th>415</th><td class="l"><span>&nbsp; &nbsp; from optparse import OptionParser</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>373</th><th> </th><td class="l"><span>&nbsp; &nbsp; parser = OptionParser(usage=<del></del>__doc__)</span> </td>
+                      </tr><tr>
+                        <th>374</th><th> </th><td class="l"><span>&nbsp; &nbsp; parser.add_option("-<del>p","--plot-filepath",action="store",dest="plot_filepath</del>",\</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>416</th><td class="r"><span>&nbsp; &nbsp; parser = OptionParser(usage=<ins>model_plotter.</ins>__doc__)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>417</th><td class="r"><span>&nbsp; &nbsp; parser.add_option("-<ins>u","--out",action="store",dest="out</ins>",\</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>375</th><th>418</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; metavar="STR",default=None,</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>376</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; help="<del></del>save generated plot")</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>419</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; help="<ins>filepath to </ins>save generated plot")</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>377</th><th>420</th><td class="l"><span>&nbsp; &nbsp; parser.add_option("-b","--bounds",action="store",dest="bounds",\</span> </td>
+                  </tr><tr>
+                          <th>378</th><th>421</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; metavar="STR",default="-5:5:.1, -5:5:.1",</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L408">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L451">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>408</th><th>451</th><td class="l"><span>&nbsp; &nbsp; # get the import path for the model</span> </td>
+                  </tr><tr>
+                          <th>409</th><th>452</th><td class="l"><span>&nbsp; &nbsp; model = parsed_args[0]&nbsp; # e.g. 'mystic.models.rosen'</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>410</th><th> </th><td class="l"><span>&nbsp; &nbsp; if "None" == model: model = None<del>&nbsp;#XXX: 'required'... allow this?</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>453</th><td class="r"><span>&nbsp; &nbsp; if "None" == model: model = None<ins></ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>411</th><th>454</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>412</th><th>455</th><td class="l"><span>&nbsp; &nbsp; try: # get the name of the parameter log file</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L489">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L532">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>489</th><th>532</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>490</th><th>533</th><td class="l"><span>&nbsp; &nbsp; # process inputs</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>491</th><th> </th><td class="l"><span>&nbsp; &nbsp; select, spec, mask = parse_input(options)</span> </td>
+                      </tr><tr>
+                        <th>492</th><th> </th><td class="l"><span>&nbsp; &nbsp; x,y = parse_axes(spec, grid=True) # grid=False for 1D plots</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>534</th><td class="r"><span>&nbsp; &nbsp; if _model: model = _model</span> </td>
+                      </tr><tr>
+                        <th> </th><th>535</th><td class="r"><span>&nbsp; &nbsp; if _reducer: reducer = _reducer</span> </td>
+                      </tr><tr>
+                        <th> </th><th>536</th><td class="r"><span>&nbsp; &nbsp; if _solver: solver = _solver</span> </td>
+                      </tr><tr>
+                        <th> </th><th>537</th><td class="r"><span>&nbsp; &nbsp; select, spec, mask = _parse_input(options)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>538</th><td class="r"><span>&nbsp; &nbsp; x,y = _parse_axes(spec, grid=True) # grid=False for 1D plots</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>493</th><th>539</th><td class="l"><span>&nbsp; &nbsp; #FIXME: does grid=False still make sense here...?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>494</th><th> </th><td class="l"><span>&nbsp; &nbsp; if reducer: reducer = <del></del>get_instance(reducer)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>540</th><td class="r"><span>&nbsp; &nbsp; if reducer: reducer = <ins>_reducer or _</ins>get_instance(reducer)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>495</th><th>541</th><td class="l"><span>&nbsp; &nbsp; if solver and (not source or not model):</span> </td>
+                  </tr><tr>
+                          <th>496</th><th>542</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; raise RuntimeError('a model and results filename are required')</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L498">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L544">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>498</th><th>544</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; raise RuntimeError('a model or a results file is required')</span> </td>
+                  </tr><tr>
+                          <th>499</th><th>545</th><td class="l"><span>&nbsp; &nbsp; if model:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>500</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; model = <del></del>get_instance(model)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>546</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; model = <ins>_model or _</ins>get_instance(model)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>501</th><th>547</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # need a reducer if model returns an array</span> </td>
+                  </tr><tr>
+                          <th>502</th><th>548</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if reducer: model = reduced(reducer, arraylike=False)(model)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L505">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L551">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>505</th><th>551</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # if 'live'... pick a solver</span> </td>
+                  </tr><tr>
+                          <th>506</th><th>552</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver = 'mystic.solvers.fmin'</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>507</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver = <del></del>get_instance(solver)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>553</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver = <ins>_solver or _</ins>get_instance(solver)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>508</th><th>554</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; xlen = len(select)+len(mask)</span> </td>
+                  </tr><tr>
+                          <th>509</th><th>555</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if solver.__name__.startswith('diffev'):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L533">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L579">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>533</th><th>579</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#elif source: v=cost[-1]</span> </td>
+                  </tr><tr>
+                          <th>534</th><th>580</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#else: v=None</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>535</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#fig0 = <del></del>draw_slice(model, x=x, y=v, scale=scale, shift=shift)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>581</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;#fig0 = <ins>_</ins>draw_slice(model, x=x, y=v, scale=scale, shift=shift)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>536</th><th>582</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # plot the surface in 2D or 3D</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>537</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; fig = <del></del>draw_contour(model, x, y, surface=surface, fill=fill, scale=scale, shift=shift)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>583</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; fig = <ins>_</ins>draw_contour(model, x, y, surface=surface, fill=fill, scale=scale, shift=shift)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>538</th><th>584</th><td class="l"><span>&nbsp; &nbsp; else:</span> </td>
+                  </tr><tr>
+                          <th>539</th><th>585</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#fig0 = None</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L543">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L589">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>543</th><th>589</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # params are the parameter trajectories</span> </td>
+                  </tr><tr>
+                          <th>544</th><th>590</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # cost is the solution trajectory</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>545</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; params, cost = <del></del>get_history(source, ids)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>591</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; params, cost = <ins>_</ins>get_history(source, ids)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>546</th><th>592</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if len(cost) &gt; 1: style = style[1:] # 'auto-color' #XXX: or grayscale?</span> </td>
+                  </tr><tr>
+                          <th>547</th><th>593</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L549">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L595">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>549</th><th>595</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;## project trajectory on a 1D slice of model surface #XXX: useful?</span> </td>
+                  </tr><tr>
+                          <th>550</th><th>596</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#s = select[0] if len(select) else 0</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>551</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#px = p[int(s)] # <del></del>draw_projection requires one parameter</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>597</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#px = p[int(s)] # <ins>_</ins>draw_projection requires one parameter</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>552</th><th>598</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;## ignore everything after 'stop'</span> </td>
+                  </tr><tr>
+                          <th>553</th><th>599</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#_c = eval('c[%s]' % stop)</span> </td>
+                  </tr><tr>
+                          <th>554</th><th>600</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#_x = eval('px[%s]' % stop)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>555</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#fig0 = <del></del>draw_projection(_x,_c, style=style, scale=scale, shift=shift, figure=fig0)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>601</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#fig0 = <ins>_</ins>draw_projection(_x,_c, style=style, scale=scale, shift=shift, figure=fig0)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>556</th><th>602</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>557</th><th>603</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # plot the trajectory on the model surface (2D or 3D)</span> </td>
+                  </tr><tr>
+                          <th>558</th><th>604</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # get two selected params #XXX: what if len(select)&lt;2? or len(p)&lt;2?</span> </td>
+                  </tr><tr>
+                          <th>559</th><th>605</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; p = [p[int(i)] for i in select[:2]]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>560</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; px,py = p # <del></del>draw_trajectory requires two parameters</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>606</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; px,py = p # <ins>_</ins>draw_trajectory requires two parameters</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>561</th><th>607</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # ignore everything after 'stop'</span> </td>
+                  </tr><tr>
+                          <th>562</th><th>608</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _x = eval('px[%s]' % stop)</span> </td>
+                  </tr><tr>
+                          <th>563</th><th>609</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _y = eval('py[%s]' % stop)</span> </td>
+                  </tr><tr>
+                          <th>564</th><th>610</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _c = eval('c[%s]' % stop) if surface else None</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>565</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fig = <del></del>draw_trajectory(_x,_y,_c, style=style, scale=scale, shift=shift, figure=fig)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>611</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fig = <ins>_</ins>draw_trajectory(_x,_y,_c, style=style, scale=scale, shift=shift, figure=fig)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>566</th><th>612</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>567</th><th>613</th><td class="l"><span>&nbsp; &nbsp; # add labels to the axes</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/model_plotter.py?rev=804#L573">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L619">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>573</th><th>619</th><td class="l"><span>&nbsp; &nbsp; if surface: ax.set_zlabel(label[2])</span> </td>
+                  </tr><tr>
+                          <th>574</th><th>620</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>575</th><th> </th><td class="l"><span>&nbsp; &nbsp; if not parsed_opts.<del>plot_filepath</del>:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>621</th><td class="r"><span>&nbsp; &nbsp; if not parsed_opts.<ins>out</ins>:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>576</th><th>622</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; plt.show()</span> </td>
+                  </tr><tr>
+                          <th>577</th><th>623</th><td class="l"><span>&nbsp; &nbsp; else:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>578</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; fig.savefig(parsed_opts.<del>plot_filepath</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>624</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; fig.savefig(parsed_opts.<ins>out</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>579</th><th>625</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>580</th><th>626</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/805/mystic/mystic/scripts.py?format=diff&amp;new=805" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/805/mystic/mystic/scripts.py?format=zip&amp;new=805" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/805/mystic/mystic/scripts.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:22 GMT -->
+</html>

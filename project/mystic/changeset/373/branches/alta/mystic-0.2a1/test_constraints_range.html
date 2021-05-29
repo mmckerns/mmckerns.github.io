@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/373/branches/alta/mystic-0.2a1/test_constraints_range.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:45:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 373 for branches/alta/mystic-0.2a1/test_constraints_range.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../../search.html" />
+        <link rel="help" href="../../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/373/branches/alta/mystic-0.2a1/test_constraints_range.py?format=diff&amp;new=373" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/373/branches/alta/mystic-0.2a1/test_constraints_range.py?format=zip&amp;new=373" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="start" href="../../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../../360/branches/alta/mystic-0.2a1/test_constraints_range.html" title="Changeset 360 for branches/alta/mystic-0.2a1/test_constraints_range.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../../login.html">Login</a></li><li><a href="../../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../../wiki.html">Wiki</a></li><li><a href="../../../../../timeline.html">Timeline</a></li><li><a href="../../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../../browser.html">Browse Source</a></li><li><a href="../../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../../360/branches/alta/mystic-0.2a1/test_constraints_range.html" title="Changeset 360 for branches/alta/mystic-0.2a1/test_constraints_range.py">Previous Change</a></span></li><li class="last"><span class="missing">Next Change &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../../373.html">373</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=373">branches/alta/mystic-0.2a1/test_constraints_range.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             08/04/10 16:07:50
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-08-04T16%3A07%3A50-07%3A00&amp;precision=second" title="2010-08-04T16:07:50-07:00 in Timeline">6 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">altafang</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+Fixing minor things, adjusting termination conditions on tests<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=373">
+              branches/alta/mystic-0.2a1/test_constraints_range.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">9 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="test_constraints_range.html" title="Show the changeset 373 restricted to branches/alta/mystic-0.2a1/test_constraints_range.py">branches/alta/mystic-0.2a1/test_constraints_range.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 360">
+                    <a title="Show revision 360 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=360#L9">
+                      r360</a>
+                  </th>
+                  <th title="Revision 373">
+                    <a title="Show revision 373 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=373#L9">
+                      r373</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>9</th><th>9</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>10</th><th>10</th><td class="l"><span>Mathematica: x -&gt; -0.61479, y -&gt; 0.38521</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>11</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>12</th><td class="r"><ins>OpenOpt Code and Results:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>13</th><td class="r"><ins>-------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>14</th><td class="r"><ins>from openopt import NLP, GLP</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>15</th><td class="r"><ins>from math import *</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>16</th><td class="r"><ins>from mystic.models import rosen as f</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>17</th><td class="r"><ins>def c(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>18</th><td class="r"><ins>&nbsp; &nbsp; return -(max(x) - min(x) - 1.)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>19</th><td class="r"><ins>#x0 = [0., 1.75]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>20</th><td class="r"><ins>x0 = [0., 0.]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>21</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>22</th><td class="r"><ins>problem = GLP(f, x0, c=c, lb=[-1., -1.], ub=[3., 3.], population=40, </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>23</th><td class="r"><ins>baseVectorStrategy='random', searchDirectionStrategy='random')</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>24</th><td class="r"><ins>soln = problem.solve('de') </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>25</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>26</th><td class="r"><ins>#problem = NLP(f, x0, c=c)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>27</th><td class="r"><ins>#soln = problem.solve('ralg') #[-0.61778501&nbsp; 0.38221429]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>28</th><td class="r"><ins>#soln = problem.solve('scipy_slsqp') #[-0.61478988&nbsp; 0.38521012] also, very fast!</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>29</th><td class="r"><ins>print soln.xf</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>30</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>31</th><td class="r"><ins>slsqp is great with a feasible x0, but fails with infeasible. ralg also does</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>32</th><td class="r"><ins>poorly with infeasible x0. de does ok with any x0, as long as lb and ub is</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>33</th><td class="r"><ins>narrow enough.</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>11</th><th>34</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>12</th><th>35</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=360#L36">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=373#L59">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>36</th><th>59</th><td class="l"><span>#x0 = [0., 0.] # Another infeasible starting point.</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>60</th><td class="l"><span>#x0 = [0., -0.5] # Difficult. Considerably closer to local min than global min</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>61</th><td class="r"><ins>#x0 = [1.5, -0.5] # Even more difficult. Feasible, but in a disjoint feasible </ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>62</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# region from the global min.</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>38</th><th>63</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>39</th><th>64</th><td class="l"><span>constraints_string = """</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=360#L57">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=373#L82">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>57</th><th>82</th><td class="l"><span>&nbsp; &nbsp; from mystic.termination import VTR</span> </td>
+                  </tr><tr>
+                          <th>58</th><th>83</th><td class="l"><span>&nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>84</th><td class="r"><ins>&nbsp; &nbsp; from mystic.termination import ChangeOverGeneration as COG</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>59</th><th>85</th><td class="l"><span>&nbsp; &nbsp; from mystic.strategy import Rand1Bin</span> </td>
+                  </tr><tr>
+                          <th>60</th><th>86</th><td class="l"><span>&nbsp; &nbsp; solver = DifferentialEvolutionSolver(ndim, npop)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=360#L64">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=373#L90">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>64</th><th>90</th><td class="l"><span>&nbsp; &nbsp; term = VTR()</span> </td>
+                  </tr><tr>
+                          <th>65</th><th>91</th><td class="l"><span>&nbsp; &nbsp; #term = CRT()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>66</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver.Solve(costfunc, term, constraints=constraints_string, \</span> </td>
+                      </tr><tr>
+                        <th>67</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraints_method='penalty')</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>92</th><td class="r"><span>&nbsp; &nbsp; #term = COG()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>93</th><td class="r"><span>&nbsp; &nbsp; solver.Solve(costfunc, term, constraints=constraints_string, \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>94</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraints_method='penalty', penalty=1e6, strategy=Rand1Bin)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>95</th><td class="l"><span>&nbsp; &nbsp; soln = solver.Solution()</span> </td>
+                  </tr><tr>
+                          <th>69</th><th>96</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=360#L282">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=373#L309">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>282</th><th>309</th><td class="l"><span>&nbsp; &nbsp; time_before = time.time()</span> </td>
+                  </tr><tr>
+                          <th>283</th><th>310</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>284</th><th> </th><td class="l"><span>&nbsp; &nbsp; from <del></del>differential_evolution import DifferentialEvolutionSolver</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>311</th><td class="r"><span>&nbsp; &nbsp; from <ins>mystic.</ins>differential_evolution import DifferentialEvolutionSolver</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>285</th><th>312</th><td class="l"><span>&nbsp; &nbsp; from mystic.termination import VTR</span> </td>
+                  </tr><tr>
+                          <th>286</th><th>313</th><td class="l"><span>&nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=360#L293">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=373#L320">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>293</th><th>320</th><td class="l"><span>&nbsp; &nbsp; #term = CRT()</span> </td>
+                  </tr><tr>
+                          <th>294</th><th>321</th><td class="l"><span>&nbsp; &nbsp; solver.Solve(costfunc, term, constraints=constraints_string, \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>295</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;constraints_method='auglag', <del></del>rh=1e3, rg=1e3)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>322</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;constraints_method='auglag', <ins>strategy=Rand1Bin, </ins>rh=1e3, rg=1e3)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>296</th><th>323</th><td class="l"><span>&nbsp; &nbsp; soln = solver.Solution()</span> </td>
+                  </tr><tr>
+                          <th>297</th><th>324</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=360#L315">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=373#L342">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>315</th><th>342</th><td class="l"><span>&nbsp; &nbsp; time_before = time.time()</span> </td>
+                  </tr><tr>
+                          <th>316</th><th>343</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>317</th><th> </th><td class="l"><span>&nbsp; &nbsp; from differential_evolution import DifferentialEvolutionSolver2</span> </td>
+                      </tr><tr>
+                        <th>318</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.termination import VTR</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>344</th><td class="r"><span>&nbsp; &nbsp; from mystic.differential_evolution import DifferentialEvolutionSolver2</span> </td>
+                      </tr><tr>
+                        <th> </th><th>345</th><td class="r"><span>&nbsp; &nbsp; from mystic.termination import VTR</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>346</th><td class="r"><span>&nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>319</th><th>347</th><td class="l"><span>&nbsp; &nbsp; from mystic.strategy import Rand1Bin</span> </td>
+                  </tr><tr>
+                          <th>320</th><th>348</th><td class="l"><span>&nbsp; &nbsp; solver = DifferentialEvolutionSolver2(ndim, npop)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>321</th><th> </th><td class="l"><span>&nbsp; &nbsp; <del>&nbsp; </del></span> </td>
+                      </tr><tr>
+                        <th>322</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver.<del>SetInitialPoints(x0</del>)</span> </td>
+                      </tr><tr>
+                        <th>323</th><th> </th><td class="l"><span>&nbsp; &nbsp; <del>solver.enable_signal_handler</del>()</span> </td>
+                      </tr><tr>
+                        <th>324</th><th> </th><td class="l"><span>&nbsp; &nbsp; <del>term = VTR</del>()</span> </td>
+                      </tr><tr>
+                        <th>325</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver.Solve(costfunc, term, constraints=constraints_string, \<del></del></span> </td>
+                      </tr><tr>
+                        <th>326</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraints_method='auglag', <del>rg=1e3, rh=1e3)#, strategy=Rand1Bin</del>)</span> </td>
+                      </tr><tr>
+                        <th>327</th><th> </th><td class="l"><span>&nbsp; &nbsp; soln = solver.Solution()<del></del></span> </td>
+                      </tr><tr>
+                        <th>328</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>329</th><th> </th><td class="l"><span>&nbsp; &nbsp; time_elapsed = time.time() - time_before<del></del></span> </td>
+                      </tr><tr>
+                        <th>330</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>331</th><th> </th><td class="l"><span>&nbsp; &nbsp; print "soln=", soln<del></del></span> </td>
+                      </tr><tr>
+                        <th>332</th><th> </th><td class="l"><span>&nbsp; &nbsp; print "f value =", costfunc(soln)<del></del></span> </td>
+                      </tr><tr>
+                        <th>333</th><th> </th><td class="l"><span>&nbsp; &nbsp; print "Time elapsed=", time_elapsed<del></del></span> </td>
+                      </tr><tr>
+                        <th>334</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>335</th><th> </th><td class="l"><span>&nbsp; &nbsp; from constraint_tools import verify_constraints_satisfied<del></del></span> </td>
+                      </tr><tr>
+                        <th>336</th><th> </th><td class="l"><span>&nbsp; &nbsp; print verify_constraints_satisfied(constraints_string, soln<del></del>, disp=False)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>349</th><td class="r"><span>&nbsp; &nbsp; <ins>solver.SetInitialPoints(x0)</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>350</th><td class="r"><span>&nbsp; &nbsp; solver.<ins>enable_signal_handler(</ins>)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>351</th><td class="r"><span>&nbsp; &nbsp; <ins>term = VTR</ins>()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>352</th><td class="r"><span>&nbsp; &nbsp; <ins>#term = CRT</ins>()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>353</th><td class="r"><span>&nbsp; &nbsp; solver.Solve(costfunc, term, constraints=constraints_string, \<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>354</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraints_method='auglag', <ins>strategy=Rand1Bin, rg=1e3, rh=1e3</ins>)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>355</th><td class="r"><span>&nbsp; &nbsp; soln = solver.Solution()<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>356</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>357</th><td class="r"><span>&nbsp; &nbsp; time_elapsed = time.time() - time_before<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>358</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>359</th><td class="r"><span>&nbsp; &nbsp; print "soln=", soln<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>360</th><td class="r"><span>&nbsp; &nbsp; print "f value =", costfunc(soln)<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>361</th><td class="r"><span>&nbsp; &nbsp; print "Time elapsed=", time_elapsed<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>362</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>363</th><td class="r"><span>&nbsp; &nbsp; from constraint_tools import verify_constraints_satisfied<ins></ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>364</th><td class="r"><span>&nbsp; &nbsp; print verify_constraints_satisfied(constraints_string, soln<ins>)#</ins>, disp=False)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>337</th><th>365</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>338</th><th>366</th><td class="l"><span>def test_neldermead_auglag():</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=360#L714">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=373#L742">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>714</th><th>742</th><td class="l"><span>&nbsp; &nbsp; # with x0=[0., 0.], BFGS, NCG give non-minimum answers with penalty.</span> </td>
+                  </tr><tr>
+                          <th>715</th><th>743</th><td class="l"><span>&nbsp; &nbsp; # with x0=[-0.5, -0.5] and penalty method, local optimizers can only find</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>716</th><th> </th><td class="l"><span>&nbsp; &nbsp; # local minima.<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>744</th><td class="r"><span>&nbsp; &nbsp; # local minima.<ins>&nbsp;With [0., -0.5], all penalty method are stuck in local min.</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>717</th><th>745</th><td class="l"><span>&nbsp; &nbsp; test_diffev_penalty()</span> </td>
+                  </tr><tr>
+                          <th>718</th><th>746</th><td class="l"><span>&nbsp; &nbsp; test_diffev2_penalty()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=360#L726">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/test_constraints_range.py?rev=373#L754">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>726</th><th>754</th><td class="l"><span>&nbsp; &nbsp; # infeasible region and end up at a local minimum. See</span> </td>
+                  </tr><tr>
+                          <th>727</th><th>755</th><td class="l"><span>&nbsp; &nbsp; # http://ugcs.caltech.edu/~altafang/constrained_rosenbrock.html</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>756</th><td class="r"><ins>&nbsp; &nbsp; # With [0., -0.5], all but diffev, diffev2, and bfgs get stuck in local min.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>757</th><td class="r"><ins>&nbsp; &nbsp; # With [1.5, -0.5], diffev works, and diffev2 works only with high </ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>758</th><td class="r"><ins>&nbsp; &nbsp; # CrossProbability and ScalingFactor.</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>728</th><th>759</th><td class="l"><span>&nbsp; &nbsp; test_diffev_auglag() </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>729</th><th> </th><td class="l"><span>&nbsp; &nbsp; test_diffev2_auglag() # strange bug: with x0=[-0.5, -0.5]<del></del>,</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>760</th><td class="r"><span>&nbsp; &nbsp; test_diffev2_auglag() # strange bug: with x0=[-0.5, -0.5]<ins>&nbsp;and [0., -0.5]</ins>,</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>730</th><th>761</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # get different answer depending on </span> </td>
+                  </tr><tr>
+                          <th>731</th><th>762</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # whether previous line is commented out or not.</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>763</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# The effect also exists if you switch their orders.</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>732</th><th>764</th><td class="l"><span>&nbsp; &nbsp; test_neldermead_auglag()</span> </td>
+                  </tr><tr>
+                          <th>733</th><th>765</th><td class="l"><span>&nbsp; &nbsp; test_powelldirectional_auglag() # needs rg and rh = 1e4 (for feasible x0)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/373/branches/alta/mystic-0.2a1/test_constraints_range.py?format=diff&amp;new=373" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/373/branches/alta/mystic-0.2a1/test_constraints_range.py?format=zip&amp;new=373" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/373/branches/alta/mystic-0.2a1/test_constraints_range.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:45:06 GMT -->
+</html>

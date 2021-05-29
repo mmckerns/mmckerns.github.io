@@ -1,0 +1,1328 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/104 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:50:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 104 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="103.html" title="Changeset 103" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/104?format=diff&amp;new=104" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/104?format=zip&amp;new=104" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="105.html" title="Changeset 105" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="103.html" title="Changeset 103">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="105.html" title="Changeset 105">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 104</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             02/20/09 18:36:22
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-20T18%3A36%3A22-08%3A00&amp;precision=second" title="2009-02-20T18:36:22-08:00 in Timeline">7 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+moved fmin_powell to scipy_optimize;<br />
+removed scipy dependency;<br />
+cleanup of Solver documentation<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="add"></dt><dd>1 added</dd>
+              <dt class="rem"></dt><dd>1 deleted</dd>
+              <dt class="mod"></dt><dd>6 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/DEV_NOTES?rev=104">
+              DEV_NOTES
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock3.py?rev=104">
+              mystic/examples/test_rosenbrock3.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/Make.mm?rev=104">
+              mystic/mystic/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/__init__.py?rev=104">
+              mystic/mystic/__init__.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">1 diff</a>)
+            </li><li>
+          <div class="add"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_scipy060optimize.py?rev=104">
+              mystic/mystic/_scipy060optimize.py
+            </a>
+          <span class="comment">(added)</span>
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=104">
+              mystic/mystic/differential_evolution.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/fmin_powell.py?rev=103" title="Show what was removed (content at revision 103)">
+              mystic/mystic/fmin_powell.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=104">
+              mystic/mystic/scipy_optimize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">6 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="104/DEV_NOTES.html" title="Show the changeset 104 restricted to DEV_NOTES">DEV_NOTES</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 103">
+                    <a title="Show revision 103 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/DEV_NOTES?rev=103#L5">
+                      r103</a>
+                  </th>
+                  <th title="Revision 104">
+                    <a title="Show revision 104 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/DEV_NOTES?rev=104#L5">
+                      r104</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>5</th><td class="l"><span>*/*/*py:</span> </td>
+                  </tr><tr>
+                          <th>6</th><th>6</th><td class="l"><span>&nbsp;- move "circle" to mystic.models, and move more of "mogi" to mystic.models</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>7</th><th> </th><td class="l"><span>mystic/mystic/<del>fmin_powell</del>.py:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>7</th><td class="r"><span>mystic/mystic/<ins>scipy_optimize</ins>.py:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>8</th><th>8</th><td class="l"><span>&nbsp;- derive an AbstractSolver class for all solvers to inherit from</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>9</th><th> </th><td class="l"><span>&nbsp;- add scipy solver "Brent", to _remove_ the scipy dependency (*)</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span>&nbsp;- migrate all contents into scipy_optimize.py</span> </td>
+                      </tr><tr>
+                        <th>11</th><th> </th><td class="l"><span>&nbsp;- clean up &amp; edit inline documentation</span> </td>
+                      </tr><tr>
+                        <th>12</th><th> </th><td class="l"><span>&nbsp;- better way to deal with callback, direc, maxfun, maxiter (?)</span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>mystic/mystic/scipy_optimize.py:</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>&nbsp;- add the "__all__" scipy trick</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>9</th><td class="r"><span>&nbsp;- better way to deal with direc, maxfun, maxiter (?)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>10</th><td class="l"><span>mystic/mystic/differential_evolution.py:</span> </td>
+                  </tr><tr>
+                          <th>16</th><th>11</th><td class="l"><span>&nbsp;- add ability to choose initial point</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="104/mystic/examples/test_rosenbrock3.html" title="Show the changeset 104 restricted to mystic/examples/test_rosenbrock3.py">mystic/examples/test_rosenbrock3.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 103">
+                    <a title="Show revision 103 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock3.py?rev=103#L29">
+                      r103</a>
+                  </th>
+                  <th title="Revision 104">
+                    <a title="Show revision 104 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock3.py?rev=104#L29">
+                      r104</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>29</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>30</th><th>30</th><td class="l"><span>&nbsp; &nbsp;#from scipy.optimize import fmin_powell</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.<del>fmin_powell</del> import fmin_powell, PowellDirectionalSolver</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>31</th><td class="r"><span>&nbsp; &nbsp; from mystic.<ins>scipy_optimize</ins> import fmin_powell, PowellDirectionalSolver</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>32</th><th>32</th><td class="l"><span>&nbsp; &nbsp;#print fmin_powell(rosen,x0,retall=0,full_output=0)</span> </td>
+                  </tr><tr>
+                          <th>33</th><th>33</th><td class="l"><span>&nbsp; &nbsp; solver = PowellDirectionalSolver(len(x0))</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="104/mystic/mystic/Make.html" title="Show the changeset 104 restricted to mystic/mystic/Make.mm">mystic/mystic/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 103">
+                    <a title="Show revision 103 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/Make.mm?rev=103#L29">
+                      r103</a>
+                  </th>
+                  <th title="Revision 104">
+                    <a title="Show revision 104 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/Make.mm?rev=104#L29">
+                      r104</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>29</th><td class="l"><span>&nbsp; &nbsp; differential_evolution.py \</span> </td>
+                  </tr><tr>
+                          <th>30</th><th>30</th><td class="l"><span>&nbsp; &nbsp; scipy_optimize.py \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; &nbsp; <del>fmin_powell</del>.py \</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>31</th><td class="r"><span>&nbsp; &nbsp; <ins>_scipy060optimize</ins>.py \</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>32</th><th>32</th><td class="l"><span>&nbsp; &nbsp; termination.py \</span> </td>
+                  </tr><tr>
+                          <th>33</th><th>33</th><td class="l"><span>&nbsp; &nbsp; strategy.py \</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="104/mystic/mystic/__init__.html" title="Show the changeset 104 restricted to mystic/mystic/__init__.py">mystic/mystic/__init__.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 103">
+                    <a title="Show revision 103 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/__init__.py?rev=103#L16">
+                      r103</a>
+                  </th>
+                  <th title="Revision 104">
+                    <a title="Show revision 104 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/__init__.py?rev=104#L16">
+                      r104</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>16</th><th>16</th><td class="l"><span># solvers</span> </td>
+                  </tr><tr>
+                          <th>17</th><th>17</th><td class="l"><span>import differential_evolution, scipy_optimize</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>18</th><th> </th><td class="l"><del>import fmin_powell #FIXME: move to scipy_optimize after remove scipy dependency</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>19</th><th>18</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>20</th><th>19</th><td class="l"><span># strategies, termination conditions</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="104/mystic/mystic/differential_evolution.html" title="Show the changeset 104 restricted to mystic/mystic/differential_evolution.py">mystic/mystic/differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 102">
+                    <a title="Show revision 102 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=102#L42">
+                      r102</a>
+                  </th>
+                  <th title="Revision 104">
+                    <a title="Show revision 104 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=104#L42">
+                      r104</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>42</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>43</th><th>43</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>44</th><td class="r"><ins>__all__ = ['DifferentialEvolutionSolver','DifferentialEvolutionSolver2']</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>44</th><th>45</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>45</th><th>46</th><td class="l"><span>from mystic.tools import Null, wrap_function</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="104/mystic/mystic/scipy_optimize.html" title="Show the changeset 104 restricted to mystic/mystic/scipy_optimize.py">mystic/mystic/scipy_optimize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 103">
+                    <a title="Show revision 103 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=103#L4">
+                      r103</a>
+                  </th>
+                  <th title="Revision 104">
+                    <a title="Show revision 104 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=104#L4">
+                      r104</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span># (derives from optimize.py module by Travis E. Oliphant)</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>5</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>6</th><th> </th><td class="l"><span># adapted <del>from scipy.optimize.fmin, scipy version 0.4.8</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>6</th><td class="r"><span># adapted <ins>scipy.optimize.fmin (from scipy version 0.4.8)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span># by Patrick Hung, Caltech.</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>9</th><th> </th><td class="l"><span># adapted to class (&amp; added bounds)</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span># updated to scipy version 0.6.0</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>9</th><td class="r"><span># adapted from function to class (&amp; added bounds)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>10</th><td class="r"><span># adapted scipy.optimize.fmin_powell</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>11</th><td class="r"><span># updated solvers to scipy version 0.6.0</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>11</th><th>12</th><td class="l"><span># by mmckerns@caltech.edu</span> </td>
+                  </tr><tr>
+                          <th>12</th><th>13</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>13</th><th>14</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>14</th><th> </th><td class="l"><span>Algorithm<del></del> adapted from scipy.optimize, </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>15</th><td class="r"><span>Algorithm<ins>s</ins> adapted from scipy.optimize, </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>16</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>16</th><th>17</th><td class="l"><span>fmin&nbsp; &nbsp; &nbsp; &nbsp; ---&nbsp; &nbsp; &nbsp; Nelder-Mead Simplex algorithm.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=103#L19">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=104#L20">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>19</th><th>20</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -- StepMonitor</span> </td>
+                  </tr><tr>
+                          <th>20</th><th>21</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>22</th><td class="r"><ins>fmin_powell ---&nbsp; &nbsp; &nbsp; Powell's Directional Search method.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>23</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Takes two additional input args</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>24</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -- EvaluationMonitor</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>25</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -- StepMonitor</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>26</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>21</th><th>27</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>28</th><td class="r"><ins>__all__ = ['NelderMeadSimplexSolver','PowellDirectionalSolver',</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>29</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'fmin','fmin_powell']</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>30</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>31</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>23</th><th>32</th><td class="l"><span>from mystic.tools import Null, wrap_function</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=103#L27">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=104#L36">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>27</th><th>36</th><td class="l"><span>from numpy import atleast_1d, eye, zeros, shape, \</span> </td>
+                  </tr><tr>
+                          <th>28</th><th>37</th><td class="l"><span>&nbsp; &nbsp; &nbsp;asarray, absolute, sqrt, Inf, asfarray</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>29</th><th> </th><td class="l"><span>from numpy import clip<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>38</th><td class="r"><span>from numpy import clip<ins>, squeeze</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>30</th><th>39</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>31</th><th>40</th><td class="l"><span>abs = absolute</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>41</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>42</th><td class="r"><ins>from _scipy060optimize import brent #XXX: local copy to avoid dependency!</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>43</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>32</th><th>44</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>33</th><th>45</th><td class="l"><span>class NelderMeadSimplexSolver(object):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=103#L176">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=104#L188">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>176</th><th>188</th><td class="l"><span>&nbsp; &nbsp; &nbsp; ExtraArgs -- extra arguments for func.</span> </td>
+                  </tr><tr>
+                          <th>177</th><th>189</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>178</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>190</th><td class="r"><span>&nbsp; &nbsp; Further Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>191</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>192</th><td class="r"><span>&nbsp; &nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                      </tr><tr>
+                        <th> </th><th>193</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                      </tr><tr>
+                        <th> </th><th>194</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; current parameter vector</span> </td>
+                      </tr><tr>
+                        <th> </th><th>195</th><td class="r"><span>&nbsp; &nbsp; &nbsp; disp -- non-zero to print convergence messages.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>196</th><td class="r"><span>&nbsp; &nbsp; &nbsp; radius -- percentage change for initial simplex values</span> </td>
+                      </tr><tr>
+                        <th> </th><th>197</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>198</th><td class="r"><span>"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>179</th><th>199</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # set arg names to scipy.optimize.fmin names; set fixed inputs</span> </td>
+                  </tr><tr>
+                          <th>180</th><th>200</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x0 = self.population[0]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=103#L185">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=104#L205">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>185</th><th>205</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; callback=None&nbsp; #user-supplied function, called after each step</span> </td>
+                  </tr><tr>
+                          <th>186</th><th>206</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; radius=0.05&nbsp; &nbsp; #percentage change for initial simplex values</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>207</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('callback'): callback = kwds['callback']</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>187</th><th>208</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('disp'): disp = kwds['disp']</span> </td>
+                  </tr><tr>
+                          <th>188</th><th>209</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('radius'): radius = kwds['radius']</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>189</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('callback'): callback = kwds['callback']</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>190</th><th>210</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>191</th><th>211</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=103#L431">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=104#L451">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>431</th><th>451</th><td class="l"><span>&nbsp; &nbsp; return retlist</span> </td>
+                  </tr><tr>
+                          <th>432</th><th>452</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>453</th><td class="r"><ins>############################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>454</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>455</th><td class="r"><ins>def _linesearch_powell(func, p, xi, tol=1e-3):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>456</th><td class="r"><ins>&nbsp; &nbsp; # line-search algorithm using fminbound</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>457</th><td class="r"><ins>&nbsp; &nbsp; #&nbsp; find the minimium of the function</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>458</th><td class="r"><ins>&nbsp; &nbsp; #&nbsp; func(x0+ alpha*direc)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>459</th><td class="r"><ins>&nbsp; &nbsp; def myfunc(alpha):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>460</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return func(p + alpha * xi)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>461</th><td class="r"><ins>&nbsp; &nbsp; alpha_min, fret, iter, num = brent(myfunc, full_output=1, tol=tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>462</th><td class="r"><ins>&nbsp; &nbsp; xi = alpha_min*xi</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>463</th><td class="r"><ins>&nbsp; &nbsp; return squeeze(fret), p+xi, xi</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>464</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>465</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>466</th><td class="r"><ins>class PowellDirectionalSolver(NelderMeadSimplexSolver): #FIXME: not a simplex solver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>467</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>468</th><td class="r"><ins>&nbsp; &nbsp; Powell Direction Search optimization adapted from scipy.optimize.fmin_powell.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>469</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>470</th><td class="r"><ins>&nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>471</th><td class="r"><ins>&nbsp; &nbsp; def __init__(self, dim):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>472</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>473</th><td class="r"><ins>&nbsp;Takes one initial input: </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>474</th><td class="r"><ins>&nbsp; &nbsp;dim&nbsp; &nbsp; &nbsp; -- dimensionality of the problem</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>475</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>476</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; NelderMeadSimplexSolver.__init__(self,dim)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>477</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._direc = None #FIXME: this is the easy way to return 'direc'...</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>478</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#FIXME: NO SIMPLEX, so maybe best not to inherit __init__?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>479</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>480</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>481</th><td class="r"><ins>&nbsp; &nbsp; def Solve(self, func, termination,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>482</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maxiter=None, maxfun=None, sigint_callback=None,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>483</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; EvaluationMonitor=Null, StepMonitor=Null, ExtraArgs=(), **kwds):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>484</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using modified Powell's method.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>485</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>486</th><td class="r"><ins>&nbsp; &nbsp; Description:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>487</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>488</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; Uses a modified Powell Directional Search algorithm to find</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>489</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; the minimum of function of one or more variables.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>490</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>491</th><td class="r"><ins>&nbsp; &nbsp; Inputs:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>492</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>493</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; func -- the Python function or method to be minimized.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>494</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; termination -- callable object providing termination conditions.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>495</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>496</th><td class="r"><ins>&nbsp; &nbsp; Additional Inputs:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>497</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>498</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; maxiter -- the maximum number of iterations to perform.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>499</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; maxfun -- the maximum number of function evaluations.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>500</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; sigint_callback -- callback function for signal handler.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>501</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; EvaluationMonitor -- a callable object that will be passed x, fval</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>502</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;whenever the cost function is evaluated.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>503</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; StepMonitor -- a callable object that will be passed x, fval</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>504</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;after the end of a simplex iteration.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>505</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; ExtraArgs -- extra arguments for func.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>506</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>507</th><td class="r"><ins>&nbsp; &nbsp; Further Inputs:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>508</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>509</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; callback -- an optional user-supplied function to call after each</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>510</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>511</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; current parameter vector</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>512</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; direc -- initial direction set</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>513</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; xtol -- line-search error tolerance.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>514</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; disp -- non-zero to print convergence messages.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>515</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>516</th><td class="r"><ins>"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>517</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>518</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # set arg names to scipy.optimize.fmin_powell names; set fixed inputs</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>519</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; x0 = self.population[0]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>520</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; args = ExtraArgs</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>521</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; full_output=1&nbsp; #non-zero if fval and warnflag outputs are desired.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>522</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; disp=0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#non-zero to print convergence messages.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>523</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; retall=0&nbsp; &nbsp; &nbsp; &nbsp;#non-zero to return all steps</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>524</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; direc=None</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>525</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; callback=None&nbsp; #user-supplied function, called after each step</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>526</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; xtol=1e-4&nbsp; &nbsp; &nbsp; #line-search error tolerance</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>527</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('callback'): callback = kwds['callback']</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>528</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('direc'): direc = kwds['direc']&nbsp; #XXX: best interface?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>529</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('xtol'): xtol = kwds['xtol']</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>530</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('disp'): disp = kwds['disp']</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>531</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>532</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>533</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; import signal</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>534</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; import mystic.termination as detools</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>535</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; detools.EARLYEXIT = False</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>536</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>537</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; fcalls, func = wrap_function(func, args, EvaluationMonitor)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>538</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if self._useStrictRange:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>539</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x0 = self._setGuessWithinRangeBoundary(x0)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>540</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; func = wrap_bounds(func, self._strictMin, self._strictMax)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>541</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>542</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; def handler(signum, frame):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>543</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; import inspect</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>544</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print inspect.getframeinfo(frame)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>545</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print inspect.trace()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>546</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; while 1:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>547</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s = raw_input(\</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>548</th><td class="r"><ins>"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>549</th><td class="r"><ins>&nbsp;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>550</th><td class="r"><ins>&nbsp;Enter sense switch.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>551</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>552</th><td class="r"><ins>&nbsp; &nbsp;sol: Write current best solution.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>553</th><td class="r"><ins>&nbsp; &nbsp;cont: Continue calculation.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>554</th><td class="r"><ins>&nbsp; &nbsp;call: Executes sigint_callback [%s].</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>555</th><td class="r"><ins>&nbsp; &nbsp;exit: Exits with current best solution.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>556</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>557</th><td class="r"><ins>&nbsp;&gt;&gt;&gt; """ % sigint_callback)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>558</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if s.lower() == 'sol': </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>559</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "sw1."</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>560</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print self.bestSolution</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>561</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif s.lower() == 'cont': </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>562</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>563</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif s.lower() == 'call': </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>564</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # sigint call_back</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>565</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if sigint_callback is not None:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>566</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sigint_callback(self.bestSolution)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>567</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif s.lower() == 'exit': </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>568</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; detools.EARLYEXIT = True</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>569</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>570</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>571</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "unknown option : %s ", s</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>572</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>573</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.signal_handler = handler</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>574</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>575</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint: signal.signal(signal.SIGINT, self.signal_handler)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>576</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>577</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>578</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; x = asfarray(x0).flatten()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>579</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if retall:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>580</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; allvecs = [x]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>581</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; N = len(x) #XXX: this should be equal to self.nDim</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>582</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; rank = len(x.shape)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>583</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if not -1 &lt; rank &lt; 2:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>584</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raise ValueError, "Initial guess must be a scalar or rank-1 sequence."</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>585</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if maxiter is None:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>586</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maxiter = N * 1000</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>587</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if maxfun is None:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>588</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maxfun = N * 1000</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>589</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = maxiter #XXX: better to just copy the code?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>590</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = maxfun&nbsp; &nbsp;#XXX: better to just copy the code?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>591</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>592</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if direc is None:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>593</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; direc = eye(N, dtype=float)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>594</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>595</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; direc = asarray(direc, dtype=float)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>596</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; fval = squeeze(func(x))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>597</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; x1 = x.copy()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>598</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>599</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._direc = direc #XXX: instead, use a monitor?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>600</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = x</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>601</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = fval</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>602</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.population = [x]&nbsp; &nbsp; #XXX: pointless, if simplex not used</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>603</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy = [fval]&nbsp; #XXX: pointless, if simplex not used</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>604</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(self.bestEnergy)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>605</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(x,fval) # get initial values</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>606</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>607</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; iter = 0;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>608</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ilist = range(N)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>609</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>610</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; CONTINUE = True</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>611</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; while CONTINUE:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>612</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fx = fval</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>613</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bigind = 0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>614</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; delta = 0.0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>615</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in ilist:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>616</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; direc1 = direc[i]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>617</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fx2 = fval</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>618</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fval, x, direc1 = _linesearch_powell(func, x, direc1, tol=xtol*100)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>619</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (fx2 - fval) &gt; delta:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>620</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; delta = fx2 - fval</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>621</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; bigind = i</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>622</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>623</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; iter += 1</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>624</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if callback is not None:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>625</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; callback(x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>626</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if retall:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>627</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; allvecs.append(x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>628</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>629</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(fval) #XXX: the 'best' for now...</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>630</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if detools.EARLYEXIT or termination(self): CONTINUE = False #break</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>631</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif fcalls[0] &gt;= maxfun: CONTINUE = False #break</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>632</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif iter &gt;= maxiter: CONTINUE = False #break</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>633</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>634</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else: # Construct the extrapolated point</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>635</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; direc1 = x - x1</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>636</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x2 = 2*x - x1</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>637</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x1 = x.copy()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>638</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fx2 = squeeze(func(x2))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>639</th><td class="r"><ins>&nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>640</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (fx &gt; fx2):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>641</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; t = 2.0*(fx+fx2-2.0*fval)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>642</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; temp = (fx-fval-delta)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>643</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; t *= temp*temp</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>644</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; temp = fx-fx2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>645</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; t -= delta*temp*temp</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>646</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if t &lt; 0.0:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>647</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fval, x, direc1 = _linesearch_powell(func, x, direc1, tol=xtol*100)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>648</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; direc[bigind] = direc[-1]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>649</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; direc[-1] = direc1</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>650</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>651</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.energy_history[-1] = fval #...update to 'best' energy</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>652</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>653</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._direc = direc #XXX: instead, use a monitor?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>654</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = x</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>655</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = fval</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>656</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population = [x]&nbsp; &nbsp; #XXX: pointless, if simplex not used</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>657</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy = [fval]&nbsp; #XXX: pointless, if simplex not used</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>658</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(x,fval) # get ith values; #XXX: should be [x],[fval] ?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>659</th><td class="r"><ins>&nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>660</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.generations = iter</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>661</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>662</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>663</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # code below here is dead, unless disp!=0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>664</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; warnflag = 0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>665</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>666</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if fcalls[0] &gt;= maxfun:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>667</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warnflag = 1</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>668</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if disp:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>669</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Maximum number of function evaluations has "\</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>670</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "been exceeded."</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>671</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; elif iter &gt;= maxiter:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>672</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warnflag = 2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>673</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if disp:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>674</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Maximum number of iterations has been exceeded"</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>675</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>676</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if disp:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>677</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Optimization terminated successfully."</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>678</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Current function value: %f" % fval</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>679</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Iterations: %d" % iter</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>680</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Function evaluations: %d" % fcalls[0]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>681</th><td class="r"><ins>&nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>682</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; x = squeeze(x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>683</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>684</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if full_output:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>685</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retlist = x, fval, direc, iter, fcalls[0], warnflag</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>686</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if retall:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>687</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retlist += (allvecs,)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>688</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>689</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retlist = x</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>690</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if retall:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>691</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retlist = (x, allvecs)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>692</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>693</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return #retlist</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>694</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>695</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>696</th><td class="r"><ins>def fmin_powell(func, x0, args=(), xtol=1e-4, ftol=1e-4, maxiter=None,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>697</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maxfun=None, full_output=0, disp=1, retall=0, callback=None,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>698</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; direc=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>699</th><td class="r"><ins>&nbsp; &nbsp; """fmin_powell using the 'original' scipy.optimize.fmin_powell interface"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>700</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>701</th><td class="r"><ins>&nbsp; &nbsp; #FIXME: need to resolve "direc"</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>702</th><td class="r"><ins>&nbsp; &nbsp; #&nbsp; &nbsp; &nbsp; &nbsp; - should just pass 'direc', and then hands-off ?&nbsp; How return it ?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>703</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>704</th><td class="r"><ins>&nbsp; &nbsp; from mystic.tools import Sow</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>705</th><td class="r"><ins>&nbsp; &nbsp; stepmon = Sow()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>706</th><td class="r"><ins>&nbsp; &nbsp; evalmon = Sow()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>707</th><td class="r"><ins>&nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>708</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>709</th><td class="r"><ins>&nbsp; &nbsp; solver = PowellDirectionalSolver(len(x0))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>710</th><td class="r"><ins>&nbsp; &nbsp; solver.SetInitialPoints(x0)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>711</th><td class="r"><ins>&nbsp; &nbsp;#solver.enable_signal_handler()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>712</th><td class="r"><ins>&nbsp; &nbsp; solver.Solve(func,termination=NCOG(ftol),\</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>713</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;maxiter=maxiter,maxfun=maxfun,\</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>714</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;EvaluationMonitor=evalmon,StepMonitor=stepmon,\</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>715</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;xtol=xtol, callback=callback, \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>716</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;disp=disp, direc=direc)&nbsp; &nbsp;#XXX: last two lines use **kwds</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>717</th><td class="r"><ins>&nbsp; &nbsp; solution = solver.Solution()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>718</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>719</th><td class="r"><ins>&nbsp; &nbsp; # code below here pushes output to scipy.optimize.fmin_powell interface</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>720</th><td class="r"><ins>&nbsp; &nbsp;#x = list(solver.bestSolution)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>721</th><td class="r"><ins>&nbsp; &nbsp; x = solver.bestSolution</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>722</th><td class="r"><ins>&nbsp; &nbsp; fval = solver.bestEnergy</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>723</th><td class="r"><ins>&nbsp; &nbsp; warnflag = 0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>724</th><td class="r"><ins>&nbsp; &nbsp; fcalls = len(evalmon.x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>725</th><td class="r"><ins>&nbsp; &nbsp; iterations = len(stepmon.x) - 1</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>726</th><td class="r"><ins>&nbsp; &nbsp; allvecs = []</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>727</th><td class="r"><ins>&nbsp; &nbsp; for i in range(len(stepmon.x)):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>728</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#allvecs.append(list(stepmon.x[i]))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>729</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; allvecs.append(stepmon.x[i])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>730</th><td class="r"><ins>&nbsp; &nbsp; direc = solver._direc #FIXME: better way to get direc from Solve() ?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>731</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>732</th><td class="r"><ins>&nbsp; &nbsp; if fcalls &gt;= solver._maxfun:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>733</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; warnflag = 1</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>734</th><td class="r"><ins>&nbsp; &nbsp; elif iterations &gt;= solver._maxiter:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>735</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; warnflag = 2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>736</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>737</th><td class="r"><ins>&nbsp; &nbsp; x = squeeze(x) #FIXME: write squeezed x to stepmon instead?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>738</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>739</th><td class="r"><ins>&nbsp; &nbsp; if full_output:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>740</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; retlist = x, fval, direc, iterations, fcalls, warnflag</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>741</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if retall:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>742</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retlist += (allvecs,)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>743</th><td class="r"><ins>&nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>744</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; retlist = x</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>745</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if retall:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>746</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retlist = (x, allvecs)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>747</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>748</th><td class="r"><ins>&nbsp; &nbsp; return retlist</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>749</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>433</th><th>750</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>434</th><th>751</th><td class="l"><span>if __name__=='__main__':</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/104?format=diff&amp;new=104" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/104?format=zip&amp;new=104" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/104 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:50:48 GMT -->
+</html>

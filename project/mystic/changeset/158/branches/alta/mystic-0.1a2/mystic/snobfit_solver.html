@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/158/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:51:30 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 158 for branches/alta/mystic-0.1a2/mystic/snobfit_solver.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../../../search.html" />
+        <link rel="help" href="../../../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/158/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?format=diff&amp;new=158" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/158/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?format=zip&amp;new=158" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../../../160/branches/alta/mystic-0.1a2/mystic/snobfit_solver.html" title="Changeset 160 for branches/alta/mystic-0.1a2/mystic/snobfit_solver.py" />
+        <link rel="start" href="../../../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../../../155/branches/alta/mystic-0.1a2/mystic/snobfit_solver.html" title="Changeset 155 for branches/alta/mystic-0.1a2/mystic/snobfit_solver.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../../../login.html">Login</a></li><li><a href="../../../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../../../wiki.html">Wiki</a></li><li><a href="../../../../../../timeline.html">Timeline</a></li><li><a href="../../../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../../../browser.html">Browse Source</a></li><li><a href="../../../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../../../155/branches/alta/mystic-0.1a2/mystic/snobfit_solver.html" title="Changeset 155 for branches/alta/mystic-0.1a2/mystic/snobfit_solver.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../../../160/branches/alta/mystic-0.1a2/mystic/snobfit_solver.html" title="Changeset 160 for branches/alta/mystic-0.1a2/mystic/snobfit_solver.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../../../158.html">158</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=158">branches/alta/mystic-0.1a2/mystic/snobfit_solver.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             08/02/09 14:40:15
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-08-02T14%3A40%3A15-07%3A00&amp;precision=second" title="2009-08-02T14:40:15-07:00 in Timeline">7 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">altafang</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+Adding simulated annealing solver andsome fixes to snobfit<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=158">
+              branches/alta/mystic-0.1a2/mystic/snobfit_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">3 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="snobfit_solver.html" title="Show the changeset 158 restricted to branches/alta/mystic-0.1a2/mystic/snobfit_solver.py">branches/alta/mystic-0.1a2/mystic/snobfit_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 155">
+                    <a title="Show revision 155 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=155#L1">
+                      r155</a>
+                  </th>
+                  <th title="Revision 158">
+                    <a title="Show revision 158 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=158#L1">
+                      r158</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="rem">
+                  <tr class="first">
+                          <th>1</th><th> </th><td class="l"><del># Snobfit optimization (branch and bound) adapted to the Mystic framework</del> </td>
+                  </tr><tr class="last">
+                          <th>2</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>1</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>2</th><td class="l"><span>Solvers</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=155#L68">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=158#L66">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>66</th><td class="l"><span>from mystic.softConstraint import SoftConstraint, SoftConstraints</span> </td>
+                  </tr><tr>
+                          <th>69</th><th>67</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>70</th><th> </th><td class="l"><span># -----------------------------------------------------------------</span> </td>
+                      </tr><tr>
+                        <th>71</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>72</th><th> </th><td class="l"><span># Mystic imports</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>68</th><td class="r"><span># Import Mystic tools</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>73</th><th>69</th><td class="l"><span>from mystic.tools import Null, wrap_function, unpair</span> </td>
+                  </tr><tr>
+                          <th>74</th><th>70</th><td class="l"><span>from mystic.tools import wrap_bounds</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=155#L264">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=158#L260">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>264</th><th>260</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # code below here pushes output to scipy.optimize interface</span> </td>
+                  </tr><tr>
+                          <th>265</th><th>261</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; fval = self.bestEnergy</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>266</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; warnflag = 0</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>267</th><th>262</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>268</th><th>263</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if fcalls[0] &gt;= self._maxfun:</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>269</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warnflag = 1</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>270</th><th>264</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if disp:</span> </td>
+                  </tr><tr>
+                          <th>271</th><th>265</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Maximum number of function evaluations has "\</span> </td>
+                  </tr><tr>
+                          <th>272</th><th>266</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "been exceeded."</span> </td>
+                  </tr><tr>
+                          <th>273</th><th>267</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif i &gt;= self._maxiter:</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>274</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warnflag = 2</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>275</th><th>268</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if disp:</span> </td>
+                  </tr><tr>
+                          <th>276</th><th>269</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Maximum number of iterations has been exceeded"</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/158/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?format=diff&amp;new=158" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/158/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?format=zip&amp;new=158" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/158/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:51:30 GMT -->
+</html>

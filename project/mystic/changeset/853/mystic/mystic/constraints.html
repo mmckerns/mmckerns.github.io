@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/853/mystic/mystic/constraints.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 853 for mystic/mystic/constraints.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/853/mystic/mystic/constraints.py?format=diff&amp;new=853" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/853/mystic/mystic/constraints.py?format=zip&amp;new=853" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../854/mystic/mystic/constraints.html" title="Changeset 854 for mystic/mystic/constraints.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../852/mystic/mystic/constraints.html" title="Changeset 852 for mystic/mystic/constraints.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../852/mystic/mystic/constraints.html" title="Changeset 852 for mystic/mystic/constraints.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../854/mystic/mystic/constraints.html" title="Changeset 854 for mystic/mystic/constraints.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../853.html">853</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=853">mystic/mystic/constraints.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             12/30/15 09:13:52
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-12-30T09%3A13%3A52-08%3A00&amp;precision=second" title="2015-12-30T09:13:52-08:00 in Timeline">5 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+clarify 'combine' and provide new example using combine<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=853">
+              mystic/mystic/constraints.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">3 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="constraints.html" title="Show the changeset 853 restricted to mystic/mystic/constraints.py">mystic/mystic/constraints.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 852">
+                    <a title="Show revision 852 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=852#L438">
+                      r852</a>
+                  </th>
+                  <th title="Revision 853">
+                    <a title="Show revision 853 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=853#L438">
+                      r853</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>438</th><th>438</th><td class="l"><span>&nbsp; &nbsp; args -- arguments for the penalty function [default: ()]</span> </td>
+                  </tr><tr>
+                          <th>439</th><th>439</th><td class="l"><span>&nbsp; &nbsp; kwds -- keyword arguments for the penalty function [default: {}]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>440</th><th> </th><td class="l"><span>&nbsp; &nbsp; k -- penalty multiplier</span> </td>
+                      </tr><tr>
+                        <th>441</th><th> </th><td class="l"><span>&nbsp; &nbsp; h -- iterative multiplier</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>440</th><td class="r"><span>&nbsp; &nbsp; k -- penalty multiplier [default: 1]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>441</th><td class="r"><span>&nbsp; &nbsp; h -- iterative multiplier [default: 5]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>442</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>443</th><td class="r"><span>NOTE: The defaults provide a linear combination of the individual penalties</span> </td>
+                      </tr><tr>
+                        <th> </th><th>444</th><td class="r"><span>&nbsp; &nbsp; without any scaling. A different ptype (from 'mystic.penalty') will</span> </td>
+                      </tr><tr>
+                        <th> </th><th>445</th><td class="r"><span>&nbsp; &nbsp; apply a nonlinear scaling to the combined penalty, while a different</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>446</th><td class="r"><span>&nbsp; &nbsp; k will apply a linear scaling.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>442</th><th>447</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>443</th><th>448</th><td class="l"><span>NOTE: This function is also useful for combining constraints solvers</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=852#L445">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=853#L450">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>445</th><th>450</th><td class="l"><span>&nbsp; &nbsp; Constraints solvers must first be converted to penalty functions</span> </td>
+                  </tr><tr>
+                          <th>446</th><th>451</th><td class="l"><span>&nbsp; &nbsp; (i.e. with 'as_penalty'), then combined, then can be converted to</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>447</th><th> </th><td class="l"><span>&nbsp; &nbsp; a constraints solver (i.e. with <del>`</del>as_constraint'). The resulting</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>452</th><td class="r"><span>&nbsp; &nbsp; a constraints solver (i.e. with <ins>'</ins>as_constraint'). The resulting</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>448</th><th>453</th><td class="l"><span>&nbsp; &nbsp; constraints will likely be more expensive to evaluate and less</span> </td>
+                  </tr><tr>
+                          <th>449</th><th>454</th><td class="l"><span>&nbsp; &nbsp; accurate than writing the constraints solver from scratch.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=852#L453">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=853#L458">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>453</th><th>458</th><td class="l"><span>&nbsp; &nbsp;#if k is not None: settings['k'] = k</span> </td>
+                  </tr><tr>
+                          <th>454</th><th>459</th><td class="l"><span>&nbsp; &nbsp;#if h is not None: settings['h'] = h</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>460</th><td class="r"><ins>&nbsp; &nbsp; k = settings.setdefault('k', 1)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>461</th><td class="r"><ins>&nbsp; &nbsp; if k is None: del settings['k']</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>455</th><th>462</th><td class="l"><span>&nbsp; &nbsp; ptype = settings.pop('ptype', None)</span> </td>
+                  </tr><tr>
+                          <th>456</th><th>463</th><td class="l"><span>&nbsp; &nbsp; if ptype is None:</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/853/mystic/mystic/constraints.py?format=diff&amp;new=853" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/853/mystic/mystic/constraints.py?format=zip&amp;new=853" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/853/mystic/mystic/constraints.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:07 GMT -->
+</html>

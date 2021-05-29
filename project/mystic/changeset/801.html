@@ -1,0 +1,980 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/801 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 801 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="800.html" title="Changeset 800" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/801?format=diff&amp;new=801" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/801?format=zip&amp;new=801" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="802.html" title="Changeset 802" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="800.html" title="Changeset 800">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="802.html" title="Changeset 802">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 801</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             06/27/15 14:10:35
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-27T14%3A10%3A35-07%3A00&amp;precision=second" title="2015-06-27T14:10:35-07:00 in Timeline">11 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+windows comparibility in getch, and pathos; added better read_import <br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=801">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>12 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP.py?rev=801">
+              examples/TEST_ffitPP.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP_b.py?rev=801">
+              examples/TEST_ffitPP_b.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/buckshot_example06.py?rev=801">
+              examples/buckshot_example06.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/lattice_example06.py?rev=801">
+              examples/lattice_example06.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/mpmap_desolve.py?rev=801">
+              examples/mpmap_desolve.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/mpmap_desolve_rosen.py?rev=801">
+              examples/mpmap_desolve_rosen.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_twistedgaussian3.py?rev=801">
+              examples/test_twistedgaussian3.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=801">
+              mystic/abstract_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=801">
+              mystic/munge.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file8">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=801">
+              mystic/tools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file9">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/scripts/support_hypercube_scenario.py?rev=801">
+              scripts/support_hypercube_scenario.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file10">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic_basic.py?rev=801">
+              tests/test_symbolic_basic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file11">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="801/mystic/examples/TEST_ffitPP.html" title="Show the changeset 801 restricted to mystic/examples/TEST_ffitPP.py">mystic/examples/TEST_ffitPP.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 799">
+                    <a title="Show revision 799 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP.py?rev=799#L43">
+                      r799</a>
+                  </th>
+                  <th title="Revision 801">
+                    <a title="Show revision 801 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP.py?rev=801#L43">
+                      r801</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>43</th><th>43</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>44</th><th>44</th><td class="l"><span>if __name__ == '__main__':</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>45</th><td class="r"><ins>&nbsp; &nbsp; from pathos.helpers import freeze_support</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>46</th><td class="r"><ins>&nbsp; &nbsp; freeze_support() # help Windows use multiprocessing</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>47</th><td class="l"><span>&nbsp; &nbsp; solution = main()</span> </td>
+                  </tr><tr>
+                          <th>46</th><th>48</th><td class="l"><span>&nbsp; &nbsp; print_solution(solution)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="801/mystic/examples/TEST_ffitPP_b.html" title="Show the changeset 801 restricted to mystic/examples/TEST_ffitPP_b.py">mystic/examples/TEST_ffitPP_b.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 799">
+                    <a title="Show revision 799 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP_b.py?rev=799#L71">
+                      r799</a>
+                  </th>
+                  <th title="Revision 801">
+                    <a title="Show revision 801 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP_b.py?rev=801#L71">
+                      r801</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>71</th><th>71</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>72</th><th>72</th><td class="l"><span>if __name__ == '__main__':</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>73</th><td class="r"><ins>&nbsp; &nbsp; from pathos.helpers import freeze_support</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>74</th><td class="r"><ins>&nbsp; &nbsp; freeze_support() # help Windows use multiprocessing</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>73</th><th>75</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>74</th><th>76</th><td class="l"><span>&nbsp; &nbsp; # number of local processors</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="801/mystic/examples/buckshot_example06.html" title="Show the changeset 801 restricted to mystic/examples/buckshot_example06.py">mystic/examples/buckshot_example06.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 799">
+                    <a title="Show revision 799 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/buckshot_example06.py?rev=799#L25">
+                      r799</a>
+                  </th>
+                  <th title="Revision 801">
+                    <a title="Show revision 801 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/buckshot_example06.py?rev=801#L25">
+                      r801</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>25</th><th>25</th><td class="l"><span>from mystic.models.poly import chebyshev8coeffs</span> </td>
+                  </tr><tr>
+                          <th>26</th><th>26</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>27</th><th> </th><td class="l"><span># if available, use a <del>multiprocessing</del> worker pool</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>27</th><td class="r"><span># if available, use a <ins>pathos</ins> worker pool</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>28</th><td class="l"><span>try:</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>29</th><td class="l"><span>&nbsp; &nbsp; from pathos.pools import ProcessPool as Pool</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/buckshot_example06.py?rev=799#L68">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/buckshot_example06.py?rev=801#L68">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>68</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>69</th><th>69</th><td class="l"><span>if __name__ == '__main__':</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>70</th><td class="r"><ins>&nbsp; &nbsp; from pathos.helpers import freeze_support</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>71</th><td class="r"><ins>&nbsp; &nbsp; freeze_support() # help Windows use multiprocessing</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>70</th><th>72</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>71</th><th>73</th><td class="l"><span>&nbsp; &nbsp; print "Powell's Method"</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="801/mystic/examples/lattice_example06.html" title="Show the changeset 801 restricted to mystic/examples/lattice_example06.py">mystic/examples/lattice_example06.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 799">
+                    <a title="Show revision 799 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/lattice_example06.py?rev=799#L25">
+                      r799</a>
+                  </th>
+                  <th title="Revision 801">
+                    <a title="Show revision 801 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/lattice_example06.py?rev=801#L25">
+                      r801</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>25</th><th>25</th><td class="l"><span>from mystic.models.poly import chebyshev8coeffs</span> </td>
+                  </tr><tr>
+                          <th>26</th><th>26</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>27</th><th> </th><td class="l"><span># if available, use a <del>multiprocessing</del> worker pool</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>27</th><td class="r"><span># if available, use a <ins>pathos</ins> worker pool</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>28</th><td class="l"><span>try:</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>29</th><td class="l"><span>&nbsp; &nbsp; from pathos.pools import ProcessPool as Pool</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/lattice_example06.py?rev=799#L68">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/lattice_example06.py?rev=801#L68">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>68</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>69</th><th>69</th><td class="l"><span>if __name__ == '__main__':</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>70</th><td class="r"><ins>&nbsp; &nbsp; from pathos.helpers import freeze_support</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>71</th><td class="r"><ins>&nbsp; &nbsp; freeze_support() # help Windows use multiprocessing</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>70</th><th>72</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>71</th><th>73</th><td class="l"><span>&nbsp; &nbsp; print "Powell's Method"</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="801/mystic/examples/mpmap_desolve.html" title="Show the changeset 801 restricted to mystic/examples/mpmap_desolve.py">mystic/examples/mpmap_desolve.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 799">
+                    <a title="Show revision 799 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/mpmap_desolve.py?rev=799#L49">
+                      r799</a>
+                  </th>
+                  <th title="Revision 801">
+                    <a title="Show revision 801 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/mpmap_desolve.py?rev=801#L49">
+                      r801</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>49</th><th>49</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>50</th><th>50</th><td class="l"><span>if __name__=='__main__':</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>51</th><td class="r"><ins>&nbsp; &nbsp; from pathos.helpers import freeze_support</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>52</th><td class="r"><ins>&nbsp; &nbsp; freeze_support() # help Windows use multiprocessing</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>53</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>51</th><th>54</th><td class="l"><span>&nbsp; &nbsp; def print_solution(func):</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>55</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; print poly1d(func)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="801/mystic/examples/mpmap_desolve_rosen.html" title="Show the changeset 801 restricted to mystic/examples/mpmap_desolve_rosen.py">mystic/examples/mpmap_desolve_rosen.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 799">
+                    <a title="Show revision 799 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/mpmap_desolve_rosen.py?rev=799#L50">
+                      r799</a>
+                  </th>
+                  <th title="Revision 801">
+                    <a title="Show revision 801 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/mpmap_desolve_rosen.py?rev=801#L50">
+                      r801</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>50</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>51</th><th>51</th><td class="l"><span>if __name__=='__main__':</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>52</th><td class="r"><ins>&nbsp; &nbsp; from pathos.helpers import freeze_support</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>53</th><td class="r"><ins>&nbsp; &nbsp; freeze_support() # help Windows use multiprocessing</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>54</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>55</th><td class="l"><span>&nbsp; &nbsp; def print_solution(func):</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>56</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; print func</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="801/mystic/examples/test_twistedgaussian3.html" title="Show the changeset 801 restricted to mystic/examples/test_twistedgaussian3.py">mystic/examples/test_twistedgaussian3.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 799">
+                    <a title="Show revision 799 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_twistedgaussian3.py?rev=799#L21">
+                      r799</a>
+                  </th>
+                  <th title="Revision 801">
+                    <a title="Show revision 801 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_twistedgaussian3.py?rev=801#L21">
+                      r801</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>21</th><th>21</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>22</th><th>22</th><td class="l"><span>def scemmap(Q):</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>23</th><td class="r"><ins>&nbsp; &nbsp; from test_twistedgaussian import scem</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>23</th><th>24</th><td class="l"><span>&nbsp; &nbsp; Cs, As, Sk, Sak, target, cn = Q</span> </td>
+                  </tr><tr>
+                          <th>24</th><th>25</th><td class="l"><span>&nbsp; &nbsp; niter = 1000</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_twistedgaussian3.py?rev=799#L33">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_twistedgaussian3.py?rev=801#L34">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>33</th><th>34</th><td class="l"><span>&nbsp; &nbsp; # if available, use a multiprocessing worker pool</span> </td>
+                  </tr><tr>
+                          <th>34</th><th>35</th><td class="l"><span>&nbsp; &nbsp; try:</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>36</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from pathos.helpers import freeze_support</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>37</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; freeze_support() # help Windows use multiprocessing</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>38</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from pathos.pools import ProcessPool as Pool</span> </td>
+                  </tr><tr>
+                          <th>36</th><th>39</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; map = Pool().map</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="801/mystic/mystic/abstract_solver.html" title="Show the changeset 801 restricted to mystic/mystic/abstract_solver.py">mystic/mystic/abstract_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 795">
+                    <a title="Show revision 795 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=795#L668">
+                      r795</a>
+                  </th>
+                  <th title="Revision 801">
+                    <a title="Show revision 801 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=801#L668">
+                      r801</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>668</th><th>668</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """save solver state to a restart file"""</span> </td>
+                  </tr><tr>
+                          <th>669</th><th>669</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import dill</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>670</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; fd = None</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>670</th><th>671</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if filename is None: # then check if already has registered file</span> </td>
+                  </tr><tr>
+                          <th>671</th><th>672</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if self._state is None: # then create a new one</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>672</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; import tempfile</span> </td>
+                      </tr><tr>
+                        <th>673</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._state = tempfile.mkstemp(suffix='.pkl')[-1]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>673</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; import os, tempfile</span> </td>
+                      </tr><tr>
+                        <th> </th><th>674</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fd, self._state = tempfile.mkstemp(suffix='.pkl')</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>675</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; os.close(fd)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>674</th><th>676</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; filename = self._state</span> </td>
+                  </tr><tr>
+                          <th>675</th><th>677</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._state = filename</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file8">
+          <a href="801/mystic/mystic/munge.html" title="Show the changeset 801 restricted to mystic/mystic/munge.py">mystic/mystic/munge.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 792">
+                    <a title="Show revision 792 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=792#L46">
+                      r792</a>
+                  </th>
+                  <th title="Revision 801">
+                    <a title="Show revision 801 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=801#L46">
+                      r801</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>46</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; params, cost = raw_to_support(params, cost)</span> </td>
+                  </tr><tr>
+                          <th>47</th><th>47</th><td class="l"><span>&nbsp; &nbsp; except:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>48</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; exec "from %s import params" % source</span> </td>
+                      </tr><tr>
+                        <th>49</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; exec "from %s import cost" % source</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>48</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; params, cost = read_import(source+'.py', 'params', 'cost')</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>49</th><td class="l"><span>&nbsp; &nbsp; return params, cost</span> </td>
+                  </tr><tr>
+                          <th>51</th><th>50</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=792#L145">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=801#L144">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>145</th><th>144</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>146</th><th>145</th><td class="l"><span>def read_raw_file(file_in):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>147</th><th> </th><td class="l"><span>&nbsp; import re</span> </td>
+                      </tr><tr>
+                        <th>148</th><th> </th><td class="l"><span>&nbsp; file_in = re.sub('\.py*.$', '', file_in)&nbsp; #XXX: strip off .py* extension</span> </td>
+                      </tr><tr>
+                        <th>149</th><th> </th><td class="l"><span>&nbsp; exec "from %s import params as steps" % file_in</span> </td>
+                      </tr><tr>
+                        <th>150</th><th> </th><td class="l"><span>&nbsp; exec "from %s import cost as energy" % file_in</span> </td>
+                      </tr><tr>
+                        <th>151</th><th> </th><td class="l"><span>&nbsp; return steps, energy</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>146</th><td class="r"><span>&nbsp; steps, energy = read_import(file_in, "params", "cost")</span> </td>
+                      </tr><tr>
+                        <th> </th><th>147</th><td class="r"><span>&nbsp; return steps, energy&nbsp; # was 'from file_in import params as steps', etc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>148</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>149</th><td class="r"><span>def read_import(file, *targets):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>150</th><td class="r"><span>&nbsp; "import the targets; targets are name strings"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>151</th><td class="r"><span>&nbsp; import re, os, sys</span> </td>
+                      </tr><tr>
+                        <th> </th><th>152</th><td class="r"><span>&nbsp; _dir, file = os.path.split(file)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>153</th><td class="r"><span>&nbsp; file = re.sub('\.py*.$', '', file) #XXX: strip .py* extension</span> </td>
+                      </tr><tr>
+                        <th> </th><th>154</th><td class="r"><span>&nbsp; curdir = os.path.abspath(os.curdir)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>155</th><td class="r"><span>&nbsp; sys.path.append('.')</span> </td>
+                      </tr><tr>
+                        <th> </th><th>156</th><td class="r"><span>&nbsp; results = []</span> </td>
+                      </tr><tr>
+                        <th> </th><th>157</th><td class="r"><span>&nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>158</th><td class="r"><span>&nbsp; &nbsp; if _dir: os.chdir(_dir)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>159</th><td class="r"><span>&nbsp; &nbsp; if len(targets):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>160</th><td class="r"><span>&nbsp; &nbsp; &nbsp; for target in targets:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>161</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; exec "from %s import %s" % (file, target)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>162</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; exec "results.append(%s)" % target</span> </td>
+                      </tr><tr>
+                        <th> </th><th>163</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>164</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; exec "import %s" % file</span> </td>
+                      </tr><tr>
+                        <th> </th><th>165</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; exec "results.append(%s)" % file</span> </td>
+                      </tr><tr>
+                        <th> </th><th>166</th><td class="r"><span>&nbsp; except ImportError:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>167</th><td class="r"><span>&nbsp; &nbsp; raise RuntimeError('File: %s not found' % file)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>168</th><td class="r"><span>&nbsp; finally:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>169</th><td class="r"><span>&nbsp; &nbsp; if _dir: os.chdir(curdir)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>170</th><td class="r"><span>&nbsp; &nbsp; sys.path.pop()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>171</th><td class="r"><span>&nbsp; if not len(results): return None</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>172</th><td class="r"><span>&nbsp; return results[-1] if (len(results) == 1) else results</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>152</th><th>173</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>153</th><th>174</th><td class="l"><span>def read_converge_file(file_in):</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file9">
+          <a href="801/mystic/mystic/tools.html" title="Show the changeset 801 restricted to mystic/mystic/tools.py">mystic/mystic/tools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 793">
+                    <a title="Show revision 793 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=793#L236">
+                      r793</a>
+                  </th>
+                  <th title="Revision 801">
+                    <a title="Show revision 801 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=801#L236">
+                      r801</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>236</th><th>236</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;if str is not None:</span> </td>
+                  </tr><tr>
+                          <th>237</th><th>237</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print str</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>238</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;subprocess.call('stty raw', shell=True)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>238</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;if sys.platform[:3] != 'win':</span> </td>
+                      </tr><tr>
+                        <th> </th><th>239</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raw,cooked = 'stty raw','stty cooked'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>240</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>241</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raw,cooked = '',''</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>242</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;subprocess.call(raw, shell=True)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>239</th><th>243</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;a = sys.stdin.read(1)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>240</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;subprocess.call(<del>'stty cooked'</del>, shell=True)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>244</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;subprocess.call(<ins>cooked</ins>, shell=True)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>241</th><th>245</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;return a</span> </td>
+                  </tr><tr>
+                          <th>242</th><th>246</th><td class="l"><span>&nbsp; &nbsp; else:</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file10">
+          <a href="801/mystic/scripts/support_hypercube_scenario.html" title="Show the changeset 801 restricted to mystic/scripts/support_hypercube_scenario.py">mystic/scripts/support_hypercube_scenario.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/scripts/support_hypercube_scenario.py?rev=776#L343">
+                      r776</a>
+                  </th>
+                  <th title="Revision 801">
+                    <a title="Show revision 801 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/scripts/support_hypercube_scenario.py?rev=801#L343">
+                      r801</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>343</th><th>343</th><td class="l"><span>&nbsp; &nbsp; npts = parsed_opts.dim</span> </td>
+                  </tr><tr>
+                          <th>344</th><th>344</th><td class="l"><span>&nbsp; &nbsp; if "None" == npts: # npts may have been logged</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>345</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; import re</span> </td>
+                      </tr><tr>
+                        <th>346</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; file = re.sub('\.py*.$', '', parsed_args[0]) #XXX: strip .py* extension</span> </td>
+                      </tr><tr>
+                        <th>347</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; exec "from %s import npts" % file</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>345</th><td class="r"><span>&nbsp; &nbsp; &nbsp; from mystic.munge import read_import</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>346</th><td class="r"><span>&nbsp; &nbsp; &nbsp; npts = read_import(parsed_args[0], 'npts')</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>348</th><th>347</th><td class="l"><span>&nbsp; &nbsp; else: npts = tuple(int(i) for i in dim.split(",")) # format is "1,1,1"</span> </td>
+                  </tr><tr>
+                          <th>349</th><th>348</th><td class="l"><span>&nbsp; except:</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file11">
+          <a href="801/mystic/tests/test_symbolic_basic.html" title="Show the changeset 801 restricted to mystic/tests/test_symbolic_basic.py">mystic/tests/test_symbolic_basic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 781">
+                    <a title="Show revision 781 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic_basic.py?rev=781#L128">
+                      r781</a>
+                  </th>
+                  <th title="Revision 801">
+                    <a title="Show revision 801 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic_basic.py?rev=801#L128">
+                      r801</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>128</th><th>128</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>129</th><th>129</th><td class="l"><span>&nbsp; &nbsp; x0 = [1., 1., 1.]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>130</th><th> </th><td class="l"><span>&nbsp; &nbsp; assert almostEqual(pf(cn(x0)), 0.0, tol=1e-<del>7</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>130</th><td class="r"><span>&nbsp; &nbsp; assert almostEqual(pf(cn(x0)), 0.0, tol=1e-<ins>2</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>131</th><th>131</th><td class="l"><span>&nbsp; &nbsp; #XXX: implement: wrap_constraint( as_constraint(pf), sum, ctype='inner') ?</span> </td>
+                  </tr><tr>
+                          <th>132</th><th>132</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/801?format=diff&amp;new=801" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/801?format=zip&amp;new=801" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/801 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:22 GMT -->
+</html>

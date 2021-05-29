@@ -1,0 +1,38 @@
+== Notes on mystic examples ==
+Dependencies:
+ - Several of the examples require matplotlib to be installed.
+ - For the examples that use matplotlib, see trac ticket #36 for more details.
+
+Other dependencies:
+ - Examples with prefix "example" are part of the tutorial (TRY THESE FIRST).
+ - All examples with prefix "example" should run without new dependencies.
+ - All examples with prefix "test_" should run without new dependencies.
+ - All examples with prefix "gplot_" requre gnuplot-py for visualization.
+
+Exceptions to the rule:
+ - The following examples also require scipy to be installed:
+   . test_lorentzian.py
+   . test_mogi_anneal.py,
+
+Special examples:
+ - All examples with prefix "rosetta_" require park to be installed. (tests on version park-1.2).  Run with "--park" to execute with park. See "--help" for more options.
+
+
+-------------------------------------------------------------------------------
+
+Notes on the "ffit" tests/examples:
+ - test_ffit: The fitting problem whose exact solution is 8th order Chebyshev polynomial of the first kind.  This example uses a Ctrl-C signal handler. Try ctrl-c as the differential_evolution strategy is running.
+ - test_ffit2: The fitting problem whose exact solution is 16th order Chebyshev polynomial of the first kind.  Also uses the signal_handler. 
+ - test_ffitB: Same as test_ffit.py, but uses DifferentialEvolutionSolver2 instead of DifferentialEvolutionSolver. 
+ - test_ffitC: Same as test_ffit.py, but uses scipy_optimize.fmin.
+ - test_ffitD: Same as test_ffit.py, but uses scipy_optimize.diffev.
+
+
+Notes on the "mogi" tests/examples:
+ - test_mogi.py: One mogi source with noise, comparison between DE and Conjugate Gradient, Simplex, and least squares (Levenberg Marquardt). CG / lsq don't work very well. lsq should work when bounds on the parameters are given, but minpack (wrapped by scipy) version doesn't seem to support bounds.
+ - test_mogi_anneal.py: tests with scipy simulated annealing, but hasn't been tuned, so again, doesn't work at all.
+ - test_mogi2.py: two mogi sources
+ - test_mogi3.py: reimplements test_mogi 
+
+
+# end of file

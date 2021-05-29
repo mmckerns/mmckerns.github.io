@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/820/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:23:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 820 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="prev" href="../819.html" title="Changeset 819" />
+        <link rel="last" href="../862.html" title="Changeset 862" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/820/?format=diff&amp;new=820" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/820/?format=zip&amp;new=820" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../821.html" title="Changeset 821" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="../1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+        <link rel="icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://trac.mystic.cacr.caltech.edu/"><img src="http://www.cacr.caltech.edu/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://trac.mystic.cacr.caltech.edu/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../819.html" title="Changeset 819">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="../821.html" title="Changeset 821">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 820</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             08/12/15 22:13:07
+             (<a class="timeline" href="http://trac.mystic.cacr.caltech.edu/project/mystic/timeline?from=2015-08-12T22%3A13%3A07-07%3A00&amp;precision=second" title="2015-08-12T22:13:07-07:00 in Timeline">9 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+extend mystic.math.measures from L1 norm to Ln norm; set defailt mass=None<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/_math/measures.py?rev=820">
+              mystic/_math/measures.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">3 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="mystic/_math/measures.html" title="Show the changeset 820 restricted to mystic/_math/measures.py">mystic/_math/measures.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 803">
+                    <a title="Show revision 803 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/_math/measures.py?rev=803#L374">
+                      r803</a>
+                  </th>
+                  <th title="Revision 820">
+                    <a title="Show revision 820 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/_math/measures.py?rev=820#L374">
+                      r820</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>374</th><th>374</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>375</th><th>375</th><td class="l"><span>##### weight shift methods #####</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>376</th><th> </th><td class="l"><span>def impose_weight_norm(samples, weights, mass=<del>1.0</del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>376</th><td class="r"><span>def impose_weight_norm(samples, weights, mass=<ins>None</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>377</th><th>377</th><td class="l"><span>&nbsp; """normalize the weights for a list of (weighted) points</span> </td>
+                  </tr><tr>
+                          <th>378</th><th>378</th><td class="l"><span>&nbsp; (this function is 'mean-preserving')</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/_math/measures.py?rev=803#L381">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/_math/measures.py?rev=820#L381">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>381</th><th>381</th><td class="l"><span>&nbsp; &nbsp; samples -- a list of sample points</span> </td>
+                  </tr><tr>
+                          <th>382</th><th>382</th><td class="l"><span>&nbsp; &nbsp; weights -- a list of sample weights</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>383</th><th> </th><td class="l"><span>&nbsp; &nbsp; mass -- target <del>sum </del>of normalized weights</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>383</th><td class="r"><span>&nbsp; &nbsp; mass -- target <ins></ins>of normalized weights</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>384</th><th>384</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>385</th><th>385</th><td class="l"><span>&nbsp; m = mean(samples, weights)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/_math/measures.py?rev=803#L388">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/_math/measures.py?rev=820#L388">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>388</th><th>388</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>389</th><th>389</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>390</th><th> </th><td class="l"><span>def normalize(weights, mass=<del>1.0, zsum=False, zmass=1.0</del>):</span> </td>
+                      </tr><tr>
+                        <th>391</th><th> </th><td class="l"><span>&nbsp; """normalize a list of points <del>to unity (i.e</del>. normalize to 1.0)</span> </td>
+                      </tr><tr>
+                        <th>392</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>393</th><th> </th><td class="l"><span>Inputs:<del></del></span> </td>
+                      </tr><tr>
+                        <th>394</th><th> </th><td class="l"><span>&nbsp; &nbsp; weights -- a list of sample weights<del></del></span> </td>
+                      </tr><tr>
+                        <th>395</th><th> </th><td class="l"><span>&nbsp; &nbsp; mass -- target <del>sum </del>of normalized weights</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>390</th><td class="r"><span>def normalize(weights, mass=<ins>None, zsum=False, zmass=1.0, l=1</ins>):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>391</th><td class="r"><span>&nbsp; """normalize a list of points <ins>(e.g</ins>. normalize to 1.0)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>392</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>393</th><td class="r"><span>Inputs:<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>394</th><td class="r"><span>&nbsp; &nbsp; weights -- a list of sample weights<ins></ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>395</th><td class="r"><span>&nbsp; &nbsp; mass -- target <ins></ins>of normalized weights</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>396</th><th>396</th><td class="l"><span>&nbsp; &nbsp; zsum -- use counterbalance when mass = 0.0</span> </td>
+                  </tr><tr>
+                          <th>397</th><th>397</th><td class="l"><span>&nbsp; &nbsp; zmass -- member scaling when mass = 0.0</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>398</th><th> </th><td class="l"><span>"""</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>398</th><td class="r"><span>&nbsp; &nbsp; l -- integer power for the norm (i.e. l=1 is the L1 norm)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>399</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>400</th><td class="r"><span>Note: if mass is None, use mass = sum(weights)/sum(abs(weights))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>401</th><td class="r"><span>"""</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>402</th><td class="r"><span>&nbsp; l = int(l)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>399</th><th>403</th><td class="l"><span>&nbsp; weights = asarray(list(weights)) #XXX: faster to use x = array(x, copy=True) ?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>400</th><th> </th><td class="l"><span>&nbsp; w = float(sum(weights))</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>404</th><td class="r"><span>&nbsp; if mass is None:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>405</th><td class="r"><span>&nbsp; &nbsp; mass = sum(weights)/sum(abs(weights)) #XXX: correct?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>406</th><td class="r"><span>&nbsp; &nbsp; if not mass: mass = None</span> </td>
+                      </tr><tr>
+                        <th> </th><th>407</th><td class="r"><span>&nbsp; if not l:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>408</th><td class="r"><span>&nbsp; &nbsp; w = float(len(weights[weights != 0.0])) # total number of nonzero elements</span> </td>
+                      </tr><tr>
+                        <th> </th><th>409</th><td class="r"><span>&nbsp; else:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>410</th><td class="r"><span>&nbsp; &nbsp; w = float(sum(weights**l))**(1./l)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>401</th><th>411</th><td class="l"><span>&nbsp; if not w:&nbsp; #XXX: is this the best behavior?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>402</th><th> </th><td class="l"><span>&nbsp; &nbsp; from numpy import inf, nan</span> </td>
+                      </tr><tr>
+                        <th>403</th><th> </th><td class="l"><span>&nbsp; &nbsp; weights[weights == 0.0] = nan</span> </td>
+                      </tr><tr>
+                        <th>404</th><th> </th><td class="l"><span>&nbsp; &nbsp; return list(weights * inf)&nbsp; # protect against ZeroDivision</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>412</th><td class="r"><span>&nbsp; &nbsp; if mass is None:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>413</th><td class="r"><span>&nbsp; &nbsp; &nbsp; w = sum(abs(weights)); mass = 1.0 # XXX: correct?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>414</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>415</th><td class="r"><span>&nbsp; &nbsp; &nbsp; from numpy import inf, nan</span> </td>
+                      </tr><tr>
+                        <th> </th><th>416</th><td class="r"><span>&nbsp; &nbsp; &nbsp; weights[weights == 0.0] = nan</span> </td>
+                      </tr><tr>
+                        <th> </th><th>417</th><td class="r"><span>&nbsp; &nbsp; &nbsp; return list(weights * inf)&nbsp; # protect against ZeroDivision</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>418</th><td class="r"><span>&nbsp; if mass is None: mass = 1.0</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>405</th><th>419</th><td class="l"><span>&nbsp; if float(mass) or not zsum:</span> </td>
+                  </tr><tr>
+                          <th>406</th><th>420</th><td class="l"><span>&nbsp; &nbsp; return list(mass * weights / w)&nbsp; #FIXME: not "mean-preserving"</span> </td>
+                  </tr><tr>
+                          <th>407</th><th>421</th><td class="l"><span>&nbsp; # force selected member to satisfy sum = 0.0</span> </td>
+                  </tr><tr>
+                          <th>408</th><th>422</th><td class="l"><span>&nbsp; zsum = -1</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>409</th><th> </th><td class="l"><span>&nbsp; weights[zsum] = -(w - weights[zsum])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>423</th><td class="r"><span>&nbsp; if not l:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>424</th><td class="r"><span>&nbsp; &nbsp; weights[:] = 0.0 #XXX: correct?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>425</th><td class="r"><span>&nbsp; else:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>426</th><td class="r"><span>&nbsp; &nbsp; weights[zsum] = (-(w**l - weights[zsum]**l))**(1./l)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>410</th><th>427</th><td class="l"><span>&nbsp; mass = zmass</span> </td>
+                  </tr><tr>
+                          <th>411</th><th>428</th><td class="l"><span>&nbsp; return list(mass * weights / w)&nbsp; #FIXME: not "mean-preserving"</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/820/?format=diff&amp;new=820" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/820/?format=zip&amp;new=820" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://www.cacr.caltech.edu/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://www.cacr.caltech.edu/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://www.cacr.caltech.edu/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://www.cacr.caltech.edu/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://www.cacr.caltech.edu/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://www.cacr.caltech.edu/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://www.cacr.caltech.edu/projects/mystic">http://www.cacr.caltech.edu/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/820/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:23:54 GMT -->
+</html>

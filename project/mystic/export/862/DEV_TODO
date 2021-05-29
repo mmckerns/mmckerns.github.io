@@ -1,0 +1,349 @@
+#####################################################################
+#   M.M. McKerns, L. Strand, T. Sullivan, A. Fang, M.A.G. Aivazis,
+#   "Building a framework for predictive science", Proceedings of
+#   the 10th Python in Science Conference, (submitted 2011).
+#####################################################################
+
+# the function to be minimized and initial values 
+from mystic.models import rosen as my_model 
+x0 = [0.8, 1.2, 0.7] 
+
+# configure the solver and obtain the solution 
+from mystic.solvers import fmin 
+solution = fmin(my_model, x0)
+
+#####################################################################
+
+# the function to be minimized and initial values 
+from mystic.models import rosen as my_model 
+x0 = [0.8, 1.2, 0.7] 
+
+# get monitor and termination condition objects 
+from mystic.monitors import Monitor, VerboseMonitor 
+stepmon = VerboseMonitor(5) 
+evalmon = Monitor() 
+from mystic.termination import ChangeOverGeneration 
+COG = ChangeOverGeneration() 
+
+# instantiate and configure the solver 
+from mystic.solvers import NelderMeadSimplexSolver 
+solver = NelderMeadSimplexSolver(len(x0)) 
+solver.SetInitialPoints(x0) 
+solver.SetGenerationMonitor(stepmon) 
+solver.SetEvaluationMonitor(evalmon) 
+solver.Solve(my_model, COG) 
+
+# obtain the solution 
+solution = solver.bestSolution 
+
+# obtain diagnostic information 
+function_evals = solver.evaluations 
+iterations = solver.generations 
+cost = solver.bestEnergy 
+
+# modify the solver configuration, and continue 
+COG = ChangeOverGeneration(tolerance=1e-8) 
+solver.Solve(my_model, COG) 
+
+# obtain the new solution 
+solution = solver.bestSolution
+
+#####################################################################
+
+# a user-provided constraints function 
+def constrain(x): 
+  x[1] = x[0] 
+  return x 
+
+# the function to be minimized and the bounds 
+from mystic.models import rosen as my_model 
+lb = [0.0, 0.0, 0.0] 
+ub = [2.0, 2.0, 2.0] 
+
+# get termination condition object 
+from mystic.termination import ChangeOverGeneration 
+COG = ChangeOverGeneration() 
+
+# instantiate and configure the solver 
+from mystic.solvers import NelderMeadSimplexSolver 
+solver = NelderMeadSimplexSolver(len(x0)) 
+solver.SetRandomInitialPoints(lb, ub) 
+solver.SetStrictRanges(lb, ub) 
+solver.SetConstraints(constrain) 
+solver.Solve(my_model, COG) 
+
+# obtain the solution 
+solution = solver.bestSolution 
+
+#####################################################################
+
+# a user-provided constraints function 
+constraints = """ 
+x2 = x1 
+""" 
+from mystic.constraints import parse 
+constrain = parse(constraints) 
+
+#####################################################################
+
+# generate a model from a stock 'model factory'
+from mystic.models.lorentzian import Lorentzian 
+lorentz = Lorentzian(coeffs) 
+
+# evaluate the model 
+y = lorentz(x) 
+
+#####################################################################
+
+# a user-provided model function 
+def identify(x) 
+  return x 
+
+# add pathos infrastructure (included in mystic) 
+from mystic.tools import modelFactory, Monitor 
+evalmon = Monitor() 
+my_model = modelFactory(identify, monitor=evalmon) 
+
+# evaluate the model 
+y = my_model(x) 
+
+# evaluate the model with a map function 
+from mystic.tools import PythonMap 
+my_map = PythonMap() 
+z = my_map(my_model, range(10)) 
+
+#####################################################################
+
+# a user-provided model function 
+def identify(x) 
+  return x 
+
+# cast the model as a distributed service 
+from pathos.servers import sshServer
+id = 'foo.caltech.edu:50000:spike42'
+my_proxy = sshServer(identify, server=id) 
+
+# evaluate the model via proxy 
+y = my_proxy(x) 
+
+#####################################################################
+
+# a user-provided model function 
+def identify(x) 
+  return x 
+
+# select and configure a parallel map 
+from pathos.maps import ipcPool 
+my_map = ipcPool(2, servers=['foo.caltech.edu']) 
+
+# evaluate the model in parallel 
+z = my_map(identify, range(10)) 
+
+#####################################################################
+
+# configure and build map 
+from pathos.launchers import ipc 
+from pathos.strategies import pool
+from pathos.tools import mapFactory 
+my_map = mapFactory(launcher=ipc, strategy=pool) 
+
+#####################################################################
+
+# establish a tunnel 
+from pathos.tunnel import sshTunnel 
+uid = 'foo.caltech.edu:12345:tunnel69'
+tunnel_proxy = sshTunnel(uid) 
+
+# inspect the ports 
+localport = tunnel_proxy.lport 
+remoteport = tunnel_proxy.rport 
+
+# a user-provided model function 
+def identify(x) 
+  return x 
+
+# cast the model as a distributed service 
+from pathos.servers import ipcServer 
+id = 'localhost:%s:bug01' % localport 
+my_proxy = ipcServer(identify, server=id) 
+
+# evaluate the model via tunneled proxy 
+y = my_proxy(x) 
+
+# disconnect the tunnel 
+tunnel_proxy.disconnect() 
+
+#####################################################################
+
+# configure and build map 
+from pyina.launchers import mpirun 
+from pyina.strategies import carddealer as card 
+from pyina.tools import mapFactory 
+my_map = mapFactory(4, launcher=mpirun, strategy=card) 
+
+#####################################################################
+
+# the function to be minimized and the bounds 
+from mystic.models import rosen as my_model 
+lb = [0.0, 0.0, 0.0] 
+ub = [2.0, 2.0, 2.0] 
+
+# get termination condition object 
+from mystic.termination import ChangeOverGeneration 
+COG = ChangeOverGeneration() 
+
+# select the parallel launch configuration 
+from pyina.maps import MpirunCarddealer 
+my_map = MpirunCarddealer(4) 
+
+# instantiate and configure the solver 
+from mystic.solvers import DifferentialEvolutionSolver 
+solver = DifferentialEvolutionSolver(len(lb), 20) 
+solver.SetRandomInitialPoints(lb, ub) 
+solver.SetStrictRanges(lb, ub) 
+solver.SetEvaluationMap(my_map) 
+solver.Solve(my_model, COG) 
+
+# obtain the solution 
+solution = solver.bestSolution 
+
+#####################################################################
+
+# the function to be minimized and the bounds 
+from mystic.models import rosen as my_model 
+lb = [0.0, 0.0, 0.0] 
+ub = [2.0, 2.0, 2.0] 
+
+# get monitor and termination condition objects 
+from mystic.monitors import LoggingMonitor 
+stepmon = LoggingMonitor(1, ’log.txt’) 
+from mystic.termination import ChangeOverGeneration 
+COG = ChangeOverGeneration() 
+
+# select the parallel launch configuration 
+from pyina.maps import TorqueMpirunCarddealer 
+my_map = TorqueMpirunCarddealer(’5:ppn=4’) 
+
+# instantiate and configure the nested solver 
+from mystic.solvers import PowellDirectionalSolver 
+my_solver = PowellDirectionalSolver(len(lb)) 
+my_solver.SetStrictRanges(lb, ub) 
+my_solver.SetEvaluationLimits(50) 
+
+# instantiate and configure the outer solver 
+from mystic.solvers import BuckshotSolver 
+solver = BuckshotSolver(len(lb), 20) 
+solver.SetRandomInitialPoints(lb, ub) 
+solver.SetGenerationMonitor(stepmon) 
+solver.SetNestedSolver(my_solver) 
+solver.SetSolverMap(my_map) 
+solver.Solve(my_model, COG) 
+
+# obtain the solution 
+solution = solver.bestSolution
+
+#####################################################################
+
+# prepare a (F(X) - G)**2 a metric 
+def costFactory(my_model, my_data): 
+  def cost(param): 
+
+    # compute the cost 
+    return ( my_model(param) - my_data )**2 
+
+  return cost 
+
+#####################################################################
+'''
+The calculation of the diameter is performed as a nested
+optimization, as shown above for the BuckshotSolver. Each
+inner optimization is a calculation of a component
+suboscillation, using the a global optimizer 
+(such as DifferentialEvolutionSolver) and the cost 
+metric shown above.
+'''
+
+# prepare a (F(X) - F(X'))**2 cost metric 
+def suboscillationFactory(my_model, i): 
+  def cost(param): 
+
+    # get X and X' (Xi' is appended to X at param[-1]) 
+    x = param[:-1] 
+    x_prime = param[:i] + param[-1:] + param[i+1:-1] 
+
+    # compute the suboscillation 
+    return -( my_model(x) - my_model(x_prime) )**2 
+
+  return cost
+
+#####################################################################
+'''
+Global optimizations used in solving OUQ problems are 
+composed in the same manner as shown above for the 
+DifferentialEvolutionSolver.
+'''
+
+# OUQ requires bounds in a very specific form... 
+# param = [wxi]*nx + [xi]*nx + [wyi]*ny + [yi]*ny + [wzi]*nz + [zi]*nz 
+npts = (nx,ny,nz) 
+lb = (nx * w_lower) + (nx * x_lower) \ 
+   + (ny * w_lower) + (ny * y_lower) \ 
+   + (nz * w_lower) + (nz * z_lower) 
+ub = (nx * w_upper) + (nx * x_upper) \ 
+   + (ny * w_upper) + (ny * y_upper) \ 
+   + (nz * w_upper) + (nz * z_upper) 
+
+from mystic.math.measures import split_param 
+from mystic.math.dirac_measure import product_measure 
+from mystic.math import almostEqual 
+
+# split bounds into weight-only & sample-only 
+w_lb, m_lb = split_param(lb, npts) 
+w_ub, m_ub = split_param(ub, npts) 
+
+# generate constraints function 
+def constraints(param): 
+  prodmeasure = product_measure() 
+  prodmeasure.load(param, npts) 
+
+  # impose norm on measures 
+  for measure in prodmeasure: 
+    if not almostEqual(float(measure.mass), 1.0): 
+      measure.normalize() 
+
+  # impose expectation on product measure 
+  E = float(prodmeasure.get_expect(my_model)) 
+    if not (E <= float(target_mean + error)) \ 
+    or not (float(target_mean - error) <= E):
+      prodmeasure.set_expect((target_mean, error), my_model, (m_lb, m_ub)) 
+
+  # extract weights and positions 
+  return prodmeasure.flatten() 
+
+# generate maximizing function 
+def cost(param): 
+  prodmeasure = product_measure() 
+  prodmeasure.load(param, npts) 
+  return MINMAX * prodmeasure.pof(my_model)
+
+#####################################################################
+"""
+DIRECT:
+* Add more python optimizers: scipy, OpenOpt, PARK (snobfit)
+* Allow for derivative and gradient capture -> use Sow?
+* get "handler" to work in parallel
+* Better 'programmatic' interface for handler
+* Add more options to handler (i.e. toggle_verbosity?, get_cost?, ...?)
+* Allow sigint_callback to take a list (i.e. provide call[i])
+* Add "constraints" to models (design similar to pyre.inventory and validators)
+
+INDIRECT:
+* Build a failure test suite, and a proper test suite
+* Try one of the VTF apps... or Sean's "cain" library
+
+REFERENCE:
+* Look at PARK's rangemap.py for bounds and range mapping
+* Look at PARK's parameter.py, deps.py, expression.py, & assembly.py
+* <-- Find OpenOpt's model & optimizer API -->
+* <-- Find DAKOTA's model & optimizer API -->
+"""

@@ -1,0 +1,162 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/pathos/wiki/TracGuide by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 May 2016 18:02:36 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      TracGuide – Pathos
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/pathos/wiki/TracGuide?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/pathos_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/pathos_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Pathos" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/folding.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/pathos/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <meta name="ROBOTS" content="NOINDEX, NOFOLLOW" /><script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="http://mmckerns.github.io/project/pathos/chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/projects/pathos/wiki.html"><img src="http://mmckerns.github.io/projects/pathos/pathos_banner.png" alt="PATHOS" height="150" width="350" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/pathos/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="http://mmckerns.github.io/project/pathos/login">Login</a></li><li><a href="http://mmckerns.github.io/project/pathos/wiki/TracGuide">Help/Guide</a></li><li><a href="http://mmckerns.github.io/project/pathos/about">About Trac</a></li><li class="last"><a href="http://mmckerns.github.io/project/pathos/prefs">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="http://mmckerns.github.io/project/pathos/wiki">Wiki</a></li><li><a href="http://mmckerns.github.io/project/pathos/timeline">Timeline</a></li><li><a href="http://mmckerns.github.io/project/pathos/roadmap">Roadmap</a></li><li><a href="http://mmckerns.github.io/project/pathos/browser">Browse Source</a></li><li><a href="http://mmckerns.github.io/project/pathos/query">View Tickets</a></li><li class="last"><a href="http://mmckerns.github.io/project/pathos/search">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="http://mmckerns.github.io/project/pathos/wiki">wiki:</a><a class="pathentry" href="http://mmckerns.github.io/project/pathos/wiki/TracGuide" title="View TracGuide">TracGuide</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="http://mmckerns.github.io/project/pathos/wiki/WikiStart">Start Page</a></li><li><a href="http://mmckerns.github.io/project/pathos/wiki/TitleIndex">Index</a></li><li class="last"><a href="http://mmckerns.github.io/project/pathos/wiki/TracGuide?action=history">History</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          
+          <div class="trac-modifiedby"><a href="http://mmckerns.github.io/project/pathos/wiki/TracGuide?action=diff&amp;version=2" title="Version 2 by trac">Last modified</a> <a class="timeline" href="http://mmckerns.github.io/project/pathos/timeline?from=2013-05-12T07%3A41%3A25-07%3A00&amp;precision=second" title="2013-05-12T07:41:25-07:00 in Timeline">3 years</a> ago</div>
+          <div id="wikipage"><h1 id="TheTracUserandAdministrationGuide">The Trac User and Administration Guide</h1>
+<p>
+</p><div class="wiki-toc"><h4>Table of Contents</h4><ul><li class="active"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracGuide">Index</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracInstall">Installation</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracInterfaceCustomization">Customization</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracPlugins">Plugins</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracUpgrade">Upgrading</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracIni">Configuration</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracAdmin">Administration</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracBackup">Backup</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracLogging">Logging</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracPermissions">Permissions</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracWiki">The Wiki</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/WikiFormatting">Wiki Formatting</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracTimeline">Timeline</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracBrowser">Repository Browser</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracRevisionLog">Revision Log</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracChangeset">Changesets</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracTickets">Tickets</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracWorkflow">Workflow</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracRoadmap">Roadmap</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracQuery">Ticket Queries</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracReports">Reports</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracRss">RSS Support</a></li><li class="False"><a class="False" href="http://mmckerns.github.io/project/pathos/wiki/TracNotification">Notification</a></li></ul></div><p>
+</p>
+<p>
+The <a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracGuide">TracGuide</a> is meant to serve as a starting point for all documentation regarding Trac usage and development. The guide is a free document, a collaborative effort, and a part of the <a class="ext-link" href="http://trac.edgewall.org/"><span class="icon"> </span>Trac Project</a> itself.
+</p>
+<h2 id="TableofContents">Table of Contents</h2>
+<p>
+Currently available documentation:
+</p>
+<ul><li><strong>User Guide</strong>
+<ul><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracWiki">TracWiki</a> — How to use the built-in Wiki.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracTimeline">TracTimeline</a> — The timeline provides a historic perspective on a project.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracRss">TracRss</a> — RSS content syndication in Trac.
+</li><li><em>The Version Control Subsystem</em>
+<ul><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracBrowser">TracBrowser</a> — Browsing source code with Trac.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracChangeset">TracChangeset</a> — Viewing changes to source code.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracRevisionLog">TracRevisionLog</a> — Viewing change history.
+</li></ul></li><li><em>The Ticket Subsystem</em>
+<ul><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracTickets">TracTickets</a> — Using the issue tracker.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracReports">TracReports</a> — Writing and using reports.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracQuery">TracQuery</a> — Executing custom ticket queries.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracRoadmap">TracRoadmap</a> — The roadmap helps tracking project progress.
+</li></ul></li></ul></li><li><strong>Administrator Guide</strong>
+<ul><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracInstall">TracInstall</a> — How to install and run Trac.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracUpgrade">TracUpgrade</a> — How to upgrade existing installations.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracAdmin">TracAdmin</a> — Administering a Trac project.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracImport">TracImport</a> — Importing tickets from other bug databases.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracIni">TracIni</a> — Trac configuration file reference. 
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracPermissions">TracPermissions</a> — Access control and permissions.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracInterfaceCustomization">TracInterfaceCustomization</a> — Customizing the Trac interface.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracPlugins">TracPlugins</a> — Installing and managing Trac extensions.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracLogging">TracLogging</a> — The Trac logging facility.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracNotification">TracNotification</a> — Email notification.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracWorkflow">TracWorkflow</a> — Configurable Ticket Workflow.
+</li><li><a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracRepositoryAdmin">TracRepositoryAdmin</a> — Management of Source Code Repositories.
+</li></ul></li><li><a class="ext-link" href="http://trac.edgewall.org/intertrac/TracFaq" title="TracFaq in Trac project trac"><span class="icon"> </span>Trac FAQ</a> — A collection of Frequently Asked Questions (on the project website).
+</li></ul><h2 id="SupportandOtherSourcesofInformation">Support and Other Sources of Information</h2>
+<p>
+If you are looking for a good place to ask a question about Trac, look no further than the <a class="ext-link" href="http://trac.edgewall.org/wiki/MailingList"><span class="icon"> </span>MailingList</a>. It provides a friendly environment to discuss openly among Trac users and developers.
+</p>
+<p>
+See also the <a class="wiki" href="http://mmckerns.github.io/project/pathos/wiki/TracSupport">TracSupport</a> page for more information resources.
+</p>
+<p>
+Finally, developer documentation can be found in <a class="ext-link" href="http://trac.edgewall.org/intertrac/TracDev" title="TracDev in Trac project trac"><span class="icon"> </span>TracDev</a> and its sub-pages.
+</p>
+</div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/pathos/wiki/TracGuide?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="http://mmckerns.github.io/project/pathos/about"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/pathos/wiki/TracGuide by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 May 2016 18:02:36 GMT -->
+</html>

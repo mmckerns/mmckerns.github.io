@@ -1,0 +1,735 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/160 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:49:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 160 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="159.html" title="Changeset 159" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/160?format=diff&amp;new=160" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/160?format=zip&amp;new=160" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="161.html" title="Changeset 161" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="159.html" title="Changeset 159">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="161.html" title="Changeset 161">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 160</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             08/02/09 21:14:05
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-08-02T21%3A14%3A05-07%3A00&amp;precision=second" title="2009-08-02T21:14:05-07:00 in Timeline">7 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">altafang</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+Adding Newton-CG solver and making some edits to other solvers<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2?rev=160">branches/alta/mystic-0.1a2</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="add"></dt><dd>3 added</dd>
+              <dt class="mod"></dt><dd>4 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/examples/test_bfgs.py?rev=160">
+              examples/test_bfgs.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li><li>
+          <div class="add"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/examples/test_ncg.py?rev=160">
+              examples/test_ncg.py
+            </a>
+          <span class="comment">(added)</span>
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/anneal_solver.py?rev=160">
+              mystic/anneal_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=160">
+              mystic/scipy_bfgs.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">11 diffs</a>)
+            </li><li>
+          <div class="add"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_ncg.py?rev=160">
+              mystic/scipy_ncg.py
+            </a>
+          <span class="comment">(added)</span>
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=160">
+              mystic/snobfit_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li><li>
+          <div class="add"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/test_bfgs.py?rev=160">
+              mystic/test_bfgs.py
+            </a>
+          <span class="comment">(added)</span>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="160/branches/alta/mystic-0.1a2/examples/test_bfgs.html" title="Show the changeset 160 restricted to branches/alta/mystic-0.1a2/examples/test_bfgs.py">branches/alta/mystic-0.1a2/examples/test_bfgs.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 159">
+                    <a title="Show revision 159 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/examples/test_bfgs.py?rev=159#L3">
+                      r159</a>
+                  </th>
+                  <th title="Revision 160">
+                    <a title="Show revision 160 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/examples/test_bfgs.py?rev=160#L3">
+                      r160</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>Example:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>&nbsp; &nbsp; - Minimize <del>simple test functions</del> using BFGS optimization.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span>&nbsp; &nbsp; - Minimize <ins>the Rosenbrock function</ins> using BFGS optimization.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>Demonstrates:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/examples/test_bfgs.py?rev=159#L39">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/examples/test_bfgs.py?rev=160#L39">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>39</th><td class="l"><span>&nbsp; &nbsp; print</span> </td>
+                  </tr><tr>
+                          <th>40</th><th>40</th><td class="l"><span>&nbsp; &nbsp; print "Using BFGS Quasi-Newton:"</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>41</th><th> </th><td class="l"><span>&nbsp; &nbsp; <del>y</del> = fmin_bfgs(rosen, x0, fprime=rosen_der, gtol=1e-4, maxiter=100)</span> </td>
+                      </tr><tr>
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; &nbsp; print <del>y</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>41</th><td class="r"><span>&nbsp; &nbsp; <ins>x</ins> = fmin_bfgs(rosen, x0, fprime=rosen_der, gtol=1e-4, maxiter=100)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>42</th><td class="r"><span>&nbsp; &nbsp; print <ins>x</ins></span> </td>
+                      </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="160/branches/alta/mystic-0.1a2/mystic/anneal_solver.html" title="Show the changeset 160 restricted to branches/alta/mystic-0.1a2/mystic/anneal_solver.py">branches/alta/mystic-0.1a2/mystic/anneal_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 158">
+                    <a title="Show revision 158 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/anneal_solver.py?rev=158#L40">
+                      r158</a>
+                  </th>
+                  <th title="Revision 160">
+                    <a title="Show revision 160 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/anneal_solver.py?rev=160#L40">
+                      r160</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>40</th><th>40</th><td class="l"><span>Adapted for Mystic, 2009</span> </td>
+                  </tr><tr>
+                          <th>41</th><th>41</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>42</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>43</th><td class="r"><ins>__all__ = ['AnnealSolver','anneal']</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>44</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>43</th><th>45</th><td class="l"><span># Mystic and numpy imports</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/anneal_solver.py?rev=158#L200">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/anneal_solver.py?rev=160#L202">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>200</th><th>202</th><td class="l"><span>&nbsp; &nbsp; def __init__(self, dim):</span> </td>
+                  </tr><tr>
+                          <th>201</th><th>203</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>202</th><th> </th><td class="l"><span>Takes <del>two initial inputs</del>: </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>204</th><td class="r"><span>Takes <ins>one initial input</ins>: </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>203</th><th>205</th><td class="l"><span>&nbsp; &nbsp; dim&nbsp; -- dimensionality of the problem</span> </td>
+                  </tr><tr>
+                          <th>204</th><th>206</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="160/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.html" title="Show the changeset 160 restricted to branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py">branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 159">
+                    <a title="Show revision 159 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=159#L336">
+                      r159</a>
+                  </th>
+                  <th title="Revision 160">
+                    <a title="Show revision 160 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=160#L336">
+                      r160</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>336</th><th>336</th><td class="l"><span>&nbsp; &nbsp; def __init__(self, dim):</span> </td>
+                  </tr><tr>
+                          <th>337</th><th>337</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>338</th><th> </th><td class="l"><span>Takes <del>two initial inputs</del>: </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>338</th><td class="r"><span>Takes <ins>one initial input</ins>: </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>339</th><th>339</th><td class="l"><span>&nbsp; &nbsp; dim&nbsp; -- dimensionality of the problem</span> </td>
+                  </tr><tr>
+                          <th>340</th><th>340</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=159#L345">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=160#L345">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>345</th><th>345</th><td class="l"><span>&nbsp; &nbsp; def Solve(self, func, sigint_callback=None,</span> </td>
+                  </tr><tr>
+                          <th>346</th><th>346</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; EvaluationMonitor=Null, StepMonitor=Null, GradMonitor=Null,</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>347</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; InvHessianMonitor=Null, ExtraArgs=(<del>(), ()</del>), **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>347</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; InvHessianMonitor=Null, ExtraArgs=(<ins></ins>), **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>348</th><th>348</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using BFGS.</span> </td>
+                  </tr><tr>
+                          <th>349</th><th>349</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=159#L366">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=160#L366">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>366</th><th>366</th><td class="l"><span>&nbsp; &nbsp; GradMonitor -- Monitors the gradient. </span> </td>
+                  </tr><tr>
+                          <th>367</th><th>367</th><td class="l"><span>&nbsp; &nbsp; InvHessianMonitor -- Monitors the inverse Hessian. </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>368</th><th> </th><td class="l"><span>&nbsp; &nbsp; ExtraArgs -- extra arguments for func and fprime<del>.</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>368</th><td class="r"><span>&nbsp; &nbsp; ExtraArgs -- extra arguments for func and fprime<ins>&nbsp;(same for both)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>369</th><th>369</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>370</th><th>370</th><td class="l"><span>Further Inputs:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=159#L405">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=160#L405">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>405</th><th>405</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._EARLYEXIT = False</span> </td>
+                  </tr><tr>
+                          <th>406</th><th>406</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>407</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; fcalls, func = wrap_function(func, args<del>[0]</del>, EvaluationMonitor)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>407</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; fcalls, func = wrap_function(func, args<ins></ins>, EvaluationMonitor)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>408</th><th>408</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._useStrictRange:</span> </td>
+                  </tr><tr>
+                          <th>409</th><th>409</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x0 = self._clipGuessWithinRangeBoundary(x0)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=159#L426">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=160#L426">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>426</th><th>426</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gcalls, myfprime = wrap_function(approx_fprime, (func, epsilon), GradMonitor)</span> </td>
+                  </tr><tr>
+                          <th>427</th><th>427</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>428</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gcalls, myfprime = wrap_function(fprime, args<del>[1]</del>, GradMonitor)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>428</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gcalls, myfprime = wrap_function(fprime, args<ins></ins>, GradMonitor)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>429</th><th>429</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>430</th><th>430</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; gfk = myfprime(x0)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=159#L442">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=160#L442">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>442</th><th>442</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; while (gnorm &gt; gtol) and (k &lt; self._maxiter):</span> </td>
+                  </tr><tr>
+                          <th>443</th><th>443</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pk = -numpy.dot(Hk,gfk)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>444</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>444</th><th>445</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; &nbsp;alpha_k, fc, gc, old_fval, old_old_fval, gfkp1 = \</span> </td>
+                  </tr><tr>
+                          <th>445</th><th>446</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; &nbsp; &nbsp; linesearch.line_search(func,myfprime,xk,pk,gfk,</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=159#L447">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=160#L448">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>447</th><th>448</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;# how do I get linesearch.line_search? it is in scipy, but </span> </td>
+                  </tr><tr>
+                          <th>448</th><th>449</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;# requires minpack2.so....</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>450</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>449</th><th>451</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # temporary fix:</span> </td>
+                  </tr><tr>
+                          <th>450</th><th>452</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alpha_k = None</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=159#L531">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=160#L533">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>531</th><th>533</th><td class="l"><span># Interface for using BFGSSolver</span> </td>
+                  </tr><tr>
+                          <th>532</th><th>534</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>533</th><th> </th><td class="l"><span>def fmin_bfgs(func, x0, fprime=None, args=(<del>(),()</del>), gtol=1e-5, norm=Inf,</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>535</th><td class="r"><span>def fmin_bfgs(func, x0, fprime=None, args=(<ins></ins>), gtol=1e-5, norm=Inf,</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>534</th><th>536</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; epsilon=_epsilon, maxiter=None, full_output=0, disp=1,</span> </td>
+                  </tr><tr>
+                          <th>535</th><th>537</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retall=0, callback=None):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=159#L547">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=160#L549">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>547</th><th>549</th><td class="l"><span>&nbsp; &nbsp; &nbsp; fprime : callable f'(x,*args)</span> </td>
+                  </tr><tr>
+                          <th>548</th><th>550</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gradient of f.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>549</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; args : tuple<del>&nbsp;of tuples</del></span> </td>
+                      </tr><tr>
+                        <th>550</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Extra arguments passed to f and fprime<del>.</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>551</th><td class="r"><span>&nbsp; &nbsp; &nbsp; args : tuple<ins></ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>552</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Extra arguments passed to f and fprime<ins>&nbsp;(same to both)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>551</th><th>553</th><td class="l"><span>&nbsp; &nbsp; &nbsp; gtol : float</span> </td>
+                  </tr><tr>
+                          <th>552</th><th>554</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gradient norm must be less than gtol before successful termination.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=159#L585">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=160#L587">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>585</th><th>587</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; warnflag : integer</span> </td>
+                  </tr><tr>
+                          <th>586</th><th>588</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 : Maximum number of iterations exceeded.</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>587</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 : Gradient and/or function calls not changing.</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>588</th><th>589</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; allvecs&nbsp; :&nbsp; list</span> </td>
+                  </tr><tr>
+                          <th>589</th><th>590</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Results at each iteration.&nbsp; Only returned if retall is True.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=159#L622">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/scipy_bfgs.py?rev=160#L623">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>622</th><th>623</th><td class="l"><span>&nbsp; &nbsp; Hk = invhessianmon.y[-1]</span> </td>
+                  </tr><tr>
+                          <th>623</th><th>624</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>624</th><th> </th><td class="l"><span>&nbsp; &nbsp; if <del>fcalls &gt;= solver._maxfun</del>:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>625</th><td class="r"><span>&nbsp; &nbsp; if <ins>iterations &gt;= solver._maxiter</ins>:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>625</th><th>626</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; warnflag = 1</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>626</th><th> </th><td class="l"><del>&nbsp; &nbsp; elif iterations &gt;= solver._maxiter:</del> </td>
+                  </tr><tr class="last">
+                          <th>627</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; warnflag = 2</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>628</th><th>627</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>629</th><th>628</th><td class="l"><span>&nbsp; &nbsp; if full_output:</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="160/branches/alta/mystic-0.1a2/mystic/snobfit_solver.html" title="Show the changeset 160 restricted to branches/alta/mystic-0.1a2/mystic/snobfit_solver.py">branches/alta/mystic-0.1a2/mystic/snobfit_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 158">
+                    <a title="Show revision 158 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=158#L52">
+                      r158</a>
+                  </th>
+                  <th title="Revision 160">
+                    <a title="Show revision 160 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.1a2/mystic/snobfit_solver.py?rev=160#L52">
+                      r160</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>52</th><td class="l"><span>Adapted to Mystic 7/2009 -- Alta Fang</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>53</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>54</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>55</th><td class="r"><ins>__all__ = ['SnobfitSolver','snobfit']</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>56</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>55</th><th>57</th><td class="l"><span># Snobfit imports</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/160?format=diff&amp;new=160" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/160?format=zip&amp;new=160" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/160 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:49:20 GMT -->
+</html>

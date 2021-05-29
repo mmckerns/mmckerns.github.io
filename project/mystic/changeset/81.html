@@ -1,0 +1,861 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/81 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:50:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 81 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="80.html" title="Changeset 80" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/81?format=diff&amp;new=81" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/81?format=zip&amp;new=81" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="82.html" title="Changeset 82" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="80.html" title="Changeset 80">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="82.html" title="Changeset 82">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 81</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             01/23/09 13:03:25
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-01-23T13%3A03%3A25-08%3A00&amp;precision=second" title="2009-01-23T13:03:25-08:00 in Timeline">7 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+make nelder_mead's <a class="missing wiki">SimplexMonitor?</a> fit <a class="missing wiki">StepMonitor?</a> interface<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>8 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=81">
+              python/nelder_mead.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">6 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/tools.py?rev=81">
+              python/tools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/sam_corana2.py?rev=81">
+              tests/sam_corana2.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/sam_mogi.py?rev=81">
+              tests/sam_mogi.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/sam_rosenbrock.py?rev=81">
+              tests/sam_rosenbrock.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/sam_zimmermann.py?rev=81">
+              tests/sam_zimmermann.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/test_mogi.py?rev=81">
+              tests/test_mogi.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/test_zimmermann.py?rev=81">
+              tests/test_zimmermann.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="81/python/nelder_mead.html" title="Show the changeset 81 restricted to python/nelder_mead.py">python/nelder_mead.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=67#L12">
+                      r67</a>
+                  </th>
+                  <th title="Revision 81">
+                    <a title="Show revision 81 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=81#L12">
+                      r81</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>12</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Takes two additional input args</span> </td>
+                  </tr><tr>
+                          <th>13</th><th>13</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -- EvaluationMonitor</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>14</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -- S<del>implex</del>Monitor</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>14</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; -- S<ins>tep</ins>Monitor</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>15</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> </td>
+                  </tr><tr>
+                          <th>16</th><th>16</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=67#L30">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=81#L30">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>30</th><th>30</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>31</th><th>31</th><td class="l"><span>def fmin(func, x0, args=(), xtol=1e-4, ftol=1e-4, maxiter=None, maxfun=None,</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;full_output=0, disp=1, retall=0, EvaluationMonitor=Null, S<del>implex</del>Monitor=Null):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>32</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;full_output=0, disp=1, retall=0, EvaluationMonitor=Null, S<ins>tep</ins>Monitor=Null):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>33</th><th>33</th><td class="l"><span>&nbsp; &nbsp; """Minimize a function using the downhill simplex algorithm.</span> </td>
+                  </tr><tr>
+                          <th>34</th><th>34</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=67#L70">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=81#L70">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>70</th><th>70</th><td class="l"><span>&nbsp; &nbsp; &nbsp; EvaluationMonitor -- a callable object that will be passed x, fval</span> </td>
+                  </tr><tr>
+                          <th>71</th><th>71</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;whenever the cost function is evaluated.</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>72</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; StepMonitor -- a callable object that will be passed x, fval</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>73</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;after the end of a simplex iteration.</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>72</th><th>74</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>73</th><th>75</th><td class="l"><span>&nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=67#L119">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=81#L121">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>119</th><th>121</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>120</th><th>122</th><td class="l"><span>&nbsp; &nbsp; while (fcalls[0] &lt; maxfun and iterations &lt; maxiter):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>121</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; S<del>implexMonitor(sim, fsim)</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>123</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; S<ins>tepMonitor(sim, fsim) # get all values; "best" is sim[0]</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>122</th><th>124</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if (max(numpy.ravel(abs(sim[1:]-sim[0]))) &lt;= xtol \</span> </td>
+                  </tr><tr>
+                          <th>123</th><th>125</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and max(abs(fsim[0]-fsim[1:])) &lt;= ftol):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=67#L219">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=81#L221">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>219</th><th>221</th><td class="l"><span>&nbsp; &nbsp; print "==================="</span> </td>
+                  </tr><tr>
+                          <th>220</th><th>222</th><td class="l"><span>&nbsp; &nbsp; start = time.time()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>221</th><th> </th><td class="l"><span>&nbsp; &nbsp; x = fmin(rosen,x0)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>223</th><td class="r"><span>&nbsp; &nbsp; from tools import VerboseSow</span> </td>
+                      </tr><tr>
+                        <th> </th><th>224</th><td class="r"><span>&nbsp; &nbsp; stepmon = VerboseSow(10)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>225</th><td class="r"><span>&nbsp; &nbsp; x = fmin(rosen,x0,StepMonitor=stepmon)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>222</th><th>226</th><td class="l"><span>&nbsp; &nbsp; print x</span> </td>
+                  </tr><tr>
+                          <th>223</th><th>227</th><td class="l"><span>&nbsp; &nbsp; times.append(time.time() - start)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=67#L225">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=81#L229">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>225</th><th>229</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>226</th><th>230</th><td class="l"><span>&nbsp; &nbsp; for k in range(len(algor)):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>227</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; print algor[k], "\t -- <del></del>", times[k]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>231</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; print algor[k], "\t -- <ins>took</ins>", times[k]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>228</th><th>232</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>229</th><th>233</th><td class="l"><span>if __name__ == "__main__":</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="81/python/tools.html" title="Show the changeset 81 restricted to python/tools.py">python/tools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 73">
+                    <a title="Show revision 73 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/tools.py?rev=73#L148">
+                      r73</a>
+                  </th>
+                  <th title="Revision 81">
+                    <a title="Show revision 81 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/tools.py?rev=81#L148">
+                      r81</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>148</th><th>148</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>149</th><th>149</th><td class="l"><span>&nbsp; &nbsp; def __call__(self, x, y):</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>150</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from numpy import ndarray</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>150</th><th>151</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Sow.__call__(self, x, y)</span> </td>
+                  </tr><tr>
+                          <th>151</th><th>152</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._step += 1</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>153</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if isinstance(y,(list,ndarray)):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>154</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = y[0] #XXX: get the "best" fit... which should be in y[0]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>155</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if isinstance(x[0],(list,ndarray)): #XXX: x should always be iterable</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>156</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x = x[0] #XXX: get the "best" fit... which should be in x[0]</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>152</th><th>157</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if int(self._step % self._yinterval) == 0:</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>158</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#print "Generation %d has best Chi-Squared: %s" % (self._step, y)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>153</th><th>159</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Generation %d has best Chi-Squared: %f" % (self._step, y)</span> </td>
+                  </tr><tr>
+                          <th>154</th><th>160</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if int(self._step % self._xinterval) == 0:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>155</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Generation %d has bet fit parameters: %<del>r</del>" % (self._step, x)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>161</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Generation %d has bet fit parameters: %<ins>s</ins>" % (self._step, x)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>156</th><th>162</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>157</th><th>163</th><td class="l"><span>&nbsp; &nbsp; pass</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="81/tests/sam_corana2.html" title="Show the changeset 81 restricted to tests/sam_corana2.py">tests/sam_corana2.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/sam_corana2.py?rev=62#L42">
+                      r62</a>
+                  </th>
+                  <th title="Revision 81">
+                    <a title="Show revision 81 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/sam_corana2.py?rev=81#L42">
+                      r81</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>42</th><td class="l"><span>def run_once():</span> </td>
+                  </tr><tr>
+                          <th>43</th><th>43</th><td class="l"><span>&nbsp; &nbsp; simplex = Sow()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; &nbsp; sol = fmin(Corana2, [random.uniform(0,2), random.uniform(0,2)], retall = True, S<del>implex</del>Monitor = simplex)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>44</th><td class="r"><span>&nbsp; &nbsp; sol = fmin(Corana2, [random.uniform(0,2), random.uniform(0,2)], retall = True, S<ins>tep</ins>Monitor = simplex)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>45</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>46</th><th>46</th><td class="l"><span>&nbsp; &nbsp; for x in simplex.x:</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="81/tests/sam_mogi.html" title="Show the changeset 81 restricted to tests/sam_mogi.py">tests/sam_mogi.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/sam_mogi.py?rev=62#L4">
+                      r62</a>
+                  </th>
+                  <th title="Revision 81">
+                    <a title="Show revision 81 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/sam_mogi.py?rev=81#L4">
+                      r81</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span>See test_mogi.py</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>5</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>6</th><th> </th><td class="l"><span>This uses Nelder-Mead and S<del>implex</del>Monitor</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>This uses Nelder-Mead and S<ins>tep</ins>Monitor</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/tests/sam_mogi.py?rev=62#L61">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/tests/sam_mogi.py?rev=81#L61">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>61</th><td class="l"><span>&nbsp; &nbsp; z1 = z0*random.uniform(0.5,1.5)</span> </td>
+                  </tr><tr>
+                          <th>62</th><th>62</th><td class="l"><span>&nbsp; &nbsp; v1 = v0*random.uniform(0.5,1.5)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>63</th><th> </th><td class="l"><span>&nbsp; &nbsp; sol = fmin(cost_function, [random.uniform(x0-40,x0+40), random.uniform(y0-40,y0+40), z1, v1], retall = True, S<del>implex</del>Monitor = simplex)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>63</th><td class="r"><span>&nbsp; &nbsp; sol = fmin(cost_function, [random.uniform(x0-40,x0+40), random.uniform(y0-40,y0+40), z1, v1], retall = True, S<ins>tep</ins>Monitor = simplex)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>64</th><th>64</th><td class="l"><span>&nbsp; &nbsp; print sol[0]</span> </td>
+                  </tr><tr>
+                          <th>65</th><th>65</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/tests/sam_mogi.py?rev=62#L74">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/tests/sam_mogi.py?rev=81#L74">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>74</th><td class="l"><span>&nbsp; &nbsp; y1 = y0*random.uniform(0.5,1.5)</span> </td>
+                  </tr><tr>
+                          <th>75</th><th>75</th><td class="l"><span>&nbsp; &nbsp; z1 = z0*random.uniform(0.5,1.5)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>76</th><th> </th><td class="l"><span>&nbsp; &nbsp; sol = fmin(cost_function, [random.uniform(x0-40,x0+40), y1, z1, random.uniform(v0-0.1,v0+0.1)], retall = True, S<del>implex</del>Monitor = simplex)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>76</th><td class="r"><span>&nbsp; &nbsp; sol = fmin(cost_function, [random.uniform(x0-40,x0+40), y1, z1, random.uniform(v0-0.1,v0+0.1)], retall = True, S<ins>tep</ins>Monitor = simplex)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>77</th><th>77</th><td class="l"><span>&nbsp; &nbsp; print sol[0]</span> </td>
+                  </tr><tr>
+                          <th>78</th><th>78</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="81/tests/sam_rosenbrock.html" title="Show the changeset 81 restricted to tests/sam_rosenbrock.py">tests/sam_rosenbrock.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/sam_rosenbrock.py?rev=62#L6">
+                      r62</a>
+                  </th>
+                  <th title="Revision 81">
+                    <a title="Show revision 81 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/sam_rosenbrock.py?rev=81#L6">
+                      r81</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span>This one uses Nelder-Mead plus matlab viz.</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>8</th><th> </th><td class="l"><span>It uses the S<del>implex</del>Monitor option to track all simplices generated during </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>8</th><td class="r"><span>It uses the S<ins>tep</ins>Monitor option to track all simplices generated during </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>9</th><th>9</th><td class="l"><span>the search.</span> </td>
+                  </tr><tr>
+                          <th>10</th><th>10</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/tests/sam_rosenbrock.py?rev=62#L40">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/tests/sam_rosenbrock.py?rev=81#L40">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>40</th><th>40</th><td class="l"><span>def run_once(x0,x1):</span> </td>
+                  </tr><tr>
+                          <th>41</th><th>41</th><td class="l"><span>&nbsp; &nbsp; simplex = Sow()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; &nbsp; sol = fmin(rosen, [x0, x1], retall = True, S<del>implex</del>Monitor = simplex)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>42</th><td class="r"><span>&nbsp; &nbsp; sol = fmin(rosen, [x0, x1], retall = True, S<ins>tep</ins>Monitor = simplex)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>43</th><th>43</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>44</th><th>44</th><td class="l"><span>&nbsp; &nbsp; for x in simplex.x:</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="81/tests/sam_zimmermann.html" title="Show the changeset 81 restricted to tests/sam_zimmermann.py">tests/sam_zimmermann.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 9">
+                    <a title="Show revision 9 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/sam_zimmermann.py?rev=9#L6">
+                      r9</a>
+                  </th>
+                  <th title="Revision 81">
+                    <a title="Show revision 81 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/sam_zimmermann.py?rev=81#L6">
+                      r81</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span>This one uses Nelder-Mead plus matlab viz.</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>8</th><th> </th><td class="l"><span>It uses the S<del>implex</del>Monitor option to track all simplices generated during </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>8</th><td class="r"><span>It uses the S<ins>tep</ins>Monitor option to track all simplices generated during </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>9</th><th>9</th><td class="l"><span>the search.</span> </td>
+                  </tr><tr>
+                          <th>10</th><th>10</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/tests/sam_zimmermann.py?rev=9#L39">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/tests/sam_zimmermann.py?rev=81#L39">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>39</th><td class="l"><span>def run_once():</span> </td>
+                  </tr><tr>
+                          <th>40</th><th>40</th><td class="l"><span>&nbsp; &nbsp; simplex = Sow()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>41</th><th> </th><td class="l"><span>&nbsp; &nbsp; sol = fmin(CostFunction, [random.uniform(0,7), random.uniform(0,7)], retall = True, S<del>implex</del>Monitor = simplex)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>41</th><td class="r"><span>&nbsp; &nbsp; sol = fmin(CostFunction, [random.uniform(0,7), random.uniform(0,7)], retall = True, S<ins>tep</ins>Monitor = simplex)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>42</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>43</th><th>43</th><td class="l"><span>&nbsp; &nbsp; for x in simplex.x:</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="81/tests/test_mogi.html" title="Show the changeset 81 restricted to tests/test_mogi.py">tests/test_mogi.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 80">
+                    <a title="Show revision 80 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/test_mogi.py?rev=80#L125">
+                      r80</a>
+                  </th>
+                  <th title="Revision 81">
+                    <a title="Show revision 81 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/test_mogi.py?rev=81#L125">
+                      r81</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>125</th><th>125</th><td class="l"><span>&nbsp; &nbsp; #</span> </td>
+                  </tr><tr>
+                          <th>126</th><th>126</th><td class="l"><span>&nbsp; &nbsp; simplex, esow = Sow(), Sow()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>127</th><th> </th><td class="l"><span>&nbsp; &nbsp; sol = fmin(cost_function, point,&nbsp; EvaluationMonitor = esow, retall = True, S<del>implex</del>Monitor = simplex)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>127</th><td class="r"><span>&nbsp; &nbsp; sol = fmin(cost_function, point,&nbsp; EvaluationMonitor = esow, retall = True, S<ins>tep</ins>Monitor = simplex)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>128</th><th>128</th><td class="l"><span>&nbsp; &nbsp; print "simplex solution: ", sol[1][-1]</span> </td>
+                  </tr><tr>
+                          <th>129</th><th>129</th><td class="l"><span>&nbsp; &nbsp; #</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="81/tests/test_zimmermann.html" title="Show the changeset 81 restricted to tests/test_zimmermann.py">tests/test_zimmermann.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 5">
+                    <a title="Show revision 5 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/test_zimmermann.py?rev=5#L67">
+                      r5</a>
+                  </th>
+                  <th title="Revision 81">
+                    <a title="Show revision 81 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/test_zimmermann.py?rev=81#L67">
+                      r81</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>67</th><th>67</th><td class="l"><span>&nbsp; &nbsp; simplex = Sow()</span> </td>
+                  </tr><tr>
+                          <th>68</th><th>68</th><td class="l"><span>&nbsp; &nbsp; esow = Sow()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>69</th><th> </th><td class="l"><span>&nbsp; &nbsp; sol = fmin(CostFunction, [random.uniform(0,5) for j in range(ND)], EvaluationMonitor = esow, retall = True, S<del>implex</del>Monitor = simplex)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>69</th><td class="r"><span>&nbsp; &nbsp; sol = fmin(CostFunction, [random.uniform(0,5) for j in range(ND)], EvaluationMonitor = esow, retall = True, S<ins>tep</ins>Monitor = simplex)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>70</th><th>70</th><td class="l"><span>&nbsp; &nbsp; #print "solution: ", sol</span> </td>
+                  </tr><tr>
+                          <th>71</th><th>71</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/81?format=diff&amp;new=81" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/81?format=zip&amp;new=81" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/81 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:50:27 GMT -->
+</html>

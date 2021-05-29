@@ -1,0 +1,847 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/616/branches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:16:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 616 for branches – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/616/branches?format=diff&amp;new=616" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/616/branches?format=zip&amp;new=616" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../617/branches.html" title="Changeset 617 for branches" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../615/branches.html" title="Changeset 615 for branches" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../615/branches.html" title="Changeset 615 for branches">Previous Change</a></span></li><li class="last"><span><a class="next" href="../617/branches.html" title="Changeset 617 for branches">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../616.html">616</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches?rev=616">branches</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             12/19/12 17:34:01
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-19T17%3A34%3A01-08%3A00&amp;precision=second" title="2012-12-19T17:34:01-08:00 in Timeline">3 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+added test_build_constraint, renamed test_generate_constraint in test_symbolic;<br />
+math from numpy in _symbolic consistent with symbolic;<br />
+prepent build_linear and build_nonlinear with an underscore (i.e. rename)<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate?rev=616">branches/decorate</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>3 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=616">
+              _symbolic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">9 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/symbolic.py?rev=616">
+              symbolic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_symbolic.py?rev=616">
+              test_symbolic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">3 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="branches/decorate/_symbolic.html" title="Show the changeset 616 restricted to branches/decorate/_symbolic.py">branches/decorate/_symbolic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 615">
+                    <a title="Show revision 615 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=615#L1">
+                      r615</a>
+                  </th>
+                  <th title="Revision 616">
+                    <a title="Show revision 616 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=616#L1">
+                      r616</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>from symbolic import *</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>2</th><td class="r"><ins>from wrapper import isbounded</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>3</th><td class="r"><ins>from penalty import issolution</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>4</th><td class="l"><span>from mystic.tools import permutations</span> </td>
+                  </tr><tr>
+                          <th>3</th><th>5</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=615#L270">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=616#L272">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>270</th><th>272</th><td class="l"><span>&nbsp; &nbsp; # default is _locals with numpy and math imported</span> </td>
+                  </tr><tr>
+                          <th>271</th><th>273</th><td class="l"><span>&nbsp; &nbsp; # numpy throws an 'AttributeError', but math passes error to sympy</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>272</th><th> </th><td class="l"><span>&nbsp; &nbsp; code = """from numpy import *; from math import *;""" #XXX: prefer math?</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>274</th><td class="r"><span>&nbsp; &nbsp; code = """from numpy import *; from math import *;""" # prefer math</span> </td>
+                      </tr><tr>
+                        <th> </th><th>275</th><td class="r"><span>&nbsp; &nbsp; code += """from numpy import mean as average;""" # use np.mean not average</span> </td>
+                      </tr><tr>
+                        <th> </th><th>276</th><td class="r"><span>&nbsp; &nbsp; code += """from numpy import var as variance;""" # look like mystic.math</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>277</th><td class="r"><span>&nbsp; &nbsp; code += """from numpy import ptp as spread;"""&nbsp; &nbsp;# look like mystic.math</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>273</th><th>278</th><td class="l"><span>&nbsp; &nbsp; code = compile(code, '&lt;string&gt;', 'exec')</span> </td>
+                  </tr><tr>
+                          <th>274</th><th>279</th><td class="l"><span>&nbsp; &nbsp; exec code in _locals</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=615#L321">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=616#L326">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>321</th><th>326</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>322</th><th>327</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>323</th><th> </th><td class="l"><span>def <del></del>build_linear(constraints, variables='x', nvars=None, order=None, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>328</th><td class="r"><span>def <ins>_</ins>build_linear(constraints, variables='x', nvars=None, order=None, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>324</th><th>329</th><td class="l"><span>&nbsp; &nbsp; """Build a constraints function given a string of linear constraints.</span> </td>
+                  </tr><tr>
+                          <th>325</th><th>330</th><td class="l"><span>Returns a constraints function. </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=615#L334">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=616#L339">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>334</th><th>339</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''x1 = x3 + 2.</span> </td>
+                  </tr><tr>
+                          <th>335</th><th>340</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x3 = x4*2.'''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>336</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; f = <del>build_linear(constraints</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>341</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; f = <ins>_build_linear(constraints, nvars=4</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>337</th><th>342</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; f([1.0, 0.0, 0.0, 1.0])</span> </td>
+                  </tr><tr>
+                          <th>338</th><th>343</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [4.0, 0.0, 2.0, 1.0]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=615#L378">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=616#L383">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>378</th><th>383</th><td class="l"><span>&nbsp; &nbsp; redundancies, but that should be ok.</span> </td>
+                  </tr><tr>
+                          <th>379</th><th>384</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>380</th><th> </th><td class="l"><del>&nbsp; &nbsp; # XXX: sympy fails on 'math' functions of variables (e.g. 'cos(x1)')</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>381</th><th>385</th><td class="l"><span>&nbsp; &nbsp; strict = False # if True, force to use 'permutations' code</span> </td>
+                  </tr><tr>
+                          <th>382</th><th>386</th><td class="l"><span>&nbsp; &nbsp; warn = True&nbsp; # if True, don't supress warning about old versions of sympy</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=615#L551">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=616#L555">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>551</th><th>555</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''x1 = x3 + 2.</span> </td>
+                  </tr><tr>
+                          <th>552</th><th>556</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x3 = x4*2.'''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>553</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; f = build_constraint(constraints<del></del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>557</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; f = build_constraint(constraints<ins>, nvars=4</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>554</th><th>558</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; f([1.0, 0.0, 0.0, 1.0])</span> </td>
+                  </tr><tr>
+                          <th>555</th><th>559</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [4.0, 0.0, 2.0, 1.0]</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>560</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>561</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;spread([x1,x2]) - 1.0 = mean([x1,x2])&nbsp; &nbsp;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>562</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;mean([x1,x2,x3]) = x3'''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>563</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; f = _build_nonlinear(constraints)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>564</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; f([1.0, 2.0, 3.0])</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>565</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; [1.0, 5.0, 3.0]</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>556</th><th>566</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>557</th><th>567</th><td class="l"><span>Additional Inputs:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=615#L581">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=616#L591">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>581</th><th>591</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; such that it does not immediately violate the given bounds.</span> </td>
+                  </tr><tr>
+                          <th>582</th><th>592</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>583</th><th> </th><td class="l"><del>&nbsp; &nbsp; # XXX: sympy fails on 'math' functions of variables (e.g. 'cos(x1)')</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>584</th><th>593</th><td class="l"><span>&nbsp; &nbsp; try:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>585</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return <del></del>build_linear(constraints, variables=variables, \</span> </td>
+                      </tr><tr>
+                        <th>586</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <del></del>nvars=nvars, order=order, **kwds)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>594</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return <ins>_</ins>build_linear(constraints, variables=variables, \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>595</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <ins>&nbsp;</ins>nvars=nvars, order=order, **kwds)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>587</th><th>596</th><td class="l"><span>&nbsp; &nbsp; except:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>588</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return <del></del>build_nonlinear(constraints, variables=variables, \</span> </td>
+                      </tr><tr>
+                        <th>589</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del></del>nvars=nvars, order=order, **kwds)</span> </td>
+                      </tr><tr>
+                        <th>590</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>591</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>592</th><th> </th><td class="l"><span>def <del>build_nonlinear(constraints, variables='x', nvars=None, order=None, </del>**kwds):</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>597</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return <ins>_</ins>build_nonlinear(constraints, variables=variables, \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>598</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>&nbsp;</ins>nvars=nvars, order=order, **kwds)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>599</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>600</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>601</th><td class="r"><span>def <ins>_build_nonlinear(constraints, variables='x', nvars=None, order=None,</ins>**kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>593</th><th>602</th><td class="l"><span>&nbsp; &nbsp; """Build a constraints function given a string of nonlinear constraints.</span> </td>
+                  </tr><tr>
+                          <th>594</th><th>603</th><td class="l"><span>Returns a constraints function. </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=615#L602">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=616#L611">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>602</th><th>611</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>603</th><th>612</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''x2 = x4*3. + (x1*x3)**x1'''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>604</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; f = <del>build_nonlinear(constraints</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>613</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; f = <ins>_build_nonlinear(constraints, nvars=5</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>605</th><th>614</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; f([1.0, 1.0, 1.0, 1.0, 1.0])</span> </td>
+                  </tr><tr>
+                          <th>606</th><th>615</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [1.0, 4.0, 1.0, 1.0, 1.0]</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>616</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>617</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;spread([x1,x2]) - 1.0 = mean([x1,x2])&nbsp; &nbsp;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>618</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;mean([x1,x2,x3]) = x3'''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>619</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; f = _build_nonlinear(constraints)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>620</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; f([1.0, 2.0, 3.0])</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>621</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; [1.0, 5.0, 3.0]</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>607</th><th>622</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>608</th><th>623</th><td class="l"><span>Additional Inputs:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=615#L632">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/_symbolic.py?rev=616#L647">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>632</th><th>647</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; such that it does not immediately violate the given bounds.</span> </td>
+                  </tr><tr>
+                          <th>633</th><th>648</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>634</th><th> </th><td class="l"><del>&nbsp; &nbsp; # XXX: sympy fails on 'math' functions of variables (e.g. 'cos(x1)')</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>635</th><th>649</th><td class="l"><span>&nbsp; &nbsp; strict = False # if True, force to use 'permutations' code</span> </td>
+                  </tr><tr>
+                          <th>636</th><th>650</th><td class="l"><span>&nbsp; &nbsp; warn = True&nbsp; # if True, don't supress warning about old versions of sympy</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="branches/decorate/symbolic.html" title="Show the changeset 616 restricted to branches/decorate/symbolic.py">branches/decorate/symbolic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 614">
+                    <a title="Show revision 614 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/symbolic.py?rev=614#L264">
+                      r614</a>
+                  </th>
+                  <th title="Revision 616">
+                    <a title="Show revision 616 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/symbolic.py?rev=616#L264">
+                      r616</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>264</th><th>264</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraint = fixed.strip()</span> </td>
+                  </tr><tr>
+                          <th>265</th><th>265</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>266</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Replace '<del>range</del>', 'mean', and 'variance' (uses numpy, not mystic)</span> </td>
+                      </tr><tr>
+                        <th>267</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if constraint.find('<del>range</del>(') != -1:</span> </td>
+                      </tr><tr>
+                        <th>268</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraint = constraint.replace('<del>range(', 'ptp(') # spread</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>266</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Replace '<ins>spread</ins>', 'mean', and 'variance' (uses numpy, not mystic)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>267</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if constraint.find('<ins>spread</ins>(') != -1:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>268</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraint = constraint.replace('<ins>spread(', 'ptp(')</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>269</th><th>269</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if constraint.find('mean(') != -1:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>270</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraint = constraint.replace('mean(', 'average(')<del>&nbsp;# mean</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>270</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraint = constraint.replace('mean(', 'average(')<ins></ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>271</th><th>271</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if constraint.find('variance(') != -1:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>272</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraint = constraint.replace('variance(', 'var(')<del>&nbsp;# variance</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>272</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraint = constraint.replace('variance(', 'var(')<ins></ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>273</th><th>273</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>274</th><th>274</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Sorting into equality and inequality constraints, and making all</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/symbolic.py?rev=614#L350">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/symbolic.py?rev=616#L350">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>350</th><th>350</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraint = fixed.strip()</span> </td>
+                  </tr><tr>
+                          <th>351</th><th>351</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>352</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Replace 'range', 'mean', and 'variance' (uses mystic, not numpy)</span> </td>
+                      </tr><tr>
+                        <th>353</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if constraint.find('range(') != -1:</span> </td>
+                      </tr><tr>
+                        <th>354</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraint = constraint.replace('range(', 'spread(')</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>352</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Replace 'ptp', 'average', and 'var' (uses mystic, not numpy)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>355</th><th>353</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if constraint.find('ptp(') != -1:</span> </td>
+                  </tr><tr>
+                          <th>356</th><th>354</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraint = constraint.replace('ptp(', 'spread(')</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/symbolic.py?rev=614#L441">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/symbolic.py?rev=616#L439">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>441</th><th>439</th><td class="l"><span>&nbsp; &nbsp; globals = {}</span> </td>
+                  </tr><tr>
+                          <th>442</th><th>440</th><td class="l"><span>&nbsp; &nbsp; code = """from math import *; from numpy import *;"""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>441</th><td class="r"><ins>&nbsp; &nbsp; code += """from numpy import mean as average;""" # use np.mean not average</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>443</th><th>442</th><td class="l"><span>&nbsp; &nbsp;#code += """from mystic.math.measures import spread, variance, mean;"""</span> </td>
+                  </tr><tr>
+                          <th>444</th><th>443</th><td class="l"><span>&nbsp; &nbsp; code = compile(code, '&lt;string&gt;', 'exec')</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/symbolic.py?rev=614#L511">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/symbolic.py?rev=616#L510">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>511</th><th>510</th><td class="l"><span>&nbsp; &nbsp; globals = {}</span> </td>
+                  </tr><tr>
+                          <th>512</th><th>511</th><td class="l"><span>&nbsp; &nbsp; code = """from math import *; from numpy import *;"""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>512</th><td class="r"><ins>&nbsp; &nbsp; code += """from numpy import mean as average;""" # use np.mean not average</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>513</th><th>513</th><td class="l"><span>&nbsp; &nbsp; code += """from mystic.math.measures import spread, variance, mean;"""</span> </td>
+                  </tr><tr>
+                          <th>514</th><th>514</th><td class="l"><span>&nbsp; &nbsp; code += """from mystic.math.measures import impose_spread, impose_mean;"""</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="branches/decorate/test_symbolic.html" title="Show the changeset 616 restricted to branches/decorate/test_symbolic.py">branches/decorate/test_symbolic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 613">
+                    <a title="Show revision 613 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_symbolic.py?rev=613#L1">
+                      r613</a>
+                  </th>
+                  <th title="Revision 616">
+                    <a title="Show revision 616 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_symbolic.py?rev=616#L1">
+                      r616</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>from symbolic import *</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>2</th><td class="r"><ins>from _symbolic import *</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>3</th><td class="l"><span>from mystic.math import almostEqual</span> </td>
+                  </tr><tr>
+                          <th>3</th><th>4</th><td class="l"><span>from penalty import as_constraint</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_symbolic.py?rev=613#L38">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_symbolic.py?rev=616#L39">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>38</th><th>39</th><td class="l"><span>&nbsp; assert almostEqual(penalty(constraint([3,4,5])), 0.0, 1e-10)</span> </td>
+                  </tr><tr>
+                          <th>39</th><th>40</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>40</th><th> </th><td class="l"><span>def test_<del>impose_penalty</del>():</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>41</th><td class="r"><span>def test_<ins>generate_constraint</ins>():</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>41</th><th>42</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>42</th><th>43</th><td class="l"><span>&nbsp; constraints = """</span> </td>
+                  </tr><tr>
+                          <th>43</th><th>44</th><td class="l"><span>&nbsp; mean([x1, x2, x3]) = 5.0</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; <del>range</del>([x1, x2, x3]) = 10.0"""</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>45</th><td class="r"><span>&nbsp; <ins>spread</ins>([x1, x2, x3]) = 10.0"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>46</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>46</th><th>47</th><td class="l"><span>&nbsp; from mystic.math.measures import mean, spread</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_symbolic.py?rev=613#L52">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_symbolic.py?rev=616#L53">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>53</th><td class="l"><span>&nbsp; assert almostEqual(constraint([1,2,3]), [0.0,5.0,10.0], 1e-10)</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>54</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>55</th><td class="r"><ins>def test_build_constraint():</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>56</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>57</th><td class="r"><ins>&nbsp; constraints = """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>58</th><td class="r"><ins>&nbsp; spread([x1,x2]) - 1.0 = mean([x1,x2])&nbsp; &nbsp;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>59</th><td class="r"><ins>&nbsp; mean([x1,x2,x3]) = x3"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>60</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>61</th><td class="r"><ins>&nbsp; from mystic.math.measures import mean, spread</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>62</th><td class="r"><ins>&nbsp; constraint = build_constraint(constraints)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>63</th><td class="r"><ins>&nbsp; x = constraint([1.0, 2.0, 3.0])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>64</th><td class="r"><ins>&nbsp; assert all(x) == all([1.0, 5.0, 3.0])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>65</th><td class="r"><ins>&nbsp; assert mean(x) == x[2]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>66</th><td class="r"><ins>&nbsp; assert spread(x[:-1]) - 1.0 == mean(x[:-1])</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>67</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>68</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>55</th><th>69</th><td class="l"><span>if __name__ == '__main__':</span> </td>
+                  </tr><tr>
+                          <th>56</th><th>70</th><td class="l"><span>&nbsp; test_generate_penalty()</span> </td>
+                  </tr><tr>
+                          <th>57</th><th>71</th><td class="l"><span>&nbsp; test_numpy_penalty()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>58</th><th> </th><td class="l"><span>&nbsp; test_impose_penalty()</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>72</th><td class="r"><span>&nbsp; test_generate_constraint()</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>73</th><td class="r"><span>&nbsp; test_build_constraint()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>59</th><th>74</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/616/branches?format=diff&amp;new=616" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/616/branches?format=zip&amp;new=616" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/616/branches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:16:25 GMT -->
+</html>

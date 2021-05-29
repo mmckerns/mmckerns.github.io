@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/pathos/wiki/dill by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 May 2016 18:05:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      dill – Pathos
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/pathos/wiki/dill?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/pathos_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/pathos_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Pathos" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/folding.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/pathos/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/projects/pathos/wiki.html"><img src="http://mmckerns.github.io/projects/pathos/pathos_banner.png" alt="PATHOS" height="150" width="350" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/pathos/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="dill.html" title="View dill">dill</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://mmckerns.github.io/project/pathos/wiki/dill?action=history">History</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          
+          <div class="trac-modifiedby"><a href="http://mmckerns.github.io/project/pathos/wiki/dill?action=diff&amp;version=15" title="Version 15 by mmckerns: update to dill-0.2.4">Last modified</a> <a class="timeline" href="http://mmckerns.github.io/project/pathos/timeline?from=2015-08-05T06%3A10%3A39-07%3A00&amp;precision=second" title="2015-08-05T06:10:39-07:00 in Timeline">10 months</a> ago</div>
+          <div id="wikipage"><br />
+<h1 style="color: brown">dill: serialize all of python</h1>
+<br />
+||
+<a href="dill/User_Guide.html">User Guide</a>
+||
+<a href="dill/Installation.html">Download</a>
+||
+<a href="dill/Tutorials.html">Tutorials</a>
+||
+<a href="License.html">License</a>
+||
+<hr />
+<h4 id="AboutDill">About Dill</h4>
+<p>
+Dill extends python's 'pickle' module for serializing and de-serializing
+python objects to the majority of the built-in python types. Serialization
+is the process of converting an object to a byte stream, and the inverse
+of which is converting a byte stream back to on python object hierarchy.
+</p>
+<p>
+Dill provides the user the same interface as the 'pickle' module, and
+also includes some additional features. In addition to pickling python
+objects, dill provides the ability to save the state of an interpreter
+session in a single command.  Hence, it would be feasable to save a
+interpreter session, close the interpreter, ship the pickled file to
+another computer, open a new interpreter, unpickle the session and
+thus continue from the 'saved' state of the original interpreter
+session.
+</p>
+<p>
+Dill can be used to store python objects to a file, but the primary
+usage is to send python objects across the network as a byte stream.
+Dill is quite flexible, and allows arbitrary user defined classes
+and funcitons to be serialized.  Thus dill is not intended to be
+secure against erroneously or maliciously constructed data. It is
+left to the user to decide whether the data they unpickle is from
+a trustworthy source.
+</p>
+<p>
+Dill is part of <a class="wiki" href="WikiStart.html">pathos</a>, a python framework for heterogenous computing.
+Dill is in active development, so any user feedback, bug reports, comments,
+or suggestions are highly appreciated.  A list of known issues is maintained
+at <a href="../query.html">http://mmckerns.github.io/project/pathos/query</a>, with a public
+ticket list at <a class="ext-link" href="https://github.com/uqfoundation/dill/issues"><span class="icon"> </span>https://github.com/uqfoundation/dill/issues</a>.
+</p>
+<hr />
+
+<h4 id="MajorFeatures">Major Features</h4>
+<p>
+Dill can pickle the following standard types::
+</p>
+<ul><li>none, type, bool, int, long, float, complex, str, unicode,
+</li><li>tuple, list, dict, file, buffer, builtin,
+</li><li>both old and new style classes,
+</li><li>instances of old and new style classes,
+</li><li>set, frozenset, array, functions, exceptions
+</li></ul><p>
+Dill can also pickle more 'exotic' standard types::
+</p>
+<ul><li>functions with yields, nested functions, lambdas
+</li><li>cell, method, unboundmethod, module, code, methodwrapper,
+</li><li>dictproxy, methoddescriptor, getsetdescriptor, memberdescriptor,
+</li><li>wrapperdescriptor, xrange, slice,
+</li><li>notimplemented, ellipsis, quit
+</li></ul><p>
+Dill cannot yet pickle these standard types::
+</p>
+<ul><li>frame, generator, traceback
+</li></ul> 
+<p>
+Dill also provides the capability to::
+</p>
+<ul><li>save and load python interpreter sessions
+</li><li>save and extract the source code from functions and classes
+</li><li>interactively diagnose pickling errors
+</li></ul><hr />
+<h4 id="CurrentRelease">Current Release</h4>
+<p>
+This version is <a class="milestone" href="../milestone/pathos-1.html">dill-0.2.4</a>. You can download it <a class="wiki" href="dill/Installation.html">here</a>.<br />
+The latest stable version of dill is available from::
+</p>
+<blockquote>
+<p>
+<a href="http://mmckerns.github.io/project/pathos">http://mmckerns.github.io/project/pathos</a>
+</p>
+</blockquote>
+<p>
+or::
+</p>
+<blockquote>
+<p>
+<a class="ext-link" href="https://github.com/uqfoundation/dill/releases"><span class="icon"> </span>https://github.com/uqfoundation/dill/releases</a>
+</p>
+</blockquote>
+<p>
+or also::
+</p>
+<blockquote>
+<p>
+<a class="ext-link" href="https://pypi.python.org/pypi/dill"><span class="icon"> </span>https://pypi.python.org/pypi/dill</a>
+</p>
+</blockquote>
+<p>
+Dill is distributed under a 3-clause BSD <a class="wiki" href="License.html">license</a>.
+</p>
+<pre class="wiki">    &gt;&gt;&gt; import dill
+    &gt;&gt;&gt; print (dill.license())
+</pre><hr />
+<h4 id="DevelopmentRelease">Development Release</h4>
+<p>
+You can get the latest development version with all the shiny new features at::
+</p>
+<blockquote>
+<p>
+<a class="ext-link" href="https://github.com/uqfoundation"><span class="icon"> </span>https://github.com/uqfoundation</a>
+</p>
+</blockquote>
+<p>
+Feel free to fork the github mirror of our svn trunk.  If you have a new
+contribution, please submit a pull request.
+</p>
+<hr />
+<h3 id="MoreInformation">More Information =</h3>
+<p>
+Probably the best way to get started is to look at the tests that are
+provided within dill. See <tt>dill.tests</tt> for a set of scripts that demonstrate
+dill's ability to serialize different python objects.  Since dill conforms
+to the 'pickle' interface, the examples and documentation at
+<a class="ext-link" href="http://docs.python.org/library/pickle.html"><span class="icon"> </span>http://docs.python.org/library/pickle.html</a> also apply to dill if one will
+<tt>import dill as pickle</tt>. The source code is also generally well
+documented, so further questions may be resolved by  <a class="source" href="../browser/dill.html">inspecting the code</a>
+itself.  Please also feel free to submit a ticket on github, or ask a
+question on stackoverflow (@Mike McKerns).
+</p>
+<p>
+Dill is an active research tool. There are a growing number of <a class="wiki" href="Publications.html">publications and presentations</a>
+that discuss real-world examples and new features of dill
+in greater detail than presented in the <a class="wiki" href="User_Guide.html">user's guide</a>.  If you would like to
+share how you use dill in your work, please post a link or send an email
+(to mmckerns at caltech dot edu).
+</p>
+<hr />
+<h4 id="Citation">Citation</h4>
+<p>
+If you use dill to do research that leads to publication, we ask that you <br />
+acknowledge use of dill by citing the following in your publication::
+</p>
+<pre class="wiki">    M.M. McKerns, L. Strand, T. Sullivan, A. Fang, M.A.G. Aivazis,
+    "Building a framework for predictive science", Proceedings of
+    the 10th Python in Science Conference, 2011;
+    http://arxiv.org/pdf/1202.1056
+
+    Michael McKerns and Michael Aivazis,
+    "pathos: a framework for heterogeneous computing", 2010- ;
+    http://dev.danse.us/trac/pathos
+</pre><p>
+Please see <a href="http://mmckerns.github.io/project/pathos">http://mmckerns.github.io/project/pathos</a> or
+<a class="ext-link" href="http://arxiv.org/pdf/1202.1056"><span class="icon"> </span>http://arxiv.org/pdf/1202.1056</a> for further information.
+</p>
+</div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/pathos/wiki/dill?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/pathos/wiki/dill by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 May 2016 18:05:19 GMT -->
+</html>

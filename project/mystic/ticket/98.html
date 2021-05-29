@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/ticket/98 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:49:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      #98 (add a constraint function generator with support for symbolic math)
+     – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="97.html" title="Ticket #97" />
+        <link rel="last" href="257.html" title="Ticket #257" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/ticket/98?format=csv" type="text/csv" class="csv" title="Comma-delimited Text" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/ticket/98?format=tab" type="text/tab-separated-values" class="tab" title="Tab-delimited Text" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/ticket/98?format=rss" type="application/rss+xml" class="rss" title="RSS Feed" />
+        <link rel="next" href="99.html" title="Ticket #99" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/ticket.css" type="text/css" />
+        <link rel="first" href="1.html" title="Ticket #1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript">
+      var auto_preview_timeout=2.0;
+      var form_token="29dfe7d61594daee56a0f88e";
+    </script>
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/folding.js"></script><script type="text/javascript" src="../chrome/common/js/wikitoolbar.js"></script><script type="text/javascript" src="../chrome/common/js/resizer.js"></script><script type="text/javascript" src="../chrome/common/js/auto_preview.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("div.description").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $(".foldable").enableFolding(false, true);
+        var args = {realm: "ticket", id: 98, escape_newlines: 0}
+        $("#comment").autoPreview("/project/mystic/wiki_render", args, function(textarea, text, rendered) {
+            $("#ticketchange div.comment").html(rendered);
+            if (rendered)
+              $("#ticketchange").show();
+            else if ($("#ticketchange ul.changes").length == 0)
+              $("#ticketchange").hide();
+        });
+        $("#trac-comment-editor textarea").autoPreview("/project/mystic/wiki_render", args,
+                                                       function(textarea, text, rendered) {
+          var comment = $("#trac-comment-editor").next("div.comment");
+          comment.html(rendered);
+          if (rendered)
+            comment.show();
+          else
+            comment.hide();
+        });
+        $("#modify").parent().toggleClass("collapsed");
+        $(".trac-topnav a").click(function() { $("#modify").parent().removeClass("collapsed"); });
+        /* only enable control elements for the currently selected action */
+        var actions = $("#action input[name='action']");
+        function updateActionFields() {
+          actions.each(function () {
+            $(this).siblings().find("*[id]").enable($(this).checked());
+            $(this).siblings().filter("*[id]").enable($(this).checked());
+          });
+        }
+        actions.click(updateActionFields);
+        updateActionFields();
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li class="active"><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="97.html" title="Ticket #97">Previous Ticket</a></span></li><li class="last"><span><a class="next" href="99.html" title="Ticket #99">Next Ticket</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="ticket">
+      <h1 id="trac-ticket-title">
+          <a href="98.html">Ticket #98</a>
+          <span class="status">(closed idea: worksforme)</span>
+      </h1>
+      <div id="ticket">
+  <div class="date">
+    <p>Opened <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-04-22T12%3A24%3A42-07%3A00&amp;precision=second" title="2010-04-22T12:24:42-07:00 in Timeline">6 years</a> ago</p>
+    <p>Last modified <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-20T15%3A48%3A41-08%3A00&amp;precision=second" title="2012-12-20T15:48:41-08:00 in Timeline">3 years</a> ago</p>
+  </div>
+  <h2 class="summary searchable">add a constraint function generator with support for symbolic math</h2>
+  <table class="properties">
+    <tr>
+      <th id="h_reporter">Reported by:</th>
+      <td headers="h_reporter" class="searchable">
+        <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;reporter=mmckerns">mmckerns</a>
+      </td>
+      <th id="h_owner">Owned by:</th>
+      <td headers="h_owner">
+        <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;owner=mmckerns">mmckerns</a>
+      </td>
+    </tr>
+    <tr>
+        <th id="h_priority">
+          Priority:
+        </th>
+        <td headers="h_priority">
+              <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;priority=minor">minor</a>
+        </td>
+        <th id="h_milestone">
+          Milestone:
+        </th>
+        <td headers="h_milestone">
+              <a class="milestone" href="../milestone/mystic-1.html">mystic-0.2a2</a>
+        </td>
+    </tr><tr>
+        <th id="h_component">
+          Component:
+        </th>
+        <td headers="h_component">
+              <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;component=mystic.constraints">mystic.constraints</a>
+        </td>
+        <th id="h_keywords">
+          Keywords:
+        </th>
+        <td headers="h_keywords" class="searchable">
+        </td>
+    </tr><tr>
+        <th id="h_cc">
+          Cc:
+        </th>
+        <td headers="h_cc" class="searchable">
+        </td>
+        <th>
+        </th>
+        <td>
+        </td>
+    </tr>
+  </table>
+  <div class="description">
+    <h3 id="comment:description">
+      Description
+      <span class="lastmod" title="2010-07-20 22:03:48+00:00">
+        (last modified by mmckerns)
+        (<a href="http://mmckerns.github.io/project/mystic/ticket/98?action=diff&amp;version=2">diff</a>)
+      </span>
+    </h3>
+    <div class="searchable">
+      <p>
+add support for symbolic math (i.e. sympy)
+</p>
+<p>
+add a constraint function generator. should have the ability to turn symbolic math into a constraints function
+</p>
+
+    </div>
+  </div>
+</div>
+          
+
+        <div>
+          <h2 class="foldable">Change History</h2>
+          <div id="changelog">
+              <div class="change" id="trac-change-1">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:1" class="cnum">
+      <a href="#comment:1">comment:1</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-04-23T10%3A23%3A06-07%3A00&amp;precision=second" title="2010-04-23T10:23:06-07:00 in Timeline">6 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+from Chris Farrow:
+</p>
+<pre class="wiki">The best way I found to make callables is with the lambdify function. It seems that this is the only way to process equations that require numpy arrays as input. Sympy is quite fast, it beat diffpy.srfit.equation in several of my tests.
+
+There is one major problem that I have with sympy, and that is you can't compose symbolic and numeric routines. For example, the Debye equation requires some numerical integration. This could be implemented by sympy.Integral, but it seems more natural (and common) to write a numeric routine. Furthermore, legacy code will be numeric, not symbolic. So, once I have a numeric routine, how do I use sympy to compose this with another routine? As far as I can tell this cannot be done easily. Perhaps some string magic and lambda functions would do the trick, but then we're not really using sympy.
+</pre><p>
+Some follow-up: It looks like <a class="ext-link" href="http://openopt.org/FuncDesigner"><span class="icon"> </span>openopt.FuncDesigner</a> might be able to satisfy my use case. 
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-2">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:2" class="cnum">
+      <a href="#comment:2">comment:2</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-07-20T15%3A03%3A48-07%3A00&amp;precision=second" title="2010-07-20T15:03:48-07:00 in Timeline">6 years</a> ago by mmckerns
+                </h3>
+                
+  <ul class="changes">
+    <li>
+      <strong>Summary</strong>
+        changed from <em>add support for symbolic math</em> to <em>add a constraint function generator with support for symbolic math</em>
+    </li><li>
+      <strong>Description</strong>
+        modified (<a href="http://mmckerns.github.io/project/mystic/ticket/98?action=diff&amp;version=2">diff</a>)
+    </li><li>
+      <strong>Milestone</strong>
+        changed from <em>mystic-dev</em> to <em>mystic-0.2a3</em>
+    </li>
+  </ul>
+    <div class="comment searchable">
+      
+      <p>
+expanded slightly to cover ticket <a class="closed ticket" href="122.html" title="idea: add constraint function generator (closed: duplicate)">#122</a>
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-3">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:3" class="cnum">
+      <a href="#comment:3">comment:3</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-08-29T10%3A00%3A06-07%3A00&amp;precision=second" title="2010-08-29T10:00:06-07:00 in Timeline">6 years</a> ago by mmckerns
+                </h3>
+                
+  <ul class="changes">
+    <li>
+      <strong>Milestone</strong>
+        changed from <em>mystic-0.2a3</em> to <em>mystic-0.2a2</em>
+    </li>
+  </ul>
+    <div class="comment searchable">
+      
+      
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-4">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:4" class="cnum">
+      <a href="#comment:4">comment:4</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-06-21T13%3A33%3A30-07%3A00&amp;precision=second" title="2011-06-21T13:33:30-07:00 in Timeline">5 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+in building a constraints function, one should be able to also import required functions to evaluate the constraints...
+</p>
+<p>
+implementation options/decisions:
+</p>
+<ul><li>allow import statement in symbolic constraints string ?
+</li><li>allow passing of relevant imported objects ?
+</li><li>allow function generator to pull any imported function from globals() and locals() ?
+</li></ul>
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-5">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:5" class="cnum">
+      <a href="#comment:5">comment:5</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-06-30T06%3A57%3A30-07%3A00&amp;precision=second" title="2011-06-30T06:57:30-07:00 in Timeline">5 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+also look at diffpy.srfit's "equation" and "fitbase" at <a class="ext-link" href="http://danse.us/trac/diffraction/browser/diffraction/diffpy.srfit/trunk/diffpy/srfit"><span class="icon"> </span>http://danse.us/trac/diffraction/browser/diffraction/diffpy.srfit/trunk/diffpy/srfit</a>
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-6">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:6" class="cnum">
+      <a href="#comment:6">comment:6</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-04-03T15%3A33%3A20-07%3A00&amp;precision=second" title="2012-04-03T15:33:20-07:00 in Timeline">4 years</a> ago by mmckerns
+                </h3>
+                
+  <ul class="changes">
+    <li>
+      <strong>Component</strong>
+        changed from <em>mystic.math</em> to <em>mystic.constraints</em>
+    </li><li>
+      <strong>Milestone</strong>
+        changed from <em>mystic-0.2a2</em> to <em>mystic-0.2a3</em>
+    </li>
+  </ul>
+    <div class="comment searchable">
+      
+      
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-7">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:7" class="cnum">
+      <a href="#comment:7">comment:7</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-17T06%3A37%3A06-08%3A00&amp;precision=second" title="2012-12-17T06:37:06-08:00 in Timeline">3 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+improved and added basic "symbolic to constrains" capabilities in the "decorate" branch in <a class="changeset" href="../changeset/611.html" title="started rewrite of alta's code in mystic's symbolic math module; ...">r611</a>.  Does not require sympy; however, with a little more work, sympy can be used to speed up the existing generated constraints solvers.
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-8">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:8" class="cnum">
+      <a href="#comment:8">comment:8</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-18T20%3A10%3A27-08%3A00&amp;precision=second" title="2012-12-18T20:10:27-08:00 in Timeline">3 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+sympy seems pretty limited when it comes to solving with a 'math' function like "x1 = cos(x2)"... and also when there's an inequality, although solving for inequalities in sympy seems to be improving as of late.  Punting on sympy for a while seems to be a good plan.
+</p>
+<p>
+Sympy also seems to not care about backward compatibility too much... so the functions that use sympy should be checked against a few versions of sympy.
+</p>
+<p>
+Then maybe check out srfit's "equation" and "fitbase"... (see above entry)
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-9">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:9" class="cnum">
+      <a href="#comment:9">comment:9</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-20T15%3A48%3A41-08%3A00&amp;precision=second" title="2012-12-20T15:48:41-08:00 in Timeline">3 years</a> ago by mmckerns
+                </h3>
+                
+  <ul class="changes">
+    <li>
+      <strong>Status</strong>
+        changed from <em>new</em> to <em>closed</em>
+    </li><li>
+      <strong>Resolution</strong>
+        set to <em>worksforme</em>
+    </li><li>
+      <strong>Milestone</strong>
+        changed from <em>mystic-0.3a</em> to <em>mystic-0.2a2</em>
+    </li>
+  </ul>
+    <div class="comment searchable">
+      
+      <p>
+as of <a class="changeset" href="../changeset/620.html" title="pass constraint and penalty informative docstring built from underlying ...">r620</a>, the symbolic solver works pretty well for equalities, but not inequalities, using sympy.
+</p>
+<p>
+splitting off a simplified symbolic inequality solver to ticket <a class="new ticket" href="198.html" title="enhancement: enable sympy-based constraint solvers to handle inequalities (new)">#198</a>, closing the current ticket
+</p>
+
+    </div>
+
+              </div>
+          </div>
+        </div>
+      <div id="help"><strong>Note:</strong> See
+        <a href="../wiki/TracTickets.html">TracTickets</a> for help on using
+        tickets.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/ticket/98?format=csv" class="csv">Comma-delimited Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/ticket/98?format=tab" class="tab">Tab-delimited Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/ticket/98?format=rss" class="rss">RSS Feed</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/ticket/98 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:49:54 GMT -->
+</html>

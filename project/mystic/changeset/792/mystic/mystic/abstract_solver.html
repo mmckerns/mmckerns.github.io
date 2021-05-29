@@ -1,0 +1,452 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/792/mystic/mystic/abstract_solver.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 792 for mystic/mystic/abstract_solver.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/792/mystic/mystic/abstract_solver.py?format=diff&amp;new=792" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/792/mystic/mystic/abstract_solver.py?format=zip&amp;new=792" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../794/mystic/mystic/abstract_solver.html" title="Changeset 794 for mystic/mystic/abstract_solver.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../791/mystic/mystic/abstract_solver.html" title="Changeset 791 for mystic/mystic/abstract_solver.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../791/mystic/mystic/abstract_solver.html" title="Changeset 791 for mystic/mystic/abstract_solver.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../794/mystic/mystic/abstract_solver.html" title="Changeset 794 for mystic/mystic/abstract_solver.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../792.html">792</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=792">mystic/mystic/abstract_solver.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             06/10/15 13:01:55
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-10T13%3A01%3A55-07%3A00&amp;precision=second" title="2015-06-10T13:01:55-07:00 in Timeline">11 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+for speed, use contains instead of get and has_key<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=792">
+              mystic/mystic/abstract_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">6 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="abstract_solver.html" title="Show the changeset 792 restricted to mystic/mystic/abstract_solver.py">mystic/mystic/abstract_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=791#L110">
+                      r791</a>
+                  </th>
+                  <th title="Revision 792">
+                    <a title="Show revision 792 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=792#L110">
+                      r792</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>110</th><th>110</th><td class="l"><span>&nbsp; &nbsp; signal_handler&nbsp; &nbsp;- catches the interrupt signal.</span> </td>
+                  </tr><tr>
+                          <th>111</th><th>111</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>112</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; NP = <del></del>1</span> </td>
+                      </tr><tr>
+                        <th>113</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp;if kwds.has_key('npop'): NP = kwds['npop']</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>112</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; NP = <ins>kwds['npop'] if 'npop' in kwds else </ins>1</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>113</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;<ins>#self._max = kwds['max'] if 'max' in kwds else False</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>114</th><th>114</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>115</th><th>115</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.nDim&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= dim</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=791#L150">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=792#L150">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>150</th><th>150</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._cost&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; = (None, None, None)</span> </td>
+                  </tr><tr>
+                          <th>151</th><th>151</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;(cost, raw_cost, args) #,callback)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>152</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._termination&nbsp; &nbsp; &nbsp;= lambda x, *ar, **kw: False if len(ar) &lt; 1 or ar[0] is False or <del>kw.get('info',</del>True) == False else '' #XXX: better default ?</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>152</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._termination&nbsp; &nbsp; &nbsp;= lambda x, *ar, **kw: False if len(ar) &lt; 1 or ar[0] is False or <ins>(kw['info'] if 'info' in kw else </ins>True) == False else '' #XXX: better default ?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>153</th><th>153</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # (get termination details with self._termination.__doc__)</span> </td>
+                  </tr><tr>
+                          <th>154</th><th>154</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=791#L170">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=792#L170">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>170</th><th>170</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>171</th><th>171</th><td class="l"><span>&nbsp; &nbsp; def __energy_history(self):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>172</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """get the energy_history (default: energy_history = _stepmon.<del></del>y)"""</span> </td>
+                      </tr><tr>
+                        <th>173</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._energy_history is None: return self._stepmon.<del></del>y</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>172</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """get the energy_history (default: energy_history = _stepmon.<ins>_</ins>y)"""</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>173</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._energy_history is None: return self._stepmon.<ins>_</ins>y</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>174</th><th>174</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return self._energy_history</span> </td>
+                  </tr><tr>
+                          <th>175</th><th>175</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>176</th><th>176</th><td class="l"><span>&nbsp; &nbsp; def __set_energy_history(self, energy):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>177</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """set the energy_history (energy=None will sync with _stepmon.<del></del>y)"""</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>177</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """set the energy_history (energy=None will sync with _stepmon.<ins>_</ins>y)"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>178</th><th>178</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._energy_history = energy</span> </td>
+                  </tr><tr>
+                          <th>179</th><th>179</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=791#L280">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=792#L280">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>280</th><th>280</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                  </tr><tr>
+                          <th>281</th><th>281</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raise TypeError, "'%s' is not a monitor instance" % monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>282</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history&nbsp; &nbsp;= <del>self._stepmon.y</del></span> </td>
+                      </tr><tr>
+                        <th>283</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.solution_history = <del>self._stepmon.x</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>282</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history&nbsp; &nbsp;= <ins>None # sync with self._stepmon</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>283</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.solution_history = <ins>None # sync with self._stepmon</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>284</th><th>284</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>285</th><th>285</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=791#L506">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=792#L506">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>506</th><th>506</th><td class="l"><span>&nbsp; &nbsp; - generations = maximum number of solver iterations (i.e. steps)</span> </td>
+                  </tr><tr>
+                          <th>507</th><th>507</th><td class="l"><span>&nbsp; &nbsp; - evaluations = maximum number of function evaluations"""</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>508</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = generations</del> </td>
+                  </tr><tr class="last">
+                          <th>509</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = evaluations</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>510</th><th>508</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # backward compatibility</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>511</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('maxiter'):</span> </td>
+                      </tr><tr>
+                        <th>512</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = kwds['maxiter']</span> </td>
+                      </tr><tr>
+                        <th>513</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('maxfun'):</span> </td>
+                      </tr><tr>
+                        <th>514</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = kwds['maxfun']</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>509</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = kwds['maxiter'] if 'maxiter' in kwds else generations</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>510</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = kwds['maxfun'] if 'maxfun' in kwds else evaluations</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>515</th><th>511</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # handle if new (reset counter, instead of extend counter)</span> </td>
+                  </tr><tr>
+                          <th>516</th><th>512</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if new:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=791#L699">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=792#L695">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>699</th><th>695</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [settings.update({i:j}) for (i,j) in kwds.items() if i in settings]</span> </td>
+                  </tr><tr>
+                          <th>700</th><th>696</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # backward compatibility</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>701</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if <del>kwds.has_key('EvaluationMonitor')</del>: \</span> </td>
+                      </tr><tr>
+                        <th>702</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetEvaluationMonitor(kwds<del>.get('EvaluationMonitor')</del>)</span> </td>
+                      </tr><tr>
+                        <th>703</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if <del>kwds.has_key('StepMonitor')</del>: \</span> </td>
+                      </tr><tr>
+                        <th>704</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetGenerationMonitor(kwds<del>.get('StepMonitor')</del>)</span> </td>
+                      </tr><tr>
+                        <th>705</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if <del>kwds.has_key('penalty')</del>: \</span> </td>
+                      </tr><tr>
+                        <th>706</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetPenalty(kwds<del>.get('penalty')</del>)</span> </td>
+                      </tr><tr>
+                        <th>707</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if <del>kwds.has_key('constraints')</del>: \</span> </td>
+                      </tr><tr>
+                        <th>708</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetConstraints(kwds<del>.get('constraints')</del>)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>697</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if <ins>'EvaluationMonitor' in kwds</ins>: \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>698</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetEvaluationMonitor(kwds<ins>['EvaluationMonitor']</ins>)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>699</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if <ins>'StepMonitor' in kwds</ins>: \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>700</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetGenerationMonitor(kwds<ins>['StepMonitor']</ins>)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>701</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if <ins>'penalty' in kwds</ins>: \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>702</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetPenalty(kwds<ins>['penalty']</ins>)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>703</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if <ins>'constraints' in kwds</ins>: \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>704</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetConstraints(kwds<ins>['constraints']</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>709</th><th>705</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return settings</span> </td>
+                  </tr><tr>
+                          <th>710</th><th>706</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/792/mystic/mystic/abstract_solver.py?format=diff&amp;new=792" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/792/mystic/mystic/abstract_solver.py?format=zip&amp;new=792" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/792/mystic/mystic/abstract_solver.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:23 GMT -->
+</html>

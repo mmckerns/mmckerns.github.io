@@ -1,0 +1,145 @@
+Index: mystic-0.2a1/mystic/tools.py
+===================================================================
+--- mystic-0.2a1/mystic/tools.py	(revision 246)
++++ mystic-0.2a1/mystic/tools.py	(working copy)
+@@ -132,6 +132,8 @@
+         self._y = []   
+ 
+     def __call__(self, x, y):
++        from numpy import ndarray
++        if isinstance(x,ndarray): x = list(x)
+         self._x.append(x)
+         self._y.append(y)
+      
+@@ -153,14 +155,16 @@
+     """
+     import numpy
+     def __init__(self, interval = 10, xinterval = numpy.inf):
+-        Sow.__init__(self)
++       #Sow.__init__(self)
++        super(VerboseSow,self).__init__()
+         self._step = 0
+         self._yinterval = interval
+         self._xinterval = xinterval
+         return
+     def __call__(self, x, y):
+         from numpy import ndarray
+-        Sow.__call__(self, x, y)
++       #Sow.__call__(self, x, y)
++        super(VerboseSow,self).__call__(x, y)
+         if isinstance(y,(list,ndarray)):
+             y = y[0] #XXX: get the "best" fit... which should be in y[0]
+         if isinstance(x[0],(list,ndarray)): #XXX: x should always be iterable
+@@ -169,6 +173,7 @@
+            #print "Generation %d has best Chi-Squared: %s" % (self._step, y)
+             print "Generation %d has best Chi-Squared: %f" % (self._step, y)
+         if int(self._step % self._xinterval) == 0:
++            if isinstance(x,ndarray): x = list(x)
+             print "Generation %d has best fit parameters:\n %s" % (self._step, x)
+         self._step += 1
+         return
+@@ -182,7 +187,8 @@
+     import numpy
+     def __init__(self, interval=1, filename='log.txt', new=False):
+         import datetime
+-        Sow.__init__(self)
++       #Sow.__init__(self)
++        super(LoggingSow,self).__init__()
+         self._filename = filename
+         self._step = 0
+         self._yinterval = interval
+@@ -197,12 +203,14 @@
+     def __call__(self, x, y):
+         self._file = open(self._filename,'a')
+         from numpy import ndarray
+-        Sow.__call__(self, x, y)
++       #Sow.__call__(self, x, y)
++        super(LoggingSow,self).__call__(x, y)
+         if isinstance(y,(list,ndarray)):
+             y = y[0] #XXX: get the "best" fit... which should be in y[0]
+         if isinstance(x[0],(list,ndarray)): #XXX: x should always be iterable
+             x = x[0] #XXX: get the "best" fit... which should be in x[0]
+         if int(self._step % self._yinterval) == 0:
++            if isinstance(x,ndarray): x = list(x)
+             self._file.write(" %d   %f   %s\n" % (self._step, y, x))
+         self._step += 1
+         self._file.close()
+Index: mystic-0.2a1/mystic/differential_evolution.py
+===================================================================
+--- mystic-0.2a1/mystic/differential_evolution.py	(revision 246)
++++ mystic-0.2a1/mystic/differential_evolution.py	(working copy)
+@@ -215,11 +215,11 @@
+ Further Inputs:
+ 
+     strategy -- the mutation strategy for generating new trial
+-        solutions [default = Best1Exp]
++        solutions [default = Best1Bin]
+     CrossProbability -- the probability of cross-parameter mutations
+-        [default = 0.5]
++        [default = 0.9]
+     ScalingFactor -- multiplier for the impact of mutations on the
+-        trial solution [default = 0.7]
++        trial solution [default = 0.8]
+     callback -- an optional user-supplied function to call after each
+         iteration.  It is called as callback(xk), where xk is
+         the current parameter vector.  [default = None]
+@@ -227,10 +227,10 @@
+ 
+         """
+         #allow for inputs that don't conform to AbstractSolver interface
+-        from mystic.strategy import Best1Exp
+-        strategy=Best1Exp    #mutation strategy (see mystic.strategy)
+-        CrossProbability=0.5 #potential for parameter cross-mutation
+-        ScalingFactor=0.7    #multiplier for mutation impact
++        from mystic.strategy import Best1Bin
++        strategy=Best1Bin    #mutation strategy (see mystic.strategy)
++        CrossProbability=0.9 #potential for parameter cross-mutation
++        ScalingFactor=0.8    #multiplier for mutation impact
+         callback=None        #user-supplied function, called after each step
+         disp=0               #non-zero to print convergence messages
+         if kwds.has_key('strategy'): strategy = kwds['strategy']
+@@ -399,11 +399,11 @@
+ Further Inputs:
+ 
+     strategy -- the mutation strategy for generating new trial
+-        solutions [default = Best1Exp]
++        solutions [default = Best1Bin]
+     CrossProbability -- the probability of cross-parameter mutations
+-        [default = 0.5]
++        [default = 0.9]
+     ScalingFactor -- multiplier for the impact of mutations on the
+-        trial solution [default = 0.7]
++        trial solution [default = 0.8]
+     callback -- an optional user-supplied function to call after each
+         iteration.  It is called as callback(xk), where xk is
+         the current parameter vector.  [default = None]
+@@ -415,10 +415,10 @@
+     disp -- non-zero to print convergence messages.
+         """
+         #allow for inputs that don't conform to AbstractSolver interface
+-        from mystic.strategy import Best1Exp
+-        strategy=Best1Exp    #mutation strategy (see mystic.strategy)
+-        CrossProbability=0.5 #potential for parameter cross-mutation
+-        ScalingFactor=0.7    #multiplier for mutation impact
++        from mystic.strategy import Best1Bin
++        strategy=Best1Bin    #mutation strategy (see mystic.strategy)
++        CrossProbability=0.9 #potential for parameter cross-mutation
++        ScalingFactor=0.8    #multiplier for mutation impact
+         callback=None        #user-supplied function, called after each step
+         disp=0               #non-zero to print convergence messages
+         if kwds.has_key('strategy'): strategy = kwds['strategy']
+Index: mystic-0.2a1/examples/test_mogi.py
+===================================================================
+--- mystic-0.2a1/examples/test_mogi.py	(revision 246)
++++ mystic-0.2a1/examples/test_mogi.py	(working copy)
+@@ -114,8 +114,8 @@
+     #
+     desol, dstepmon = de_solve()
+     print "desol: ", desol
+-    print "dstepmon 10: ", dstepmon.x[50]
+-    print "dstepmon 20: ", dstepmon.x[100]
++    print "dstepmon 50: ", dstepmon.x[50]
++    print "dstepmon 100: ", dstepmon.x[100]
+     #
+     # this will try to use nelder_mean from a relatively "near by" point (very sensitive)
+     point = [1234., -500., 10., 0.001] # both cg and nm does fine

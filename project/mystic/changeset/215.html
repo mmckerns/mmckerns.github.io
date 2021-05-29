@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/215 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:26:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 215 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="214.html" title="Changeset 214" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/215?format=diff&amp;new=215" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/215?format=zip&amp;new=215" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="216.html" title="Changeset 216" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="214.html" title="Changeset 214">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="216.html" title="Changeset 216">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 215</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             03/28/10 19:24:19
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-03-28T19%3A24%3A19-07%3A00&amp;precision=second" title="2010-03-28T19:24:19-07:00 in Timeline">6 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+initial add of launchers for srun and moab<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=215">
+              pyina/pyina/launchers.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">7 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="215/pyina/pyina/launchers.html" title="Show the changeset 215 restricted to pyina/pyina/launchers.py">pyina/pyina/launchers.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 213">
+                    <a title="Show revision 213 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=213#L18">
+                      r213</a>
+                  </th>
+                  <th title="Revision 215">
+                    <a title="Show revision 215 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=215#L18">
+                      r215</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>18</th><th>18</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>19</th><th>19</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>20</th><th> </th><td class="l"><span>def tasks(nodes):</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp; &nbsp; """ compute # of tasks from node string of pattern = N[:TYPE][:ppn=P]</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>&nbsp; &nbsp; For example, tasks("3:core4:ppn=2") yields 6 """</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>20</th><td class="r"><span>def mpirun_tasks(nodes):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span>compute mpirun task_string from node string of pattern = N[:TYPE][:ppn=P]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span>For example, mpirun_tasks("3:core4:ppn=2") yields 6</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>24</th><td class="r"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>23</th><th>25</th><td class="l"><span>&nbsp; &nbsp; nodestr = str(nodes)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>26</th><td class="r"><ins>&nbsp; &nbsp; nodestr = nodestr.split(",")[0]&nbsp; # remove appended -l expressions</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>27</th><td class="l"><span>&nbsp; &nbsp; nodelst = nodestr.split(":")</span> </td>
+                  </tr><tr>
+                          <th>25</th><th>28</th><td class="l"><span>&nbsp; &nbsp; n = int(nodelst[0])</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=213#L33">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=215#L36">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>33</th><th>36</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>34</th><th>37</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>38</th><td class="r"><ins>def srun_tasks(nodes):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>39</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>40</th><td class="r"><ins>compute srun task_string from node string of pattern = N[:ppn=P][,partition=X]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>41</th><td class="r"><ins>For example, srun_tasks("3:ppn=2,partition=foo") yields '3 -N2'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>42</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>43</th><td class="r"><ins>&nbsp; &nbsp; nodestr = str(nodes)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>44</th><td class="r"><ins>&nbsp; &nbsp; nodestr = nodestr.split(",")[0]&nbsp; # remove appended -l expressions</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>45</th><td class="r"><ins>&nbsp; &nbsp; nodelst = nodestr.split(":")</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>46</th><td class="r"><ins>&nbsp; &nbsp; n = int(nodelst[0])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>47</th><td class="r"><ins>&nbsp; &nbsp; nodelst = nodestr.split("ppn=")</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>48</th><td class="r"><ins>&nbsp; &nbsp; if len(nodelst) &gt; 1:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>49</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ppn = nodelst[1]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>50</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ppn = int(ppn.split(":")[0])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>51</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tasks = "%s -N%s" % (n, ppn)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>52</th><td class="r"><ins>&nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>53</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; tasks = "%s" % n</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>54</th><td class="r"><ins>&nbsp; &nbsp; return tasks</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>55</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>56</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>57</th><td class="l"><span>def serial_launcher(kdict={}):</span> </td>
+                  </tr><tr>
+                          <th>36</th><th>58</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=213#L38">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=215#L60">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>38</th><th>60</th><td class="l"><span>syntax:&nbsp; (python) (file) (progargs)</span> </td>
+                  </tr><tr>
+                          <th>39</th><th>61</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>40</th><th> </th><td class="l"><span>NOTE: run non-python commands with: {'python':'', ...} </span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>62</th><td class="r"><span>NOTES:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>63</th><td class="r"><span>&nbsp;- run non-python commands with: {'python':'', ...} </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>41</th><th>64</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>42</th><th>65</th><td class="l"><span>&nbsp; &nbsp; mydict = defaults.copy()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=213#L51">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=215#L74">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>51</th><th>74</th><td class="l"><span>syntax:&nbsp; mpirun -np (nodes) (python) (file) (progargs)</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>75</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>53</th><th> </th><td class="l"><span>NOTE: run non-python commands with: {'python':'', ...} </span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>76</th><td class="r"><span>NOTES:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>77</th><td class="r"><span>&nbsp;- run non-python commands with: {'python':'', ...} </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>78</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>55</th><th>79</th><td class="l"><span>&nbsp; &nbsp; mydict = defaults.copy()</span> </td>
+                  </tr><tr>
+                          <th>56</th><th>80</th><td class="l"><span>&nbsp; &nbsp; mydict.update(kdict)</span> </td>
+                  </tr><tr>
+                          <th>57</th><th>81</th><td class="l"><span>&nbsp; &nbsp; str =&nbsp; """ mpirun -np %(nodes)s %(python)s %(file)s %(progargs)s""" % mydict</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>82</th><td class="r"><ins>&nbsp; &nbsp; return str</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>83</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>84</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>85</th><td class="r"><ins>def srun_launcher(kdict={}):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>86</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>87</th><td class="r"><ins>prepare launch for parallel execution using srun</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>88</th><td class="r"><ins>syntax:&nbsp; srun -n(nodes) (python) (file) (progargs)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>89</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>90</th><td class="r"><ins>NOTES:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>91</th><td class="r"><ins>&nbsp;- run non-python commands with: {'python':'', ...} </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>92</th><td class="r"><ins>&nbsp;- fine-grained resource utilization with: {'nodes':'4 -N1', ...}</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>93</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>94</th><td class="r"><ins>&nbsp; &nbsp; mydict = defaults.copy()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>95</th><td class="r"><ins>&nbsp; &nbsp; mydict.update(kdict)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>96</th><td class="r"><ins>&nbsp; &nbsp; str =&nbsp; """ srun -n%(nodes)s %(python)s %(file)s %(progargs)s""" % mydict</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>58</th><th>97</th><td class="l"><span>&nbsp; &nbsp; return str</span> </td>
+                  </tr><tr>
+                          <th>59</th><th>98</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=213#L64">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=215#L103">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>64</th><th>103</th><td class="l"><span>syntax:&nbsp; echo \"mpirun -np (nodes) (python) (file) (progargs)\" | qsub -l nodes=(nodes) -l walltime=(timelimit) -o (outfile) -e (errfile) -q (queue)</span> </td>
+                  </tr><tr>
+                          <th>65</th><th>104</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>66</th><th> </th><td class="l"><span>NOTE: run non-python commands with: {'python':'', ...} </span> </td>
+                      </tr><tr>
+                        <th>67</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>68</th><th> </th><td class="l"><span>&nbsp; &nbsp; mydict = defaults.copy()</span> </td>
+                      </tr><tr>
+                        <th>69</th><th> </th><td class="l"><span>&nbsp; &nbsp; mydict.update(kdict)</span> </td>
+                      </tr><tr>
+                        <th>70</th><th> </th><td class="l"><span>&nbsp; &nbsp; mydict['tasks'] = tasks(mydict['nodes'])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>105</th><td class="r"><span>NOTES:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>106</th><td class="r"><span>&nbsp;- run non-python commands with: {'python':'', ...} </span> </td>
+                      </tr><tr>
+                        <th> </th><th>107</th><td class="r"><span>&nbsp;- fine-grained resource utilization with: {'nodes':'4:nodetype:ppn=1', ...}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>108</th><td class="r"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>109</th><td class="r"><span>&nbsp; &nbsp; mydict = defaults.copy()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>110</th><td class="r"><span>&nbsp; &nbsp; mydict.update(kdict)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>111</th><td class="r"><span>&nbsp; &nbsp; mydict['tasks'] = mpirun_tasks(mydict['nodes'])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>71</th><th>112</th><td class="l"><span>&nbsp; &nbsp; str = """ echo \"mpirun -np %(tasks)s %(python)s %(file)s %(progargs)s\" | qsub -l nodes=%(nodes)s -l walltime=%(timelimit)s -o %(outfile)s -e %(errfile)s -q %(queue)s &amp;&gt; %(jobfile)s""" % mydict</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>113</th><td class="r"><ins>&nbsp; &nbsp; return str</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>114</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>115</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>116</th><td class="r"><ins>def moab_launcher(kdict={}):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>117</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>118</th><td class="r"><ins>prepare launch for moab submission using srun</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>119</th><td class="r"><ins>syntax:&nbsp; echo \"srun -n(nodes) (python) (file) (progargs)\" | qsub -l nodes=(nodes) -l walltime=(timelimit) -o (outfile) -e (errfile) -q (queue)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>120</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>121</th><td class="r"><ins>NOTES:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>122</th><td class="r"><ins>&nbsp;- run non-python commands with: {'python':'', ...} </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>123</th><td class="r"><ins>&nbsp;- fine-grained resource utilization with: {'nodes':'4:ppn=1,partition=xx', ...}</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>124</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>125</th><td class="r"><ins>&nbsp; &nbsp; mydict = defaults.copy()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>126</th><td class="r"><ins>&nbsp; &nbsp; mydict.update(kdict)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>127</th><td class="r"><ins>&nbsp; &nbsp; mydict['tasks'] = srun_tasks(mydict['nodes'])</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>128</th><td class="r"><ins>&nbsp; &nbsp; str = """ echo \"srun -n%(tasks)s %(python)s %(file)s %(progargs)s\" | msub -l nodes=%(nodes)s -l walltime=%(timelimit)s -o %(outfile)s -e %(errfile)s -q %(queue)s &amp;&gt; %(jobfile)s""" % mydict</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>72</th><th>129</th><td class="l"><span>&nbsp; &nbsp; return str</span> </td>
+                  </tr><tr>
+                          <th>73</th><th>130</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=213#L78">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=215#L135">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>78</th><th>135</th><td class="l"><span>syntax:&nbsp; bsub -K -W(timelimit) -n (nodes) -o (outfile) -a mpich_mx -q (queue) -J (progname) mpich_mx_wrapper (python) (file) (progargs)</span> </td>
+                  </tr><tr>
+                          <th>79</th><th>136</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>80</th><th> </th><td class="l"><span>NOTE: run non-python commands with: {'python':'', ...} </span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>137</th><td class="r"><span>NOTES:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>138</th><td class="r"><span>&nbsp;- run non-python commands with: {'python':'', ...} </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>81</th><th>139</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>82</th><th>140</th><td class="l"><span>&nbsp; &nbsp; mydict = defaults.copy()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=213#L92">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=215#L150">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>92</th><th>150</th><td class="l"><span>syntax:&nbsp; bsub -K -W(timelimit) -n (nodes) -o (outfile) -a mpich_gm -q (queue) -J (progname) gmmpirun_wrapper (python) (file) (progargs)</span> </td>
+                  </tr><tr>
+                          <th>93</th><th>151</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>94</th><th> </th><td class="l"><span>NOTE: run non-python commands with: {'python':'', ...} </span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>152</th><td class="r"><span>NOTES:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>153</th><td class="r"><span>&nbsp;- run non-python commands with: {'python':'', ...} </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>95</th><th>154</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>96</th><th>155</th><td class="l"><span>&nbsp; &nbsp; mydict = defaults.copy()</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/215?format=diff&amp;new=215" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/215?format=zip&amp;new=215" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/215 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:27:00 GMT -->
+</html>

@@ -1,0 +1,3182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/67 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:30:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 67 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="66.html" title="Changeset 66" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/67?format=diff&amp;new=67" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/67?format=zip&amp;new=67" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="68.html" title="Changeset 68" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="66.html" title="Changeset 66">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="68.html" title="Changeset 68">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 67</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             08/03/08 08:56:45
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2008-08-03T08%3A56%3A45-07%3A00&amp;precision=second" title="2008-08-03T08:56:45-07:00 in Timeline">8 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+more cleanup<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>44 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/ooe-tests/mogi/forward_mogi.py?rev=67">
+              branches/ooe-tests/mogi/forward_mogi.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/Make.mm?rev=67">
+              branches/pyina/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/applications/Make.mm?rev=67">
+              branches/pyina/applications/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/pyinamodule/Make.mm?rev=67">
+              branches/pyina/pyinamodule/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/pyinamodule/_pyina.cc?rev=67">
+              branches/pyina/pyinamodule/_pyina.cc
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/pyinamodule/local.def?rev=67">
+              branches/pyina/pyinamodule/local.def
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/Make.mm?rev=67">
+              branches/pyina/python/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/__init__.py?rev=67">
+              branches/pyina/python/__init__.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/const.py?rev=67">
+              branches/pyina/python/const.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file8">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/derun.py?rev=67">
+              branches/pyina/python/derun.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file9">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/example.py?rev=67">
+              branches/pyina/python/example.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file10">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/filters.py?rev=67">
+              branches/pyina/python/filters.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file11">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/forward_model.py?rev=67">
+              branches/pyina/python/forward_model.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file12">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/forward_mogi.py?rev=67">
+              branches/pyina/python/forward_mogi.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file13">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/helputil.py?rev=67">
+              branches/pyina/python/helputil.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file14">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/launchers.py?rev=67">
+              branches/pyina/python/launchers.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file15">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/mpiconsts.py?rev=67">
+              branches/pyina/python/mpiconsts.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file16">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/nelder_mead.py?rev=67">
+              branches/pyina/python/nelder_mead.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file17">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/parallel_map.py?rev=67">
+              branches/pyina/python/parallel_map.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file18">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/parallel_map2.py?rev=67">
+              branches/pyina/python/parallel_map2.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file19">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/polytools.py?rev=67">
+              branches/pyina/python/polytools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file20">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/tools.py?rev=67">
+              branches/pyina/python/tools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file21">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/tests/Make.mm?rev=67">
+              branches/pyina/tests/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file22">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/tests/hello.py?rev=67">
+              branches/pyina/tests/hello.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file23">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/tests/test_parallelmap.py?rev=67">
+              branches/pyina/tests/test_parallelmap.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file24">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/Make.mm?rev=67">
+              python/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file25">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/README?rev=67">
+              python/README
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file26">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/__init__.py?rev=67">
+              python/__init__.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file27">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/const.py?rev=67">
+              python/const.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file28">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/derun.py?rev=67">
+              python/derun.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file29">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/example.py?rev=67">
+              python/example.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file30">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/example_getCost.py?rev=67">
+              python/example_getCost.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file31">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/filters.py?rev=67">
+              python/filters.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file32">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/forward_model.py?rev=67">
+              python/forward_model.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file33">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/forward_mogi.py?rev=67">
+              python/forward_mogi.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file34">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/helputil.py?rev=67">
+              python/helputil.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file35">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/metropolis.py?rev=67">
+              python/metropolis.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file36">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=67">
+              python/nelder_mead.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file37">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/polytools.py?rev=67">
+              python/polytools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file38">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/svctools.py?rev=67">
+              python/svctools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file39">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/svmtools.py?rev=67">
+              python/svmtools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file40">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/tools.py?rev=67">
+              python/tools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file41">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/README?rev=67">
+              tests/README
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file42">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/forward_mogi.py?rev=67">
+              tests/forward_mogi.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file43">2 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="67/branches/ooe-tests/mogi/forward_mogi.html" title="Show the changeset 67 restricted to branches/ooe-tests/mogi/forward_mogi.py">branches/ooe-tests/mogi/forward_mogi.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/ooe-tests/mogi/forward_mogi.py?rev=62#L3">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/ooe-tests/mogi/forward_mogi.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<del>6</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<ins>8</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/ooe-tests/mogi/forward_mogi.py?rev=62#L35">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/ooe-tests/mogi/forward_mogi.py?rev=67#L35">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>35</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>36</th><th>36</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>37</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>38</th><th> </th><td class="l"><del>__id__ = "$Id: forward_mogi.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>39</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>40</th><th>37</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="67/branches/pyina/Make.html" title="Show the changeset 67 restricted to branches/pyina/Make.mm">branches/pyina/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/Make.mm?rev=62#L1">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/Make.mm?rev=67#L1">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span># -*- Makefile -*-</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>2</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr>
+                          <th>3</th><th> </th><td class="l"><del># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</del> </td>
+                  </tr><tr>
+                          <th>4</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr>
+                          <th>5</th><th> </th><td class="l"><del>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Michael A.G. Aivazis</del> </td>
+                  </tr><tr>
+                          <th>6</th><th> </th><td class="l"><del>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; California Institute of Technology</del> </td>
+                  </tr><tr>
+                          <th>7</th><th> </th><td class="l"><del>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-2005&nbsp; All Rights Reserved</del> </td>
+                  </tr><tr>
+                          <th>8</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr>
+                          <th>9</th><th> </th><td class="l"><del># &lt;LicenseText&gt;</del> </td>
+                  </tr><tr>
+                          <th>10</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr class="last">
+                          <th>11</th><th> </th><td class="l"><del># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>2</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>13</th><th>3</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="67/branches/pyina/applications/Make.html" title="Show the changeset 67 restricted to branches/pyina/applications/Make.mm">branches/pyina/applications/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/applications/Make.mm?rev=62#L1">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/applications/Make.mm?rev=67#L1">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span># -*- Makefile -*-</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>3</th><th> </th><td class="l"><del># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</del> </td>
+                  </tr><tr>
+                          <th>4</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr>
+                          <th>5</th><th> </th><td class="l"><del>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Michael A.G. Aivazis</del> </td>
+                  </tr><tr>
+                          <th>6</th><th> </th><td class="l"><del>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; California Institute of Technology</del> </td>
+                  </tr><tr>
+                          <th>7</th><th> </th><td class="l"><del>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-2005 All Rights Reserved</del> </td>
+                  </tr><tr>
+                          <th>8</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr>
+                          <th>9</th><th> </th><td class="l"><del># &lt;LicenseText&gt;</del> </td>
+                  </tr><tr>
+                          <th>10</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr class="last">
+                          <th>11</th><th> </th><td class="l"><del># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>3</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>13</th><th>4</th><td class="l"><span>PROJECT = pyre</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="67/branches/pyina/pyinamodule/Make.html" title="Show the changeset 67 restricted to branches/pyina/pyinamodule/Make.mm">branches/pyina/pyinamodule/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/pyinamodule/Make.mm?rev=62#L1">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/pyinamodule/Make.mm?rev=67#L1">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="rem">
+                  <tr class="first">
+                          <th>1</th><th> </th><td class="l"><del># Patrick Hung</del> </td>
+                  </tr><tr>
+                          <th>2</th><th> </th><td class="l"><del># Calif. Inst. of Tech.</del> </td>
+                  </tr><tr class="last">
+                          <th>3</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>1</th><td class="l"><span>PROJECT = pyina</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>2</th><td class="l"><span>PACKAGE = _pyina</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/pyinamodule/Make.mm?rev=62#L14">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/pyinamodule/Make.mm?rev=67#L11">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>14</th><th>11</th><td class="l"><span>&nbsp; &nbsp; dummy.cc</span> </td>
+                  </tr><tr>
+                          <th>15</th><th>12</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>16</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>17</th><th> </th><td class="l"><del># $Id: Make.mm,v 1.2 2006/08/01 22:48:32 patrickh Exp $</del> </td>
+                  </tr><tr class="last">
+                          <th>18</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>19</th><th>13</th><td class="l"><span># End of file</span> </td>
+                  </tr><tr>
+                          <th>20</th><th>14</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="67/branches/pyina/pyinamodule/_pyina.html" title="Show the changeset 67 restricted to branches/pyina/pyinamodule/_pyina.cc">branches/pyina/pyinamodule/_pyina.cc</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/pyinamodule/_pyina.cc?rev=62#L1">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/pyinamodule/_pyina.cc?rev=67#L1">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="mod">
+                      <tr class="first">
+                        <th>1</th><th> </th><td class="l"><span>// Patrick Hung<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>1</th><td class="r"><span>// Patrick Hung<ins>&nbsp;&amp; Mike McKerns</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>2</th><td class="l"><span>// California Inst. of Tech.</span> </td>
+                  </tr><tr>
+                          <th>3</th><th>3</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="67/branches/pyina/pyinamodule/local.html" title="Show the changeset 67 restricted to branches/pyina/pyinamodule/local.def">branches/pyina/pyinamodule/local.def</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/pyinamodule/local.def?rev=62#L17">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/pyinamodule/local.def?rev=67#L17">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>17</th><th>17</th><td class="l"><span>endif</span> </td>
+                  </tr><tr>
+                          <th>18</th><th>18</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>19</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>20</th><th> </th><td class="l"><del># $Id: local.def,v 1.4 2008/05/20 22:59:46 patrickh Exp $</del> </td>
+                  </tr><tr class="last">
+                          <th>21</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>19</th><td class="l"><span># End of file</span> </td>
+                  </tr><tr>
+                          <th>23</th><th>20</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="67/branches/pyina/python/Make.html" title="Show the changeset 67 restricted to branches/pyina/python/Make.mm">branches/pyina/python/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 66">
+                    <a title="Show revision 66 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/Make.mm?rev=66#L1">
+                      r66</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/Make.mm?rev=67#L1">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span># -*- Makefile -*-</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>2</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr>
+                          <th>3</th><th> </th><td class="l"><del># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</del> </td>
+                  </tr><tr>
+                          <th>4</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr>
+                          <th>5</th><th> </th><td class="l"><del>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Michael A.G. Aivazis</del> </td>
+                  </tr><tr>
+                          <th>6</th><th> </th><td class="l"><del>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; California Institute of Technology</del> </td>
+                  </tr><tr>
+                          <th>7</th><th> </th><td class="l"><del>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-2003 All Rights Reserved</del> </td>
+                  </tr><tr>
+                          <th>8</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr>
+                          <th>9</th><th> </th><td class="l"><del># &lt;LicenseText&gt;</del> </td>
+                  </tr><tr>
+                          <th>10</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr class="last">
+                          <th>11</th><th> </th><td class="l"><del># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>2</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>13</th><th>3</th><td class="l"><span>PROJECT = pyina</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/Make.mm?rev=66#L65">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/Make.mm?rev=67#L55">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>65</th><th>55</th><td class="l"><span>#export:: export-package-python-modules</span> </td>
+                  </tr><tr>
+                          <th>66</th><th>56</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>67</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>68</th><th> </th><td class="l"><del># $Id: Make.mm,v 1.6 2008/05/20 22:59:46 patrickh Exp $</del> </td>
+                  </tr><tr class="last">
+                          <th>69</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>70</th><th>57</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="67/branches/pyina/python/__init__.html" title="Show the changeset 67 restricted to branches/pyina/python/__init__.py">branches/pyina/python/__init__.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/__init__.py?rev=62#L3">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/__init__.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1997-200<del>6</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1997-200<ins>8</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/__init__.py?rev=62#L11">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/__init__.py?rev=67#L11">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>11</th><th>11</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>12</th><th>12</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>13</th><th> </th><td class="l"><span><del>The Caltech Geophysics</del> Inversion Framework.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>13</th><td class="r"><span><ins>A Simple Model-Independent</ins> Inversion Framework.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>14</th><th>14</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>15</th><th>15</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>16</th><th>16</th><td class="l"><span>from mpiconsts import mpi</span> </td>
+                  </tr><tr>
+                          <th>17</th><th>17</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>18</th><th> </th><td class="l"><del>#import differential_evolution, detools, yang</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>19</th><th>18</th><td class="l"><span>import differential_evolution, detools</span> </td>
+                  </tr><tr>
+                          <th>20</th><th>19</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file8">
+          <a href="67/branches/pyina/python/const.html" title="Show the changeset 67 restricted to branches/pyina/python/const.py">branches/pyina/python/const.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/const.py?rev=62#L3">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/const.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<del>8-2006</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<ins>7-2008</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/const.py?rev=62#L34">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/const.py?rev=67#L34">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>34</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>35</th><th>35</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>36</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>37</th><th> </th><td class="l"><del>__id__ = "$Id: const.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>38</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>36</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file9">
+          <a href="67/branches/pyina/python/derun.html" title="Show the changeset 67 restricted to branches/pyina/python/derun.py">branches/pyina/python/derun.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/derun.py?rev=62#L3">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/derun.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<del>8-2006</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<ins>7-2008</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/derun.py?rev=62#L115">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/derun.py?rev=67#L115">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>115</th><th>115</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>116</th><th>116</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>117</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>118</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>119</th><th> </th><td class="l"><del>__id__ = "$Id: derun.py,v 1.3 2006/08/08 07:43:21 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>120</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>121</th><th>117</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file10">
+          <a href="67/branches/pyina/python/example.html" title="Show the changeset 67 restricted to branches/pyina/python/example.py">branches/pyina/python/example.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/example.py?rev=62#L3">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/example.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<del>8-2006</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<ins>7-2008</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/example.py?rev=62#L51">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/example.py?rev=67#L51">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>51</th><th>51</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>52</th><th>52</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>53</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>54</th><th> </th><td class="l"><del>__id__ = "$Id: example.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>55</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>53</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file11">
+          <a href="67/branches/pyina/python/filters.html" title="Show the changeset 67 restricted to branches/pyina/python/filters.py">branches/pyina/python/filters.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/filters.py?rev=62#L3">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/filters.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<del>8-2006</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<ins>7-2008</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/filters.py?rev=62#L21">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/filters.py?rev=67#L21">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>21</th><th>21</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>22</th><th>22</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>23</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>24</th><th> </th><td class="l"><del>__id__ = "$Id: filters.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>25</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>26</th><th>23</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file12">
+          <a href="67/branches/pyina/python/forward_model.html" title="Show the changeset 67 restricted to branches/pyina/python/forward_model.py">branches/pyina/python/forward_model.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/forward_model.py?rev=62#L3">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/forward_model.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<del>8-2006</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<ins>7-2008</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/forward_model.py?rev=62#L155">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/forward_model.py?rev=67#L155">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>155</th><th>155</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>156</th><th>156</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>157</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>158</th><th> </th><td class="l"><del>__id__ = "$Id: forward_model.py,v 1.3 2007/03/09 21:39:33 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>159</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>160</th><th>157</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file13">
+          <a href="67/branches/pyina/python/forward_mogi.html" title="Show the changeset 67 restricted to branches/pyina/python/forward_mogi.py">branches/pyina/python/forward_mogi.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/forward_mogi.py?rev=62#L3">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/forward_mogi.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<del>8-2006</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<ins>7-2008</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/forward_mogi.py?rev=62#L35">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/forward_mogi.py?rev=67#L35">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>35</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>36</th><th>36</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>37</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>38</th><th> </th><td class="l"><del>__id__ = "$Id: forward_mogi.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>39</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>40</th><th>37</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file14">
+          <a href="67/branches/pyina/python/helputil.html" title="Show the changeset 67 restricted to branches/pyina/python/helputil.py">branches/pyina/python/helputil.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/helputil.py?rev=62#L3">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/helputil.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<del>8-2006</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<ins>7-2008</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/helputil.py?rev=62#L56">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/helputil.py?rev=67#L56">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>56</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>57</th><th>57</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>58</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>59</th><th> </th><td class="l"><del>__id__ = "$Id: helputil.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>60</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>58</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file15">
+          <a href="67/branches/pyina/python/launchers.html" title="Show the changeset 67 restricted to branches/pyina/python/launchers.py">branches/pyina/python/launchers.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/launchers.py?rev=62#L3">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/launchers.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<del>8-2006</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<ins>7-2008</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/launchers.py?rev=62#L91">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/launchers.py?rev=67#L91">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>91</th><th>91</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>92</th><th>92</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>93</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>94</th><th> </th><td class="l"><del>__id__ = "$Id: launchers.py,v 1.3 2007/07/27 09:04:26 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>95</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>96</th><th>93</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file16">
+          <a href="67/branches/pyina/python/mpiconsts.html" title="Show the changeset 67 restricted to branches/pyina/python/mpiconsts.py">branches/pyina/python/mpiconsts.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/mpiconsts.py?rev=62#L3">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/mpiconsts.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<del>8-2006</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<ins>7-2008</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/mpiconsts.py?rev=62#L29">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/mpiconsts.py?rev=67#L29">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>29</th><td class="l"><span>sys.modules[__name__].__dict__.__delitem__('v')</span> </td>
+                  </tr><tr>
+                          <th>30</th><th>30</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>31</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>32</th><th> </th><td class="l"><del>__id__ = "$Id: mpiconsts.py,v 1.2 2008/05/20 22:59:46 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>33</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>31</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file17">
+          <a href="67/branches/pyina/python/nelder_mead.html" title="Show the changeset 67 restricted to branches/pyina/python/nelder_mead.py">branches/pyina/python/nelder_mead.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/nelder_mead.py?rev=62#L230">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/nelder_mead.py?rev=67#L230">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>230</th><th>230</th><td class="l"><span>&nbsp; &nbsp; main()</span> </td>
+                  </tr><tr>
+                          <th>231</th><th>231</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>232</th><th> </th><td class="l"><span>#</span> </td>
+                      </tr><tr>
+                        <th>233</th><th> </th><td class="l"><span># $Id: nelder_mead.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $</span> </td>
+                      </tr><tr>
+                        <th>234</th><th> </th><td class="l"><span>#</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>232</th><td class="r"><span></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>235</th><th>233</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file18">
+          <a href="67/branches/pyina/python/parallel_map.html" title="Show the changeset 67 restricted to branches/pyina/python/parallel_map.py">branches/pyina/python/parallel_map.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/parallel_map.py?rev=62#L122">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/parallel_map.py?rev=67#L122">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>122</th><th>122</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>123</th><th>123</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>124</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>125</th><th> </th><td class="l"><del>__id__ = "$Id: parallel_map.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>126</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>127</th><th>124</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file19">
+          <a href="67/branches/pyina/python/parallel_map2.html" title="Show the changeset 67 restricted to branches/pyina/python/parallel_map2.py">branches/pyina/python/parallel_map2.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/parallel_map2.py?rev=62#L136">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/parallel_map2.py?rev=67#L136">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>136</th><th>136</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>137</th><th>137</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>138</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>139</th><th> </th><td class="l"><del>__id__ = "$Id: parallel_map2.py,v 1.3 2007/03/09 21:39:33 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>140</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>141</th><th>138</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file20">
+          <a href="67/branches/pyina/python/polytools.html" title="Show the changeset 67 restricted to branches/pyina/python/polytools.py">branches/pyina/python/polytools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/polytools.py?rev=62#L3">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/polytools.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<del>8-2006</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<ins>7-2008</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/polytools.py?rev=62#L49">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/polytools.py?rev=67#L49">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>49</th><th>49</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>50</th><th>50</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>51</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>52</th><th> </th><td class="l"><del>__id__ = "$Id: polytools.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>53</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>51</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file21">
+          <a href="67/branches/pyina/python/tools.html" title="Show the changeset 67 restricted to branches/pyina/python/tools.py">branches/pyina/python/tools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/tools.py?rev=62#L3">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/tools.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<del>8-2006</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 199<ins>7-2008</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/tools.py?rev=62#L167">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/python/tools.py?rev=67#L167">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>167</th><th>167</th><td class="l"><span>&nbsp; &nbsp; doctest.testmod(verbose=True)</span> </td>
+                  </tr><tr>
+                          <th>168</th><th>168</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>169</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>170</th><th> </th><td class="l"><del>__id__ = "$Id: tools.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>171</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>172</th><th>169</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file22">
+          <a href="67/branches/pyina/tests/Make.html" title="Show the changeset 67 restricted to branches/pyina/tests/Make.mm">branches/pyina/tests/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/tests/Make.mm?rev=62#L1">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/tests/Make.mm?rev=67#L1">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span># -*- Makefile -*-</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>2</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr>
+                          <th>3</th><th> </th><td class="l"><del># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</del> </td>
+                  </tr><tr>
+                          <th>4</th><th> </th><td class="l"><del># Patrick Hung</del> </td>
+                  </tr><tr>
+                          <th>5</th><th> </th><td class="l"><del># Caltech, </del> </td>
+                  </tr><tr>
+                          <th>6</th><th> </th><td class="l"><del># (C) 1997-2006 All Rights Reserved</del> </td>
+                  </tr><tr>
+                          <th>7</th><th> </th><td class="l"><del># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</del> </td>
+                  </tr><tr class="last">
+                          <th>8</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>9</th><th>2</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>10</th><th>3</th><td class="l"><span>PROJECT = pyina</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/tests/Make.mm?rev=62#L55">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/tests/Make.mm?rev=67#L48">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>55</th><th>48</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>56</th><th>49</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>57</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>58</th><th> </th><td class="l"><del># $Id: Make.mm,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $</del> </td>
+                  </tr><tr class="last">
+                          <th>59</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>60</th><th>50</th><td class="l"><span># End of file</span> </td>
+                  </tr><tr>
+                          <th>61</th><th>51</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file23">
+          <a href="67/branches/pyina/tests/hello.html" title="Show the changeset 67 restricted to branches/pyina/tests/hello.py">branches/pyina/tests/hello.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/tests/hello.py?rev=62#L47">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/tests/hello.py?rev=67#L47">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>47</th><th>47</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>48</th><th>48</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>49</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>50</th><th> </th><td class="l"><del>__id__ = "$Id: hello.py,v 1.3 2008/05/20 22:59:46 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>51</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>49</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file24">
+          <a href="67/branches/pyina/tests/test_parallelmap.html" title="Show the changeset 67 restricted to branches/pyina/tests/test_parallelmap.py">branches/pyina/tests/test_parallelmap.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/tests/test_parallelmap.py?rev=62#L61">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pyina/tests/test_parallelmap.py?rev=67#L61">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>61</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>62</th><th>62</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>63</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>64</th><th> </th><td class="l"><del>__id__ = "$Id: test_parallelmap.py,v 1.2 2006/10/11 18:03:28 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>65</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>66</th><th>63</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file25">
+          <a href="67/python/Make.html" title="Show the changeset 67 restricted to python/Make.mm">python/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 48">
+                    <a title="Show revision 48 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/Make.mm?rev=48#L1">
+                      r48</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/Make.mm?rev=67#L1">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span># -*- Makefile -*-</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>2</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr>
+                          <th>3</th><th> </th><td class="l"><del># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</del> </td>
+                  </tr><tr>
+                          <th>4</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr>
+                          <th>5</th><th> </th><td class="l"><del>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Michael A.G. Aivazis</del> </td>
+                  </tr><tr>
+                          <th>6</th><th> </th><td class="l"><del>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; California Institute of Technology</del> </td>
+                  </tr><tr>
+                          <th>7</th><th> </th><td class="l"><del>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-2003 All Rights Reserved</del> </td>
+                  </tr><tr>
+                          <th>8</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr>
+                          <th>9</th><th> </th><td class="l"><del># &lt;LicenseText&gt;</del> </td>
+                  </tr><tr>
+                          <th>10</th><th> </th><td class="l"><del>#</del> </td>
+                  </tr><tr class="last">
+                          <th>11</th><th> </th><td class="l"><del># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>2</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>13</th><th>3</th><td class="l"><span>PROJECT = mystic</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/Make.mm?rev=48#L59">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/Make.mm?rev=67#L49">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>59</th><th>49</th><td class="l"><span>export:: export-python-modules</span> </td>
+                  </tr><tr>
+                          <th>60</th><th>50</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>61</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>62</th><th> </th><td class="l"><del># $Id: Make.mm,v 1.3 2006/10/11 18:20:47 patrickh Exp $</del> </td>
+                  </tr><tr class="last">
+                          <th>63</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>64</th><th>51</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file26">
+          <a href="67/python/README.html" title="Show the changeset 67 restricted to python/README">python/README</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 2">
+                    <a title="Show revision 2 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/README?rev=2#L1">
+                      r2</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/README?rev=67#L1">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="mod">
+                      <tr class="first">
+                        <th>1</th><th> </th><td class="l"><span>A subset of the code from my "pyina" project for geophysics.</span> </td>
+                      </tr><tr>
+                        <th>2</th><th> </th><td class="l"><span>This is my implementation of the Storn and Price differential evolution solver in python</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>1</th><td class="r"><span>This package contains the beginnings of a simple model-independent</span> </td>
+                      </tr><tr>
+                        <th> </th><th>2</th><td class="r"><span>inversion framework. The core optimizer is an implementation of the</span> </td>
+                      </tr><tr>
+                        <th> </th><th>3</th><td class="r"><span>Storn and Price differential evolution solver in python.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>4</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>5</th><td class="r"><span>The parallel framework implementation is being developed in branches/pyina.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>6</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>4</th><th>7</th><td class="l"><span># end of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file27">
+          <a href="67/python/__init__.html" title="Show the changeset 67 restricted to python/__init__.py">python/__init__.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 2">
+                    <a title="Show revision 2 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/__init__.py?rev=2#L3">
+                      r2</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/__init__.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1997-200<del>6</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1997-200<ins>8</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file28">
+          <a href="67/python/const.html" title="Show the changeset 67 restricted to python/const.py">python/const.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 2">
+                    <a title="Show revision 2 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/const.py?rev=2#L3">
+                      r2</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/const.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<del>6</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<ins>8</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/const.py?rev=2#L34">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/const.py?rev=67#L34">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>34</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>35</th><th>35</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>36</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>37</th><th> </th><td class="l"><del>__id__ = "$Id: const.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>38</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>36</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file29">
+          <a href="67/python/derun.html" title="Show the changeset 67 restricted to python/derun.py">python/derun.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 65">
+                    <a title="Show revision 65 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/derun.py?rev=65#L3">
+                      r65</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/derun.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<del>6</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<ins>8</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/derun.py?rev=65#L124">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/derun.py?rev=67#L124">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>124</th><th>124</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>125</th><th>125</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>126</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>127</th><th> </th><td class="l"><del>__id__ = "$Id: derun.py,v 1.3 2006/08/08 07:43:21 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>128</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>129</th><th>126</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file30">
+          <a href="67/python/example.html" title="Show the changeset 67 restricted to python/example.py">python/example.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 2">
+                    <a title="Show revision 2 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/example.py?rev=2#L3">
+                      r2</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/example.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<del>6</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<ins>8</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/example.py?rev=2#L51">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/example.py?rev=67#L51">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>51</th><th>51</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>52</th><th>52</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>53</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>54</th><th> </th><td class="l"><del>__id__ = "$Id: example.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>55</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>53</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file31">
+          <a href="67/python/example_getCost.html" title="Show the changeset 67 restricted to python/example_getCost.py">python/example_getCost.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 65">
+                    <a title="Show revision 65 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/example_getCost.py?rev=65#L88">
+                      r65</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/example_getCost.py?rev=67#L88">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>88</th><th>88</th><td class="l"><span>&nbsp; &nbsp; getch()</span> </td>
+                  </tr><tr>
+                          <th>89</th><th>89</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>90</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>91</th><th> </th><td class="l"><del>__id__ = "$Id: example.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>92</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>93</th><th>90</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file32">
+          <a href="67/python/filters.html" title="Show the changeset 67 restricted to python/filters.py">python/filters.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 2">
+                    <a title="Show revision 2 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/filters.py?rev=2#L3">
+                      r2</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/filters.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<del>6</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<ins>8</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/filters.py?rev=2#L21">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/filters.py?rev=67#L21">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>21</th><th>21</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>22</th><th>22</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>23</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>24</th><th> </th><td class="l"><del>__id__ = "$Id: filters.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>25</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>26</th><th>23</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file33">
+          <a href="67/python/forward_model.html" title="Show the changeset 67 restricted to python/forward_model.py">python/forward_model.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 40">
+                    <a title="Show revision 40 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/forward_model.py?rev=40#L3">
+                      r40</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/forward_model.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<del>6</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<ins>8</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/forward_model.py?rev=40#L153">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/forward_model.py?rev=67#L153">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>153</th><th>153</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>154</th><th>154</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>155</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>156</th><th> </th><td class="l"><del>__id__ = "$Id: forward_model.py,v 1.2 2006/10/11 18:20:47 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>157</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>158</th><th>155</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file34">
+          <a href="67/python/forward_mogi.html" title="Show the changeset 67 restricted to python/forward_mogi.py">python/forward_mogi.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 65">
+                    <a title="Show revision 65 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/forward_mogi.py?rev=65#L3">
+                      r65</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/forward_mogi.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<del>6</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<ins>8</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/forward_mogi.py?rev=65#L35">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/forward_mogi.py?rev=67#L35">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>35</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>36</th><th>36</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>37</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>38</th><th> </th><td class="l"><del>__id__ = "$Id: forward_mogi.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>39</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>40</th><th>37</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file35">
+          <a href="67/python/helputil.html" title="Show the changeset 67 restricted to python/helputil.py">python/helputil.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 2">
+                    <a title="Show revision 2 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/helputil.py?rev=2#L3">
+                      r2</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/helputil.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<del>6</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<ins>8</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/helputil.py?rev=2#L56">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/helputil.py?rev=67#L56">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>56</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>57</th><th>57</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>58</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>59</th><th> </th><td class="l"><del>__id__ = "$Id: helputil.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>60</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>58</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file36">
+          <a href="67/python/metropolis.html" title="Show the changeset 67 restricted to python/metropolis.py">python/metropolis.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 44">
+                    <a title="Show revision 44 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/metropolis.py?rev=44#L47">
+                      r44</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/metropolis.py?rev=67#L47">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>47</th><th>47</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>48</th><th>48</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>49</th><th> </th><td class="l"><del># $Id$</del> </td>
+                  </tr><tr class="last">
+                          <th>50</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>51</th><th>49</th><td class="l"><span># end of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file37">
+          <a href="67/python/nelder_mead.html" title="Show the changeset 67 restricted to python/nelder_mead.py">python/nelder_mead.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 2">
+                    <a title="Show revision 2 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=2#L230">
+                      r2</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/nelder_mead.py?rev=67#L230">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>230</th><th>230</th><td class="l"><span>&nbsp; &nbsp; main()</span> </td>
+                  </tr><tr>
+                          <th>231</th><th>231</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>232</th><th> </th><td class="l"><span>#</span> </td>
+                      </tr><tr>
+                        <th>233</th><th> </th><td class="l"><span># $Id: nelder_mead.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $</span> </td>
+                      </tr><tr>
+                        <th>234</th><th> </th><td class="l"><span>#</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>232</th><td class="r"><span></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>235</th><th>233</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file38">
+          <a href="67/python/polytools.html" title="Show the changeset 67 restricted to python/polytools.py">python/polytools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 2">
+                    <a title="Show revision 2 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/polytools.py?rev=2#L3">
+                      r2</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/polytools.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<del>6</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<ins>8</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/polytools.py?rev=2#L49">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/polytools.py?rev=67#L49">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>49</th><th>49</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>50</th><th>50</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>51</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>52</th><th> </th><td class="l"><del>__id__ = "$Id: polytools.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>53</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>51</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file39">
+          <a href="67/python/svctools.html" title="Show the changeset 67 restricted to python/svctools.py">python/svctools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 36">
+                    <a title="Show revision 36 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/svctools.py?rev=36#L42">
+                      r36</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/svctools.py?rev=67#L42">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>42</th><td class="l"><span>&nbsp; &nbsp; return -0.5 * (sum(alpha*y*k1) + sum(alpha*y*k2))</span> </td>
+                  </tr><tr>
+                          <th>43</th><th>43</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>44</th><th> </th><td class="l"><del># $Id$</del> </td>
+                  </tr><tr class="last">
+                          <th>45</th><th> </th><td class="l"><del># </del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>44</th><td class="l"><span># end of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file40">
+          <a href="67/python/svmtools.html" title="Show the changeset 67 restricted to python/svmtools.py">python/svmtools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 28">
+                    <a title="Show revision 28 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/svmtools.py?rev=28#L53">
+                      r28</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/svmtools.py?rev=67#L53">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>53</th><td class="l"><span>&nbsp; &nbsp; return f</span> </td>
+                  </tr><tr>
+                          <th>54</th><th>54</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>55</th><th> </th><td class="l"><del># $Id$</del> </td>
+                  </tr><tr class="last">
+                          <th>56</th><th> </th><td class="l"><del># </del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>57</th><th>55</th><td class="l"><span># end of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file41">
+          <a href="67/python/tools.html" title="Show the changeset 67 restricted to python/tools.py">python/tools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 41">
+                    <a title="Show revision 41 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/tools.py?rev=41#L3">
+                      r41</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/tools.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<del>6</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<ins>8</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/tools.py?rev=41#L190">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/tools.py?rev=67#L190">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>190</th><th>190</th><td class="l"><span>&nbsp; &nbsp; doctest.testmod(verbose=True)</span> </td>
+                  </tr><tr>
+                          <th>191</th><th>191</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>192</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>193</th><th> </th><td class="l"><del>__id__ = "$Id: tools.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>194</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>195</th><th>192</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file42">
+          <a href="67/tests/README.html" title="Show the changeset 67 restricted to tests/README">tests/README</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 62">
+                    <a title="Show revision 62 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/README?rev=62#L1">
+                      r62</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/README?rev=67#L1">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>Note.</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span># These tests are <del>inherited from the package "pyina"</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>3</th><td class="r"><span># These tests are <ins>duplicated in the "pyina" branch...</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span># pyina has the parallel version of the DE solver, as well as pyre mpi patches</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># for doing parallel maps.<del>&nbsp;These are removed to make this package standalone</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># for doing parallel maps.<ins></ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file43">
+          <a href="67/tests/forward_mogi.html" title="Show the changeset 67 restricted to tests/forward_mogi.py">tests/forward_mogi.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 5">
+                    <a title="Show revision 5 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/forward_mogi.py?rev=5#L3">
+                      r5</a>
+                  </th>
+                  <th title="Revision 67">
+                    <a title="Show revision 67 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/tests/forward_mogi.py?rev=67#L3">
+                      r67</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp; &nbsp; Patrick Hung</del>, Caltech</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<del>6</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>Patrick Hung &amp; Mike McKerns</ins>, Caltech</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-200<ins>8</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/tests/forward_mogi.py?rev=5#L35">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/tests/forward_mogi.py?rev=67#L35">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>35</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>36</th><th>36</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>37</th><th> </th><td class="l"><del># version</del> </td>
+                  </tr><tr>
+                          <th>38</th><th> </th><td class="l"><del>__id__ = "$Id: forward_mogi.py,v 1.1.1.1 2006/08/01 20:47:15 patrickh Exp $"</del> </td>
+                  </tr><tr class="last">
+                          <th>39</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>40</th><th>37</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/67?format=diff&amp;new=67" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/67?format=zip&amp;new=67" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/67 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:30:48 GMT -->
+</html>

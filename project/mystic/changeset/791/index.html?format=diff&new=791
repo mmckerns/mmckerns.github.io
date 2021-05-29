@@ -1,0 +1,2258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/791/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:26:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 791 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="prev" href="../790.html" title="Changeset 790" />
+        <link rel="last" href="../862.html" title="Changeset 862" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/791/?format=diff&amp;new=791" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/791/?format=zip&amp;new=791" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../792.html" title="Changeset 792" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="../1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+        <link rel="icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://trac.mystic.cacr.caltech.edu/"><img src="http://www.cacr.caltech.edu/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://trac.mystic.cacr.caltech.edu/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../790.html" title="Changeset 790">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="../792.html" title="Changeset 792">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 791</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             06/10/15 09:03:56
+             (<a class="timeline" href="http://trac.mystic.cacr.caltech.edu/project/mystic/timeline?from=2015-06-10T09%3A03%3A56-07%3A00&amp;precision=second" title="2015-06-10T09:03:56-07:00 in Timeline">11 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+use len(stepmon) more uniformly; fix _fcalls for DESolvers;<br />
+generations counted from stepmon, except in Powell where is overridden;<br />
+fix energy_history and solution_history for ensemble solvers;<br />
+add _kdiv, itertype, multiply, divide, and "related" methods to tools;<br />
+enable tools.listify to handle more robust types;<br />
+enable monitor to store values that are scaled with respect to called values;<br />
+add ay, iy, ax, ix, _k, _ik madness to deal with speed in k-scaling<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic?rev=791">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>13 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/_math/measures.py?rev=791">
+              _math/measures.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/example08.py?rev=791">
+              examples/example08.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/example09.py?rev=791">
+              examples/example09.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/example10.py?rev=791">
+              examples/example10.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/example11.py?rev=791">
+              examples/example11.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=791">
+              mystic/abstract_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=791">
+              mystic/differential_evolution.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=791">
+              mystic/ensemble.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">6 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791">
+              mystic/monitors.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file8">16 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/munge.py?rev=791">
+              mystic/munge.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file9">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=791">
+              mystic/scipy_optimize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file10">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=791">
+              mystic/tools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file11">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_solver_sanity.py?rev=791">
+              tests/test_solver_sanity.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file12">2 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="mystic/_math/measures.html" title="Show the changeset 791 restricted to mystic/_math/measures.py">mystic/_math/measures.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 789">
+                    <a title="Show revision 789 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/_math/measures.py?rev=789#L362">
+                      r789</a>
+                  </th>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/_math/measures.py?rev=791#L362">
+                      r791</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>362</th><th>362</th><td class="l"><span>&nbsp; &nbsp; solved = solver.Solution()</span> </td>
+                  </tr><tr>
+                          <th>363</th><th>363</th><td class="l"><span>&nbsp; &nbsp; diameter_squared = solver.bestEnergy</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>364</th><th> </th><td class="l"><span>&nbsp; &nbsp; func_evals = len(evalmon<del>.y</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>364</th><td class="r"><span>&nbsp; &nbsp; func_evals = len(evalmon<ins></ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>365</th><th>365</th><td class="l"><span>&nbsp; &nbsp; return solved, diameter_squared, func_evals</span> </td>
+                  </tr><tr>
+                          <th>366</th><th>366</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="mystic/examples/example08.html" title="Show the changeset 791 restricted to mystic/examples/example08.py">mystic/examples/example08.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/example08.py?rev=776#L91">
+                      r776</a>
+                  </th>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/example08.py?rev=791#L91">
+                      r791</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>91</th><th>91</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>92</th><th>92</th><td class="l"><span>&nbsp; &nbsp; # use monitor to retrieve results information</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>93</th><th> </th><td class="l"><span>&nbsp; &nbsp; iterations = len(stepmon<del>.x</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>93</th><td class="r"><span>&nbsp; &nbsp; iterations = len(stepmon<ins></ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>94</th><th>94</th><td class="l"><span>&nbsp; &nbsp; cost = stepmon.y[-1]</span> </td>
+                  </tr><tr>
+                          <th>95</th><th>95</th><td class="l"><span>&nbsp; &nbsp; print "Generation %d has best Chi-Squared: %f" % (iterations, cost)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="mystic/examples/example09.html" title="Show the changeset 791 restricted to mystic/examples/example09.py">mystic/examples/example09.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/example09.py?rev=776#L98">
+                      r776</a>
+                  </th>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/example09.py?rev=791#L98">
+                      r791</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>98</th><th>98</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>99</th><th>99</th><td class="l"><span>&nbsp; &nbsp; # use monitor to retrieve results information</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>100</th><th> </th><td class="l"><span>&nbsp; &nbsp; iterations = len(stepmon<del>.x</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>100</th><td class="r"><span>&nbsp; &nbsp; iterations = len(stepmon<ins></ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>101</th><th>101</th><td class="l"><span>&nbsp; &nbsp; cost = stepmon.y[-1]</span> </td>
+                  </tr><tr>
+                          <th>102</th><th>102</th><td class="l"><span>&nbsp; &nbsp; print "Generation %d has best Chi-Squared: %f" % (iterations, cost)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="mystic/examples/example10.html" title="Show the changeset 791 restricted to mystic/examples/example10.py">mystic/examples/example10.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/example10.py?rev=776#L47">
+                      r776</a>
+                  </th>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/example10.py?rev=791#L47">
+                      r791</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>47</th><th>47</th><td class="l"><span># plot the polynomial trajectories</span> </td>
+                  </tr><tr>
+                          <th>48</th><th>48</th><td class="l"><span>def plot_params(monitor):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>49</th><th> </th><td class="l"><span>&nbsp; &nbsp; x = range(len(monitor.y))</span> </td>
+                      </tr><tr>
+                        <th>50</th><th> </th><td class="l"><span>&nbsp; &nbsp; pylab.plot(x,monitor.y,'b-')</span> </td>
+                      </tr><tr>
+                        <th>51</th><th> </th><td class="l"><span>&nbsp; &nbsp; pylab.axis([1,0.5*x[-1],0,monitor.y[1]],'k-')</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>49</th><td class="r"><span>&nbsp; &nbsp; x = range(len(monitor))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>50</th><td class="r"><span>&nbsp; &nbsp; y = monitor.y</span> </td>
+                      </tr><tr>
+                        <th> </th><th>51</th><td class="r"><span>&nbsp; &nbsp; pylab.plot(x,y,'b-')</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>52</th><td class="r"><span>&nbsp; &nbsp; pylab.axis([1,0.5*x[-1],0,y[1]],'k-')</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>53</th><td class="l"><span>&nbsp; &nbsp; pylab.draw()</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>54</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="mystic/examples/example11.html" title="Show the changeset 791 restricted to mystic/examples/example11.py">mystic/examples/example11.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/example11.py?rev=776#L46">
+                      r776</a>
+                  </th>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples/example11.py?rev=791#L46">
+                      r791</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>46</th><td class="l"><span># plot the polynomial trajectories</span> </td>
+                  </tr><tr>
+                          <th>47</th><th>47</th><td class="l"><span>def plot_params(monitor):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>48</th><th> </th><td class="l"><span>&nbsp; &nbsp; x = range(len(monitor<del>.y</del>))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>48</th><td class="r"><span>&nbsp; &nbsp; x = range(len(monitor<ins></ins>))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>49</th><th>49</th><td class="l"><span>&nbsp; &nbsp; y = monitor.y</span> </td>
+                  </tr><tr>
+                          <th>50</th><th>50</th><td class="l"><span>&nbsp; &nbsp; pylab.plot(x,y,'b-')</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="mystic/mystic/abstract_solver.html" title="Show the changeset 791 restricted to mystic/mystic/abstract_solver.py">mystic/mystic/abstract_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 787">
+                    <a title="Show revision 787 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=787#L167">
+                      r787</a>
+                  </th>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=791#L167">
+                      r791</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>167</th><th>167</th><td class="l"><span>&nbsp; &nbsp; def __generations(self):</span> </td>
+                  </tr><tr>
+                          <th>168</th><th>168</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """get the number of iterations"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>169</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return max(0,len(self.energy_history)-1)</span> </td>
+                      </tr><tr>
+                        <th>170</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#return max(0,len(self._stepmon)-1)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>169</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return max(0,len(self._stepmon)-1)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>171</th><th>170</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>172</th><th>171</th><td class="l"><span>&nbsp; &nbsp; def __energy_history(self):</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="mystic/mystic/differential_evolution.html" title="Show the changeset 791 restricted to mystic/mystic/differential_evolution.py">mystic/mystic/differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 787">
+                    <a title="Show revision 787 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=787#L374">
+                      r787</a>
+                  </th>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=791#L374">
+                      r791</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>374</th><th>374</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; raw = cost</span> </td>
+                  </tr><tr>
+                          <th>375</th><th>375</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if ExtraArgs is None: ExtraArgs = ()</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>376</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp;#FIXME: EvaluationMonitor fails for MPI, throws error for 'pp'</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>377</th><th>376</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from python_map import python_map</span> </td>
+                  </tr><tr>
+                          <th>378</th><th>377</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._map != python_map:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>379</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._fcalls = [0] #FIXME: temporary patch for removing the following line</span> </td>
+                      </tr><tr>
+                        <th>380</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th>381</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._fcalls, cost = wrap_function(cost, ExtraArgs, self._evalmon)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>378</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass #FIXME: EvaluationMonitor fails for MPI, throws error for 'pp'</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>379</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: fcalls, cost = wrap_function(cost, ExtraArgs, self._evalmon)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>382</th><th>380</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._useStrictRange:</span> </td>
+                  </tr><tr>
+                          <th>383</th><th>381</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in range(self.nPop):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=787#L428">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=791#L426">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>428</th><th>426</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # calculate cost</span> </td>
+                  </tr><tr>
+                          <th>429</th><th>427</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialEnergy = self._map(cost, self.trialSolution, **self._mapconfig)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>428</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._fcalls[0] += len(self.trialSolution) #FIXME: manually increment</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>430</th><th>429</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>431</th><th>430</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # each trialEnergy should be a scalar</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="mystic/mystic/ensemble.html" title="Show the changeset 791 restricted to mystic/mystic/ensemble.py">mystic/mystic/ensemble.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 790">
+                    <a title="Show revision 790 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=790#L93">
+                      r790</a>
+                  </th>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=791#L93">
+                      r791</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>93</th><th>93</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>94</th><th>94</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>95</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp;#FIXME: EvaluationMonitor fails for MPI, throws error for 'pp'</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>96</th><th>95</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from python_map import python_map</span> </td>
+                  </tr><tr>
+                          <th>97</th><th>96</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._map != python_map:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>98</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._fcalls = [0] #FIXME: temporary patch for removing the following line</span> </td>
+                      </tr><tr>
+                        <th>99</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th>100</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._fcalls, cost = wrap_function(cost, ExtraArgs, self._evalmon)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>97</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass #FIXME: EvaluationMonitor fails for MPI, throws error for 'pp'</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>98</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: fcalls, cost = wrap_function(cost, ExtraArgs, self._evalmon)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>101</th><th>99</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>102</th><th>100</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # set up signal handler</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=790#L210">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=791#L208">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>210</th><th>208</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon = bestpath #XXX: pointer? copy?</span> </td>
+                  </tr><tr>
+                          <th>211</th><th>209</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._evalmon = besteval #XXX: pointer? copy?</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>210</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history = None</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>211</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solution_history = None</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>212</th><th>212</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#from mystic.tools import isNull</span> </td>
+                  </tr><tr>
+                          <th>213</th><th>213</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#if isNull(bestpath):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=790#L287">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=791#L287">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>287</th><th>287</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>288</th><th>288</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>289</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp;#FIXME: EvaluationMonitor fails for MPI, throws error for 'pp'</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>290</th><th>289</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from python_map import python_map</span> </td>
+                  </tr><tr>
+                          <th>291</th><th>290</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._map != python_map:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>292</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._fcalls = [0] #FIXME: temporary patch for removing the following line</span> </td>
+                      </tr><tr>
+                        <th>293</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th>294</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._fcalls, cost = wrap_function(cost, ExtraArgs, self._evalmon)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>291</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass #FIXME: EvaluationMonitor fails for MPI, throws error for 'pp'</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>292</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: fcalls, cost = wrap_function(cost, ExtraArgs, self._evalmon)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>295</th><th>293</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>296</th><th>294</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # set up signal handler</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=790#L397">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=791#L395">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>397</th><th>395</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon = bestpath #XXX: pointer? copy?</span> </td>
+                  </tr><tr>
+                          <th>398</th><th>396</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._evalmon = besteval #XXX: pointer? copy?</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>397</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history = None</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>398</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.solution_history = None</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>399</th><th>399</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#from mystic.tools import isNull</span> </td>
+                  </tr><tr>
+                          <th>400</th><th>400</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#if isNull(bestpath):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=790#L532">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=791#L532">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>532</th><th>532</th><td class="l"><span>&nbsp; &nbsp; fcalls = solver.evaluations</span> </td>
+                  </tr><tr>
+                          <th>533</th><th>533</th><td class="l"><span>&nbsp; &nbsp; all_fcalls = solver._total_evals</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>534</th><th> </th><td class="l"><span>&nbsp; &nbsp; iterations = <del>max(0,len(solver._stepmon.y)-1) #FIXME: </del>solver.generations</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>534</th><td class="r"><span>&nbsp; &nbsp; iterations = <ins></ins>solver.generations</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>535</th><th>535</th><td class="l"><span>&nbsp; &nbsp; allvecs = solver._stepmon.x</span> </td>
+                  </tr><tr>
+                          <th>536</th><th>536</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=790#L663">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=791#L663">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>663</th><th>663</th><td class="l"><span>&nbsp; &nbsp; fcalls = solver.evaluations</span> </td>
+                  </tr><tr>
+                          <th>664</th><th>664</th><td class="l"><span>&nbsp; &nbsp; all_fcalls = solver._total_evals</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>665</th><th> </th><td class="l"><span>&nbsp; &nbsp; iterations = <del>max(0,len(solver._stepmon.y)-1) #FIXME: </del>solver.generations</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>665</th><td class="r"><span>&nbsp; &nbsp; iterations = <ins></ins>solver.generations</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>666</th><th>666</th><td class="l"><span>&nbsp; &nbsp; allvecs = solver._stepmon.x</span> </td>
+                  </tr><tr>
+                          <th>667</th><th>667</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file8">
+          <a href="mystic/mystic/monitors.html" title="Show the changeset 791 restricted to mystic/mystic/monitors.py">mystic/mystic/monitors.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L65">
+                      r776</a>
+                  </th>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L65">
+                      r791</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>65</th><th>65</th><td class="l"><span>import numpy</span> </td>
+                  </tr><tr>
+                          <th>66</th><th>66</th><td class="l"><span>from mystic.tools import list_or_tuple_or_ndarray</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>67</th><th> </th><td class="l"><span>from mystic.tools import listify<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>67</th><td class="r"><span>from mystic.tools import listify<ins>, multiply, divide, _kdiv</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>68</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>69</th><th>69</th><td class="l"><span>class Null(object):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L91">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L91">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>91</th><th>91</th><td class="l"><span># comply with monitor interface</span> </td>
+                  </tr><tr>
+                          <th>92</th><th>92</th><td class="l"><span>Null.info = Null()</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>93</th><td class="r"><ins>Null.k = None</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>93</th><th>94</th><td class="l"><span>#XXX: should also have Null.x, Null.y ?</span> </td>
+                  </tr><tr>
+                          <th>94</th><th>95</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L117">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L118">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>117</th><th>118</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._info = []</span> </td>
+                  </tr><tr>
+                          <th>118</th><th>119</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#self._all = all</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>120</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.k = kwds.pop('k', None)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>119</th><th>121</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>120</th><th>122</th><td class="l"><span>&nbsp; &nbsp; def __len__(self):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L126">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L128">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>126</th><th>128</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>127</th><th>129</th><td class="l"><span>&nbsp; &nbsp; def __call__(self, x, y, id=None, **kwds):#, best=0):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>128</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._x.append(listify(x)) #XXX: <del>better to save as-is</del>?</span> </td>
+                      </tr><tr>
+                        <th>129</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._y.append(listify(<del>y)) #XXX: better to save as-is</del>?</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>130</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._x.append(listify(x)) #XXX: <ins>listify</ins>?</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>131</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._y.append(listify(<ins>self._k(y, iter))) #XXX: listify</ins>?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>130</th><th>132</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._id.append(id)</span> </td>
+                  </tr><tr>
+                          <th>131</th><th>133</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#if not self._all and list_or_tuple_or_ndarray(x):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L138">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L140">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>138</th><th>140</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if isinstance(monitor, Monitor): # is Monitor()</span> </td>
+                  </tr><tr>
+                          <th>139</th><th>141</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>140</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif (monitor == Null) or isinstance(monitor, Null): # <del>is </del>Null or Null()</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>142</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif (monitor == Null) or isinstance(monitor, Null): # <ins></ins>Null or Null()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>141</th><th>143</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; monitor = Monitor()</span> </td>
+                  </tr><tr>
+                          <th>142</th><th>144</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif hasattr(monitor, '__module__') and \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>143</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; monitor.__module__ in ['mystic._genSow']: # <del>is </del>CustomMonitor()</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>145</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; monitor.__module__ in ['mystic._genSow']: # <ins></ins>CustomMonitor()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>144</th><th>146</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass #XXX: CustomMonitor may fail...</span> </td>
+                  </tr><tr>
+                          <th>145</th><th>147</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                  </tr><tr>
+                          <th>146</th><th>148</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raise TypeError, "'%s' is not a monitor instance" % monitor</span> </td>
+                  </tr><tr>
+                          <th>147</th><th>149</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._x.extend(monitor._x)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>148</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._y.extend(monitor._y)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>150</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._y.extend(self._get_y(monitor))&nbsp; &nbsp; &nbsp; # scalar, up to 2x faster</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>151</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;#self._y.extend(self._k(monitor.iy, iter)) # vector, results like numpy</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>149</th><th>152</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._id.extend(monitor._id)</span> </td>
+                  </tr><tr>
+                          <th>150</th><th>153</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._info.extend(monitor._info)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L154">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L157">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>154</th><th>157</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if isinstance(monitor, Monitor): # is Monitor()</span> </td>
+                  </tr><tr>
+                          <th>155</th><th>158</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>156</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif (monitor == Null) or isinstance(monitor, Null): # <del>is </del>Null or Null()</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>159</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif (monitor == Null) or isinstance(monitor, Null): # <ins></ins>Null or Null()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>157</th><th>160</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; monitor = Monitor()</span> </td>
+                  </tr><tr>
+                          <th>158</th><th>161</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif hasattr(monitor, '__module__') and \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>159</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; monitor.__module__ in ['mystic._genSow']: # <del>is </del>CustomMonitor()</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>162</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; monitor.__module__ in ['mystic._genSow']: # <ins></ins>CustomMonitor()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>160</th><th>163</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass #XXX: CustomMonitor may fail...</span> </td>
+                  </tr><tr>
+                          <th>161</th><th>164</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                  </tr><tr>
+                          <th>162</th><th>165</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raise TypeError, "'%s' is not a monitor instance" % monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>163</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [self._x.insert(i,j) for (i,j) in list(enumerate(monitor._x))]</span> </td>
+                      </tr><tr>
+                        <th>164</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [self._y.insert(i,j) for (i,j) in list(enumerate(monitor._y))]</span> </td>
+                      </tr><tr>
+                        <th>165</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [self._id.insert(i,j) for (i,j) in list(enumerate(monitor._id))]</span> </td>
+                      </tr><tr>
+                        <th>166</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [self._info.insert(i,j) for (i,j) in list(enumerate(monitor._info))]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>166</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; [self._x.insert(*i) for i in enumerate(monitor._x)]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>167</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; [self._y.insert(*i) for i in enumerate(self._get_y(monitor))]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>168</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;#[self._y.insert(*i) for i in enumerate(self._k(monitor.iy, iter))]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>169</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; [self._id.insert(*i) for i in enumerate(monitor._id)]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>170</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; [self._info.insert(*i) for i in enumerate(monitor._info)]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>167</th><th>171</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #XXX: may be faster ways of doing the above...</span> </td>
+                  </tr><tr>
+                          <th>168</th><th>172</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #&nbsp; &nbsp; &nbsp;(e.g. deepcopy(monitor) allows enumerate w/o list())</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L171">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L175">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>171</th><th>175</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return self._x</span> </td>
+                  </tr><tr>
+                          <th>172</th><th>176</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>173</th><th> </th><td class="l"><del>&nbsp; &nbsp; def get_y(self):</del> </td>
+                  </tr><tr>
+                          <th>174</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; return self._y</del> </td>
+                  </tr><tr class="last">
+                          <th>175</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>176</th><th>177</th><td class="l"><span>&nbsp; &nbsp; def get_id(self):</span> </td>
+                  </tr><tr>
+                          <th>177</th><th>178</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return self._id</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L182">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L183">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>182</th><th>183</th><td class="l"><span>&nbsp; &nbsp; def __step(self):</span> </td>
+                  </tr><tr>
+                          <th>183</th><th>184</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return len(self.x)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>185</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>186</th><td class="r"><ins>&nbsp; &nbsp; #BELOW: madness due to monitor k-conversion</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>187</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>188</th><td class="r"><ins>&nbsp; &nbsp; def get_y(self): # can be slow if k not in (1, None)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>189</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return divide(self._y, self.k, list)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>190</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #XXX: better if everywhere y = _y, as opposed to y = _ik(_y) ?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>191</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #&nbsp; &nbsp; &nbsp;better if k only applied to 'output' of __call__ ?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>192</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #&nbsp; &nbsp; &nbsp;better if k ionly applied on 'exit' from solver ?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>193</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>194</th><td class="r"><ins>&nbsp; &nbsp; def _get_y(self, monitor):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>195</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; "avoid double-conversion by combining k's"</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>196</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; _ik = _kdiv(monitor.k, self.k, float) #XXX: always a float?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>197</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return divide(monitor._y, _ik, iter)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>198</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>199</th><td class="r"><ins>&nbsp; &nbsp; def get_ix(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>200</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return divide(self._y, 1, iter)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>201</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>202</th><td class="r"><ins>&nbsp; &nbsp; def get_ax(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>203</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return divide(self._y, 1, numpy.array)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>204</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>205</th><td class="r"><ins>&nbsp; &nbsp; def get_iy(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>206</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return divide(self._y, self.k, iter)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>207</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>208</th><td class="r"><ins>&nbsp; &nbsp; def get_ay(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>209</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return divide(self._y, self.k, numpy.array)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>210</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>211</th><td class="r"><ins>&nbsp; &nbsp; def _k(self, y, type=list):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>212</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return multiply(y, self.k, type)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>213</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>214</th><td class="r"><ins>&nbsp; &nbsp; def _ik(self, y, k=False, type=list):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>215</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if k: return y # k's already applied, so don't un-apply it</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>216</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return divide(y, self.k, type)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>217</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>184</th><th>218</th><td class="l"><span>&nbsp; &nbsp; _step = property(__step)</span> </td>
+                  </tr><tr>
+                          <th>185</th><th>219</th><td class="l"><span>&nbsp; &nbsp; x = property(get_x, doc = "Params")</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>220</th><td class="r"><ins>&nbsp; &nbsp; ix = property(get_ix, doc = "Params")</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>221</th><td class="r"><ins>&nbsp; &nbsp; ax = property(get_ax, doc = "Params")</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>186</th><th>222</th><td class="l"><span>&nbsp; &nbsp; y = property(get_y, doc = "Costs")</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>223</th><td class="r"><ins>&nbsp; &nbsp; iy = property(get_iy, doc = "Costs")</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>224</th><td class="r"><ins>&nbsp; &nbsp; ay = property(get_ay, doc = "Costs")</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>187</th><th>225</th><td class="l"><span>&nbsp; &nbsp; id = property(get_id, doc = "Id")</span> </td>
+                  </tr><tr>
+                          <th>188</th><th>226</th><td class="l"><span>&nbsp; &nbsp; pass</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L194">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L232">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>194</th><th>232</th><td class="l"><span>current parameters every 'xinterval'.</span> </td>
+                  </tr><tr>
+                          <th>195</th><th>233</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>196</th><th> </th><td class="l"><span>&nbsp; &nbsp; def __init__(self, interval<del>&nbsp;= 10, xinterval = numpy.inf, all=True</del>):</span> </td>
+                      </tr><tr>
+                        <th>197</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(VerboseMonitor,self).__init__(<del></del>)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>234</th><td class="r"><span>&nbsp; &nbsp; def __init__(self, interval<ins>=10, xinterval=numpy.inf, all=True, **kwds</ins>):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>235</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(VerboseMonitor,self).__init__(<ins>**kwds</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>198</th><th>236</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not interval or interval is numpy.nan: interval = numpy.inf</span> </td>
+                  </tr><tr>
+                          <th>199</th><th>237</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not xinterval or xinterval is numpy.nan: xinterval = numpy.inf</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L206">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L244">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>206</th><th>244</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; print "%s" % "".join(["",str(message)])</span> </td>
+                  </tr><tr>
+                          <th>207</th><th>245</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>208</th><th> </th><td class="l"><span>&nbsp; &nbsp; def __call__(self, x, y, id=None, best=0<del></del>):</span> </td>
+                      </tr><tr>
+                        <th>209</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(VerboseMonitor,self).__call__(x, y, id<del></del>)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>246</th><td class="r"><span>&nbsp; &nbsp; def __call__(self, x, y, id=None, best=0<ins>, k=False</ins>):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>247</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(VerboseMonitor,self).__call__(x, y, id<ins>, k=k</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>210</th><th>248</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._yinterval is not numpy.inf and \</span> </td>
+                  </tr><tr>
+                          <th>211</th><th>249</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int((self._step-1) % self._yinterval) == 0:</span> </td>
+                  </tr><tr>
+                          <th>212</th><th>250</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not list_or_tuple_or_ndarray(y):</span> </td>
+                  </tr><tr>
+                          <th>213</th><th>251</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>214</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %f" % self._<del>y[-1]</del></span> </td>
+                      </tr><tr>
+                        <th>215</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif self._all:<del></del></span> </td>
+                      </tr><tr>
+                        <th>216</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ''<del></del></span> </td>
+                      </tr><tr>
+                        <th>217</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %s" % self._<del>y[-1]</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>252</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %f" % self._<ins>ik(self._y[-1], k)</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>253</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif self._all:<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>254</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ''<ins></ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>255</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %s" % self._<ins>ik(self._y[-1], k)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>218</th><th>256</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                  </tr><tr>
+                          <th>219</th><th>257</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ' best'</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>220</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %f" % self._<del>y[-1][best]</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>258</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %f" % self._<ins>ik(self._y[-1][best], k)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>221</th><th>259</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = "Generation %d has%s Chi-Squared:%s" % (self._step-1,who,y)</span> </td>
+                  </tr><tr>
+                          <th>222</th><th>260</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if id is not None: msg = "[id: %d] " % (id) + msg</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L244">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L282">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>244</th><th>282</th><td class="l"><span>Logs ChiSq and parameters to a file every 'interval'</span> </td>
+                  </tr><tr>
+                          <th>245</th><th>283</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>246</th><th> </th><td class="l"><span>&nbsp; &nbsp; def __init__(self, interval=1, filename='log.txt', new=False, all=True, info=None<del></del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>284</th><td class="r"><span>&nbsp; &nbsp; def __init__(self, interval=1, filename='log.txt', new=False, all=True, info=None<ins>, **kwds</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>247</th><th>285</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import datetime</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>248</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(LoggingMonitor,self).__init__(<del></del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>286</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(LoggingMonitor,self).__init__(<ins>**kwds</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>249</th><th>287</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._filename = filename</span> </td>
+                  </tr><tr>
+                          <th>250</th><th>288</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not interval or interval is numpy.nan: interval = numpy.inf</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L266">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L304">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>266</th><th>304</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._file.close()</span> </td>
+                  </tr><tr>
+                          <th>267</th><th>305</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>268</th><th> </th><td class="l"><span>&nbsp; &nbsp; def __call__(self, x, y, id=None, best=0<del></del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>306</th><td class="r"><span>&nbsp; &nbsp; def __call__(self, x, y, id=None, best=0<ins>, k=False</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>269</th><th>307</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._file = open(self._filename,'a')</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>270</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(LoggingMonitor,self).__call__(x, y, id<del></del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>308</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(LoggingMonitor,self).__call__(x, y, id<ins>, k=k</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>271</th><th>309</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._yinterval is not numpy.inf and \</span> </td>
+                  </tr><tr>
+                          <th>272</th><th>310</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int((self._step-1) % self._yinterval) == 0:</span> </td>
+                  </tr><tr>
+                          <th>273</th><th>311</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not list_or_tuple_or_ndarray(y):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>274</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = "%f" % self._<del>y[-1]</del></span> </td>
+                      </tr><tr>
+                        <th>275</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif self._all:<del></del></span> </td>
+                      </tr><tr>
+                        <th>276</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = "%s" % self._<del>y[-1]</del></span> </td>
+                      </tr><tr>
+                        <th>277</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:<del></del></span> </td>
+                      </tr><tr>
+                        <th>278</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = "%f" % self._<del>y[-1][best]</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>312</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = "%f" % self._<ins>ik(self._y[-1], k)</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>313</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif self._all:<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>314</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = "%s" % self._<ins>ik(self._y[-1], k)</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>315</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:<ins></ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>316</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = "%f" % self._<ins>ik(self._y[-1][best], k)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>279</th><th>317</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not list_or_tuple_or_ndarray(x):</span> </td>
+                  </tr><tr>
+                          <th>280</th><th>318</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x = "[%f]" % self._x[-1]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L299">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L337">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>299</th><th>337</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; interval = self._yinterval&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>300</th><th>338</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; filename = self._filename</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>301</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; new=False</span> </td>
+                      </tr><tr>
+                        <th>302</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; all=self._all</span> </td>
+                      </tr><tr>
+                        <th>303</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; info=None</span> </td>
+                      </tr><tr>
+                        <th>304</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return (self.__class__, (interval, filename, new, all, info))</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>339</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; new = False</span> </td>
+                      </tr><tr>
+                        <th> </th><th>340</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; all = self._all</span> </td>
+                      </tr><tr>
+                        <th> </th><th>341</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; info = None</span> </td>
+                      </tr><tr>
+                        <th> </th><th>342</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; args = (interval, filename, new, all, info)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>343</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; k = self.k</span> </td>
+                      </tr><tr>
+                        <th> </th><th>344</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; state = dict(_x=self._x,_y=self._y,_id=self._id,_info=self._info,k=k)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>345</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return (self.__class__, args, state)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>346</th><td class="r"><span>&nbsp; &nbsp; def __setstate__(self, state):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>347</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.__dict__.update(state)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>348</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>305</th><th>349</th><td class="l"><span>&nbsp; &nbsp; pass</span> </td>
+                  </tr><tr>
+                          <th>306</th><th>350</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L310">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L354">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>310</th><th>354</th><td class="l"><span>Logs ChiSq and parameters to a file every 'interval', print every 'yinterval'</span> </td>
+                  </tr><tr>
+                          <th>311</th><th>355</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>312</th><th> </th><td class="l"><span>&nbsp; &nbsp; def __init__(self, interval=1, yinterval=10, xinterval=numpy.inf, filename='log.txt', new=False, all=True, info=None<del></del>):</span> </td>
+                      </tr><tr>
+                        <th>313</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(VerboseLoggingMonitor,self).__init__(interval,filename,new,all,info<del></del>)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>356</th><td class="r"><span>&nbsp; &nbsp; def __init__(self, interval=1, yinterval=10, xinterval=numpy.inf, filename='log.txt', new=False, all=True, info=None<ins>, **kwds</ins>):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>357</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(VerboseLoggingMonitor,self).__init__(interval,filename,new,all,info<ins>,**kwds</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>314</th><th>358</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not yinterval or yinterval is numpy.nan: yinterval = numpy.inf</span> </td>
+                  </tr><tr>
+                          <th>315</th><th>359</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not xinterval or xinterval is numpy.nan: xinterval = numpy.inf</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L321">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L365">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>321</th><th>365</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; print "%s" % "".join(["",str(message)])</span> </td>
+                  </tr><tr>
+                          <th>322</th><th>366</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>323</th><th> </th><td class="l"><span>&nbsp; &nbsp; def __call__(self, x, y, id=None, best=0<del></del>):</span> </td>
+                      </tr><tr>
+                        <th>324</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(VerboseLoggingMonitor,self).__call__(x, y, id, best<del></del>)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>367</th><td class="r"><span>&nbsp; &nbsp; def __call__(self, x, y, id=None, best=0<ins>, k=False</ins>):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>368</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(VerboseLoggingMonitor,self).__call__(x, y, id, best<ins>, k=k</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>325</th><th>369</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._vyinterval is not numpy.inf and \</span> </td>
+                  </tr><tr>
+                          <th>326</th><th>370</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int((self._step-1) % self._vyinterval) == 0:</span> </td>
+                  </tr><tr>
+                          <th>327</th><th>371</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not list_or_tuple_or_ndarray(y):</span> </td>
+                  </tr><tr>
+                          <th>328</th><th>372</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>329</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %f" % self._<del>y[-1]</del></span> </td>
+                      </tr><tr>
+                        <th>330</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif self._all:<del></del></span> </td>
+                      </tr><tr>
+                        <th>331</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ''<del></del></span> </td>
+                      </tr><tr>
+                        <th>332</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %s" % self._<del>y[-1]</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>373</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %f" % self._<ins>ik(self._y[-1], k)</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>374</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif self._all:<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>375</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ''<ins></ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>376</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %s" % self._<ins>ik(self._y[-1], k)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>333</th><th>377</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                  </tr><tr>
+                          <th>334</th><th>378</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ' best'</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>335</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %f" % self._<del>y[-1][best]</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>379</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %f" % self._<ins>ik(self._y[-1][best], k)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>336</th><th>380</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = "Generation %d has%s Chi-Squared:%s" % (self._step-1,who,y)</span> </td>
+                  </tr><tr>
+                          <th>337</th><th>381</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if id is not None: msg = "[id: %d] " % (id) + msg</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=776#L353">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/monitors.py?rev=791#L397">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>353</th><th>397</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>354</th><th>398</th><td class="l"><span>&nbsp; &nbsp; def __reduce__(self):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>355</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; interval = self._yinterval<del>&nbsp; &nbsp; &nbsp; &nbsp; </del></span> </td>
+                      </tr><tr>
+                        <th>356</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; yint<del>erval = </del> self._vyinterval</span> </td>
+                      </tr><tr>
+                        <th>357</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; xint<del>erval = </del> self._vxinterval</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>399</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; interval = self._yinterval<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>400</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; yint<ins>&nbsp;=</ins> self._vyinterval</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>401</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; xint<ins>&nbsp;=</ins> self._vxinterval</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>358</th><th>402</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; filename = self._filename</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>359</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; new=False</span> </td>
+                      </tr><tr>
+                        <th>360</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; all=self._all</span> </td>
+                      </tr><tr>
+                        <th>361</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; info=None</span> </td>
+                      </tr><tr>
+                        <th>362</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return (self.__class__, (interval, yinterval, xinterval, filename, new, all, info))</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>403</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; new = False</span> </td>
+                      </tr><tr>
+                        <th> </th><th>404</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; all = self._all</span> </td>
+                      </tr><tr>
+                        <th> </th><th>405</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; info = None</span> </td>
+                      </tr><tr>
+                        <th> </th><th>406</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; args = (interval, yint, xint, filename, new, all, info)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>407</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; k = self.k</span> </td>
+                      </tr><tr>
+                        <th> </th><th>408</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; state = dict(_x=self._x,_y=self._y,_id=self._id,_info=self._info,k=k)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>409</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return (self.__class__, args, state)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>410</th><td class="r"><span>&nbsp; &nbsp; def __setstate__(self, state):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>411</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.__dict__.update(state)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>412</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>363</th><th>413</th><td class="l"><span>&nbsp; &nbsp; pass</span> </td>
+                  </tr><tr>
+                          <th>364</th><th>414</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file9">
+          <a href="mystic/mystic/munge.html" title="Show the changeset 791 restricted to mystic/mystic/munge.py">mystic/mystic/munge.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/munge.py?rev=776#L81">
+                      r776</a>
+                  </th>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/munge.py?rev=791#L81">
+                      r791</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>81</th><th>81</th><td class="l"><span>&nbsp; return steps, energy, id </span> </td>
+                  </tr><tr>
+                          <th>82</th><th>82</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>83</th><th> </th><td class="l"><span>def write_monitor(steps, energy, id=[]<del></del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>83</th><td class="r"><span>def write_monitor(steps, energy, id=[]<ins>, k=None</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>84</th><th>84</th><td class="l"><span>&nbsp; from mystic.monitors import Monitor</span> </td>
+                  </tr><tr>
+                          <th>85</th><th>85</th><td class="l"><span>&nbsp; mon = Monitor()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>86</th><th> </th><td class="l"><span>&nbsp; mon._x = steps[:]</span> </td>
+                      </tr><tr>
+                        <th>87</th><th> </th><td class="l"><span>&nbsp; mon._y = energy[:]</span> </td>
+                      </tr><tr>
+                        <th>88</th><th> </th><td class="l"><span>&nbsp; mon._id = id[:]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>86</th><td class="r"><span>&nbsp; mon.k = k</span> </td>
+                      </tr><tr>
+                        <th> </th><th>87</th><td class="r"><span>&nbsp; mon._x.extend(steps)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>88</th><td class="r"><span>&nbsp; mon._y.extend(mon._k(energy, iter))</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>89</th><td class="r"><span>&nbsp; mon._id.extend(id)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>89</th><th>90</th><td class="l"><span>&nbsp; return mon</span> </td>
+                  </tr><tr>
+                          <th>90</th><th>91</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file10">
+          <a href="mystic/mystic/scipy_optimize.html" title="Show the changeset 791 restricted to mystic/mystic/scipy_optimize.py">mystic/mystic/scipy_optimize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 785">
+                    <a title="Show revision 785 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=785#L463">
+                      r785</a>
+                  </th>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=791#L463">
+                      r791</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>463</th><th>463</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._termination = NCOG(ftol,gtol)</span> </td>
+                  </tr><tr>
+                          <th>464</th><th>464</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>465</th><td class="r"><ins>&nbsp; &nbsp; def __generations(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>466</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """get the number of iterations"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>467</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return max(0,len(self.energy_history)-1)&nbsp; #XXX: slower for k=-1 ?</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>468</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>465</th><th>469</th><td class="l"><span>&nbsp; &nbsp; def _SetEvaluationLimits(self, iterscale=1000, evalscale=1000):</span> </td>
+                  </tr><tr>
+                          <th>466</th><th>470</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(PowellDirectionalSolver, self)._SetEvaluationLimits(iterscale,evalscale)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=785#L632">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=791#L636">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>632</th><th>636</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ExtraArgs, **kwds)</span> </td>
+                  </tr><tr>
+                          <th>633</th><th>637</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>638</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>639</th><td class="r"><ins>&nbsp; &nbsp; # extensions to the solver interface</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>640</th><td class="r"><ins>&nbsp; &nbsp; generations = property(__generations )</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>641</th><td class="r"><ins>&nbsp; &nbsp; pass</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>634</th><th>642</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>635</th><th>643</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file11">
+          <a href="mystic/mystic/tools.html" title="Show the changeset 791 restricted to mystic/mystic/tools.py">mystic/mystic/tools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 781">
+                    <a title="Show revision 781 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=781#L16">
+                      r781</a>
+                  </th>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=791#L16">
+                      r791</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>16</th><th>16</th><td class="l"><span>Main functions exported are:: </span> </td>
+                  </tr><tr>
+                          <th>17</th><th>17</th><td class="l"><span>&nbsp; &nbsp; - isiterable: check if an object is iterable</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>18</th><td class="r"><ins>&nbsp; &nbsp; - itertype: get the 'underlying' type used to construct x</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>19</th><td class="r"><ins>&nbsp; &nbsp; - multiply: recursive elementwise casting multiply of x by n</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>20</th><td class="r"><ins>&nbsp; &nbsp; - divide: recursive elementwise casting divide of x by n</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>18</th><th>21</th><td class="l"><span>&nbsp; &nbsp; - flatten: flatten a sequence</span> </td>
+                  </tr><tr>
+                          <th>19</th><th>22</th><td class="l"><span>&nbsp; &nbsp; - flatten_array: flatten an array </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=781#L50">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=791#L53">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>53</th><td class="l"><span>&nbsp; &nbsp;#return hasattr(x, '__len__') or hasattr(x, '__iter__')</span> </td>
+                  </tr><tr>
+                          <th>51</th><th>54</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>52</th><th> </th><td class="l"><span>def list_or_tuple(x):</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>55</th><td class="r"><span>def itertype(x, default=tuple):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>56</th><td class="r"><span>&nbsp; &nbsp; """get the 'underlying' type used to construct x"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>57</th><td class="r"><span>&nbsp; &nbsp; _type = type(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>58</th><td class="r"><span>&nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>59</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if _type((0,)): return _type # non-iterator iterables</span> </td>
+                      </tr><tr>
+                        <th> </th><th>60</th><td class="r"><span>&nbsp; &nbsp; except TypeError: pass</span> </td>
+                      </tr><tr>
+                        <th> </th><th>61</th><td class="r"><span>&nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>62</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if _type(1): return _type # non-iterables</span> </td>
+                      </tr><tr>
+                        <th> </th><th>63</th><td class="r"><span>&nbsp; &nbsp; except TypeError: pass</span> </td>
+                      </tr><tr>
+                        <th> </th><th>64</th><td class="r"><span>&nbsp; &nbsp; # iterators, etc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>65</th><td class="r"><span>&nbsp; &nbsp; _type = type(x).__name__.split('iterator')[0]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>66</th><td class="r"><span>&nbsp; &nbsp; types = ('xrange','generator','') # and ...?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>67</th><td class="r"><span>&nbsp; &nbsp; if _type in types: return default</span> </td>
+                      </tr><tr>
+                        <th> </th><th>68</th><td class="r"><span>&nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>69</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return eval(_type)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>70</th><td class="r"><span>&nbsp; &nbsp; except NameError: return default</span> </td>
+                      </tr><tr>
+                        <th> </th><th>71</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>72</th><td class="r"><span>def _kdiv(num, denom, type=None):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>73</th><td class="r"><span>&nbsp; &nbsp; """'special' scalar division for 'k'"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; &nbsp; if num is denom is None: return None</span> </td>
+                      </tr><tr>
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; &nbsp; if denom is None: denom = 1</span> </td>
+                      </tr><tr>
+                        <th> </th><th>76</th><td class="r"><span>&nbsp; &nbsp; if num is None: num = 1</span> </td>
+                      </tr><tr>
+                        <th> </th><th>77</th><td class="r"><span>&nbsp; &nbsp; if type is not None: num = type(num)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>78</th><td class="r"><span>&nbsp; &nbsp; return num/denom</span> </td>
+                      </tr><tr>
+                        <th> </th><th>79</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>80</th><td class="r"><span>def multiply(x, n, type=list, recurse=False): # list, iter, numpy.array, ...</span> </td>
+                      </tr><tr>
+                        <th> </th><th>81</th><td class="r"><span>&nbsp; &nbsp; """multiply: recursive elementwise casting multiply of x by n"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>82</th><td class="r"><span>&nbsp; &nbsp; # short-circuit cases for speed</span> </td>
+                      </tr><tr>
+                        <th> </th><th>83</th><td class="r"><span>&nbsp; &nbsp; if n is None: return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>84</th><td class="r"><span>&nbsp; &nbsp; try:&nbsp; &nbsp;# for scalars and vectors (numpy.arrays)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>85</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; -x # x*n might not throw an error</span> </td>
+                      </tr><tr>
+                        <th> </th><th>86</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return x*n</span> </td>
+                      </tr><tr>
+                        <th> </th><th>87</th><td class="r"><span>&nbsp; &nbsp; except TypeError: pass</span> </td>
+                      </tr><tr>
+                        <th> </th><th>88</th><td class="r"><span>&nbsp; &nbsp; if n is 1: return type(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>89</th><td class="r"><span>&nbsp; &nbsp; if type.__name__ == 'array': return type(x)*n</span> </td>
+                      </tr><tr>
+                        <th> </th><th>90</th><td class="r"><span>&nbsp; &nbsp; # multiply by n != 1 for iterables (iter and non-iter)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>91</th><td class="r"><span>&nbsp; &nbsp; if recurse:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>92</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return type(multiply(i,n,type) for i in x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>93</th><td class="r"><span>&nbsp; &nbsp; return type(i*n for i in x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>94</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>95</th><td class="r"><span>def divide(x, n, type=list, recurse=False): # list, iter, numpy.array, ...</span> </td>
+                      </tr><tr>
+                        <th> </th><th>96</th><td class="r"><span>&nbsp; &nbsp; """elementwise division of x by n, returning the selected type"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>97</th><td class="r"><span>&nbsp; &nbsp; # short-circuit cases for speed</span> </td>
+                      </tr><tr>
+                        <th> </th><th>98</th><td class="r"><span>&nbsp; &nbsp; if n is None: return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>99</th><td class="r"><span>&nbsp; &nbsp; try:&nbsp; &nbsp;# for scalars and vectors (numpy.arrays)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>100</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return x/n</span> </td>
+                      </tr><tr>
+                        <th> </th><th>101</th><td class="r"><span>&nbsp; &nbsp; except TypeError: pass</span> </td>
+                      </tr><tr>
+                        <th> </th><th>102</th><td class="r"><span>&nbsp; &nbsp; if n is 1: return type(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>103</th><td class="r"><span>&nbsp; &nbsp; if type.__name__ == 'array': return type(x)/n</span> </td>
+                      </tr><tr>
+                        <th> </th><th>104</th><td class="r"><span>&nbsp; &nbsp; # divide by n != 1 for iterables (iter and non-iter)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>105</th><td class="r"><span>&nbsp; &nbsp; if recurse:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>106</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return type(divide(i,n,type) for i in x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>107</th><td class="r"><span>&nbsp; &nbsp; return type(i/n for i in x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>108</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>109</th><td class="r"><span>def _multiply(x, n):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>110</th><td class="r"><span>&nbsp; &nbsp; """elementwise multiplication of x by n, as if x were an array"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>111</th><td class="r"><span>&nbsp; &nbsp; # short-circuit cases for speed</span> </td>
+                      </tr><tr>
+                        <th> </th><th>112</th><td class="r"><span>&nbsp; &nbsp; if n is None: return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>113</th><td class="r"><span>&nbsp; &nbsp; try:&nbsp; &nbsp;# for scalars and vectors (numpy.arrays)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>114</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; -x # x*n might not throw an error</span> </td>
+                      </tr><tr>
+                        <th> </th><th>115</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return x*n</span> </td>
+                      </tr><tr>
+                        <th> </th><th>116</th><td class="r"><span>&nbsp; &nbsp; except TypeError: pass</span> </td>
+                      </tr><tr>
+                        <th> </th><th>117</th><td class="r"><span>&nbsp; &nbsp; if n is 1: return itertype(x)(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>118</th><td class="r"><span>&nbsp; &nbsp; # multiply by n != 1 for iterables (iter and non-iter)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>119</th><td class="r"><span>&nbsp; &nbsp; xn = (_multiply(i,n) for i in x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>120</th><td class="r"><span>&nbsp; &nbsp; # return astype used to construct x, if possible</span> </td>
+                      </tr><tr>
+                        <th> </th><th>121</th><td class="r"><span>&nbsp; &nbsp; return itertype(x)(xn)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>122</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>123</th><td class="r"><span>def _divide(x, n):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>124</th><td class="r"><span>&nbsp; &nbsp; """elementwise division of x by n, as if x were an array"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>125</th><td class="r"><span>&nbsp; &nbsp; # short-circuit cases for speed</span> </td>
+                      </tr><tr>
+                        <th> </th><th>126</th><td class="r"><span>&nbsp; &nbsp; if n is None: return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>127</th><td class="r"><span>&nbsp; &nbsp; try:&nbsp; &nbsp;# for scalars and vectors (numpy.arrays)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>128</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return x/n</span> </td>
+                      </tr><tr>
+                        <th> </th><th>129</th><td class="r"><span>&nbsp; &nbsp; except TypeError: pass</span> </td>
+                      </tr><tr>
+                        <th> </th><th>130</th><td class="r"><span>&nbsp; &nbsp; if n is 1: return itertype(x)(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>131</th><td class="r"><span>&nbsp; &nbsp; # divide by n != 1 for iterables (iter and non-iter)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>132</th><td class="r"><span>&nbsp; &nbsp; xn = (_divide(i,n) for i in x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>133</th><td class="r"><span>&nbsp; &nbsp; # return astype used to construct x, if possible</span> </td>
+                      </tr><tr>
+                        <th> </th><th>134</th><td class="r"><span>&nbsp; &nbsp; return itertype(x)(xn)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>135</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>136</th><td class="r"><span>def _imultiply(x, n):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>137</th><td class="r"><span>&nbsp; &nbsp; """iterator for elementwise 'array-like' multiplication of x by n"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>138</th><td class="r"><span>&nbsp; &nbsp; # short-circuit cases for speed</span> </td>
+                      </tr><tr>
+                        <th> </th><th>139</th><td class="r"><span>&nbsp; &nbsp; if n is None: return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>140</th><td class="r"><span>&nbsp; &nbsp; try:&nbsp; &nbsp;# for scalars and vectors (numpy.arrays)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>141</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; -x # x*n might not throw an error</span> </td>
+                      </tr><tr>
+                        <th> </th><th>142</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return iter(x*n)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>143</th><td class="r"><span>&nbsp; &nbsp; except TypeError: pass</span> </td>
+                      </tr><tr>
+                        <th> </th><th>144</th><td class="r"><span>&nbsp; &nbsp; if n is 1: return iter(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>145</th><td class="r"><span>&nbsp; &nbsp; # multiply by n != 1 for iterables (iter and non-iter)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>146</th><td class="r"><span>&nbsp; &nbsp; return (_multiply(i,n) for i in x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>147</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>148</th><td class="r"><span>def _idivide(x, n):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>149</th><td class="r"><span>&nbsp; &nbsp; """iterator for elementwise 'array-like' division of x by n"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>150</th><td class="r"><span>&nbsp; &nbsp; # short-circuit cases for speed</span> </td>
+                      </tr><tr>
+                        <th> </th><th>151</th><td class="r"><span>&nbsp; &nbsp; if n is None: return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>152</th><td class="r"><span>&nbsp; &nbsp; try:&nbsp; &nbsp;# for scalars and vectors (numpy.arrays)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>153</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return iter(x/n)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>154</th><td class="r"><span>&nbsp; &nbsp; except TypeError: pass</span> </td>
+                      </tr><tr>
+                        <th> </th><th>155</th><td class="r"><span>&nbsp; &nbsp; if n is 1: return iter(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>156</th><td class="r"><span>&nbsp; &nbsp; # divide by n != 1 for iterables (iter and non-iter)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>157</th><td class="r"><span>&nbsp; &nbsp; return (_divide(i,n) for i in x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>158</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>159</th><td class="r"><span>def _amultiply(x, n):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>160</th><td class="r"><span>&nbsp; &nbsp; """elementwise 'array-casting' multiplication of x by n"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>161</th><td class="r"><span>&nbsp; &nbsp; # short-circuit cases for speed</span> </td>
+                      </tr><tr>
+                        <th> </th><th>162</th><td class="r"><span>&nbsp; &nbsp; if n is None: return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>163</th><td class="r"><span>&nbsp; &nbsp; # convert to numpy array</span> </td>
+                      </tr><tr>
+                        <th> </th><th>164</th><td class="r"><span>&nbsp; &nbsp; import numpy</span> </td>
+                      </tr><tr>
+                        <th> </th><th>165</th><td class="r"><span>&nbsp; &nbsp; x = numpy.asarray(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>166</th><td class="r"><span>&nbsp; &nbsp; if n is 1: return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>167</th><td class="r"><span>&nbsp; &nbsp; return x*n</span> </td>
+                      </tr><tr>
+                        <th> </th><th>168</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>169</th><td class="r"><span>def _adivide(x, n):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>170</th><td class="r"><span>&nbsp; &nbsp; """elementwise 'array-casting' division of x by n"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>171</th><td class="r"><span>&nbsp; &nbsp; # short-circuit cases for speed</span> </td>
+                      </tr><tr>
+                        <th> </th><th>172</th><td class="r"><span>&nbsp; &nbsp; if n is None: return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>173</th><td class="r"><span>&nbsp; &nbsp; # convert to numpy array</span> </td>
+                      </tr><tr>
+                        <th> </th><th>174</th><td class="r"><span>&nbsp; &nbsp; import numpy</span> </td>
+                      </tr><tr>
+                        <th> </th><th>175</th><td class="r"><span>&nbsp; &nbsp; x = numpy.asarray(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>176</th><td class="r"><span>&nbsp; &nbsp; if n is 1: return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>177</th><td class="r"><span>&nbsp; &nbsp; return x/n</span> </td>
+                      </tr><tr>
+                        <th> </th><th>178</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>179</th><td class="r"><span>def list_or_tuple(x): # set, ...?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>180</th><td class="l"><span>&nbsp; &nbsp; "True if x is a list or a tuple"</span> </td>
+                  </tr><tr>
+                          <th>54</th><th>181</th><td class="l"><span>&nbsp; &nbsp; return isinstance(x, (list, tuple))</span> </td>
+                  </tr><tr>
+                          <th>55</th><th>182</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>56</th><th> </th><td class="l"><span>def list_or_tuple_or_ndarray(x):<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>183</th><td class="r"><span>def list_or_tuple_or_ndarray(x):<ins>&nbsp;# set, ...?</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>57</th><th>184</th><td class="l"><span>&nbsp; &nbsp; "True if x is a list, tuple, or a ndarray"</span> </td>
+                  </tr><tr>
+                          <th>58</th><th>185</th><td class="l"><span>&nbsp; &nbsp; import numpy</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=781#L61">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=791#L188">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>188</th><td class="l"><span>def listify(x):</span> </td>
+                  </tr><tr>
+                          <th>62</th><th>189</th><td class="l"><span>&nbsp; &nbsp; "recursivly convert all members of a sequence to a list"</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>63</th><th> </th><td class="l"><span>&nbsp; &nbsp; if not list_or_tuple_or_ndarray(x): return x</span> </td>
+                      </tr><tr>
+                        <th>64</th><th> </th><td class="l"><span>&nbsp; &nbsp; #if isinstance(x, numpy.ndarray) and x.ndim == 0: return x # i.e. array(1)</span> </td>
+                      </tr><tr>
+                        <th>65</th><th> </th><td class="l"><span>&nbsp; &nbsp; if not list_or_tuple(x) and x.ndim == 0: return x.flatten()[0]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>190</th><td class="r"><span>&nbsp; &nbsp; if not isiterable(x): return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>191</th><td class="r"><span>&nbsp; &nbsp; if x is iter(x): return listify(list(x))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>192</th><td class="r"><span>&nbsp; &nbsp; try: # e.g. if array(1)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>193</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if x.ndim == 0: return x.flatten()[0]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>194</th><td class="r"><span>&nbsp; &nbsp; except Exception: pass</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>66</th><th>195</th><td class="l"><span>&nbsp; &nbsp; return [listify(i) for i in x]</span> </td>
+                  </tr><tr>
+                          <th>67</th><th>196</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file12">
+          <a href="mystic/tests/test_solver_sanity.html" title="Show the changeset 791 restricted to mystic/tests/test_solver_sanity.py">mystic/tests/test_solver_sanity.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_solver_sanity.py?rev=776#L74">
+                      r776</a>
+                  </th>
+                  <th title="Revision 791">
+                    <a title="Show revision 791 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_solver_sanity.py?rev=791#L74">
+                      r791</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>74</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#if self.uselimits and self.maxiter == 0: iter=0</span> </td>
+                  </tr><tr>
+                          <th>75</th><th>75</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # sanity check solver internals</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>76</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.assertTrue(solver.generations == len(solver._stepmon.<del></del>y)-iter)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>76</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.assertTrue(solver.generations == len(solver._stepmon.<ins>_</ins>y)-iter)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>77</th><th>77</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.assertTrue(list(solver.bestSolution) == solver._stepmon.x[-1]) #XXX</span> </td>
+                  </tr><tr>
+                          <th>78</th><th>78</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.assertTrue(solver.bestEnergy == solver._stepmon.y[-1])</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_solver_sanity.py?rev=776#L82">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_solver_sanity.py?rev=791#L82">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>82</th><th>82</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.assertTrue(ssow.x == solver._stepmon.x)</span> </td>
+                  </tr><tr>
+                          <th>83</th><th>83</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.assertTrue(ssow.y == solver._stepmon.y)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>84</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.assertTrue(ssow._y == solver._stepmon._y)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>84</th><th>85</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self.useevalmon:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>85</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.assertTrue(solver.evaluations == len(solver._evalmon.<del></del>y))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>86</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.assertTrue(solver.evaluations == len(solver._evalmon.<ins>_</ins>y))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>86</th><th>87</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.assertTrue(esow.x == solver._evalmon.x)</span> </td>
+                  </tr><tr>
+                          <th>87</th><th>88</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.assertTrue(esow.y == solver._evalmon.y)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>89</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.assertTrue(esow._y == solver._evalmon._y)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>88</th><th>90</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>89</th><th>91</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # Fail appropriately for solver/termination mismatch</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/791/?format=diff&amp;new=791" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/791/?format=zip&amp;new=791" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://www.cacr.caltech.edu/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://www.cacr.caltech.edu/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://www.cacr.caltech.edu/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://www.cacr.caltech.edu/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://www.cacr.caltech.edu/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://www.cacr.caltech.edu/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://www.cacr.caltech.edu/projects/mystic">http://www.cacr.caltech.edu/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/791/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:26:15 GMT -->
+</html>

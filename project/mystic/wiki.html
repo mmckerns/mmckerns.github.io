@@ -1,0 +1,245 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/wiki by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 22:57:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="search.html" />
+        <link rel="help" href="wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/wiki/WikiStart?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="wiki.html" />
+        <link rel="stylesheet" href="chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="chrome/common/js/jquery.js"></script><script type="text/javascript" src="chrome/common/js/babel.js"></script><script type="text/javascript" src="chrome/common/js/trac.js"></script><script type="text/javascript" src="chrome/common/js/search.js"></script><script type="text/javascript" src="chrome/common/js/folding.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="login.html">Login</a></li><li><a href="wiki/TracGuide.html">Help/Guide</a></li><li><a href="about.html">About Trac</a></li><li class="last"><a href="prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="wiki.html">Wiki</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="roadmap.html">Roadmap</a></li><li><a href="browser.html">Browse Source</a></li><li><a href="query.html">View Tickets</a></li><li class="last"><a href="search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="wiki.html">wiki:</a><a class="pathentry" href="wiki/WikiStart.html" title="View WikiStart">WikiStart</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="wiki/WikiStart.html">Start Page</a></li><li><a href="wiki/TitleIndex.html">Index</a></li><li class="last"><a href="http://mmckerns.github.io/project/mystic/wiki/WikiStart?action=history">History</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          
+          <div class="trac-modifiedby"><a href="http://mmckerns.github.io/project/mystic/wiki/WikiStart?action=diff&amp;version=24" title="Version 24 by mmckerns: added link to github page">Last modified</a> <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-07-10T20%3A14%3A47-07%3A00&amp;precision=second" title="2013-07-10T20:14:47-07:00 in Timeline">3 years</a> ago</div>
+          <div id="wikipage"><br />
+<h1 style="color: darkkhaki">mystic: a framework for highly-constrained non-convex optimization and uncertainty quantification</h1>
+<br />
+||
+<a href="wiki/User_Guide.html">User Guide</a>
+||
+<a href="wiki/Installation.html">Download</a>
+||
+<a href="wiki/Tutorials.html">Tutorials</a>
+||
+<a href="http://docs.danse.us/mystic">Manual</a>
+||
+<a href="wiki/License.html">License</a>
+||
+<a href="wiki/Feedback.html">Feedback</a>
+||
+<hr />
+<h4 id="AboutMystic">About Mystic</h4>
+<p>
+The mystic framework provides a collection of optimization algorithms
+and tools that allows the user to more robustly (and readily) solve
+optimization problems. All optimization algorithms included in mystic
+provide workflow at the fitting layer, not just access to the algorithms
+as function calls. Mystic gives the user fine-grained power to both
+monitor and steer optimizations as the fit processes are running.
+</p>
+<p>
+Where possible, mystic optimizers share a common interface, and thus can
+be easily swapped without the user having to write any new code. Mystic
+solvers all conform to a solver API, thus also have common method calls
+to configure and launch an optimization job. For more details, see
+<tt>mystic.abstract_solver</tt>. The API also makes it easy to bind a favorite
+3rd party solver into the mystic framework.
+</p>
+<p>
+By providing a robust interface designed to allow the user to easily
+configure and control solvers, mystic reduces the barrier to implementing
+a target fitting problem as stable code. Thus the user can focus on
+building their physical models, and not spend time hacking together an
+interface to optimization code.
+</p>
+<p>
+Mystic is in the early development stages, and any user feedback is
+highly appreciated. Contact Mike McKerns [mmckerns at caltech dot edu]
+with comments, suggestions, and any bugs you may find.  A list of known
+issues is maintained at <a href="query.html">http://mmckerns.github.io/project/mystic/query</a>.
+</p>
+<hr />
+<p>
+<a style="padding:0; border:none" href="attachment/wiki/images/interface.html"><img width="40%" alt="Snapshot of User Interface" title="mystic being used to fit data from noisy peaks" style="float:right" src="raw-attachment/wiki/images/interface.png" /></a>
+</p>
+<h4 id="MajorFeatures">Major Features</h4>
+<p>
+Mystic provides a stock set of configurable, controllable solvers with::
+</p>
+<ul><li>a common interface
+</li><li>the ability to impose solver-independent bounds constraints
+</li><li>the ability to apply solver-independent monitors
+</li><li>the ability to configure solver-independent termination conditions
+</li><li>a control handler yielding: [pause, continue, exit, and user_callback]
+</li><li>ease in selecting initial conditions: [initial_guess, random]
+</li><li>ease in selecting mutation strategies (for differential evolution)
+</li></ul><p>
+To get up and running quickly, mystic also provides infrastructure to::
+</p>
+<ul><li>easily generate a fit model (several example models are included)
+</li><li>configure and auto-generate a cost function from a model
+</li><li>extend fit jobs to parallel &amp; distributed resources
+</li><li>couple models with optimization parameter constraints [COMING SOON]
+</li></ul><hr />
+<h4 id="CurrentRelease">Current Release</h4>
+<p>
+This release version is <a class="closed milestone" href="milestone/mystic-0.html">mystic-0.2a1</a>. You can download it <a class="wiki" href="wiki/Installation.html">here</a>.<br />
+The latest released version of mystic is available from::
+</p>
+<blockquote>
+<p>
+<a href="http://mmckerns.github.io/project/mystic">http://mmckerns.github.io/project/mystic</a>
+</p>
+</blockquote>
+<p>
+Mystic is distributed under a modified BSD <a class="wiki" href="wiki/License.html">license</a>.
+</p>
+<hr />
+<h4 id="DevelopmentRelease">Development Release</h4>
+<p>
+If you like living on the edge, and don't mind the promise of a little instability, <br />
+you can get the latest development release with all the shiny new features at::
+</p>
+<blockquote>
+<p>
+<a class="ext-link" href="http://dev.danse.us/packages"><span class="icon"> </span>http://dev.danse.us/packages</a>.
+</p>
+</blockquote>
+<p>
+or even better, fork us on our github mirror of the svn trunk::
+</p>
+<blockquote>
+<p>
+<a class="ext-link" href="https://github.com/uqfoundation"><span class="icon"> </span>https://github.com/uqfoundation</a>
+</p>
+</blockquote>
+<hr />
+<h4 id="Citation">Citation</h4>
+<p>
+If you use mystic to do research that leads to publication, we ask that you <br />
+acknowledge use of mystic by citing the following in your publication::
+</p>
+<pre class="wiki">    M.M. McKerns, L. Strand, T. Sullivan, A. Fang, M.A.G. Aivazis,
+    "Building a framework for predictive science", Proceedings of
+    the 10th Python in Science Conference, 2011;
+    http://arxiv.org/pdf/1202.1056
+
+    Michael McKerns, Patrick Hung, and Michael Aivazis,
+    "mystic: a simple model-independent inversion framework", 2009- ;
+    http://mmckerns.github.io/project/mystic
+</pre><hr />
+<h4 id="MoreInformation">More Information</h4>
+<p>
+Probably the best way to get started is to look at the <a class="wiki" href="wiki/Tutorials.html">tutorial</a> examples provided
+within the <a class="wiki" href="wiki/User_Guide.html">user's guide</a>.  The source code is also generally well documented,
+so further questions may be resolved by <a class="source" href="browser/mystic.html">inspecting the code</a> itself, or through 
+browsing the <a class="ext-link" href="http://docs.danse.us/mystic"><span class="icon"> </span>reference manual</a>. For those who like to leap before
+they look, you can jump right to the <a class="wiki" href="wiki/Installation.html">installation instructions</a>. If the aforementioned documents
+do not adequately address your needs, please <a class="wiki" href="wiki/Feedback.html">send us feedback</a>.
+</p>
+<p>
+Mystic is an active research tool. There are a growing number of <a class="wiki" href="wiki/Publications.html">publications and presentations</a> that
+discuss real-world examples and new features of mystic in greater detail than presented in the <a class="wiki" href="wiki/User_Guide.html">user's guide</a>. 
+If you would like to share how you use mystic in your work, please <a class="wiki" href="wiki/Feedback.html">send us a link</a>.
+</p>
+</div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/wiki/WikiStart?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/wiki by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 22:57:59 GMT -->
+</html>

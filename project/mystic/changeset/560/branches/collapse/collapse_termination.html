@@ -1,0 +1,1019 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/560/branches/collapse/collapse_termination.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:48:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 560 for branches/collapse/collapse_termination.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/560/branches/collapse/collapse_termination.py?format=diff&amp;new=560" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/560/branches/collapse/collapse_termination.py?format=zip&amp;new=560" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../714/branches/collapse/collapse_termination.html" title="Changeset 714 for branches/collapse/collapse_termination.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../541/branches/collapse/collapse_termination.html" title="Changeset 541 for branches/collapse/collapse_termination.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../541/branches/collapse/collapse_termination.html" title="Changeset 541 for branches/collapse/collapse_termination.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../714/branches/collapse/collapse_termination.html" title="Changeset 714 for branches/collapse/collapse_termination.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../560.html">560</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/collapse_termination.py?rev=560">branches/collapse/collapse_termination.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             09/14/12 16:42:47
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-09-14T16%3A42%3A47-07%3A00&amp;precision=second" title="2012-09-14T16:42:47-07:00 in Timeline">4 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+update Lan's collapse code to as used in SURF final report;<br />
+add Lan's semilog plotter script<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/collapse_termination.py?rev=560">
+              branches/collapse/collapse_termination.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="collapse_termination.html" title="Show the changeset 560 restricted to branches/collapse/collapse_termination.py">branches/collapse/collapse_termination.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 541">
+                    <a title="Show revision 541 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/collapse_termination.py?rev=541#L1">
+                      r541</a>
+                  </th>
+                  <th title="Revision 560">
+                    <a title="Show revision 560 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/collapse_termination.py?rev=560#L1">
+                      r560</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="mod">
+                      <tr class="first">
+                        <th>1</th><th> </th><td class="l"><span>debug = True #False</span> </td>
+                      </tr><tr>
+                        <th>2</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>3</th><th> </th><td class="l"><span>def CLPS_Weight(npts, tolW=0.05, tolG=10e-6, generations=70):</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>1</th><td class="r"><span>debug = False #True</span> </td>
+                      </tr><tr>
+                        <th> </th><th>2</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>3</th><td class="r"><span>def CLPS_Weight(npts, tol_weight=0.05, generations=200, axisW = '', \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>4</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indexW = ''):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>5</th><td class="l"><span>&nbsp; &nbsp; """ Termination condition for vanishing weights.</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>6</th><td class="l"><span>&nbsp; &nbsp; if info = False:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/collapse_termination.py?rev=541#L7">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/collapse/collapse_termination.py?rev=560#L8">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>8</th><td class="l"><span>&nbsp; &nbsp; if info = True: </span> </td>
+                  </tr><tr>
+                          <th>8</th><th>9</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;prints out a message saying for which points the weight vanished</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>10</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>11</th><td class="r"><ins>&nbsp; &nbsp; In this code, weight collapse is the event where the weight of a support </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>12</th><td class="r"><ins>&nbsp; &nbsp; point (its maximum accros last given number of generations) has been </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>13</th><td class="r"><ins>&nbsp; &nbsp; less than or equal to the tollerance level, tol_weight. </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>14</th><td class="r"><ins>&nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>15</th><td class="r"><ins>&nbsp; &nbsp; If axisW and index are not declared, the function returns whenever weight </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>16</th><td class="r"><ins>&nbsp; &nbsp; has vanished for any point. If declared (axisW and index are tuple or </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>17</th><td class="r"><ins>&nbsp; &nbsp; integer objects) then the function returns only if collapse had occured f</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>18</th><td class="r"><ins>&nbsp; &nbsp; or points with given indices. Note that neither or both axisW and indexW </ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>19</th><td class="r"><ins>&nbsp; &nbsp; must be declared, otherwise an error is printed.</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>9</th><th>20</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>10</th><th>21</th><td class="l"><span>&nbsp; &nbsp; npts = (nx, ny, ...) is the tuple of the support point numbers for each</span> </td>
+                  </tr><tr>
+                          <th>11</th><th>22</th><td class="l"><span>&nbsp; &nbsp; input."""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>23</th><td class="r"><ins>&nbsp; &nbsp; # from mystic.tools import isNull</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>24</th><td class="r"><ins>&nbsp; &nbsp; from mystic.monitors import Null, Monitor, VerboseMonitor</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>25</th><td class="r"><ins>&nbsp; &nbsp; monitor = Monitor()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>26</th><td class="r"><ins>&nbsp; &nbsp; if debug: monitor = VerboseMonitor(2, 2)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>27</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>28</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>29</th><td class="r"><ins>&nbsp; &nbsp; def _CLPS_Weight(inst, info=False):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>30</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ###FIXME: this should probably be in Solver #######</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>31</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # if isNull(inst._stepmon): inst._stepmon = monitor</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>32</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ###################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>33</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>34</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ######################## TO BE DELETED##################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>35</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #print "HERE I AM and the last 10 best solutions are: "</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>36</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #print inst._stepmon.x[-10:]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>37</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ########################################################################&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>38</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>39</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ############## PARAMETERS (length, and number of emasures) #############</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>40</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; hist_lg = len(inst._stepmon.x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>41</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if hist_lg &lt;= generations: return False</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>42</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>43</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.math.measures import _nested_split&nbsp; &nbsp;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>44</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; w_bestSolution, x_bestSolution = \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>45</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _nested_split(inst.bestSolution, npts)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>46</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ########################################################################</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>47</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; collapseWeight_msg = ''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>48</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>49</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if isinstance(axisW, int) and isinstance(indexW, int):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>50</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_weight = 0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>51</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for n in range(-generations, 0):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>52</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; weights, positions = _nested_split(inst._stepmon.x[n], npts)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>53</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if max_weight &lt; weights[axisW][indexW]:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>54</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_weight = weights[axisW][indexW]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>55</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if max_weight &lt;= tol_weight:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>56</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; collapseWeight_msg += 'measure: %s &amp; index: %s, ' \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>57</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; %(axisW,indexW)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>58</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>59</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; elif isinstance(axisW, tuple) and isinstance(indexW, int):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>60</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_weight = [0]*len(axisW)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>61</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>62</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for n in range(-generations, 0):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>63</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; weights, positions = _nested_split(inst._stepmon.x[n], npts)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>64</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in range(len(max_weight)):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>65</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if max_weight[i] &lt; weights[axisW[i]][indexW]:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>66</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_weight[i] = weights[axisW[i]][indexW]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>67</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for k in range(len(max_weight)):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>68</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if max_weight[k] &lt;= tol_weight:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>69</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; collapseWeight_msg += 'measure: %s &amp; index: %s, ' \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>70</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; %(axisW[k],indexW)&nbsp; &nbsp;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>71</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>72</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; elif isinstance(axisW, int) and isinstance(indexW, tuple):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>73</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_weight = [0]*len(indexW)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>74</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>75</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for n in range(-generations, 0):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>76</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; weights, positions = _nested_split(inst._stepmon.x[n], npts)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>77</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in range(len(max_weight)):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>78</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if max_weight[i] &lt; weights[axisW][indexW[i]]:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>79</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_weight[i] = weights[axisW][indexW[i]]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>80</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for k in range(len(max_weight)):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>81</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if max_weight[k] &lt;= tol_weight:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>82</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; collapseWeight_msg += 'measure: %s &amp; index: %s, ' \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>83</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; %(axisW,indexW[k])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>84</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>85</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; elif (isinstance(axisW, tuple) and isinstance(indexW, tuple)) or \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>86</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (axisW == '' and indexW == ''): #Note that can't change to not axisW</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>87</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # and not indexW since those can be zero indices</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>88</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (axisW == '' and indexW == ''): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>89</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_weight = [[0] * nx for nx in npts]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>90</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>91</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_weight = [[0]*len(axisW)]*len(indexW)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>92</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>93</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for n in range(-generations, 0):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>94</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; weights, positions = _nested_split(inst._stepmon.x[n], npts)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>95</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>96</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in range(len(max_weight)):&nbsp; &nbsp;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>97</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for j in range(len(max_weight[i])):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>98</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (axisW =='' and indexW == ''):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>99</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if&nbsp; max_weight[i][j] &lt; weights[i][j]:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>100</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_weight[i][j] = weights[i][j]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>101</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>102</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if&nbsp; max_weight[i][j] &lt; weights[axisW[i]][index[j]]:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>103</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_weight[i][j] = weights[axisW[i]][index[j]]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>104</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>105</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for k in range(len(max_weight)):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>106</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for l in range(len(max_weight[k])):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>107</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if max_weight[k][l] &lt;= tol_weight:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>108</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (axisW == '' and indexW == ''):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>109</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; collapseWeight_msg += 'measure: %s &amp; index: %s, ' \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>110</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; %(k,l)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>111</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>112</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; collapseWeight_msg += 'measure: %s &amp; index: %s, ' \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>113</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; %(axisW[k],indexW[l])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>114</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>115</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; else: </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>116</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print 'Error, wrong arguments of CLPS_Weight'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>117</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return False</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>118</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>119</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if info:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>120</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if collapseWeight_msg == '': msg = ''</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>121</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>122</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg0 = 'CLPS_Weight with: '</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>123</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = msg0 + collapseWeight_msg</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>124</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg2 = msg0 + '\n npts = %s, tol_weight = %s, generations = %s: \n' \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>125</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; % (npts, tol_weight, generations) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>126</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg2 += 'vanishing weights of support points: '</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>127</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg2 += collapseWeight_msg</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>128</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if debug: print msg2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>129</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return msg</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>130</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>131</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if collapseWeight_msg == '': return False</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>132</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; else: return True</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>133</th><td class="r"><ins>&nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>134</th><td class="r"><ins>&nbsp; &nbsp; return _CLPS_Weight</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>135</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>136</th><td class="r"><ins>&nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>137</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>138</th><td class="r"><ins>def CLPS_Position(npts, tol_position, generations=200, axisP = '', \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>139</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; index1 = '', index2 = ''):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>140</th><td class="r"><ins>&nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>141</th><td class="r"><ins>&nbsp; &nbsp; """ Termination condition for collapsing positions of support points.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>142</th><td class="r"><ins>&nbsp; &nbsp; if info = False:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>143</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;returns true if the positions collapse for any 2 support </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>144</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;points in a measure</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>145</th><td class="r"><ins>&nbsp; &nbsp; if info = True: </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>146</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;prints out a message saying for which point-pairs the location collapsed.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>147</th><td class="r"><ins>&nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>148</th><td class="r"><ins>&nbsp; &nbsp; In this code, collapse is the event where the distance between 2 support </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>149</th><td class="r"><ins>&nbsp; &nbsp; points (its maximum accros last given number of generations) has been </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>150</th><td class="r"><ins>&nbsp; &nbsp; less than the tollerance level, tol_position. </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>151</th><td class="r"><ins>&nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>152</th><td class="r"><ins>&nbsp; &nbsp; If axisP and index1 and index2 are not declared, the function returns </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>153</th><td class="r"><ins>&nbsp; &nbsp; whenever any 2 points collapse in position. If declared (axisP is a tuple </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>154</th><td class="r"><ins>&nbsp; &nbsp; or and integer, index1 and index2 are integers) then the function returns </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>155</th><td class="r"><ins>&nbsp; &nbsp; only if collapse had occured for points with given indices.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>156</th><td class="r"><ins>&nbsp; &nbsp; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>157</th><td class="r"><ins>&nbsp; &nbsp; npts = (nx, ny, ...) is the tuple of the support point numbers for each</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>158</th><td class="r"><ins>&nbsp; &nbsp; input."""</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>159</th><td class="r"><ins>&nbsp; &nbsp; </ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>160</th><td class="l"><span>&nbsp; &nbsp; from mystic.tools import isNull</span> </td>
+                  </tr><tr>
+                          <th>13</th><th>161</th><td class="l"><span>&nbsp; &nbsp; from mystic.monitors import Null, Monitor, VerboseMonitor</span> </td>
+                  </tr><tr>
+                          <th>14</th><th>162</th><td class="l"><span>&nbsp; &nbsp; monitor = Monitor()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>15</th><th> </th><td class="l"><span>&nbsp; &nbsp; if debug: monitor = VerboseMonitor(2)</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>&nbsp; &nbsp; def _CLPS_Weight(inst, info=False):</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>163</th><td class="r"><span>&nbsp; &nbsp; if debug: monitor = VerboseMonitor(2, 2)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>164</th><td class="r"><span>&nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>165</th><td class="r"><span>&nbsp; &nbsp; # CHECK THAT index1, and index2 are integers if declared, and either none or </span> </td>
+                      </tr><tr>
+                        <th> </th><th>166</th><td class="r"><span>&nbsp; &nbsp; # both are empty</span> </td>
+                      </tr><tr>
+                        <th> </th><th>167</th><td class="r"><span>&nbsp; &nbsp; </span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>168</th><td class="r"><span>&nbsp; &nbsp; def _CLPS_Position(inst, info=False):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>18</th><th>169</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ###FIXME: this should probably be in Solver #######</span> </td>
+                  </tr><tr>
+                          <th>19</th><th>170</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if isNull(inst._stepmon): inst._stepmon = monitor</span> </td>
+                  </tr><tr>
+                          <th>20</th><th>171</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ###################################################</span> </td>
+                  </tr><tr>
+                          <th>21</th><th>172</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>22</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; lg = len(inst._stepmon)</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if lg &lt;= generations: return False</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from numpy import array, ones, transpose</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.math.dirac_measure import product_measure</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Last_bestSolution = product_measure()</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Last_bestSolution.load(inst._stepmon.x[-1], npts)</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Gen_bestSolution = product_measure()</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Gen_bestSolution.load(inst._stepmon.x[-generations], npts)</span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; dim = len(Last_bestSolution) # Number of measures</span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; collapseWeight&nbsp; = ''&nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>173</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ############## PARAMETERS (length, and number of emasures) #############</span> </td>
+                      </tr><tr>
+                        <th> </th><th>174</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; hist_lg = len(inst._stepmon)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>175</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if hist_lg &lt;= generations: return False</span> </td>
+                      </tr><tr>
+                        <th> </th><th>176</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>177</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.math.measures import _nested_split&nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>178</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; w_bestSolution, x_bestSolution = \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>179</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; _nested_split(inst.bestSolution, npts)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>180</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>181</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if axisP == '':</span> </td>
+                      </tr><tr>
+                        <th> </th><th>182</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dim = len(w_bestSolution) # Number of measures</span> </td>
+                      </tr><tr>
+                        <th> </th><th>183</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; axis = range(dim)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>184</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>185</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; axis = axisP&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>186</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if isinstance( axisP, int ): dim&nbsp; = 1</span> </td>
+                      </tr><tr>
+                        <th> </th><th>187</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else: dim = len(list(axisP))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>188</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>189</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ########################################################################</span> </td>
+                      </tr><tr>
+                        <th> </th><th>190</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; collapsePairs_msg&nbsp; = ''&nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>191</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>192</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from numpy import array, zeros, ones, transpose&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>37</th><th>193</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for i in range(dim):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>38</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Last_collapseWeight = array(Last_bestSolution[i].weights) &lt;= tolW</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gen_collapseWeight = array(Gen_bestSolution[i].weights) &lt;= tolW</span> </td>
+                      </tr><tr>
+                        <th>40</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for k in range(len(Last_collapseWeight)):</span> </td>
+                      </tr><tr>
+                        <th>41</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if all([Last_collapseWeight[k], Gen_collapseWeight[k]]):</span> </td>
+                      </tr><tr>
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;collapseWeight += ('measure %s: index: %s; ' %(i,k))</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>194</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if isinstance(axis, int): ax_idx = axis</span> </td>
+                      </tr><tr>
+                        <th> </th><th>195</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else: ax_idx = axis[i]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>196</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>197</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if isinstance(index1, int):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>198</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if isinstance(index2, int):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>199</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; nx = 1</span> </td>
+                      </tr><tr>
+                        <th> </th><th>200</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_measure_diffLoc = 0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>201</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>202</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Error argument declaration index2 is \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>203</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; empty while index1 is not"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>204</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return False&nbsp; &nbsp;#FIXME</span> </td>
+                      </tr><tr>
+                        <th> </th><th>205</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>206</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if isinstance(index2, int):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>207</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Error argument declaration index1 is \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>208</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; empty while index2 is not"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>209</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return False&nbsp; &nbsp;#FIXME</span> </td>
+                      </tr><tr>
+                        <th> </th><th>210</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>211</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; nx = npts[ax_idx]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>212</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_measure_diffLoc = zeros((nx, nx))&nbsp; &nbsp; &nbsp;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>213</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>214</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for n in range(-generations, 0):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>215</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; weights, positions = _nested_split(inst._stepmon.x[n], npts)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>216</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if nx == 1:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>217</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; diffLoc = abs(positions[ax_idx][index1] - \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>218</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; positions[ax_idx][index2])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>219</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if max_measure_diffLoc &lt; diffLoc:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>220</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_measure_diffLoc= diffLoc&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>221</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>222</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; diffLoc = abs(transpose(positions[ax_idx]*ones((nx, nx))) - \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>223</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; positions[ax_idx]*ones((nx, nx)))&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>224</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for k in range(nx):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>225</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for l in range(nx):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>226</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if max_measure_diffLoc[(k, l)] &lt; diffLoc[(k, l)]:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>227</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; max_measure_diffLoc[(k, l)] = diffLoc[(k, l)]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>228</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>229</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if nx ==1 and max_measure_diffLoc &lt;= tol_position[ax_idx]: </span> </td>
+                      </tr><tr>
+                        <th> </th><th>230</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; collapsePairs_msg += ('measure: %s &amp; indices: (%s,%s),'\</span> </td>
+                      </tr><tr>
+                        <th> </th><th>231</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; %(ax_idx,index1,index2))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>232</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>233</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>234</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for k in range(nx):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>235</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for l in range(k,nx):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>236</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if k != l and max_measure_diffLoc[(k,l)] &lt;= \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>237</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;tol_position[ax_idx]:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>238</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; collapsePairs_msg += ('measure: %s &amp; indices: (%s,%s),' \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>239</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; %(ax_idx,k,l))</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>240</th><td class="r"><span>&nbsp; &nbsp; </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>43</th><th>241</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if info:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if collapseWeight == '': msg = ''</span> </td>
+                      </tr><tr>
+                        <th>45</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th>46</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = 'CLPS_Weight:\n'</span> </td>
+                      </tr><tr>
+                        <th>47</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg += 'npts = %s, tolW = %s, tolG = %s, generations = %s;\n' \</span> </td>
+                      </tr><tr>
+                        <th>48</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; % (npts, tolW, tolG, generations) </span> </td>
+                      </tr><tr>
+                        <th>49</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg += 'vanishing weights of support points: '</span> </td>
+                      </tr><tr>
+                        <th>50</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg += collapseWeight</span> </td>
+                      </tr><tr>
+                        <th>51</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #if debug: print msg</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>242</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if collapsePairs_msg == '': msg = ''</span> </td>
+                      </tr><tr>
+                        <th> </th><th>243</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>244</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg0 = 'CLPS_Position with: '</span> </td>
+                      </tr><tr>
+                        <th> </th><th>245</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = msg0 + collapsePairs_msg</span> </td>
+                      </tr><tr>
+                        <th> </th><th>246</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg2 = msg0 + '\n npts = %s, tol_position = %s, generations = %s:\n' \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>247</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; % (npts, tol_position, generations) </span> </td>
+                      </tr><tr>
+                        <th> </th><th>248</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg2 += 'collapse of support points: '</span> </td>
+                      </tr><tr>
+                        <th> </th><th>249</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg2 += collapsePairs_msg</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>250</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if debug: print msg2</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>251</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return msg</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>53</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if collapse<del>Weight</del> == '': return False</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>252</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>253</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if collapse<ins>Pairs_msg</ins> == '': return False</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>55</th><th>254</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: return True</span> </td>
+                  </tr><tr>
+                          <th>56</th><th>255</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>57</th><th> </th><td class="l"><span>&nbsp; &nbsp; return _CLPS_Weight</span> </td>
+                      </tr><tr>
+                        <th>58</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>59</th><th> </th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>60</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>61</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>62</th><th> </th><td class="l"><span>def CLPS_Location(npts, tolL, tolG=10e-6, generations=30):</span> </td>
+                      </tr><tr>
+                        <th>63</th><th> </th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>64</th><th> </th><td class="l"><span>&nbsp; &nbsp; """ Termination condition for collapsing locations of support points.</span> </td>
+                      </tr><tr>
+                        <th>65</th><th> </th><td class="l"><span>&nbsp; &nbsp; if info = False:</span> </td>
+                      </tr><tr>
+                        <th>66</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;returns true if the locations collapse for any 2 support </span> </td>
+                      </tr><tr>
+                        <th>67</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;points in a measure</span> </td>
+                      </tr><tr>
+                        <th>68</th><th> </th><td class="l"><span>&nbsp; &nbsp; if info = True: </span> </td>
+                      </tr><tr>
+                        <th>69</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;prints out a message saying for which point-pairs the location collapsed.</span> </td>
+                      </tr><tr>
+                        <th>70</th><th> </th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>71</th><th> </th><td class="l"><span>&nbsp; &nbsp; npts = (nx, ny, ...) is the tuple of the support point numbers for each</span> </td>
+                      </tr><tr>
+                        <th>72</th><th> </th><td class="l"><span>&nbsp; &nbsp; input."""</span> </td>
+                      </tr><tr>
+                        <th>73</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.tools import isNull</span> </td>
+                      </tr><tr>
+                        <th>74</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.monitors import Null, Monitor, VerboseMonitor</span> </td>
+                      </tr><tr>
+                        <th>75</th><th> </th><td class="l"><span>&nbsp; &nbsp; monitor = Monitor()</span> </td>
+                      </tr><tr>
+                        <th>76</th><th> </th><td class="l"><span>&nbsp; &nbsp; if debug: monitor = VerboseMonitor(2)</span> </td>
+                      </tr><tr>
+                        <th>77</th><th> </th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>78</th><th> </th><td class="l"><span>&nbsp; &nbsp; def _CLPS_Location(inst, info=False):</span> </td>
+                      </tr><tr>
+                        <th>79</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ###FIXME: this should probably be in Solver #######</span> </td>
+                      </tr><tr>
+                        <th>80</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if isNull(inst._stepmon): inst._stepmon = monitor</span> </td>
+                      </tr><tr>
+                        <th>81</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ###################################################</span> </td>
+                      </tr><tr>
+                        <th>82</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>83</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; lg = len(inst._stepmon)</span> </td>
+                      </tr><tr>
+                        <th>84</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if lg &lt;= generations: return False</span> </td>
+                      </tr><tr>
+                        <th>85</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>86</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from numpy import array, ones, transpose</span> </td>
+                      </tr><tr>
+                        <th>87</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.math.dirac_measure import product_measure</span> </td>
+                      </tr><tr>
+                        <th>88</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>89</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Last_bestSolution = product_measure()</span> </td>
+                      </tr><tr>
+                        <th>90</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Last_bestSolution.load(inst._stepmon.x[-1], npts)</span> </td>
+                      </tr><tr>
+                        <th>91</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>92</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Gen_bestSolution = product_measure()</span> </td>
+                      </tr><tr>
+                        <th>93</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Gen_bestSolution.load(inst._stepmon.x[-generations], npts)</span> </td>
+                      </tr><tr>
+                        <th>94</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>95</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; dim = len(Last_bestSolution) # Number of measures</span> </td>
+                      </tr><tr>
+                        <th>96</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; collapsePairs&nbsp; = ''&nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>97</th><th> </th><td class="l"><span>&nbsp; </span> </td>
+                      </tr><tr>
+                        <th>98</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for i in range(dim):</span> </td>
+                      </tr><tr>
+                        <th>99</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x = array(Last_bestSolution[i].coords)&nbsp; &nbsp;</span> </td>
+                      </tr><tr>
+                        <th>100</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Last_DiffLoc = transpose(x*ones((len(x), len(x)))) - \</span> </td>
+                      </tr><tr>
+                        <th>101</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x*ones((len(x), len(x)))</span> </td>
+                      </tr><tr>
+                        <th>102</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>103</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = array(Gen_bestSolution[i].coords)&nbsp; &nbsp; &nbsp;</span> </td>
+                      </tr><tr>
+                        <th>104</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>105</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gen_DiffLoc = transpose(y*ones((len(y), len(y)))) - \</span> </td>
+                      </tr><tr>
+                        <th>106</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y*ones((len(y), len(y))) </span> </td>
+                      </tr><tr>
+                        <th>107</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>108</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; collapseLoc1 = (abs(Last_DiffLoc) &lt;= tolL[i]) </span> </td>
+                      </tr><tr>
+                        <th>109</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; collapseLoc2 = (abs(Gen_DiffLoc) &lt;= tolL[i])</span> </td>
+                      </tr><tr>
+                        <th>110</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>111</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for k in range(len(x)):</span> </td>
+                      </tr><tr>
+                        <th>112</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for l in range(len(x)):</span> </td>
+                      </tr><tr>
+                        <th>113</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if k != l and all([collapseLoc1[(k,l)], \</span> </td>
+                      </tr><tr>
+                        <th>114</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;collapseLoc2[(k, l)]]):</span> </td>
+                      </tr><tr>
+                        <th>115</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; collapsePairs += ('measure %s: indices (%s,%s); ' \</span> </td>
+                      </tr><tr>
+                        <th>116</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; %(i,k, l))</span> </td>
+                      </tr><tr>
+                        <th>117</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>118</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if info:</span> </td>
+                      </tr><tr>
+                        <th>119</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if collapsePairs == '': msg = ''</span> </td>
+                      </tr><tr>
+                        <th>120</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th>121</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = 'CLPS_Location:\n'</span> </td>
+                      </tr><tr>
+                        <th>122</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg += 'npts = %s, tolL = %s, tolG = %s, generations = %s;\n' \</span> </td>
+                      </tr><tr>
+                        <th>123</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; % (npts, tolL, tolG, generations) </span> </td>
+                      </tr><tr>
+                        <th>124</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg += 'collapse of support points: '</span> </td>
+                      </tr><tr>
+                        <th>125</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg += collapsePairs</span> </td>
+                      </tr><tr>
+                        <th>126</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #if debug: print msg</span> </td>
+                      </tr><tr>
+                        <th>127</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return msg</span> </td>
+                      </tr><tr>
+                        <th>128</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>129</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if collapsePairs == '': return False</span> </td>
+                      </tr><tr>
+                        <th>130</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: return True</span> </td>
+                      </tr><tr>
+                        <th>131</th><th> </th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>132</th><th> </th><td class="l"><span>&nbsp; &nbsp; return _CLPS_Location</span> </td>
+                      </tr><tr>
+                        <th>133</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>134</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>256</th><td class="r"><span>&nbsp; &nbsp; return _CLPS_Position</span> </td>
+                      </tr><tr>
+                        <th> </th><th>257</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>258</th><td class="r"><span></span> </td>
+                      </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/560/branches/collapse/collapse_termination.py?format=diff&amp;new=560" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/560/branches/collapse/collapse_termination.py?format=zip&amp;new=560" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/560/branches/collapse/collapse_termination.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:48:35 GMT -->
+</html>

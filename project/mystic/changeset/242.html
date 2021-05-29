@@ -1,0 +1,1679 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/242 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:40:56 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 242 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="241.html" title="Changeset 241" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/242?format=diff&amp;new=242" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/242?format=zip&amp;new=242" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="243.html" title="Changeset 243" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="241.html" title="Changeset 241">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="243.html" title="Changeset 243">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 242</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             05/21/10 21:46:54
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-05-21T21%3A46%3A54-07%3A00&amp;precision=second" title="2010-05-21T21:46:54-07:00 in Timeline">6 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+edits to fix epydoc formatting and content<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic?rev=242">mystic/mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>11 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/__init__.py?rev=242">
+              __init__.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=242">
+              abstract_map_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">5 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_nested_solver.py?rev=242">
+              abstract_nested_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=242">
+              abstract_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=242">
+              differential_evolution.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/math/approx.py?rev=242">
+              math/approx.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/math/grid.py?rev=242">
+              math/grid.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=242">
+              nested.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">5 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/python_map.py?rev=242">
+              python_map.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file8">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=242">
+              scipy_optimize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file9">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=242">
+              tools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file10">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="242/mystic/mystic/__init__.html" title="Show the changeset 242 restricted to mystic/mystic/__init__.py">mystic/mystic/__init__.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 240">
+                    <a title="Show revision 240 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/__init__.py?rev=240#L98">
+                      r240</a>
+                  </th>
+                  <th title="Revision 242">
+                    <a title="Show revision 242 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/__init__.py?rev=242#L98">
+                      r242</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>98</th><th>98</th><td class="l"><span>&nbsp; &nbsp; - setuptools, version &gt;= 0.6</span> </td>
+                  </tr><tr>
+                          <th>99</th><th>99</th><td class="l"><span>&nbsp; &nbsp; - matplotlib, version &gt;= 0.91</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>100</th><td class="r"><ins>&nbsp; &nbsp; - pathos, version &gt;= 0.1a1</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>100</th><th>101</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>101</th><th>102</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/__init__.py?rev=240#L138">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/__init__.py?rev=242#L139">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>138</th><th>139</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>139</th><th>140</th><td class="l"><span>Important classes and functions are found here::</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>140</th><th> </th><td class="l"><span>&nbsp; &nbsp; - mystic.mystic.abstract_solver <del></del>[the solver API definition]</span> </td>
+                      </tr><tr>
+                        <th>141</th><th> </th><td class="l"><span>&nbsp; &nbsp; - mystic.mystic.abstract_map_solver <del></del>[the parallel solver API]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>141</th><td class="r"><span>&nbsp; &nbsp; - mystic.mystic.abstract_solver <ins>&nbsp; &nbsp; &nbsp; &nbsp;</ins>[the solver API definition]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>142</th><td class="r"><span>&nbsp; &nbsp; - mystic.mystic.abstract_map_solver <ins>&nbsp; &nbsp;</ins>[the parallel solver API]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>142</th><th>143</th><td class="l"><span>&nbsp; &nbsp; - mystic.mystic.abstract_nested_solver [the nested solver API]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>143</th><th> </th><td class="l"><span>&nbsp; &nbsp; - mystic.mystic.termination&nbsp; &nbsp; &nbsp;<del></del>[solver termination conditions]</span> </td>
+                      </tr><tr>
+                        <th>144</th><th> </th><td class="l"><span>&nbsp; &nbsp; - mystic.mystic.strategy&nbsp; &nbsp; &nbsp; &nbsp; <del></del>[solver population mutation strategies]</span> </td>
+                      </tr><tr>
+                        <th>145</th><th> </th><td class="l"><span>&nbsp; &nbsp; - mystic.models.abstract_model&nbsp; <del></del>[the model API definition]</span> </td>
+                      </tr><tr>
+                        <th>146</th><th> </th><td class="l"><span>&nbsp; &nbsp; - mystic.models.forward_model&nbsp; &nbsp;<del></del>[cost function generator]</span> </td>
+                      </tr><tr>
+                        <th>147</th><th> </th><td class="l"><span>&nbsp; &nbsp; - mystic.mystic.tools&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del></del>[monitors, function wrappers, and other tools]</span> </td>
+                      </tr><tr>
+                        <th>148</th><th> </th><td class="l"><span>&nbsp; &nbsp; - mystic.mystic.math&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <del></del>[some useful mathematical functions and tools]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>144</th><td class="r"><span>&nbsp; &nbsp; - mystic.mystic.termination&nbsp; &nbsp; &nbsp;<ins>&nbsp; &nbsp; &nbsp; &nbsp;</ins>[solver termination conditions]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>145</th><td class="r"><span>&nbsp; &nbsp; - mystic.mystic.strategy&nbsp; &nbsp; &nbsp; &nbsp; <ins>&nbsp; &nbsp; &nbsp; &nbsp;</ins>[solver population mutation strategies]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>146</th><td class="r"><span>&nbsp; &nbsp; - mystic.models.abstract_model&nbsp; <ins>&nbsp; &nbsp; &nbsp; &nbsp;</ins>[the model API definition]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>147</th><td class="r"><span>&nbsp; &nbsp; - mystic.models.forward_model&nbsp; &nbsp;<ins>&nbsp; &nbsp; &nbsp; &nbsp;</ins>[cost function generator]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>148</th><td class="r"><span>&nbsp; &nbsp; - mystic.mystic.tools&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>&nbsp; &nbsp; &nbsp; &nbsp;</ins>[monitors, function wrappers, and other tools]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>149</th><td class="r"><span>&nbsp; &nbsp; - mystic.mystic.math&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <ins>&nbsp; &nbsp; &nbsp; &nbsp;</ins>[some useful mathematical functions and tools]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>149</th><th>150</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>150</th><th>151</th><td class="l"><span>Solvers are found here::</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="242/mystic/mystic/abstract_map_solver.html" title="Show the changeset 242 restricted to mystic/mystic/abstract_map_solver.py">mystic/mystic/abstract_map_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 240">
+                    <a title="Show revision 240 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=240#L16">
+                      r240</a>
+                  </th>
+                  <th title="Revision 242">
+                    <a title="Show revision 242 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=242#L16">
+                      r242</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>16</th><th>16</th><td class="l"><span>The default map API settings are provided within mystic, while</span> </td>
+                  </tr><tr>
+                          <th>17</th><th>17</th><td class="l"><span>distributed and high-performance computing mappers and launchers</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>18</th><th> </th><td class="l"><span>can be obtained within the "pathos" package, found here:<del></del></span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; - http://dev.danse.us/trac/pathos<del>&nbsp; &nbsp;(see subpackage = pyina)</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>18</th><td class="r"><span>can be obtained within the "pathos" package, found here:<ins>:</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>19</th><td class="r"><span>&nbsp; &nbsp; - http://dev.danse.us/trac/pathos<ins></ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>20</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>21</th><th>21</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=240#L27">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=242#L27">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>27</th><th>27</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; # the function to be minimized and the initial values</span> </td>
+                  </tr><tr>
+                          <th>28</th><th>28</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; from mystic.models import rosen</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; x0 = [0.8, 1.2, 0.7]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>29</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; lb = [0.0, 0.0, 0.0]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>30</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; ub = [2.0, 2.0, 2.0]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>30</th><th>31</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; </span> </td>
+                  </tr><tr>
+                          <th>31</th><th>32</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; # get monitors and termination condition objects</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=240#L39">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=242#L40">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>40</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; from pyina.ez_map import ez_map2</span> </td>
+                  </tr><tr>
+                          <th>40</th><th>41</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; NNODES = 4</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>42</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt;&gt; npts = 20</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>41</th><th>43</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt;</span> </td>
+                  </tr><tr>
+                          <th>42</th><th>44</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; # instantiate and configure the solver</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>43</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; from mystic.scipy_optimize import NelderMeadSimplexMapSolver</span> </td>
+                      </tr><tr>
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; solver = NelderMeadSimplexMapSolver(len(x0))</span> </td>
+                      </tr><tr>
+                        <th>45</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; solver.SetInitialPoints(x0)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #FIXME: use batchgrid w/ bounds</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>45</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; from mystic.nested import ScattershotSolver</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>46</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; solver = ScattershotSolver(len(lb), npts)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>47</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; solver.SetMapper(ez_map2, equalportion_mapper)</span> </td>
+                  </tr><tr>
+                          <th>47</th><th>48</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; solver.SetLauncher(mpirun_launcher, NNODES)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=240#L87">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=242#L88">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>87</th><th>88</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>88</th><th>89</th><td class="l"><span>Additional inputs:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>89</th><th> </th><td class="l"><span>&nbsp; &nbsp; npop&nbsp; &nbsp; &nbsp;-- size of the trial solution population.&nbsp; <del></del>[default = 1]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>90</th><td class="r"><span>&nbsp; &nbsp; npop&nbsp; &nbsp; &nbsp;-- size of the trial solution population.&nbsp; <ins>&nbsp; &nbsp;</ins>[default = 1]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>90</th><th>91</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>91</th><th>92</th><td class="l"><span>Important class members:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=240#L93">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=242#L94">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>93</th><th>94</th><td class="l"><span>&nbsp; &nbsp; generations&nbsp; &nbsp; - an iteration counter.</span> </td>
+                  </tr><tr>
+                          <th>94</th><th>95</th><td class="l"><span>&nbsp; &nbsp; bestEnergy&nbsp; &nbsp; &nbsp;- current best energy.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>95</th><th> </th><td class="l"><span>&nbsp; &nbsp; bestSolution&nbsp; &nbsp;- current best parameter set. [size = dim]</span> </td>
+                      </tr><tr>
+                        <th>96</th><th> </th><td class="l"><span>&nbsp; &nbsp; popEnergy&nbsp; &nbsp; &nbsp; - set of all trial energy solutions. [size = npop]</span> </td>
+                      </tr><tr>
+                        <th>97</th><th> </th><td class="l"><span>&nbsp; &nbsp; population&nbsp; &nbsp; &nbsp;- set of all trial parameter solutions.</span> </td>
+                      </tr><tr>
+                        <th>98</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [size = dim*npop]</span> </td>
+                      </tr><tr>
+                        <th>99</th><th> </th><td class="l"><span>&nbsp; &nbsp; energy_history - history of bestEnergy status.</span> </td>
+                      </tr><tr>
+                        <th>100</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [equivalent to StepMonitor]</span> </td>
+                      </tr><tr>
+                        <th>101</th><th> </th><td class="l"><span>&nbsp; &nbsp; signal_handler - catches the interrupt signal.</span> </td>
+                      </tr><tr>
+                        <th>102</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [***disabled***]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>96</th><td class="r"><span>&nbsp; &nbsp; bestSolution&nbsp; &nbsp;- current best parameter set.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[size = dim]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>97</th><td class="r"><span>&nbsp; &nbsp; popEnergy&nbsp; &nbsp; &nbsp; - set of all trial energy solutions.&nbsp; &nbsp; [size = npop]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>98</th><td class="r"><span>&nbsp; &nbsp; population&nbsp; &nbsp; &nbsp;- set of all trial parameter solutions. [size = dim*npop]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>99</th><td class="r"><span>&nbsp; &nbsp; energy_history - history of bestEnergy status.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[equivalent to StepMonitor]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>100</th><td class="r"><span>&nbsp; &nbsp; signal_handler - catches the interrupt signal.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[***disabled***]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>103</th><th>101</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>104</th><th>102</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(AbstractMapSolver, self).__init__(dim, **kwds)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="242/mystic/mystic/abstract_nested_solver.html" title="Show the changeset 242 restricted to mystic/mystic/abstract_nested_solver.py">mystic/mystic/abstract_nested_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 240">
+                    <a title="Show revision 240 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_nested_solver.py?rev=240#L16">
+                      r240</a>
+                  </th>
+                  <th title="Revision 242">
+                    <a title="Show revision 242 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_nested_solver.py?rev=242#L16">
+                      r242</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>16</th><th>16</th><td class="l"><span>The default map API settings are provided within mystic, while</span> </td>
+                  </tr><tr>
+                          <th>17</th><th>17</th><td class="l"><span>distributed and high-performance computing mappers and launchers</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>18</th><th> </th><td class="l"><span>can be obtained within the "pathos" package, found here:<del></del></span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; - http://dev.danse.us/trac/pathos<del>&nbsp; &nbsp;(see subpackage = pyina)</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>18</th><td class="r"><span>can be obtained within the "pathos" package, found here:<ins>:</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>19</th><td class="r"><span>&nbsp; &nbsp; - http://dev.danse.us/trac/pathos<ins></ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>20</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>21</th><th>21</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_nested_solver.py?rev=240#L92">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_nested_solver.py?rev=242#L92">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>92</th><th>92</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>93</th><th>93</th><td class="l"><span>Additional inputs:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>94</th><th> </th><td class="l"><span>&nbsp; &nbsp; npop&nbsp; &nbsp; &nbsp;-- size of the trial solution population.&nbsp; <del></del>[default = 1]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>94</th><td class="r"><span>&nbsp; &nbsp; npop&nbsp; &nbsp; &nbsp;-- size of the trial solution population.&nbsp; <ins>&nbsp; &nbsp; </ins>[default = 1]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>95</th><th>95</th><td class="l"><span>&nbsp; &nbsp; nbins&nbsp; &nbsp; -- tuple of number of bins in each dimension.&nbsp; [default = [1]*dim]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>96</th><th> </th><td class="l"><span>&nbsp; &nbsp; npts&nbsp; &nbsp; &nbsp;-- number of solver instances.&nbsp; <del></del>[default = 1]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>96</th><td class="r"><span>&nbsp; &nbsp; npts&nbsp; &nbsp; &nbsp;-- number of solver instances.&nbsp; <ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</ins>[default = 1]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>97</th><th>97</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>98</th><th>98</th><td class="l"><span>Important class members:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_nested_solver.py?rev=240#L100">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_nested_solver.py?rev=242#L100">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>100</th><th>100</th><td class="l"><span>&nbsp; &nbsp; generations&nbsp; &nbsp; - an iteration counter.</span> </td>
+                  </tr><tr>
+                          <th>101</th><th>101</th><td class="l"><span>&nbsp; &nbsp; bestEnergy&nbsp; &nbsp; &nbsp;- current best energy.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>102</th><th> </th><td class="l"><span>&nbsp; &nbsp; bestSolution&nbsp; &nbsp;- current best parameter set. [size = dim]</span> </td>
+                      </tr><tr>
+                        <th>103</th><th> </th><td class="l"><span>&nbsp; &nbsp; popEnergy&nbsp; &nbsp; &nbsp; - set of all trial energy solutions. [size = npop]</span> </td>
+                      </tr><tr>
+                        <th>104</th><th> </th><td class="l"><span>&nbsp; &nbsp; population&nbsp; &nbsp; &nbsp;- set of all trial parameter solutions.</span> </td>
+                      </tr><tr>
+                        <th>105</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [size = dim*npop]</span> </td>
+                      </tr><tr>
+                        <th>106</th><th> </th><td class="l"><span>&nbsp; &nbsp; energy_history - history of bestEnergy status.</span> </td>
+                      </tr><tr>
+                        <th>107</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [equivalent to StepMonitor]</span> </td>
+                      </tr><tr>
+                        <th>108</th><th> </th><td class="l"><span>&nbsp; &nbsp; signal_handler - catches the interrupt signal.</span> </td>
+                      </tr><tr>
+                        <th>109</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [***disabled***]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>102</th><td class="r"><span>&nbsp; &nbsp; bestSolution&nbsp; &nbsp;- current best parameter set.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [size = dim]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>103</th><td class="r"><span>&nbsp; &nbsp; popEnergy&nbsp; &nbsp; &nbsp; - set of all trial energy solutions.&nbsp; &nbsp; &nbsp;[size = npop]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>104</th><td class="r"><span>&nbsp; &nbsp; population&nbsp; &nbsp; &nbsp;- set of all trial parameter solutions.&nbsp; [size = dim*npop]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>105</th><td class="r"><span>&nbsp; &nbsp; energy_history - history of bestEnergy status.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [equivalent to StepMonitor]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>106</th><td class="r"><span>&nbsp; &nbsp; signal_handler - catches the interrupt signal.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [***disabled***]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>110</th><th>107</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>111</th><th>108</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(AbstractNestedSolver, self).__init__(dim, **kwds)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="242/mystic/mystic/abstract_solver.html" title="Show the changeset 242 restricted to mystic/mystic/abstract_solver.py">mystic/mystic/abstract_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 234">
+                    <a title="Show revision 234 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=234#L91">
+                      r234</a>
+                  </th>
+                  <th title="Revision 242">
+                    <a title="Show revision 242 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=242#L91">
+                      r242</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>91</th><th>91</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>92</th><th>92</th><td class="l"><span>Additional inputs:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>93</th><th> </th><td class="l"><span>&nbsp; &nbsp; npop&nbsp; &nbsp; &nbsp;-- size of the trial solution population.&nbsp; <del></del>[default = 1]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>93</th><td class="r"><span>&nbsp; &nbsp; npop&nbsp; &nbsp; &nbsp;-- size of the trial solution population.&nbsp; <ins>&nbsp; &nbsp; </ins>[default = 1]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>94</th><th>94</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>95</th><th>95</th><td class="l"><span>Important class members:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=234#L97">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=242#L97">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>97</th><th>97</th><td class="l"><span>&nbsp; &nbsp; generations&nbsp; &nbsp; - an iteration counter.</span> </td>
+                  </tr><tr>
+                          <th>98</th><th>98</th><td class="l"><span>&nbsp; &nbsp; bestEnergy&nbsp; &nbsp; &nbsp;- current best energy.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>99</th><th> </th><td class="l"><span>&nbsp; &nbsp; bestSolution&nbsp; &nbsp;- current best parameter set. [size = dim]</span> </td>
+                      </tr><tr>
+                        <th>100</th><th> </th><td class="l"><span>&nbsp; &nbsp; popEnergy&nbsp; &nbsp; &nbsp; - set of all trial energy solutions. [size = npop]</span> </td>
+                      </tr><tr>
+                        <th>101</th><th> </th><td class="l"><span>&nbsp; &nbsp; population&nbsp; &nbsp; &nbsp;- set of all trial parameter solutions.</span> </td>
+                      </tr><tr>
+                        <th>102</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [size = dim*npop]</span> </td>
+                      </tr><tr>
+                        <th>103</th><th> </th><td class="l"><span>&nbsp; &nbsp; energy_history - history of bestEnergy status.</span> </td>
+                      </tr><tr>
+                        <th>104</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [equivalent to StepMonitor]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>99</th><td class="r"><span>&nbsp; &nbsp; bestSolution&nbsp; &nbsp;- current best parameter set.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [size = dim]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>100</th><td class="r"><span>&nbsp; &nbsp; popEnergy&nbsp; &nbsp; &nbsp; - set of all trial energy solutions.&nbsp; &nbsp; &nbsp;[size = npop]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>101</th><td class="r"><span>&nbsp; &nbsp; population&nbsp; &nbsp; &nbsp;- set of all trial parameter solutions.&nbsp; [size = dim*npop]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>102</th><td class="r"><span>&nbsp; &nbsp; energy_history - history of bestEnergy status.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [equivalent to StepMonitor]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>105</th><th>103</th><td class="l"><span>&nbsp; &nbsp; signal_handler - catches the interrupt signal.</span> </td>
+                  </tr><tr>
+                          <th>106</th><th>104</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="242/mystic/mystic/differential_evolution.html" title="Show the changeset 242 restricted to mystic/mystic/differential_evolution.py">mystic/mystic/differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 233">
+                    <a title="Show revision 233 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=233#L70">
+                      r233</a>
+                  </th>
+                  <th title="Revision 242">
+                    <a title="Show revision 242 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=242#L70">
+                      r242</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>70</th><th>70</th><td class="l"><span>Solver for your own objective function can be found on R. Storn's</span> </td>
+                  </tr><tr>
+                          <th>71</th><th>71</th><td class="l"><span>web page (http://www.icsi.berkeley.edu/~storn/code.html), and is</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>72</th><th> </th><td class="l"><span>reproduced here:<del></del></span> </td>
+                      </tr><tr>
+                        <th>73</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>74</th><th> </th><td class="l"><span>&nbsp; <del></del>First try the following classical settings for the solver configuration:</span> </td>
+                      </tr><tr>
+                        <th>75</th><th> </th><td class="l"><span>&nbsp; <del></del>Choose a crossover strategy (e.g. Rand1Bin), set the number of parents</span> </td>
+                      </tr><tr>
+                        <th>76</th><th> </th><td class="l"><span>&nbsp; <del></del>NP to 10 times the number of parameters, select ScalingFactor=0.8, and</span> </td>
+                      </tr><tr>
+                        <th>77</th><th> </th><td class="l"><span>&nbsp; <del></del>CrossProbability=0.9.</span> </td>
+                      </tr><tr>
+                        <th>78</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>79</th><th> </th><td class="l"><span>&nbsp; <del></del>It has been found recently that selecting ScalingFactor from the interval</span> </td>
+                      </tr><tr>
+                        <th>80</th><th> </th><td class="l"><span>&nbsp; <del></del>[0.5, 1.0] randomly for each generation or for each difference vector,</span> </td>
+                      </tr><tr>
+                        <th>81</th><th> </th><td class="l"><span>&nbsp; <del></del>a technique called dither, improves convergence behaviour significantly,</span> </td>
+                      </tr><tr>
+                        <th>82</th><th> </th><td class="l"><span>&nbsp; <del></del>especially for noisy objective functions.</span> </td>
+                      </tr><tr>
+                        <th>83</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>84</th><th> </th><td class="l"><span>&nbsp; <del></del>It has also been found that setting CrossProbability to a low value,</span> </td>
+                      </tr><tr>
+                        <th>85</th><th> </th><td class="l"><span>&nbsp; <del></del>e.g. CrossProbability=0.2 helps optimizing separable functions since</span> </td>
+                      </tr><tr>
+                        <th>86</th><th> </th><td class="l"><span>&nbsp; <del></del>it fosters the search along the coordinate axes. On the contrary,</span> </td>
+                      </tr><tr>
+                        <th>87</th><th> </th><td class="l"><span>&nbsp; <del></del>this choice is not effective if parameter dependence is encountered,</span> </td>
+                      </tr><tr>
+                        <th>88</th><th> </th><td class="l"><span>&nbsp; <del></del>something which is frequently occuring in real-world optimization</span> </td>
+                      </tr><tr>
+                        <th>89</th><th> </th><td class="l"><span>&nbsp; <del></del>problems rather than artificial test functions. So for parameter</span> </td>
+                      </tr><tr>
+                        <th>90</th><th> </th><td class="l"><span>&nbsp; <del></del>dependence the choice of CrossProbability=0.9 is more appropriate.</span> </td>
+                      </tr><tr>
+                        <th>91</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>92</th><th> </th><td class="l"><span>&nbsp; <del></del>Another interesting empirical finding is that rasing NP above, say, 40</span> </td>
+                      </tr><tr>
+                        <th>93</th><th> </th><td class="l"><span>&nbsp; <del></del>does not substantially improve the convergence, independent of the</span> </td>
+                      </tr><tr>
+                        <th>94</th><th> </th><td class="l"><span>&nbsp; <del></del>number of parameters. It is worthwhile to experiment with these suggestions.</span> </td>
+                      </tr><tr>
+                        <th>95</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>96</th><th> </th><td class="l"><span>&nbsp; <del></del>Make sure that you initialize your parameter vectors by exploiting</span> </td>
+                      </tr><tr>
+                        <th>97</th><th> </th><td class="l"><span>&nbsp; <del></del>their full numerical range, i.e. if a parameter is allowed to exhibit</span> </td>
+                      </tr><tr>
+                        <th>98</th><th> </th><td class="l"><span>&nbsp; <del></del>values in the range [-100, 100] it's a good idea to pick the initial</span> </td>
+                      </tr><tr>
+                        <th>99</th><th> </th><td class="l"><span>&nbsp; <del></del>values from this range instead of unnecessarily restricting diversity.</span> </td>
+                      </tr><tr>
+                        <th>100</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>101</th><th> </th><td class="l"><span>&nbsp; <del></del>Keep in mind that different problems often require different settings</span> </td>
+                      </tr><tr>
+                        <th>102</th><th> </th><td class="l"><span>&nbsp; <del></del>for NP, ScalingFactor and CrossProbability (see Ref 1, 2). If you</span> </td>
+                      </tr><tr>
+                        <th>103</th><th> </th><td class="l"><span>&nbsp; <del></del>experience misconvergence, you typically can increase the value for NP,</span> </td>
+                      </tr><tr>
+                        <th>104</th><th> </th><td class="l"><span>&nbsp; <del></del>but often you only have to adjust ScalingFactor to be a little lower or</span> </td>
+                      </tr><tr>
+                        <th>105</th><th> </th><td class="l"><span>&nbsp; <del></del>higher than 0.8. If you increase NP and simultaneously lower ScalingFactor</span> </td>
+                      </tr><tr>
+                        <th>106</th><th> </th><td class="l"><span>&nbsp; <del></del>a little, convergence is more likely to occur but generally takes longer,</span> </td>
+                      </tr><tr>
+                        <th>107</th><th> </th><td class="l"><span>&nbsp; <del></del>i.e. DE is getting more robust (a convergence speed/robustness tradeoff).</span> </td>
+                      </tr><tr>
+                        <th>108</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>109</th><th> </th><td class="l"><span>&nbsp; <del></del>If you still get misconvergence you might want to instead try a different</span> </td>
+                      </tr><tr>
+                        <th>110</th><th> </th><td class="l"><span>&nbsp; <del></del>crossover strategy. The most commonly used are Rand1Bin, Rand1Exp,</span> </td>
+                      </tr><tr>
+                        <th>111</th><th> </th><td class="l"><span>&nbsp; <del></del>Best1Bin, and Best1Exp. The crossover strategy is not so important a</span> </td>
+                      </tr><tr>
+                        <th>112</th><th> </th><td class="l"><span>&nbsp; <del></del>choice, although K. Price claims that binomial (Bin) is never worse than</span> </td>
+                      </tr><tr>
+                        <th>113</th><th> </th><td class="l"><span>&nbsp; <del></del>exponential (Exp).</span> </td>
+                      </tr><tr>
+                        <th>114</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>115</th><th> </th><td class="l"><span>&nbsp; <del>In case of continued misconvergence, check your</del> choice of objective function.</span> </td>
+                      </tr><tr>
+                        <th>116</th><th> </th><td class="l"><span>&nbsp; <del></del>There might be a better one to describe your problem. Any knowledge that</span> </td>
+                      </tr><tr>
+                        <th>117</th><th> </th><td class="l"><span>&nbsp; <del></del>you have about the problem should be worked into the objective function.</span> </td>
+                      </tr><tr>
+                        <th>118</th><th> </th><td class="l"><span>&nbsp; <del></del>A good objective function can make all the difference.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>72</th><td class="r"><span>reproduced here:<ins>:</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>73</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>First try the following classical settings for the solver configuration:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>Choose a crossover strategy (e.g. Rand1Bin), set the number of parents</span> </td>
+                      </tr><tr>
+                        <th> </th><th>76</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>NP to 10 times the number of parameters, select ScalingFactor=0.8, and</span> </td>
+                      </tr><tr>
+                        <th> </th><th>77</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>CrossProbability=0.9.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>78</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>79</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>It has been found recently that selecting ScalingFactor from the interval</span> </td>
+                      </tr><tr>
+                        <th> </th><th>80</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>[0.5, 1.0] randomly for each generation or for each difference vector,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>81</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>a technique called dither, improves convergence behaviour significantly,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>82</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>especially for noisy objective functions.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>83</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>84</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>It has also been found that setting CrossProbability to a low value,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>85</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>e.g. CrossProbability=0.2 helps optimizing separable functions since</span> </td>
+                      </tr><tr>
+                        <th> </th><th>86</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>it fosters the search along the coordinate axes. On the contrary,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>87</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>this choice is not effective if parameter dependence is encountered,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>88</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>something which is frequently occuring in real-world optimization</span> </td>
+                      </tr><tr>
+                        <th> </th><th>89</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>problems rather than artificial test functions. So for parameter</span> </td>
+                      </tr><tr>
+                        <th> </th><th>90</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>dependence the choice of CrossProbability=0.9 is more appropriate.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>91</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>92</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>Another interesting empirical finding is that rasing NP above, say, 40</span> </td>
+                      </tr><tr>
+                        <th> </th><th>93</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>does not substantially improve the convergence, independent of the</span> </td>
+                      </tr><tr>
+                        <th> </th><th>94</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>number of parameters. It is worthwhile to experiment with these suggestions.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>95</th><td class="r"><span>&nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>96</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>Make sure that you initialize your parameter vectors by exploiting</span> </td>
+                      </tr><tr>
+                        <th> </th><th>97</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>their full numerical range, i.e. if a parameter is allowed to exhibit</span> </td>
+                      </tr><tr>
+                        <th> </th><th>98</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>values in the range [-100, 100] it's a good idea to pick the initial</span> </td>
+                      </tr><tr>
+                        <th> </th><th>99</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>values from this range instead of unnecessarily restricting diversity.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>100</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>101</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>Keep in mind that different problems often require different settings</span> </td>
+                      </tr><tr>
+                        <th> </th><th>102</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>for NP, ScalingFactor and CrossProbability (see Ref 1, 2). If you</span> </td>
+                      </tr><tr>
+                        <th> </th><th>103</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>experience misconvergence, you typically can increase the value for NP,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>104</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>but often you only have to adjust ScalingFactor to be a little lower or</span> </td>
+                      </tr><tr>
+                        <th> </th><th>105</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>higher than 0.8. If you increase NP and simultaneously lower ScalingFactor</span> </td>
+                      </tr><tr>
+                        <th> </th><th>106</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>a little, convergence is more likely to occur but generally takes longer,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>107</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>i.e. DE is getting more robust (a convergence speed/robustness tradeoff).</span> </td>
+                      </tr><tr>
+                        <th> </th><th>108</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>109</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>If you still get misconvergence you might want to instead try a different</span> </td>
+                      </tr><tr>
+                        <th> </th><th>110</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>crossover strategy. The most commonly used are Rand1Bin, Rand1Exp,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>111</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>Best1Bin, and Best1Exp. The crossover strategy is not so important a</span> </td>
+                      </tr><tr>
+                        <th> </th><th>112</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>choice, although K. Price claims that binomial (Bin) is never worse than</span> </td>
+                      </tr><tr>
+                        <th> </th><th>113</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>exponential (Exp).</span> </td>
+                      </tr><tr>
+                        <th> </th><th>114</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>115</th><td class="r"><span>&nbsp; <ins>&nbsp; In case of continued misconvergence, check the</ins> choice of objective function.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>116</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>There might be a better one to describe your problem. Any knowledge that</span> </td>
+                      </tr><tr>
+                        <th> </th><th>117</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>you have about the problem should be worked into the objective function.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>118</th><td class="r"><span>&nbsp; <ins>&nbsp; </ins>A good objective function can make all the difference.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>119</th><th>119</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>120</th><th>120</th><td class="l"><span>See `mystic.examples.test_rosenbrock` for an example of using</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=233#L584">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=242#L584">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>584</th><th>584</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>585</th><th>585</th><td class="l"><span>&nbsp; &nbsp; args -- extra arguments for func.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>586</th><th> </th><td class="l"><span>&nbsp; &nbsp; bounds -- list - n pairs of bounds (min,max), one pair for each</span> </td>
+                      </tr><tr>
+                        <th>587</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; parameter.</span> </td>
+                      </tr><tr>
+                        <th>588</th><th> </th><td class="l"><span>&nbsp; &nbsp; ftol -- number - acceptable relative error in func(xopt) for</span> </td>
+                      </tr><tr>
+                        <th>589</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; convergence.</span> </td>
+                      </tr><tr>
+                        <th>590</th><th> </th><td class="l"><span>&nbsp; &nbsp; gtol -- number - maximum number of iterations to run without</span> </td>
+                      </tr><tr>
+                        <th>591</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; improvement.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>586</th><td class="r"><span>&nbsp; &nbsp; bounds -- list - n pairs of bounds (min,max), one pair for each parameter.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>587</th><td class="r"><span>&nbsp; &nbsp; ftol -- number - acceptable relative error in func(xopt) for convergence.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>588</th><td class="r"><span>&nbsp; &nbsp; gtol -- number - maximum number of iterations to run without improvement.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>592</th><th>589</th><td class="l"><span>&nbsp; &nbsp; maxiter -- number - the maximum number of iterations to perform.</span> </td>
+                  </tr><tr>
+                          <th>593</th><th>590</th><td class="l"><span>&nbsp; &nbsp; maxfun -- number - the maximum number of function evaluations.</span> </td>
+                  </tr><tr>
+                          <th>594</th><th>591</th><td class="l"><span>&nbsp; &nbsp; cross -- number - the probability of cross-parameter mutations</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>595</th><th> </th><td class="l"><span>&nbsp; &nbsp; scale -- number - multiplier for impact of mutations on trial</span> </td>
+                      </tr><tr>
+                        <th>596</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; solution.</span> </td>
+                      </tr><tr>
+                        <th>597</th><th> </th><td class="l"><span>&nbsp; &nbsp; full_output -- number - non-zero if fval and warnflag outputs are</span> </td>
+                      </tr><tr>
+                        <th>598</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; desired.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>592</th><td class="r"><span>&nbsp; &nbsp; scale -- number - multiplier for impact of mutations on trial solution.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>593</th><td class="r"><span>&nbsp; &nbsp; full_output -- number - non-zero if fval and warnflag outputs are desired.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>599</th><th>594</th><td class="l"><span>&nbsp; &nbsp; disp -- number - non-zero to print convergence messages.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>600</th><th> </th><td class="l"><span>&nbsp; &nbsp; retall -- number - non-zero to return list of solutions at each</span> </td>
+                      </tr><tr>
+                        <th>601</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>595</th><td class="r"><span>&nbsp; &nbsp; retall -- number - non-zero to return list of solutions at each iteration.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>602</th><th>596</th><td class="l"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                  </tr><tr>
+                          <th>603</th><th>597</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="242/mystic/mystic/math/approx.html" title="Show the changeset 242 restricted to mystic/mystic/math/approx.py">mystic/mystic/math/approx.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 237">
+                    <a title="Show revision 237 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/math/approx.py?rev=237#L1">
+                      r237</a>
+                  </th>
+                  <th title="Revision 242">
+                    <a title="Show revision 242 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/math/approx.py?rev=242#L1">
+                      r242</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>3</th><td class="r"><ins>"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>4</th><td class="r"><ins>tools for measuring equality</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>5</th><td class="r"><ins>"""</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>6</th><td class="l"><span>def _float_approx_equal(x, y, tol=1e-18, rel=1e-7):</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>7</th><td class="l"><span>&nbsp; &nbsp; if tol is rel is None:</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="242/mystic/mystic/math/grid.html" title="Show the changeset 242 restricted to mystic/mystic/math/grid.py">mystic/mystic/math/grid.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 240">
+                    <a title="Show revision 240 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/grid.py?rev=240#L1">
+                      r240</a>
+                  </th>
+                  <th title="Revision 242">
+                    <a title="Show revision 242 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/math/grid.py?rev=242#L1">
+                      r242</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>3</th><td class="r"><ins>"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>4</th><td class="r"><ins>tools for generating points on a grid</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>5</th><td class="r"><ins>"""</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>6</th><td class="l"><span>from numpy import asarray</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>7</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="242/mystic/mystic/nested.html" title="Show the changeset 242 restricted to mystic/mystic/nested.py">mystic/mystic/nested.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 236">
+                    <a title="Show revision 236 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=236#L3">
+                      r236</a>
+                  </th>
+                  <th title="Revision 242">
+                    <a title="Show revision 242 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=242#L3">
+                      r242</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>...</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>Solvers</span> </td>
+                      </tr><tr>
+                        <th> </th><th>6</th><td class="r"><span>=======</span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>8</th><td class="r"><span>This module contains a collection of optimization that use map-reduce</span> </td>
+                      </tr><tr>
+                        <th> </th><th>9</th><td class="r"><span>to distribute several optimizer instances over parameter space. Each</span> </td>
+                      </tr><tr>
+                        <th> </th><th>10</th><td class="r"><span>solver accepts a imported solver object as the "nested" solver, which</span> </td>
+                      </tr><tr>
+                        <th> </th><th>11</th><td class="r"><span>becomes the target of the map function.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>12</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>13</th><td class="r"><span>The set of solvers built on mystic's AbstractNestdSolver are::</span> </td>
+                      </tr><tr>
+                        <th> </th><th>14</th><td class="r"><span>&nbsp; &nbsp;BatchGridSolver -- start from center of N grid points</span> </td>
+                      </tr><tr>
+                        <th> </th><th>15</th><td class="r"><span>&nbsp; &nbsp;ScattershotSolver -- start from N random points in parameter space</span> </td>
+                      </tr><tr>
+                        <th> </th><th>16</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>17</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>18</th><td class="r"><span>Usage</span> </td>
+                      </tr><tr>
+                        <th> </th><th>19</th><td class="r"><span>=====</span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>See `mystic.examples.scattershot_example06` for an example of using</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span>ScattershotSolver. See `mystic.examples.batchgrid_example06`</span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span>or an example of using BatchGridSolver.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>24</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>25</th><td class="r"><span>All solvers included in this module provide the standard signal handling.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>26</th><td class="r"><span>For more information, see `mystic.mystic.abstract_solver`.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>27</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>28</th><td class="l"><span>__all__ = ['BatchGridSolver','ScattershotSolver']</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=236#L14">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=242#L35">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>14</th><th>35</th><td class="l"><span>class BatchGridSolver(AbstractNestedSolver):</span> </td>
+                  </tr><tr>
+                          <th>15</th><th>36</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>16</th><th> </th><td class="l"><span>...</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>37</th><td class="r"><span>parallel mapped optimization starting from the center of N grid points</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>17</th><th>38</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>18</th><th>39</th><td class="l"><span>&nbsp; &nbsp; def __init__(self, dim, nbins):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=236#L35">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=242#L56">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>56</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; EvaluationMonitor=Null, StepMonitor=Null, ExtraArgs=(), **kwds):</span> </td>
+                  </tr><tr>
+                          <th>36</th><th>57</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using batch grid optimization.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>37</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>58</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>59</th><td class="r"><span>Description:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>60</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>61</th><td class="r"><span>&nbsp; &nbsp; Uses parallel mapping of solvers on a regular grid to find the</span> </td>
+                      </tr><tr>
+                        <th> </th><th>62</th><td class="r"><span>&nbsp; &nbsp; minimum of a function of one or more variables.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>63</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>64</th><td class="r"><span>Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>65</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>66</th><td class="r"><span>&nbsp; &nbsp; cost -- the Python function or method to be minimized.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>67</th><td class="r"><span>&nbsp; &nbsp; termination -- callable object providing termination conditions.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>68</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>69</th><td class="r"><span>Additional Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>70</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>71</th><td class="r"><span>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>72</th><td class="r"><span>&nbsp; &nbsp; EvaluationMonitor -- a callable object that will be passed x, fval</span> </td>
+                      </tr><tr>
+                        <th> </th><th>73</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; whenever the cost function is evaluated.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; &nbsp; StepMonitor -- a callable object that will be passed x, fval</span> </td>
+                      </tr><tr>
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; after the end of a solver iteration.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>76</th><td class="r"><span>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>77</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>78</th><td class="r"><span>Further Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>79</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>80</th><td class="r"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                      </tr><tr>
+                        <th> </th><th>81</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                      </tr><tr>
+                        <th> </th><th>82</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; current parameter vector.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[default = None]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>83</th><td class="r"><span>&nbsp; &nbsp; disp -- non-zero to print convergence messages.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[default = 0]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>38</th><th>84</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>39</th><th>85</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #allow for inputs that don't conform to AbstractSolver interface</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=236#L174">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=242#L220">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>174</th><th>220</th><td class="l"><span>class ScattershotSolver(AbstractNestedSolver):</span> </td>
+                  </tr><tr>
+                          <th>175</th><th>221</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>176</th><th> </th><td class="l"><span>...</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>222</th><td class="r"><span>parallel mapped optimization starting from the N random points</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>177</th><th>223</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>178</th><th>224</th><td class="l"><span>&nbsp; &nbsp; def __init__(self, dim, npts):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=236#L189">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=242#L235">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>189</th><th>235</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; EvaluationMonitor=Null, StepMonitor=Null, ExtraArgs=(), **kwds):</span> </td>
+                  </tr><tr>
+                          <th>190</th><th>236</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using scattershot optimization.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>191</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>237</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>238</th><td class="r"><span>Description:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>239</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>240</th><td class="r"><span>&nbsp; &nbsp; Uses parallel mapping of solvers on randomly selected points</span> </td>
+                      </tr><tr>
+                        <th> </th><th>241</th><td class="r"><span>&nbsp; &nbsp; to find the minimum of a function of one or more variables.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>242</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>243</th><td class="r"><span>Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>244</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>245</th><td class="r"><span>&nbsp; &nbsp; cost -- the Python function or method to be minimized.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>246</th><td class="r"><span>&nbsp; &nbsp; termination -- callable object providing termination conditions.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>247</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>248</th><td class="r"><span>Additional Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>249</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>250</th><td class="r"><span>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>251</th><td class="r"><span>&nbsp; &nbsp; EvaluationMonitor -- a callable object that will be passed x, fval</span> </td>
+                      </tr><tr>
+                        <th> </th><th>252</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; whenever the cost function is evaluated.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>253</th><td class="r"><span>&nbsp; &nbsp; StepMonitor -- a callable object that will be passed x, fval</span> </td>
+                      </tr><tr>
+                        <th> </th><th>254</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; after the end of a solver iteration.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>255</th><td class="r"><span>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>256</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>257</th><td class="r"><span>Further Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>258</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>259</th><td class="r"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                      </tr><tr>
+                        <th> </th><th>260</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                      </tr><tr>
+                        <th> </th><th>261</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; current parameter vector.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[default = None]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>262</th><td class="r"><span>&nbsp; &nbsp; disp -- non-zero to print convergence messages.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[default = 0]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>192</th><th>263</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>193</th><th>264</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #allow for inputs that don't conform to AbstractSolver interface</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file8">
+          <a href="242/mystic/mystic/python_map.html" title="Show the changeset 242 restricted to mystic/mystic/python_map.py">mystic/mystic/python_map.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 226">
+                    <a title="Show revision 226 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/python_map.py?rev=226#L4">
+                      r226</a>
+                  </th>
+                  <th title="Revision 242">
+                    <a title="Show revision 242 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/python_map.py?rev=242#L4">
+                      r242</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span>Defaults for mapper and launcher. These should be</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>5</th><td class="l"><span>available as a minimal (dependency-free) pure-python</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>6</th><th> </th><td class="l"><span>install from pyina.</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span>serial_launcher: syntax for standard python execution</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>python_map: wrapper around the standard python map</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span>carddealer_mapper: the carddealer map strategy</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>6</th><td class="r"><span>install from pathos::</span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span>&nbsp; &nbsp; - serial_launcher:&nbsp; &nbsp;syntax for standard python execution</span> </td>
+                      </tr><tr>
+                        <th> </th><th>8</th><td class="r"><span>&nbsp; &nbsp; - python_map:&nbsp; &nbsp; &nbsp; &nbsp; wrapper around the standard python map</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>9</th><td class="r"><span>&nbsp; &nbsp; - carddealer_mapper: the carddealer map strategy</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>11</th><th>10</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>12</th><th>11</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/python_map.py?rev=226#L29">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/python_map.py?rev=242#L28">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>28</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>30</th><th>29</th><td class="l"><span>NOTES:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>31</th><th> </th><td class="l"><span>&nbsp;<del>-</del> run non-python commands with: {'python':'', ...} </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>30</th><td class="r"><span>&nbsp;<ins>&nbsp; </ins> run non-python commands with: {'python':'', ...} </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>32</th><th>31</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>33</th><th>32</th><td class="l"><span>&nbsp; &nbsp; mydict = defaults.copy()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/python_map.py?rev=226#L44">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/python_map.py?rev=242#L43">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>44</th><th>43</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>45</th><th>44</th><td class="l"><span>Further Input: [***disabled***]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>46</th><th> </th><td class="l"><span>&nbsp; <del>-</del> nnodes -- the number of parallel nodes</span> </td>
+                      </tr><tr>
+                        <th>47</th><th> </th><td class="l"><span>&nbsp; <del>-</del> launcher -- the launcher object</span> </td>
+                      </tr><tr>
+                        <th>48</th><th> </th><td class="l"><span>&nbsp; <del>-</del> mapper -- the mapper object</span> </td>
+                      </tr><tr>
+                        <th>49</th><th> </th><td class="l"><span>&nbsp; <del>-</del> timelimit -- string representation of maximum run time (e.g. '00:02')</span> </td>
+                      </tr><tr>
+                        <th>50</th><th> </th><td class="l"><span>&nbsp; <del>-</del> queue -- string name of selected queue (e.g. 'normal')</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>45</th><td class="r"><span>&nbsp; <ins>&nbsp;</ins> nnodes -- the number of parallel nodes</span> </td>
+                      </tr><tr>
+                        <th> </th><th>46</th><td class="r"><span>&nbsp; <ins>&nbsp;</ins> launcher -- the launcher object</span> </td>
+                      </tr><tr>
+                        <th> </th><th>47</th><td class="r"><span>&nbsp; <ins>&nbsp;</ins> mapper -- the mapper object</span> </td>
+                      </tr><tr>
+                        <th> </th><th>48</th><td class="r"><span>&nbsp; <ins>&nbsp;</ins> timelimit -- string representation of maximum run time (e.g. '00:02')</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>49</th><td class="r"><span>&nbsp; <ins>&nbsp;</ins> queue -- string name of selected queue (e.g. 'normal')</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>51</th><th>50</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>51</th><td class="l"><span>&nbsp; &nbsp;#print "ignoring: %s" % kwds&nbsp; #XXX: should allow use of **kwds</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file9">
+          <a href="242/mystic/mystic/scipy_optimize.html" title="Show the changeset 242 restricted to mystic/mystic/scipy_optimize.py">mystic/mystic/scipy_optimize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 219">
+                    <a title="Show revision 219 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=219#L153">
+                      r219</a>
+                  </th>
+                  <th title="Revision 242">
+                    <a title="Show revision 242 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=242#L153">
+                      r242</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>153</th><th>153</th><td class="l"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                  </tr><tr>
+                          <th>154</th><th>154</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>155</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; current parameter vector. [default = None]</span> </td>
+                      </tr><tr>
+                        <th>156</th><th> </th><td class="l"><span>&nbsp; &nbsp; disp -- non-zero to print convergence messages. [default = 0]</span> </td>
+                      </tr><tr>
+                        <th>157</th><th> </th><td class="l"><span>&nbsp; &nbsp; radius -- percentage change for initial simplex values.</span> </td>
+                      </tr><tr>
+                        <th>158</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [default = 0.05]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>155</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; current parameter vector.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[default = None]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>156</th><td class="r"><span>&nbsp; &nbsp; disp -- non-zero to print convergence messages.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;[default = 0]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>157</th><td class="r"><span>&nbsp; &nbsp; radius -- percentage change for initial simplex values. [default = 0.05]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>159</th><th>158</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>160</th><th>159</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file10">
+          <a href="242/mystic/mystic/tools.html" title="Show the changeset 242 restricted to mystic/mystic/tools.py">mystic/mystic/tools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 225">
+                    <a title="Show revision 225 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=225#L214">
+                      r225</a>
+                  </th>
+                  <th title="Revision 242">
+                    <a title="Show revision 242 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=242#L214">
+                      r242</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>214</th><th>214</th><td class="l"><span>generate a custom Sow</span> </td>
+                  </tr><tr>
+                          <th>215</th><th>215</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>216</th><th> </th><td class="l"><span>takes *args &amp; **kwds, where args will be required inputs for the Sow<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>216</th><td class="r"><span>takes *args &amp; **kwds, where args will be required inputs for the Sow<ins>::</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>217</th><th>217</th><td class="l"><span>&nbsp; &nbsp; - args: property name strings (i.e. 'x')</span> </td>
+                  </tr><tr>
+                          <th>218</th><th>218</th><td class="l"><span>&nbsp; &nbsp; - kwds: must be in the form: property="doc" (i.e. x='Params')</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/242?format=diff&amp;new=242" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/242?format=zip&amp;new=242" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/242 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:41:04 GMT -->
+</html>

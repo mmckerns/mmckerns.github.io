@@ -1,0 +1,619 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/231 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:32:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 231 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="230.html" title="Changeset 230" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/231?format=diff&amp;new=231" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/231?format=zip&amp;new=231" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="232.html" title="Changeset 232" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="230.html" title="Changeset 230">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="232.html" title="Changeset 232">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 231</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             05/15/10 00:56:08
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-05-15T00%3A56%3A08-07%3A00&amp;precision=second" title="2010-05-15T00:56:08-07:00 in Timeline">6 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+merged pp version of DESolver from ppmystic, and examples<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=231">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>2 edited</dd>
+              <dt class="cp"></dt><dd>4 copied</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP.py?rev=231">
+              examples/TEST_ffitPP.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/branches/pp/examples/TEST_ffitPP.py?rev=157" title="Show original file (revision 157)">
+                branches/pp/examples/TEST_ffitPP.py</a>)</em></small>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP2.py?rev=231">
+              examples/TEST_ffitPP2.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/branches/pp/examples/TEST_ffitPP2.py?rev=157" title="Show original file (revision 157)">
+                branches/pp/examples/TEST_ffitPP2.py</a>)</em></small>
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP2_b.py?rev=231">
+              examples/TEST_ffitPP2_b.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/branches/pp/examples/TEST_ffitPP2_b.py?rev=179" title="Show original file (revision 179)">
+                branches/pp/examples/TEST_ffitPP2_b.py</a>)</em></small>
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP_b.py?rev=231">
+              examples/TEST_ffitPP_b.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/branches/pp/examples/TEST_ffitPP_b.py?rev=181" title="Show original file (revision 181)">
+                branches/pp/examples/TEST_ffitPP_b.py</a>)</em></small>
+              (<a title="Show differences" href="#file3">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=231">
+              mystic/abstract_map_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=231">
+              mystic/differential_evolution.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">4 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="231/mystic/examples/TEST_ffitPP.html" title="Show the changeset 231 restricted to mystic/examples/TEST_ffitPP.py">mystic/examples/TEST_ffitPP.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 157">
+                    <a title="Show revision 157 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pp/examples/TEST_ffitPP.py?rev=157#L15">
+                      r157</a>
+                  </th>
+                  <th title="Revision 231">
+                    <a title="Show revision 231 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP.py?rev=231#L15">
+                      r231</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>15</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>16</th><th>16</th><td class="l"><span>def main():</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>17</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.differential_evolution import PPDESolver as DifferentialEvolutionSolver</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>17</th><td class="r"><span>&nbsp; &nbsp; from mystic.differential_evolution import DifferentialEvolutionSolver2</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>18</th><td class="r"><span>&nbsp; &nbsp; from pyina.pp_map import pp_map</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>18</th><th>19</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver = DifferentialEvolutionSolver(ND, NP)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>20</th><td class="r"><span>&nbsp; &nbsp; solver = DifferentialEvolutionSolver2(ND, NP)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>21</th><td class="r"><span>&nbsp; &nbsp; solver.SetMapper(pp_map)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>22</th><td class="l"><span>&nbsp; &nbsp; solver.SetRandomInitialPoints(min = [-100.0]*ND, max = [100.0]*ND)</span> </td>
+                  </tr><tr>
+                          <th>21</th><th>23</th><td class="l"><span>&nbsp; &nbsp; solver.SetEvaluationLimits(maxiter=MAX_GENERATIONS)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="231/mystic/examples/TEST_ffitPP_b.html" title="Show the changeset 231 restricted to mystic/examples/TEST_ffitPP_b.py">mystic/examples/TEST_ffitPP_b.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 181">
+                    <a title="Show revision 181 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/pp/examples/TEST_ffitPP_b.py?rev=181#L42">
+                      r181</a>
+                  </th>
+                  <th title="Revision 231">
+                    <a title="Show revision 231 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP_b.py?rev=231#L42">
+                      r231</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>42</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>43</th><th>43</th><td class="l"><span>def main(servers,ncpus):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.differential_evolution import PPDESolver as DifferentialEvolutionSolver</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>44</th><td class="r"><span>&nbsp; &nbsp; from mystic.differential_evolution import DifferentialEvolutionSolver2</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>45</th><td class="r"><span>&nbsp; &nbsp; from pyina.pp_map import pp_map</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>46</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>46</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver = DifferentialEvolutionSolver(ND, NP)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>47</th><td class="r"><span>&nbsp; &nbsp; solver = DifferentialEvolutionSolver2(ND, NP)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>48</th><td class="r"><span>&nbsp; &nbsp; solver.SetMapper(pp_map)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>47</th><th>49</th><td class="l"><span>&nbsp; &nbsp; solver.SetRandomInitialPoints(min = [-100.0]*ND, max = [100.0]*ND)</span> </td>
+                  </tr><tr>
+                          <th>48</th><th>50</th><td class="l"><span>&nbsp; &nbsp; solver.SetEvaluationLimits(maxiter=MAX_GENERATIONS)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pp/examples/TEST_ffitPP_b.py?rev=181#L52">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP_b.py?rev=231#L54">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>54</th><td class="l"><span>&nbsp; &nbsp; #strategy = Best1Bin</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>55</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver.Select<del>Compute</del>Servers(servers,ncpus)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>56</th><td class="r"><span>&nbsp; &nbsp; solver.Select<ins></ins>Servers(servers,ncpus)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>55</th><th>57</th><td class="l"><span>&nbsp; &nbsp; solver.Solve(ChebyshevCost, termination=VTR(0.01), strategy=strategy, \</span> </td>
+                  </tr><tr>
+                          <th>56</th><th>58</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=1.0, ScalingFactor=0.9 , \</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/pp/examples/TEST_ffitPP_b.py?rev=181#L65">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/TEST_ffitPP_b.py?rev=231#L67">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>65</th><th>67</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>66</th><th>68</th><td class="l"><span>&nbsp; &nbsp; # number of local processors</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>67</th><th> </th><td class="l"><span>&nbsp; &nbsp; ncpus = <del>None #XXX: None -&gt;</del> autodetect; otherwise select n=0,1,2,...</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>69</th><td class="r"><span>&nbsp; &nbsp; ncpus = <ins>'autodetect' #XXX: None ==</ins> autodetect; otherwise select n=0,1,2,...</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>70</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>69</th><th>71</th><td class="l"><span>&nbsp; &nbsp; import sys</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="231/mystic/mystic/abstract_map_solver.html" title="Show the changeset 231 restricted to mystic/mystic/abstract_map_solver.py">mystic/mystic/abstract_map_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 227">
+                    <a title="Show revision 227 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=227#L120">
+                      r227</a>
+                  </th>
+                  <th title="Revision 231">
+                    <a title="Show revision 231 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=231#L120">
+                      r231</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>120</th><th>120</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._queue&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= defaults['queue'] # scheduler_queue</span> </td>
+                  </tr><tr>
+                          <th>121</th><th>121</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._timelimit&nbsp; &nbsp; &nbsp; &nbsp;= defaults['timelimit']</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>122</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._servers&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= ('*',)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # hostname:port</span> </td>
+                      </tr><tr>
+                        <th>123</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._ncpus&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= None</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>122</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._servers&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= ('*',) #&lt;detect&gt;&nbsp; # hostname:port</span> </td>
+                      </tr><tr>
+                        <th> </th><th>123</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._ncpus&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= None&nbsp; &nbsp;#&lt;detect&gt;&nbsp; # local processors</span> </td>
+                      </tr><tr>
+                        <th> </th><th>124</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;#self._servers&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= ()&nbsp; &nbsp; &nbsp;#&lt;None&gt;&nbsp; &nbsp; # hostname:port</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>125</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;#self._ncpus&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 0&nbsp; &nbsp; &nbsp; #&lt;None&gt;&nbsp; &nbsp; # local processors</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>124</th><th>126</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>125</th><th>127</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=227#L133">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=231#L135">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>133</th><th>135</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>134</th><th>136</th><td class="l"><span>&nbsp; &nbsp; If ncpus=None, then 'autodetect'; or if ncpus=0, then 'no local'.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>135</th><th> </th><td class="l"><span>&nbsp; &nbsp; If servers=('*',), then 'autodetect'<del></del>.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>137</th><td class="r"><span>&nbsp; &nbsp; If servers=('*',), then 'autodetect'<ins>; or if servers=(), then 'no remote'</ins>.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>136</th><th>138</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>137</th><th>139</th><td class="l"><span>Inputs:</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="231/mystic/mystic/differential_evolution.html" title="Show the changeset 231 restricted to mystic/mystic/differential_evolution.py">mystic/mystic/differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 226">
+                    <a title="Show revision 226 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=226#L434">
+                      r226</a>
+                  </th>
+                  <th title="Revision 231">
+                    <a title="Show revision 231 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=231#L434">
+                      r231</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>434</th><th>434</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>435</th><th>435</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>436</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; # 'map' is read from self._map&nbsp; #FIXME: delete this line</del> </td>
+                  </tr><tr class="last">
+                          <th>437</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>438</th><th>436</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import signal</span> </td>
+                  </tr><tr>
+                          <th>439</th><th>437</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._EARLYEXIT = False</span> </td>
+                  </tr><tr>
+                          <th>440</th><th>438</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>439</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#FIXME: EvaluationMonitor fails for MPI, throws error for 'pp'?</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>441</th><th>440</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#fcalls = [0] #FIXME: temporary patch for removing the following line</span> </td>
+                  </tr><tr>
+                          <th>442</th><th>441</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; fcalls, costfunction = wrap_function(costfunction, ExtraArgs, EvaluationMonitor)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=226#L467">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=231#L466">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>467</th><th>466</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; mapconfig = dict(nnodes=self._nnodes, launcher=self._launcher, \</span> </td>
+                  </tr><tr>
+                          <th>468</th><th>467</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;mapper=self._mapper, queue=self._queue, \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>469</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;timelimit=self._timelimit)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>468</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;timelimit=self._timelimit, \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>469</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ncpus=self._ncpus, servers=self._servers)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>470</th><th>470</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialEnergy = self._map(costfunction, trialPop, **mapconfig)</span> </td>
+                  </tr><tr>
+                          <th>471</th><th>471</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=226#L483">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=231#L483">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>483</th><th>483</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>484</th><th>484</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(self.bestEnergy)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>485</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp;#FIXME: StepMonitor throws error for 'pp'?</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>485</th><th>486</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(self.bestSolution[:], self.bestEnergy)</span> </td>
+                  </tr><tr>
+                          <th>486</th><th>487</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.generations = 0&nbsp; #XXX: above currently *not* counted as an iteration</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=226#L524">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=231#L525">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>524</th><th>525</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>525</th><th>526</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(self.bestEnergy)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>527</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#FIXME: StepMonitor throws error for 'pp'?</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>526</th><th>528</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(self.bestSolution[:], self.bestEnergy)</span> </td>
+                  </tr><tr>
+                          <th>527</th><th>529</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.generations += 1</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/231?format=diff&amp;new=231" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/231?format=zip&amp;new=231" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/231 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:32:10 GMT -->
+</html>

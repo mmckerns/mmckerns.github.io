@@ -1,0 +1,1663 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/609/branches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:16:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 609 for branches – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/609/branches?format=diff&amp;new=609" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/609/branches?format=zip&amp;new=609" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../610/branches.html" title="Changeset 610 for branches" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../608/branches.html" title="Changeset 608 for branches" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../608/branches.html" title="Changeset 608 for branches">Previous Change</a></span></li><li class="last"><span><a class="next" href="../610/branches.html" title="Changeset 610 for branches">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../609.html">609</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches?rev=609">branches</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             12/11/12 08:23:06
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-11T08%3A23%3A06-08%3A00&amp;precision=second" title="2012-12-11T08:23:06-08:00 in Timeline">3 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+rename and migrate wrap, nested, and proxify from wrapper to constraints<br />
+add outer_proxy, wrap_constraints, and wrap_penalty methods<br />
+proxify methods now take args and kwds<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate?rev=609">branches/decorate</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>6 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/constraints.py?rev=609">
+              constraints.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/penalty.py?rev=609">
+              penalty.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_constraints.py?rev=609">
+              test_constraints.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_penalty.py?rev=609">
+              test_penalty.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_wrapper.py?rev=609">
+              test_wrapper.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/wrapper.py?rev=609">
+              wrapper.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="branches/decorate/constraints.html" title="Show the changeset 609 restricted to branches/decorate/constraints.py">branches/decorate/constraints.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 608">
+                    <a title="Show revision 608 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/constraints.py?rev=608#L5">
+                      r608</a>
+                  </th>
+                  <th title="Revision 609">
+                    <a title="Show revision 609 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/constraints.py?rev=609#L5">
+                      r609</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>5</th><td class="l"><span>from wrapper import *</span> </td>
+                  </tr><tr>
+                          <th>6</th><th>6</th><td class="l"><span>from mystic.math import almostEqual</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>7</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>8</th><td class="r"><ins>def with_constraint(ctype, *args, **kwds):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>9</th><td class="r"><ins>&nbsp; &nbsp; """convert a set transformation to a constraints solver of the chosen type</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>10</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>11</th><td class="r"><ins>transformation f(x) is a mapping between x and x', where x' = f(x).</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>12</th><td class="r"><ins>ctype is a mystic.constraints type [inner, outer, inner_proxy, outer_proxy].</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>13</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>14</th><td class="r"><ins>&nbsp; &nbsp; def dec(condition):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>15</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; @ctype(condition, *args, **kwds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>16</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; def constraint(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>17</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return x</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>18</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; return constraint</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>19</th><td class="r"><ins>&nbsp; &nbsp; return dec</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>20</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>21</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>22</th><td class="r"><ins>def outer(outer=lambda x:x, args=None, kwds=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>23</th><td class="r"><ins>&nbsp; &nbsp; """wrap a function around another function: convert y = f(x) to y' = c(f(x))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>24</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>25</th><td class="r"><ins>This is useful, for example, in nesting one constraint in another constraint.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>26</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>27</th><td class="r"><ins>&nbsp; &nbsp; if args is None: args=()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>28</th><td class="r"><ins>&nbsp; &nbsp; if kwds is None: kwds={}</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>29</th><td class="r"><ins>&nbsp; &nbsp; def dec(f):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>30</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; def func(x, *argz, **kwdz):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>31</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return outer(f(x, *argz, **kwdz), *args, **kwds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>32</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return func</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>33</th><td class="r"><ins>&nbsp; &nbsp; return dec</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>34</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>35</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>36</th><td class="r"><ins>def inner(inner=lambda x:x, args=None, kwds=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>37</th><td class="r"><ins>&nbsp; &nbsp; """nest a function within another function: convert y = f(x) to y' = f(c(x))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>38</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>39</th><td class="r"><ins>This is useful, for example, in nesting constraints in a cost function;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>40</th><td class="r"><ins>thus, the constraints will be enforced at every cost function evaluation.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>41</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>42</th><td class="r"><ins>&nbsp; &nbsp; if args is None: args=()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>43</th><td class="r"><ins>&nbsp; &nbsp; if kwds is None: kwds={}</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>44</th><td class="r"><ins>&nbsp; &nbsp; def dec(f):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>45</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; def func(x, *argz, **kwdz):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>46</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return f(inner(x, *args, **kwds), *argz, **kwdz)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>47</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return func</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>48</th><td class="r"><ins>&nbsp; &nbsp; return dec</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>49</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>50</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>51</th><td class="r"><ins>def inner_proxy(inner=lambda x:x, args=None, kwds=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>52</th><td class="r"><ins>&nbsp; &nbsp; """nest a function within another function: convert y = f(x) to y' = f(c(x))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>53</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>54</th><td class="r"><ins>This is useful, for example, in nesting constraints in a cost function;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>55</th><td class="r"><ins>thus, the constraints will be enforced at every cost function evaluation.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>56</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>57</th><td class="r"><ins>This function does not preserve decorated function signature, but passes args</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>58</th><td class="r"><ins>and kwds to the inner function.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>59</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>60</th><td class="r"><ins>&nbsp; &nbsp; if args is None: args=()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>61</th><td class="r"><ins>&nbsp; &nbsp; if kwds is None: kwds={}</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>62</th><td class="r"><ins>&nbsp; &nbsp; def dec(f):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>63</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; def func(*argz, **kwdz):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>64</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return f(inner(*argz, **kwdz), *args, **kwds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>65</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return func</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>66</th><td class="r"><ins>&nbsp; &nbsp; return dec</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>67</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>68</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>69</th><td class="r"><ins>def outer_proxy(outer=lambda x:x, args=None, kwds=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>70</th><td class="r"><ins>&nbsp; &nbsp; """wrap a function around another function: convert y = f(x) to y' = c(f(x))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>71</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>72</th><td class="r"><ins>This is useful, for example, in nesting one constraint in another constraint.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>73</th><td class="r"><ins>&nbsp;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>74</th><td class="r"><ins>This function does not preserve decorated function signature, but passes args</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>75</th><td class="r"><ins>and kwds to the outer function.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>76</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>77</th><td class="r"><ins>&nbsp; &nbsp; if args is None: args=()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>78</th><td class="r"><ins>&nbsp; &nbsp; if kwds is None: kwds={}</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>79</th><td class="r"><ins>&nbsp; &nbsp; def dec(f):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>80</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; def func(x, *argz, **kwdz):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>81</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return outer(f(x, *args, **kwds), *argz, **kwdz)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>82</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return func</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>83</th><td class="r"><ins>&nbsp; &nbsp; return dec</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>84</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>85</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>8</th><th>86</th><td class="l"><span>'''</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="branches/decorate/penalty.html" title="Show the changeset 609 restricted to branches/decorate/penalty.py">branches/decorate/penalty.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 608">
+                    <a title="Show revision 608 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/penalty.py?rev=608#L1">
+                      r608</a>
+                  </th>
+                  <th title="Revision 609">
+                    <a title="Show revision 609 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/penalty.py?rev=609#L1">
+                      r609</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>1</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>2</th><td class="r"><ins>def with_penalty(ptype, *args, **kwds):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>3</th><td class="r"><ins>&nbsp; &nbsp; """convert a condition to a penalty function of the chosen type</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>4</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>5</th><td class="r"><ins>condition f(x) is satisfied when f(x) == 0.0 for equality constraints</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>6</th><td class="r"><ins>and f(x) &lt;= 0.0 for inequality constraints. ptype is a mystic.penalty type.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>7</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>8</th><td class="r"><ins>&nbsp; &nbsp; def dec(condition):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>9</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; @ptype(condition, *args, **kwds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>10</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; def penalty(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>11</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return 0.0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>12</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; return penalty</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>13</th><td class="r"><ins>&nbsp; &nbsp; return dec</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>14</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>15</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>16</th><td class="l"><span>from numpy import inf, log</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>17</th><td class="l"><span>def quadratic_equality(condition=lambda x:0., args=None, kwds=None, k=100, h=5):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/penalty.py?rev=608#L383">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/penalty.py?rev=609#L398">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>383</th><th>398</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>384</th><th>399</th><td class="l"><span>####################################################</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>385</th><th> </th><td class="l"><span>def proxify(penalty=lambda x:0.0<del></del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>400</th><td class="r"><span>def proxify(penalty=lambda x:0.0<ins>, args=None, kwds=None</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>386</th><th>401</th><td class="l"><span>&nbsp; &nbsp; """penalize a function with another function: y = f(x) to y' = f(x) + p(x)</span> </td>
+                  </tr><tr>
+                          <th>387</th><th>402</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/penalty.py?rev=608#L391">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/penalty.py?rev=609#L406">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>391</th><th>406</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>392</th><th>407</th><td class="l"><span>This function does not preserve decorated function signature, but passes args</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>393</th><th> </th><td class="l"><span>and kwds to the inner function.&nbsp; The decorated function should require a</span> </td>
+                      </tr><tr>
+                        <th>394</th><th> </th><td class="l"><span>single parameter as input.</span> </td>
+                      </tr><tr>
+                        <th>395</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>396</th><th> </th><td class="l"><span>&nbsp; &nbsp; def dec(f):</span> </td>
+                      </tr><tr>
+                        <th>397</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; def func(x, *args, **kwds):</span> </td>
+                      </tr><tr>
+                        <th>398</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return f(x) + penalty(x, *args, **kwds)</span> </td>
+                      </tr><tr>
+                        <th>399</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return func</span> </td>
+                      </tr><tr>
+                        <th>400</th><th> </th><td class="l"><span>&nbsp; &nbsp; return dec</span> </td>
+                      </tr><tr>
+                        <th>401</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>402</th><th> </th><td class="l"><span>def penalize(penalty=lambda x:0.0, args=None, kwds=None): #XXX: *args, **kwds ?</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>408</th><td class="r"><span>and kwds to the penalty function.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>409</th><td class="r"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>410</th><td class="r"><span>&nbsp; &nbsp; if args is None: args=()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>411</th><td class="r"><span>&nbsp; &nbsp; if kwds is None: kwds={}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>412</th><td class="r"><span>&nbsp; &nbsp; def dec(f):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>413</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; def func(x, *argz, **kwdz):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>414</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return f(x, *args, **kwds) + penalty(x, *argz, **kwdz)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>415</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return func</span> </td>
+                      </tr><tr>
+                        <th> </th><th>416</th><td class="r"><span>&nbsp; &nbsp; return dec</span> </td>
+                      </tr><tr>
+                        <th> </th><th>417</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>418</th><td class="r"><span>def penalize(penalty=lambda x:0.0, args=None, kwds=None):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>403</th><th>419</th><td class="l"><span>&nbsp; &nbsp; """penalize a function with another function: y = f(x) to y' = f(x) + p(x)</span> </td>
+                  </tr><tr>
+                          <th>404</th><th>420</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="branches/decorate/test_constraints.html" title="Show the changeset 609 restricted to branches/decorate/test_constraints.py">branches/decorate/test_constraints.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 603">
+                    <a title="Show revision 603 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_constraints.py?rev=603#L2">
+                      r603</a>
+                  </th>
+                  <th title="Revision 609">
+                    <a title="Show revision 609 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_constraints.py?rev=609#L2">
+                      r609</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>2</th><td class="l"><span>from mystic.math import almostEqual</span> </td>
+                  </tr><tr>
+                          <th>3</th><th>3</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>4</th><th> </th><td class="l"><span>def test_with_constraint():</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>4</th><td class="r"><span>def test_outer():</span> </td>
+                      </tr><tr>
+                        <th> </th><th>5</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>6</th><td class="r"><span>&nbsp; def squared(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span>&nbsp; &nbsp; return x**2</span> </td>
+                      </tr><tr>
+                        <th> </th><th>8</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>9</th><td class="r"><span>&nbsp; @outer(outer=squared) </span> </td>
+                      </tr><tr>
+                        <th> </th><th>10</th><td class="r"><span>&nbsp; def plus_one_squared(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>11</th><td class="r"><span>&nbsp; &nbsp; return x+1</span> </td>
+                      </tr><tr>
+                        <th> </th><th>12</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>13</th><td class="r"><span>&nbsp; from numpy import array</span> </td>
+                      </tr><tr>
+                        <th> </th><th>14</th><td class="r"><span>&nbsp; x = array([1,2,3,4,5])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>15</th><td class="r"><span>&nbsp; assert all(plus_one_squared(x)) == all((x+1)**2)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>16</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>17</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>18</th><td class="r"><span>def test_inner():</span> </td>
+                      </tr><tr>
+                        <th> </th><th>19</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span>&nbsp; def squared(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>&nbsp; &nbsp; return x**2</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span>&nbsp; @inner(inner=squared) </span> </td>
+                      </tr><tr>
+                        <th> </th><th>24</th><td class="r"><span>&nbsp; def squared_plus_one(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>25</th><td class="r"><span>&nbsp; &nbsp; return x+1</span> </td>
+                      </tr><tr>
+                        <th> </th><th>26</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>27</th><td class="r"><span>&nbsp; from numpy import array</span> </td>
+                      </tr><tr>
+                        <th> </th><th>28</th><td class="r"><span>&nbsp; x = array([1,2,3,4,5])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>29</th><td class="r"><span>&nbsp; assert all(squared_plus_one(x)) == all(x**2 + 1)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>30</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>31</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>32</th><td class="r"><span>def test_outer_constraint():</span> </td>
+                      </tr><tr>
+                        <th> </th><th>33</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>34</th><td class="r"><span>&nbsp; from mystic.math.measures import impose_mean, mean</span> </td>
+                      </tr><tr>
+                        <th> </th><th>35</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>36</th><td class="r"><span>&nbsp; def impose_constraints(x, mean, weights=None):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>37</th><td class="r"><span>&nbsp; &nbsp; return impose_mean(mean, x, weights)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>38</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>39</th><td class="r"><span>&nbsp; @outer(outer=impose_constraints, kwds={'mean':5.0})</span> </td>
+                      </tr><tr>
+                        <th> </th><th>40</th><td class="r"><span>&nbsp; def mean_of_squared(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>41</th><td class="r"><span>&nbsp; &nbsp; return [i**2 for i in x]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>42</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>43</th><td class="r"><span>&nbsp; from numpy import array</span> </td>
+                      </tr><tr>
+                        <th> </th><th>44</th><td class="r"><span>&nbsp; x = array([1,2,3,4,5])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>45</th><td class="r"><span>&nbsp; y = impose_mean(5, [i**2 for i in x])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>46</th><td class="r"><span>&nbsp; assert mean(y) == 5.0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>47</th><td class="r"><span>&nbsp; assert mean_of_squared(x) == y</span> </td>
+                      </tr><tr>
+                        <th> </th><th>48</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>49</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>50</th><td class="r"><span>def test_inner_constraint():</span> </td>
+                      </tr><tr>
+                        <th> </th><th>51</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>52</th><td class="r"><span>&nbsp; from mystic.math.measures import impose_mean</span> </td>
+                      </tr><tr>
+                        <th> </th><th>53</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>54</th><td class="r"><span>&nbsp; def impose_constraints(x, mean, weights=None):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>55</th><td class="r"><span>&nbsp; &nbsp; return impose_mean(mean, x, weights)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>56</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>57</th><td class="r"><span>&nbsp; @inner(inner=impose_constraints, kwds={'mean':5.0})</span> </td>
+                      </tr><tr>
+                        <th> </th><th>58</th><td class="r"><span>&nbsp; def mean_then_squared(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>59</th><td class="r"><span>&nbsp; &nbsp; return [i**2 for i in x]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>60</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>61</th><td class="r"><span>&nbsp; from numpy import array</span> </td>
+                      </tr><tr>
+                        <th> </th><th>62</th><td class="r"><span>&nbsp; x = array([1,2,3,4,5])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>63</th><td class="r"><span>&nbsp; assert mean_then_squared(x) == [i**2 for i in impose_mean(5,x)]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>64</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>65</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>66</th><td class="r"><span>def test_proxified_constraint():</span> </td>
+                      </tr><tr>
+                        <th> </th><th>67</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>68</th><td class="r"><span>&nbsp; from mystic.math.measures import impose_mean</span> </td>
+                      </tr><tr>
+                        <th> </th><th>69</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>70</th><td class="r"><span>&nbsp; @inner_proxy(inner=impose_mean)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>71</th><td class="r"><span>&nbsp; def mean_then_squared(x): #XXX: proxy doesn't preserve function signature</span> </td>
+                      </tr><tr>
+                        <th> </th><th>72</th><td class="r"><span>&nbsp; &nbsp; return [i**2 for i in x]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>73</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; from numpy import array</span> </td>
+                      </tr><tr>
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; x = array([1,2,3,4,5])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>76</th><td class="r"><span>&nbsp; assert mean_then_squared(5,x) == [i**2 for i in impose_mean(5,x)]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>77</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>78</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>79</th><td class="r"><span>def test_inner_constraints():</span> </td>
+                      </tr><tr>
+                        <th> </th><th>80</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>81</th><td class="r"><span>&nbsp; from mystic.math.measures import impose_mean, impose_spread</span> </td>
+                      </tr><tr>
+                        <th> </th><th>82</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>83</th><td class="r"><span>&nbsp; def impose_constraints(x, mean=0.0, spread=1.0):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>84</th><td class="r"><span>&nbsp; &nbsp; x = impose_mean(mean, x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>85</th><td class="r"><span>&nbsp; &nbsp; x = impose_spread(spread, x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>86</th><td class="r"><span>&nbsp; &nbsp; return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>87</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>88</th><td class="r"><span>&nbsp; @inner(inner=impose_constraints, kwds={'mean':5.0, 'spread':50.0})</span> </td>
+                      </tr><tr>
+                        <th> </th><th>89</th><td class="r"><span>&nbsp; def constrained_squared(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>90</th><td class="r"><span>&nbsp; &nbsp; return [i**2 for i in x]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>91</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>92</th><td class="r"><span>&nbsp; from numpy import array</span> </td>
+                      </tr><tr>
+                        <th> </th><th>93</th><td class="r"><span>&nbsp; x = array([1,2,3,4,5])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>94</th><td class="r"><span>&nbsp; y = impose_spread(50.0, impose_mean(5.0,x))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>95</th><td class="r"><span>&nbsp; assert constrained_squared(x) == [i**2 for i in y]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>96</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>97</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>98</th><td class="r"><span>def test_proxified_constraints():</span> </td>
+                      </tr><tr>
+                        <th> </th><th>99</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>100</th><td class="r"><span>&nbsp; from mystic.math.measures import impose_mean, impose_spread</span> </td>
+                      </tr><tr>
+                        <th> </th><th>101</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>102</th><td class="r"><span>&nbsp; def impose_constraints(x, mean=0.0, spread=1.0):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>103</th><td class="r"><span>&nbsp; &nbsp; x = impose_mean(mean, x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>104</th><td class="r"><span>&nbsp; &nbsp; x = impose_spread(spread, x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>105</th><td class="r"><span>&nbsp; &nbsp; return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>106</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>107</th><td class="r"><span>&nbsp; @inner_proxy(inner=impose_constraints)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>108</th><td class="r"><span>&nbsp; def constrained_squared(x): #XXX: proxy doesn't preserve function signature</span> </td>
+                      </tr><tr>
+                        <th> </th><th>109</th><td class="r"><span>&nbsp; &nbsp; return [i**2 for i in x]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>110</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>111</th><td class="r"><span>&nbsp; from numpy import array</span> </td>
+                      </tr><tr>
+                        <th> </th><th>112</th><td class="r"><span>&nbsp; x = array([1,2,3,4,5])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>113</th><td class="r"><span>&nbsp; y = impose_spread(50.0, impose_mean(5.0,x))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>114</th><td class="r"><span>&nbsp; assert constrained_squared(x, 5.0, 50.0) == [i**2 for i in y]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>115</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>116</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>117</th><td class="r"><span>def test_with_mean():</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>118</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>6</th><th>119</th><td class="l"><span>&nbsp; from mystic.math.measures import impose_mean</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_constraints.py?rev=603#L17">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_constraints.py?rev=609#L130">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>17</th><th>130</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>18</th><th>131</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>19</th><th> </th><td class="l"><span>def test_with_<del>constraints</del>():</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>132</th><td class="r"><span>def test_with_<ins>mean_spread</ins>():</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>133</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>21</th><th>134</th><td class="l"><span>&nbsp; from mystic.math.measures import impose_mean, impose_spread</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_constraints.py?rev=603#L34">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_constraints.py?rev=609#L147">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>147</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>35</th><th>148</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>36</th><th> </th><td class="l"><span>def test_constrain<del></del>():</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>149</th><td class="r"><span>def test_constrain<ins>ed_solve</ins>():</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>37</th><th>150</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>38</th><th>151</th><td class="l"><span>&nbsp; @with_spread(5.0)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_constraints.py?rev=603#L54">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_constraints.py?rev=609#L167">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>167</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>55</th><th>168</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>169</th><td class="r"><ins>def test_constrain():</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>170</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>171</th><td class="r"><ins>&nbsp; from mystic.math.measures import mean, spread</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>172</th><td class="r"><ins>&nbsp; from mystic.math.measures import impose_mean, impose_spread</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>173</th><td class="r"><ins>&nbsp; def mean_constraint(x, mean=0.0):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>174</th><td class="r"><ins>&nbsp; &nbsp; return impose_mean(mean, x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>175</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>176</th><td class="r"><ins>&nbsp; def range_constraint(x, spread=1.0):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>177</th><td class="r"><ins>&nbsp; &nbsp; return impose_spread(spread, x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>178</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>179</th><td class="r"><ins>&nbsp; @inner(inner=range_constraint, kwds={'spread':5.0})</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>180</th><td class="r"><ins>&nbsp; @inner(inner=mean_constraint, kwds={'mean':5.0})</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>181</th><td class="r"><ins>&nbsp; def constraints(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>182</th><td class="r"><ins>&nbsp; &nbsp; return x</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>183</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>184</th><td class="r"><ins>&nbsp; def cost(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>185</th><td class="r"><ins>&nbsp; &nbsp; return abs(sum(x) - 5.0)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>186</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>187</th><td class="r"><ins>&nbsp; from mystic.solvers import fmin_powell</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>188</th><td class="r"><ins>&nbsp; from numpy import array</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>189</th><td class="r"><ins>&nbsp; x = array([1,2,3,4,5])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>190</th><td class="r"><ins>&nbsp; y = fmin_powell(cost, x, constraints=constraints, disp=False)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>191</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>192</th><td class="r"><ins>&nbsp; assert mean(y) == 5.0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>193</th><td class="r"><ins>&nbsp; assert spread(y) == 5.0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>194</th><td class="r"><ins>&nbsp; assert almostEqual(cost(y), 4*(5.0))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>195</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>196</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>197</th><td class="r"><ins>def test_with_constraint():</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>198</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>199</th><td class="r"><ins>&nbsp; from mystic.math.measures import impose_mean</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>200</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>201</th><td class="r"><ins>&nbsp; @with_constraint(inner, kwds={'target':5.0})</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>202</th><td class="r"><ins>&nbsp; def mean_of_squared(x, target):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>203</th><td class="r"><ins>&nbsp; &nbsp; return impose_mean(target, [i**2 for i in x])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>204</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>205</th><td class="r"><ins>&nbsp; from numpy import array</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>206</th><td class="r"><ins>&nbsp; x = array([1,2,3,4,5])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>207</th><td class="r"><ins>&nbsp; y = impose_mean(5, [i**2 for i in x])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>208</th><td class="r"><ins>&nbsp; assert mean(y) == 5.0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>209</th><td class="r"><ins>&nbsp; assert mean_of_squared(x) == y</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>210</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>211</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>57</th><th>212</th><td class="l"><span>if __name__ == '__main__':</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>213</th><td class="r"><ins>&nbsp; test_outer()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>214</th><td class="r"><ins>&nbsp; test_inner()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>215</th><td class="r"><ins>&nbsp; test_outer_constraint()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>216</th><td class="r"><ins>&nbsp; test_inner_constraint()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>217</th><td class="r"><ins>&nbsp; test_proxified_constraint()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>218</th><td class="r"><ins>&nbsp; test_inner_constraints()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>219</th><td class="r"><ins>&nbsp; test_proxified_constraints()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>220</th><td class="r"><ins>&nbsp; test_with_mean()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>221</th><td class="r"><ins>&nbsp; test_with_mean_spread()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>222</th><td class="r"><ins>&nbsp; test_constrained_solve()</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>223</th><td class="r"><ins>&nbsp; test_constrain()</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>58</th><th>224</th><td class="l"><span>&nbsp; test_with_constraint()</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>59</th><th> </th><td class="l"><del>&nbsp; test_with_constraints()</del> </td>
+                  </tr><tr class="last">
+                          <th>60</th><th> </th><td class="l"><del>&nbsp; test_constrain()</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>225</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>62</th><th>226</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="branches/decorate/test_penalty.html" title="Show the changeset 609 restricted to branches/decorate/test_penalty.py">branches/decorate/test_penalty.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 608">
+                    <a title="Show revision 608 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_penalty.py?rev=608#L130">
+                      r608</a>
+                  </th>
+                  <th title="Revision 609">
+                    <a title="Show revision 609 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_penalty.py?rev=609#L130">
+                      r609</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>130</th><th>130</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>131</th><th>131</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>132</th><td class="r"><ins>def test_with_penalty():</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>133</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>134</th><td class="r"><ins>&nbsp; from mystic.math.measures import mean, spread</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>135</th><td class="r"><ins>&nbsp; @with_penalty(quadratic_equality, kwds={'target':5.0})</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>136</th><td class="r"><ins>&nbsp; def penalty(x, target):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>137</th><td class="r"><ins>&nbsp; &nbsp; return mean(x) - target</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>138</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>139</th><td class="r"><ins>&nbsp; def cost(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>140</th><td class="r"><ins>&nbsp; &nbsp; return abs(sum(x) - 5.0)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>141</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>142</th><td class="r"><ins>&nbsp; from mystic.solvers import fmin_powell</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>143</th><td class="r"><ins>&nbsp; from numpy import array</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>144</th><td class="r"><ins>&nbsp; x = array([1,2,3,4,5])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>145</th><td class="r"><ins>&nbsp; y = fmin_powell(cost, x, penalty=penalty, disp=False)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>146</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>147</th><td class="r"><ins>&nbsp; assert round(mean(y)) == 5.0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>148</th><td class="r"><ins>&nbsp; assert round(cost(y)) == 4*(5.0)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>149</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>132</th><th>150</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>133</th><th>151</th><td class="l"><span>if __name__ == '__main__':</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_penalty.py?rev=608#L137">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_penalty.py?rev=609#L155">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>137</th><th>155</th><td class="l"><span>&nbsp; test_as_constraint()</span> </td>
+                  </tr><tr>
+                          <th>138</th><th>156</th><td class="l"><span>&nbsp; test_as_penalty()</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>157</th><td class="r"><ins>&nbsp; test_with_penalty()</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>139</th><th>158</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>140</th><th>159</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="branches/decorate/test_wrapper.html" title="Show the changeset 609 restricted to branches/decorate/test_wrapper.py">branches/decorate/test_wrapper.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 604">
+                    <a title="Show revision 604 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_wrapper.py?rev=604#L1">
+                      r604</a>
+                  </th>
+                  <th title="Revision 609">
+                    <a title="Show revision 609 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_wrapper.py?rev=609#L1">
+                      r609</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>from wrapper import *</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span>from mystic.math import almostEqual</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>3</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>4</th><th> </th><td class="l"><del>def test_wrap():</del> </td>
+                  </tr><tr>
+                          <th>5</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>6</th><th> </th><td class="l"><del>&nbsp; def squared(x):</del> </td>
+                  </tr><tr>
+                          <th>7</th><th> </th><td class="l"><del>&nbsp; &nbsp; return x**2</del> </td>
+                  </tr><tr>
+                          <th>8</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>9</th><th> </th><td class="l"><del>&nbsp; @wrap(outer=squared) </del> </td>
+                  </tr><tr>
+                          <th>10</th><th> </th><td class="l"><del>&nbsp; def plus_one_squared(x):</del> </td>
+                  </tr><tr>
+                          <th>11</th><th> </th><td class="l"><del>&nbsp; &nbsp; return x+1</del> </td>
+                  </tr><tr>
+                          <th>12</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>13</th><th> </th><td class="l"><del>&nbsp; from numpy import array</del> </td>
+                  </tr><tr>
+                          <th>14</th><th> </th><td class="l"><del>&nbsp; x = array([1,2,3,4,5])</del> </td>
+                  </tr><tr>
+                          <th>15</th><th> </th><td class="l"><del>&nbsp; assert all(plus_one_squared(x)) == all((x+1)**2)</del> </td>
+                  </tr><tr>
+                          <th>16</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>17</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>18</th><th> </th><td class="l"><del>def test_nested():</del> </td>
+                  </tr><tr>
+                          <th>19</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>20</th><th> </th><td class="l"><del>&nbsp; def squared(x):</del> </td>
+                  </tr><tr>
+                          <th>21</th><th> </th><td class="l"><del>&nbsp; &nbsp; return x**2</del> </td>
+                  </tr><tr>
+                          <th>22</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>23</th><th> </th><td class="l"><del>&nbsp; @nested(inner=squared) </del> </td>
+                  </tr><tr>
+                          <th>24</th><th> </th><td class="l"><del>&nbsp; def squared_plus_one(x):</del> </td>
+                  </tr><tr>
+                          <th>25</th><th> </th><td class="l"><del>&nbsp; &nbsp; return x+1</del> </td>
+                  </tr><tr>
+                          <th>26</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>27</th><th> </th><td class="l"><del>&nbsp; from numpy import array</del> </td>
+                  </tr><tr>
+                          <th>28</th><th> </th><td class="l"><del>&nbsp; x = array([1,2,3,4,5])</del> </td>
+                  </tr><tr>
+                          <th>29</th><th> </th><td class="l"><del>&nbsp; assert all(squared_plus_one(x)) == all(x**2 + 1)</del> </td>
+                  </tr><tr>
+                          <th>30</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>31</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>32</th><th> </th><td class="l"><del>def test_wrap_constraint():</del> </td>
+                  </tr><tr>
+                          <th>33</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>34</th><th> </th><td class="l"><del>&nbsp; from mystic.math.measures import impose_mean, mean</del> </td>
+                  </tr><tr>
+                          <th>35</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>36</th><th> </th><td class="l"><del>&nbsp; def impose_constraints(x, mean, weights=None):</del> </td>
+                  </tr><tr>
+                          <th>37</th><th> </th><td class="l"><del>&nbsp; &nbsp; return impose_mean(mean, x, weights)</del> </td>
+                  </tr><tr>
+                          <th>38</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>39</th><th> </th><td class="l"><del>&nbsp; @wrap(outer=impose_constraints, kwds={'mean':5.0})</del> </td>
+                  </tr><tr>
+                          <th>40</th><th> </th><td class="l"><del>&nbsp; def mean_of_squared(x):</del> </td>
+                  </tr><tr>
+                          <th>41</th><th> </th><td class="l"><del>&nbsp; &nbsp; return [i**2 for i in x]</del> </td>
+                  </tr><tr>
+                          <th>42</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>43</th><th> </th><td class="l"><del>&nbsp; from numpy import array</del> </td>
+                  </tr><tr>
+                          <th>44</th><th> </th><td class="l"><del>&nbsp; x = array([1,2,3,4,5])</del> </td>
+                  </tr><tr>
+                          <th>45</th><th> </th><td class="l"><del>&nbsp; y = impose_mean(5, [i**2 for i in x])</del> </td>
+                  </tr><tr>
+                          <th>46</th><th> </th><td class="l"><del>&nbsp; assert mean(y) == 5.0</del> </td>
+                  </tr><tr>
+                          <th>47</th><th> </th><td class="l"><del>&nbsp; assert mean_of_squared(x) == y</del> </td>
+                  </tr><tr>
+                          <th>48</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>49</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>50</th><th> </th><td class="l"><del>def test_nested_constraint():</del> </td>
+                  </tr><tr>
+                          <th>51</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>52</th><th> </th><td class="l"><del>&nbsp; from mystic.math.measures import impose_mean</del> </td>
+                  </tr><tr>
+                          <th>53</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>54</th><th> </th><td class="l"><del>&nbsp; def impose_constraints(x, mean, weights=None):</del> </td>
+                  </tr><tr>
+                          <th>55</th><th> </th><td class="l"><del>&nbsp; &nbsp; return impose_mean(mean, x, weights)</del> </td>
+                  </tr><tr>
+                          <th>56</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>57</th><th> </th><td class="l"><del>&nbsp; @nested(inner=impose_constraints, kwds={'mean':5.0})</del> </td>
+                  </tr><tr>
+                          <th>58</th><th> </th><td class="l"><del>&nbsp; def mean_then_squared(x):</del> </td>
+                  </tr><tr>
+                          <th>59</th><th> </th><td class="l"><del>&nbsp; &nbsp; return [i**2 for i in x]</del> </td>
+                  </tr><tr>
+                          <th>60</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>61</th><th> </th><td class="l"><del>&nbsp; from numpy import array</del> </td>
+                  </tr><tr>
+                          <th>62</th><th> </th><td class="l"><del>&nbsp; x = array([1,2,3,4,5])</del> </td>
+                  </tr><tr>
+                          <th>63</th><th> </th><td class="l"><del>&nbsp; assert mean_then_squared(x) == [i**2 for i in impose_mean(5,x)]</del> </td>
+                  </tr><tr>
+                          <th>64</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>65</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>66</th><th> </th><td class="l"><del>def test_proxified_constraint():</del> </td>
+                  </tr><tr>
+                          <th>67</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>68</th><th> </th><td class="l"><del>&nbsp; from mystic.math.measures import impose_mean</del> </td>
+                  </tr><tr>
+                          <th>69</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>70</th><th> </th><td class="l"><del>&nbsp; @proxify(inner=impose_mean)</del> </td>
+                  </tr><tr>
+                          <th>71</th><th> </th><td class="l"><del>&nbsp; def mean_then_squared(x): #XXX: proxy doesn't preserve function signature</del> </td>
+                  </tr><tr>
+                          <th>72</th><th> </th><td class="l"><del>&nbsp; &nbsp; return [i**2 for i in x]</del> </td>
+                  </tr><tr>
+                          <th>73</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>74</th><th> </th><td class="l"><del>&nbsp; from numpy import array</del> </td>
+                  </tr><tr>
+                          <th>75</th><th> </th><td class="l"><del>&nbsp; x = array([1,2,3,4,5])</del> </td>
+                  </tr><tr>
+                          <th>76</th><th> </th><td class="l"><del>&nbsp; assert mean_then_squared(5,x) == [i**2 for i in impose_mean(5,x)]</del> </td>
+                  </tr><tr>
+                          <th>77</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>78</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>79</th><th> </th><td class="l"><del>def test_nested_constraints():</del> </td>
+                  </tr><tr>
+                          <th>80</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>81</th><th> </th><td class="l"><del>&nbsp; from mystic.math.measures import impose_mean, impose_spread</del> </td>
+                  </tr><tr>
+                          <th>82</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>83</th><th> </th><td class="l"><del>&nbsp; def impose_constraints(x, mean=0.0, spread=1.0):</del> </td>
+                  </tr><tr>
+                          <th>84</th><th> </th><td class="l"><del>&nbsp; &nbsp; x = impose_mean(mean, x)</del> </td>
+                  </tr><tr>
+                          <th>85</th><th> </th><td class="l"><del>&nbsp; &nbsp; x = impose_spread(spread, x)</del> </td>
+                  </tr><tr>
+                          <th>86</th><th> </th><td class="l"><del>&nbsp; &nbsp; return x</del> </td>
+                  </tr><tr>
+                          <th>87</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>88</th><th> </th><td class="l"><del>&nbsp; @nested(inner=impose_constraints, kwds={'mean':5.0, 'spread':50.0})</del> </td>
+                  </tr><tr>
+                          <th>89</th><th> </th><td class="l"><del>&nbsp; def constrained_squared(x):</del> </td>
+                  </tr><tr>
+                          <th>90</th><th> </th><td class="l"><del>&nbsp; &nbsp; return [i**2 for i in x]</del> </td>
+                  </tr><tr>
+                          <th>91</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>92</th><th> </th><td class="l"><del>&nbsp; from numpy import array</del> </td>
+                  </tr><tr>
+                          <th>93</th><th> </th><td class="l"><del>&nbsp; x = array([1,2,3,4,5])</del> </td>
+                  </tr><tr>
+                          <th>94</th><th> </th><td class="l"><del>&nbsp; y = impose_spread(50.0, impose_mean(5.0,x))</del> </td>
+                  </tr><tr>
+                          <th>95</th><th> </th><td class="l"><del>&nbsp; assert constrained_squared(x) == [i**2 for i in y]</del> </td>
+                  </tr><tr>
+                          <th>96</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>97</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>98</th><th> </th><td class="l"><del>def test_proxified_constraints():</del> </td>
+                  </tr><tr>
+                          <th>99</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>100</th><th> </th><td class="l"><del>&nbsp; from mystic.math.measures import impose_mean, impose_spread</del> </td>
+                  </tr><tr>
+                          <th>101</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>102</th><th> </th><td class="l"><del>&nbsp; def impose_constraints(x, mean=0.0, spread=1.0):</del> </td>
+                  </tr><tr>
+                          <th>103</th><th> </th><td class="l"><del>&nbsp; &nbsp; x = impose_mean(mean, x)</del> </td>
+                  </tr><tr>
+                          <th>104</th><th> </th><td class="l"><del>&nbsp; &nbsp; x = impose_spread(spread, x)</del> </td>
+                  </tr><tr>
+                          <th>105</th><th> </th><td class="l"><del>&nbsp; &nbsp; return x</del> </td>
+                  </tr><tr>
+                          <th>106</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>107</th><th> </th><td class="l"><del>&nbsp; @proxify(inner=impose_constraints)</del> </td>
+                  </tr><tr>
+                          <th>108</th><th> </th><td class="l"><del>&nbsp; def constrained_squared(x): #XXX: proxy doesn't preserve function signature</del> </td>
+                  </tr><tr>
+                          <th>109</th><th> </th><td class="l"><del>&nbsp; &nbsp; return [i**2 for i in x]</del> </td>
+                  </tr><tr>
+                          <th>110</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>111</th><th> </th><td class="l"><del>&nbsp; from numpy import array</del> </td>
+                  </tr><tr>
+                          <th>112</th><th> </th><td class="l"><del>&nbsp; x = array([1,2,3,4,5])</del> </td>
+                  </tr><tr>
+                          <th>113</th><th> </th><td class="l"><del>&nbsp; y = impose_spread(50.0, impose_mean(5.0,x))</del> </td>
+                  </tr><tr>
+                          <th>114</th><th> </th><td class="l"><del>&nbsp; assert constrained_squared(x, 5.0, 50.0) == [i**2 for i in y]</del> </td>
+                  </tr><tr class="last">
+                          <th>115</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>116</th><th>3</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>117</th><th>4</th><td class="l"><span>def test_monitored():</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_wrapper.py?rev=604#L251">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_wrapper.py?rev=609#L138">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>251</th><th>138</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>252</th><th>139</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>253</th><th> </th><td class="l"><del>def test_constrain():</del> </td>
+                  </tr><tr>
+                          <th>254</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>255</th><th> </th><td class="l"><del>&nbsp; from mystic.math.measures import mean, spread</del> </td>
+                  </tr><tr>
+                          <th>256</th><th> </th><td class="l"><del>&nbsp; from mystic.math.measures import impose_mean, impose_spread</del> </td>
+                  </tr><tr>
+                          <th>257</th><th> </th><td class="l"><del>&nbsp; def mean_constraint(x, mean=0.0):</del> </td>
+                  </tr><tr>
+                          <th>258</th><th> </th><td class="l"><del>&nbsp; &nbsp; return impose_mean(mean, x)</del> </td>
+                  </tr><tr>
+                          <th>259</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>260</th><th> </th><td class="l"><del>&nbsp; def range_constraint(x, spread=1.0):</del> </td>
+                  </tr><tr>
+                          <th>261</th><th> </th><td class="l"><del>&nbsp; &nbsp; return impose_spread(spread, x)</del> </td>
+                  </tr><tr>
+                          <th>262</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>263</th><th> </th><td class="l"><del>&nbsp; @nested(inner=range_constraint, kwds={'spread':5.0})</del> </td>
+                  </tr><tr>
+                          <th>264</th><th> </th><td class="l"><del>&nbsp; @nested(inner=mean_constraint, kwds={'mean':5.0})</del> </td>
+                  </tr><tr>
+                          <th>265</th><th> </th><td class="l"><del>&nbsp; def constraints(x):</del> </td>
+                  </tr><tr>
+                          <th>266</th><th> </th><td class="l"><del>&nbsp; &nbsp; return x</del> </td>
+                  </tr><tr>
+                          <th>267</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>268</th><th> </th><td class="l"><del>&nbsp; def cost(x):</del> </td>
+                  </tr><tr>
+                          <th>269</th><th> </th><td class="l"><del>&nbsp; &nbsp; return abs(sum(x) - 5.0)</del> </td>
+                  </tr><tr>
+                          <th>270</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>271</th><th> </th><td class="l"><del>&nbsp; from mystic.solvers import fmin_powell</del> </td>
+                  </tr><tr>
+                          <th>272</th><th> </th><td class="l"><del>&nbsp; from numpy import array</del> </td>
+                  </tr><tr>
+                          <th>273</th><th> </th><td class="l"><del>&nbsp; x = array([1,2,3,4,5])</del> </td>
+                  </tr><tr>
+                          <th>274</th><th> </th><td class="l"><del>&nbsp; y = fmin_powell(cost, x, constraints=constraints, disp=False)</del> </td>
+                  </tr><tr>
+                          <th>275</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>276</th><th> </th><td class="l"><del>&nbsp; assert mean(y) == 5.0</del> </td>
+                  </tr><tr>
+                          <th>277</th><th> </th><td class="l"><del>&nbsp; assert spread(y) == 5.0</del> </td>
+                  </tr><tr>
+                          <th>278</th><th> </th><td class="l"><del>&nbsp; assert almostEqual(cost(y), 4*(5.0))</del> </td>
+                  </tr><tr>
+                          <th>279</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>280</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr class="last">
+                          <th>281</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>282</th><th>140</th><td class="l"><span>if __name__ == '__main__':</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>283</th><th> </th><td class="l"><del>&nbsp; test_wrap()</del> </td>
+                  </tr><tr>
+                          <th>284</th><th> </th><td class="l"><del>&nbsp; test_nested()</del> </td>
+                  </tr><tr>
+                          <th>285</th><th> </th><td class="l"><del>&nbsp; test_wrap_constraint()</del> </td>
+                  </tr><tr>
+                          <th>286</th><th> </th><td class="l"><del>&nbsp; test_nested_constraint()</del> </td>
+                  </tr><tr>
+                          <th>287</th><th> </th><td class="l"><del>&nbsp; test_proxified_constraint()</del> </td>
+                  </tr><tr>
+                          <th>288</th><th> </th><td class="l"><del>&nbsp; test_nested_constraints()</del> </td>
+                  </tr><tr class="last">
+                          <th>289</th><th> </th><td class="l"><del>&nbsp; test_proxified_constraints()</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>290</th><th>141</th><td class="l"><span>&nbsp; test_monitored()</span> </td>
+                  </tr><tr>
+                          <th>291</th><th>142</th><td class="l"><span>&nbsp; test_counted()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_wrapper.py?rev=604#L297">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_wrapper.py?rev=609#L148">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>297</th><th>148</th><td class="l"><span>&nbsp; test_target_bounded()</span> </td>
+                  </tr><tr>
+                          <th>298</th><th>149</th><td class="l"><span>&nbsp; test_bounce_bounded()</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>299</th><th> </th><td class="l"><del>&nbsp; test_constrain()</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>300</th><th>150</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>301</th><th>151</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="branches/decorate/wrapper.html" title="Show the changeset 609 restricted to branches/decorate/wrapper.py">branches/decorate/wrapper.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 608">
+                    <a title="Show revision 608 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/wrapper.py?rev=608#L3">
+                      r608</a>
+                  </th>
+                  <th title="Revision 609">
+                    <a title="Show revision 609 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/wrapper.py?rev=609#L3">
+                      r609</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span>#XXX: when_decorated registers methods to 'populate up' when is decorated ?</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>5</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>6</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>7</th><th> </th><td class="l"><del>def wrap(outer=lambda x:x, args=None, kwds=None): #XXX: *args, **kwds ?</del> </td>
+                  </tr><tr>
+                          <th>8</th><th> </th><td class="l"><del>&nbsp; &nbsp; """wrap a function around another function: convert y = f(x) to y' = c(f(x))</del> </td>
+                  </tr><tr>
+                          <th>9</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>10</th><th> </th><td class="l"><del>This is useful, for example, in nesting one constraint in another constraint.</del> </td>
+                  </tr><tr>
+                          <th>11</th><th> </th><td class="l"><del>&nbsp; &nbsp; """</del> </td>
+                  </tr><tr>
+                          <th>12</th><th> </th><td class="l"><del>&nbsp; &nbsp; if args is None: args=()</del> </td>
+                  </tr><tr>
+                          <th>13</th><th> </th><td class="l"><del>&nbsp; &nbsp; if kwds is None: kwds={}</del> </td>
+                  </tr><tr>
+                          <th>14</th><th> </th><td class="l"><del>&nbsp; &nbsp; def dec(f):</del> </td>
+                  </tr><tr>
+                          <th>15</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; def func(x, *argz, **kwdz):</del> </td>
+                  </tr><tr>
+                          <th>16</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return outer(f(x, *argz, **kwdz), *args, **kwds)</del> </td>
+                  </tr><tr>
+                          <th>17</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; return func</del> </td>
+                  </tr><tr>
+                          <th>18</th><th> </th><td class="l"><del>&nbsp; &nbsp; return dec</del> </td>
+                  </tr><tr>
+                          <th>19</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>20</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>21</th><th> </th><td class="l"><del>def nested(inner=lambda x:x, args=None, kwds=None): #XXX: *args, **kwds ?</del> </td>
+                  </tr><tr>
+                          <th>22</th><th> </th><td class="l"><del>&nbsp; &nbsp; """nest a function within another function: convert y = f(x) to y' = f(c(x))</del> </td>
+                  </tr><tr>
+                          <th>23</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>24</th><th> </th><td class="l"><del>This is useful, for example, in nesting constraints in a cost function;</del> </td>
+                  </tr><tr>
+                          <th>25</th><th> </th><td class="l"><del>thus, the constraints will be enforced at every cost function evaluation.</del> </td>
+                  </tr><tr>
+                          <th>26</th><th> </th><td class="l"><del>&nbsp; &nbsp; """</del> </td>
+                  </tr><tr>
+                          <th>27</th><th> </th><td class="l"><del>&nbsp; &nbsp; if args is None: args=()</del> </td>
+                  </tr><tr>
+                          <th>28</th><th> </th><td class="l"><del>&nbsp; &nbsp; if kwds is None: kwds={}</del> </td>
+                  </tr><tr>
+                          <th>29</th><th> </th><td class="l"><del>&nbsp; &nbsp; def dec(f):</del> </td>
+                  </tr><tr>
+                          <th>30</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; def func(x, *argz, **kwdz):</del> </td>
+                  </tr><tr>
+                          <th>31</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return f(inner(x, *args, **kwds), *argz, **kwdz)</del> </td>
+                  </tr><tr>
+                          <th>32</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; return func</del> </td>
+                  </tr><tr>
+                          <th>33</th><th> </th><td class="l"><del>&nbsp; &nbsp; return dec</del> </td>
+                  </tr><tr>
+                          <th>34</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>35</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>36</th><th> </th><td class="l"><del>def proxify(inner=lambda x:x):</del> </td>
+                  </tr><tr>
+                          <th>37</th><th> </th><td class="l"><del>&nbsp; &nbsp; """nest a function within another function: convert y = f(x) to y' = f(c(x))</del> </td>
+                  </tr><tr>
+                          <th>38</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>39</th><th> </th><td class="l"><del>This is useful, for example, in nesting constraints in a cost function;</del> </td>
+                  </tr><tr>
+                          <th>40</th><th> </th><td class="l"><del>thus, the constraints will be enforced at every cost function evaluation.</del> </td>
+                  </tr><tr>
+                          <th>41</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>42</th><th> </th><td class="l"><del>This function does not preserve decorated function signature, but passes args</del> </td>
+                  </tr><tr>
+                          <th>43</th><th> </th><td class="l"><del>and kwds to the inner function.&nbsp; The decorated function should require a</del> </td>
+                  </tr><tr>
+                          <th>44</th><th> </th><td class="l"><del>single parameter as input.</del> </td>
+                  </tr><tr>
+                          <th>45</th><th> </th><td class="l"><del>&nbsp; &nbsp; """</del> </td>
+                  </tr><tr>
+                          <th>46</th><th> </th><td class="l"><del>&nbsp; &nbsp; def dec(f):</del> </td>
+                  </tr><tr>
+                          <th>47</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; def func(*args, **kwds):</del> </td>
+                  </tr><tr>
+                          <th>48</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return f(inner(*args, **kwds))</del> </td>
+                  </tr><tr>
+                          <th>49</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; return func</del> </td>
+                  </tr><tr class="last">
+                          <th>50</th><th> </th><td class="l"><del>&nbsp; &nbsp; return dec</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>51</th><th>5</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>52</th><th>6</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/609/branches?format=diff&amp;new=609" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/609/branches?format=zip&amp;new=609" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/609/branches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:16:47 GMT -->
+</html>

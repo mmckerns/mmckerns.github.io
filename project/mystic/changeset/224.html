@@ -1,0 +1,1940 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/224 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:06:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 224 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="223.html" title="Changeset 223" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/224?format=diff&amp;new=224" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/224?format=zip&amp;new=224" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="225.html" title="Changeset 225" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="223.html" title="Changeset 223">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="225.html" title="Changeset 225">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 224</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             05/02/10 23:42:45
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-05-02T23%3A42%3A45-07%3A00&amp;precision=second" title="2010-05-02T23:42:45-07:00 in Timeline">6 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+cleanup after core of pyina moves to pathos; remainder moves to mpimystic<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="rem"></dt><dd>25 deleted</dd>
+              <dt class="mod"></dt><dd>16 edited</dd>
+              <dt class="cp"></dt><dd>8 copied</dd>
+              <dt class="mv"></dt><dd>1 moved</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mv"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic?rev=224">
+              mpimystic
+            </a>
+          <span class="comment">(moved)</span>
+            <small><em>(moved from <a href="http://mmckerns.github.io/project/mystic/browser/pyina?rev=223" title="Show original file (revision 223)">
+                pyina</a>)</em></small>
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/Make.mm?rev=224">
+              mpimystic/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">2 diffs</a>)
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/applications?rev=223" title="Show what was removed (content at revision 223)">
+              mpimystic/applications
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/Make.mm?rev=224">
+              mpimystic/examples/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve.py?rev=224">
+              mpimystic/examples/ezmap_desolve.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve_rosen.py?rev=224">
+              mpimystic/examples/ezmap_desolve_rosen.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_ezmap?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_ezmap
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/Make.mm?rev=224">
+              mpimystic/examples_other/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">3 diffs</a>)
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/hello.py?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_other/hello.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/logging.py?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_other/logging.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/nodes.py?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_other/nodes.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/parallel_desolve.py?rev=224">
+              mpimystic/examples_other/parallel_desolve.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_raw/parallel_desolve.py?rev=222" title="Show original file (revision 222)">
+                pyina/examples_raw/parallel_desolve.py</a>)</em></small>
+              (<a title="Show differences" href="#file11">1 diff</a>)
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/pypi.py?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_other/pypi.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/pyre_differential_evolution.py?rev=224">
+              mpimystic/examples_other/pyre_differential_evolution.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_raw/pyre_differential_evolution.py?rev=222" title="Show original file (revision 222)">
+                pyina/examples_raw/pyre_differential_evolution.py</a>)</em></small>
+              (<a title="Show differences" href="#file13">1 diff</a>)
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/test1.py?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_other/test1.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/test2.py?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_other/test2.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/test3.py?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_other/test3.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/test_br8_mpi.py?rev=224">
+              mpimystic/examples_other/test_br8_mpi.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_raw/test_br8_mpi.py?rev=222" title="Show original file (revision 222)">
+                pyina/examples_raw/test_br8_mpi.py</a>)</em></small>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/test_mogi_bcast.py?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_other/test_mogi_bcast.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/test_mogi_future.py?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_other/test_mogi_future.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/test_mpimogi.py?rev=224">
+              mpimystic/examples_other/test_mpimogi.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_raw/test_mpimogi.py?rev=222" title="Show original file (revision 222)">
+                pyina/examples_raw/test_mpimogi.py</a>)</em></small>
+              (<a title="Show differences" href="#file20">1 diff</a>)
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/test_mpimogi2.py?rev=224">
+              mpimystic/examples_other/test_mpimogi2.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_raw/test_mpimogi2.py?rev=222" title="Show original file (revision 222)">
+                pyina/examples_raw/test_mpimogi2.py</a>)</em></small>
+              (<a title="Show differences" href="#file21">1 diff</a>)
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/test_mpimogi3.py?rev=224">
+              mpimystic/examples_other/test_mpimogi3.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_raw/test_mpimogi3.py?rev=222" title="Show original file (revision 222)">
+                pyina/examples_raw/test_mpimogi3.py</a>)</em></small>
+              (<a title="Show differences" href="#file22">1 diff</a>)
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/test_parallelmap.py?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_other/test_parallelmap.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/test_pmap.py?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_other/test_pmap.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/test_ports.py?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_other/test_ports.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/test_tg3p.py?rev=224">
+              mpimystic/examples_other/test_tg3p.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_raw/test_tg3p.py?rev=222" title="Show original file (revision 222)">
+                pyina/examples_raw/test_tg3p.py</a>)</em></small>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_raw?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/examples_raw
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic?rev=224">
+              mpimystic/mpimystic
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina?rev=221" title="Show original file (revision 221)">
+                pyina/pyina</a>)</em></small>
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/Make.mm?rev=224">
+              mpimystic/mpimystic/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file29">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/README?rev=224">
+              mpimystic/mpimystic/README
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file30">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/__init__.py?rev=224">
+              mpimystic/mpimystic/__init__.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file31">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/differential_evolution.py?rev=224">
+              mpimystic/mpimystic/differential_evolution.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file32">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/differential_evolution_app.py?rev=224">
+              mpimystic/mpimystic/differential_evolution_app.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file33">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/differential_evolution_ezmap.py?rev=224">
+              mpimystic/mpimystic/differential_evolution_ezmap.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file34">1 diff</a>)
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/ez_map.py?rev=213" title="Show what was removed (content at revision 213)">
+              mpimystic/mpimystic/ez_map.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/launchers.py?rev=215" title="Show what was removed (content at revision 215)">
+              mpimystic/mpimystic/launchers.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/mappers.py?rev=205" title="Show what was removed (content at revision 205)">
+              mpimystic/mpimystic/mappers.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/branches/merge-pyina-at-r87/trunk/pyina/pyina/mpiconsts.py?rev=88" title="Show what was removed (content at revision 88)">
+              mpimystic/mpimystic/mpiconsts.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/parallel_map.py?rev=205" title="Show what was removed (content at revision 205)">
+              mpimystic/mpimystic/parallel_map.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/parallel_map2.py?rev=198" title="Show what was removed (content at revision 198)">
+              mpimystic/mpimystic/parallel_map2.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/tools.py?rev=139" title="Show what was removed (content at revision 139)">
+              mpimystic/mpimystic/tools.py
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mystic_files.py?rev=224">
+              mpimystic/mystic_files.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file42">1 diff</a>)
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina?rev=221" title="Show what was removed (content at revision 221)">
+              mpimystic/pyina
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/branches/merge-pyina-at-r87/trunk/pyina/pyinamodule?rev=88" title="Show what was removed (content at revision 88)">
+              mpimystic/pyinamodule
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/setup.py?rev=224">
+              mpimystic/setup.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file45">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/tests/Make.mm?rev=224">
+              mpimystic/tests/Make.mm
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file46">2 diffs</a>)
+            </li><li>
+          <div class="rem"> </div>
+          <a href="http://mmckerns.github.io/project/mystic/browser/pyina/tools?rev=222" title="Show what was removed (content at revision 222)">
+              mpimystic/tools
+            </a>
+          <span class="comment">(deleted)</span>
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/README?rev=224">
+              mystic/mystic/README
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file48">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/__init__.py?rev=224">
+              mystic/mystic/__init__.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file49">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file1">
+          <a href="224/mpimystic/Make.html" title="Show the changeset 224 restricted to mpimystic/Make.mm">mpimystic/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 222">
+                    <a title="Show revision 222 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/Make.mm?rev=222#L1">
+                      r222</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/Make.mm?rev=224#L1">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span># -*- Makefile -*-</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>PROJECT = <del>pyina</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>3</th><td class="r"><span>PROJECT = <ins>mpimystic</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>5</th><th>5</th><td class="l"><span>BUILD_DIRS = \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>6</th><th> </th><td class="l"><span>&nbsp; &nbsp; pyinamodule \</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span>&nbsp; &nbsp; pyina \</span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span>&nbsp; &nbsp; tools \</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>&nbsp; &nbsp; applications \</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>&nbsp; &nbsp; mpimystic \</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>7</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>11</th><th>8</th><td class="l"><span>OTHER_DIRS = \</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/Make.mm?rev=222#L13">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/Make.mm?rev=224#L10">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>13</th><th>10</th><td class="l"><span>&nbsp; &nbsp; examples \</span> </td>
+                  </tr><tr>
+                          <th>14</th><th>11</th><td class="l"><span>&nbsp; &nbsp; examples_other \</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>15</th><th> </th><td class="l"><del>&nbsp; &nbsp; examples_raw \</del> </td>
+                  </tr><tr class="last">
+                          <th>16</th><th> </th><td class="l"><del>&nbsp; &nbsp; examples_ezmap \</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>17</th><th>12</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>18</th><th>13</th><td class="l"><span>RECURSE_DIRS = $(BUILD_DIRS) $(OTHER_DIRS)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="224/mpimystic/examples/Make.html" title="Show the changeset 224 restricted to mpimystic/examples/Make.mm">mpimystic/examples/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 222">
+                    <a title="Show revision 222 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/examples/Make.mm?rev=222#L1">
+                      r222</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/Make.mm?rev=224#L1">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span># -*- Makefile -*-</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>PROJECT = <del>pyina</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>3</th><td class="r"><span>PROJECT = <ins>mpimystic</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span>PACKAGE = examples</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>5</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="224/mpimystic/examples/ezmap_desolve.html" title="Show the changeset 224 restricted to mpimystic/examples/ezmap_desolve.py">mpimystic/examples/ezmap_desolve.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 205">
+                    <a title="Show revision 205 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/examples/ezmap_desolve.py?rev=205#L23">
+                      r205</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve.py?rev=224#L23">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>23</th><th>23</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>24</th><th>24</th><td class="l"><span>from mystic.differential_evolution import DifferentialEvolutionSolver2 as DESolve</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>25</th><th> </th><td class="l"><span>from <del>pyina</del>.differential_evolution_ezmap import ezDESolver as pDESolve</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>25</th><td class="r"><span>from <ins>mpimystic</ins>.differential_evolution_ezmap import ezDESolver as pDESolve</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>26</th><th>26</th><td class="l"><span>from pyina.launchers import mpirun_launcher</span> </td>
+                  </tr><tr>
+                          <th>27</th><th>27</th><td class="l"><span>from pyina.mappers import equalportion_mapper</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="224/mpimystic/examples/ezmap_desolve_rosen.html" title="Show the changeset 224 restricted to mpimystic/examples/ezmap_desolve_rosen.py">mpimystic/examples/ezmap_desolve_rosen.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 205">
+                    <a title="Show revision 205 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/examples/ezmap_desolve_rosen.py?rev=205#L23">
+                      r205</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples/ezmap_desolve_rosen.py?rev=224#L23">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>23</th><th>23</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>24</th><th>24</th><td class="l"><span>from mystic.differential_evolution import DifferentialEvolutionSolver2 as DESolve</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>25</th><th> </th><td class="l"><span>from <del>pyina</del>.differential_evolution_ezmap import ezDESolver as pDESolve</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>25</th><td class="r"><span>from <ins>mpimystic</ins>.differential_evolution_ezmap import ezDESolver as pDESolve</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>26</th><th>26</th><td class="l"><span>from pyina.launchers import mpirun_launcher</span> </td>
+                  </tr><tr>
+                          <th>27</th><th>27</th><td class="l"><span>from pyina.mappers import equalportion_mapper</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="224/mpimystic/examples_other/Make.html" title="Show the changeset 224 restricted to mpimystic/examples_other/Make.mm">mpimystic/examples_other/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 222">
+                    <a title="Show revision 222 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/Make.mm?rev=222#L1">
+                      r222</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/Make.mm?rev=224#L1">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span># -*- Makefile -*-</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>PROJECT = <del>pyina</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>3</th><td class="r"><span>PROJECT = <ins>mpimystic</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span>PACKAGE = examples_other</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>5</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>6</th><th> </th><td class="l"><span>PROJ_TIDY += <del>xx.</del>*</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span>PROJ_CLEAN <del>+</del>=</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>6</th><td class="r"><span>PROJ_TIDY += <ins>*.log *.png *.dat *.out.X *.out.Y *out.V tmp</ins>*</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>7</th><td class="r"><span>PROJ_CLEAN <ins></ins>=</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>8</th><th>8</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>9</th><th> </th><td class="l"><span>all: export</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>9</th><td class="r"><span>#--------------------------------------------------------------------------</span> </td>
+                      </tr><tr>
+                        <th> </th><th>10</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>11</th><td class="r"><span>#all: export</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>12</th><td class="r"><span>all: clean</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>13</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>11</th><th>14</th><td class="l"><span>release: tidy</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/Make.mm?rev=222#L21">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/Make.mm?rev=224#L24">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>21</th><th>24</th><td class="l"><span>#EXPORT_PYTHON_MODULES = \</span> </td>
+                  </tr><tr>
+                          <th>22</th><th>25</th><td class="l"><span>EXPORT_BINS = \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>23</th><th> </th><td class="l"><span>&nbsp; &nbsp; hello.py \</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>&nbsp; &nbsp; pypi.py \</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>&nbsp; &nbsp; nodes.py</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; &nbsp; test1.py \</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>&nbsp; &nbsp; test2.py \</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; &nbsp; test3.py \</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; test_pmap.py \</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp; test_parallelmap.py \</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; &nbsp; logging.py \</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp; test_ports.py \</span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; &nbsp; test_mogi_bcast.py \</span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span>#&nbsp; &nbsp;test_mogi_future.py \</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>26</th><td class="r"><span>&nbsp; &nbsp; parallel_desolve.py \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>27</th><td class="r"><span>&nbsp; &nbsp; pyre_differential_evolution.py \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>28</th><td class="r"><span>&nbsp; &nbsp; test_mpimogi.py \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>29</th><td class="r"><span>&nbsp; &nbsp; test_mpimogi2.py \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>30</th><td class="r"><span>&nbsp; &nbsp; test_mpimogi3.py \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>31</th><td class="r"><span>#&nbsp; &nbsp;test_br8_mpi.py \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>32</th><td class="r"><span>#&nbsp; &nbsp;test_tg3.py \</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>33</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>36</th><th>34</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_other/Make.mm?rev=222#L39">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/Make.mm?rev=224#L37">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>37</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>40</th><th>38</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>41</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>39</th><td class="l"><span># End of file</span> </td>
+                  </tr><tr>
+                          <th>43</th><th>40</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file11">
+          <a href="224/mpimystic/examples_other/parallel_desolve.html" title="Show the changeset 224 restricted to mpimystic/examples_other/parallel_desolve.py">mpimystic/examples_other/parallel_desolve.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 222">
+                    <a title="Show revision 222 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_raw/parallel_desolve.py?rev=222#L22">
+                      r222</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/parallel_desolve.py?rev=224#L22">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>22</th><td class="l"><span>""" % { 'file' : __file__, 'launchers' : launchers.getstr({'file':__file__, 'timelimit':'00:05'}) }</span> </td>
+                  </tr><tr>
+                          <th>23</th><th>23</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>24</th><th> </th><td class="l"><span>from <del>pyina</del>.differential_evolution import DifferentialEvolutionSolver2 as DESolve</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>24</th><td class="r"><span>from <ins>mpimystic</ins>.differential_evolution import DifferentialEvolutionSolver2 as DESolve</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>25</th><th>25</th><td class="l"><span>from pyina.parallel_map2 import parallel_map</span> </td>
+                  </tr><tr>
+                          <th>26</th><th>26</th><td class="l"><span>from mystic.termination import ChangeOverGeneration, VTR</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file13">
+          <a href="224/mpimystic/examples_other/pyre_differential_evolution.html" title="Show the changeset 224 restricted to mpimystic/examples_other/pyre_differential_evolution.py">mpimystic/examples_other/pyre_differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 222">
+                    <a title="Show revision 222 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_raw/pyre_differential_evolution.py?rev=222#L11">
+                      r222</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/pyre_differential_evolution.py?rev=224#L11">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>11</th><th>11</th><td class="l"><span>This script will demo a Chebyshev8 fit (also see mystic/examples/test_ffit).</span> </td>
+                  </tr><tr>
+                          <th>12</th><th>12</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>13</th><th> </th><td class="l"><span>from <del>pyina</del>.differential_evolution_app import *</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>13</th><td class="r"><span>from <ins>mpimystic</ins>.differential_evolution_app import *</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>14</th><th>14</th><td class="l"><span>from mystic.termination import ChangeOverGeneration, VTR</span> </td>
+                  </tr><tr>
+                          <th>15</th><th>15</th><td class="l"><span>from mystic.tools import VerboseSow</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file20">
+          <a href="224/mpimystic/examples_other/test_mpimogi.html" title="Show the changeset 224 restricted to mpimystic/examples_other/test_mpimogi.py">mpimystic/examples_other/test_mpimogi.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 222">
+                    <a title="Show revision 222 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_raw/test_mpimogi.py?rev=222#L19">
+                      r222</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/test_mpimogi.py?rev=224#L19">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>19</th><th>19</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>20</th><th>20</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>21</th><th> </th><td class="l"><span>from <del>pyina</del>.differential_evolution_app import PyreDifferentialEvolutionSolver2</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>21</th><td class="r"><span>from <ins>mpimystic</ins>.differential_evolution_app import PyreDifferentialEvolutionSolver2</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>22</th><td class="l"><span>from mystic.termination import ChangeOverGeneration, VTR</span> </td>
+                  </tr><tr>
+                          <th>23</th><th>23</th><td class="l"><span>from mystic.tools import VerboseSow</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file21">
+          <a href="224/mpimystic/examples_other/test_mpimogi2.html" title="Show the changeset 224 restricted to mpimystic/examples_other/test_mpimogi2.py">mpimystic/examples_other/test_mpimogi2.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 222">
+                    <a title="Show revision 222 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_raw/test_mpimogi2.py?rev=222#L5">
+                      r222</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/test_mpimogi2.py?rev=224#L5">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>5</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>6</th><th>6</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>7</th><th> </th><td class="l"><span>from <del>pyina</del>.differential_evolution_app import PyreDifferentialEvolutionSolver2</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>7</th><td class="r"><span>from <ins>mpimystic</ins>.differential_evolution_app import PyreDifferentialEvolutionSolver2</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>8</th><th>8</th><td class="l"><span>from mystic.termination import ChangeOverGeneration, VTR</span> </td>
+                  </tr><tr>
+                          <th>9</th><th>9</th><td class="l"><span>from mystic.tools import VerboseSow</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file22">
+          <a href="224/mpimystic/examples_other/test_mpimogi3.html" title="Show the changeset 224 restricted to mpimystic/examples_other/test_mpimogi3.py">mpimystic/examples_other/test_mpimogi3.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 222">
+                    <a title="Show revision 222 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/examples_raw/test_mpimogi3.py?rev=222#L25">
+                      r222</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/examples_other/test_mpimogi3.py?rev=224#L25">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>25</th><th>25</th><td class="l"><span>""" % { 'launchers' : launchers.getstr({'timelimit' : '00:05','nodes':'6'}) }</span> </td>
+                  </tr><tr>
+                          <th>26</th><th>26</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>27</th><th> </th><td class="l"><span>from <del>pyina</del>.differential_evolution import DifferentialEvolutionSolver2 as DESolve</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>27</th><td class="r"><span>from <ins>mpimystic</ins>.differential_evolution import DifferentialEvolutionSolver2 as DESolve</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>28</th><td class="l"><span>from pyina.parallel_map2 import parallel_map</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>29</th><td class="l"><span>from mystic.termination import ChangeOverGeneration, VTR</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file29">
+          <a href="224/mpimystic/mpimystic/Make.html" title="Show the changeset 224 restricted to mpimystic/mpimystic/Make.mm">mpimystic/mpimystic/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 207">
+                    <a title="Show revision 207 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/Make.mm?rev=207#L1">
+                      r207</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/Make.mm?rev=224#L1">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span># -*- Makefile -*-</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>PROJECT = <del>pyina</del></span> </td>
+                      </tr><tr>
+                        <th>4</th><th> </th><td class="l"><span>PACKAGE = <del>pyina</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>3</th><td class="r"><span>PROJECT = <ins>mpimystic</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>4</th><td class="r"><span>PACKAGE = <ins>mpimystic</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>5</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>6</th><th>6</th><td class="l"><span>BUILD_DIRS = \</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/Make.mm?rev=207#L26">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/Make.mm?rev=224#L26">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>26</th><th>26</th><td class="l"><span>EXPORT_PYTHON_MODULES = \</span> </td>
+                  </tr><tr>
+                          <th>27</th><th>27</th><td class="l"><span>&nbsp; &nbsp; __init__.py \</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>28</th><th> </th><td class="l"><del>&nbsp; &nbsp; mpiconsts.py \</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>28</th><td class="l"><span>&nbsp; &nbsp; differential_evolution.py \</span> </td>
+                  </tr><tr>
+                          <th>30</th><th>29</th><td class="l"><span>&nbsp; &nbsp; differential_evolution_app.py \</span> </td>
+                  </tr><tr>
+                          <th>31</th><th>30</th><td class="l"><span>&nbsp; &nbsp; differential_evolution_ezmap.py \</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>32</th><th> </th><td class="l"><del>&nbsp; &nbsp; parallel_map.py \</del> </td>
+                  </tr><tr>
+                          <th>33</th><th> </th><td class="l"><del>&nbsp; &nbsp; parallel_map2.py \</del> </td>
+                  </tr><tr>
+                          <th>34</th><th> </th><td class="l"><del>&nbsp; &nbsp; ez_map.py \</del> </td>
+                  </tr><tr>
+                          <th>35</th><th> </th><td class="l"><del>&nbsp; &nbsp; launchers.py \</del> </td>
+                  </tr><tr>
+                          <th>36</th><th> </th><td class="l"><del>&nbsp; &nbsp; mappers.py \</del> </td>
+                  </tr><tr class="last">
+                          <th>37</th><th> </th><td class="l"><del>&nbsp; &nbsp; tools.py \</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>38</th><th>31</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>39</th><th>32</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file30">
+          <a href="224/mpimystic/mpimystic/README.html" title="Show the changeset 224 restricted to mpimystic/mpimystic/README">mpimystic/mpimystic/README</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 196">
+                    <a title="Show revision 196 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/README?rev=196#L2">
+                      r196</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/README?rev=224#L2">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>2</th><td class="l"><span>of the mystic inversion framework.&nbsp; The core launcher uses mpi.</span> </td>
+                  </tr><tr>
+                          <th>3</th><th>3</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>4</th><th> </th><td class="l"><span>This package was adapted from the pyina CVS 2008-07-07.</span> </td>
+                      </tr><tr>
+                        <th>5</th><th> </th><td class="l"><span>It requires:</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>&nbsp;- numpy</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>4</th><td class="r"><span>This package was adapted from the pyina CVS 2008-07-07.&nbsp; Pyina's</span> </td>
+                      </tr><tr>
+                        <th> </th><th>5</th><td class="r"><span>"map-reduce" core has been splintered off and now is part of pathos.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>6</th><td class="r"><span>The remaining parts are mystic solvers, modified for parallel computing.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>7</th><td class="r"><span>This package requires:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>8</th><td class="l"><span>&nbsp;- mystic</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>8</th><th> </th><td class="l"><span>&nbsp;- pyre.mpi (built from svn@danse.us/pyre/branches/mpi-lib)</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>&nbsp;- journal (part of pythia-0.8; see http://danse.us/trac/pyre)</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span>&nbsp;- dill (part of pathos; see http://dev.danse.us/trac/pathos)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>9</th><td class="r"><span>&nbsp;- pyina</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>11</th><th>10</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>12</th><th> </th><td class="l"><span><del>pyina</del>/differential_evolution.py is an "incorrect" implementation</span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span><del>pyina</del>/differential_evolution_ezmap.py hides mpi within "map" and "launcher"</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>&nbsp;- ez_map: writes cost<del>func</del> to temporary sourcefile (.py)</span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>&nbsp;- ez_map2: writes cost<del>func</del> to temporary picklefile (.pik)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>11</th><td class="r"><span><ins>mpimystic</ins>/differential_evolution.py is an "incorrect" implementation</span> </td>
+                      </tr><tr>
+                        <th> </th><th>12</th><td class="r"><span><ins>mpimystic</ins>/differential_evolution_ezmap.py hides mpi within "map" and "launcher"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>13</th><td class="r"><span>&nbsp;- ez_map: writes cost<ins>_function</ins> to temporary sourcefile (.py)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>14</th><td class="r"><span>&nbsp;- ez_map2: writes cost<ins>_function</ins> to temporary picklefile (.pik)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>16</th><th>15</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>17</th><th>16</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/README?rev=196#L22">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/README?rev=224#L21">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>21</th><td class="l"><span>you _must_ copy some files from mystic/examples.</span> </td>
+                  </tr><tr>
+                          <th>23</th><th>22</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>24</th><th> </th><td class="l"><span>&nbsp;* Change to the <del>pyina</del> root directory</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>23</th><td class="r"><span>&nbsp;* Change to the <ins>mpimystic</ins> root directory</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>25</th><th>24</th><td class="l"><span>&nbsp; &nbsp; &nbsp;$ cd ..</span> </td>
+                  </tr><tr>
+                          <th>26</th><th>25</th><td class="l"><span>&nbsp;* Copy the files:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/README?rev=196#L31">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/README?rev=224#L30">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>30</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>32</th><th>31</th><td class="l"><span>WARNING:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>33</th><th> </th><td class="l"><span>To run <del>pyina</del> code, you _must_ have your console configured for MPI.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>32</th><td class="r"><span>To run <ins>mpimystic</ins> code, you _must_ have your console configured for MPI.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>33</th><td class="l"><span>&nbsp; * Start mpd</span> </td>
+                  </tr><tr>
+                          <th>35</th><th>34</th><td class="l"><span>&nbsp; &nbsp; &nbsp;$ mpd &amp;</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file31">
+          <a href="224/mpimystic/mpimystic/__init__.html" title="Show the changeset 224 restricted to mpimystic/mpimystic/__init__.py">mpimystic/mpimystic/__init__.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 196">
+                    <a title="Show revision 196 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/__init__.py?rev=196#L11">
+                      r196</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/__init__.py?rev=224#L11">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>11</th><th>11</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>12</th><th>12</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>13</th><th> </th><td class="l"><span>A Simple Model-Independent Inversion Framework.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>13</th><td class="r"><span>mpimystic: a Simple Model-Independent Inversion Framework (MPI version)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>14</th><th>14</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>15</th><th>15</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>16</th><th> </th><td class="l"><span>from mpiconsts import mpi</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span># launchers</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span># mappers</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>import parallel_map, parallel_map2</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>16</th><td class="r"><span>from pyina.mpiconsts import mpi</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>17</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>23</th><th>18</th><td class="l"><span># solvers</span> </td>
+                  </tr><tr>
+                          <th>24</th><th>19</th><td class="l"><span>import differential_evolution</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>25</th><th> </th><td class="l"><span><del>#</del>import differential_evolution_ezmap</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>20</th><td class="r"><span><ins></ins>import differential_evolution_ezmap</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>26</th><th>21</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>27</th><th>22</th><td class="l"><span># strategies, termination conditions</span> </td>
+                  </tr><tr>
+                          <th>28</th><th>23</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>29</th><th>24</th><td class="l"><span># monitors, function wrappers, and other tools</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>30</th><th> </th><td class="l"><del>from tools import *</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>25</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>32</th><th>26</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file32">
+          <a href="224/mpimystic/mpimystic/differential_evolution.html" title="Show the changeset 224 restricted to mpimystic/mpimystic/differential_evolution.py">mpimystic/mpimystic/differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 150">
+                    <a title="Show revision 150 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/differential_evolution.py?rev=150#L59">
+                      r150</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/differential_evolution.py?rev=224#L59">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>59</th><th>59</th><td class="l"><span>from pyina._pyina import bcastString, sendString, receiveString</span> </td>
+                  </tr><tr>
+                          <th>60</th><th>60</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>61</th><th> </th><td class="l"><span><del></del>import mpiconsts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>61</th><td class="r"><span><ins>from pyina </ins>import mpiconsts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>62</th><th>62</th><td class="l"><span>MPI_ANY_SOURCE = mpiconsts.mpi.MPI_ANY_SOURCE</span> </td>
+                  </tr><tr>
+                          <th>63</th><th>63</th><td class="l"><span>MPI_ANY_TAG = mpiconsts.mpi.MPI_ANY_TAG</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file33">
+          <a href="224/mpimystic/mpimystic/differential_evolution_app.html" title="Show the changeset 224 restricted to mpimystic/mpimystic/differential_evolution_app.py">mpimystic/mpimystic/differential_evolution_app.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 141">
+                    <a title="Show revision 141 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/differential_evolution_app.py?rev=141#L41">
+                      r141</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/differential_evolution_app.py?rev=224#L41">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>41</th><th>41</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>42</th><th>42</th><td class="l"><span># MPI #########</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>43</th><th> </th><td class="l"><span><del></del>import mpiconsts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>43</th><td class="r"><span><ins>from pyina </ins>import mpiconsts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>44</th><th>44</th><td class="l"><span>MPI_ANY_SOURCE = mpiconsts.mpi.MPI_ANY_SOURCE</span> </td>
+                  </tr><tr>
+                          <th>45</th><th>45</th><td class="l"><span>MPI_ANY_TAG = mpiconsts.mpi.MPI_ANY_TAG</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file34">
+          <a href="224/mpimystic/mpimystic/differential_evolution_ezmap.html" title="Show the changeset 224 restricted to mpimystic/mpimystic/differential_evolution_ezmap.py">mpimystic/mpimystic/differential_evolution_ezmap.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 221">
+                    <a title="Show revision 221 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/pyina/differential_evolution_ezmap.py?rev=221#L130">
+                      r221</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mpimystic/differential_evolution_ezmap.py?rev=224#L130">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>130</th><th>130</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>131</th><th>131</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>132</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#from <del></del>ez_map import ez_map&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# sourced function</span> </td>
+                      </tr><tr>
+                        <th>133</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from <del></del>ez_map import ez_map2 as ez_map&nbsp; # pickled function</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>132</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;#from <ins>pyina.</ins>ez_map import ez_map&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# sourced function</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>133</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from <ins>pyina.</ins>ez_map import ez_map2 as ez_map&nbsp; # pickled function</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>134</th><th>134</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>135</th><th>135</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import signal</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file42">
+          <a href="224/mpimystic/mystic_files.html" title="Show the changeset 224 restricted to mpimystic/mystic_files.py">mpimystic/mystic_files.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 222">
+                    <a title="Show revision 222 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/mystic_files.py?rev=222#L7">
+                      r222</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/mystic_files.py?rev=224#L7">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span>target_dir = os.curdir+os.sep+PATH_1+os.sep</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>9</th><th> </th><td class="l"><span>destination_dir = os.curdir+os.sep+"examples_<del>raw</del>"+os.sep</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>9</th><td class="r"><span>destination_dir = os.curdir+os.sep+"examples_<ins>other</ins>"+os.sep</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>10</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>11</th><th>11</th><td class="l"><span>def copy():</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file45">
+          <a href="224/mpimystic/setup.html" title="Show the changeset 224 restricted to mpimystic/setup.py">mpimystic/setup.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 222">
+                    <a title="Show revision 222 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/pyina/setup.py?rev=222#L4">
+                      r222</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/setup.py?rev=224#L4">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>5</th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Patrick Hung &amp; Mike McKerns, Caltech</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-20<del>09</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1998-20<ins>10</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/setup.py?rev=222#L13">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/setup.py?rev=224#L13">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>13</th><th>13</th><td class="l"><span>import os</span> </td>
+                  </tr><tr>
+                          <th>14</th><th>14</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>15</th><th> </th><td class="l"><span>mpi_incdir = os.environ['MPI_INCDIR']</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>mpi_libdir = os.environ['MPI_LIBDIR']</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>if platform[:3] == 'win':</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; MPILIBS = []</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>&nbsp; &nbsp; module1 = Extension('_pyina',</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;['pyinamodule\\dummy.cc',</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'pyinamodule\_pyina.cc'],</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;include_dirs=['pyinamodule', mpi_incdir],</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;libraries=MPILIBS,</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;library_dirs=[mpi_libdir],</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>else: #platform = linux or mac</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; &nbsp; MPILIBS = []</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; #if platform[:6] == 'darwin':</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #MPILIBS.remove('...')</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #MPILIBS.append('...')</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; &nbsp; module1 = Extension('_pyina',</span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;['pyinamodule/dummy.cc',</span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'pyinamodule/_pyina.cc'],</span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;include_dirs=['pyinamodule', mpi_incdir],</span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;libraries=MPILIBS,</span> </td>
+                      </tr><tr>
+                        <th>38</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;library_dirs=[mpi_libdir],</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;)</span> </td>
+                      </tr><tr>
+                        <th>40</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>41</th><th> </th><td class="l"><span>setup(name="pyina",</span> </td>
+                      </tr><tr>
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; &nbsp; version="0.2",</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>15</th><td class="r"><span>setup(name="mpimystic",</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>16</th><td class="r"><span>&nbsp; &nbsp; version="0.01",</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>43</th><th>17</th><td class="l"><span>&nbsp; &nbsp; maintainer="Mike McKerns",</span> </td>
+                  </tr><tr>
+                          <th>44</th><th>18</th><td class="l"><span>&nbsp; &nbsp; maintainer_email="mmckerns@caltech.edu",</span> </td>
+                  </tr><tr>
+                          <th>45</th><th>19</th><td class="l"><span>&nbsp; &nbsp; license="BSD",</span> </td>
+                  </tr><tr>
+                          <th>46</th><th>20</th><td class="l"><span>&nbsp; &nbsp; platforms=["any"],</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>47</th><th> </th><td class="l"><span>&nbsp; &nbsp; description="<del>Interactive</del> Parallel-Mapping Inversion Analysis Framework",</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>21</th><td class="r"><span>&nbsp; &nbsp; description="<ins>MPI version of</ins> Parallel-Mapping Inversion Analysis Framework",</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>22</th><td class="l"><span>&nbsp; &nbsp; classifiers=(</span> </td>
+                  </tr><tr>
+                          <th>49</th><th>23</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; "Intended Audience :: Developers",</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/pyina/setup.py?rev=222#L52">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/setup.py?rev=224#L26">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>26</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; "Topic :: Physics Programming"),</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>27</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; packages=['pyina','pyina.tools','pyina.applications'],</span> </td>
+                      </tr><tr>
+                        <th>55</th><th> </th><td class="l"><span>&nbsp; &nbsp; package_dir={'pyina':'pyina','pyina.tools':'tools','pyina.applications':'applications'},</span> </td>
+                      </tr><tr>
+                        <th>56</th><th> </th><td class="l"><span>&nbsp; &nbsp; ext_modules=[module1],</span> </td>
+                      </tr><tr>
+                        <th>57</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>28</th><td class="r"><span>&nbsp; &nbsp; packages=['mpimystic'],</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>29</th><td class="r"><span>&nbsp; &nbsp; package_dir={'mpimystic':'mpimystic'},</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>58</th><th>30</th><td class="l"><span>&nbsp; &nbsp; scripts=[])</span> </td>
+                  </tr><tr>
+                          <th>59</th><th>31</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file46">
+          <a href="224/mpimystic/tests/Make.html" title="Show the changeset 224 restricted to mpimystic/tests/Make.mm">mpimystic/tests/Make.mm</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 88">
+                    <a title="Show revision 88 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/merge-pyina-at-r87/trunk/pyina/tests/Make.mm?rev=88#L2">
+                      r88</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mpimystic/tests/Make.mm?rev=224#L2">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>2</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>3</th><th>3</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>4</th><th> </th><td class="l"><span>PROJECT = <del>pyina</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>4</th><td class="r"><span>PROJECT = <ins>mpimystic</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>5</th><td class="l"><span>PACKAGE = tests</span> </td>
+                  </tr><tr>
+                          <th>6</th><th>6</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/merge-pyina-at-r87/trunk/pyina/tests/Make.mm?rev=88#L10">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mpimystic/tests/Make.mm?rev=224#L10">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>10</th><td class="l"><span>PROJ_CPPTESTS = </span> </td>
+                  </tr><tr>
+                          <th>11</th><th>11</th><td class="l"><span>PROJ_TESTS = $(PROJ_PYTESTS) # $(PROJ_CPPTESTS)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>12</th><th> </th><td class="l"><span>PROJ_LIBRARIES = -L$(BLD_LIBDIR) # -l<del>pyina</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>12</th><td class="r"><span>PROJ_LIBRARIES = -L$(BLD_LIBDIR) # -l<ins>mpimystic</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>13</th><th>13</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>14</th><th>14</th><td class="l"><span>#--------------------------------------------------------------------------</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file48">
+          <a href="224/mystic/mystic/README.html" title="Show the changeset 224 restricted to mystic/mystic/README">mystic/mystic/README</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 133">
+                    <a title="Show revision 133 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/README?rev=133#L3">
+                      r133</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/README?rev=224#L3">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span>Storn and Price differential evolution solver in python.</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>The parallel framework implementation is being developed in the pyina branch.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>If 'pyina' is installed, the global optimizers can launched in parallel</span> </td>
+                      </tr><tr>
+                        <th> </th><th>6</th><td class="r"><span>mode using MPI. Pyina is part of the pathos package, available here:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span>&nbsp; http://dev.danse.us/trac/pathos</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>8</th><td class="r"><span></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>9</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>7</th><th>10</th><td class="l"><span># end of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file49">
+          <a href="224/mystic/mystic/__init__.html" title="Show the changeset 224 restricted to mystic/mystic/__init__.py">mystic/mystic/__init__.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 144">
+                    <a title="Show revision 144 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/__init__.py?rev=144#L4">
+                      r144</a>
+                  </th>
+                  <th title="Revision 224">
+                    <a title="Show revision 224 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/__init__.py?rev=224#L4">
+                      r224</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>5</th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Patrick Hung &amp; Mike McKerns, Caltech</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>6</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1997-20<del>08</del>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>6</th><td class="r"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (C) 1997-20<ins>10</ins>&nbsp; All Rights Reserved</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/224?format=diff&amp;new=224" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/224?format=zip&amp;new=224" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/224 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:06:35 GMT -->
+</html>

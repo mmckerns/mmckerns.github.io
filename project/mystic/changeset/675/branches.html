@@ -1,0 +1,1394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/675/branches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:13:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 675 for branches – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/675/branches?format=diff&amp;new=675" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/675/branches?format=zip&amp;new=675" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../676/branches.html" title="Changeset 676 for branches" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../672/branches.html" title="Changeset 672 for branches" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../672/branches.html" title="Changeset 672 for branches">Previous Change</a></span></li><li class="last"><span><a class="next" href="../676/branches.html" title="Changeset 676 for branches">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../675.html">675</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches?rev=675">branches</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             06/03/13 19:30:49
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-06-03T19%3A30%3A49-07%3A00&amp;precision=second" title="2013-06-03T19:30:49-07:00 in Timeline">3 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+updated UQ branch to use new pathos/pyina Pools<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math?rev=675">branches/UQ/math</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>12 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MM_surrogate_diam.py?rev=675">
+              examples/MM_surrogate_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py?rev=675">
+              examples/MPI2_surrogate_diam_batchgrid.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam.py?rev=675">
+              examples/MPI_surrogate_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py?rev=675">
+              examples/MPI_surrogate_diam_batchgrid.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_scatter.py?rev=675">
+              examples/MPI_surrogate_diam_scatter.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.py?rev=675">
+              examples/MSUB_surrogate_diam_batchgrid.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py?rev=675">
+              examples/QSUB2_surrogate_diam_batchgrid.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py?rev=675">
+              examples/QSUB_surrogate_diam_batchgrid.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=675">
+              legacy/MM_OUQ_StAlData.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file8">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Driver_BoLiSurr_Cy.py?rev=675">
+              legacy/envelope/Driver_BoLiSurr_Cy.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file9">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=675">
+              legacy/envelope/Looper_BoLiSurr_Cy.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file10">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/envelope.py?rev=675">
+              legacy/envelope/envelope.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file11">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="branches/UQ/math/examples/MM_surrogate_diam.html" title="Show the changeset 675 restricted to branches/UQ/math/examples/MM_surrogate_diam.py">branches/UQ/math/examples/MM_surrogate_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 486">
+                    <a title="Show revision 486 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MM_surrogate_diam.py?rev=486#L60">
+                      r486</a>
+                  </th>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MM_surrogate_diam.py?rev=675#L60">
+                      r675</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>60</th><th>60</th><td class="l"><span>#######################################################################</span> </td>
+                  </tr><tr>
+                          <th>61</th><th>61</th><td class="l"><span>def optimize(cost,lb,ub):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>62</th><th> </th><td class="l"><span>&nbsp; from pathos.m<del>p_map import mp_map</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>62</th><td class="r"><span>&nbsp; from pathos.m<ins>ultiprocessing import ProcessingPool as Pool</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>63</th><th>63</th><td class="l"><span>&nbsp; from mystic.solvers import DifferentialEvolutionSolver2</span> </td>
+                  </tr><tr>
+                          <th>64</th><th>64</th><td class="l"><span>&nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MM_surrogate_diam.py?rev=486#L81">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MM_surrogate_diam.py?rev=675#L81">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>81</th><th>81</th><td class="l"><span>&nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>82</th><th>82</th><td class="l"><span>&nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>83</th><th> </th><td class="l"><span>&nbsp; solver.SetMapper(<del>mp_</del>map)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>83</th><td class="r"><span>&nbsp; solver.SetMapper(<ins>Pool().</ins>map)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>84</th><th>84</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>85</th><th>85</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.html" title="Show the changeset 675 restricted to branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py">branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 465">
+                    <a title="Show revision 465 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py?rev=465#L61">
+                      r465</a>
+                  </th>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py?rev=675#L61">
+                      r675</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>61</th><td class="l"><span>def optimize(cost,lower,upper,nbins):</span> </td>
+                  </tr><tr>
+                          <th>62</th><th>62</th><td class="l"><span>&nbsp; from mystic.tools import random_seed</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>63</th><th> </th><td class="l"><span>&nbsp; from pyina.ez_map import ez_map2 as map</span> </td>
+                      </tr><tr>
+                        <th>64</th><th> </th><td class="l"><span>&nbsp; from pyina.launchers import mpirun_launcher</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>63</th><td class="r"><span>&nbsp; from pyina.launchers import Mpi as Pool</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>65</th><th>64</th><td class="l"><span>&nbsp; random_seed(123)</span> </td>
+                  </tr><tr>
+                          <th>66</th><th>65</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py?rev=465#L83">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py?rev=675#L82">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>83</th><th>82</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>84</th><th>83</th><td class="l"><span>&nbsp; # map:: params, energy, func_evals = local_optimize(cost,x0,lb,ub)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>85</th><th> </th><td class="l"><span>&nbsp; results = map(local_optimize, cf, initial_values, lb, ub, \</span> </td>
+                      </tr><tr>
+                        <th>86</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; nnodes=nnodes, launcher=mpirun_launcher)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>84</th><td class="r"><span>&nbsp; results = Pool(nnodes).map(local_optimize, cf, initial_values, lb, ub)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>87</th><th>85</th><td class="l"><span>&nbsp; #print "results = %s" % results</span> </td>
+                  </tr><tr>
+                          <th>88</th><th>86</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py?rev=465#L106">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py?rev=675#L104">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>106</th><th>104</th><td class="l"><span>#######################################################################</span> </td>
+                  </tr><tr>
+                          <th>107</th><th>105</th><td class="l"><span>def UQ(start,end,lower,upper):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>108</th><th> </th><td class="l"><span>&nbsp; from pyina.ez_map import ez_map2 as map</span> </td>
+                      </tr><tr>
+                        <th>109</th><th> </th><td class="l"><span>&nbsp; from pyina.launchers import mpirun_launcher</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>106</th><td class="r"><span>&nbsp; from pyina.launchers import Mpi as Pool</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>110</th><th>107</th><td class="l"><span>&nbsp; from MPI2_helper import func_pickle</span> </td>
+                  </tr><tr>
+                          <th>111</th><th>108</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py?rev=465#L122">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py?rev=675#L119">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>122</th><th>119</th><td class="l"><span>&nbsp; #construct cost function and run optimizer</span> </td>
+                  </tr><tr>
+                          <th>123</th><th>120</th><td class="l"><span>&nbsp; #subdiameter, func_evals = optimize(cost.name,lb,ub) #XXX: no init_condition</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>124</th><th> </th><td class="l"><span>&nbsp; results = <del>map(optimize, cn,lb,ub,nb, nnodes=nnodes, launcher=mpirun_launcher</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>121</th><td class="r"><span>&nbsp; results = <ins>Pool(nnodes).map(optimize, cn,lb,ub,nb</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>125</th><th>122</th><td class="l"><span>&nbsp; #print "results = %s" % results</span> </td>
+                  </tr><tr>
+                          <th>126</th><th>123</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="branches/UQ/math/examples/MPI_surrogate_diam.html" title="Show the changeset 675 restricted to branches/UQ/math/examples/MPI_surrogate_diam.py">branches/UQ/math/examples/MPI_surrogate_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam.py?rev=471#L13">
+                      r471</a>
+                  </th>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam.py?rev=675#L13">
+                      r675</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>13</th><th>13</th><td class="l"><span>crossover = 0.9</span> </td>
+                  </tr><tr>
+                          <th>14</th><th>14</th><td class="l"><span>percent_change = 0.9</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>15</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>16</th><th> </th><td class="l"><del># MPI config</del> </td>
+                  </tr><tr class="last">
+                          <th>17</th><th> </th><td class="l"><del>nnodes = 4&nbsp; &nbsp;# = npop</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>18</th><th>15</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>19</th><th>16</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam.py?rev=471#L63">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam.py?rev=675#L60">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>63</th><th>60</th><td class="l"><span>#######################################################################</span> </td>
+                  </tr><tr>
+                          <th>64</th><th>61</th><td class="l"><span>def optimize(cost,lb,ub):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>65</th><th> </th><td class="l"><span>&nbsp; from pyina.ez_map import ez_map2 as ez_map</span> </td>
+                      </tr><tr>
+                        <th>66</th><th> </th><td class="l"><span>&nbsp; from pyina.launchers import mpirun_launcher</span> </td>
+                      </tr><tr>
+                        <th>67</th><th> </th><td class="l"><span>&nbsp; from pyina.mappers import equalportion_mapper</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>62</th><td class="r"><span>&nbsp; from pyina.launchers import Mpi as Pool</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>63</th><td class="l"><span>&nbsp; from mystic.solvers import DifferentialEvolutionSolver2</span> </td>
+                  </tr><tr>
+                          <th>69</th><th>64</th><td class="l"><span>&nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam.py?rev=471#L81">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam.py?rev=675#L76">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>81</th><th>76</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>82</th><th>77</th><td class="l"><span>&nbsp; solver = DifferentialEvolutionSolver2(ndim,npop)</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>83</th><th> </th><td class="l"><del>&nbsp; solver.SetMapper(ez_map, equalportion_mapper)</del> </td>
+                  </tr><tr class="last">
+                          <th>84</th><th> </th><td class="l"><del>&nbsp; solver.SetLauncher(mpirun_launcher, nnodes)</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>85</th><th>78</th><td class="l"><span>&nbsp; solver.SetRandomInitialPoints(min=lb,max=ub)</span> </td>
+                  </tr><tr>
+                          <th>86</th><th>79</th><td class="l"><span>&nbsp; solver.SetStrictRanges(min=lb,max=ub)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam.py?rev=471#L88">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam.py?rev=675#L81">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>88</th><th>81</th><td class="l"><span>&nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>89</th><th>82</th><td class="l"><span>&nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>83</th><td class="r"><ins>&nbsp; solver.SetMapper(Pool().map)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>90</th><th>84</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>91</th><th>85</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.html" title="Show the changeset 675 restricted to branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py">branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py?rev=471#L153">
+                      r471</a>
+                  </th>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py?rev=675#L153">
+                      r675</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>153</th><th>153</th><td class="l"><span>def optimize(cost,lower,upper):</span> </td>
+                  </tr><tr>
+                          <th>154</th><th>154</th><td class="l"><span>&nbsp; from mystic.tools import random_seed</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>155</th><th> </th><td class="l"><span>&nbsp; from pyina.ez_map import ez_map2 as map</span> </td>
+                      </tr><tr>
+                        <th>156</th><th> </th><td class="l"><span>&nbsp; from pyina.launchers import mpirun_launcher</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>155</th><td class="r"><span>&nbsp; from pyina.launchers import Mpi as Pool</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>157</th><th>156</th><td class="l"><span>&nbsp; random_seed(123)</span> </td>
+                  </tr><tr>
+                          <th>158</th><th>157</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py?rev=471#L172">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py?rev=675#L171">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>172</th><th>171</th><td class="l"><span>&nbsp; cf = [cost for i in range(len(initial_values))]</span> </td>
+                  </tr><tr>
+                          <th>173</th><th>172</th><td class="l"><span>&nbsp; # map:: params, energy, func_evals = local_optimize(cost,x0,lb,ub)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>174</th><th> </th><td class="l"><span>&nbsp; results = map(local_optimize, cf, initial_values, lb, ub, \</span> </td>
+                      </tr><tr>
+                        <th>175</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; nnodes=nnodes, launcher=mpirun_launcher)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>173</th><td class="r"><span>&nbsp; results = Pool(nnodes).map(local_optimize, cf, initial_values, lb, ub)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>176</th><th>174</th><td class="l"><span>&nbsp; #print "results = %s" % results</span> </td>
+                  </tr><tr>
+                          <th>177</th><th>175</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="branches/UQ/math/examples/MPI_surrogate_diam_scatter.html" title="Show the changeset 675 restricted to branches/UQ/math/examples/MPI_surrogate_diam_scatter.py">branches/UQ/math/examples/MPI_surrogate_diam_scatter.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_scatter.py?rev=471#L136">
+                      r471</a>
+                  </th>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_scatter.py?rev=675#L136">
+                      r675</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>136</th><th>136</th><td class="l"><span>def optimize(cost,lower,upper):</span> </td>
+                  </tr><tr>
+                          <th>137</th><th>137</th><td class="l"><span>&nbsp; from mystic.tools import random_seed</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>138</th><th> </th><td class="l"><span>&nbsp; from pyina.ez_map import ez_map2 as map</span> </td>
+                      </tr><tr>
+                        <th>139</th><th> </th><td class="l"><span>&nbsp; from pyina.launchers import mpirun_launcher</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>138</th><td class="r"><span>&nbsp; from pyina.launchers import Mpi as Pool</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>140</th><th>139</th><td class="l"><span>&nbsp; random_seed(123)</span> </td>
+                  </tr><tr>
+                          <th>141</th><th>140</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_scatter.py?rev=471#L148">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_scatter.py?rev=675#L147">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>148</th><th>147</th><td class="l"><span>&nbsp; cf = [cost for i in range(len(initial_values))]</span> </td>
+                  </tr><tr>
+                          <th>149</th><th>148</th><td class="l"><span>&nbsp; # map:: params, energy, func_evals = local_optimize(cost,x0,lb,ub)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>150</th><th> </th><td class="l"><span>&nbsp; results = map(local_optimize, cf, initial_values, lb, ub, \</span> </td>
+                      </tr><tr>
+                        <th>151</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; nnodes=nnodes, launcher=mpirun_launcher)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>149</th><td class="r"><span>&nbsp; results = Pool(nnodes).map(local_optimize, cf, initial_values, lb, ub)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>152</th><th>150</th><td class="l"><span>&nbsp; #print "results = %s" % results</span> </td>
+                  </tr><tr>
+                          <th>153</th><th>151</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.html" title="Show the changeset 675 restricted to branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.py">branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.py?rev=471#L157">
+                      r471</a>
+                  </th>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.py?rev=675#L157">
+                      r675</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>157</th><th>157</th><td class="l"><span>def optimize(cost,lower,upper):</span> </td>
+                  </tr><tr>
+                          <th>158</th><th>158</th><td class="l"><span>&nbsp; from mystic.tools import random_seed</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>159</th><th> </th><td class="l"><span>&nbsp; from pyina.ez_map import ez_map2 as map</span> </td>
+                      </tr><tr>
+                        <th>160</th><th> </th><td class="l"><span>&nbsp; from pyina.launchers import srun_launcher</span> </td>
+                      </tr><tr>
+                        <th>161</th><th> </th><td class="l"><span>&nbsp; from pyina.schedulers import moab_scheduler</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>159</th><td class="r"><span>&nbsp; from pyina.launchers import MoabSlurm as Pool</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>162</th><th>160</th><td class="l"><span>&nbsp; random_seed(123)</span> </td>
+                  </tr><tr>
+                          <th>163</th><th>161</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.py?rev=471#L177">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.py?rev=675#L175">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>177</th><th>175</th><td class="l"><span>&nbsp; cf = [cost for i in range(len(initial_values))]</span> </td>
+                  </tr><tr>
+                          <th>178</th><th>176</th><td class="l"><span>&nbsp; # map:: params, energy, func_evals = local_optimize(cost,x0,lb,ub)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>179</th><th> </th><td class="l"><span>&nbsp; results = map(local_optimize, cf, initial_values, lb, ub, \</span> </td>
+                      </tr><tr>
+                        <th>180</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; launcher=srun_launcher, scheduler=moab_scheduler, \</span> </td>
+                      </tr><tr>
+                        <th>181</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; nnodes=nnodes, queue=queue, timelimit=timelimit)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>177</th><td class="r"><span>&nbsp; config = {'queue':queue, 'timelimit':timelimit}</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>178</th><td class="r"><span>&nbsp; results = Pool(nnodes, **config).map(local_optimize,cf,initial_values,lb,ub)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>182</th><th>179</th><td class="l"><span>&nbsp; #print "results = %s" % results</span> </td>
+                  </tr><tr>
+                          <th>183</th><th>180</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.html" title="Show the changeset 675 restricted to branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py">branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 465">
+                    <a title="Show revision 465 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py?rev=465#L61">
+                      r465</a>
+                  </th>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py?rev=675#L61">
+                      r675</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>61</th><td class="l"><span>def optimize(cost,lower,upper):</span> </td>
+                  </tr><tr>
+                          <th>62</th><th>62</th><td class="l"><span>&nbsp; from mystic.tools import random_seed</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>63</th><th> </th><td class="l"><span>&nbsp; from pyina.ez_map import ez_map2 as map</span> </td>
+                      </tr><tr>
+                        <th>64</th><th> </th><td class="l"><span>&nbsp; from pyina.launchers import mpirun_launcher</span> </td>
+                      </tr><tr>
+                        <th>65</th><th> </th><td class="l"><span>&nbsp; from pyina.schedulers import torque_scheduler</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>63</th><td class="r"><span>&nbsp; from pyina.launchers import TorqueMpi as Pool</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>66</th><th>64</th><td class="l"><span>&nbsp; random_seed(123)</span> </td>
+                  </tr><tr>
+                          <th>67</th><th>65</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py?rev=465#L83">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py?rev=675#L81">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>83</th><th>81</th><td class="l"><span>&nbsp; cf = [cost for i in range(len(initial_values))]</span> </td>
+                  </tr><tr>
+                          <th>84</th><th>82</th><td class="l"><span>&nbsp; # map:: params, energy, func_evals = local_optimize(cost,x0,lb,ub)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>85</th><th> </th><td class="l"><span>&nbsp; results = map(local_optimize, cf, initial_values, lb, ub, \</span> </td>
+                      </tr><tr>
+                        <th>86</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; launcher=mpirun_launcher, scheduler=torque_scheduler, \</span> </td>
+                      </tr><tr>
+                        <th>87</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; nnodes=nnodes, queue=queue, timelimit=timelimit)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>83</th><td class="r"><span>&nbsp; config = {'queue':queue, 'timelimit':timelimit}</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>84</th><td class="r"><span>&nbsp; results = Pool(nnodes, **config).map(local_optimize,cf,initial_values,lb,ub)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>88</th><th>85</th><td class="l"><span>&nbsp; #print "results = %s" % results</span> </td>
+                  </tr><tr>
+                          <th>89</th><th>86</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py?rev=465#L107">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py?rev=675#L104">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>107</th><th>104</th><td class="l"><span>#######################################################################</span> </td>
+                  </tr><tr>
+                          <th>108</th><th>105</th><td class="l"><span>def UQ(start,end,lower,upper):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>109</th><th> </th><td class="l"><span>&nbsp; from pyina.ez_map import ez_map2 as map</span> </td>
+                      </tr><tr>
+                        <th>110</th><th> </th><td class="l"><span>&nbsp; from pyina.launchers import mpirun_launcher</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>106</th><td class="r"><span>&nbsp; from pyina.launchers import Mpi as Pool</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>111</th><th>107</th><td class="l"><span>&nbsp; from MPI2_helper import func_pickle</span> </td>
+                  </tr><tr>
+                          <th>112</th><th>108</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py?rev=465#L123">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py?rev=675#L119">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>123</th><th>119</th><td class="l"><span>&nbsp; #construct cost function and run optimizer</span> </td>
+                  </tr><tr>
+                          <th>124</th><th>120</th><td class="l"><span>&nbsp; #subdiameter, func_evals = optimize(cost.name,lb,ub) #XXX: no init_condition</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>125</th><th> </th><td class="l"><span>&nbsp; results = <del>map(optimize, cn,lb,ub,nb, nnodes=nnodes, launcher=mpirun_launcher</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>121</th><td class="r"><span>&nbsp; results = <ins>Pool(nnodes).map(optimize, cn,lb,ub,nb</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>126</th><th>122</th><td class="l"><span>&nbsp; #print "results = %s" % results</span> </td>
+                  </tr><tr>
+                          <th>127</th><th>123</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.html" title="Show the changeset 675 restricted to branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py">branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py?rev=471#L157">
+                      r471</a>
+                  </th>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py?rev=675#L157">
+                      r675</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>157</th><th>157</th><td class="l"><span>def optimize(cost,lower,upper):</span> </td>
+                  </tr><tr>
+                          <th>158</th><th>158</th><td class="l"><span>&nbsp; from mystic.tools import random_seed</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>159</th><th> </th><td class="l"><span>&nbsp; from pyina.ez_map import ez_map2 as map</span> </td>
+                      </tr><tr>
+                        <th>160</th><th> </th><td class="l"><span>&nbsp; from pyina.launchers import mpirun_launcher</span> </td>
+                      </tr><tr>
+                        <th>161</th><th> </th><td class="l"><span>&nbsp; from pyina.schedulers import torque_scheduler</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>159</th><td class="r"><span>&nbsp; from pyina.launchers import TorqueMpi as Pool</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>162</th><th>160</th><td class="l"><span>&nbsp; random_seed(123)</span> </td>
+                  </tr><tr>
+                          <th>163</th><th>161</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py?rev=471#L177">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py?rev=675#L175">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>177</th><th>175</th><td class="l"><span>&nbsp; cf = [cost for i in range(len(initial_values))]</span> </td>
+                  </tr><tr>
+                          <th>178</th><th>176</th><td class="l"><span>&nbsp; # map:: params, energy, func_evals = local_optimize(cost,x0,lb,ub)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>179</th><th> </th><td class="l"><span>&nbsp; results = map(local_optimize, cf, initial_values, lb, ub, \</span> </td>
+                      </tr><tr>
+                        <th>180</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; launcher=mpirun_launcher, scheduler=torque_scheduler, \</span> </td>
+                      </tr><tr>
+                        <th>181</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; nnodes=nnodes, queue=queue, timelimit=timelimit)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>177</th><td class="r"><span>&nbsp; config = {'queue':queue, 'timelimit':timelimit}</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>178</th><td class="r"><span>&nbsp; results = Pool(nnodes, **config).map(local_optimize,cf,initial_values,lb,ub)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>182</th><th>179</th><td class="l"><span>&nbsp; #print "results = %s" % results</span> </td>
+                  </tr><tr>
+                          <th>183</th><th>180</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file8">
+          <a href="branches/UQ/math/legacy/MM_OUQ_StAlData.html" title="Show the changeset 675 restricted to branches/UQ/math/legacy/MM_OUQ_StAlData.py">branches/UQ/math/legacy/MM_OUQ_StAlData.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 585">
+                    <a title="Show revision 585 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=585#L31">
+                      r585</a>
+                  </th>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=675#L31">
+                      r675</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>31</th><td class="l"><span>#######################################################################</span> </td>
+                  </tr><tr>
+                          <th>32</th><th>32</th><td class="l"><span>def optimize(cost,_bounds,_constraints):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; from pathos.m<del>p_map import mp_map</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>33</th><td class="r"><span>&nbsp; from pathos.m<ins>ultiprocessing import ProcessingPool as Pool</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>34</th><td class="l"><span>&nbsp; from mystic.solvers import DifferentialEvolutionSolver2</span> </td>
+                  </tr><tr>
+                          <th>35</th><th>35</th><td class="l"><span>&nbsp; from mystic.termination import ChangeOverGeneration as COG</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=585#L54">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/MM_OUQ_StAlData.py?rev=675#L54">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>54</th><td class="l"><span>&nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr><tr>
+                          <th>55</th><th>55</th><td class="l"><span>&nbsp; solver.SetConstraints(_constraints)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>56</th><th> </th><td class="l"><span>&nbsp; solver.SetMapper(<del>mp_</del>map)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>56</th><td class="r"><span>&nbsp; solver.SetMapper(<ins>Pool().</ins>map)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>57</th><th>57</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>58</th><th>58</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file9">
+          <a href="branches/UQ/math/legacy/envelope/Driver_BoLiSurr_Cy.html" title="Show the changeset 675 restricted to branches/UQ/math/legacy/envelope/Driver_BoLiSurr_Cy.py">branches/UQ/math/legacy/envelope/Driver_BoLiSurr_Cy.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 592">
+                    <a title="Show revision 592 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Driver_BoLiSurr_Cy.py?rev=592#L38">
+                      r592</a>
+                  </th>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Driver_BoLiSurr_Cy.py?rev=675#L38">
+                      r675</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>38</th><th>38</th><td class="l"><span>&nbsp; # with multiprocessing </span> </td>
+                  </tr><tr>
+                          <th>39</th><th>39</th><td class="l"><span>##nodes = 7 #len(runs)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>40</th><th> </th><td class="l"><span>##from pathos.m<del>p_map import mp_map as map&nbsp; # multiprocessing</del></span> </td>
+                      </tr><tr>
+                        <th>41</th><th> </th><td class="l"><span>##results = <del>map(looper, runs, nproc=node</del>s)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>40</th><td class="r"><span>##from pathos.m<ins>ultiprocessing import ProcessingPool as Pool</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>41</th><td class="r"><span>##results = <ins>Pool(nodes).map(looper, run</ins>s)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>42</th><td class="l"><span>&nbsp; # with MPI</span> </td>
+                  </tr><tr>
+                          <th>43</th><th>43</th><td class="l"><span># nodes = 7 #len(runs)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>44</th><th> </th><td class="l"><span># from pyina.<del>ez_map import ez_map2 as map&nbsp; # mpi4py</del></span> </td>
+                      </tr><tr>
+                        <th>45</th><th> </th><td class="l"><span># results = <del>map(looper, runs, nnodes=node</del>s)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>44</th><td class="r"><span># from pyina.<ins>launchers import Mpi as Pool</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>45</th><td class="r"><span># results = <ins>Pool(nodes).map(looper, run</ins>s)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>46</th><td class="l"><span>&nbsp; # with MPI on a cluster</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>47</th><th> </th><td class="l"><span>&nbsp; from pyina.ez_map import ez_map2 as map&nbsp; # mpi4py</span> </td>
+                      </tr><tr>
+                        <th>48</th><th> </th><td class="l"><span>&nbsp; from pyina.launchers import mpirun_launcher, torque_launcher</span> </td>
+                      </tr><tr>
+                        <th>49</th><th> </th><td class="l"><span>&nbsp; from pyina.mappers import carddealer_mapper, equalportion_mapper</span> </td>
+                      </tr><tr>
+                        <th>50</th><th> </th><td class="l"><span>&nbsp; from pyina.schedulers import torque_scheduler</span> </td>
+                      </tr><tr>
+                        <th>51</th><th> </th><td class="l"><span>&nbsp; results = map(looper, runs, nnodes=nodes, queue=queue, timelimit=timelimit, \</span> </td>
+                      </tr><tr>
+                        <th>52</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; launcher=mpirun_launcher, scheduler=torque_scheduler)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>47</th><td class="r"><span>&nbsp; from pyina.launchers import TorqueMpi as Pool</span> </td>
+                      </tr><tr>
+                        <th> </th><th>48</th><td class="r"><span>&nbsp; config = {'queue':queue, 'timelimit':timelimit}</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>49</th><td class="r"><span>&nbsp; results = Pool(nodes, **config).map(looper, runs)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>50</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>54</th><th>51</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file10">
+          <a href="branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.html" title="Show the changeset 675 restricted to branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py">branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 621">
+                    <a title="Show revision 621 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=621#L71">
+                      r621</a>
+                  </th>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=675#L71">
+                      r675</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>71</th><th>71</th><td class="l"><span>&nbsp; solver.SetConstraints(_constraints)</span> </td>
+                  </tr><tr>
+                          <th>72</th><th>72</th><td class="l"><span>&nbsp;#ALTERNATE: multiprocessing map of cost function</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>73</th><th> </th><td class="l"><span>##from pathos.m<del>p_map import mp_map as map&nbsp; # multiprocessing</del></span> </td>
+                      </tr><tr>
+                        <th>74</th><th> </th><td class="l"><span>##solver.SetMapper(<del></del>map)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>73</th><td class="r"><span>##from pathos.m<ins>ultiprocessing import ProcessingPool as Pool</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>74</th><td class="r"><span>##solver.SetMapper(<ins>Pool().</ins>map)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>75</th><th>75</th><td class="l"><span>&nbsp;#ALTERNATE: MPI map of cost function</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>76</th><th> </th><td class="l"><span>##from pyina.ez_map import ez_map2 as map&nbsp; # mpi4py</span> </td>
+                      </tr><tr>
+                        <th>77</th><th> </th><td class="l"><span>##from pyina.launchers import mpirun_launcher, torque_launcher</span> </td>
+                      </tr><tr>
+                        <th>78</th><th> </th><td class="l"><span>##from pyina.mappers import carddealer_mapper, equalportion_mapper</span> </td>
+                      </tr><tr>
+                        <th>79</th><th> </th><td class="l"><span>##from pyina.schedulers import torque_scheduler</span> </td>
+                      </tr><tr>
+                        <th>80</th><th> </th><td class="l"><span>##solver.SetMapper(map, equalportion_mapper)</span> </td>
+                      </tr><tr>
+                        <th>81</th><th> </th><td class="l"><span>##solver.SetLauncher(mpirun_launcher, nodes)</span> </td>
+                      </tr><tr>
+                        <th>82</th><th> </th><td class="l"><span>##solver.SelectScheduler(torque_scheduler, queue, timelimit)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>76</th><td class="r"><span>##from pyina.launchers import Mpi as Pool</span> </td>
+                      </tr><tr>
+                        <th> </th><th>77</th><td class="r"><span>##solver.SetMapper(Pool(nodes).map)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>78</th><td class="r"><span>##from pyina.launchers import TorqueMpi as Pool</span> </td>
+                      </tr><tr>
+                        <th> </th><th>79</th><td class="r"><span>##config = {'queue':queue, 'timelimit':timelimit}</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>80</th><td class="r"><span>##solver.SetMapper(Pool(nodes, **config).map)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>83</th><th>81</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr><tr>
+                          <th>84</th><th>82</th><td class="l"><span>&nbsp; solver.Solve(cost,termination=COG(tol,ngen),strategy=Best1Exp, \</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=621#L381">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=675#L379">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>381</th><th>379</th><td class="l"><span>&nbsp; # with multiprocessing </span> </td>
+                  </tr><tr>
+                          <th>382</th><th>380</th><td class="l"><span>##nodes = 7 #len(runs)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>383</th><th> </th><td class="l"><span>##from pathos.m<del>p_map import mp_map as map&nbsp; # multiprocessing</del></span> </td>
+                      </tr><tr>
+                        <th>384</th><th> </th><td class="l"><span>##results = <del>map(looper, runs, nproc=node</del>s)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>381</th><td class="r"><span>##from pathos.m<ins>ultiprocessing import ProcessingPool as Pool</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>382</th><td class="r"><span>##results = <ins>Pool(nodes).map(looper, run</ins>s)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>385</th><th>383</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>386</th><th>384</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file11">
+          <a href="branches/UQ/math/legacy/envelope/envelope.html" title="Show the changeset 675 restricted to branches/UQ/math/legacy/envelope/envelope.py">branches/UQ/math/legacy/envelope/envelope.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/envelope.py?rev=601#L230">
+                      r601</a>
+                  </th>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/envelope.py?rev=675#L230">
+                      r675</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>230</th><th>230</th><td class="l"><span># results = np_map(model_sausage, runs)</span> </td>
+                  </tr><tr>
+                          <th>231</th><th>231</th><td class="l"><span>&nbsp; # with multiprocessing </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>232</th><th> </th><td class="l"><span># from pathos.mp_map import mp_map as map&nbsp; # multiprocessing</span> </td>
+                      </tr><tr>
+                        <th>233</th><th> </th><td class="l"><span># results = map(model_sausage, runs)#, nproc=nodes)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>232</th><td class="r"><span># nodes = 4 #len(runs)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>233</th><td class="r"><span># from pathos.multiprocessing import ProcessingPool as Pool</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>234</th><td class="r"><span># results = Pool(nodes).map(model_sausage, runs)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>234</th><th>235</th><td class="l"><span>&nbsp; # with MPI</span> </td>
+                  </tr><tr>
+                          <th>235</th><th>236</th><td class="l"><span># nodes = 4 #len(runs)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>236</th><th> </th><td class="l"><span># from pyina.<del>ez_map import ez_map2 as map&nbsp; # mpi4py</del></span> </td>
+                      </tr><tr>
+                        <th>237</th><th> </th><td class="l"><span># results = <del>map(model_sausage, runs, nnodes=node</del>s)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>237</th><td class="r"><span># from pyina.<ins>launchers import Mpi as Pool</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>238</th><td class="r"><span># results = <ins>Pool(nodes).map(model_sausage, run</ins>s)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>238</th><th>239</th><td class="l"><span>&nbsp; # with MPI on a cluster</span> </td>
+                  </tr><tr>
+                          <th>239</th><th>240</th><td class="l"><span># nodes = '25:ppn=2'</span> </td>
+                  </tr><tr>
+                          <th>240</th><th>241</th><td class="l"><span># queue = 'weekdayQ'</span> </td>
+                  </tr><tr>
+                          <th>241</th><th>242</th><td class="l"><span># timelimit = '11:59:59'</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>242</th><th> </th><td class="l"><span># from pyina.ez_map import ez_map2 as map&nbsp; # mpi4py</span> </td>
+                      </tr><tr>
+                        <th>243</th><th> </th><td class="l"><span># from pyina.launchers import mpirun_launcher, torque_launcher</span> </td>
+                      </tr><tr>
+                        <th>244</th><th> </th><td class="l"><span># from pyina.mappers import carddealer_mapper, equalportion_mapper</span> </td>
+                      </tr><tr>
+                        <th>245</th><th> </th><td class="l"><span># from pyina.schedulers import torque_scheduler</span> </td>
+                      </tr><tr>
+                        <th>246</th><th> </th><td class="l"><span># results = map(model_sausage, runs, nnodes=nodes, queue=queue, \</span> </td>
+                      </tr><tr>
+                        <th>247</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;timelimit=timelimit, launcher=mpirun_launcher, \</span> </td>
+                      </tr><tr>
+                        <th>248</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;scheduler=torque_scheduler)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>243</th><td class="r"><span>&nbsp; from pyina.launchers import TorqueMpi as Pool</span> </td>
+                      </tr><tr>
+                        <th> </th><th>244</th><td class="r"><span>&nbsp; config = {'queue':queue, 'timelimit':timelimit}</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>245</th><td class="r"><span>&nbsp; results = Pool(nodes, **config).map(model_sausage, runs)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>249</th><th>246</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>250</th><th>247</th><td class="l"><span>&nbsp; if verbose: print "yl yo yu:\n", asarray(results)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/675/branches?format=diff&amp;new=675" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/675/branches?format=zip&amp;new=675" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/675/branches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:13:34 GMT -->
+</html>

@@ -1,0 +1,1607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:59:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      mystic/mystic/abstract_solver.py (log) – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../search.html" />
+        <link rel="help" href="../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?format=rss&amp;limit=100&amp;mode=stop_on_copy" type="application/rss+xml" class="rss" title="RSS Feed" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?format=changelog&amp;limit=100&amp;mode=stop_on_copy" type="text/plain" title="ChangeLog" />
+        <link rel="up" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic?rev=862" title="Parent directory" />
+        <link rel="start" href="../../../wiki.html" />
+        <link rel="stylesheet" href="../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/browser.css" type="text/css" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../login.html">Login</a></li><li><a href="../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../about.html">About Trac</a></li><li class="last"><a href="../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../wiki.html">Wiki</a></li><li><a href="../../../timeline.html">Timeline</a></li><li><a href="../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../browser.html">Browse Source</a></li><li><a href="../../../query.html">View Tickets</a></li><li class="last"><a href="../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="../../../browser/mystic/mystic/abstract_solver.html">View Latest Revision</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="log">
+      <h1>
+<a class="pathentry first" href="http://mmckerns.github.io/project/mystic/browser?rev=862" title="Go to repository root">source:</a>
+<a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=862" title="View mystic">mystic</a><span class="pathentry sep">/</span><a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic?rev=862" title="View mystic">mystic</a><span class="pathentry sep">/</span><a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=862" title="View abstract_solver.py">abstract_solver.py</a>
+<span class="pathentry sep">@</span>
+  <a class="pathentry" href="../../../changeset/862.html" title="View changeset 862">862</a>
+<br style="clear: both" />
+</h1>
+      <form id="prefs" action="#" method="get">
+        <div>
+          <input type="hidden" name="action" value="stop_on_copy" />
+          <div class="choice">
+            <fieldset>
+              <legend>Revision Log Mode:</legend>
+              <label>
+                <input type="radio" id="stop_on_copy" name="mode" value="stop_on_copy" checked="checked" />
+                Stop on copy
+              </label>
+              <label>
+                <input type="radio" id="follow_copy" name="mode" value="follow_copy" />
+                Follow copies
+              </label>
+              <label>
+                <input type="radio" id="path_history" name="mode" value="path_history" />
+                Show only adds and deletes
+              </label>
+            </fieldset>
+          </div>
+          <label>
+              View log starting at
+              <input type="text" id="rev" name="rev" value="862" size="5" />
+            </label>
+            <label>
+              and back to
+              <input type="text" id="stop_rev" name="stop_rev" size="5" />
+            </label><br />
+          <label>
+              Show at most
+              <input type="text" id="limit" name="limit" value="100" size="3" maxlength="3" />
+              revisions per page.
+            </label><br />
+          <label>
+            <input type="checkbox" id="verbose" name="verbose" />
+            Show full log messages
+          </label>
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Update" />
+        </div>
+      </form>
+      <div class="diff">
+        <div class="legend" id="file-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+            <dt class="cp"></dt><dd>Copied or renamed</dd>
+          </dl>
+        </div>
+      </div>
+      <form class="printableform" action="http://mmckerns.github.io/project/mystic/changeset" method="get">
+        <div class="buttons">
+          <input type="hidden" name="reponame" />
+          <input type="submit" value="View changes" title="Diff from Old Revision to New Revision (as selected in the Diff column)" />
+        </div>
+        <table class="listing chglist">
+          <thead>
+            <tr>
+              <th class="diff" title="Old / New">Diff</th>
+              <th class="change"></th>
+              <th class="rev">Rev</th>
+              <th class="age">Age</th>
+              <th class="author">Author</th>
+              <th class="summary">Log Message</th>
+            </tr>
+          </thead>
+          <tbody>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="862@mystic/mystic/abstract_solver.py" title="From [862]" />
+                    <input type="radio" name="new" value="862@mystic/mystic/abstract_solver.py" checked="checked" title="To [862]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=862" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=862" title="Browse at revision 862">
+                        @862</a>
+                        <a class="chgset" href="../../../changeset/862/mystic/mystic/abstract_solver.html" title="View changeset [862] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-04-18T14%3A14%3A14-07%3A00&amp;precision=second" title="2016-04-18T14:14:14-07:00 in Timeline">4 weeks</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add mystic.math.Distribution; use it for <a class="missing wiki">InitialPoints?</a>, ensemble …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="861@mystic/mystic/abstract_solver.py" title="From [861]" />
+                    <input type="radio" name="new" value="861@mystic/mystic/abstract_solver.py" title="To [861]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=861" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=861" title="Browse at revision 861">
+                        @861</a>
+                        <a class="chgset" href="../../../changeset/861/mystic/mystic/abstract_solver.html" title="View changeset [861] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-04-02T13%3A44%3A19-07%3A00&amp;precision=second" title="2016-04-02T13:44:19-07:00 in Timeline">7 weeks</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        enable <a class="missing wiki">SetDistributionPoints?</a> to take a numpy.random distribution method
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="858@mystic/mystic/abstract_solver.py" title="From [858]" />
+                    <input type="radio" name="new" value="858@mystic/mystic/abstract_solver.py" title="To [858]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=858" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=858" title="Browse at revision 858">
+                        @858</a>
+                        <a class="chgset" href="../../../changeset/858/mystic/mystic/abstract_solver.html" title="View changeset [858] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-03-29T14%3A18%3A53-07%3A00&amp;precision=second" title="2016-03-29T14:18:53-07:00 in Timeline">7 weeks</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        enable solver to use scipy.stats instance to generate initial population
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="855@mystic/mystic/abstract_solver.py" title="From [855]" />
+                    <input type="radio" name="new" value="855@mystic/mystic/abstract_solver.py" title="To [855]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=855" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=855" title="Browse at revision 855">
+                        @855</a>
+                        <a class="chgset" href="../../../changeset/855/mystic/mystic/abstract_solver.html" title="View changeset [855] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-01-01T19%3A05%3A11-08%3A00&amp;precision=second" title="2016-01-01T19:05:11-08:00 in Timeline">5 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        updated copyright to 2016
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="844@mystic/mystic/abstract_solver.py" title="From [844]" />
+                    <input type="radio" name="new" value="844@mystic/mystic/abstract_solver.py" title="To [844]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=844" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=844" title="Browse at revision 844">
+                        @844</a>
+                        <a class="chgset" href="../../../changeset/844/mystic/mystic/abstract_solver.html" title="View changeset [844] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-11-23T07%3A32%3A25-08%3A00&amp;precision=second" title="2015-11-23T07:32:25-08:00 in Timeline">6 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        check if handler enabled before using signal (so solver works in …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="843@mystic/mystic/abstract_solver.py" title="From [843]" />
+                    <input type="radio" name="new" value="843@mystic/mystic/abstract_solver.py" title="To [843]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=843" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=843" title="Browse at revision 843">
+                        @843</a>
+                        <a class="chgset" href="../../../changeset/843/mystic/mystic/abstract_solver.html" title="View changeset [843] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-11-23T06%3A38%3A51-08%3A00&amp;precision=second" title="2015-11-23T06:38:51-08:00 in Timeline">6 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add deepcopy method for abstract_solver to better support 2.6
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="835@mystic/mystic/abstract_solver.py" title="From [835]" />
+                    <input type="radio" name="new" value="835@mystic/mystic/abstract_solver.py" title="To [835]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=835" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=835" title="Browse at revision 835">
+                        @835</a>
+                        <a class="chgset" href="../../../changeset/835/mystic/mystic/abstract_solver.html" title="View changeset [835] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-10-15T18%3A41%3A35-07%3A00&amp;precision=second" title="2015-10-15T18:41:35-07:00 in Timeline">7 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        use <a class="missing wiki">LinearKernel?</a> in test_svr1 example; enable use of numpy.poly1d as cost; …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="801@mystic/mystic/abstract_solver.py" title="From [801]" />
+                    <input type="radio" name="new" value="801@mystic/mystic/abstract_solver.py" title="To [801]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=801" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=801" title="Browse at revision 801">
+                        @801</a>
+                        <a class="chgset" href="../../../changeset/801/mystic/mystic/abstract_solver.html" title="View changeset [801] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-27T14%3A10%3A35-07%3A00&amp;precision=second" title="2015-06-27T14:10:35-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        windows comparibility in getch, and pathos; added better read_import
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="795@mystic/mystic/abstract_solver.py" title="From [795]" />
+                    <input type="radio" name="new" value="795@mystic/mystic/abstract_solver.py" title="To [795]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=795" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=795" title="Browse at revision 795">
+                        @795</a>
+                        <a class="chgset" href="../../../changeset/795/mystic/mystic/abstract_solver.html" title="View changeset [795] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-15T05%3A24%3A13-07%3A00&amp;precision=second" title="2015-06-15T05:24:13-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: Finalize for fmin_powell should call cost unless solver is live
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="794@mystic/mystic/abstract_solver.py" title="From [794]" />
+                    <input type="radio" name="new" value="794@mystic/mystic/abstract_solver.py" title="To [794]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=794" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=794" title="Browse at revision 794">
+                        @794</a>
+                        <a class="chgset" href="../../../changeset/794/mystic/mystic/abstract_solver.html" title="View changeset [794] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-12T17%3A08%3A44-07%3A00&amp;precision=second" title="2015-06-12T17:08:44-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add _update_objective and _live, to queue state changes to cost, penalty, …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="792@mystic/mystic/abstract_solver.py" title="From [792]" />
+                    <input type="radio" name="new" value="792@mystic/mystic/abstract_solver.py" title="To [792]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=792" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=792" title="Browse at revision 792">
+                        @792</a>
+                        <a class="chgset" href="../../../changeset/792/mystic/mystic/abstract_solver.html" title="View changeset [792] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-10T13%3A01%3A55-07%3A00&amp;precision=second" title="2015-06-10T13:01:55-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        for speed, use contains instead of get and has_key
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="791@mystic/mystic/abstract_solver.py" title="From [791]" />
+                    <input type="radio" name="new" value="791@mystic/mystic/abstract_solver.py" title="To [791]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=791" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=791" title="Browse at revision 791">
+                        @791</a>
+                        <a class="chgset" href="../../../changeset/791/mystic/mystic/abstract_solver.html" title="View changeset [791] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-10T09%3A03%3A56-07%3A00&amp;precision=second" title="2015-06-10T09:03:56-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        use len(stepmon) more uniformly; fix _fcalls for DESolvers;
+generations …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="787@mystic/mystic/abstract_solver.py" title="From [787]" />
+                    <input type="radio" name="new" value="787@mystic/mystic/abstract_solver.py" title="To [787]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=787" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=787" title="Browse at revision 787">
+                        @787</a>
+                        <a class="chgset" href="../../../changeset/787/mystic/mystic/abstract_solver.html" title="View changeset [787] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-02-22T13%3A00%3A28-08%3A00&amp;precision=second" title="2015-02-22T13:00:28-08:00 in Timeline">15 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        remove return cost from <a class="missing wiki">SetObjective?</a>; enable change cost and args in Step …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="786@mystic/mystic/abstract_solver.py" title="From [786]" />
+                    <input type="radio" name="new" value="786@mystic/mystic/abstract_solver.py" title="To [786]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=786" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=786" title="Browse at revision 786">
+                        @786</a>
+                        <a class="chgset" href="../../../changeset/786/mystic/mystic/abstract_solver.html" title="View changeset [786] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-02-21T09%3A06%3A40-08%3A00&amp;precision=second" title="2015-02-21T09:06:40-08:00 in Timeline">15 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: removed stray None attached to <a class="missing wiki">ExtraArgs?</a> in <a class="missing wiki">SetObjective?</a>
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="785@mystic/mystic/abstract_solver.py" title="From [785]" />
+                    <input type="radio" name="new" value="785@mystic/mystic/abstract_solver.py" title="To [785]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=785" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=785" title="Browse at revision 785">
+                        @785</a>
+                        <a class="chgset" href="../../../changeset/785/mystic/mystic/abstract_solver.html" title="View changeset [785] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-02-19T20%3A39%3A03-08%3A00&amp;precision=second" title="2015-02-19T20:39:03-08:00 in Timeline">15 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        refactor Solve is Step while not Terminated; radius, xtol, strategy are …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="784@mystic/mystic/abstract_solver.py" title="From [784]" />
+                    <input type="radio" name="new" value="784@mystic/mystic/abstract_solver.py" title="To [784]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=784" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784" title="Browse at revision 784">
+                        @784</a>
+                        <a class="chgset" href="../../../changeset/784/mystic/mystic/abstract_solver.html" title="View changeset [784] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-02-18T18%3A10%3A28-08%3A00&amp;precision=second" title="2015-02-18T18:10:28-08:00 in Timeline">15 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added <a class="missing wiki">SolverInterrupt?</a> as termination; pull _EARLYEXIT into …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="783@mystic/mystic/abstract_solver.py" title="From [783]" />
+                    <input type="radio" name="new" value="783@mystic/mystic/abstract_solver.py" title="To [783]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=783" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=783" title="Browse at revision 783">
+                        @783</a>
+                        <a class="chgset" href="../../../changeset/783/mystic/mystic/abstract_solver.html" title="View changeset [783] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-02-18T08%3A17%3A08-08%3A00&amp;precision=second" title="2015-02-18T08:17:08-08:00 in Timeline">15 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: add _SetEvaluationLimits to ensemble <a class="missing wiki">CheckTermination?</a>;
+Step now …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="782@mystic/mystic/abstract_solver.py" title="From [782]" />
+                    <input type="radio" name="new" value="782@mystic/mystic/abstract_solver.py" title="To [782]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=782" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=782" title="Browse at revision 782">
+                        @782</a>
+                        <a class="chgset" href="../../../changeset/782/mystic/mystic/abstract_solver.html" title="View changeset [782] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-02-17T10%3A30%3A50-08%3A00&amp;precision=second" title="2015-02-17T10:30:50-08:00 in Timeline">15 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved _SetEvaluationLimits inside <a class="missing wiki">CheckTermination?</a>;
+moved _termination and …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="781@mystic/mystic/abstract_solver.py" title="From [781]" />
+                    <input type="radio" name="new" value="781@mystic/mystic/abstract_solver.py" title="To [781]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=781" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=781" title="Browse at revision 781">
+                        @781</a>
+                        <a class="chgset" href="../../../changeset/781/mystic/mystic/abstract_solver.html" title="View changeset [781] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-02-16T16%3A43%3A28-08%3A00&amp;precision=second" title="2015-02-16T16:43:28-08:00 in Timeline">15 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        rename _bootstrap_decorate to _bootstrap_objective;
+fix: diffev solver …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="776@mystic/mystic/abstract_solver.py" title="From [776]" />
+                    <input type="radio" name="new" value="776@mystic/mystic/abstract_solver.py" title="To [776]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=776" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=776" title="Browse at revision 776">
+                        @776</a>
+                        <a class="chgset" href="../../../changeset/776/mystic/mystic/abstract_solver.html" title="View changeset [776] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-01-02T06%3A51%3A14-08%3A00&amp;precision=second" title="2015-01-02T06:51:14-08:00 in Timeline">17 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        copyright updated to 2015; added to examples2
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="772@mystic/mystic/abstract_solver.py" title="From [772]" />
+                    <input type="radio" name="new" value="772@mystic/mystic/abstract_solver.py" title="To [772]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=772" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=772" title="Browse at revision 772">
+                        @772</a>
+                        <a class="chgset" href="../../../changeset/772/mystic/mystic/abstract_solver.html" title="View changeset [772] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-11-21T14%3A33%3A33-08%3A00&amp;precision=second" title="2014-11-21T14:33:33-08:00 in Timeline">18 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: remove stray random.seed causing seeding of random number generation; …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="763@mystic/mystic/abstract_solver.py" title="From [763]" />
+                    <input type="radio" name="new" value="763@mystic/mystic/abstract_solver.py" title="To [763]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=763" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=763" title="Browse at revision 763">
+                        @763</a>
+                        <a class="chgset" href="../../../changeset/763/mystic/mystic/abstract_solver.html" title="View changeset [763] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-10-07T15%3A29%3A24-07%3A00&amp;precision=second" title="2014-10-07T15:29:24-07:00 in Timeline">20 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        use numpy.seterr to ignore nan in measures.normalize and in greater/less …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="760@mystic/mystic/abstract_solver.py" title="From [760]" />
+                    <input type="radio" name="new" value="760@mystic/mystic/abstract_solver.py" title="To [760]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=760" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=760" title="Browse at revision 760">
+                        @760</a>
+                        <a class="chgset" href="../../../changeset/760/mystic/mystic/abstract_solver.html" title="View changeset [760] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-10-04T18%3A52%3A54-07%3A00&amp;precision=second" title="2014-10-04T18:52:54-07:00 in Timeline">20 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        convert most eq and ne checks against None to is and is not
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="737@mystic/mystic/abstract_solver.py" title="From [737]" />
+                    <input type="radio" name="new" value="737@mystic/mystic/abstract_solver.py" title="To [737]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=737" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=737" title="Browse at revision 737">
+                        @737</a>
+                        <a class="chgset" href="../../../changeset/737/mystic/mystic/abstract_solver.html" title="View changeset [737] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-07-31T11%3A08%3A02-07%3A00&amp;precision=second" title="2014-07-31T11:08:02-07:00 in Timeline">22 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        simplified internal reducer state to always use arraylike; added …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="727@mystic/mystic/abstract_solver.py" title="From [727]" />
+                    <input type="radio" name="new" value="727@mystic/mystic/abstract_solver.py" title="To [727]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=727" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=727" title="Browse at revision 727">
+                        @727</a>
+                        <a class="chgset" href="../../../changeset/727/mystic/mystic/abstract_solver.html" title="View changeset [727] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-07-19T12%3A26%3A19-07%3A00&amp;precision=second" title="2014-07-19T12:26:19-07:00 in Timeline">22 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add <a class="missing wiki">SetReducer?</a> to solvers; add reduced in tools; use <a class="missing wiki">SetReducer?</a> in …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="713@mystic/mystic/abstract_solver.py" title="From [713]" />
+                    <input type="radio" name="new" value="713@mystic/mystic/abstract_solver.py" title="To [713]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=713" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=713" title="Browse at revision 713">
+                        @713</a>
+                        <a class="chgset" href="../../../changeset/713/mystic/mystic/abstract_solver.html" title="View changeset [713] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-04-03T12%3A44%3A55-07%3A00&amp;precision=second" title="2014-04-03T12:44:55-07:00 in Timeline">2 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added license and copyright to each file
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="705@mystic/mystic/abstract_solver.py" title="From [705]" />
+                    <input type="radio" name="new" value="705@mystic/mystic/abstract_solver.py" title="To [705]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=705" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=705" title="Browse at revision 705">
+                        @705</a>
+                        <a class="chgset" href="../../../changeset/705/mystic/mystic/abstract_solver.html" title="View changeset [705] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-08-08T05%3A33%3A33-07%3A00&amp;precision=second" title="2013-08-08T05:33:33-07:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        <a class="missing wiki">EvaluationLimits?</a> has keyword 'new' for "run N more" instead of "run until …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="704@mystic/mystic/abstract_solver.py" title="From [704]" />
+                    <input type="radio" name="new" value="704@mystic/mystic/abstract_solver.py" title="To [704]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=704" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=704" title="Browse at revision 704">
+                        @704</a>
+                        <a class="chgset" href="../../../changeset/704/mystic/mystic/abstract_solver.html" title="View changeset [704] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-08-07T17%3A29%3A18-07%3A00&amp;precision=second" title="2013-08-07T17:29:18-07:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        solver monitors prepend existing monitor data, prior behavior with …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="698@mystic/mystic/abstract_solver.py" title="From [698]" />
+                    <input type="radio" name="new" value="698@mystic/mystic/abstract_solver.py" title="To [698]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=698" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=698" title="Browse at revision 698">
+                        @698</a>
+                        <a class="chgset" href="../../../changeset/698/mystic/mystic/abstract_solver.html" title="View changeset [698] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-07-08T15%3A15%3A46-07%3A00&amp;precision=second" title="2013-07-08T15:15:46-07:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: Solve does not recompute when Step has been already called
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="679@mystic/mystic/abstract_solver.py" title="From [679]" />
+                    <input type="radio" name="new" value="679@mystic/mystic/abstract_solver.py" title="To [679]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=679" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=679" title="Browse at revision 679">
+                        @679</a>
+                        <a class="chgset" href="../../../changeset/679/mystic/mystic/abstract_solver.html" title="View changeset [679] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-06-05T11%3A21%3A04-07%3A00&amp;precision=second" title="2013-06-05T11:21:04-07:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: better default for self._termination, now can accept kwds
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="654@mystic/mystic/abstract_solver.py" title="From [654]" />
+                    <input type="radio" name="new" value="654@mystic/mystic/abstract_solver.py" title="To [654]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=654" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=654" title="Browse at revision 654">
+                        @654</a>
+                        <a class="chgset" href="../../../changeset/654/mystic/mystic/abstract_solver.html" title="View changeset [654] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-02-15T12%3A05%3A10-08%3A00&amp;precision=second" title="2013-02-15T12:05:10-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        migrate termination from Solve to <a class="missing wiki">SetTermination?</a>; *args in _termination …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="649@mystic/mystic/abstract_solver.py" title="From [649]" />
+                    <input type="radio" name="new" value="649@mystic/mystic/abstract_solver.py" title="To [649]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=649" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=649" title="Browse at revision 649">
+                        @649</a>
+                        <a class="chgset" href="../../../changeset/649/mystic/mystic/abstract_solver.html" title="View changeset [649] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-30T20%3A40%3A56-08%3A00&amp;precision=second" title="2013-01-30T20:40:56-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added <a class="missing wiki">SetSaveFrequency?</a> method, and accompanying test for solver restarts
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="648@mystic/mystic/abstract_solver.py" title="From [648]" />
+                    <input type="radio" name="new" value="648@mystic/mystic/abstract_solver.py" title="To [648]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=648" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=648" title="Browse at revision 648">
+                        @648</a>
+                        <a class="chgset" href="../../../changeset/648/mystic/mystic/abstract_solver.html" title="View changeset [648] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-30T11%3A15%3A09-08%3A00&amp;precision=second" title="2013-01-30T11:15:09-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        can now serialize solvers; added <a class="missing wiki">SaveSolver?</a> method, <a class="missing wiki">LoadSolver?</a> function; …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="642@mystic/mystic/abstract_solver.py" title="From [642]" />
+                    <input type="radio" name="new" value="642@mystic/mystic/abstract_solver.py" title="To [642]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=642" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=642" title="Browse at revision 642">
+                        @642</a>
+                        <a class="chgset" href="../../../changeset/642/mystic/mystic/abstract_solver.html" title="View changeset [642] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-11T12%3A44%3A36-08%3A00&amp;precision=second" title="2013-01-11T12:44:36-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added _exitMain method, leverage abstract_solver.Solve in powell;
+fix: …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="641@mystic/mystic/abstract_solver.py" title="From [641]" />
+                    <input type="radio" name="new" value="641@mystic/mystic/abstract_solver.py" title="To [641]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=641" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=641" title="Browse at revision 641">
+                        @641</a>
+                        <a class="chgset" href="../../../changeset/641/mystic/mystic/abstract_solver.html" title="View changeset [641] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-11T09%3A41%3A10-08%3A00&amp;precision=second" title="2013-01-11T09:41:10-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved _SetEvaluationLimits, _Decorate, and _process_inputs into …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="638@mystic/mystic/abstract_solver.py" title="From [638]" />
+                    <input type="radio" name="new" value="638@mystic/mystic/abstract_solver.py" title="To [638]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=638" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=638" title="Browse at revision 638">
+                        @638</a>
+                        <a class="chgset" href="../../../changeset/638/mystic/mystic/abstract_solver.html" title="View changeset [638] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-07T23%3A23%3A35-08%3A00&amp;precision=second" title="2013-01-07T23:23:35-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: updated sumt penalty restarts for changes to solver internals;
+fix: …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="637@mystic/mystic/abstract_solver.py" title="From [637]" />
+                    <input type="radio" name="new" value="637@mystic/mystic/abstract_solver.py" title="To [637]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=637" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=637" title="Browse at revision 637">
+                        @637</a>
+                        <a class="chgset" href="../../../changeset/637/mystic/mystic/abstract_solver.html" title="View changeset [637] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-07T15%3A18%3A17-08%3A00&amp;precision=second" title="2013-01-07T15:18:17-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add _map_solver attribute, merge trialPop to trialSolution (2D for map …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="636@mystic/mystic/abstract_solver.py" title="From [636]" />
+                    <input type="radio" name="new" value="636@mystic/mystic/abstract_solver.py" title="To [636]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=636" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=636" title="Browse at revision 636">
+                        @636</a>
+                        <a class="chgset" href="../../../changeset/636/mystic/mystic/abstract_solver.html" title="View changeset [636] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-06T20%3A11%3A37-08%3A00&amp;precision=second" title="2013-01-06T20:11:37-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: all methods for initial populations produce a nested list of lists; …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="633@mystic/mystic/abstract_solver.py" title="From [633]" />
+                    <input type="radio" name="new" value="633@mystic/mystic/abstract_solver.py" title="To [633]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=633" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=633" title="Browse at revision 633">
+                        @633</a>
+                        <a class="chgset" href="../../../changeset/633/mystic/mystic/abstract_solver.html" title="View changeset [633] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-06T17%3A21%3A30-08%3A00&amp;precision=second" title="2013-01-06T17:21:30-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        generations, bestEnergy, and bestSolution point to other solver internals; …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="631@mystic/mystic/abstract_solver.py" title="From [631]" />
+                    <input type="radio" name="new" value="631@mystic/mystic/abstract_solver.py" title="To [631]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=631" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=631" title="Browse at revision 631">
+                        @631</a>
+                        <a class="chgset" href="../../../changeset/631/mystic/mystic/abstract_solver.html" title="View changeset [631] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-03T21%3A35%3A20-08%3A00&amp;precision=second" title="2013-01-03T21:35:20-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        merge energy_history with stepmonitor;
+converted CONTINUE in …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="630@mystic/mystic/abstract_solver.py" title="From [630]" />
+                    <input type="radio" name="new" value="630@mystic/mystic/abstract_solver.py" title="To [630]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=630" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=630" title="Browse at revision 630">
+                        @630</a>
+                        <a class="chgset" href="../../../changeset/630/mystic/mystic/abstract_solver.html" title="View changeset [630] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-03T13%3A21%3A26-08%3A00&amp;precision=second" title="2013-01-03T13:21:26-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added randomly_bin to grid; enable <a class="missing wiki">LatticeSolver?</a> to randomly_bin;
+abstract …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="625@mystic/mystic/abstract_solver.py" title="From [625]" />
+                    <input type="radio" name="new" value="625@mystic/mystic/abstract_solver.py" title="To [625]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=625" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=625" title="Browse at revision 625">
+                        @625</a>
+                        <a class="chgset" href="../../../changeset/625/mystic/mystic/abstract_solver.html" title="View changeset [625] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-28T18%3A47%3A57-08%3A00&amp;precision=second" title="2012-12-28T18:47:57-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added <a class="missing wiki">EvaluationLimits?</a> as termination condition;
+termination from …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="604@mystic/mystic/abstract_solver.py" title="From [604]" />
+                    <input type="radio" name="new" value="604@mystic/mystic/abstract_solver.py" title="To [604]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=604" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=604" title="Browse at revision 604">
+                        @604</a>
+                        <a class="chgset" href="../../../changeset/604/mystic/mystic/abstract_solver.html" title="View changeset [604] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-05T09%3A42%3A48-08%3A00&amp;precision=second" title="2012-12-05T09:42:48-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added <a class="missing wiki">SetPenalty?</a> method for penalty functions, and penalty kwd for …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="473@mystic/mystic/abstract_solver.py" title="From [473]" />
+                    <input type="radio" name="new" value="473@mystic/mystic/abstract_solver.py" title="To [473]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=473" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=473" title="Browse at revision 473">
+                        @473</a>
+                        <a class="chgset" href="../../../changeset/473/mystic/mystic/abstract_solver.html" title="View changeset [473] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-07T08%3A44%3A38-07%3A00&amp;precision=second" title="2011-07-07T08:44:38-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        converted 'constraints' keyword to <a class="missing wiki">SetConstraints?</a> method;
+enabled use of …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="470@mystic/mystic/abstract_solver.py" title="From [470]" />
+                    <input type="radio" name="new" value="470@mystic/mystic/abstract_solver.py" title="To [470]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=470" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=470" title="Browse at revision 470">
+                        @470</a>
+                        <a class="chgset" href="../../../changeset/470/mystic/mystic/abstract_solver.html" title="View changeset [470] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-05T14%3A57%3A23-07%3A00&amp;precision=second" title="2011-07-05T14:57:23-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        migrated "Null" to monitors; set <a class="missing wiki">StepMon/Evalmon?</a> is now a method
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="466@mystic/mystic/abstract_solver.py" title="From [466]" />
+                    <input type="radio" name="new" value="466@mystic/mystic/abstract_solver.py" title="To [466]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=466" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=466" title="Browse at revision 466">
+                        @466</a>
+                        <a class="chgset" href="../../../changeset/466/mystic/mystic/abstract_solver.html" title="View changeset [466] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-02T20%3A41%3A02-07%3A00&amp;precision=second" title="2011-07-02T20:41:02-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved monitors from mystic.tools to mystic.monitors
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="462@mystic/mystic/abstract_solver.py" title="From [462]" />
+                    <input type="radio" name="new" value="462@mystic/mystic/abstract_solver.py" title="To [462]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=462" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=462" title="Browse at revision 462">
+                        @462</a>
+                        <a class="chgset" href="../../../changeset/462/mystic/mystic/abstract_solver.html" title="View changeset [462] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-06-21T12%3A12%3A23-07%3A00&amp;precision=second" title="2011-06-21T12:12:23-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        extended solver interface to include solver.evaluations (ticket <a class="closed ticket" href="../../../ticket/138.html" title="enhancement: provide solver methods for capabilities available with 'disp' (closed: fixed)">#138</a>)
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="440@mystic/mystic/abstract_solver.py" title="From [440]" />
+                    <input type="radio" name="new" value="440@mystic/mystic/abstract_solver.py" title="To [440]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=440" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=440" title="Browse at revision 440">
+                        @440</a>
+                        <a class="chgset" href="../../../changeset/440/mystic/mystic/abstract_solver.html" title="View changeset [440] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-03-14T16%3A56%3A37-07%3A00&amp;precision=second" title="2011-03-14T16:56:37-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        <a class="missing wiki">SetStrictRanges?</a> no longer requires 'min' and 'max';
+<a class="missing wiki">RandomInitialPoints?</a> …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="422@mystic/mystic/abstract_solver.py" title="From [422]" />
+                    <input type="radio" name="new" value="422@mystic/mystic/abstract_solver.py" title="To [422]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=422" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=422" title="Browse at revision 422">
+                        @422</a>
+                        <a class="chgset" href="../../../changeset/422/mystic/mystic/abstract_solver.html" title="View changeset [422] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-09-08T22%3A54%3A59-07%3A00&amp;precision=second" title="2010-09-08T22:54:59-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added several new termination conditions;
+added tools.wrap_nested …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="336@mystic/mystic/abstract_solver.py" title="From [336]" />
+                    <input type="radio" name="new" value="336@mystic/mystic/abstract_solver.py" title="To [336]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=336" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=336" title="Browse at revision 336">
+                        @336</a>
+                        <a class="chgset" href="../../../changeset/336/mystic/mystic/abstract_solver.html" title="View changeset [336] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-07-20T17%3A34%3A31-07%3A00&amp;precision=second" title="2010-07-20T17:34:31-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        changed default chisq to numpy.inf; added text about Windows installation
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="296@mystic/mystic/abstract_solver.py" title="From [296]" />
+                    <input type="radio" name="new" value="296@mystic/mystic/abstract_solver.py" title="To [296]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=296" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=296" title="Browse at revision 296">
+                        @296</a>
+                        <a class="chgset" href="../../../changeset/296/mystic/mystic/abstract_solver.html" title="View changeset [296] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-07-07T12%3A22%3A35-07%3A00&amp;precision=second" title="2010-07-07T12:22:35-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        extended <a class="missing wiki">Sows/Solvers?</a> to log solver 'rank' (see ticket <a class="new ticket" href="../../../ticket/94.html" title="defect: provide control of parallel and distributed jobs (new)">#94</a>)
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="242@mystic/mystic/abstract_solver.py" title="From [242]" />
+                    <input type="radio" name="new" value="242@mystic/mystic/abstract_solver.py" title="To [242]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=242" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=242" title="Browse at revision 242">
+                        @242</a>
+                        <a class="chgset" href="../../../changeset/242/mystic/mystic/abstract_solver.html" title="View changeset [242] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-05-21T21%3A46%3A54-07%3A00&amp;precision=second" title="2010-05-21T21:46:54-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        edits to fix epydoc formatting and content
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="234@mystic/mystic/abstract_solver.py" title="From [234]" />
+                    <input type="radio" name="new" value="234@mystic/mystic/abstract_solver.py" title="To [234]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=234" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=234" title="Browse at revision 234">
+                        @234</a>
+                        <a class="chgset" href="../../../changeset/234/mystic/mystic/abstract_solver.html" title="View changeset [234] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-05-16T01%3A59%3A13-07%3A00&amp;precision=second" title="2010-05-16T01:59:13-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added <a class="missing wiki">BatchGridSolver?</a> and abstract_nested_solver class
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="226@mystic/mystic/abstract_solver.py" title="From [226]" />
+                    <input type="radio" name="new" value="226@mystic/mystic/abstract_solver.py" title="To [226]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=226" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=226" title="Browse at revision 226">
+                        @226</a>
+                        <a class="chgset" href="../../../changeset/226/mystic/mystic/abstract_solver.html" title="View changeset [226] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-05-13T13%3A21%3A43-07%3A00&amp;precision=second" title="2010-05-13T13:21:43-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added the <a class="missing wiki">AbstractMapSolver?</a> base class, providing solvers with methods for …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="219@mystic/mystic/abstract_solver.py" title="From [219]" />
+                    <input type="radio" name="new" value="219@mystic/mystic/abstract_solver.py" title="To [219]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=219" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=219" title="Browse at revision 219">
+                        @219</a>
+                        <a class="chgset" href="../../../changeset/219/mystic/mystic/abstract_solver.html" title="View changeset [219] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-04-29T14%3A23%3A44-07%3A00&amp;precision=second" title="2010-04-29T14:23:44-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        bugfix for <a class="closed ticket" href="../../../ticket/102.html" title="defect: initial population is not used in DESolver (closed: fixed)">#102</a>, DE uses initial population;
+SOW now captures initial …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="140@mystic/mystic/abstract_solver.py" title="From [140]" />
+                    <input type="radio" name="new" value="140@mystic/mystic/abstract_solver.py" title="To [140]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=140" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=140" title="Browse at revision 140">
+                        @140</a>
+                        <a class="chgset" href="../../../changeset/140/mystic/mystic/abstract_solver.html" title="View changeset [140] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-04-09T12%3A48%3A58-07%3A00&amp;precision=second" title="2009-04-09T12:48:58-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved parallel_desolve to differential_evolution;
+differential_evolution …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="124@mystic/mystic/abstract_solver.py" title="From [124]" />
+                    <input type="radio" name="new" value="124@mystic/mystic/abstract_solver.py" title="To [124]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=124" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=124" title="Browse at revision 124">
+                        @124</a>
+                        <a class="chgset" href="../../../changeset/124/mystic/mystic/abstract_solver.html" title="View changeset [124] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-24T11%3A21%3A27-07%3A00&amp;precision=second" title="2009-03-24T11:21:27-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        coerce source to mostly play nice with epydoc;
+added epydoc config file
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="123@mystic/mystic/abstract_solver.py" title="From [123]" />
+                    <input type="radio" name="new" value="123@mystic/mystic/abstract_solver.py" title="To [123]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=123" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=123" title="Browse at revision 123">
+                        @123</a>
+                        <a class="chgset" href="../../../changeset/123/mystic/mystic/abstract_solver.html" title="View changeset [123] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-23T17%3A11%3A08-07%3A00&amp;precision=second" title="2009-03-23T17:11:08-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        most of remaining module and method documentation for mystic-0.1a1; …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="121@mystic/mystic/abstract_solver.py" title="From [121]" />
+                    <input type="radio" name="new" value="121@mystic/mystic/abstract_solver.py" title="To [121]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=121" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=121" title="Browse at revision 121">
+                        @121</a>
+                        <a class="chgset" href="../../../changeset/121/mystic/mystic/abstract_solver.html" title="View changeset [121] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-22T23%3A29%3A45-07%3A00&amp;precision=second" title="2009-03-22T23:29:45-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        migrated handler to abstract_solver by building _handlerFactory;
+minor …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="119@mystic/mystic/abstract_solver.py" title="From [119]" />
+                    <input type="radio" name="new" value="119@mystic/mystic/abstract_solver.py" title="To [119]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=119" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=119" title="Browse at revision 119">
+                        @119</a>
+                        <a class="chgset" href="../../../changeset/119/mystic/mystic/abstract_solver.html" title="View changeset [119] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-20T18%3A18%3A18-07%3A00&amp;precision=second" title="2009-03-20T18:18:18-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added more extensive documentation to all solvers;
+docs still required for …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="118@mystic/mystic/abstract_solver.py" title="From [118]" />
+                    <input type="radio" name="new" value="118@mystic/mystic/abstract_solver.py" title="To [118]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=118" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=118" title="Browse at revision 118">
+                        @118</a>
+                        <a class="chgset" href="../../../changeset/118/mystic/mystic/abstract_solver.html" title="View changeset [118] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-20T12%3A09%3A08-07%3A00&amp;precision=second" title="2009-03-20T12:09:08-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        migrated <a class="missing wiki">AbstractModel?</a> and <a class="missing wiki">AbstractFunction?</a> to abstract_model;
+bugfix for …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="114@mystic/mystic/abstract_solver.py" title="From [114]" />
+                    <input type="radio" name="new" value="114@mystic/mystic/abstract_solver.py" title="To [114]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=114" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=114" title="Browse at revision 114">
+                        @114</a>
+                        <a class="chgset" href="../../../changeset/114/mystic/mystic/abstract_solver.html" title="View changeset [114] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-13T00%3A30%3A08-07%3A00&amp;precision=second" title="2009-03-13T00:30:08-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        <a class="missing wiki">RandomInitialValues?</a> now defaults min,max to (-1000,1000) * nDim
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="111@mystic/mystic/abstract_solver.py" title="From [111]" />
+                    <input type="radio" name="new" value="111@mystic/mystic/abstract_solver.py" title="To [111]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=111" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=111" title="Browse at revision 111">
+                        @111</a>
+                        <a class="chgset" href="../../../changeset/111/mystic/mystic/abstract_solver.html" title="View changeset [111] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-11T11%3A33%3A05-07%3A00&amp;precision=second" title="2009-03-11T11:33:05-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        created <a class="missing wiki">SetEvaluationLimits?</a> method in abstract_solver;
+propagated changes …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="105@mystic/mystic/abstract_solver.py" checked="checked" title="From [105]" />
+                    <input type="radio" name="new" value="105@mystic/mystic/abstract_solver.py" title="To [105]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?rev=105" title="View log starting at this revision">
+                        <span class="add"></span>
+                        <span class="comment">(add)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=105" title="Browse at revision 105">
+                        @105</a>
+                        <a class="chgset" href="../../../changeset/105/mystic/mystic/abstract_solver.html" title="View changeset [105] restricted to mystic/mystic/abstract_solver.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-26T11%3A34%3A41-08%3A00&amp;precision=second" title="2009-02-26T11:34:41-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added <a class="missing wiki">AbstractSolver?</a> class; added documentation for most methods;
+changed …
+                    </td>
+                </tr>
+          </tbody>
+        </table>
+        <div class="buttons">
+          <input type="submit" value="View changes" title="Diff from Old Revision to New Revision (as selected in the Diff column)" />
+        </div>
+      </form>
+      <div id="help"><strong>Note:</strong> See <a href="../../../wiki/TracRevisionLog.html">TracRevisionLog</a>
+        for help on using the revision log.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?format=rss&amp;limit=100&amp;mode=stop_on_copy" class="rss">RSS Feed</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py?format=changelog&amp;limit=100&amp;mode=stop_on_copy">ChangeLog</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/log/mystic/mystic/abstract_solver.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:59:31 GMT -->
+</html>

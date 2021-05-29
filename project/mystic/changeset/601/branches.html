@@ -1,0 +1,1557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/601/branches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:17:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 601 for branches – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/601/branches?format=diff&amp;new=601" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/601/branches?format=zip&amp;new=601" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../602/branches.html" title="Changeset 602 for branches" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../600/branches.html" title="Changeset 600 for branches" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../600/branches.html" title="Changeset 600 for branches">Previous Change</a></span></li><li class="last"><span><a class="next" href="../602/branches.html" title="Changeset 602 for branches">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../601.html">601</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches?rev=601">branches</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             12/03/12 11:57:08
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-03T11%3A57%3A08-08%3A00&amp;precision=second" title="2012-12-03T11:57:08-08:00 in Timeline">3 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+memoized0 functions renamed to memoized, memoized class to memoize;<br />
+improved simple timer decorator to include verbosity<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/branches?rev=601">branches</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>12 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=601">
+              UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/envelope.py?rev=601">
+              UQ/math/legacy/envelope/envelope.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=601">
+              UQ/math/legacy/envelope/memoize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">8 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/otm_hvi.py?rev=601">
+              UQ/math/legacy/envelope/otm_hvi.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/otm_hvi_new.py?rev=601">
+              UQ/math/legacy/envelope/otm_hvi_new.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/sausage.py?rev=601">
+              UQ/math/legacy/envelope/sausage.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/memoize.py?rev=601">
+              decorate/memoize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">5 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/surrogate.py?rev=601">
+              decorate/surrogate.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_cached_memoize.py?rev=601">
+              decorate/test_cached_memoize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file8">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_memoize.py?rev=601">
+              decorate/test_memoize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file9">5 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_timer.py?rev=601">
+              decorate/test_timer.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file10">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/timer.py?rev=601">
+              decorate/timer.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file11">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.html" title="Show the changeset 601 restricted to branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py">branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 596">
+                    <a title="Show revision 596 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=596#L116">
+                      r596</a>
+                  </th>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/Looper_BoLiSurr_Cy.py?rev=601#L116">
+                      r601</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>116</th><th>116</th><td class="l"><span>&nbsp; &nbsp; return rv</span> </td>
+                  </tr><tr>
+                          <th>117</th><th>117</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>118</th><th> </th><td class="l"><span># from memoize import memoized<del>0</del>_nopickle_round as memoized</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>118</th><td class="r"><span># from memoize import memoized<ins></ins>_nopickle_round as memoized</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>119</th><th>119</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>120</th><th>120</th><td class="l"><span>&nbsp; # generate primary constraints function</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="branches/UQ/math/legacy/envelope/envelope.html" title="Show the changeset 601 restricted to branches/UQ/math/legacy/envelope/envelope.py">branches/UQ/math/legacy/envelope/envelope.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 592">
+                    <a title="Show revision 592 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/envelope.py?rev=592#L193">
+                      r592</a>
+                  </th>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/envelope.py?rev=601#L193">
+                      r601</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>193</th><th>193</th><td class="l"><span>#&nbsp; return model_sausage(x)</span> </td>
+                  </tr><tr>
+                          <th>194</th><th>194</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>195</th><th> </th><td class="l"><span>from memoize import memoized<del>0</del>_nopickle_archived as memoized</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>195</th><td class="r"><span>from memoize import memoized<ins></ins>_nopickle_archived as memoized</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>196</th><th>196</th><td class="l"><span># vectorize 'sausage_bounds' to find min/max for every evaluation point</span> </td>
+                  </tr><tr>
+                          <th>197</th><th>197</th><td class="l"><span>@memoized()</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="branches/UQ/math/legacy/envelope/memoize.html" title="Show the changeset 601 restricted to branches/UQ/math/legacy/envelope/memoize.py">branches/UQ/math/legacy/envelope/memoize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 596">
+                    <a title="Show revision 596 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=596#L72">
+                      r596</a>
+                  </th>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=601#L72">
+                      r601</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>72</th><th>72</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>73</th><th>73</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>74</th><td class="r"><ins>def shallow_round_factory(tol):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>75</th><td class="r"><ins>&nbsp; from numpy import round as around #XXX: try or numpy makes this slow</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>76</th><td class="r"><ins>&nbsp; def shallow_round(*args, **kwds):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>77</th><td class="r"><ins>&nbsp; &nbsp; argstype = type(args) </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>78</th><td class="r"><ins>&nbsp; &nbsp; _args = list(args)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>79</th><td class="r"><ins>&nbsp; &nbsp; _kwds = kwds.copy()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>80</th><td class="r"><ins>&nbsp; &nbsp; for i,j in enumerate(args):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>81</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; try:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>82</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; jtype = type(j)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>83</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; _args[i] = jtype(around(j, tol))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>84</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; except: pass</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>85</th><td class="r"><ins>&nbsp; &nbsp; for i,j in kwds.items():</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>86</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; try:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>87</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; jtype = type(j)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>88</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; _kwds[i] = jtype(around(j, tol))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>89</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; except: pass</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>90</th><td class="r"><ins>&nbsp; &nbsp; return argstype(_args), _kwds</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>91</th><td class="r"><ins>&nbsp; return shallow_round</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>92</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>93</th><td class="r"><ins>def shallow_round(tol=0): #NOTE: rounds floats, lists, arrays one level deep</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>94</th><td class="r"><ins>&nbsp; def dec(f):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>95</th><td class="r"><ins>&nbsp; &nbsp; def func(*args, **kwds):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>96</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; _shallow_round = shallow_round_factory(tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>97</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; _args,_kwds = _shallow_round(*args, **kwds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>98</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; return f(*_args, **_kwds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>99</th><td class="r"><ins>&nbsp; &nbsp; return func</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>100</th><td class="r"><ins>&nbsp; return dec</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>101</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>102</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>103</th><td class="l"><span>def get_archive(archive):</span> </td>
+                  </tr><tr>
+                          <th>75</th><th>104</th><td class="l"><span>&nbsp; &nbsp; import dill as pickle</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=596#L121">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=601#L150">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>121</th><th>150</th><td class="l"><span>#FIXME: memoize*_round fails when decorating a class method</span> </td>
+                  </tr><tr>
+                          <th>122</th><th>151</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>123</th><th> </th><td class="l"><span>#FIXME: resolve signature difference...&nbsp; @memoized versus @memoized()</span> </td>
+                      </tr><tr>
+                        <th>124</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>125</th><th> </th><td class="l"><span>def memoized0_nopickle_round(tol=0, deep=False):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>152</th><td class="r"><span>def memoized_nopickle_round(tol=0, deep=False):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>126</th><th>153</th><td class="l"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                  </tr><tr>
+                          <th>127</th><th>154</th><td class="l"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=596#L135">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=601#L162">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>135</th><th>162</th><td class="l"><span>&nbsp; &nbsp; if deep: rounded = deep_round</span> </td>
+                  </tr><tr>
+                          <th>136</th><th>163</th><td class="l"><span>&nbsp; &nbsp; else: rounded = simple_round</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>164</th><td class="r"><ins>&nbsp; &nbsp;#else: rounded = shallow_round</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>137</th><th>165</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>138</th><th>166</th><td class="l"><span>&nbsp; &nbsp; @rounded(tol)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=596#L155">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=601#L183">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>155</th><th>183</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>156</th><th>184</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>157</th><th> </th><td class="l"><span>def memoized<del>0</del>_round(tol=0, deep=False):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>185</th><td class="r"><span>def memoized<ins></ins>_round(tol=0, deep=False):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>158</th><th>186</th><td class="l"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                  </tr><tr>
+                          <th>159</th><th>187</th><td class="l"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=596#L166">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=601#L194">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>166</th><th>194</th><td class="l"><span>&nbsp; &nbsp; if deep: rounded = deep_round</span> </td>
+                  </tr><tr>
+                          <th>167</th><th>195</th><td class="l"><span>&nbsp; &nbsp; else: rounded = simple_round</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>196</th><td class="r"><ins>&nbsp; &nbsp;#else: rounded = shallow_round</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>168</th><th>197</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>169</th><th>198</th><td class="l"><span>&nbsp; &nbsp; @rounded(tol)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=596#L194">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=601#L223">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>194</th><th>223</th><td class="l"><span># - load an archive / update an existing archive</span> </td>
+                  </tr><tr>
+                          <th>195</th><th>224</th><td class="l"><span># - save some or all of memo to archive</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>196</th><th> </th><td class="l"><span>def memoized<del>0</del>_nopickle_archived():</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>225</th><td class="r"><span>def memoized<ins></ins>_nopickle_archived():</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>197</th><th>226</th><td class="l"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                  </tr><tr>
+                          <th>198</th><th>227</th><td class="l"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=596#L223">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=601#L252">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>223</th><th>252</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>224</th><th>253</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>225</th><th> </th><td class="l"><span>def memoized<del>0</del>_archived():</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>254</th><td class="r"><span>def memoized<ins></ins>_archived():</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>226</th><th>255</th><td class="l"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                  </tr><tr>
+                          <th>227</th><th>256</th><td class="l"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=596#L254">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/memoize.py?rev=601#L283">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>254</th><th>283</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>255</th><th>284</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>256</th><th> </th><td class="l"><span>def memoized0(f):</span> </td>
+                      </tr><tr>
+                        <th>257</th><th> </th><td class="l"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                      </tr><tr>
+                        <th>258</th><th> </th><td class="l"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                      </tr><tr>
+                        <th>259</th><th> </th><td class="l"><span>&nbsp; &nbsp; not re-evaluated.&nbsp; This may lead to memory issues, as memo is never cleared.</span> </td>
+                      </tr><tr>
+                        <th>260</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>261</th><th> </th><td class="l"><span>&nbsp; &nbsp; memo = {}</span> </td>
+                      </tr><tr>
+                        <th>262</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>263</th><th> </th><td class="l"><span>&nbsp; &nbsp; def func(*args, **kwds):</span> </td>
+                      </tr><tr>
+                        <th>264</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th>265</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#import cPickle as pickle</span> </td>
+                      </tr><tr>
+                        <th>266</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; import dill as pickle</span> </td>
+                      </tr><tr>
+                        <th>267</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; argstr = pickle.dumps((args, kwds))</span> </td>
+                      </tr><tr>
+                        <th>268</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not memo.has_key(argstr):</span> </td>
+                      </tr><tr>
+                        <th>269</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memo[argstr] = f(*args, **kwds)</span> </td>
+                      </tr><tr>
+                        <th>270</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return memo[argstr]</span> </td>
+                      </tr><tr>
+                        <th>271</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; except: #TypeError</span> </td>
+                      </tr><tr>
+                        <th>272</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return f(*args, **kwds)</span> </td>
+                      </tr><tr>
+                        <th>273</th><th> </th><td class="l"><span>&nbsp; &nbsp; func.memo = memo</span> </td>
+                      </tr><tr>
+                        <th>274</th><th> </th><td class="l"><span>&nbsp; &nbsp; return func</span> </td>
+                      </tr><tr>
+                        <th>275</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>276</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>277</th><th> </th><td class="l"><span>class memoized(object):</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>285</th><td class="r"><span>def memoized():</span> </td>
+                      </tr><tr>
+                        <th> </th><th>286</th><td class="r"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>287</th><td class="r"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                      </tr><tr>
+                        <th> </th><th>288</th><td class="r"><span>&nbsp; &nbsp; not re-evaluated.&nbsp; This may lead to memory issues, as memo is never cleared.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>289</th><td class="r"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>290</th><td class="r"><span>&nbsp; &nbsp; memo = {}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>291</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>292</th><td class="r"><span>&nbsp; &nbsp; def dec(f):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>293</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; def func(*args, **kwds):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>294</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>295</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#import cPickle as pickle</span> </td>
+                      </tr><tr>
+                        <th> </th><th>296</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; import dill as pickle</span> </td>
+                      </tr><tr>
+                        <th> </th><th>297</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; argstr = pickle.dumps((args, kwds))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>298</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not memo.has_key(argstr):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>299</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memo[argstr] = f(*args, **kwds)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>300</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return memo[argstr]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>301</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; except: #TypeError</span> </td>
+                      </tr><tr>
+                        <th> </th><th>302</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return f(*args, **kwds)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>303</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; func.memo = memo</span> </td>
+                      </tr><tr>
+                        <th> </th><th>304</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return func</span> </td>
+                      </tr><tr>
+                        <th> </th><th>305</th><td class="r"><span>&nbsp; &nbsp; return dec</span> </td>
+                      </tr><tr>
+                        <th> </th><th>306</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>307</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>308</th><td class="r"><span>class memoize(object):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>278</th><th>309</th><td class="l"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                  </tr><tr>
+                          <th>279</th><th>310</th><td class="l"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="branches/UQ/math/legacy/envelope/otm_hvi.html" title="Show the changeset 601 restricted to branches/UQ/math/legacy/envelope/otm_hvi.py">branches/UQ/math/legacy/envelope/otm_hvi.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 596">
+                    <a title="Show revision 596 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/otm_hvi.py?rev=596#L31">
+                      r596</a>
+                  </th>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/otm_hvi.py?rev=601#L31">
+                      r601</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>31</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return 1.5</span> </td>
+                  </tr><tr>
+                          <th>32</th><th>32</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>33</th><th> </th><td class="l"><span>from memoize import memoized<del>0</del>_nopickle_round as memoized</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>33</th><td class="r"><span>from memoize import memoized<ins></ins>_nopickle_round as memoized</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>34</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>35</th><th>35</th><td class="l"><span>@memoized(tol=3, deep=True)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="branches/UQ/math/legacy/envelope/otm_hvi_new.html" title="Show the changeset 601 restricted to branches/UQ/math/legacy/envelope/otm_hvi_new.py">branches/UQ/math/legacy/envelope/otm_hvi_new.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 596">
+                    <a title="Show revision 596 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/otm_hvi_new.py?rev=596#L31">
+                      r596</a>
+                  </th>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/otm_hvi_new.py?rev=601#L31">
+                      r601</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>31</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return 1.5</span> </td>
+                  </tr><tr>
+                          <th>32</th><th>32</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>33</th><th> </th><td class="l"><span>from memoize import memoized<del>0</del>_nopickle_round as memoized</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>33</th><td class="r"><span>from memoize import memoized<ins></ins>_nopickle_round as memoized</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>34</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>35</th><th>35</th><td class="l"><span>@memoized(tol=3, deep=True)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="branches/UQ/math/legacy/envelope/sausage.html" title="Show the changeset 601 restricted to branches/UQ/math/legacy/envelope/sausage.py">branches/UQ/math/legacy/envelope/sausage.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 596">
+                    <a title="Show revision 596 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/sausage.py?rev=596#L101">
+                      r596</a>
+                  </th>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/legacy/envelope/sausage.py?rev=601#L101">
+                      r601</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>101</th><th>101</th><td class="l"><span>&nbsp; return runs.tolist()</span> </td>
+                  </tr><tr>
+                          <th>102</th><th>102</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>103</th><th> </th><td class="l"><span>from memoize import memoized<del>0</del>_nopickle_round as memoized</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>103</th><td class="r"><span>from memoize import memoized<ins></ins>_nopickle_round as memoized</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>104</th><th>104</th><td class="l"><span># vectorize 'sausage_bounds' to find min/max for every evaluation point</span> </td>
+                  </tr><tr>
+                          <th>105</th><th>105</th><td class="l"><span>@memoized(tol=3, deep=True)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="branches/decorate/memoize.html" title="Show the changeset 601 restricted to branches/decorate/memoize.py">branches/decorate/memoize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 597">
+                    <a title="Show revision 597 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/memoize.py?rev=597#L150">
+                      r597</a>
+                  </th>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/memoize.py?rev=601#L150">
+                      r601</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>150</th><th>150</th><td class="l"><span>#FIXME: memoize*_round fails when decorating a class method</span> </td>
+                  </tr><tr>
+                          <th>151</th><th>151</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>152</th><th> </th><td class="l"><span>#FIXME: resolve signature difference...&nbsp; @memoized versus @memoized()</span> </td>
+                      </tr><tr>
+                        <th>153</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>154</th><th> </th><td class="l"><span>def memoized0_nopickle_round(tol=0, deep=False):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>152</th><td class="r"><span>def memoized_nopickle_round(tol=0, deep=False):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>155</th><th>153</th><td class="l"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                  </tr><tr>
+                          <th>156</th><th>154</th><td class="l"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/memoize.py?rev=597#L185">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/memoize.py?rev=601#L183">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>185</th><th>183</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>186</th><th>184</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>187</th><th> </th><td class="l"><span>def memoized<del>0</del>_round(tol=0, deep=False):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>185</th><td class="r"><span>def memoized<ins></ins>_round(tol=0, deep=False):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>188</th><th>186</th><td class="l"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                  </tr><tr>
+                          <th>189</th><th>187</th><td class="l"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/memoize.py?rev=597#L225">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/memoize.py?rev=601#L223">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>225</th><th>223</th><td class="l"><span># - load an archive / update an existing archive</span> </td>
+                  </tr><tr>
+                          <th>226</th><th>224</th><td class="l"><span># - save some or all of memo to archive</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>227</th><th> </th><td class="l"><span>def memoized<del>0</del>_nopickle_archived():</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>225</th><td class="r"><span>def memoized<ins></ins>_nopickle_archived():</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>228</th><th>226</th><td class="l"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                  </tr><tr>
+                          <th>229</th><th>227</th><td class="l"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/memoize.py?rev=597#L254">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/memoize.py?rev=601#L252">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>254</th><th>252</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>255</th><th>253</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>256</th><th> </th><td class="l"><span>def memoized<del>0</del>_archived():</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>254</th><td class="r"><span>def memoized<ins></ins>_archived():</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>257</th><th>255</th><td class="l"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                  </tr><tr>
+                          <th>258</th><th>256</th><td class="l"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/memoize.py?rev=597#L285">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/memoize.py?rev=601#L283">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>285</th><th>283</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>286</th><th>284</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>287</th><th> </th><td class="l"><span>def memoized0(f):</span> </td>
+                      </tr><tr>
+                        <th>288</th><th> </th><td class="l"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                      </tr><tr>
+                        <th>289</th><th> </th><td class="l"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                      </tr><tr>
+                        <th>290</th><th> </th><td class="l"><span>&nbsp; &nbsp; not re-evaluated.&nbsp; This may lead to memory issues, as memo is never cleared.</span> </td>
+                      </tr><tr>
+                        <th>291</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>292</th><th> </th><td class="l"><span>&nbsp; &nbsp; memo = {}</span> </td>
+                      </tr><tr>
+                        <th>293</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>294</th><th> </th><td class="l"><span>&nbsp; &nbsp; def func(*args, **kwds):</span> </td>
+                      </tr><tr>
+                        <th>295</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th>296</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#import cPickle as pickle</span> </td>
+                      </tr><tr>
+                        <th>297</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; import dill as pickle</span> </td>
+                      </tr><tr>
+                        <th>298</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; argstr = pickle.dumps((args, kwds))</span> </td>
+                      </tr><tr>
+                        <th>299</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not memo.has_key(argstr):</span> </td>
+                      </tr><tr>
+                        <th>300</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memo[argstr] = f(*args, **kwds)</span> </td>
+                      </tr><tr>
+                        <th>301</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return memo[argstr]</span> </td>
+                      </tr><tr>
+                        <th>302</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; except: #TypeError</span> </td>
+                      </tr><tr>
+                        <th>303</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return f(*args, **kwds)</span> </td>
+                      </tr><tr>
+                        <th>304</th><th> </th><td class="l"><span>&nbsp; &nbsp; func.memo = memo</span> </td>
+                      </tr><tr>
+                        <th>305</th><th> </th><td class="l"><span>&nbsp; &nbsp; return func</span> </td>
+                      </tr><tr>
+                        <th>306</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>307</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>308</th><th> </th><td class="l"><span>class memoized(object):</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>285</th><td class="r"><span>def memoized():</span> </td>
+                      </tr><tr>
+                        <th> </th><th>286</th><td class="r"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>287</th><td class="r"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                      </tr><tr>
+                        <th> </th><th>288</th><td class="r"><span>&nbsp; &nbsp; not re-evaluated.&nbsp; This may lead to memory issues, as memo is never cleared.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>289</th><td class="r"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>290</th><td class="r"><span>&nbsp; &nbsp; memo = {}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>291</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>292</th><td class="r"><span>&nbsp; &nbsp; def dec(f):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>293</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; def func(*args, **kwds):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>294</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>295</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#import cPickle as pickle</span> </td>
+                      </tr><tr>
+                        <th> </th><th>296</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; import dill as pickle</span> </td>
+                      </tr><tr>
+                        <th> </th><th>297</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; argstr = pickle.dumps((args, kwds))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>298</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not memo.has_key(argstr):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>299</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; memo[argstr] = f(*args, **kwds)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>300</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return memo[argstr]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>301</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; except: #TypeError</span> </td>
+                      </tr><tr>
+                        <th> </th><th>302</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return f(*args, **kwds)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>303</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; func.memo = memo</span> </td>
+                      </tr><tr>
+                        <th> </th><th>304</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return func</span> </td>
+                      </tr><tr>
+                        <th> </th><th>305</th><td class="r"><span>&nbsp; &nbsp; return dec</span> </td>
+                      </tr><tr>
+                        <th> </th><th>306</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>307</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>308</th><td class="r"><span>class memoize(object):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>309</th><th>309</th><td class="l"><span>&nbsp; &nbsp; """Decorator that memoizes a function's return value each time it is called.</span> </td>
+                  </tr><tr>
+                          <th>310</th><th>310</th><td class="l"><span>&nbsp; &nbsp; If called later with the same arguments, the memoized value is returned, and</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="branches/decorate/surrogate.html" title="Show the changeset 601 restricted to branches/decorate/surrogate.py">branches/decorate/surrogate.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 597">
+                    <a title="Show revision 597 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/surrogate.py?rev=597#L20">
+                      r597</a>
+                  </th>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/surrogate.py?rev=601#L20">
+                      r601</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>20</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>21</th><th>21</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>22</th><th> </th><td class="l"><span>from memoize import memoized<del>0_round, memoized0</del>_nopickle_round</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>from memoize import memoized<del>0_archived, memoized0</del>_nopickle_archived</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>#@memoized<del>0</del>_round(0, deep=True)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # slower, but more robust</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>#@memoized<del>0</del>_nopickle_round(0, deep=True)</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>#@memoized<del>0</del>_archived()&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# slower, but more robust</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>@memoized<del>0</del>_nopickle_archived()</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>22</th><td class="r"><span>from memoize import memoized<ins>_round, memoized</ins>_nopickle_round</span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span>from memoize import memoized<ins>_archived, memoized</ins>_nopickle_archived</span> </td>
+                      </tr><tr>
+                        <th> </th><th>24</th><td class="r"><span>#@memoized<ins></ins>_round(0, deep=True)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # slower, but more robust</span> </td>
+                      </tr><tr>
+                        <th> </th><th>25</th><td class="r"><span>#@memoized<ins></ins>_nopickle_round(0, deep=True)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>26</th><td class="r"><span>#@memoized<ins></ins>_archived()&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# slower, but more robust</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>27</th><td class="r"><span>@memoized<ins></ins>_nopickle_archived()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>28</th><td class="l"><span>def marc_surr(x):</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>29</th><td class="l"><span>&nbsp; """calculate perforation area using a tanh-based model surrogate</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file8">
+          <a href="branches/decorate/test_cached_memoize.html" title="Show the changeset 601 restricted to branches/decorate/test_cached_memoize.py">branches/decorate/test_cached_memoize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 590">
+                    <a title="Show revision 590 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_cached_memoize.py?rev=590#L1">
+                      r590</a>
+                  </th>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_cached_memoize.py?rev=601#L1">
+                      r601</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="mod">
+                      <tr class="first">
+                        <th>1</th><th> </th><td class="l"><span>from memoize import memoized<del>0</del>_nopickle_archived as memoized</span> </td>
+                      </tr><tr>
+                        <th>2</th><th> </th><td class="l"><span>#from memoize import memoized<del>0</del>_archived as memoized</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>1</th><td class="r"><span>from memoize import memoized<ins></ins>_nopickle_archived as memoized</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>2</th><td class="r"><span>#from memoize import memoized<ins></ins>_archived as memoized</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span>from timer import timed</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>5</th><th>5</th><td class="l"><span># here caching saves time in a recursive function...</span> </td>
+                  </tr><tr>
+                          <th>6</th><th>6</th><td class="l"><span>@memoized()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>7</th><th> </th><td class="l"><span>@timed<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>7</th><td class="r"><span>@timed<ins>()</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>8</th><th>8</th><td class="l"><span>def fibonacci(n):</span> </td>
+                  </tr><tr>
+                          <th>9</th><th>9</th><td class="l"><span>&nbsp; &nbsp; "Return the nth fibonacci number."</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file9">
+          <a href="branches/decorate/test_memoize.html" title="Show the changeset 601 restricted to branches/decorate/test_memoize.py">branches/decorate/test_memoize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 595">
+                    <a title="Show revision 595 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_memoize.py?rev=595#L21">
+                      r595</a>
+                  </th>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_memoize.py?rev=601#L21">
+                      r601</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>21</th><th>21</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>22</th><th>22</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>23</th><th> </th><td class="l"><span>#from memoize import memoized<del>0</del>_nopickle_round as memoized</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>#from memoize import memoized<del>0</del>_round as memoized</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span><del>#from memoize import memoized0</del> as memoized</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>from memoize import memoized</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>23</th><td class="r"><span>#from memoize import memoized<ins></ins>_nopickle_round as memoized</span> </td>
+                      </tr><tr>
+                        <th> </th><th>24</th><td class="r"><span>#from memoize import memoized<ins></ins>_round as memoized</span> </td>
+                      </tr><tr>
+                        <th> </th><th>25</th><td class="r"><span><ins>from memoize import memoized</ins> as memoized</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>26</th><td class="r"><span>#from memoize import memoize</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>27</th><th>27</th><td class="l"><span>from timer import timed</span> </td>
+                  </tr><tr>
+                          <th>28</th><th>28</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_memoize.py?rev=595#L31">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_memoize.py?rev=601#L31">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>31</th><td class="l"><span>&nbsp; &nbsp; """A simple class with a memoized method"""</span> </td>
+                  </tr><tr>
+                          <th>32</th><th>32</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; &nbsp; @memoized<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>33</th><td class="r"><span>&nbsp; &nbsp; @memoized<ins>()</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>34</th><td class="l"><span>&nbsp; &nbsp; def eggs(self, *args, **kwds):</span> </td>
+                  </tr><tr>
+                          <th>35</th><th>35</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; print 'new:', args, kwds</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_memoize.py?rev=595#L50">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_memoize.py?rev=601#L50">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>50</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>51</th><th>51</th><td class="l"><span># here caching saves time in a recursive function...</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>52</th><th> </th><td class="l"><span>@memoized<del></del></span> </td>
+                      </tr><tr>
+                        <th>53</th><th> </th><td class="l"><span>@timed<del></del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>52</th><td class="r"><span>@memoized<ins>()</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>53</th><td class="r"><span>@timed<ins>()</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>54</th><td class="l"><span>def fibonacci(n):</span> </td>
+                  </tr><tr>
+                          <th>55</th><th>55</th><td class="l"><span>&nbsp; &nbsp; "Return the nth fibonacci number."</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_memoize.py?rev=595#L64">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_memoize.py?rev=601#L64">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>64</th><th>64</th><td class="l"><span>print '=' * 30</span> </td>
+                  </tr><tr>
+                          <th>65</th><th>65</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>66</th><th> </th><td class="l"><span>from memoize import memoized<del>0</del>_round</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>66</th><td class="r"><span>from memoize import memoized<ins></ins>_round</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>67</th><th>67</th><td class="l"><span>from numpy import sum, asarray</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>68</th><th> </th><td class="l"><span>@memoized<del>0</del>_round(3)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>68</th><td class="r"><span>@memoized<ins></ins>_round(3)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>69</th><th>69</th><td class="l"><span>def add(*args):</span> </td>
+                  </tr><tr>
+                          <th>70</th><th>70</th><td class="l"><span>&nbsp; &nbsp; print 'new:', args</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_memoize.py?rev=595#L88">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_memoize.py?rev=601#L88">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>88</th><th>88</th><td class="l"><span>&nbsp; &nbsp; return sum(x**2 - y**2)</span> </td>
+                  </tr><tr>
+                          <th>89</th><th>89</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>90</th><th> </th><td class="l"><span>cost1 = memoized<del>0</del>_round(1)(cost)</span> </td>
+                      </tr><tr>
+                        <th>91</th><th> </th><td class="l"><span>cost0 = memoized<del>0</del>_round(0)(cost)</span> </td>
+                      </tr><tr>
+                        <th>92</th><th> </th><td class="l"><span>costD = memoized<del>0</del>_round(0, deep=True)(cost)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>90</th><td class="r"><span>cost1 = memoized<ins></ins>_round(1)(cost)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>91</th><td class="r"><span>cost0 = memoized<ins></ins>_round(0)(cost)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>92</th><td class="r"><span>costD = memoized<ins></ins>_round(0, deep=True)(cost)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>93</th><th>93</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>94</th><th>94</th><td class="l"><span>print "rounding to one decimals..."</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file10">
+          <a href="branches/decorate/test_timer.html" title="Show the changeset 601 restricted to branches/decorate/test_timer.py">branches/decorate/test_timer.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 532">
+                    <a title="Show revision 532 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_timer.py?rev=532#L11">
+                      r532</a>
+                  </th>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_timer.py?rev=601#L11">
+                      r601</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>11</th><th>11</th><td class="l"><span>from timer import timed</span> </td>
+                  </tr><tr>
+                          <th>12</th><th>12</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>13</th><th> </th><td class="l"><span>@timed<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>13</th><td class="r"><span>@timed<ins>(verbose=False)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>14</th><th>14</th><td class="l"><span>def square_me(x):</span> </td>
+                  </tr><tr>
+                          <th>15</th><th>15</th><td class="l"><span>&nbsp; &nbsp; return [i**2 for i in x]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_timer.py?rev=532#L17">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/test_timer.py?rev=601#L17">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>17</th><th>17</th><td class="l"><span># time the function call using the @timed function</span> </td>
+                  </tr><tr>
+                          <th>18</th><th>18</th><td class="l"><span>result = square_me(big_array)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>19</th><td class="r"><ins>print "Timed: %s" % square_me.time()</ins> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file11">
+          <a href="branches/decorate/timer.html" title="Show the changeset 601 restricted to branches/decorate/timer.py">branches/decorate/timer.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 579">
+                    <a title="Show revision 579 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/timer.py?rev=579#L1">
+                      r579</a>
+                  </th>
+                  <th title="Revision 601">
+                    <a title="Show revision 601 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/decorate/timer.py?rev=601#L1">
+                      r601</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>2</th><th> </th><td class="l"><span>def timed(f):</span> </td>
+                      </tr><tr>
+                        <th>3</th><th> </th><td class="l"><span>&nbsp; &nbsp; """decorator for timing a function"""</span> </td>
+                      </tr><tr>
+                        <th>4</th><th> </th><td class="l"><span>&nbsp; &nbsp; def func(*args, **kwds):</span> </td>
+                      </tr><tr>
+                        <th>5</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from time import time</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; t = time()</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; res = f(*args, **kwds)</span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; print "Timed: %s" % (time() - t) #XXX: write to a monitor instead ?</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return res</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span>&nbsp; &nbsp; return func</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>2</th><td class="r"><span>def timed(verbose=True):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>3</th><td class="r"><span>&nbsp; &nbsp; def dec(f):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>4</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """decorator for timing a function"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>5</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from time import time as now</span> </td>
+                      </tr><tr>
+                        <th> </th><th>6</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; __time = [True, None]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not verbose: __time[0] = False</span> </td>
+                      </tr><tr>
+                        <th> </th><th>8</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; def time(stamp=False):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>9</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not stamp: return __time[-1]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>10</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; import datetime</span> </td>
+                      </tr><tr>
+                        <th> </th><th>11</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return datetime.timedelta(seconds=__time[-1])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>12</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; def __verbose(on=True):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>13</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; __time[0] = bool(on)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>14</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; def func(*args, **kwds):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>15</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; t = now()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>16</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; res = f(*args, **kwds)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>17</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; __time[-1] = now() - t</span> </td>
+                      </tr><tr>
+                        <th> </th><th>18</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if __time[0]:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>19</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Timed: %s" % __time[-1]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return res</span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; func.time = time</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; func.verbose = __verbose</span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return func</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>24</th><td class="r"><span>&nbsp; &nbsp; return dec</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>11</th><th>25</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>12</th><th>26</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/601/branches?format=diff&amp;new=601" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/601/branches?format=zip&amp;new=601" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/601/branches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:17:28 GMT -->
+</html>

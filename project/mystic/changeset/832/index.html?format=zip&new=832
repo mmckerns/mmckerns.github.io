@@ -1,0 +1,362 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/832/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:22:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 832 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="prev" href="../831.html" title="Changeset 831" />
+        <link rel="last" href="../862.html" title="Changeset 862" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/832/?format=diff&amp;new=832" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/832/?format=zip&amp;new=832" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../833.html" title="Changeset 833" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="../1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+        <link rel="icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://trac.mystic.cacr.caltech.edu/"><img src="http://www.cacr.caltech.edu/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://trac.mystic.cacr.caltech.edu/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../831.html" title="Changeset 831">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="../833.html" title="Changeset 833">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 832</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             09/30/15 23:53:28
+             (<a class="timeline" href="http://trac.mystic.cacr.caltech.edu/project/mystic/timeline?from=2015-09-30T23%3A53%3A28-07%3A00&amp;precision=second" title="2015-09-30T23:53:28-07:00 in Timeline">8 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+handle corner case of solve with '0*xN'; add additional print for verbose<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic?rev=832">mystic/mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>2 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=832">
+              _symbolic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/symbolic.py?rev=832">
+              symbolic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">2 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="mystic/mystic/_symbolic.html" title="Show the changeset 832 restricted to mystic/mystic/_symbolic.py">mystic/mystic/_symbolic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 831">
+                    <a title="Show revision 831 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=831#L391">
+                      r831</a>
+                  </th>
+                  <th title="Revision 832">
+                    <a title="Show revision 832 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=832#L391">
+                      r832</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>391</th><th>391</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>392</th><th>392</th><td class="l"><span>&nbsp; &nbsp; if not permute:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>393</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return None if not solns[:1] else solns[0]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>393</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; sol = None if not solns[:1] else solns[0]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>394</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return '' if sol and not sol.strip() else sol</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>394</th><th>395</th><td class="l"><span>&nbsp; &nbsp; return tuple(solns)</span> </td>
+                  </tr><tr>
+                          <th>395</th><th>396</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=831#L641">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/_symbolic.py?rev=832#L642">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>641</th><th>642</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; soln = _solve_single(constraints, variables=variables, \</span> </td>
+                  </tr><tr>
+                          <th>642</th><th>643</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;target=target, **kwds)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>644</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # for corner case where has something like: '0*xN'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>645</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not soln or not soln.strip():</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>646</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if target in [None, False]: target = []</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>647</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif isinstance(target, str): target = target.split(',')</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>648</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else: target = list(target)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>649</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; soln = _solve_single(constraints, variables=variables, \</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>650</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;target=target[1:], **kwds)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>643</th><th>651</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                  </tr><tr>
+                          <th>644</th><th>652</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; soln = _solve_linear(constraints, variables=variables, \</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="mystic/mystic/symbolic.html" title="Show the changeset 832 restricted to mystic/mystic/symbolic.py">mystic/mystic/symbolic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 831">
+                    <a title="Show revision 831 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/symbolic.py?rev=831#L176">
+                      r831</a>
+                  </th>
+                  <th title="Revision 832">
+                    <a title="Show revision 832 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/symbolic.py?rev=832#L176">
+                      r832</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>176</th><th>176</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; res = solve(eqn.replace(cmp,'='), target=target, **kwds)</span> </td>
+                  </tr><tr>
+                          <th>177</th><th>177</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; _eqn = res.replace('=',cmp)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>178</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if verbose: print <del>_eqn</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>178</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if verbose: print <ins>'in: %s\nout: %s' % (eqn, _eqn)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>179</th><th>179</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not cmp.count('&lt;')+cmp.count('&gt;'):</span> </td>
+                  </tr><tr>
+                          <th>180</th><th>180</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return _eqn </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/symbolic.py?rev=831#L182">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/symbolic.py?rev=832#L182">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>182</th><th>182</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; locals = kwds['locals'] if 'locals' in kwds else None</span> </td>
+                  </tr><tr>
+                          <th>183</th><th>183</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if locals is None: locals = {}</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>184</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; locals.update(dict((var,rand()) for var in get_variables(res, vars)))</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>184</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; locals.update(dict((var,rand()) for var in get_variables(eqn, vars)))</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>185</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if verbose: print locals</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>185</th><th>186</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; locals_ = _locals.copy()</span> </td>
+                  </tr><tr>
+                          <th>186</th><th>187</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; locals_.update(locals) #XXX: allow this?</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/832/?format=diff&amp;new=832" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/832/?format=zip&amp;new=832" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://www.cacr.caltech.edu/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://www.cacr.caltech.edu/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://www.cacr.caltech.edu/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://www.cacr.caltech.edu/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://www.cacr.caltech.edu/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://www.cacr.caltech.edu/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://www.cacr.caltech.edu/projects/mystic">http://www.cacr.caltech.edu/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/832/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:22:59 GMT -->
+</html>

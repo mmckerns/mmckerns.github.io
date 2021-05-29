@@ -1,0 +1,583 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/854/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:21:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 854 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="prev" href="../853.html" title="Changeset 853" />
+        <link rel="last" href="../862.html" title="Changeset 862" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/854/?format=diff&amp;new=854" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/854/?format=zip&amp;new=854" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../855.html" title="Changeset 855" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="../1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+        <link rel="icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://trac.mystic.cacr.caltech.edu/"><img src="http://www.cacr.caltech.edu/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://trac.mystic.cacr.caltech.edu/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../853.html" title="Changeset 853">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="../855.html" title="Changeset 855">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 854</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             12/31/15 05:13:28
+             (<a class="timeline" href="http://trac.mystic.cacr.caltech.edu/project/mystic/timeline?from=2015-12-31T05%3A13%3A28-08%3A00&amp;precision=second" title="2015-12-31T05:13:28-08:00 in Timeline">5 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+minor tweaks; renamed penalize coupler to additive, renamed combine to combined<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic?rev=854">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>3 edited</dd>
+              <dt class="mv"></dt><dd>1 moved</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples2/g01_alt2.py?rev=854">
+              examples2/g01_alt2.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/constraints.py?rev=854">
+              mystic/constraints.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/coupler.py?rev=854">
+              mystic/coupler.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">4 diffs</a>)
+            </li><li>
+          <div class="mv"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_combined.py?rev=854">
+              tests/test_combined.py
+            </a>
+          <span class="comment">(moved)</span>
+            <small><em>(moved from <a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_combine.py?rev=853" title="Show original file (revision 853)">
+                mystic/tests/test_combine.py</a>)</em></small>
+              (<a title="Show differences" href="#file3">3 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="mystic/examples2/g01_alt2.html" title="Show the changeset 854 restricted to mystic/examples2/g01_alt2.py">mystic/examples2/g01_alt2.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 853">
+                    <a title="Show revision 853 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples2/g01_alt2.py?rev=853#L19">
+                      r853</a>
+                  </th>
+                  <th title="Revision 854">
+                    <a title="Show revision 854 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples2/g01_alt2.py?rev=854#L19">
+                      r854</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>19</th><th>19</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; penalty6, penalty7, penalty8, penalty9</span> </td>
+                  </tr><tr>
+                          <th>20</th><th>20</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>21</th><th> </th><td class="l"><span>from mystic.constraints import as_constraint, combine<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>21</th><td class="r"><span>from mystic.constraints import as_constraint, combine<ins>d</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>22</th><td class="l"><span>from mystic.penalty import linear_inequality</span> </td>
+                  </tr><tr>
+                          <th>23</th><th>23</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples2/g01_alt2.py?rev=853#L25">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/examples2/g01_alt2.py?rev=854#L25">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>25</th><th>25</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;penalty6,penalty7,penalty8,penalty9)</span> </td>
+                  </tr><tr>
+                          <th>26</th><th>26</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>27</th><th> </th><td class="l"><span>penalty = combine<del></del>(*[linear_inequality(pi)(lambda x:0.) for pi in penalties])</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>27</th><td class="r"><span>penalty = combine<ins>d</ins>(*[linear_inequality(pi)(lambda x:0.) for pi in penalties])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>28</th><td class="l"><span>solver = as_constraint(penalty)</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>29</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="mystic/mystic/constraints.html" title="Show the changeset 854 restricted to mystic/mystic/constraints.py">mystic/mystic/constraints.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 853">
+                    <a title="Show revision 853 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/constraints.py?rev=853#L12">
+                      r853</a>
+                  </th>
+                  <th title="Revision 854">
+                    <a title="Show revision 854 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/constraints.py?rev=854#L12">
+                      r854</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>12</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'with_mean','with_variance','with_std','with_spread','normalized',</span> </td>
+                  </tr><tr>
+                          <th>13</th><th>13</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'issolution','solve','discrete','integers','near_integers',</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>14</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'unique','has_unique','impose_unique', 'combine<del></del>']</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>14</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'unique','has_unique','impose_unique', 'combine<ins>d</ins>']</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>15</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>16</th><th>16</th><td class="l"><span>from mystic.math.measures import *</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/constraints.py?rev=853#L428">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/constraints.py?rev=854#L428">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>428</th><th>428</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>429</th><th>429</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>430</th><th> </th><td class="l"><span>def combine<del></del>(*penalties, **settings): #XXX: is this in the right module?</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>430</th><td class="r"><span>def combine<ins>d</ins>(*penalties, **settings): #XXX: is this in the right module?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>431</th><th>431</th><td class="l"><span>&nbsp; &nbsp; """combine several penalties into a single penalty function</span> </td>
+                  </tr><tr>
+                          <th>432</th><th>432</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="mystic/mystic/coupler.html" title="Show the changeset 854 restricted to mystic/mystic/coupler.py">mystic/mystic/coupler.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/coupler.py?rev=776#L116">
+                      r776</a>
+                  </th>
+                  <th title="Revision 854">
+                    <a title="Show revision 854 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/coupler.py?rev=854#L116">
+                      r854</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>116</th><th>116</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>117</th><th>117</th><td class="l"><span>####################################################</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>118</th><th> </th><td class="l"><span>def <del>penaliz</del>e_proxy(penalty=lambda x:0.0, args=None, kwds=None):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>118</th><td class="r"><span>def <ins>additiv</ins>e_proxy(penalty=lambda x:0.0, args=None, kwds=None):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>119</th><th>119</th><td class="l"><span>&nbsp; &nbsp; """penalize a function with another function: y = f(x) to y' = f(x) + p(x)</span> </td>
+                  </tr><tr>
+                          <th>120</th><th>120</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/coupler.py?rev=776#L134">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/coupler.py?rev=854#L134">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>134</th><th>134</th><td class="l"><span>&nbsp; &nbsp; return dec</span> </td>
+                  </tr><tr>
+                          <th>135</th><th>135</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>136</th><th> </th><td class="l"><span>def <del>penaliz</del>e(penalty=lambda x:0.0, args=None, kwds=None):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>136</th><td class="r"><span>def <ins>additiv</ins>e(penalty=lambda x:0.0, args=None, kwds=None):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>137</th><th>137</th><td class="l"><span>&nbsp; &nbsp; """penalize a function with another function: y = f(x) to y' = f(x) + p(x)</span> </td>
+                  </tr><tr>
+                          <th>138</th><th>138</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/coupler.py?rev=776#L146">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/coupler.py?rev=854#L146">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>146</th><th>146</th><td class="l"><span>&nbsp; &nbsp; ... </span> </td>
+                  </tr><tr>
+                          <th>147</th><th>147</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; # equivalent to: (x+1) + (x**2) </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>148</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; @<del>penaliz</del>e(squared)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>148</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; @<ins>additiv</ins>e(squared)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>149</th><th>149</th><td class="l"><span>&nbsp; &nbsp; ... def constrain(x):</span> </td>
+                  </tr><tr>
+                          <th>150</th><th>150</th><td class="l"><span>&nbsp; &nbsp; ...&nbsp; &nbsp;return x+1</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/coupler.py?rev=776#L163">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/coupler.py?rev=854#L163">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>163</th><th>163</th><td class="l"><span>&nbsp; &nbsp; return dec</span> </td>
+                  </tr><tr>
+                          <th>164</th><th>164</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>165</th><th> </th><td class="l"><span>#XXX: can do multiple @<del>penaliz</del>e; but better is compound penalty with And,Or,..?</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>165</th><td class="r"><span>#XXX: can do multiple @<ins>additiv</ins>e; but better is compound penalty with And,Or,..?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>166</th><th>166</th><td class="l"><span>#XXX: create a counter for n += 1 ?</span> </td>
+                  </tr><tr>
+                          <th>167</th><th>167</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="mystic/tests/test_combined.html" title="Show the changeset 854 restricted to mystic/tests/test_combined.py">mystic/tests/test_combined.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 853">
+                    <a title="Show revision 853 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_combine.py?rev=853#L3">
+                      r853</a>
+                  </th>
+                  <th title="Revision 854">
+                    <a title="Show revision 854 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_combined.py?rev=854#L3">
+                      r854</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span>'''</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>from mystic.constraints import combine<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span>from mystic.constraints import combine<ins>d</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span>&nbsp;</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_combine.py?rev=853#L28">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_combined.py?rev=854#L28">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>28</th><td class="l"><span>&nbsp; &nbsp; p = (p1,p2,p3)</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>29</th><td class="l"><span>&nbsp; &nbsp; p = [ptype(pi)(lambda x:0.) for pi in p]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp; penalty = combine<del></del>(*p, k=k)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>30</th><td class="r"><span>&nbsp; &nbsp; penalty = combine<ins>d</ins>(*p, k=k)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>31</th><td class="l"><span>&nbsp; &nbsp; constraint = as_constraint(penalty, solver=solver)</span> </td>
+                  </tr><tr>
+                          <th>32</th><th>32</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_combine.py?rev=853#L59">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_combined.py?rev=854#L59">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>59</th><th>59</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>60</th><th>60</th><td class="l"><span>&nbsp; &nbsp; p = [as_penalty(ci, ptype) for ci in c]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>61</th><th> </th><td class="l"><span>&nbsp; &nbsp; penalty = combine<del></del>(*p, k=k)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>61</th><td class="r"><span>&nbsp; &nbsp; penalty = combine<ins>d</ins>(*p, k=k)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>62</th><th>62</th><td class="l"><span>&nbsp; &nbsp; constraint = as_constraint(penalty, solver=solver)</span> </td>
+                  </tr><tr>
+                          <th>63</th><th>63</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/854/?format=diff&amp;new=854" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/854/?format=zip&amp;new=854" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://www.cacr.caltech.edu/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://www.cacr.caltech.edu/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://www.cacr.caltech.edu/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://www.cacr.caltech.edu/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://www.cacr.caltech.edu/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://www.cacr.caltech.edu/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://www.cacr.caltech.edu/projects/mystic">http://www.cacr.caltech.edu/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/854/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:21:49 GMT -->
+</html>

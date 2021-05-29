@@ -1,0 +1,1860 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 01:07:42 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      mystic/mystic/scipy_optimize.py (log) – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../search.html" />
+        <link rel="help" href="../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?format=rss&amp;limit=100&amp;mode=stop_on_copy" type="application/rss+xml" class="rss" title="RSS Feed" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?format=changelog&amp;limit=100&amp;mode=stop_on_copy" type="text/plain" title="ChangeLog" />
+        <link rel="up" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic?rev=862" title="Parent directory" />
+        <link rel="start" href="../../../wiki.html" />
+        <link rel="stylesheet" href="../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/browser.css" type="text/css" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../login.html">Login</a></li><li><a href="../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../about.html">About Trac</a></li><li class="last"><a href="../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../wiki.html">Wiki</a></li><li><a href="../../../timeline.html">Timeline</a></li><li><a href="../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../browser.html">Browse Source</a></li><li><a href="../../../query.html">View Tickets</a></li><li class="last"><a href="../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="../../../browser/mystic/mystic/scipy_optimize.html">View Latest Revision</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="log">
+      <h1>
+<a class="pathentry first" href="http://mmckerns.github.io/project/mystic/browser?rev=862" title="Go to repository root">source:</a>
+<a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=862" title="View mystic">mystic</a><span class="pathentry sep">/</span><a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic?rev=862" title="View mystic">mystic</a><span class="pathentry sep">/</span><a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=862" title="View scipy_optimize.py">scipy_optimize.py</a>
+<span class="pathentry sep">@</span>
+  <a class="pathentry" href="../../../changeset/862.html" title="View changeset 862">862</a>
+<br style="clear: both" />
+</h1>
+      <form id="prefs" action="#" method="get">
+        <div>
+          <input type="hidden" name="action" value="stop_on_copy" />
+          <div class="choice">
+            <fieldset>
+              <legend>Revision Log Mode:</legend>
+              <label>
+                <input type="radio" id="stop_on_copy" name="mode" value="stop_on_copy" checked="checked" />
+                Stop on copy
+              </label>
+              <label>
+                <input type="radio" id="follow_copy" name="mode" value="follow_copy" />
+                Follow copies
+              </label>
+              <label>
+                <input type="radio" id="path_history" name="mode" value="path_history" />
+                Show only adds and deletes
+              </label>
+            </fieldset>
+          </div>
+          <label>
+              View log starting at
+              <input type="text" id="rev" name="rev" value="862" size="5" />
+            </label>
+            <label>
+              and back to
+              <input type="text" id="stop_rev" name="stop_rev" size="5" />
+            </label><br />
+          <label>
+              Show at most
+              <input type="text" id="limit" name="limit" value="100" size="3" maxlength="3" />
+              revisions per page.
+            </label><br />
+          <label>
+            <input type="checkbox" id="verbose" name="verbose" />
+            Show full log messages
+          </label>
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Update" />
+        </div>
+      </form>
+      <div class="diff">
+        <div class="legend" id="file-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+            <dt class="cp"></dt><dd>Copied or renamed</dd>
+          </dl>
+        </div>
+      </div>
+      <form class="printableform" action="http://mmckerns.github.io/project/mystic/changeset" method="get">
+        <div class="buttons">
+          <input type="hidden" name="reponame" />
+          <input type="submit" value="View changes" title="Diff from Old Revision to New Revision (as selected in the Diff column)" />
+        </div>
+        <table class="listing chglist">
+          <thead>
+            <tr>
+              <th class="diff" title="Old / New">Diff</th>
+              <th class="change"></th>
+              <th class="rev">Rev</th>
+              <th class="age">Age</th>
+              <th class="author">Author</th>
+              <th class="summary">Log Message</th>
+            </tr>
+          </thead>
+          <tbody>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="855@mystic/mystic/scipy_optimize.py" title="From [855]" />
+                    <input type="radio" name="new" value="855@mystic/mystic/scipy_optimize.py" checked="checked" title="To [855]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=855" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=855" title="Browse at revision 855">
+                        @855</a>
+                        <a class="chgset" href="../../../changeset/855/mystic/mystic/scipy_optimize.html" title="View changeset [855] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-01-01T19%3A05%3A11-08%3A00&amp;precision=second" title="2016-01-01T19:05:11-08:00 in Timeline">5 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        updated copyright to 2016
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="796@mystic/mystic/scipy_optimize.py" title="From [796]" />
+                    <input type="radio" name="new" value="796@mystic/mystic/scipy_optimize.py" title="To [796]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=796" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=796" title="Browse at revision 796">
+                        @796</a>
+                        <a class="chgset" href="../../../changeset/796/mystic/mystic/scipy_optimize.html" title="View changeset [796] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-15T05%3A29%3A06-07%3A00&amp;precision=second" title="2015-06-15T05:29:06-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: fmin_powell call cost in Finalize when energy_history != None and …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="795@mystic/mystic/scipy_optimize.py" title="From [795]" />
+                    <input type="radio" name="new" value="795@mystic/mystic/scipy_optimize.py" title="To [795]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=795" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=795" title="Browse at revision 795">
+                        @795</a>
+                        <a class="chgset" href="../../../changeset/795/mystic/mystic/scipy_optimize.html" title="View changeset [795] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-15T05%3A24%3A13-07%3A00&amp;precision=second" title="2015-06-15T05:24:13-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: Finalize for fmin_powell should call cost unless solver is live
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="794@mystic/mystic/scipy_optimize.py" title="From [794]" />
+                    <input type="radio" name="new" value="794@mystic/mystic/scipy_optimize.py" title="To [794]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=794" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=794" title="Browse at revision 794">
+                        @794</a>
+                        <a class="chgset" href="../../../changeset/794/mystic/mystic/scipy_optimize.html" title="View changeset [794] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-12T17%3A08%3A44-07%3A00&amp;precision=second" title="2015-06-12T17:08:44-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add _update_objective and _live, to queue state changes to cost, penalty, …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="792@mystic/mystic/scipy_optimize.py" title="From [792]" />
+                    <input type="radio" name="new" value="792@mystic/mystic/scipy_optimize.py" title="To [792]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=792" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=792" title="Browse at revision 792">
+                        @792</a>
+                        <a class="chgset" href="../../../changeset/792/mystic/mystic/scipy_optimize.html" title="View changeset [792] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-10T13%3A01%3A55-07%3A00&amp;precision=second" title="2015-06-10T13:01:55-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        for speed, use contains instead of get and has_key
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="791@mystic/mystic/scipy_optimize.py" title="From [791]" />
+                    <input type="radio" name="new" value="791@mystic/mystic/scipy_optimize.py" title="To [791]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=791" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=791" title="Browse at revision 791">
+                        @791</a>
+                        <a class="chgset" href="../../../changeset/791/mystic/mystic/scipy_optimize.html" title="View changeset [791] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-10T09%3A03%3A56-07%3A00&amp;precision=second" title="2015-06-10T09:03:56-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        use len(stepmon) more uniformly; fix _fcalls for DESolvers;
+generations …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="785@mystic/mystic/scipy_optimize.py" title="From [785]" />
+                    <input type="radio" name="new" value="785@mystic/mystic/scipy_optimize.py" title="To [785]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=785" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=785" title="Browse at revision 785">
+                        @785</a>
+                        <a class="chgset" href="../../../changeset/785/mystic/mystic/scipy_optimize.html" title="View changeset [785] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-02-19T20%3A39%3A03-08%3A00&amp;precision=second" title="2015-02-19T20:39:03-08:00 in Timeline">15 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        refactor Solve is Step while not Terminated; radius, xtol, strategy are …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="784@mystic/mystic/scipy_optimize.py" title="From [784]" />
+                    <input type="radio" name="new" value="784@mystic/mystic/scipy_optimize.py" title="To [784]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=784" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784" title="Browse at revision 784">
+                        @784</a>
+                        <a class="chgset" href="../../../changeset/784/mystic/mystic/scipy_optimize.html" title="View changeset [784] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-02-18T18%3A10%3A28-08%3A00&amp;precision=second" title="2015-02-18T18:10:28-08:00 in Timeline">15 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added <a class="missing wiki">SolverInterrupt?</a> as termination; pull _EARLYEXIT into …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="782@mystic/mystic/scipy_optimize.py" title="From [782]" />
+                    <input type="radio" name="new" value="782@mystic/mystic/scipy_optimize.py" title="To [782]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=782" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=782" title="Browse at revision 782">
+                        @782</a>
+                        <a class="chgset" href="../../../changeset/782/mystic/mystic/scipy_optimize.html" title="View changeset [782] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-02-17T10%3A30%3A50-08%3A00&amp;precision=second" title="2015-02-17T10:30:50-08:00 in Timeline">15 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved _SetEvaluationLimits inside <a class="missing wiki">CheckTermination?</a>;
+moved _termination and …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="781@mystic/mystic/scipy_optimize.py" title="From [781]" />
+                    <input type="radio" name="new" value="781@mystic/mystic/scipy_optimize.py" title="To [781]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=781" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=781" title="Browse at revision 781">
+                        @781</a>
+                        <a class="chgset" href="../../../changeset/781/mystic/mystic/scipy_optimize.html" title="View changeset [781] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-02-16T16%3A43%3A28-08%3A00&amp;precision=second" title="2015-02-16T16:43:28-08:00 in Timeline">15 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        rename _bootstrap_decorate to _bootstrap_objective;
+fix: diffev solver …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="776@mystic/mystic/scipy_optimize.py" title="From [776]" />
+                    <input type="radio" name="new" value="776@mystic/mystic/scipy_optimize.py" title="To [776]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=776" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=776" title="Browse at revision 776">
+                        @776</a>
+                        <a class="chgset" href="../../../changeset/776/mystic/mystic/scipy_optimize.html" title="View changeset [776] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-01-02T06%3A51%3A14-08%3A00&amp;precision=second" title="2015-01-02T06:51:14-08:00 in Timeline">17 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        copyright updated to 2015; added to examples2
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="763@mystic/mystic/scipy_optimize.py" title="From [763]" />
+                    <input type="radio" name="new" value="763@mystic/mystic/scipy_optimize.py" title="To [763]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=763" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=763" title="Browse at revision 763">
+                        @763</a>
+                        <a class="chgset" href="../../../changeset/763/mystic/mystic/scipy_optimize.html" title="View changeset [763] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-10-07T15%3A29%3A24-07%3A00&amp;precision=second" title="2014-10-07T15:29:24-07:00 in Timeline">20 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        use numpy.seterr to ignore nan in measures.normalize and in greater/less …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="758@mystic/mystic/scipy_optimize.py" title="From [758]" />
+                    <input type="radio" name="new" value="758@mystic/mystic/scipy_optimize.py" title="To [758]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=758" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=758" title="Browse at revision 758">
+                        @758</a>
+                        <a class="chgset" href="../../../changeset/758/mystic/mystic/scipy_optimize.html" title="View changeset [758] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-10-04T13%3A08%3A55-07%3A00&amp;precision=second" title="2014-10-04T13:08:55-07:00 in Timeline">20 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        diffev2 uses wrap_nested to apply constraints and evaluate cost in …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="748@mystic/mystic/scipy_optimize.py" title="From [748]" />
+                    <input type="radio" name="new" value="748@mystic/mystic/scipy_optimize.py" title="To [748]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=748" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=748" title="Browse at revision 748">
+                        @748</a>
+                        <a class="chgset" href="../../../changeset/748/mystic/mystic/scipy_optimize.html" title="View changeset [748] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-08-12T11%3A13%3A17-07%3A00&amp;precision=second" title="2014-08-12T11:13:17-07:00 in Timeline">22 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add solver one-liners for ensemble solvers; fix: reducer in ensemble …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="724@mystic/mystic/scipy_optimize.py" title="From [724]" />
+                    <input type="radio" name="new" value="724@mystic/mystic/scipy_optimize.py" title="To [724]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=724" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=724" title="Browse at revision 724">
+                        @724</a>
+                        <a class="chgset" href="../../../changeset/724/mystic/mystic/scipy_optimize.html" title="View changeset [724] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-07-17T10%3A11%3A28-07%3A00&amp;precision=second" title="2014-07-17T10:11:28-07:00 in Timeline">22 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        enable log_reader to select id and param; suppress warnings around brent
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="713@mystic/mystic/scipy_optimize.py" title="From [713]" />
+                    <input type="radio" name="new" value="713@mystic/mystic/scipy_optimize.py" title="To [713]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=713" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=713" title="Browse at revision 713">
+                        @713</a>
+                        <a class="chgset" href="../../../changeset/713/mystic/mystic/scipy_optimize.html" title="View changeset [713] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-04-03T12%3A44%3A55-07%3A00&amp;precision=second" title="2014-04-03T12:44:55-07:00 in Timeline">2 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added license and copyright to each file
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="698@mystic/mystic/scipy_optimize.py" title="From [698]" />
+                    <input type="radio" name="new" value="698@mystic/mystic/scipy_optimize.py" title="To [698]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=698" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=698" title="Browse at revision 698">
+                        @698</a>
+                        <a class="chgset" href="../../../changeset/698/mystic/mystic/scipy_optimize.html" title="View changeset [698] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-07-08T15%3A15%3A46-07%3A00&amp;precision=second" title="2013-07-08T15:15:46-07:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: Solve does not recompute when Step has been already called
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="696@mystic/mystic/scipy_optimize.py" title="From [696]" />
+                    <input type="radio" name="new" value="696@mystic/mystic/scipy_optimize.py" title="To [696]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=696" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=696" title="Browse at revision 696">
+                        @696</a>
+                        <a class="chgset" href="../../../changeset/696/mystic/mystic/scipy_optimize.html" title="View changeset [696] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-06-27T22%3A30%3A46-07%3A00&amp;precision=second" title="2013-06-27T22:30:46-07:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        updated Step to use _process_settings
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="654@mystic/mystic/scipy_optimize.py" title="From [654]" />
+                    <input type="radio" name="new" value="654@mystic/mystic/scipy_optimize.py" title="To [654]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=654" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=654" title="Browse at revision 654">
+                        @654</a>
+                        <a class="chgset" href="../../../changeset/654/mystic/mystic/scipy_optimize.html" title="View changeset [654] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-02-15T12%3A05%3A10-08%3A00&amp;precision=second" title="2013-02-15T12:05:10-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        migrate termination from Solve to <a class="missing wiki">SetTermination?</a>; *args in _termination …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="649@mystic/mystic/scipy_optimize.py" title="From [649]" />
+                    <input type="radio" name="new" value="649@mystic/mystic/scipy_optimize.py" title="To [649]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=649" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=649" title="Browse at revision 649">
+                        @649</a>
+                        <a class="chgset" href="../../../changeset/649/mystic/mystic/scipy_optimize.html" title="View changeset [649] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-30T20%3A40%3A56-08%3A00&amp;precision=second" title="2013-01-30T20:40:56-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added <a class="missing wiki">SetSaveFrequency?</a> method, and accompanying test for solver restarts
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="648@mystic/mystic/scipy_optimize.py" title="From [648]" />
+                    <input type="radio" name="new" value="648@mystic/mystic/scipy_optimize.py" title="To [648]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=648" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=648" title="Browse at revision 648">
+                        @648</a>
+                        <a class="chgset" href="../../../changeset/648/mystic/mystic/scipy_optimize.html" title="View changeset [648] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-30T11%3A15%3A09-08%3A00&amp;precision=second" title="2013-01-30T11:15:09-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        can now serialize solvers; added <a class="missing wiki">SaveSolver?</a> method, <a class="missing wiki">LoadSolver?</a> function; …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="642@mystic/mystic/scipy_optimize.py" title="From [642]" />
+                    <input type="radio" name="new" value="642@mystic/mystic/scipy_optimize.py" title="To [642]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=642" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=642" title="Browse at revision 642">
+                        @642</a>
+                        <a class="chgset" href="../../../changeset/642/mystic/mystic/scipy_optimize.html" title="View changeset [642] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-11T12%3A44%3A36-08%3A00&amp;precision=second" title="2013-01-11T12:44:36-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added _exitMain method, leverage abstract_solver.Solve in powell;
+fix: …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="641@mystic/mystic/scipy_optimize.py" title="From [641]" />
+                    <input type="radio" name="new" value="641@mystic/mystic/scipy_optimize.py" title="To [641]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=641" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=641" title="Browse at revision 641">
+                        @641</a>
+                        <a class="chgset" href="../../../changeset/641/mystic/mystic/scipy_optimize.html" title="View changeset [641] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-11T09%3A41%3A10-08%3A00&amp;precision=second" title="2013-01-11T09:41:10-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved _SetEvaluationLimits, _Decorate, and _process_inputs into …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="640@mystic/mystic/scipy_optimize.py" title="From [640]" />
+                    <input type="radio" name="new" value="640@mystic/mystic/scipy_optimize.py" title="To [640]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=640" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=640" title="Browse at revision 640">
+                        @640</a>
+                        <a class="chgset" href="../../../changeset/640/mystic/mystic/scipy_optimize.html" title="View changeset [640] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-09T16%3A55%3A19-08%3A00&amp;precision=second" title="2013-01-09T16:55:19-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        enable stepwise optimization in <a class="missing wiki">PowellDirectionalSolver?</a>;
+added asserts in …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="639@mystic/mystic/scipy_optimize.py" title="From [639]" />
+                    <input type="radio" name="new" value="639@mystic/mystic/scipy_optimize.py" title="To [639]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=639" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=639" title="Browse at revision 639">
+                        @639</a>
+                        <a class="chgset" href="../../../changeset/639/mystic/mystic/scipy_optimize.html" title="View changeset [639] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-08T11%3A15%3A46-08%3A00&amp;precision=second" title="2013-01-08T11:15:46-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        more uniformity in _process_inputs in Solve method
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="638@mystic/mystic/scipy_optimize.py" title="From [638]" />
+                    <input type="radio" name="new" value="638@mystic/mystic/scipy_optimize.py" title="To [638]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=638" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=638" title="Browse at revision 638">
+                        @638</a>
+                        <a class="chgset" href="../../../changeset/638/mystic/mystic/scipy_optimize.html" title="View changeset [638] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-07T23%3A23%3A35-08%3A00&amp;precision=second" title="2013-01-07T23:23:35-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: updated sumt penalty restarts for changes to solver internals;
+fix: …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="634@mystic/mystic/scipy_optimize.py" title="From [634]" />
+                    <input type="radio" name="new" value="634@mystic/mystic/scipy_optimize.py" title="To [634]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=634" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=634" title="Browse at revision 634">
+                        @634</a>
+                        <a class="chgset" href="../../../changeset/634/mystic/mystic/scipy_optimize.html" title="View changeset [634] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-06T17%3A55%3A27-08%3A00&amp;precision=second" title="2013-01-06T17:55:27-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        removed some unnecessary (hopefully) slices in desolvers;
+removed …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="633@mystic/mystic/scipy_optimize.py" title="From [633]" />
+                    <input type="radio" name="new" value="633@mystic/mystic/scipy_optimize.py" title="To [633]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=633" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=633" title="Browse at revision 633">
+                        @633</a>
+                        <a class="chgset" href="../../../changeset/633/mystic/mystic/scipy_optimize.html" title="View changeset [633] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-06T17%3A21%3A30-08%3A00&amp;precision=second" title="2013-01-06T17:21:30-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        generations, bestEnergy, and bestSolution point to other solver internals; …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="632@mystic/mystic/scipy_optimize.py" title="From [632]" />
+                    <input type="radio" name="new" value="632@mystic/mystic/scipy_optimize.py" title="To [632]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=632" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=632" title="Browse at revision 632">
+                        @632</a>
+                        <a class="chgset" href="../../../changeset/632/mystic/mystic/scipy_optimize.html" title="View changeset [632] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-05T11%3A43%3A22-08%3A00&amp;precision=second" title="2013-01-05T11:43:22-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add two quick solver sanity tests; added zdelt to fmin (scipy-0.9);
+fix …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="631@mystic/mystic/scipy_optimize.py" title="From [631]" />
+                    <input type="radio" name="new" value="631@mystic/mystic/scipy_optimize.py" title="To [631]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=631" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=631" title="Browse at revision 631">
+                        @631</a>
+                        <a class="chgset" href="../../../changeset/631/mystic/mystic/scipy_optimize.html" title="View changeset [631] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-03T21%3A35%3A20-08%3A00&amp;precision=second" title="2013-01-03T21:35:20-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        merge energy_history with stepmonitor;
+converted CONTINUE in …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="630@mystic/mystic/scipy_optimize.py" title="From [630]" />
+                    <input type="radio" name="new" value="630@mystic/mystic/scipy_optimize.py" title="To [630]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=630" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=630" title="Browse at revision 630">
+                        @630</a>
+                        <a class="chgset" href="../../../changeset/630/mystic/mystic/scipy_optimize.html" title="View changeset [630] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-03T13%3A21%3A26-08%3A00&amp;precision=second" title="2013-01-03T13:21:26-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added randomly_bin to grid; enable <a class="missing wiki">LatticeSolver?</a> to randomly_bin;
+abstract …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="625@mystic/mystic/scipy_optimize.py" title="From [625]" />
+                    <input type="radio" name="new" value="625@mystic/mystic/scipy_optimize.py" title="To [625]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=625" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=625" title="Browse at revision 625">
+                        @625</a>
+                        <a class="chgset" href="../../../changeset/625/mystic/mystic/scipy_optimize.html" title="View changeset [625] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-28T18%3A47%3A57-08%3A00&amp;precision=second" title="2012-12-28T18:47:57-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added <a class="missing wiki">EvaluationLimits?</a> as termination condition;
+termination from …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="624@mystic/mystic/scipy_optimize.py" title="From [624]" />
+                    <input type="radio" name="new" value="624@mystic/mystic/scipy_optimize.py" title="To [624]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=624" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=624" title="Browse at revision 624">
+                        @624</a>
+                        <a class="chgset" href="../../../changeset/624/mystic/mystic/scipy_optimize.html" title="View changeset [624] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-27T18%3A21%3A40-08%3A00&amp;precision=second" title="2012-12-27T18:21:40-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        use solver internals for counting iterations
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="607@mystic/mystic/scipy_optimize.py" title="From [607]" />
+                    <input type="radio" name="new" value="607@mystic/mystic/scipy_optimize.py" title="To [607]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=607" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=607" title="Browse at revision 607">
+                        @607</a>
+                        <a class="chgset" href="../../../changeset/607/mystic/mystic/scipy_optimize.html" title="View changeset [607] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-09T18%3A30%3A44-08%3A00&amp;precision=second" title="2012-12-09T18:30:44-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add 'penalty' keyword to Solve; remove extraneous call to func in …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="604@mystic/mystic/scipy_optimize.py" title="From [604]" />
+                    <input type="radio" name="new" value="604@mystic/mystic/scipy_optimize.py" title="To [604]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=604" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=604" title="Browse at revision 604">
+                        @604</a>
+                        <a class="chgset" href="../../../changeset/604/mystic/mystic/scipy_optimize.html" title="View changeset [604] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-05T09%3A42%3A48-08%3A00&amp;precision=second" title="2012-12-05T09:42:48-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added <a class="missing wiki">SetPenalty?</a> method for penalty functions, and penalty kwd for …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="589@mystic/mystic/scipy_optimize.py" title="From [589]" />
+                    <input type="radio" name="new" value="589@mystic/mystic/scipy_optimize.py" title="To [589]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=589" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=589" title="Browse at revision 589">
+                        @589</a>
+                        <a class="chgset" href="../../../changeset/589/mystic/mystic/scipy_optimize.html" title="View changeset [589] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-11-13T10%3A42%3A43-08%3A00&amp;precision=second" title="2012-11-13T10:42:43-08:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        convert VTR to VTRCOG in fmin, fmin_powell, diffev*
+return cost = inf when …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="577@mystic/mystic/scipy_optimize.py" title="From [577]" />
+                    <input type="radio" name="new" value="577@mystic/mystic/scipy_optimize.py" title="To [577]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=577" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=577" title="Browse at revision 577">
+                        @577</a>
+                        <a class="chgset" href="../../../changeset/577/mystic/mystic/scipy_optimize.html" title="View changeset [577] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-10-05T10%3A31%3A41-07%3A00&amp;precision=second" title="2012-10-05T10:31:41-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        turn off handler for one-line solver interface (ticket <a class="closed ticket" href="../../../ticket/177.html" title="defect: default solver config should match one-liner config (closed: worksforme)">#177</a>)
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="559@mystic/mystic/scipy_optimize.py" title="From [559]" />
+                    <input type="radio" name="new" value="559@mystic/mystic/scipy_optimize.py" title="To [559]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=559" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=559" title="Browse at revision 559">
+                        @559</a>
+                        <a class="chgset" href="../../../changeset/559/mystic/mystic/scipy_optimize.html" title="View changeset [559] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-09-12T11%3A40%3A33-07%3A00&amp;precision=second" title="2012-09-12T11:40:33-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fmin_powell with full_output return more standard (moved direc to end)
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="540@mystic/mystic/scipy_optimize.py" title="From [540]" />
+                    <input type="radio" name="new" value="540@mystic/mystic/scipy_optimize.py" title="To [540]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=540" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=540" title="Browse at revision 540">
+                        @540</a>
+                        <a class="chgset" href="../../../changeset/540/mystic/mystic/scipy_optimize.html" title="View changeset [540] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-08-03T17%3A27%3A04-07%3A00&amp;precision=second" title="2012-08-03T17:27:04-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        migrated compound termination conditions to trunk;
+added info channel for …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="536@mystic/mystic/scipy_optimize.py" title="From [536]" />
+                    <input type="radio" name="new" value="536@mystic/mystic/scipy_optimize.py" title="To [536]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=536" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=536" title="Browse at revision 536">
+                        @536</a>
+                        <a class="chgset" href="../../../changeset/536/mystic/mystic/scipy_optimize.html" title="View changeset [536] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-07-29T22%3A10%3A39-07%3A00&amp;precision=second" title="2012-07-29T22:10:39-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added guard against null and empty logs in munge; added isNull;
+allow …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="528@mystic/mystic/scipy_optimize.py" title="From [528]" />
+                    <input type="radio" name="new" value="528@mystic/mystic/scipy_optimize.py" title="To [528]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=528" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=528" title="Browse at revision 528">
+                        @528</a>
+                        <a class="chgset" href="../../../changeset/528/mystic/mystic/scipy_optimize.html" title="View changeset [528] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-04-30T14%3A09%3A31-07%3A00&amp;precision=second" title="2012-04-30T14:09:31-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        updated one-liners to use alternate termination conditions
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="519@mystic/mystic/scipy_optimize.py" title="From [519]" />
+                    <input type="radio" name="new" value="519@mystic/mystic/scipy_optimize.py" title="To [519]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=519" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=519" title="Browse at revision 519">
+                        @519</a>
+                        <a class="chgset" href="../../../changeset/519/mystic/mystic/scipy_optimize.html" title="View changeset [519] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-04-17T09%3A44%3A01-07%3A00&amp;precision=second" title="2012-04-17T09:44:01-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        bugfix: overriding default monitors was broken in solver one-liners
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="517@mystic/mystic/scipy_optimize.py" title="From [517]" />
+                    <input type="radio" name="new" value="517@mystic/mystic/scipy_optimize.py" title="To [517]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=517" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=517" title="Browse at revision 517">
+                        @517</a>
+                        <a class="chgset" href="../../../changeset/517/mystic/mystic/scipy_optimize.html" title="View changeset [517] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-04-16T16%3A16%3A22-07%3A00&amp;precision=second" title="2012-04-16T16:16:22-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        bugfix: bounds in single line solvers now work even if given as array
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="516@mystic/mystic/scipy_optimize.py" title="From [516]" />
+                    <input type="radio" name="new" value="516@mystic/mystic/scipy_optimize.py" title="To [516]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=516" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=516" title="Browse at revision 516">
+                        @516</a>
+                        <a class="chgset" href="../../../changeset/516/mystic/mystic/scipy_optimize.html" title="View changeset [516] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-04-16T10%3A27%3A02-07%3A00&amp;precision=second" title="2012-04-16T10:27:02-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        changed gen to gtol in fmin_powell, for better uniformity with diffev
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="515@mystic/mystic/scipy_optimize.py" title="From [515]" />
+                    <input type="radio" name="new" value="515@mystic/mystic/scipy_optimize.py" title="To [515]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=515" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=515" title="Browse at revision 515">
+                        @515</a>
+                        <a class="chgset" href="../../../changeset/515/mystic/mystic/scipy_optimize.html" title="View changeset [515] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-04-16T09%3A42%3A16-07%3A00&amp;precision=second" title="2012-04-16T09:42:16-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        enable fmin_powell one-liner to configure generations termination …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="512@mystic/mystic/scipy_optimize.py" title="From [512]" />
+                    <input type="radio" name="new" value="512@mystic/mystic/scipy_optimize.py" title="To [512]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=512" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=512" title="Browse at revision 512">
+                        @512</a>
+                        <a class="chgset" href="../../../changeset/512/mystic/mystic/scipy_optimize.html" title="View changeset [512] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-04-03T15%3A27%3A51-07%3A00&amp;precision=second" title="2012-04-03T15:27:51-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        enable solver one-liners to accept constraints; add three constraints …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="511@mystic/mystic/scipy_optimize.py" title="From [511]" />
+                    <input type="radio" name="new" value="511@mystic/mystic/scipy_optimize.py" title="To [511]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=511" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=511" title="Browse at revision 511">
+                        @511</a>
+                        <a class="chgset" href="../../../changeset/511/mystic/mystic/scipy_optimize.html" title="View changeset [511] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-03-30T09%3A48%3A44-07%3A00&amp;precision=second" title="2012-03-30T09:48:44-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        enable one-line solvers to accept kwds[monitor]
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="505@mystic/mystic/scipy_optimize.py" title="From [505]" />
+                    <input type="radio" name="new" value="505@mystic/mystic/scipy_optimize.py" title="To [505]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=505" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=505" title="Browse at revision 505">
+                        @505</a>
+                        <a class="chgset" href="../../../changeset/505/mystic/mystic/scipy_optimize.html" title="View changeset [505] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-02-08T22%3A39%3A36-08%3A00&amp;precision=second" title="2012-02-08T22:39:36-08:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added toggle for signal handler for one-line solvers
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="473@mystic/mystic/scipy_optimize.py" title="From [473]" />
+                    <input type="radio" name="new" value="473@mystic/mystic/scipy_optimize.py" title="To [473]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=473" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=473" title="Browse at revision 473">
+                        @473</a>
+                        <a class="chgset" href="../../../changeset/473/mystic/mystic/scipy_optimize.html" title="View changeset [473] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-07T08%3A44%3A38-07%3A00&amp;precision=second" title="2011-07-07T08:44:38-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        converted 'constraints' keyword to <a class="missing wiki">SetConstraints?</a> method;
+enabled use of …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="470@mystic/mystic/scipy_optimize.py" title="From [470]" />
+                    <input type="radio" name="new" value="470@mystic/mystic/scipy_optimize.py" title="To [470]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=470" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=470" title="Browse at revision 470">
+                        @470</a>
+                        <a class="chgset" href="../../../changeset/470/mystic/mystic/scipy_optimize.html" title="View changeset [470] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-05T14%3A57%3A23-07%3A00&amp;precision=second" title="2011-07-05T14:57:23-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        migrated "Null" to monitors; set <a class="missing wiki">StepMon/Evalmon?</a> is now a method
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="466@mystic/mystic/scipy_optimize.py" title="From [466]" />
+                    <input type="radio" name="new" value="466@mystic/mystic/scipy_optimize.py" title="To [466]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=466" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=466" title="Browse at revision 466">
+                        @466</a>
+                        <a class="chgset" href="../../../changeset/466/mystic/mystic/scipy_optimize.html" title="View changeset [466] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-02T20%3A41%3A02-07%3A00&amp;precision=second" title="2011-07-02T20:41:02-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved monitors from mystic.tools to mystic.monitors
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="462@mystic/mystic/scipy_optimize.py" title="From [462]" />
+                    <input type="radio" name="new" value="462@mystic/mystic/scipy_optimize.py" title="To [462]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=462" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=462" title="Browse at revision 462">
+                        @462</a>
+                        <a class="chgset" href="../../../changeset/462/mystic/mystic/scipy_optimize.html" title="View changeset [462] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-06-21T12%3A12%3A23-07%3A00&amp;precision=second" title="2011-06-21T12:12:23-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        extended solver interface to include solver.evaluations (ticket <a class="closed ticket" href="../../../ticket/138.html" title="enhancement: provide solver methods for capabilities available with 'disp' (closed: fixed)">#138</a>)
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="455@mystic/mystic/scipy_optimize.py" title="From [455]" />
+                    <input type="radio" name="new" value="455@mystic/mystic/scipy_optimize.py" title="To [455]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=455" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=455" title="Browse at revision 455">
+                        @455</a>
+                        <a class="chgset" href="../../../changeset/455/mystic/mystic/scipy_optimize.html" title="View changeset [455] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-04-20T18%3A37%3A53-07%3A00&amp;precision=second" title="2011-04-20T18:37:53-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        protect against constraints producing lists when solver expects arrays
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="453@mystic/mystic/scipy_optimize.py" title="From [453]" />
+                    <input type="radio" name="new" value="453@mystic/mystic/scipy_optimize.py" title="To [453]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=453" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=453" title="Browse at revision 453">
+                        @453</a>
+                        <a class="chgset" href="../../../changeset/453/mystic/mystic/scipy_optimize.html" title="View changeset [453] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-04-20T12%3A39%3A30-07%3A00&amp;precision=second" title="2011-04-20T12:39:30-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added constraints to Simplex and Powell's
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="372@mystic/mystic/scipy_optimize.py" title="From [372]" />
+                    <input type="radio" name="new" value="372@mystic/mystic/scipy_optimize.py" title="To [372]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=372" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=372" title="Browse at revision 372">
+                        @372</a>
+                        <a class="chgset" href="../../../changeset/372/mystic/mystic/scipy_optimize.html" title="View changeset [372] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-08-04T12%3A44%3A55-07%3A00&amp;precision=second" title="2010-08-04T12:44:55-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        marker toggleable on log_reader; all=False is default on Sows
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="296@mystic/mystic/scipy_optimize.py" title="From [296]" />
+                    <input type="radio" name="new" value="296@mystic/mystic/scipy_optimize.py" title="To [296]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=296" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=296" title="Browse at revision 296">
+                        @296</a>
+                        <a class="chgset" href="../../../changeset/296/mystic/mystic/scipy_optimize.html" title="View changeset [296] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-07-07T12%3A22%3A35-07%3A00&amp;precision=second" title="2010-07-07T12:22:35-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        extended <a class="missing wiki">Sows/Solvers?</a> to log solver 'rank' (see ticket <a class="new ticket" href="../../../ticket/94.html" title="defect: provide control of parallel and distributed jobs (new)">#94</a>)
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="242@mystic/mystic/scipy_optimize.py" title="From [242]" />
+                    <input type="radio" name="new" value="242@mystic/mystic/scipy_optimize.py" title="To [242]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=242" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=242" title="Browse at revision 242">
+                        @242</a>
+                        <a class="chgset" href="../../../changeset/242/mystic/mystic/scipy_optimize.html" title="View changeset [242] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-05-21T21%3A46%3A54-07%3A00&amp;precision=second" title="2010-05-21T21:46:54-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        edits to fix epydoc formatting and content
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="219@mystic/mystic/scipy_optimize.py" title="From [219]" />
+                    <input type="radio" name="new" value="219@mystic/mystic/scipy_optimize.py" title="To [219]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=219" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=219" title="Browse at revision 219">
+                        @219</a>
+                        <a class="chgset" href="../../../changeset/219/mystic/mystic/scipy_optimize.html" title="View changeset [219] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-04-29T14%3A23%3A44-07%3A00&amp;precision=second" title="2010-04-29T14:23:44-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        bugfix for <a class="closed ticket" href="../../../ticket/102.html" title="defect: initial population is not used in DESolver (closed: fixed)">#102</a>, DE uses initial population;
+SOW now captures initial …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="132@mystic/mystic/scipy_optimize.py" title="From [132]" />
+                    <input type="radio" name="new" value="132@mystic/mystic/scipy_optimize.py" title="To [132]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=132" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=132" title="Browse at revision 132">
+                        @132</a>
+                        <a class="chgset" href="../../../changeset/132/mystic/mystic/scipy_optimize.html" title="View changeset [132] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-04-02T17%3A23%3A57-07%3A00&amp;precision=second" title="2009-04-02T17:23:57-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        now <a class="missing wiki">StepMonitor?</a> logs best not simplex (ticket <a class="closed ticket" href="../../../ticket/29.html" title="defect: StepMonitor should not log simplex (closed: fixed)">#29</a>); built new patch
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="124@mystic/mystic/scipy_optimize.py" title="From [124]" />
+                    <input type="radio" name="new" value="124@mystic/mystic/scipy_optimize.py" title="To [124]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=124" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=124" title="Browse at revision 124">
+                        @124</a>
+                        <a class="chgset" href="../../../changeset/124/mystic/mystic/scipy_optimize.html" title="View changeset [124] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-24T11%3A21%3A27-07%3A00&amp;precision=second" title="2009-03-24T11:21:27-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        coerce source to mostly play nice with epydoc;
+added epydoc config file
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="123@mystic/mystic/scipy_optimize.py" title="From [123]" />
+                    <input type="radio" name="new" value="123@mystic/mystic/scipy_optimize.py" title="To [123]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=123" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=123" title="Browse at revision 123">
+                        @123</a>
+                        <a class="chgset" href="../../../changeset/123/mystic/mystic/scipy_optimize.html" title="View changeset [123] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-23T17%3A11%3A08-07%3A00&amp;precision=second" title="2009-03-23T17:11:08-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        most of remaining module and method documentation for mystic-0.1a1; …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="121@mystic/mystic/scipy_optimize.py" title="From [121]" />
+                    <input type="radio" name="new" value="121@mystic/mystic/scipy_optimize.py" title="To [121]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=121" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=121" title="Browse at revision 121">
+                        @121</a>
+                        <a class="chgset" href="../../../changeset/121/mystic/mystic/scipy_optimize.html" title="View changeset [121] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-22T23%3A29%3A45-07%3A00&amp;precision=second" title="2009-03-22T23:29:45-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        migrated handler to abstract_solver by building _handlerFactory;
+minor …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="120@mystic/mystic/scipy_optimize.py" title="From [120]" />
+                    <input type="radio" name="new" value="120@mystic/mystic/scipy_optimize.py" title="To [120]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=120" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=120" title="Browse at revision 120">
+                        @120</a>
+                        <a class="chgset" href="../../../changeset/120/mystic/mystic/scipy_optimize.html" title="View changeset [120] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-20T19%3A19%3A46-07%3A00&amp;precision=second" title="2009-03-20T19:19:46-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added docs for minimal solvers fmin &amp; fmin_powell
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="119@mystic/mystic/scipy_optimize.py" title="From [119]" />
+                    <input type="radio" name="new" value="119@mystic/mystic/scipy_optimize.py" title="To [119]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=119" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=119" title="Browse at revision 119">
+                        @119</a>
+                        <a class="chgset" href="../../../changeset/119/mystic/mystic/scipy_optimize.html" title="View changeset [119] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-20T18%3A18%3A18-07%3A00&amp;precision=second" title="2009-03-20T18:18:18-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added more extensive documentation to all solvers;
+docs still required for …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="112@mystic/mystic/scipy_optimize.py" title="From [112]" />
+                    <input type="radio" name="new" value="112@mystic/mystic/scipy_optimize.py" title="To [112]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=112" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=112" title="Browse at revision 112">
+                        @112</a>
+                        <a class="chgset" href="../../../changeset/112/mystic/mystic/scipy_optimize.html" title="View changeset [112] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-11T14%3A05%3A25-07%3A00&amp;precision=second" title="2009-03-11T14:05:25-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        enabled sigint_handler in all 'one-liner' interfaces
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="111@mystic/mystic/scipy_optimize.py" title="From [111]" />
+                    <input type="radio" name="new" value="111@mystic/mystic/scipy_optimize.py" title="To [111]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=111" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111" title="Browse at revision 111">
+                        @111</a>
+                        <a class="chgset" href="../../../changeset/111/mystic/mystic/scipy_optimize.html" title="View changeset [111] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-11T11%3A33%3A05-07%3A00&amp;precision=second" title="2009-03-11T11:33:05-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        created <a class="missing wiki">SetEvaluationLimits?</a> method in abstract_solver;
+propagated changes …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="109@mystic/mystic/scipy_optimize.py" title="From [109]" />
+                    <input type="radio" name="new" value="109@mystic/mystic/scipy_optimize.py" title="To [109]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=109" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=109" title="Browse at revision 109">
+                        @109</a>
+                        <a class="chgset" href="../../../changeset/109/mystic/mystic/scipy_optimize.html" title="View changeset [109] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-10T15%3A44%3A57-07%3A00&amp;precision=second" title="2009-03-10T15:44:57-07:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added 'minimal' (one-line) interface for DE Solvers;
+added <a class="missing wiki">ExtraArgs?</a> to …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="105@mystic/mystic/scipy_optimize.py" title="From [105]" />
+                    <input type="radio" name="new" value="105@mystic/mystic/scipy_optimize.py" title="To [105]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=105" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=105" title="Browse at revision 105">
+                        @105</a>
+                        <a class="chgset" href="../../../changeset/105/mystic/mystic/scipy_optimize.html" title="View changeset [105] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-26T11%3A34%3A41-08%3A00&amp;precision=second" title="2009-02-26T11:34:41-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added <a class="missing wiki">AbstractSolver?</a> class; added documentation for most methods;
+changed …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="104@mystic/mystic/scipy_optimize.py" title="From [104]" />
+                    <input type="radio" name="new" value="104@mystic/mystic/scipy_optimize.py" title="To [104]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=104" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=104" title="Browse at revision 104">
+                        @104</a>
+                        <a class="chgset" href="../../../changeset/104/mystic/mystic/scipy_optimize.html" title="View changeset [104] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-20T18%3A36%3A22-08%3A00&amp;precision=second" title="2009-02-20T18:36:22-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved fmin_powell to scipy_optimize;
+removed scipy dependency;
+cleanup of …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="103@mystic/mystic/scipy_optimize.py" title="From [103]" />
+                    <input type="radio" name="new" value="103@mystic/mystic/scipy_optimize.py" title="To [103]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=103" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=103" title="Browse at revision 103">
+                        @103</a>
+                        <a class="chgset" href="../../../changeset/103/mystic/mystic/scipy_optimize.html" title="View changeset [103] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-20T16%3A40%3A19-08%3A00&amp;precision=second" title="2009-02-20T16:40:19-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added solver for scipy's fmin_powell (added scipy dependency too = BAD); …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="102@mystic/mystic/scipy_optimize.py" title="From [102]" />
+                    <input type="radio" name="new" value="102@mystic/mystic/scipy_optimize.py" title="To [102]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=102" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=102" title="Browse at revision 102">
+                        @102</a>
+                        <a class="chgset" href="../../../changeset/102/mystic/mystic/scipy_optimize.html" title="View changeset [102] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-20T14%3A16%3A13-08%3A00&amp;precision=second" title="2009-02-20T14:16:13-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        renamed "bounds" methods for more consistency;
+added method to ensure …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="101@mystic/mystic/scipy_optimize.py" title="From [101]" />
+                    <input type="radio" name="new" value="101@mystic/mystic/scipy_optimize.py" title="To [101]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=101" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=101" title="Browse at revision 101">
+                        @101</a>
+                        <a class="chgset" href="../../../changeset/101/mystic/mystic/scipy_optimize.html" title="View changeset [101] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-19T16%3A05%3A24-08%3A00&amp;precision=second" title="2009-02-19T16:05:24-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        updated fmin to scipy 0.6.0
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="100@mystic/mystic/scipy_optimize.py" title="From [100]" />
+                    <input type="radio" name="new" value="100@mystic/mystic/scipy_optimize.py" title="To [100]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=100" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=100" title="Browse at revision 100">
+                        @100</a>
+                        <a class="chgset" href="../../../changeset/100/mystic/mystic/scipy_optimize.html" title="View changeset [100] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-19T13%3A18%3A05-08%3A00&amp;precision=second" title="2009-02-19T13:18:05-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added scipy.optimize notice
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="97@mystic/mystic/scipy_optimize.py" title="From [97]" />
+                    <input type="radio" name="new" value="97@mystic/mystic/scipy_optimize.py" title="To [97]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?rev=97" title="View log starting at this revision">
+                        <span class="copy"></span>
+                        <span class="comment">(copy)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=97" title="Browse at revision 97">
+                        @97</a>
+                        <a class="chgset" href="../../../changeset/97/mystic/mystic/scipy_optimize.html" title="View changeset [97] restricted to mystic/mystic/scipy_optimize.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-17T19%3A20%3A27-08%3A00&amp;precision=second" title="2009-02-17T19:20:27-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved scipy_optimize_fmin to scipy_optimize
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td></td>
+                  <td class="copyfrom_path" colspan="6" style="padding-left: 1em">
+                    copied from <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize_fmin.py?rev=95">mystic/mystic/scipy_optimize_fmin.py</a>:
+                  </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="95@mystic/mystic/scipy_optimize_fmin.py" checked="checked" title="From [95]" />
+                    <input type="radio" name="new" value="95@mystic/mystic/scipy_optimize_fmin.py" title="To [95]" />
+                  </td>
+                    <td class="change" style="padding-left: 2em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize_fmin.py?rev=95" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize_fmin.py?rev=95" title="Browse at revision 95">
+                        @95</a>
+                        <a class="chgset" href="../../../changeset/95/mystic/mystic/scipy_optimize_fmin.html" title="View changeset [95] restricted to mystic/mystic/scipy_optimize_fmin.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-17T14%3A34%3A41-08%3A00&amp;precision=second" title="2009-02-17T14:34:41-08:00 in Timeline">7 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        refactored major filters, strategies into filters.py and strategy.py; …
+                    </td>
+                </tr>
+          </tbody>
+        </table>
+        <div class="buttons">
+          <input type="submit" value="View changes" title="Diff from Old Revision to New Revision (as selected in the Diff column)" />
+        </div>
+      </form>
+      <div id="help"><strong>Note:</strong> See <a href="../../../wiki/TracRevisionLog.html">TracRevisionLog</a>
+        for help on using the revision log.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?format=rss&amp;limit=100&amp;mode=stop_on_copy" class="rss">RSS Feed</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py?format=changelog&amp;limit=100&amp;mode=stop_on_copy">ChangeLog</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/log/mystic/mystic/scipy_optimize.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 01:08:23 GMT -->
+</html>

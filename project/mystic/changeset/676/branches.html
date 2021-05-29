@@ -1,0 +1,2190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/676/branches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:13:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 676 for branches – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/676/branches?format=diff&amp;new=676" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/676/branches?format=zip&amp;new=676" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../677/branches.html" title="Changeset 677 for branches" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../675/branches.html" title="Changeset 675 for branches" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../675/branches.html" title="Changeset 675 for branches">Previous Change</a></span></li><li class="last"><span><a class="next" href="../677/branches.html" title="Changeset 677 for branches">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../676.html">676</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches?rev=676">branches</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             06/04/13 11:04:45
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-06-04T11%3A04%3A45-07%3A00&amp;precision=second" title="2013-06-04T11:04:45-07:00 in Timeline">3 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+fix: fixed typo in save state for nested optimizers;<br />
+updated UQ 'examples' optimizers to use dill and mystic.math functions <br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples?rev=676">branches/UQ/math/examples</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>16 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MM_surrogate_diam.py?rev=676">
+              MM_surrogate_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_helper.py?rev=676">
+              MPI2_helper.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py?rev=676">
+              MPI2_surrogate_diam_batchgrid.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam.py?rev=676">
+              MPI_surrogate_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py?rev=676">
+              MPI_surrogate_diam_batchgrid.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_scatter.py?rev=676">
+              MPI_surrogate_diam_scatter.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.py?rev=676">
+              MSUB_surrogate_diam_batchgrid.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py?rev=676">
+              QSUB2_surrogate_diam_batchgrid.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py?rev=676">
+              QSUB_surrogate_diam_batchgrid.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file8">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_McD.py?rev=676">
+              TEST_surrogate_McD.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file9">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_cut.py?rev=676">
+              TEST_surrogate_cut.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file10">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_diam.py?rev=676">
+              TEST_surrogate_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file11">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_diam_batchgrid.py?rev=676">
+              TEST_surrogate_diam_batchgrid.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file12">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_diam_scatter.py?rev=676">
+              TEST_surrogate_diam_scatter.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file13">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_samples.py?rev=676">
+              TEST_surrogate_samples.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file14">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_smartcut.py?rev=676">
+              TEST_surrogate_smartcut.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file15">2 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="branches/UQ/math/examples/MM_surrogate_diam.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/MM_surrogate_diam.py">branches/UQ/math/examples/MM_surrogate_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MM_surrogate_diam.py?rev=675#L65">
+                      r675</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MM_surrogate_diam.py?rev=676#L65">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>65</th><th>65</th><td class="l"><span>&nbsp; from mystic.strategy import Best1Exp</span> </td>
+                  </tr><tr>
+                          <th>66</th><th>66</th><td class="l"><span>&nbsp; from mystic.monitors import VerboseMonitor, Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>67</th><th> </th><td class="l"><span>&nbsp; from mystic.tools import <del>getch, </del>random_seed</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>67</th><td class="r"><span>&nbsp; from mystic.tools import <ins></ins>random_seed</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>68</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>69</th><th>69</th><td class="l"><span>&nbsp; random_seed(123)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="branches/UQ/math/examples/MPI2_helper.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/MPI2_helper.py">branches/UQ/math/examples/MPI2_helper.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_helper.py?rev=471#L10">
+                      r471</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_helper.py?rev=676#L10">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>10</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>11</th><th>11</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>12</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>def func_pickle(func, suffix='.pik'):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>12</th><td class="r"><span>def func_pickle(func, suffix='.pik', dir='.'):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>14</th><th>13</th><td class="l"><span>&nbsp; &nbsp; """ standard pickle.dump of function to a NamedTemporaryFile """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>15</th><th> </th><td class="l"><span>&nbsp; &nbsp; import dill as pickle</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>&nbsp; &nbsp; import tempfile</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>&nbsp; &nbsp; file = tempfile.NamedTemporaryFile(suffix=suffix, dir='.')</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>&nbsp; &nbsp; pickle.dump(func, file)</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; file.flush()</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>&nbsp; &nbsp; return file</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>from numpy import asarray</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>def ndim_meshgrid(*arrs):</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; &nbsp; """n-dimensional analogue to numpy.meshgrid"""</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>&nbsp; &nbsp; arrs = tuple(reversed(arrs))&nbsp; #edit</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; &nbsp; lens = map(len, arrs)</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; dim = len(arrs)</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; &nbsp; sz = 1</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp; for s in lens:</span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; sz*=s</span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>&nbsp; &nbsp; ans = []&nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span>&nbsp; &nbsp; for i, arr in enumerate(arrs):</span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; slc = [1]*dim</span> </td>
+                      </tr><tr>
+                        <th>38</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; slc[i] = lens[i]</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; arr2 = asarray(arr).reshape(slc)</span> </td>
+                      </tr><tr>
+                        <th>40</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for j, sz in enumerate(lens):</span> </td>
+                      </tr><tr>
+                        <th>41</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if j!=i:</span> </td>
+                      </tr><tr>
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; arr2 = arr2.repeat(sz, axis=j) </span> </td>
+                      </tr><tr>
+                        <th>43</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ans.append(arr2)</span> </td>
+                      </tr><tr>
+                        <th>44</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>45</th><th> </th><td class="l"><span>&nbsp; &nbsp; return tuple(ans)</span> </td>
+                      </tr><tr>
+                        <th>46</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>47</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>48</th><th> </th><td class="l"><span>def gridpts(q):</span> </td>
+                      </tr><tr>
+                        <th>49</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>50</th><th> </th><td class="l"><span>takes a list of lists of equal length q = [[1,2],[3,4]]</span> </td>
+                      </tr><tr>
+                        <th>51</th><th> </th><td class="l"><span>and produces a list of gridpoints g = [[1,3],[1,4],[2,3],[2,4]]</span> </td>
+                      </tr><tr>
+                        <th>52</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>53</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = list(reversed(q))</span> </td>
+                      </tr><tr>
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; w = ndim_meshgrid(*q)</span> </td>
+                      </tr><tr>
+                        <th>55</th><th> </th><td class="l"><span>&nbsp; &nbsp; for i in range(len(q)):</span> </td>
+                      </tr><tr>
+                        <th>56</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; q[i] = list( w[i].reshape(w[i].size) )</span> </td>
+                      </tr><tr>
+                        <th>57</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = zip(*q)</span> </td>
+                      </tr><tr>
+                        <th>58</th><th> </th><td class="l"><span>&nbsp; &nbsp; return [list(i) for i in q]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>14</th><td class="r"><span>&nbsp; &nbsp; from dill.temp import dump</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>15</th><td class="r"><span>&nbsp; &nbsp; return dump(func, suffix=suffix, dir=dir)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>59</th><th>16</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>60</th><th>17</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_helper.py?rev=471#L66">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_helper.py?rev=676#L23">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>66</th><th>23</th><td class="l"><span>&nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</span> </td>
+                  </tr><tr>
+                          <th>67</th><th>24</th><td class="l"><span>&nbsp; from mystic.monitors import VerboseMonitor, Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>68</th><th> </th><td class="l"><del>&nbsp; from mystic.tools import getch</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>69</th><th>25</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>70</th><th>26</th><td class="l"><span>&nbsp; maxiter = 1000</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py">branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py?rev=675#L72">
+                      r675</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI2_surrogate_diam_batchgrid.py?rev=676#L72">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>72</th><th>72</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>73</th><th>73</th><td class="l"><span>&nbsp; # build a grid of starting points</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>74</th><th> </th><td class="l"><span>&nbsp; from MPI2_helper import gridpts, local_optimize</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; from MPI2_helper import local_optimize</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; from mystic.math.grid import gridpts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>75</th><th>76</th><td class="l"><span>&nbsp; initial_values = gridpts(bins)</span> </td>
+                  </tr><tr>
+                          <th>76</th><th>77</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="branches/UQ/math/examples/MPI_surrogate_diam.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/MPI_surrogate_diam.py">branches/UQ/math/examples/MPI_surrogate_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam.py?rev=675#L65">
+                      r675</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam.py?rev=676#L65">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>65</th><th>65</th><td class="l"><span>&nbsp; from mystic.strategy import Best1Exp</span> </td>
+                  </tr><tr>
+                          <th>66</th><th>66</th><td class="l"><span>&nbsp; from mystic.monitors import VerboseMonitor, Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>67</th><th> </th><td class="l"><span>&nbsp; from mystic.tools import <del>getch, </del>random_seed</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>67</th><td class="r"><span>&nbsp; from mystic.tools import <ins></ins>random_seed</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>68</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>69</th><th>69</th><td class="l"><span>&nbsp; random_seed(123)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py">branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py?rev=675#L1">
+                      r675</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py?rev=676#L1">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>def func_pickle(func, suffix='.pik'<del></del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>3</th><td class="r"><span>def func_pickle(func, suffix='.pik'<ins>, dir='.'</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span>&nbsp; &nbsp; """ standard pickle.dump of function to a NamedTemporaryFile """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>&nbsp; &nbsp; import dill as pickle</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>&nbsp; &nbsp; import tempfile</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span>&nbsp; &nbsp; file = tempfile.NamedTemporaryFile(suffix=suffix, dir='.')</span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span>&nbsp; &nbsp; pickle.dump(func, file)</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>&nbsp; &nbsp; file.flush()</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span>&nbsp; &nbsp; return file</span> </td>
+                      </tr><tr>
+                        <th>11</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>12</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>from numpy import asarray</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>def ndim_meshgrid(*arrs):</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>&nbsp; &nbsp; """n-dimensional analogue to numpy.meshgrid"""</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>&nbsp; &nbsp; arrs = tuple(reversed(arrs))&nbsp; #edit</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>&nbsp; &nbsp; lens = map(len, arrs)</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; dim = len(arrs)</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp; &nbsp; sz = 1</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>&nbsp; &nbsp; for s in lens:</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; sz*=s</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>&nbsp; &nbsp; ans = []&nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; &nbsp; for i, arr in enumerate(arrs):</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; slc = [1]*dim</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; slc[i] = lens[i]</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; arr2 = asarray(arr).reshape(slc)</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for j, sz in enumerate(lens):</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if j!=i:</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; arr2 = arr2.repeat(sz, axis=j) </span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ans.append(arr2)</span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>&nbsp; &nbsp; return tuple(ans)</span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>38</th><th> </th><td class="l"><span>def gridpts(q):</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>40</th><th> </th><td class="l"><span>takes a list of lists of equal length q = [[1,2],[3,4]]</span> </td>
+                      </tr><tr>
+                        <th>41</th><th> </th><td class="l"><span>and produces a list of gridpoints g = [[1,3],[1,4],[2,3],[2,4]]</span> </td>
+                      </tr><tr>
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>43</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = list(reversed(q))</span> </td>
+                      </tr><tr>
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; &nbsp; w = ndim_meshgrid(*q)</span> </td>
+                      </tr><tr>
+                        <th>45</th><th> </th><td class="l"><span>&nbsp; &nbsp; for i in range(len(q)):</span> </td>
+                      </tr><tr>
+                        <th>46</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; q[i] = list( w[i].reshape(w[i].size) )</span> </td>
+                      </tr><tr>
+                        <th>47</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = zip(*q)</span> </td>
+                      </tr><tr>
+                        <th>48</th><th> </th><td class="l"><span>&nbsp; &nbsp; return [list(i) for i in q]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>&nbsp; &nbsp; from dill.temp import dump</span> </td>
+                      </tr><tr>
+                        <th> </th><th>6</th><td class="r"><span>&nbsp; &nbsp; return dump(func, suffix=suffix, dir=dir)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>8</th><td class="r"><span>from mystic.math.grid import gridpts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>49</th><th>9</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>50</th><th>10</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py?rev=675#L114">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_batchgrid.py?rev=676#L74">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>114</th><th>74</th><td class="l"><span>&nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</span> </td>
+                  </tr><tr>
+                          <th>115</th><th>75</th><td class="l"><span>&nbsp; from mystic.monitors import VerboseMonitor, Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>116</th><th> </th><td class="l"><del>&nbsp; from mystic.tools import getch</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>117</th><th>76</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>118</th><th>77</th><td class="l"><span>&nbsp; maxiter = 1000</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="branches/UQ/math/examples/MPI_surrogate_diam_scatter.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/MPI_surrogate_diam_scatter.py">branches/UQ/math/examples/MPI_surrogate_diam_scatter.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_scatter.py?rev=675#L1">
+                      r675</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_scatter.py?rev=676#L1">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>def func_pickle(func, suffix='.pik'<del></del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>3</th><td class="r"><span>def func_pickle(func, suffix='.pik'<ins>, dir='.'</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span>&nbsp; &nbsp; """ standard pickle.dump of function to a NamedTemporaryFile """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>&nbsp; &nbsp; import dill as pickle</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>&nbsp; &nbsp; import tempfile</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span>&nbsp; &nbsp; file = tempfile.NamedTemporaryFile(suffix=suffix, dir='.')</span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span>&nbsp; &nbsp; pickle.dump(func, file)</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>&nbsp; &nbsp; file.flush()</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span>&nbsp; &nbsp; return file</span> </td>
+                      </tr><tr>
+                        <th>11</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>12</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>def random_samples(lb,ub,npts=10000):</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>&nbsp; "generate npts random samples between given lb &amp; ub"</span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>&nbsp; from numpy.random import random</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>&nbsp; dim = len(lb)</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>&nbsp; pts = random((dim,npts))</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>&nbsp; for i in range(dim):</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; pts[i] = (pts[i] * abs(ub[i] - lb[i])) + lb[i]</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>&nbsp; return pts</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>def samplepts(lb,ub,npts):</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>takes upper and lower bounds (e.g. ub = [2,4], lb = [0,3])</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>produces a list of sample points s = [[1,3],[1,4],[2,3],[2,4]]</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = random_samples(lb,ub,npts)</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = [list(i) for i in q]</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = zip(*q)</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; &nbsp; return [list(i) for i in q]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>&nbsp; &nbsp; from dill.temp import dump</span> </td>
+                      </tr><tr>
+                        <th> </th><th>6</th><td class="r"><span>&nbsp; &nbsp; return dump(func, suffix=suffix, dir=dir)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>8</th><td class="r"><span>from mystic.math.grid import samplepts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>32</th><th>9</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>33</th><th>10</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_scatter.py?rev=675#L97">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MPI_surrogate_diam_scatter.py?rev=676#L74">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>97</th><th>74</th><td class="l"><span>&nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</span> </td>
+                  </tr><tr>
+                          <th>98</th><th>75</th><td class="l"><span>&nbsp; from mystic.monitors import VerboseMonitor, Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>99</th><th> </th><td class="l"><del>&nbsp; from mystic.tools import getch</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>100</th><th>76</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>101</th><th>77</th><td class="l"><span>&nbsp; maxiter = 1000</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.py">branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.py?rev=675#L1">
+                      r675</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/MSUB_surrogate_diam_batchgrid.py?rev=676#L1">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>def func_pickle(func, suffix='.pik'<del></del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>3</th><td class="r"><span>def func_pickle(func, suffix='.pik'<ins>, dir='.'</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span>&nbsp; &nbsp; """ standard pickle.dump of function to a NamedTemporaryFile """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>&nbsp; &nbsp; import dill as pickle</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>&nbsp; &nbsp; import tempfile</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span>&nbsp; &nbsp; file = tempfile.NamedTemporaryFile(suffix=suffix, dir='.')</span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span>&nbsp; &nbsp; pickle.dump(func, file)</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>&nbsp; &nbsp; file.flush()</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span>&nbsp; &nbsp; return file</span> </td>
+                      </tr><tr>
+                        <th>11</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>12</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>from numpy import asarray</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>def ndim_meshgrid(*arrs):</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>&nbsp; &nbsp; """n-dimensional analogue to numpy.meshgrid"""</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>&nbsp; &nbsp; arrs = tuple(reversed(arrs))&nbsp; #edit</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>&nbsp; &nbsp; lens = map(len, arrs)</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; dim = len(arrs)</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp; &nbsp; sz = 1</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>&nbsp; &nbsp; for s in lens:</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; sz*=s</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>&nbsp; &nbsp; ans = []&nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; &nbsp; for i, arr in enumerate(arrs):</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; slc = [1]*dim</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; slc[i] = lens[i]</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; arr2 = asarray(arr).reshape(slc)</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for j, sz in enumerate(lens):</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if j!=i:</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; arr2 = arr2.repeat(sz, axis=j) </span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ans.append(arr2)</span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>&nbsp; &nbsp; return tuple(ans)</span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>38</th><th> </th><td class="l"><span>def gridpts(q):</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>40</th><th> </th><td class="l"><span>takes a list of lists of equal length q = [[1,2],[3,4]]</span> </td>
+                      </tr><tr>
+                        <th>41</th><th> </th><td class="l"><span>and produces a list of gridpoints g = [[1,3],[1,4],[2,3],[2,4]]</span> </td>
+                      </tr><tr>
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>43</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = list(reversed(q))</span> </td>
+                      </tr><tr>
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; &nbsp; w = ndim_meshgrid(*q)</span> </td>
+                      </tr><tr>
+                        <th>45</th><th> </th><td class="l"><span>&nbsp; &nbsp; for i in range(len(q)):</span> </td>
+                      </tr><tr>
+                        <th>46</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; q[i] = list( w[i].reshape(w[i].size) )</span> </td>
+                      </tr><tr>
+                        <th>47</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = zip(*q)</span> </td>
+                      </tr><tr>
+                        <th>48</th><th> </th><td class="l"><span>&nbsp; &nbsp; return [list(i) for i in q]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>&nbsp; &nbsp; from dill.temp import dump</span> </td>
+                      </tr><tr>
+                        <th> </th><th>6</th><td class="r"><span>&nbsp; &nbsp; return dump(func, suffix=suffix, dir=dir)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>8</th><td class="r"><span>from mystic.math.grid import gridpts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>49</th><th>9</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>50</th><th>10</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py">branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py?rev=675#L72">
+                      r675</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB2_surrogate_diam_batchgrid.py?rev=676#L72">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>72</th><th>72</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>73</th><th>73</th><td class="l"><span>&nbsp; # build a grid of starting points</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>74</th><th> </th><td class="l"><span>&nbsp; from MPI2_helper import gridpts, local_optimize</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; from mystic.math.grid import gridpts</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; from MPI2_helper import local_optimize</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>75</th><th>76</th><td class="l"><span>&nbsp; from MPI2_helper import nnodes, queue, timelimit</span> </td>
+                  </tr><tr>
+                          <th>76</th><th>77</th><td class="l"><span>&nbsp; initial_values = gridpts(bins)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file8">
+          <a href="branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py">branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 675">
+                    <a title="Show revision 675 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py?rev=675#L1">
+                      r675</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py?rev=676#L1">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>def func_pickle(func, suffix='.pik'<del></del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>3</th><td class="r"><span>def func_pickle(func, suffix='.pik'<ins>, dir='.'</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>4</th><td class="l"><span>&nbsp; &nbsp; """ standard pickle.dump of function to a NamedTemporaryFile """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span>&nbsp; &nbsp; import dill as pickle</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>&nbsp; &nbsp; import tempfile</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span>&nbsp; &nbsp; file = tempfile.NamedTemporaryFile(suffix=suffix, dir='.')</span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span>&nbsp; &nbsp; pickle.dump(func, file)</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>&nbsp; &nbsp; file.flush()</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span>&nbsp; &nbsp; return file</span> </td>
+                      </tr><tr>
+                        <th>11</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>12</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>from numpy import asarray</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>def ndim_meshgrid(*arrs):</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>&nbsp; &nbsp; """n-dimensional analogue to numpy.meshgrid"""</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>&nbsp; &nbsp; arrs = tuple(reversed(arrs))&nbsp; #edit</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>&nbsp; &nbsp; lens = map(len, arrs)</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; dim = len(arrs)</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp; &nbsp; sz = 1</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>&nbsp; &nbsp; for s in lens:</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; sz*=s</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>&nbsp; &nbsp; ans = []&nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; &nbsp; for i, arr in enumerate(arrs):</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; slc = [1]*dim</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; slc[i] = lens[i]</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; arr2 = asarray(arr).reshape(slc)</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for j, sz in enumerate(lens):</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if j!=i:</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; arr2 = arr2.repeat(sz, axis=j) </span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ans.append(arr2)</span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>&nbsp; &nbsp; return tuple(ans)</span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>38</th><th> </th><td class="l"><span>def gridpts(q):</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>40</th><th> </th><td class="l"><span>takes a list of lists of equal length q = [[1,2],[3,4]]</span> </td>
+                      </tr><tr>
+                        <th>41</th><th> </th><td class="l"><span>and produces a list of gridpoints g = [[1,3],[1,4],[2,3],[2,4]]</span> </td>
+                      </tr><tr>
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>43</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = list(reversed(q))</span> </td>
+                      </tr><tr>
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; &nbsp; w = ndim_meshgrid(*q)</span> </td>
+                      </tr><tr>
+                        <th>45</th><th> </th><td class="l"><span>&nbsp; &nbsp; for i in range(len(q)):</span> </td>
+                      </tr><tr>
+                        <th>46</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; q[i] = list( w[i].reshape(w[i].size) )</span> </td>
+                      </tr><tr>
+                        <th>47</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = zip(*q)</span> </td>
+                      </tr><tr>
+                        <th>48</th><th> </th><td class="l"><span>&nbsp; &nbsp; return [list(i) for i in q]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>5</th><td class="r"><span>&nbsp; &nbsp; from dill.temp import dump</span> </td>
+                      </tr><tr>
+                        <th> </th><th>6</th><td class="r"><span>&nbsp; &nbsp; return dump(func, suffix=suffix, dir=dir)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>7</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>8</th><td class="r"><span>from mystic.math.grid import gridpts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>49</th><th>9</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>50</th><th>10</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py?rev=675#L118">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/QSUB_surrogate_diam_batchgrid.py?rev=676#L78">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>118</th><th>78</th><td class="l"><span>&nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</span> </td>
+                  </tr><tr>
+                          <th>119</th><th>79</th><td class="l"><span>&nbsp; from mystic.monitors import VerboseMonitor, Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>120</th><th> </th><td class="l"><del>&nbsp; from mystic.tools import getch</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>121</th><th>80</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>122</th><th>81</th><td class="l"><span>&nbsp; maxiter = 1000</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file9">
+          <a href="branches/UQ/math/examples/TEST_surrogate_McD.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/TEST_surrogate_McD.py">branches/UQ/math/examples/TEST_surrogate_McD.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_McD.py?rev=471#L66">
+                      r471</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_McD.py?rev=676#L66">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>66</th><th>66</th><td class="l"><span>&nbsp; from mystic.strategy import Best1Exp</span> </td>
+                  </tr><tr>
+                          <th>67</th><th>67</th><td class="l"><span>&nbsp; from mystic.monitors import VerboseMonitor, Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>68</th><th> </th><td class="l"><span>&nbsp; from mystic.tools import <del>getch, </del>random_seed</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>68</th><td class="r"><span>&nbsp; from mystic.tools import <ins></ins>random_seed</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>69</th><th>69</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>70</th><th>70</th><td class="l"><span>&nbsp; random_seed(123)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_McD.py?rev=471#L128">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_McD.py?rev=676#L128">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>128</th><th>128</th><td class="l"><span># probability mass, expectation, mean, diameter, McDiarmid</span> </td>
+                  </tr><tr>
+                          <th>129</th><th>129</th><td class="l"><span>#######################################################################</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>130</th><th> </th><td class="l"><span>def volume(lb,ub):</span> </td>
+                      </tr><tr>
+                        <th>131</th><th> </th><td class="l"><span>&nbsp; """volume for a uniform distribution in n-dimensions"""</span> </td>
+                      </tr><tr>
+                        <th>132</th><th> </th><td class="l"><span>&nbsp; vol = 1</span> </td>
+                      </tr><tr>
+                        <th>133</th><th> </th><td class="l"><span>&nbsp; for i in range(len(ub)):</span> </td>
+                      </tr><tr>
+                        <th>134</th><th> </th><td class="l"><span>&nbsp; &nbsp; vol *= abs(ub[i] - lb[i])</span> </td>
+                      </tr><tr>
+                        <th>135</th><th> </th><td class="l"><span>&nbsp; return vol</span> </td>
+                      </tr><tr>
+                        <th>136</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>137</th><th> </th><td class="l"><span>def prob_mass(volume,norm):</span> </td>
+                      </tr><tr>
+                        <th>138</th><th> </th><td class="l"><span>&nbsp; """probability mass ..."""</span> </td>
+                      </tr><tr>
+                        <th>139</th><th> </th><td class="l"><span>&nbsp; return volume / norm&nbsp; #XXX: norm != 0</span> </td>
+                      </tr><tr>
+                        <th>140</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>141</th><th> </th><td class="l"><span>from scipy.integrate import quad, dblquad, tplquad</span> </td>
+                      </tr><tr>
+                        <th>142</th><th> </th><td class="l"><span>def expectation_value(f,lb,ub):&nbsp; #XXX: should be generalized to n-dimensions</span> </td>
+                      </tr><tr>
+                        <th>143</th><th> </th><td class="l"><span>&nbsp; """expectation value for an n-dimensional function; n in [1,2,3]"""</span> </td>
+                      </tr><tr>
+                        <th>144</th><th> </th><td class="l"><span>&nbsp; if len(lb) == 3:</span> </td>
+                      </tr><tr>
+                        <th>145</th><th> </th><td class="l"><span>&nbsp; &nbsp; def func(z,y,x): return f([x,y,z])</span> </td>
+                      </tr><tr>
+                        <th>146</th><th> </th><td class="l"><span>&nbsp; &nbsp; def qf(x,y): return lb[2]</span> </td>
+                      </tr><tr>
+                        <th>147</th><th> </th><td class="l"><span>&nbsp; &nbsp; def rf(x,y): return ub[2]</span> </td>
+                      </tr><tr>
+                        <th>148</th><th> </th><td class="l"><span>&nbsp; &nbsp; def gf(x): return lb[1]</span> </td>
+                      </tr><tr>
+                        <th>149</th><th> </th><td class="l"><span>&nbsp; &nbsp; def hf(x): return ub[1]</span> </td>
+                      </tr><tr>
+                        <th>150</th><th> </th><td class="l"><span>&nbsp; &nbsp; expectation,confidence = tplquad(func,lb[0],ub[0],gf,hf,qf,rf)</span> </td>
+                      </tr><tr>
+                        <th>151</th><th> </th><td class="l"><span>&nbsp; &nbsp; return expectation</span> </td>
+                      </tr><tr>
+                        <th>152</th><th> </th><td class="l"><span>&nbsp; if len(lb) == 2:</span> </td>
+                      </tr><tr>
+                        <th>153</th><th> </th><td class="l"><span>&nbsp; &nbsp; def func(y,x): return f([x,y])</span> </td>
+                      </tr><tr>
+                        <th>154</th><th> </th><td class="l"><span>&nbsp; &nbsp; def gf(x): return lb[1]</span> </td>
+                      </tr><tr>
+                        <th>155</th><th> </th><td class="l"><span>&nbsp; &nbsp; def hf(x): return ub[1]</span> </td>
+                      </tr><tr>
+                        <th>156</th><th> </th><td class="l"><span>&nbsp; &nbsp; expectation,confidence = dblquad(func,lb[0],ub[0],gf,hf)</span> </td>
+                      </tr><tr>
+                        <th>157</th><th> </th><td class="l"><span>&nbsp; &nbsp; return expectation </span> </td>
+                      </tr><tr>
+                        <th>158</th><th> </th><td class="l"><span>&nbsp; if len(lb) == 1:</span> </td>
+                      </tr><tr>
+                        <th>159</th><th> </th><td class="l"><span>&nbsp; &nbsp; expectation,confidence = quad(f,lb[0],ub[0])</span> </td>
+                      </tr><tr>
+                        <th>160</th><th> </th><td class="l"><span>&nbsp; &nbsp; return expectation </span> </td>
+                      </tr><tr>
+                        <th>161</th><th> </th><td class="l"><span>&nbsp;#raise Exception, "Function must be either 1-D, 2-D, or 3-D"</span> </td>
+                      </tr><tr>
+                        <th>162</th><th> </th><td class="l"><span>&nbsp;#### FIXME: instead of exception above, use hack for &gt; 3D</span> </td>
+                      </tr><tr>
+                        <th>163</th><th> </th><td class="l"><span>&nbsp; print "WARNING: Dimensions &gt; 3-D are assumed as constant at lower bound"</span> </td>
+                      </tr><tr>
+                        <th>164</th><th> </th><td class="l"><span>&nbsp; def func(z,y,x): return f([x,y,z]+lb[3:])</span> </td>
+                      </tr><tr>
+                        <th>165</th><th> </th><td class="l"><span>&nbsp; def qf(x,y): return lb[2]</span> </td>
+                      </tr><tr>
+                        <th>166</th><th> </th><td class="l"><span>&nbsp; def rf(x,y): return ub[2]</span> </td>
+                      </tr><tr>
+                        <th>167</th><th> </th><td class="l"><span>&nbsp; def gf(x): return lb[1]</span> </td>
+                      </tr><tr>
+                        <th>168</th><th> </th><td class="l"><span>&nbsp; def hf(x): return ub[1]</span> </td>
+                      </tr><tr>
+                        <th>169</th><th> </th><td class="l"><span>&nbsp; expectation,confidence = tplquad(func,lb[0],ub[0],gf,hf,qf,rf)</span> </td>
+                      </tr><tr>
+                        <th>170</th><th> </th><td class="l"><span>&nbsp; return expectation</span> </td>
+                      </tr><tr>
+                        <th>171</th><th> </th><td class="l"><span>&nbsp;#### END HACK</span> </td>
+                      </tr><tr>
+                        <th>172</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>173</th><th> </th><td class="l"><span>def mean(expectation,volume):</span> </td>
+                      </tr><tr>
+                        <th>174</th><th> </th><td class="l"><span>&nbsp; """mean ..."""</span> </td>
+                      </tr><tr>
+                        <th>175</th><th> </th><td class="l"><span>&nbsp; return expectation / volume&nbsp; #XXX: volume != 0</span> </td>
+                      </tr><tr>
+                        <th>176</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>177</th><th> </th><td class="l"><span>def mcdiarmid_bound(mean,diameter):</span> </td>
+                      </tr><tr>
+                        <th>178</th><th> </th><td class="l"><span>&nbsp; """McDiarmid ..."""</span> </td>
+                      </tr><tr>
+                        <th>179</th><th> </th><td class="l"><span>&nbsp; from math import exp</span> </td>
+                      </tr><tr>
+                        <th>180</th><th> </th><td class="l"><span>&nbsp; if not diameter: return 1.0&nbsp; #XXX: define e^(0/0) = 1</span> </td>
+                      </tr><tr>
+                        <th>181</th><th> </th><td class="l"><span>&nbsp; return exp(-2.0 * (max(0,mean))**2 / diameter**2)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>130</th><td class="r"><span>from mystic.math.stats import volume, prob_mass, mean, mcdiarmid_bound</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>131</th><td class="r"><span>from mystic.math.integrate import integrate as expectation_value</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>182</th><th>132</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>183</th><th>133</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file10">
+          <a href="branches/UQ/math/examples/TEST_surrogate_cut.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/TEST_surrogate_cut.py">branches/UQ/math/examples/TEST_surrogate_cut.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_cut.py?rev=471#L7">
+                      r471</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_cut.py?rev=676#L7">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span># (similar to concentration.in)</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span>#######################################################################</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>9</th><th> </th><td class="l"><del>from TEST_surrogate_McD import volume, prob_mass</del> </td>
+                  </tr><tr class="last">
+                          <th>10</th><th> </th><td class="l"><del>from TEST_surrogate_McD import expectation_value, mean, mcdiarmid_bound</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>11</th><th>9</th><td class="l"><span>from TEST_surrogate_diam import *&nbsp; # model, limit</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>12</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>def sample(f,lb,ub,npts=10000):</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>&nbsp; from numpy.random import random</span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>&nbsp; pts = random((3,npts))</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>&nbsp; for i in range(3):</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>&nbsp; &nbsp; pts[i] = (pts[i] * abs(ub[i] - lb[i])) + lb[i]</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; failure = 0; success = 0</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>&nbsp; for i in range(npts):</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp; &nbsp; if f([pts[0][i],pts[1][i],pts[2][i]]):</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; success += 1</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; failure += 1</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>&nbsp; return failure,success</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>10</th><td class="r"><span>from mystic.math.stats import volume, prob_mass, mean, mcdiarmid_bound</span> </td>
+                      </tr><tr>
+                        <th> </th><th>11</th><td class="r"><span>from mystic.math.integrate import integrate as expectation_value</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>12</th><td class="r"><span>from mystic.math.samples import sample</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>26</th><th>13</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>27</th><th>14</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_cut.py?rev=471#L35">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_cut.py?rev=676#L22">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>22</th><td class="l"><span>&nbsp; from mystic.strategy import Best1Exp</span> </td>
+                  </tr><tr>
+                          <th>36</th><th>23</th><td class="l"><span>&nbsp; from mystic.monitors import VerboseMonitor, Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>37</th><th> </th><td class="l"><span>&nbsp; from mystic.tools import <del>getch, </del>random_seed</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>24</th><td class="r"><span>&nbsp; from mystic.tools import <ins></ins>random_seed</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>38</th><th>25</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>39</th><th>26</th><td class="l"><span>&nbsp; random_seed(123)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file11">
+          <a href="branches/UQ/math/examples/TEST_surrogate_diam.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/TEST_surrogate_diam.py">branches/UQ/math/examples/TEST_surrogate_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_diam.py?rev=471#L63">
+                      r471</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_diam.py?rev=676#L63">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>63</th><th>63</th><td class="l"><span>&nbsp; from mystic.strategy import Best1Exp</span> </td>
+                  </tr><tr>
+                          <th>64</th><th>64</th><td class="l"><span>&nbsp; from mystic.monitors import VerboseMonitor, Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>65</th><th> </th><td class="l"><span>&nbsp; from mystic.tools import <del>getch, </del>random_seed</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>65</th><td class="r"><span>&nbsp; from mystic.tools import <ins></ins>random_seed</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>66</th><th>66</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>67</th><th>67</th><td class="l"><span>&nbsp; random_seed(123)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file12">
+          <a href="branches/UQ/math/examples/TEST_surrogate_diam_batchgrid.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/TEST_surrogate_diam_batchgrid.py">branches/UQ/math/examples/TEST_surrogate_diam_batchgrid.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_diam_batchgrid.py?rev=471#L1">
+                      r471</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_diam_batchgrid.py?rev=676#L1">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>from numpy import asarray</span> </td>
+                      </tr><tr>
+                        <th>4</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>5</th><th> </th><td class="l"><span>def ndim_meshgrid(*arrs):</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>&nbsp; &nbsp; """n-dimensional analogue to numpy.meshgrid"""</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span>&nbsp; &nbsp; arrs = tuple(reversed(arrs))&nbsp; #edit</span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span>&nbsp; &nbsp; lens = map(len, arrs)</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>&nbsp; &nbsp; dim = len(arrs)</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>11</th><th> </th><td class="l"><span>&nbsp; &nbsp; sz = 1</span> </td>
+                      </tr><tr>
+                        <th>12</th><th> </th><td class="l"><span>&nbsp; &nbsp; for s in lens:</span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; sz*=s</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>&nbsp; &nbsp; ans = []&nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>&nbsp; &nbsp; for i, arr in enumerate(arrs):</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; slc = [1]*dim</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; slc[i] = lens[i]</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; arr2 = asarray(arr).reshape(slc)</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for j, sz in enumerate(lens):</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if j!=i:</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; arr2 = arr2.repeat(sz, axis=j) </span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ans.append(arr2)</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>&nbsp; &nbsp; return tuple(ans)</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>def gridpts(q):</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>takes a list of lists of equal length q = [[1,2],[3,4]]</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>and produces a list of gridpoints g = [[1,3],[1,4],[2,3],[2,4]]</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = list(reversed(q))</span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span>&nbsp; &nbsp; w = ndim_meshgrid(*q)</span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>&nbsp; &nbsp; for i in range(len(q)):</span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; q[i] = list( w[i].reshape(w[i].size) )</span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = zip(*q)</span> </td>
+                      </tr><tr>
+                        <th>38</th><th> </th><td class="l"><span>&nbsp; &nbsp; return [list(i) for i in q]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>3</th><td class="r"><span>from mystic.math.grid import gridpts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>4</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>40</th><th>5</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_diam_batchgrid.py?rev=471#L99">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_diam_batchgrid.py?rev=676#L64">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>99</th><th>64</th><td class="l"><span>&nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</span> </td>
+                  </tr><tr>
+                          <th>100</th><th>65</th><td class="l"><span>&nbsp; from mystic.monitors import VerboseMonitor, Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>101</th><th> </th><td class="l"><del>&nbsp; from mystic.tools import getch</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>102</th><th>66</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>103</th><th>67</th><td class="l"><span>&nbsp;#stepmon = VerboseMonitor(100)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file13">
+          <a href="branches/UQ/math/examples/TEST_surrogate_diam_scatter.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/TEST_surrogate_diam_scatter.py">branches/UQ/math/examples/TEST_surrogate_diam_scatter.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_diam_scatter.py?rev=471#L1">
+                      r471</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_diam_scatter.py?rev=676#L1">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>def random_samples(lb,ub,npts=10000):</span> </td>
+                      </tr><tr>
+                        <th>4</th><th> </th><td class="l"><span>&nbsp; "generate npts random samples between given lb &amp; ub"</span> </td>
+                      </tr><tr>
+                        <th>5</th><th> </th><td class="l"><span>&nbsp; from numpy.random import random</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span>&nbsp; dim = len(lb)</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span>&nbsp; pts = random((dim,npts))</span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span>&nbsp; for i in range(dim):</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>&nbsp; &nbsp; pts[i] = (pts[i] * abs(ub[i] - lb[i])) + lb[i]</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span>&nbsp; return pts</span> </td>
+                      </tr><tr>
+                        <th>11</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>12</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>def samplepts(lb,ub,npts):</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>takes upper and lower bounds (e.g. ub = [2,4], lb = [0,3])</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>produces a list of sample points s = [[1,3],[1,4],[2,3],[2,4]]</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = random_samples(lb,ub,npts)</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = [list(i) for i in q]</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = zip(*q)</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp; &nbsp; return [list(i) for i in q]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>3</th><td class="r"><span>from mystic.math.grid import samplepts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>4</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>23</th><th>5</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_diam_scatter.py?rev=471#L82">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_diam_scatter.py?rev=676#L64">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>82</th><th>64</th><td class="l"><span>&nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</span> </td>
+                  </tr><tr>
+                          <th>83</th><th>65</th><td class="l"><span>&nbsp; from mystic.monitors import VerboseMonitor, Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>84</th><th> </th><td class="l"><del>&nbsp; from mystic.tools import getch</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>85</th><th>66</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>86</th><th>67</th><td class="l"><span>&nbsp;#stepmon = VerboseMonitor(100)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file14">
+          <a href="branches/UQ/math/examples/TEST_surrogate_samples.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/TEST_surrogate_samples.py">branches/UQ/math/examples/TEST_surrogate_samples.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_samples.py?rev=471#L9">
+                      r471</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_samples.py?rev=676#L9">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>9</th><th>9</th><td class="l"><span># (similar to concentration.in)</span> </td>
+                  </tr><tr>
+                          <th>10</th><th>10</th><td class="l"><span>#######################################################################</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>11</th><th> </th><td class="l"><del>from TEST_surrogate_McD import volume, prob_mass</del> </td>
+                  </tr><tr class="last">
+                          <th>12</th><th> </th><td class="l"><del>from TEST_surrogate_McD import expectation_value, mean, mcdiarmid_bound</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>13</th><th>11</th><td class="l"><span>from TEST_surrogate_diam import *&nbsp; # model, limit</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>14</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>def random_samples(lb,ub,npts=10000):</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>&nbsp; "generate npts random samples between given lb &amp; ub"</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>&nbsp; from numpy.random import random</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>&nbsp; dim = len(lb)</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; pts = random((dim,npts))</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>&nbsp; for i in range(dim):</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp; &nbsp; pts[i] = (pts[i] * abs(ub[i] - lb[i])) + lb[i]</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span>&nbsp; return pts</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>def sampled_pof(f,pts):</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; "use sampling to calculate 'exact' PoF"</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>&nbsp; failure = 0</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; for i in range(len(pts[0])):</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; Fx = f([pts[0][i],pts[1][i],pts[2][i]])</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp; if not Fx:</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; failure += 1</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; pof = float(failure) / float(len(pts[0]))</span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; return pof</span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span>def sampled_pts(pts,lb,ub):</span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span>&nbsp; from numpy import inf</span> </td>
+                      </tr><tr>
+                        <th>38</th><th> </th><td class="l"><span>&nbsp; def identity(x):</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; &nbsp; return x</span> </td>
+                      </tr><tr>
+                        <th>40</th><th> </th><td class="l"><span>&nbsp; f = wrap_bounds(identity,lb,ub)</span> </td>
+                      </tr><tr>
+                        <th>41</th><th> </th><td class="l"><span>&nbsp; npts = 0</span> </td>
+                      </tr><tr>
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; for i in range(len(pts[0])):</span> </td>
+                      </tr><tr>
+                        <th>43</th><th> </th><td class="l"><span>&nbsp; &nbsp; Fx = f([pts[0][i],pts[1][i],pts[2][i]])</span> </td>
+                      </tr><tr>
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; &nbsp; if Fx != -inf: # outside of bounds evaluates to -inf</span> </td>
+                      </tr><tr>
+                        <th>45</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; npts += 1</span> </td>
+                      </tr><tr>
+                        <th>46</th><th> </th><td class="l"><span>&nbsp; return npts</span> </td>
+                      </tr><tr>
+                        <th>47</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>48</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>49</th><th> </th><td class="l"><span>def sampled_prob(pts,lb,ub):</span> </td>
+                      </tr><tr>
+                        <th>50</th><th> </th><td class="l"><span>&nbsp; prob = float(sampled_pts(pts,lb,ub)) / float(len(pts[0]))</span> </td>
+                      </tr><tr>
+                        <th>51</th><th> </th><td class="l"><span>&nbsp; return prob</span> </td>
+                      </tr><tr>
+                        <th>52</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>12</th><td class="r"><span>from mystic.math.stats import volume, prob_mass, mean, mcdiarmid_bound</span> </td>
+                      </tr><tr>
+                        <th> </th><th>13</th><td class="r"><span>from mystic.math.integrate import integrate as expectation_value</span> </td>
+                      </tr><tr>
+                        <th> </th><th>14</th><td class="r"><span>from mystic.math.samples import random_samples, sampled_pts, sampled_prob</span> </td>
+                      </tr><tr>
+                        <th> </th><th>15</th><td class="r"><span>from mystic.math.samples import alpha, _pof_given_samples as sampled_pof</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>16</th><td class="r"><span>from mystic.tools import wrap_bounds</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>17</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>54</th><th>18</th><td class="l"><span>def sampled_mean(pts,lb,ub):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_samples.py?rev=471#L65">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_samples.py?rev=676#L29">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>65</th><th>29</th><td class="l"><span>&nbsp; return ave</span> </td>
+                  </tr><tr>
+                          <th>66</th><th>30</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>67</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>68</th><th> </th><td class="l"><del>def wrap_bounds(f,lb,ub):</del> </td>
+                  </tr><tr>
+                          <th>69</th><th> </th><td class="l"><del>&nbsp; from numpy import asarray, any, inf</del> </td>
+                  </tr><tr>
+                          <th>70</th><th> </th><td class="l"><del>&nbsp; lb = asarray(lb) </del> </td>
+                  </tr><tr>
+                          <th>71</th><th> </th><td class="l"><del>&nbsp; ub = asarray(ub) </del> </td>
+                  </tr><tr>
+                          <th>72</th><th> </th><td class="l"><del>&nbsp; def function_wrapper(x): #x bounded on [lb,ub)</del> </td>
+                  </tr><tr>
+                          <th>73</th><th> </th><td class="l"><del>&nbsp; &nbsp; if any((x &lt; lb) | (x &gt;= ub)): #if violates bounds, evaluate as -inf</del> </td>
+                  </tr><tr>
+                          <th>74</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; return -inf</del> </td>
+                  </tr><tr>
+                          <th>75</th><th> </th><td class="l"><del>&nbsp; &nbsp; return f(x)</del> </td>
+                  </tr><tr>
+                          <th>76</th><th> </th><td class="l"><del>&nbsp; return function_wrapper</del> </td>
+                  </tr><tr>
+                          <th>77</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr class="last">
+                          <th>78</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>79</th><th>31</th><td class="l"><span>def minF(x):</span> </td>
+                  </tr><tr>
+                          <th>80</th><th>32</th><td class="l"><span>&nbsp; return scale * model(x)</span> </td>
+                  </tr><tr>
+                          <th>81</th><th>33</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>82</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>83</th><th>34</th><td class="l"><span>def maxF(x):</span> </td>
+                  </tr><tr>
+                          <th>84</th><th>35</th><td class="l"><span>&nbsp; return -scale * model(x)</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>85</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>86</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>87</th><th> </th><td class="l"><del>from math import log</del> </td>
+                  </tr><tr>
+                          <th>88</th><th> </th><td class="l"><del>def alpha(n,diameter,epsilon=0.01):</del> </td>
+                  </tr><tr>
+                          <th>89</th><th> </th><td class="l"><del>&nbsp;#return diameter * n**(-0.5) * (-log(epsilon))**(0.5)</del> </td>
+                  </tr><tr class="last">
+                          <th>90</th><th> </th><td class="l"><del>&nbsp; return diameter * (-log(epsilon) / (2.0 * n))**(0.5)</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>91</th><th>36</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>92</th><th>37</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_samples.py?rev=471#L100">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_samples.py?rev=676#L45">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>100</th><th>45</th><td class="l"><span>&nbsp; from mystic.strategy import Best1Exp</span> </td>
+                  </tr><tr>
+                          <th>101</th><th>46</th><td class="l"><span>&nbsp; from mystic.monitors import VerboseMonitor, Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>102</th><th> </th><td class="l"><span>&nbsp; from mystic.tools import <del>getch, </del>random_seed</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>47</th><td class="r"><span>&nbsp; from mystic.tools import <ins></ins>random_seed</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>103</th><th>48</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>104</th><th>49</th><td class="l"><span>&nbsp; random_seed(123)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file15">
+          <a href="branches/UQ/math/examples/TEST_surrogate_smartcut.html" title="Show the changeset 676 restricted to branches/UQ/math/examples/TEST_surrogate_smartcut.py">branches/UQ/math/examples/TEST_surrogate_smartcut.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_smartcut.py?rev=471#L8">
+                      r471</a>
+                  </th>
+                  <th title="Revision 676">
+                    <a title="Show revision 676 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_smartcut.py?rev=676#L8">
+                      r676</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>8</th><th>8</th><td class="l"><span># (similar to concentration.in)</span> </td>
+                  </tr><tr>
+                          <th>9</th><th>9</th><td class="l"><span>#######################################################################</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>10</th><th> </th><td class="l"><del>from TEST_surrogate_McD import volume, prob_mass</del> </td>
+                  </tr><tr class="last">
+                          <th>11</th><th> </th><td class="l"><del>from TEST_surrogate_McD import expectation_value, mean, mcdiarmid_bound</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>10</th><td class="l"><span>from TEST_surrogate_diam import *&nbsp; # model, limit</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>13</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>def random_samples(lb,ub,npts):</span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>&nbsp; "generate npts random samples between given lb &amp; ub"</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>&nbsp; from numpy.random import random</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>&nbsp; dim = len(lb)</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>&nbsp; pts = random((dim,npts))</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; for i in range(dim):</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>&nbsp; &nbsp; pts[i] = (pts[i] * abs(ub[i] - lb[i])) + lb[i]</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>&nbsp; return pts</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>def sampled_pof(f,lb,ub,npts=10000):</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>&nbsp; "use sampling to calculate 'exact' PoF"</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; pts = random_samples(lb,ub,npts)</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>&nbsp; failure = 0</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; for i in range(npts):</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; if not f([pts[0][i],pts[1][i],pts[2][i]]):</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; failure += 1</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>&nbsp; pof = float(failure) / float(npts)</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; return pof</span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>11</th><td class="r"><span>from mystic.math.stats import volume, prob_mass, mean, mcdiarmid_bound</span> </td>
+                      </tr><tr>
+                        <th> </th><th>12</th><td class="r"><span>from mystic.math.integrate import integrate as expectation_value</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>13</th><td class="r"><span>from mystic.math.samples import sampled_pof</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>14</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>35</th><th>15</th><td class="l"><span>def minF(x):</span> </td>
+                  </tr><tr>
+                          <th>36</th><th>16</th><td class="l"><span>&nbsp; return scale * model(x)</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>37</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>38</th><th>17</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>39</th><th>18</th><td class="l"><span>def maxF(x):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_smartcut.py?rev=471#L50">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples/TEST_surrogate_smartcut.py?rev=676#L29">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>29</th><td class="l"><span>&nbsp; from mystic.strategy import Best1Exp</span> </td>
+                  </tr><tr>
+                          <th>51</th><th>30</th><td class="l"><span>&nbsp; from mystic.monitors import VerboseMonitor, Monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>52</th><th> </th><td class="l"><span>&nbsp; from mystic.tools import <del>getch, </del>random_seed</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>31</th><td class="r"><span>&nbsp; from mystic.tools import <ins></ins>random_seed</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>32</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>54</th><th>33</th><td class="l"><span>&nbsp; random_seed(123)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/676/branches?format=diff&amp;new=676" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/676/branches?format=zip&amp;new=676" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/676/branches by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:13:21 GMT -->
+</html>

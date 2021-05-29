@@ -1,0 +1,2199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/687/mystic/_math/discrete.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:49:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 687 for mystic/_math/discrete.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/687/mystic/_math/discrete.py?format=diff&amp;new=687" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/687/mystic/_math/discrete.py?format=zip&amp;new=687" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../694/mystic/_math/discrete.html" title="Changeset 694 for mystic/_math/discrete.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../584/mystic/_math/dirac_measure.html" title="Changeset 584 for mystic/_math/discrete.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../584/mystic/_math/dirac_measure.html" title="Changeset 584 for mystic/_math/discrete.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../694/mystic/_math/discrete.html" title="Changeset 694 for mystic/_math/discrete.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../687.html">687</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687">mystic/_math/discrete.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             06/15/13 18:43:09
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-06-15T18%3A43%3A09-07%3A00&amp;precision=second" title="2013-06-15T18:43:09-07:00 in Timeline">3 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+renaming of some of the measure methods, including dirac_measure to measure<br />
+moved dirac_measure.py to discrete.py, and paramtrans to distance<br />
+added isinstance to tools; added min, max, ess_min, ess_max to measures<br />
+moved dirac_measure.coords to dirac_measure.positions<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mv"></dt><dd>1 moved</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mv"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687">
+              mystic/_math/discrete.py
+            </a>
+          <span class="comment">(moved)</span>
+            <small><em>(moved from <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584" title="Show original file (revision 584)">
+                mystic/_math/dirac_measure.py</a>)</em></small>
+              (<a title="Show differences" href="#file0">44 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="discrete.html" title="Show the changeset 687 restricted to mystic/_math/discrete.py">mystic/_math/discrete.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 584">
+                    <a title="Show revision 584 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L1">
+                      r584</a>
+                  </th>
+                  <th title="Revision 687">
+                    <a title="Show revision 687 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L1">
+                      r687</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#! /usr/bin/env python</span> </td>
+                  </tr><tr>
+                          <th>2</th><th>2</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>3</th><th> </th><td class="l"><span>Classes for <del>Dirac</del> measure data objects.</span> </td>
+                      </tr><tr>
+                        <th>4</th><th> </th><td class="l"><span>Includes point<del>, dirac_</del>measure, product_measure, and scenario classes.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>3</th><td class="r"><span>Classes for <ins>discrete</ins> measure data objects.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>4</th><td class="r"><span>Includes point<ins>_mass, </ins>measure, product_measure, and scenario classes.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>5</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>6</th><th>6</th><td class="l"><span># Adapted from seesaw2d.py in branches/UQ/math/examples2/ </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L10">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L10">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>10</th><td class="l"><span>from mystic.math.measures import impose_spread, impose_variance</span> </td>
+                  </tr><tr>
+                          <th>11</th><th>11</th><td class="l"><span>from mystic.math.measures import impose_weight_norm</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>12</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>13</th><th> </th><td class="l"><span>class point(object):</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>&nbsp; """ 1-d object with weight and position</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>12</th><td class="r"><span>from __builtin__ import max as _max</span> </td>
+                      </tr><tr>
+                        <th> </th><th>13</th><td class="r"><span>from __builtin__ import min as _min</span> </td>
+                      </tr><tr>
+                        <th> </th><th>14</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>15</th><td class="r"><span>class point_mass(object):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>16</th><td class="r"><span>&nbsp; """ a point_mass object with weight and position</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>17</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>16</th><th>18</th><td class="l"><span>&nbsp;queries:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L24">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L26">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>26</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>25</th><th>27</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; def __init__(self, position, weight<del></del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>28</th><td class="r"><span>&nbsp; def __init__(self, position, weight<ins>=1.0</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>27</th><th>29</th><td class="l"><span>&nbsp; &nbsp; self.weight = weight</span> </td>
+                  </tr><tr>
+                          <th>28</th><th>30</th><td class="l"><span>&nbsp; &nbsp; self.position = position</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L41">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L43">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>41</th><th>43</th><td class="l"><span>&nbsp; pass</span> </td>
+                  </tr><tr>
+                          <th>42</th><th>44</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>43</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>44</th><th> </th><td class="l"><span>class dirac_measure(list):&nbsp; #FIXME: meant to only accept points...</span> </td>
+                      </tr><tr>
+                        <th>45</th><th> </th><td class="l"><span>&nbsp; """ a 1-d collection of points forming a 'discrete_measure'</span> </td>
+                      </tr><tr>
+                        <th>46</th><th> </th><td class="l"><span>&nbsp; s = dirac_measure([point1, point2, ..., pointN])&nbsp; </span> </td>
+                      </tr><tr>
+                        <th>47</th><th> </th><td class="l"><span>&nbsp; &nbsp; where a point has weight and position</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>45</th><td class="r"><span>class measure(list):&nbsp; #FIXME: meant to only accept point_masses...</span> </td>
+                      </tr><tr>
+                        <th> </th><th>46</th><td class="r"><span>&nbsp; """ a 1-d collection of point_masses forming a 'discrete_measure'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>47</th><td class="r"><span>&nbsp; s = measure([point_mass1, point_mass2, ..., point_massN])&nbsp; </span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>48</th><td class="r"><span>&nbsp; &nbsp; where a point_mass has weight and position</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>49</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>49</th><th>50</th><td class="l"><span>&nbsp;queries:</span> </td>
+                  </tr><tr>
+                          <th>50</th><th>51</th><td class="l"><span>&nbsp; s.weights&nbsp; &nbsp;--&nbsp; returns list of weights</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>51</th><th> </th><td class="l"><span>&nbsp; s.<del>coord</del>s&nbsp; --&nbsp; returns list of positions</span> </td>
+                      </tr><tr>
+                        <th>52</th><th> </th><td class="l"><span>&nbsp; s.npts&nbsp; --&nbsp; returns the number of point<del></del>s</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>52</th><td class="r"><span>&nbsp; s.<ins>position</ins>s&nbsp; --&nbsp; returns list of positions</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>53</th><td class="r"><span>&nbsp; s.npts&nbsp; --&nbsp; returns the number of point<ins>_masse</ins>s</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>54</th><td class="l"><span>&nbsp; s.mass&nbsp; --&nbsp; calculates sum of weights</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; s.<del>mean</del>&nbsp; --&nbsp; calculates sum of weights*positions</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>55</th><td class="r"><span>&nbsp; s.<ins>center_mass</ins>&nbsp; --&nbsp; calculates sum of weights*positions</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>55</th><th>56</th><td class="l"><span>&nbsp; s.range&nbsp; --&nbsp; calculates |max - min| for positions</span> </td>
+                  </tr><tr>
+                          <th>56</th><th>57</th><td class="l"><span>&nbsp; s.var&nbsp; --&nbsp; calculates mean( |positions - mean(positions)|**2 )</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L58">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L59">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>58</th><th>59</th><td class="l"><span>&nbsp;settings:</span> </td>
+                  </tr><tr>
+                          <th>59</th><th>60</th><td class="l"><span>&nbsp; s.weights = [w1, w2, ..., wn]&nbsp; --&nbsp; set the weights</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>60</th><th> </th><td class="l"><span>&nbsp; s.<del>coord</del>s = [x1, x2, ..., xn]&nbsp; --&nbsp; set the positions</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>61</th><td class="r"><span>&nbsp; s.<ins>position</ins>s = [x1, x2, ..., xn]&nbsp; --&nbsp; set the positions</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>62</th><td class="l"><span>&nbsp; s.normalize()&nbsp; --&nbsp; normalize the weights to 1.0</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>62</th><th> </th><td class="l"><span>&nbsp; s.<del>mean(R)&nbsp; --&nbsp; set the mean</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>63</th><td class="r"><span>&nbsp; s.<ins>center_mass(R)&nbsp; --&nbsp; set the center of mass</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>63</th><th>64</th><td class="l"><span>&nbsp; s.range(R)&nbsp; --&nbsp; set the range</span> </td>
+                  </tr><tr>
+                          <th>64</th><th>65</th><td class="l"><span>&nbsp; s.var(R)&nbsp; --&nbsp; set the variance</span> </td>
+                  </tr><tr>
+                          <th>65</th><th>66</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>66</th><th>67</th><td class="l"><span>&nbsp;methods:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>67</th><th> </th><td class="l"><span>&nbsp; s.get_expect(f)&nbsp; --&nbsp; calculate the expectation</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>68</th><td class="r"><span>&nbsp; s.support()&nbsp; -- get the positions that have corresponding non-zero weights</span> </td>
+                      </tr><tr>
+                        <th> </th><th>69</th><td class="r"><span>&nbsp; s.support_index()&nbsp; --&nbsp; get the indicies of positions that have support</span> </td>
+                      </tr><tr>
+                        <th> </th><th>70</th><td class="r"><span>&nbsp; s.max(f)&nbsp; --&nbsp; calculate the maximum for a given function</span> </td>
+                      </tr><tr>
+                        <th> </th><th>71</th><td class="r"><span>&nbsp; s.min(f)&nbsp; --&nbsp; calculate the minimum for a given function</span> </td>
+                      </tr><tr>
+                        <th> </th><th>72</th><td class="r"><span>&nbsp; s.ess_max(f)&nbsp; --&nbsp; calculate the maximum for the support of a given function</span> </td>
+                      </tr><tr>
+                        <th> </th><th>73</th><td class="r"><span>&nbsp; s.ess_min(f)&nbsp; --&nbsp; calculate the minimum for the support of a given function</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; s.expect(f)&nbsp; --&nbsp; calculate the expectation</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>75</th><td class="l"><span>&nbsp; s.set_expect((center,delta), f)&nbsp; --&nbsp; impose expectation by adjusting positions</span> </td>
+                  </tr><tr>
+                          <th>69</th><th>76</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>70</th><th>77</th><td class="l"><span>&nbsp;notes:</span> </td>
+                  </tr><tr>
+                          <th>71</th><th>78</th><td class="l"><span>&nbsp; - constraints should impose that sum(weights) should be 1.0</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>72</th><th> </th><td class="l"><span>&nbsp; - assumes that s.n = len(s.coords) == len(s.weights)</span> </td>
+                      </tr><tr>
+                        <th>73</th><th> </th><td class="l"><span>"""</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>79</th><td class="r"><span>&nbsp; - assumes that s.n = len(s.positions) == len(s.weights)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>80</th><td class="r"><span>"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>81</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>82</th><td class="r"><span>&nbsp; def support_index(self, tol=0):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>83</th><td class="r"><span>&nbsp; &nbsp; """get the indicies of the positions which have non-zero weight</span> </td>
+                      </tr><tr>
+                        <th> </th><th>84</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>85</th><td class="r"><span>Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>86</th><td class="r"><span>&nbsp; &nbsp; tol -- weight tolerance, where any weight &lt;= tol is considered zero</span> </td>
+                      </tr><tr>
+                        <th> </th><th>87</th><td class="r"><span>"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>88</th><td class="r"><span>&nbsp; &nbsp; from measures import support_index</span> </td>
+                      </tr><tr>
+                        <th> </th><th>89</th><td class="r"><span>&nbsp; &nbsp; return support_index(self.weights, tol)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>90</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>91</th><td class="r"><span>&nbsp; def support(self, tol=0):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>92</th><td class="r"><span>&nbsp; &nbsp; """get the positions which have non-zero weight</span> </td>
+                      </tr><tr>
+                        <th> </th><th>93</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>94</th><td class="r"><span>Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>95</th><td class="r"><span>&nbsp; &nbsp; tol -- weight tolerance, where any weight &lt;= tol is considered zero</span> </td>
+                      </tr><tr>
+                        <th> </th><th>96</th><td class="r"><span>"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>97</th><td class="r"><span>&nbsp; &nbsp; from measures import support</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>98</th><td class="r"><span>&nbsp; &nbsp; return support(self.positions, self.weights, tol)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>99</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>75</th><th>100</th><td class="l"><span>&nbsp; def __weights(self):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L89">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L114">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>89</th><th>114</th><td class="l"><span>&nbsp; def __mean(self):</span> </td>
+                  </tr><tr>
+                          <th>90</th><th>115</th><td class="l"><span>&nbsp; &nbsp; from mystic.math.measures import mean</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>91</th><th> </th><td class="l"><span>&nbsp; &nbsp; return mean(self.<del>coord</del>s, self.weights) </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>116</th><td class="r"><span>&nbsp; &nbsp; return mean(self.<ins>position</ins>s, self.weights) </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>92</th><th>117</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>93</th><th>118</th><td class="l"><span>&nbsp; def __range(self):</span> </td>
+                  </tr><tr>
+                          <th>94</th><th>119</th><td class="l"><span>&nbsp; &nbsp; from mystic.math.measures import spread</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>95</th><th> </th><td class="l"><span>&nbsp; &nbsp; return spread(self.<del>coord</del>s)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>120</th><td class="r"><span>&nbsp; &nbsp; return spread(self.<ins>position</ins>s)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>96</th><th>121</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>97</th><th>122</th><td class="l"><span>&nbsp; def __variance(self):</span> </td>
+                  </tr><tr>
+                          <th>98</th><th>123</th><td class="l"><span>&nbsp; &nbsp; from mystic.math.measures import variance</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>99</th><th> </th><td class="l"><span>&nbsp; &nbsp; return variance(self.<del>coord</del>s, self.weights)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>124</th><td class="r"><span>&nbsp; &nbsp; return variance(self.<ins>position</ins>s, self.weights)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>100</th><th>125</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>101</th><th>126</th><td class="l"><span>&nbsp; def __set_weights(self, weights):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L110">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L135">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>110</th><th>135</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>111</th><th>136</th><td class="l"><span>&nbsp; def normalize(self):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>112</th><th> </th><td class="l"><span>&nbsp; &nbsp; self.coords, self.weights = impose_weight_norm(self.coords, self.weights)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>137</th><td class="r"><span>&nbsp; &nbsp; """normalize the weights"""</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>138</th><td class="r"><span>&nbsp; &nbsp; self.positions, self.weights = impose_weight_norm(self.positions, self.weights)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>113</th><th>139</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>114</th><th>140</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>115</th><th>141</th><td class="l"><span>&nbsp; def __set_mean(self, m):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>116</th><th> </th><td class="l"><span>&nbsp; &nbsp; self.<del>coords = impose_mean(m, self.coord</del>s, self.weights)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>142</th><td class="r"><span>&nbsp; &nbsp; self.<ins>positions = impose_mean(m, self.position</ins>s, self.weights)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>117</th><th>143</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>118</th><th>144</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>119</th><th>145</th><td class="l"><span>&nbsp; def __set_range(self, r):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>120</th><th> </th><td class="l"><span>&nbsp; &nbsp; self.<del>coords = impose_spread(r, self.coord</del>s, self.weights)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>146</th><td class="r"><span>&nbsp; &nbsp; self.<ins>positions = impose_spread(r, self.position</ins>s, self.weights)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>121</th><th>147</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>122</th><th>148</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>123</th><th>149</th><td class="l"><span>&nbsp; def __set_variance(self, v):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>124</th><th> </th><td class="l"><span>&nbsp; &nbsp; self.coords = impose_variance(v, self.coords, self.weights)</span> </td>
+                      </tr><tr>
+                        <th>125</th><th> </th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                      </tr><tr>
+                        <th>126</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>127</th><th> </th><td class="l"><span>&nbsp; def get_expect(self, f):</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>150</th><td class="r"><span>&nbsp; &nbsp; self.positions = impose_variance(v, self.positions, self.weights)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>151</th><td class="r"><span>&nbsp; &nbsp; return</span> </td>
+                      </tr><tr>
+                        <th> </th><th>152</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>153</th><td class="r"><span>&nbsp; def max(self, f):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>154</th><td class="r"><span>&nbsp; &nbsp; """calculate the maximum for a given function</span> </td>
+                      </tr><tr>
+                        <th> </th><th>155</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>156</th><td class="r"><span>Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>157</th><td class="r"><span>&nbsp; &nbsp; f -- a function that takes a list and returns a number</span> </td>
+                      </tr><tr>
+                        <th> </th><th>158</th><td class="r"><span>"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>159</th><td class="r"><span>&nbsp; &nbsp; from measures import max</span> </td>
+                      </tr><tr>
+                        <th> </th><th>160</th><td class="r"><span>&nbsp; &nbsp; return max(f, self.positions)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>161</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>162</th><td class="r"><span>&nbsp; def ess_max(self, f, tol=0.):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>163</th><td class="r"><span>&nbsp; &nbsp; """calculate the maximum for the support of a given function</span> </td>
+                      </tr><tr>
+                        <th> </th><th>164</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>165</th><td class="r"><span>Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>166</th><td class="r"><span>&nbsp; &nbsp; f -- a function that takes a list and returns a number</span> </td>
+                      </tr><tr>
+                        <th> </th><th>167</th><td class="r"><span>&nbsp; &nbsp; tol -- weight tolerance, where any weight &lt;= tol is considered zero</span> </td>
+                      </tr><tr>
+                        <th> </th><th>168</th><td class="r"><span>"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>169</th><td class="r"><span>&nbsp; &nbsp; from measures import ess_max</span> </td>
+                      </tr><tr>
+                        <th> </th><th>170</th><td class="r"><span>&nbsp; &nbsp; return ess_max(f, self.positions, self.weights, tol)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>171</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>172</th><td class="r"><span>&nbsp; def min(self, f):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>173</th><td class="r"><span>&nbsp; &nbsp; """calculate the minimum for a given function</span> </td>
+                      </tr><tr>
+                        <th> </th><th>174</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>175</th><td class="r"><span>Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>176</th><td class="r"><span>&nbsp; &nbsp; f -- a function that takes a list and returns a number</span> </td>
+                      </tr><tr>
+                        <th> </th><th>177</th><td class="r"><span>"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>178</th><td class="r"><span>&nbsp; &nbsp; from measures import min</span> </td>
+                      </tr><tr>
+                        <th> </th><th>179</th><td class="r"><span>&nbsp; &nbsp; return min(f, self.positions)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>180</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>181</th><td class="r"><span>&nbsp; def ess_min(self, f, tol=0.):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>182</th><td class="r"><span>&nbsp; &nbsp; """calculate the minimum for the support of a given function</span> </td>
+                      </tr><tr>
+                        <th> </th><th>183</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>184</th><td class="r"><span>Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>185</th><td class="r"><span>&nbsp; &nbsp; f -- a function that takes a list and returns a number</span> </td>
+                      </tr><tr>
+                        <th> </th><th>186</th><td class="r"><span>&nbsp; &nbsp; tol -- weight tolerance, where any weight &lt;= tol is considered zero</span> </td>
+                      </tr><tr>
+                        <th> </th><th>187</th><td class="r"><span>"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>188</th><td class="r"><span>&nbsp; &nbsp; from measures import ess_min</span> </td>
+                      </tr><tr>
+                        <th> </th><th>189</th><td class="r"><span>&nbsp; &nbsp; return ess_min(f, self.positions, self.weights, tol)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>190</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>191</th><td class="r"><span>&nbsp; def expect(self, f):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>128</th><th>192</th><td class="l"><span>&nbsp; &nbsp; """calculate the expectation for a given function</span> </td>
+                  </tr><tr>
+                          <th>129</th><th>193</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L131">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L195">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>131</th><th>195</th><td class="l"><span>&nbsp; &nbsp; f -- a function that takes a list and returns a number</span> </td>
+                  </tr><tr>
+                          <th>132</th><th>196</th><td class="l"><span>""" #XXX: maybe more natural if f takes a positional value x, not a list x ?</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>133</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>134</th><th>197</th><td class="l"><span>&nbsp; &nbsp; from mystic.math.measures import expectation</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>135</th><th> </th><td class="l"><span>&nbsp; &nbsp; <del>coords = [(i,) for i in self.coord</del>s]</span> </td>
+                      </tr><tr>
+                        <th>136</th><th> </th><td class="l"><span>&nbsp; &nbsp; return expectation(f, <del>coord</del>s, self.weights)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>198</th><td class="r"><span>&nbsp; &nbsp; <ins>positions = [(i,) for i in self.position</ins>s]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>199</th><td class="r"><span>&nbsp; &nbsp; return expectation(f, <ins>position</ins>s, self.weights)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>137</th><th>200</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>138</th><th>201</th><td class="l"><span>&nbsp; def set_expect(self, (m,D), f, bounds=None, constraints=None):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L145">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L208">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>145</th><th>208</th><td class="l"><span>&nbsp; &nbsp; constraints -- a function that takes a product_measure&nbsp; c' = constraints(c)</span> </td>
+                  </tr><tr>
+                          <th>146</th><th>209</th><td class="l"><span>""" #XXX: maybe more natural if f takes a positional value x, not a list x ?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>147</th><th> </th><td class="l"><span><del>#XXX: maybe also natural c' = constraints(c) where c is a dirac_</del>measure ?</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>210</th><td class="r"><span><ins>&nbsp; &nbsp; #XXX: maybe also natural c' = constraints(c) where c is a </ins>measure ?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>148</th><th>211</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>149</th><th>212</th><td class="l"><span>&nbsp; &nbsp; if constraints:&nbsp; # then need to adjust interface for 'impose_expectation'</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L153">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L216">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>153</th><th>216</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return decompose(c)[0]</span> </td>
+                  </tr><tr>
+                          <th>154</th><th>217</th><td class="l"><span>&nbsp; &nbsp; else: cnstr = constraints&nbsp; # 'should' be None</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>155</th><th> </th><td class="l"><span>&nbsp; &nbsp; <del>coord</del>s = impose_expectation((m,D), f, [self.npts], bounds, \</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>218</th><td class="r"><span>&nbsp; &nbsp; <ins>position</ins>s = impose_expectation((m,D), f, [self.npts], bounds, \</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>156</th><th>219</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.weights,&nbsp; constraints=cnstr) </span> </td>
+                  </tr><tr>
+                          <th>157</th><th>220</th><td class="l"><span>&nbsp; &nbsp; from numpy import array</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>158</th><th> </th><td class="l"><span>&nbsp; &nbsp; self.<del>coords = list(array(coord</del>s)[:,0])</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>221</th><td class="r"><span>&nbsp; &nbsp; self.<ins>positions = list(array(position</ins>s)[:,0])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>159</th><th>222</th><td class="l"><span>&nbsp; &nbsp;#from numpy import squeeze</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>160</th><th> </th><td class="l"><span>&nbsp; &nbsp;#self.<del>coords = list(squeeze(coord</del>s))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>223</th><td class="r"><span>&nbsp; &nbsp;#self.<ins>positions = list(squeeze(position</ins>s))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>161</th><th>224</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>162</th><th>225</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>163</th><th>226</th><td class="l"><span>&nbsp; # interface</span> </td>
+                  </tr><tr>
+                          <th>164</th><th>227</th><td class="l"><span>&nbsp; weights = property(__weights, __set_weights)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>165</th><th> </th><td class="l"><span>&nbsp; <del>coord</del>s = property(__positions, __set_positions)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>228</th><td class="r"><span>&nbsp; <ins>position</ins>s = property(__positions, __set_positions)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>166</th><th>229</th><td class="l"><span>&nbsp; ###XXX: why not use 'points' also/instead?</span> </td>
+                  </tr><tr>
+                          <th>167</th><th>230</th><td class="l"><span>&nbsp; npts = property(__n )</span> </td>
+                  </tr><tr>
+                          <th>168</th><th>231</th><td class="l"><span>&nbsp; mass = property(__mass )</span> </td>
+                  </tr><tr>
+                          <th>169</th><th>232</th><td class="l"><span>&nbsp; range = property(__range, __set_range)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>170</th><th> </th><td class="l"><span>&nbsp; <del>mean</del> = property(__mean, __set_mean)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>233</th><td class="r"><span>&nbsp; <ins>center_mass</ins> = property(__mean, __set_mean)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>171</th><th>234</th><td class="l"><span>&nbsp; var = property(__variance, __set_variance)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>235</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>236</th><td class="r"><ins>&nbsp; # backward compatibility</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>237</th><td class="r"><ins>&nbsp; coords = positions</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>238</th><td class="r"><ins>&nbsp; get_expect = expect</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>239</th><td class="r"><ins>&nbsp; mean = center_mass</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>172</th><th>240</th><td class="l"><span>&nbsp; pass</span> </td>
+                  </tr><tr>
+                          <th>173</th><th>241</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>174</th><th>242</th><td class="l"><span>class product_measure(list):&nbsp; #FIXME: meant to only accept sets...</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>175</th><th> </th><td class="l"><span>&nbsp; """ a N-d <del>product measure, a collection of dirac</del> measures</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>243</th><td class="r"><span>&nbsp; """ a N-d <ins>measure-theoretic product of discrete</ins> measures</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>176</th><th>244</th><td class="l"><span>&nbsp; c = product_measure([measure1, measure2, ..., measureN])&nbsp; </span> </td>
+                  </tr><tr>
+                          <th>177</th><th>245</th><td class="l"><span>&nbsp; &nbsp; where all measures are orthogonal</span> </td>
+                  </tr><tr>
+                          <th>178</th><th>246</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>179</th><th>247</th><td class="l"><span>&nbsp;queries:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>180</th><th> </th><td class="l"><span>&nbsp; c.npts&nbsp; --&nbsp; returns total number of point<del></del>s</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>248</th><td class="r"><span>&nbsp; c.npts&nbsp; --&nbsp; returns total number of point<ins>_masse</ins>s</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>181</th><th>249</th><td class="l"><span>&nbsp; c.weights&nbsp; &nbsp;--&nbsp; returns list of weights</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>182</th><th> </th><td class="l"><span>&nbsp; c.<del>coord</del>s&nbsp; --&nbsp; returns list of position tuples</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>250</th><td class="r"><span>&nbsp; c.<ins>position</ins>s&nbsp; --&nbsp; returns list of position tuples</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>183</th><th>251</th><td class="l"><span>&nbsp; c.mass&nbsp; --&nbsp; returns list of weight norms</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>184</th><th> </th><td class="l"><span>&nbsp; c.pts&nbsp; --&nbsp; returns number of point<del></del>s for each discrete measure</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>252</th><td class="r"><span>&nbsp; c.pts&nbsp; --&nbsp; returns number of point<ins>_masse</ins>s for each discrete measure</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>185</th><th>253</th><td class="l"><span>&nbsp; c.wts&nbsp; --&nbsp; returns list of weights for each discrete measure</span> </td>
+                  </tr><tr>
+                          <th>186</th><th>254</th><td class="l"><span>&nbsp; c.pos&nbsp; --&nbsp; returns list of positions for each discrete measure</span> </td>
+                  </tr><tr>
+                          <th>187</th><th>255</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>188</th><th>256</th><td class="l"><span>&nbsp;settings:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>189</th><th> </th><td class="l"><span>&nbsp; c.<del>coords = [(x1,y1,z1),...]&nbsp; --&nbsp; set the</del> positions (tuples in product measure)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>257</th><td class="r"><span>&nbsp; c.<ins>positions = [(x1,y1,z1),...]&nbsp; --&nbsp; set</ins> positions (tuples in product measure)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>190</th><th>258</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>191</th><th>259</th><td class="l"><span>&nbsp;methods:</span> </td>
+                  </tr><tr>
+                          <th>192</th><th>260</th><td class="l"><span>&nbsp; c.pof(f)&nbsp; --&nbsp; calculate the probability of failure</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>193</th><th> </th><td class="l"><span>&nbsp; c.sampled_pof(f, npts) -- calculate the pof using sampled point<del></del>s</span> </td>
+                      </tr><tr>
+                        <th>194</th><th> </th><td class="l"><span>&nbsp; c.<del>get_</del>expect(f)&nbsp; --&nbsp; calculate the expectation</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>261</th><td class="r"><span>&nbsp; c.sampled_pof(f, npts) -- calculate the pof using sampled point<ins>_masse</ins>s</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>262</th><td class="r"><span>&nbsp; c.<ins></ins>expect(f)&nbsp; --&nbsp; calculate the expectation</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>195</th><th>263</th><td class="l"><span>&nbsp; c.set_expect((center,delta), f)&nbsp; --&nbsp; impose expectation by adjusting positions</span> </td>
+                  </tr><tr>
+                          <th>196</th><th>264</th><td class="l"><span>&nbsp; c.flatten()&nbsp; --&nbsp; convert measure to a flat list of parameters</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L201">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L269">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>201</th><th>269</th><td class="l"><span>&nbsp; - constraints impose expect (center - delta) &lt;= E &lt;= (center + delta)</span> </td>
+                  </tr><tr>
+                          <th>202</th><th>270</th><td class="l"><span>&nbsp; - constraints impose sum(weights) == 1.0 for each set</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>203</th><th> </th><td class="l"><span>&nbsp; - assumes that c.npts = len(c.<del>coord</del>s) == len(c.weights)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>271</th><td class="r"><span>&nbsp; - assumes that c.npts = len(c.<ins>position</ins>s) == len(c.weights)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>204</th><th>272</th><td class="l"><span>&nbsp; - weight wxi should be same for each (yj,zk) at xi; similarly for wyi &amp; wzi</span> </td>
+                  </tr><tr>
+                          <th>205</th><th>273</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>206</th><th>274</th><td class="l"><span>&nbsp; def __val(self):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>207</th><th> </th><td class="l"><span>&nbsp; &nbsp; raise NotImplementedError, "'value' is undefined in a <del>dirac_</del>measure"</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>275</th><td class="r"><span>&nbsp; &nbsp; raise NotImplementedError, "'value' is undefined in a <ins></ins>measure"</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>208</th><th>276</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>209</th><th>277</th><td class="l"><span>&nbsp; def __pts(self):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L214">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L282">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>214</th><th>282</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>215</th><th>283</th><td class="l"><span>&nbsp; def __pos(self):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>216</th><th> </th><td class="l"><span>&nbsp; &nbsp; return [i.coords for i in self]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>284</th><td class="r"><span>&nbsp; &nbsp; return [i.positions for i in self]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>285</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>286</th><td class="r"><span>&nbsp; def __mean(self):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>287</th><td class="r"><span>&nbsp; &nbsp; return [i.center_mass for i in self]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>288</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>289</th><td class="r"><span>&nbsp; def __set_mean(self, center_masses):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>290</th><td class="r"><span>&nbsp; &nbsp; [i._measure__set_mean(center_masses[m]) for (m,i) in enumerate(self)]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>291</th><td class="r"><span>&nbsp; &nbsp;#for i in range(len(center_masses)):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>292</th><td class="r"><span>&nbsp; &nbsp;#&nbsp; self[i].center_mass = center_masses[i]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>293</th><td class="r"><span>&nbsp; &nbsp; return</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>217</th><th>294</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>218</th><th>295</th><td class="l"><span>&nbsp; def __n(self):</span> </td>
+                  </tr><tr>
+                          <th>219</th><th>296</th><td class="l"><span>&nbsp; &nbsp; from numpy import product</span> </td>
+                  </tr><tr>
+                          <th>220</th><th>297</th><td class="l"><span>&nbsp; &nbsp; return product(self.pts)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>298</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>299</th><td class="r"><ins>&nbsp; def support_index(self, tol=0):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>300</th><td class="r"><ins>&nbsp; &nbsp; from measures import support_index</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>301</th><td class="r"><ins>&nbsp; &nbsp; return support_index(self.weights, tol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>302</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>303</th><td class="r"><ins>&nbsp; def support(self, tol=0): #XXX: better if generated positions only when needed</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>304</th><td class="r"><ins>&nbsp; &nbsp; from measures import support</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>305</th><td class="r"><ins>&nbsp; &nbsp; return support(self.positions, self.weights, tol)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>221</th><th>306</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>222</th><th>307</th><td class="l"><span>&nbsp; def __weights(self):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L233">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L318">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>233</th><th>318</th><td class="l"><span>&nbsp; &nbsp; return _pack(self.pos)</span> </td>
+                  </tr><tr>
+                          <th>234</th><th>319</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>235</th><th> </th><td class="l"><span>&nbsp; def __set_positions(self, <del>coord</del>s):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>320</th><td class="r"><span>&nbsp; def __set_positions(self, <ins>position</ins>s):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>236</th><th>321</th><td class="l"><span>&nbsp; &nbsp; from mystic.math.measures import _unpack</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>237</th><th> </th><td class="l"><span>&nbsp; &nbsp; <del>coords = _unpack(coord</del>s, self.pts)</span> </td>
+                      </tr><tr>
+                        <th>238</th><th> </th><td class="l"><span>&nbsp; &nbsp; for i in range(len(<del>coord</del>s)):</span> </td>
+                      </tr><tr>
+                        <th>239</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; self[i].<del>coords = coord</del>s[i]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>322</th><td class="r"><span>&nbsp; &nbsp; <ins>positions = _unpack(position</ins>s, self.pts)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>323</th><td class="r"><span>&nbsp; &nbsp; for i in range(len(<ins>position</ins>s)):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>324</th><td class="r"><span>&nbsp; &nbsp; &nbsp; self[i].<ins>positions = position</ins>s[i]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>240</th><th>325</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>241</th><th>326</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L249">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L334">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>249</th><th>334</th><td class="l"><span>&nbsp; &nbsp; return [self[i].mass for i in range(len(self))]</span> </td>
+                  </tr><tr>
+                          <th>250</th><th>335</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>251</th><th> </th><td class="l"><span>&nbsp; def get_expect(self, f):</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>336</th><td class="r"><span>&nbsp; def max(self, f): #XXX: return max of all or return all max?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>337</th><td class="r"><span>&nbsp; &nbsp; return _max([i.max(f) for i in self])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>338</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>339</th><td class="r"><span>&nbsp; def min(self, f): #XXX: return min of all or return all min?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>340</th><td class="r"><span>&nbsp; &nbsp; return _min([i.min(f) for i in self])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>341</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>342</th><td class="r"><span>&nbsp; def ess_max(self, f, tol=0.): #XXX: return max of all or return all max?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>343</th><td class="r"><span>&nbsp; &nbsp; return _max([i.ess_max(f, tol) for i in self])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>344</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>345</th><td class="r"><span>&nbsp; def ess_min(self, f, tol=0.): #XXX: return min of all or return all min?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>346</th><td class="r"><span>&nbsp; &nbsp; return _min([i.ess_min(f, tol) for i in self])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>347</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>348</th><td class="r"><span>&nbsp; def expect(self, f):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>252</th><th>349</th><td class="l"><span>&nbsp; &nbsp; """calculate the expectation for a given function</span> </td>
+                  </tr><tr>
+                          <th>253</th><th>350</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L256">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L353">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>256</th><th>353</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>257</th><th>354</th><td class="l"><span>&nbsp; &nbsp; from mystic.math.measures import expectation</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>258</th><th> </th><td class="l"><span>&nbsp; &nbsp; return expectation(f, self.<del>coord</del>s, self.weights)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>355</th><td class="r"><span>&nbsp; &nbsp; return expectation(f, self.<ins>position</ins>s, self.weights)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>259</th><th>356</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>260</th><th>357</th><td class="l"><span>&nbsp; def set_expect(self, (m,D), f, bounds=None, constraints=None):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L275">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L372">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>275</th><th>372</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return decompose(c)[0]</span> </td>
+                  </tr><tr>
+                          <th>276</th><th>373</th><td class="l"><span>&nbsp; &nbsp; else: cnstr = constraints&nbsp; # 'should' be None</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>277</th><th> </th><td class="l"><span>&nbsp; &nbsp; self.<del>coords = impose_expectation((m,D), f, self.pts, bounds, self.weight</del>s, \</span> </td>
+                      </tr><tr>
+                        <th>278</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </del> constraints=cnstr) </span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>374</th><td class="r"><span>&nbsp; &nbsp; self.<ins>positions = impose_expectation((m,D), f, self.pts, bound</ins>s, \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>375</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <ins>self.weights,</ins> constraints=cnstr) </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>279</th><th>376</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>280</th><th>377</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L287">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L384">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>287</th><th>384</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>288</th><th>385</th><td class="l"><span>&nbsp; &nbsp; u = 0</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>289</th><th> </th><td class="l"><span>&nbsp; &nbsp; set = zip(self.<del>coord</del>s, self.weights)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>386</th><td class="r"><span>&nbsp; &nbsp; set = zip(self.<ins>position</ins>s, self.weights)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>290</th><th>387</th><td class="l"><span>&nbsp; &nbsp; for x in set:</span> </td>
+                  </tr><tr>
+                          <th>291</th><th>388</th><td class="l"><span>&nbsp; &nbsp; &nbsp; if f(x[0]) &lt;= 0.0:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L293">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L390">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>293</th><th>390</th><td class="l"><span>&nbsp; &nbsp; return u</span> </td>
+                  </tr><tr>
+                          <th>294</th><th>391</th><td class="l"><span>&nbsp; # for i in range(self.npts):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>295</th><th> </th><td class="l"><span>&nbsp; #&nbsp; &nbsp;#if f(self.<del>coord</del>s[i]) &gt; 0.0:&nbsp; #NOTE: f(x) &gt; 0.0 yields prob of success</span> </td>
+                      </tr><tr>
+                        <th>296</th><th> </th><td class="l"><span>&nbsp; #&nbsp; &nbsp;if f(self.<del>coord</del>s[i]) &lt;= 0.0:&nbsp; #NOTE: f(x) &lt;= 0.0 yields prob of failure</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>392</th><td class="r"><span>&nbsp; #&nbsp; &nbsp;#if f(self.<ins>position</ins>s[i]) &gt; 0.0:&nbsp; #NOTE: f(x) &gt; 0.0 yields prob of success</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>393</th><td class="r"><span>&nbsp; #&nbsp; &nbsp;if f(self.<ins>position</ins>s[i]) &lt;= 0.0:&nbsp; #NOTE: f(x) &lt;= 0.0 yields prob of failure</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>297</th><th>394</th><td class="l"><span>&nbsp; #&nbsp; &nbsp; &nbsp;u += self.weights[i]</span> </td>
+                  </tr><tr>
+                          <th>298</th><th>395</th><td class="l"><span>&nbsp; # return u&nbsp; #XXX: does this need to be normalized?</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L304">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L401">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>304</th><th>401</th><td class="l"><span>Inputs:</span> </td>
+                  </tr><tr>
+                          <th>305</th><th>402</th><td class="l"><span>&nbsp; &nbsp; f -- a function that returns True for 'success' and False for 'failure'</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>306</th><th> </th><td class="l"><span>&nbsp; &nbsp; npts -- number of point<del></del>s sampled from the underlying discrete measures</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>403</th><td class="r"><span>&nbsp; &nbsp; npts -- number of point<ins>_masse</ins>s sampled from the underlying discrete measures</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>307</th><th>404</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>308</th><th>405</th><td class="l"><span>&nbsp; &nbsp; from mystic.math.samples import _pof_given_samples</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>309</th><th> </th><td class="l"><span>&nbsp; &nbsp; pts = self.s<del></del>upport(npts)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>406</th><td class="r"><span>&nbsp; &nbsp; pts = self.s<ins>ampled_s</ins>upport(npts)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>310</th><th>407</th><td class="l"><span>&nbsp; &nbsp; return _pof_given_samples(f, pts)</span> </td>
+                  </tr><tr>
+                          <th>311</th><th>408</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>312</th><th> </th><td class="l"><span>&nbsp; def s<del>upport(self, npts=10000):</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>409</th><td class="r"><span>&nbsp; def s<ins>ampled_support(self, npts=10000): ##XXX: was 'def support'</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>313</th><th>410</th><td class="l"><span>&nbsp; &nbsp; """randomly select support points from the underlying discrete measures</span> </td>
+                  </tr><tr>
+                          <th>314</th><th>411</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L322">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L419">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>322</th><th>419</th><td class="l"><span>&nbsp; &nbsp; pts = []</span> </td>
+                  </tr><tr>
+                          <th>323</th><th>420</th><td class="l"><span>&nbsp; &nbsp; for i in range(npts):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>324</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; # for a single trial, select <del>coord</del>s from all sets</span> </td>
+                      </tr><tr>
+                        <th>325</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; pts.append( [_select(set.<del>coord</del>s, set.weights) for set in self] )</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>421</th><td class="r"><span>&nbsp; &nbsp; &nbsp; # for a single trial, select <ins>position</ins>s from all sets</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>422</th><td class="r"><span>&nbsp; &nbsp; &nbsp; pts.append( [_select(set.<ins>position</ins>s, set.weights) for set in self] )</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>326</th><th>423</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>327</th><th>424</th><td class="l"><span>&nbsp; &nbsp; # convert pts to len(prod_meas) lists, each of len(npts)</span> </td>
+                  </tr><tr>
+                          <th>328</th><th>425</th><td class="l"><span>&nbsp; &nbsp; from numpy import transpose</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>329</th><th> </th><td class="l"><span>&nbsp; &nbsp; return transpose(pts)&nbsp; #XXX: assumes '<del>coord</del>s' is a list of floats</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>426</th><td class="r"><span>&nbsp; &nbsp; return transpose(pts)&nbsp; #XXX: assumes '<ins>position</ins>s' is a list of floats</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>330</th><th>427</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>331</th><th>428</th><td class="l"><span>&nbsp; def update(self, params):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L349">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L446">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>349</th><th>446</th><td class="l"><span>Inputs:</span> </td>
+                  </tr><tr>
+                          <th>350</th><th>447</th><td class="l"><span>&nbsp; &nbsp; params -- a list of parameters (see 'notes')</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>351</th><th> </th><td class="l"><span>&nbsp; &nbsp; pts -- number of point<del></del>s in each of the underlying discrete measures</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>448</th><td class="r"><span>&nbsp; &nbsp; pts -- number of point<ins>_masse</ins>s in each of the underlying discrete measures</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>352</th><th>449</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>353</th><th>450</th><td class="l"><span>Notes:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L405">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L502">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>405</th><th>502</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>406</th><th>503</th><td class="l"><span>&nbsp; def select(self, *index, **kwds):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>407</th><th> </th><td class="l"><span>&nbsp; &nbsp; """generator for product measure <del>coord</del>s due to selected position indicies</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>504</th><td class="r"><span>&nbsp; &nbsp; """generator for product measure <ins>position</ins>s due to selected position indicies</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>408</th><th>505</th><td class="l"><span>&nbsp;(NOTE: only works for product measures of dimension 2^K)</span> </td>
+                  </tr><tr>
+                          <th>409</th><th>506</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L428">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L525">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>428</th><th>525</th><td class="l"><span>&nbsp; npts = property(__n )</span> </td>
+                  </tr><tr>
+                          <th>429</th><th>526</th><td class="l"><span>&nbsp; weights = property(__weights )</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>430</th><th> </th><td class="l"><span>&nbsp; coords = property(__positions, __set_positions )</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>527</th><td class="r"><span>&nbsp; positions = property(__positions, __set_positions )</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>528</th><td class="r"><span>&nbsp; center_mass = property(__mean, __set_mean)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>431</th><th>529</th><td class="l"><span>&nbsp;#center = property(__get_center ) #FIXME: remove c.center and c.delta... or</span> </td>
+                  </tr><tr>
+                          <th>432</th><th>530</th><td class="l"><span>&nbsp;#delta = property(__get_delta )&nbsp; &nbsp;#&nbsp; &nbsp; &nbsp; &nbsp;replace with c._params (e.g. (m,D))</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L436">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L534">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>436</th><th>534</th><td class="l"><span>&nbsp; wts = property(__wts )</span> </td>
+                  </tr><tr>
+                          <th>437</th><th>535</th><td class="l"><span>&nbsp; pos = property(__pos )</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>536</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>537</th><td class="r"><ins>&nbsp; # backward compatibility</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>538</th><td class="r"><ins>&nbsp; coords = positions</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>539</th><td class="r"><ins>&nbsp; get_expect = expect</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>438</th><th>540</th><td class="l"><span>&nbsp; pass</span> </td>
+                  </tr><tr>
+                          <th>439</th><th>541</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L442">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L544">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>442</th><th>544</th><td class="l"><span>&nbsp; """ a N-d product measure (collection of dirac measures) with values</span> </td>
+                  </tr><tr>
+                          <th>443</th><th>545</th><td class="l"><span>&nbsp; s = scenario(product_measure, [value1, value2, ..., valueN])&nbsp; </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>444</th><th> </th><td class="l"><span>&nbsp; &nbsp; where each point<del></del> in the product measure is paried with a value</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>546</th><td class="r"><span>&nbsp; &nbsp; where each point<ins>_mass</ins> in the product measure is paried with a value</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>445</th><th>547</th><td class="l"><span>&nbsp; &nbsp; (essentially, a dataset in product_measure representation)</span> </td>
+                  </tr><tr>
+                          <th>446</th><th>548</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>447</th><th>549</th><td class="l"><span>&nbsp;queries:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>448</th><th> </th><td class="l"><span>&nbsp; s.npts&nbsp; --&nbsp; returns total number of point<del>s</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>550</th><td class="r"><span>&nbsp; s.npts&nbsp; --&nbsp; returns total number of point<ins>_masse</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>449</th><th>551</th><td class="l"><span>&nbsp; s.weights&nbsp; &nbsp;--&nbsp; returns list of weights</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>450</th><th> </th><td class="l"><span>&nbsp; s.<del>coord</del>s&nbsp; --&nbsp; returns list of position tuples</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>552</th><td class="r"><span>&nbsp; s.<ins>position</ins>s&nbsp; --&nbsp; returns list of position tuples</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>451</th><th>553</th><td class="l"><span>&nbsp; s.values&nbsp; --&nbsp; returns list of values</span> </td>
+                  </tr><tr>
+                          <th>452</th><th>554</th><td class="l"><span>&nbsp; s.mass&nbsp; --&nbsp; returns list of weight norms</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>453</th><th> </th><td class="l"><span>&nbsp; s.pts&nbsp; --&nbsp; returns number of point<del></del>s for each discrete measure</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>555</th><td class="r"><span>&nbsp; s.pts&nbsp; --&nbsp; returns number of point<ins>_masse</ins>s for each discrete measure</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>454</th><th>556</th><td class="l"><span>&nbsp; s.wts&nbsp; --&nbsp; returns list of weights for each discrete measure</span> </td>
+                  </tr><tr>
+                          <th>455</th><th>557</th><td class="l"><span>&nbsp; s.pos&nbsp; --&nbsp; returns list of positions for each discrete measure</span> </td>
+                  </tr><tr>
+                          <th>456</th><th>558</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>457</th><th>559</th><td class="l"><span>&nbsp;settings:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>458</th><th> </th><td class="l"><span>&nbsp; s.<del>coords = [(x1,y1,z1),...]&nbsp; --&nbsp; set the</del> positions (tuples in product measure)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>560</th><td class="r"><span>&nbsp; s.<ins>positions = [(x1,y1,z1),...]&nbsp; --&nbsp; set</ins> positions (tuples in product measure)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>459</th><th>561</th><td class="l"><span>&nbsp; s.values = [v1,v2,v3,...]&nbsp; --&nbsp; set the values (correspond to position tuples)</span> </td>
+                  </tr><tr>
+                          <th>460</th><th>562</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L463">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L565">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>463</th><th>565</th><td class="l"><span>&nbsp; s.pof_value(f)&nbsp; --&nbsp; calculate the probability of failure using the values</span> </td>
+                  </tr><tr>
+                          <th>464</th><th>566</th><td class="l"><span>&nbsp; s.sampled_pof(f, npts) -- calculate the pof using sampled points</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>465</th><th> </th><td class="l"><span>&nbsp; s.<del>get_</del>expect(f)&nbsp; --&nbsp; calculate the expectation</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>567</th><td class="r"><span>&nbsp; s.<ins></ins>expect(f)&nbsp; --&nbsp; calculate the expectation</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>466</th><th>568</th><td class="l"><span>&nbsp; s.set_expect((center,delta), f)&nbsp; --&nbsp; impose expectation by adjusting positions</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>467</th><th> </th><td class="l"><span>&nbsp; s.<del>get_</del>mean_value()&nbsp; --&nbsp; calculate the mean values for a scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>569</th><td class="r"><span>&nbsp; s.<ins></ins>mean_value()&nbsp; --&nbsp; calculate the mean values for a scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>468</th><th>570</th><td class="l"><span>&nbsp; s.set_mean_value(m)&nbsp; --&nbsp; impose mean value by adjusting values</span> </td>
+                  </tr><tr>
+                          <th>469</th><th>571</th><td class="l"><span>&nbsp; s.set_feasible(data)&nbsp; --&nbsp; impose shortness by adjusting positions and values</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L479">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L581">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>479</th><th>581</th><td class="l"><span>&nbsp; - constraints impose expect (center - delta) &lt;= E &lt;= (center + delta)</span> </td>
+                  </tr><tr>
+                          <th>480</th><th>582</th><td class="l"><span>&nbsp; - constraints impose sum(weights) == 1.0 for each set</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>481</th><th> </th><td class="l"><span>&nbsp; - assumes that s.npts = len(s.<del>coord</del>s) == len(s.weights)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>583</th><td class="r"><span>&nbsp; - assumes that s.npts = len(s.<ins>position</ins>s) == len(s.weights)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>482</th><th>584</th><td class="l"><span>&nbsp; - weight wxi should be same for each (yj,zk) at xi; similarly for wyi &amp; wzi</span> </td>
+                  </tr><tr>
+                          <th>483</th><th>585</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L488">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L590">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>488</th><th>590</th><td class="l"><span>&nbsp; &nbsp; &nbsp; self.load(pm.flatten(), pm.pts)</span> </td>
+                  </tr><tr>
+                          <th>489</th><th>591</th><td class="l"><span>&nbsp; &nbsp; if not values: values = []</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>490</th><th> </th><td class="l"><span>&nbsp; &nbsp; self.__Y = values # storage for values of s.<del>coord</del>s</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>592</th><td class="r"><span>&nbsp; &nbsp; self.__Y = values # storage for values of s.<ins>position</ins>s</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>491</th><th>593</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>492</th><th>594</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L498">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L600">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>498</th><th>600</th><td class="l"><span>&nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>499</th><th>601</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>500</th><th> </th><td class="l"><span>&nbsp; def <del>get_</del>mean_value(self):&nbsp; # get mean of y's</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>602</th><td class="r"><span>&nbsp; def <ins></ins>mean_value(self):&nbsp; # get mean of y's</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>501</th><th>603</th><td class="l"><span>&nbsp; &nbsp; """calculate the mean of the associated values for a scenario"""</span> </td>
+                  </tr><tr>
+                          <th>502</th><th>604</th><td class="l"><span>&nbsp; &nbsp; from mystic.math.measures import mean</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L540">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L642">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>540</th><th>642</th><td class="l"><span>&nbsp; &nbsp; from mystic.math.legacydata import dataset </span> </td>
+                  </tr><tr>
+                          <th>541</th><th>643</th><td class="l"><span>&nbsp; &nbsp; data = dataset() </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>542</th><th> </th><td class="l"><span>&nbsp; &nbsp; data.load(self.<del>coord</del>s, self.values)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>644</th><td class="r"><span>&nbsp; &nbsp; data.load(self.<ins>position</ins>s, self.values)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>543</th><th>645</th><td class="l"><span>&nbsp; &nbsp;#data.lipschitz = L</span> </td>
+                  </tr><tr>
+                          <th>544</th><th>646</th><td class="l"><span>&nbsp; &nbsp; for i in range(len(data)):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L574">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L676">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>574</th><th>676</th><td class="l"><span>&nbsp; &nbsp; from mystic.math.legacydata import dataset </span> </td>
+                  </tr><tr>
+                          <th>575</th><th>677</th><td class="l"><span>&nbsp; &nbsp; data = dataset() </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>576</th><th> </th><td class="l"><span>&nbsp; &nbsp; data.load(self.<del>coord</del>s, self.values)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>678</th><td class="r"><span>&nbsp; &nbsp; data.load(self.<ins>position</ins>s, self.values)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>577</th><th>679</th><td class="l"><span>&nbsp; &nbsp; data.lipschitz = L</span> </td>
+                  </tr><tr>
+                          <th>578</th><th>680</th><td class="l"><span>&nbsp; &nbsp; for i in range(len(data)):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L609">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L711">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>609</th><th>711</th><td class="l"><span>&nbsp; &nbsp; from mystic.math.legacydata import dataset </span> </td>
+                  </tr><tr>
+                          <th>610</th><th>712</th><td class="l"><span>&nbsp; &nbsp; _self = dataset() </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>611</th><th> </th><td class="l"><span>&nbsp; &nbsp; _self.load(self.<del>coord</del>s, self.values)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>713</th><td class="r"><span>&nbsp; &nbsp; _self.load(self.<ins>position</ins>s, self.values)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>612</th><th>714</th><td class="l"><span>&nbsp; &nbsp; _self.lipschitz = data.lipschitz</span> </td>
+                  </tr><tr>
+                          <th>613</th><th>715</th><td class="l"><span>&nbsp; &nbsp; for i in range(len(_self)):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L748">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L850">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>748</th><th>850</th><td class="l"><span>&nbsp; # interface</span> </td>
+                  </tr><tr>
+                          <th>749</th><th>851</th><td class="l"><span>&nbsp; values = property(__values, __set_values )</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>852</th><td class="r"><ins>&nbsp; get_mean_value = mean_value</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>750</th><th>853</th><td class="l"><span>&nbsp; pass</span> </td>
+                  </tr><tr>
+                          <th>751</th><th>854</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L763">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L866">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>763</th><th>866</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; wts = [[.4,.2,.4],[.5,.5],[1.]]</span> </td>
+                  </tr><tr>
+                          <th>764</th><th>867</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; c = compose(samples, weights)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>765</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; d = _mimic(c.<del>coord</del>s, c.weights)</span> </td>
+                      </tr><tr>
+                        <th>766</th><th> </th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; c[0].<del>mean == d[0].mean</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>868</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; d = _mimic(c.<ins>position</ins>s, c.weights)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>869</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; c[0].<ins>center_mass == d[0].center_mass</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>767</th><th>870</th><td class="l"><span>&nbsp; &nbsp; True</span> </td>
+                  </tr><tr>
+                          <th>768</th><th>871</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; c[1].range == d[1].range</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L799">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L902">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>799</th><th>902</th><td class="l"><span>&nbsp; if not weights: weights = _uniform_weights(samples)</span> </td>
+                  </tr><tr>
+                          <th>800</th><th>903</th><td class="l"><span>&nbsp; for i in range(len(samples)):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>801</th><th> </th><td class="l"><span>&nbsp; &nbsp; next = <del>dirac_</del>measure()</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>904</th><td class="r"><span>&nbsp; &nbsp; next = <ins></ins>measure()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>802</th><th>905</th><td class="l"><span>&nbsp; &nbsp; for j in range(len(samples[i])):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>803</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; next.append(point<del></del>( samples[i][j], weights[i][j] ))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>906</th><td class="r"><span>&nbsp; &nbsp; &nbsp; next.append(point<ins>_mass</ins>( samples[i][j], weights[i][j] ))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>804</th><th>907</th><td class="l"><span>&nbsp; &nbsp; total.append(next)</span> </td>
+                  </tr><tr>
+                          <th>805</th><th>908</th><td class="l"><span>&nbsp; return total</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L827">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L930">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>827</th><th>930</th><td class="l"><span>#&nbsp; """Generate a scenario object from a dataset. The scenario will have</span> </td>
+                  </tr><tr>
+                          <th>828</th><th>931</th><td class="l"><span>#uniformly distributed weights and have dimensions given by pts."""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>829</th><th> </th><td class="l"><span>#&nbsp; <del>coord</del>s,values = data.fetch()</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>932</th><td class="r"><span>#&nbsp; <ins>position</ins>s,values = data.fetch()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>830</th><th>933</th><td class="l"><span>#&nbsp; from mystic.math.measures import _unpack</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>831</th><th> </th><td class="l"><span>#&nbsp; pm = compose( _unpack(<del>coord</del>s, npts) )</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>934</th><td class="r"><span>#&nbsp; pm = compose( _unpack(<ins>position</ins>s, npts) )</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>832</th><th>935</th><td class="l"><span>#&nbsp; return scenario(pm, values[:pm.npts])</span> </td>
+                  </tr><tr>
+                          <th>833</th><th>936</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L844">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L947">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>844</th><th>947</th><td class="l"><span>def flatten(c):</span> </td>
+                  </tr><tr>
+                          <th>845</th><th>948</th><td class="l"><span>&nbsp; """Flattens a product_measure object into a list."""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>846</th><th> </th><td class="l"><span>&nbsp; rv = [(i.weights,i.<del>coord</del>s) for i in c]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>949</th><td class="r"><span>&nbsp; rv = [(i.weights,i.<ins>position</ins>s) for i in c]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>847</th><th>950</th><td class="l"><span>&nbsp; # now flatten list of lists into just a list</span> </td>
+                  </tr><tr>
+                          <th>848</th><th>951</th><td class="l"><span>&nbsp; return list(chain(*chain(*rv))) # faster than mystic.tools.flatten</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L876">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L979">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>876</th><th>979</th><td class="l"><span>&nbsp; - normalizes weights</span> </td>
+                  </tr><tr>
+                          <th>877</th><th>980</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>878</th><th> </th><td class="l"><span>&nbsp;#from <del>dirac_</del>measure import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>981</th><td class="r"><span>&nbsp;#from <ins></ins>measure import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>879</th><th>982</th><td class="l"><span>&nbsp; def constrain(rv):</span> </td>
+                  </tr><tr>
+                          <th>880</th><th>983</th><td class="l"><span>&nbsp; &nbsp; "constrain:&nbsp; sum(wi)_{k} = 1 for each k in K"</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L898">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L1001">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>898</th><th>1001</th><td class="l"><span>&nbsp; - normalizes weights</span> </td>
+                  </tr><tr>
+                          <th>899</th><th>1002</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>900</th><th> </th><td class="l"><span>&nbsp;#from <del>dirac_</del>measure import scenario</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>1003</th><td class="r"><span>&nbsp;#from <ins></ins>measure import scenario</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>901</th><th>1004</th><td class="l"><span>&nbsp; from mystic.math.measures import mean, impose_mean</span> </td>
+                  </tr><tr>
+                          <th>902</th><th>1005</th><td class="l"><span>&nbsp;#target[0] is target mean</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L944">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L1047">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>944</th><th>1047</th><td class="l"><span>&nbsp; from numpy import sum, asarray</span> </td>
+                  </tr><tr>
+                          <th>945</th><th>1048</th><td class="l"><span>&nbsp; from mystic.math.legacydata import dataset</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>946</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import lipschitz_distance, infeasibility, _npts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>1049</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import lipschitz_distance, infeasibility, _npts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>947</th><th>1050</th><td class="l"><span>&nbsp; if guess is None:</span> </td>
+                  </tr><tr>
+                          <th>948</th><th>1051</th><td class="l"><span>&nbsp; &nbsp; message = "Requires a guess scenario, or a tuple of scenario dimensions."</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L1000">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L1103">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1000</th><th>1103</th><td class="l"><span>&nbsp; &nbsp; _pm.load(rv, pts)&nbsp; &nbsp; &nbsp; # here rv is param: w,x,y</span> </td>
+                  </tr><tr>
+                          <th>1001</th><th>1104</th><td class="l"><span>&nbsp; &nbsp; if not long_form:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>1002</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; <del>coord</del>s = _pm.select(*range(npts))</span> </td>
+                      </tr><tr>
+                        <th>1003</th><th> </th><td class="l"><span>&nbsp; &nbsp; else: <del>coords = _pm.coord</del>s</span> </td>
+                      </tr><tr>
+                        <th>1004</th><th> </th><td class="l"><span>&nbsp; &nbsp; _data.load( data.coords, data.values )&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp;</del># LOAD static</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>1105</th><td class="r"><span>&nbsp; &nbsp; &nbsp; <ins>position</ins>s = _pm.select(*range(npts))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>1106</th><td class="r"><span>&nbsp; &nbsp; else: <ins>positions = _pm.position</ins>s</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>1107</th><td class="r"><span>&nbsp; &nbsp; _data.load( data.coords, data.values )&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins></ins># LOAD static</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1005</th><th>1108</th><td class="l"><span>&nbsp; &nbsp; if _self:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>1006</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; _data.load( <del>coords, _pm.values )&nbsp; &nbsp; &nbsp; &nbsp; </del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # LOAD dynamic</span> </td>
+                      </tr><tr>
+                        <th>1007</th><th> </th><td class="l"><span>&nbsp; &nbsp; _data.lipschitz = data.lipschitz&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp;</del># LOAD L</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>1109</th><td class="r"><span>&nbsp; &nbsp; &nbsp; _data.load( <ins>positions, _pm.values )</ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # LOAD dynamic</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>1110</th><td class="r"><span>&nbsp; &nbsp; _data.lipschitz = data.lipschitz&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins></ins># LOAD L</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1008</th><th>1111</th><td class="l"><span>&nbsp; &nbsp; Rv = lipschitz_distance(_data.lipschitz, _pm, _data, tol=cutoff, **kwds)</span> </td>
+                  </tr><tr>
+                          <th>1009</th><th>1112</th><td class="l"><span>&nbsp; &nbsp; v = infeasibility(Rv, cutoff)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L1080">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L1183">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1080</th><th>1183</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>1081</th><th>1184</th><td class="l"><span>&nbsp; from numpy import sum as _sum, asarray</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>1082</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import graphical_distance, infeasibility, _npts</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>1185</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import graphical_distance, infeasibility, _npts</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1083</th><th>1186</th><td class="l"><span>&nbsp; if guess is None:</span> </td>
+                  </tr><tr>
+                          <th>1084</th><th>1187</th><td class="l"><span>&nbsp; &nbsp; message = "Requires a guess scenario, or a tuple of scenario dimensions."</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L1178">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L1281">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1178</th><th>1281</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>1179</th><th>1282</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>1283</th><td class="r"><ins># backward compatibility</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1284</th><td class="r"><ins>point = point_mass</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1285</th><td class="r"><ins>dirac_measure = measure</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>1286</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>1287</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1180</th><th>1288</th><td class="l"><span>if __name__ == '__main__':</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>1181</th><th> </th><td class="l"><span>&nbsp; from mystic.math.<del>paramtrans</del> import *</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>1289</th><td class="r"><span>&nbsp; from mystic.math.<ins>distance</ins> import *</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1182</th><th>1290</th><td class="l"><span>&nbsp; model = lambda x:sum(x)</span> </td>
+                  </tr><tr>
+                          <th>1183</th><th>1291</th><td class="l"><span>&nbsp; a = [0,1,9,8, 1,0,4,6, 1,0,1,2, 0,1,2,3,4,5,6,7]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/dirac_measure.py?rev=584#L1195">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/discrete.py?rev=687#L1303">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1195</th><th>1303</th><td class="l"><span>&nbsp; pm = scenario()</span> </td>
+                  </tr><tr>
+                          <th>1196</th><th>1304</th><td class="l"><span>&nbsp; pm.load(a, pts)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>1197</th><th> </th><td class="l"><span>&nbsp; pc = pm.<del>coord</del>s</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>1305</th><td class="r"><span>&nbsp; pc = pm.<ins>position</ins>s</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>1198</th><th>1306</th><td class="l"><span>&nbsp; pv = pm.values</span> </td>
+                  </tr><tr>
+                          <th>1199</th><th>1307</th><td class="l"><span>&nbsp; #---</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/687/mystic/_math/discrete.py?format=diff&amp;new=687" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/687/mystic/_math/discrete.py?format=zip&amp;new=687" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/687/mystic/_math/discrete.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:49:08 GMT -->
+</html>

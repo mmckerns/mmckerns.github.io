@@ -1,0 +1,966 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/776/mystic/models by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:57:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 776 for mystic/models – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../search.html" />
+        <link rel="help" href="../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/776/mystic/models?format=diff&amp;new=776" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/776/mystic/models?format=zip&amp;new=776" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../792/mystic/models.html" title="Changeset 792 for mystic/models" />
+        <link rel="start" href="../../../wiki.html" />
+        <link rel="stylesheet" href="../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../772/mystic/models.html" title="Changeset 772 for mystic/models" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../login.html">Login</a></li><li><a href="../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../about.html">About Trac</a></li><li class="last"><a href="../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../wiki.html">Wiki</a></li><li><a href="../../../timeline.html">Timeline</a></li><li><a href="../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../browser.html">Browse Source</a></li><li><a href="../../../query.html">View Tickets</a></li><li class="last"><a href="../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../772/mystic/models.html" title="Changeset 772 for mystic/models">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../792/mystic/models.html" title="Changeset 792 for mystic/models">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../776.html">776</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=776">mystic/models</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             01/02/15 06:51:14
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-01-02T06%3A51%3A14-08%3A00&amp;precision=second" title="2015-01-02T06:51:14-08:00 in Timeline">17 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+copyright updated to 2015; added to examples2<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic/models?rev=776">mystic/models</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>16 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/__init__.py?rev=776">
+              __init__.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/_model_helper.py?rev=776">
+              _model_helper.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/abstract_model.py?rev=776">
+              abstract_model.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/br8.py?rev=776">
+              br8.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/circle.py?rev=776">
+              circle.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/dejong.py?rev=776">
+              dejong.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/lorentzian.py?rev=776">
+              lorentzian.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/mogi.py?rev=776">
+              mogi.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/nag.py?rev=776">
+              nag.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file8">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/pohlheim.py?rev=776">
+              pohlheim.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file9">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/poly.py?rev=776">
+              poly.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file10">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/schittkowski.py?rev=776">
+              schittkowski.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file11">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/storn.py?rev=776">
+              storn.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file12">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/venkataraman.py?rev=776">
+              venkataraman.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file13">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/wavy.py?rev=776">
+              wavy.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file14">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/wolfram.py?rev=776">
+              wolfram.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file15">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="models/__init__.html" title="Show the changeset 776 restricted to mystic/models/__init__.py">mystic/models/__init__.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 766">
+                    <a title="Show revision 766 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/__init__.py?rev=766#L3">
+                      r766</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/__init__.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="models/_model_helper.html" title="Show the changeset 776 restricted to mystic/models/_model_helper.py">mystic/models/_model_helper.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 713">
+                    <a title="Show revision 713 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/_model_helper.py?rev=713#L3">
+                      r713</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/_model_helper.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="models/abstract_model.html" title="Show the changeset 776 restricted to mystic/models/abstract_model.py">mystic/models/abstract_model.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 751">
+                    <a title="Show revision 751 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/abstract_model.py?rev=751#L3">
+                      r751</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/abstract_model.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="models/br8.html" title="Show the changeset 776 restricted to mystic/models/br8.py">mystic/models/br8.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 750">
+                    <a title="Show revision 750 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/br8.py?rev=750#L3">
+                      r750</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/br8.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="models/circle.html" title="Show the changeset 776 restricted to mystic/models/circle.py">mystic/models/circle.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 772">
+                    <a title="Show revision 772 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/circle.py?rev=772#L3">
+                      r772</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/circle.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="models/dejong.html" title="Show the changeset 776 restricted to mystic/models/dejong.py">mystic/models/dejong.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 751">
+                    <a title="Show revision 751 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/dejong.py?rev=751#L3">
+                      r751</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/dejong.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="models/lorentzian.html" title="Show the changeset 776 restricted to mystic/models/lorentzian.py">mystic/models/lorentzian.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 772">
+                    <a title="Show revision 772 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/lorentzian.py?rev=772#L3">
+                      r772</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/lorentzian.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="models/mogi.html" title="Show the changeset 776 restricted to mystic/models/mogi.py">mystic/models/mogi.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 713">
+                    <a title="Show revision 713 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/mogi.py?rev=713#L3">
+                      r713</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/mogi.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file8">
+          <a href="models/nag.html" title="Show the changeset 776 restricted to mystic/models/nag.py">mystic/models/nag.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 751">
+                    <a title="Show revision 751 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/nag.py?rev=751#L3">
+                      r751</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/nag.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Alta Fang (altafang @caltech and alta @princeton)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file9">
+          <a href="models/pohlheim.html" title="Show the changeset 776 restricted to mystic/models/pohlheim.py">mystic/models/pohlheim.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 751">
+                    <a title="Show revision 751 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/pohlheim.py?rev=751#L3">
+                      r751</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/pohlheim.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Alta Fang (altafang @caltech and alta @princeton)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file10">
+          <a href="models/poly.html" title="Show the changeset 776 restricted to mystic/models/poly.py">mystic/models/poly.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 751">
+                    <a title="Show revision 751 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/poly.py?rev=751#L3">
+                      r751</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/poly.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file11">
+          <a href="models/schittkowski.html" title="Show the changeset 776 restricted to mystic/models/schittkowski.py">mystic/models/schittkowski.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 752">
+                    <a title="Show revision 752 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/schittkowski.py?rev=752#L3">
+                      r752</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/schittkowski.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Alta Fang (altafang @caltech and alta @princeton)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file12">
+          <a href="models/storn.html" title="Show the changeset 776 restricted to mystic/models/storn.py">mystic/models/storn.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 766">
+                    <a title="Show revision 766 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/storn.py?rev=766#L3">
+                      r766</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/storn.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file13">
+          <a href="models/venkataraman.html" title="Show the changeset 776 restricted to mystic/models/venkataraman.py">mystic/models/venkataraman.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 751">
+                    <a title="Show revision 751 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/venkataraman.py?rev=751#L3">
+                      r751</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/venkataraman.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Alta Fang (altafang @caltech and alta @princeton)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file14">
+          <a href="models/wavy.html" title="Show the changeset 776 restricted to mystic/models/wavy.py">mystic/models/wavy.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 751">
+                    <a title="Show revision 751 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/wavy.py?rev=751#L3">
+                      r751</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/wavy.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file15">
+          <a href="models/wolfram.html" title="Show the changeset 776 restricted to mystic/models/wolfram.py">mystic/models/wolfram.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 752">
+                    <a title="Show revision 752 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/wolfram.py?rev=752#L3">
+                      r752</a>
+                  </th>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/models/wolfram.py?rev=776#L3">
+                      r776</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</span> </td>
+                  </tr><tr>
+                          <th>4</th><th>4</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>5</th><th> </th><td class="l"><span># Copyright (c) 1997-201<del>4</del> California Institute of Technology.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>5</th><td class="r"><span># Copyright (c) 1997-201<ins>5</ins> California Institute of Technology.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/776/mystic/models?format=diff&amp;new=776" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/776/mystic/models?format=zip&amp;new=776" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/776/mystic/models by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:57:39 GMT -->
+</html>

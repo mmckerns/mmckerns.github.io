@@ -1,0 +1,1807 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/log/mystic/_math by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:55:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      mystic/_math (log) – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/log/mystic/_math?format=rss&amp;limit=100&amp;mode=stop_on_copy" type="application/rss+xml" class="rss" title="RSS Feed" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/log/mystic/_math?format=changelog&amp;limit=100&amp;mode=stop_on_copy" type="text/plain" title="ChangeLog" />
+        <link rel="up" href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=862" title="Parent directory" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/browser.css" type="text/css" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="../../browser/mystic/_math.html">View Latest Revision</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="log">
+      <h1>
+<a class="pathentry first" href="http://mmckerns.github.io/project/mystic/browser?rev=862" title="Go to repository root">source:</a>
+<a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=862" title="View mystic">mystic</a><span class="pathentry sep">/</span><a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=862" title="View _math">_math</a>
+<span class="pathentry sep">@</span>
+  <a class="pathentry" href="../../changeset/862.html" title="View changeset 862">862</a>
+<br style="clear: both" />
+</h1>
+      <form id="prefs" action="#" method="get">
+        <div>
+          <input type="hidden" name="action" value="stop_on_copy" />
+          <div class="choice">
+            <fieldset>
+              <legend>Revision Log Mode:</legend>
+              <label>
+                <input type="radio" id="stop_on_copy" name="mode" value="stop_on_copy" checked="checked" />
+                Stop on copy
+              </label>
+              <label>
+                <input type="radio" id="follow_copy" name="mode" value="follow_copy" />
+                Follow copies
+              </label>
+              <label>
+                <input type="radio" id="path_history" name="mode" value="path_history" />
+                Show only adds and deletes
+              </label>
+            </fieldset>
+          </div>
+          <label>
+              View log starting at
+              <input type="text" id="rev" name="rev" value="862" size="5" />
+            </label>
+            <label>
+              and back to
+              <input type="text" id="stop_rev" name="stop_rev" size="5" />
+            </label><br />
+          <label>
+              Show at most
+              <input type="text" id="limit" name="limit" value="100" size="3" maxlength="3" />
+              revisions per page.
+            </label><br />
+          <label>
+            <input type="checkbox" id="verbose" name="verbose" />
+            Show full log messages
+          </label>
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Update" />
+        </div>
+      </form>
+      <div class="diff">
+        <div class="legend" id="file-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+            <dt class="cp"></dt><dd>Copied or renamed</dd>
+          </dl>
+        </div>
+      </div>
+      <form class="printableform" action="http://mmckerns.github.io/project/mystic/changeset" method="get">
+        <div class="buttons">
+          <input type="hidden" name="reponame" />
+          <input type="submit" value="View changes" title="Diff from Old Revision to New Revision (as selected in the Diff column)" />
+        </div>
+        <table class="listing chglist">
+          <thead>
+            <tr>
+              <th class="diff" title="Old / New">Diff</th>
+              <th class="change"></th>
+              <th class="rev">Rev</th>
+              <th class="age">Age</th>
+              <th class="author">Author</th>
+              <th class="summary">Log Message</th>
+            </tr>
+          </thead>
+          <tbody>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="862@mystic/_math" title="From [862]" />
+                    <input type="radio" name="new" value="862@mystic/_math" checked="checked" title="To [862]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=862" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=862" title="Browse at revision 862">
+                        @862</a>
+                        <a class="chgset" href="../../changeset/862/mystic/_math.html" title="View changeset [862] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-04-18T14%3A14%3A14-07%3A00&amp;precision=second" title="2016-04-18T14:14:14-07:00 in Timeline">4 weeks</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add mystic.math.Distribution; use it for <a class="missing wiki">InitialPoints?</a>, ensemble …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="856@mystic/_math" title="From [856]" />
+                    <input type="radio" name="new" value="856@mystic/_math" title="To [856]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=856" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=856" title="Browse at revision 856">
+                        @856</a>
+                        <a class="chgset" href="../../changeset/856/mystic/_math.html" title="View changeset [856] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-02-06T08%3A28%3A35-08%3A00&amp;precision=second" title="2016-02-06T08:28:35-08:00 in Timeline">3 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="855@mystic/_math" title="From [855]" />
+                    <input type="radio" name="new" value="855@mystic/_math" title="To [855]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=855" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=855" title="Browse at revision 855">
+                        @855</a>
+                        <a class="chgset" href="../../changeset/855/mystic/_math.html" title="View changeset [855] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-01-01T19%3A05%3A11-08%3A00&amp;precision=second" title="2016-01-01T19:05:11-08:00 in Timeline">5 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        updated copyright to 2016
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="847@mystic/_math" title="From [847]" />
+                    <input type="radio" name="new" value="847@mystic/_math" title="To [847]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=847" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=847" title="Browse at revision 847">
+                        @847</a>
+                        <a class="chgset" href="../../changeset/847/mystic/_math.html" title="View changeset [847] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-12-12T11%3A35%3A11-08%3A00&amp;precision=second" title="2015-12-12T11:35:11-08:00 in Timeline">5 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        slightly faster imports using imp
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="824@mystic/_math" title="From [824]" />
+                    <input type="radio" name="new" value="824@mystic/_math" title="To [824]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=824" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=824" title="Browse at revision 824">
+                        @824</a>
+                        <a class="chgset" href="../../changeset/824/mystic/_math.html" title="View changeset [824] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-09-04T08%3A00%3A51-07%3A00&amp;precision=second" title="2015-09-04T08:00:51-07:00 in Timeline">9 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        reconcile Lnorm and minkowski, add hamming distance;
+fix Lnorm and …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="822@mystic/_math" title="From [822]" />
+                    <input type="radio" name="new" value="822@mystic/_math" title="To [822]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=822" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=822" title="Browse at revision 822">
+                        @822</a>
+                        <a class="chgset" href="../../changeset/822/mystic/_math.html" title="View changeset [822] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-08-17T05%3A56%3A16-07%3A00&amp;precision=second" title="2015-08-17T05:56:16-07:00 in Timeline">9 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved Lnorm to mystic.math.distance; fix: typo in mystic.math.mad
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="821@mystic/_math" title="From [821]" />
+                    <input type="radio" name="new" value="821@mystic/_math" title="To [821]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=821" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=821" title="Browse at revision 821">
+                        @821</a>
+                        <a class="chgset" href="../../changeset/821/mystic/_math.html" title="View changeset [821] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-08-13T12%3A51%3A47-07%3A00&amp;precision=second" title="2015-08-13T12:51:47-07:00 in Timeline">9 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        normalize with prior behavior, with Ln-norm included; default mass from 1 …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="820@mystic/_math" title="From [820]" />
+                    <input type="radio" name="new" value="820@mystic/_math" title="To [820]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=820" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=820" title="Browse at revision 820">
+                        @820</a>
+                        <a class="chgset" href="../../changeset/820/mystic/_math.html" title="View changeset [820] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-08-12T22%3A13%3A07-07%3A00&amp;precision=second" title="2015-08-12T22:13:07-07:00 in Timeline">9 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        extend mystic.math.measures from L1 norm to Ln norm; set defailt mass=None
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="803@mystic/_math" title="From [803]" />
+                    <input type="radio" name="new" value="803@mystic/_math" title="To [803]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=803" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=803" title="Browse at revision 803">
+                        @803</a>
+                        <a class="chgset" href="../../changeset/803/mystic/_math.html" title="View changeset [803] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-07-10T18%3A33%3A26-07%3A00&amp;precision=second" title="2015-07-10T18:33:26-07:00 in Timeline">10 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added some event-driven stats: median, mean, trimmed and windowed mean
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="792@mystic/_math" title="From [792]" />
+                    <input type="radio" name="new" value="792@mystic/_math" title="To [792]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=792" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=792" title="Browse at revision 792">
+                        @792</a>
+                        <a class="chgset" href="../../changeset/792/mystic/_math.html" title="View changeset [792] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-10T13%3A01%3A55-07%3A00&amp;precision=second" title="2015-06-10T13:01:55-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        for speed, use contains instead of get and has_key
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="791@mystic/_math" title="From [791]" />
+                    <input type="radio" name="new" value="791@mystic/_math" title="To [791]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=791" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=791" title="Browse at revision 791">
+                        @791</a>
+                        <a class="chgset" href="../../changeset/791/mystic/_math.html" title="View changeset [791] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-10T09%3A03%3A56-07%3A00&amp;precision=second" title="2015-06-10T09:03:56-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        use len(stepmon) more uniformly; fix _fcalls for DESolvers;
+generations …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="789@mystic/_math" title="From [789]" />
+                    <input type="radio" name="new" value="789@mystic/_math" title="To [789]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=789" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=789" title="Browse at revision 789">
+                        @789</a>
+                        <a class="chgset" href="../../changeset/789/mystic/_math.html" title="View changeset [789] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-05-08T10%3A48%3A37-07%3A00&amp;precision=second" title="2015-05-08T10:48:37-07:00 in Timeline">13 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        impose_reweighted_* should only return weights
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="779@mystic/_math" title="From [779]" />
+                    <input type="radio" name="new" value="779@mystic/_math" title="To [779]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=779" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=779" title="Browse at revision 779">
+                        @779</a>
+                        <a class="chgset" href="../../changeset/779/mystic/_math.html" title="View changeset [779] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-01-12T16%3A44%3A03-08%3A00&amp;precision=second" title="2015-01-12T16:44:03-08:00 in Timeline">16 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add gamma and lgamma, update erf
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="777@mystic/_math" title="From [777]" />
+                    <input type="radio" name="new" value="777@mystic/_math" title="To [777]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=777" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=777" title="Browse at revision 777">
+                        @777</a>
+                        <a class="chgset" href="../../changeset/777/mystic/_math.html" title="View changeset [777] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-01-03T09%3A21%3A20-08%3A00&amp;precision=second" title="2015-01-03T09:21:20-08:00 in Timeline">17 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add std, impose_std, impose_reweighted_std to measures; with_std to …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="776@mystic/_math" title="From [776]" />
+                    <input type="radio" name="new" value="776@mystic/_math" title="To [776]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=776" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=776" title="Browse at revision 776">
+                        @776</a>
+                        <a class="chgset" href="../../changeset/776/mystic/_math.html" title="View changeset [776] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-01-02T06%3A51%3A14-08%3A00&amp;precision=second" title="2015-01-02T06:51:14-08:00 in Timeline">17 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        copyright updated to 2015; added to examples2
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="772@mystic/_math" title="From [772]" />
+                    <input type="radio" name="new" value="772@mystic/_math" title="To [772]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=772" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=772" title="Browse at revision 772">
+                        @772</a>
+                        <a class="chgset" href="../../changeset/772/mystic/_math.html" title="View changeset [772] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-11-21T14%3A33%3A33-08%3A00&amp;precision=second" title="2014-11-21T14:33:33-08:00 in Timeline">18 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: remove stray random.seed causing seeding of random number generation; …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="770@mystic/_math" title="From [770]" />
+                    <input type="radio" name="new" value="770@mystic/_math" title="To [770]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=770" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=770" title="Browse at revision 770">
+                        @770</a>
+                        <a class="chgset" href="../../changeset/770/mystic/_math.html" title="View changeset [770] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-11-14T17%3A28%3A54-08%3A00&amp;precision=second" title="2014-11-14T17:28:54-08:00 in Timeline">18 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        using the faster numpy.product versus numpy.prod
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="769@mystic/_math" title="From [769]" />
+                    <input type="radio" name="new" value="769@mystic/_math" title="To [769]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=769" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=769" title="Browse at revision 769">
+                        @769</a>
+                        <a class="chgset" href="../../changeset/769/mystic/_math.html" title="View changeset [769] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-11-14T16%3A34%3A38-08%3A00&amp;precision=second" title="2014-11-14T16:34:38-08:00 in Timeline">18 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add ones and exact keyword options to math.grid.randomly_bin;
+lattice …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="768@mystic/_math" title="From [768]" />
+                    <input type="radio" name="new" value="768@mystic/_math" title="To [768]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=768" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=768" title="Browse at revision 768">
+                        @768</a>
+                        <a class="chgset" href="../../changeset/768/mystic/_math.html" title="View changeset [768] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-11-12T07%3A37%3A47-08%3A00&amp;precision=second" title="2014-11-12T07:37:47-08:00 in Timeline">18 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: impose_product should also work when prod is negative
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="763@mystic/_math" title="From [763]" />
+                    <input type="radio" name="new" value="763@mystic/_math" title="To [763]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=763" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=763" title="Browse at revision 763">
+                        @763</a>
+                        <a class="chgset" href="../../changeset/763/mystic/_math.html" title="View changeset [763] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-10-07T15%3A29%3A24-07%3A00&amp;precision=second" title="2014-10-07T15:29:24-07:00 in Timeline">20 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        use numpy.seterr to ignore nan in measures.normalize and in greater/less …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="760@mystic/_math" title="From [760]" />
+                    <input type="radio" name="new" value="760@mystic/_math" title="To [760]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=760" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=760" title="Browse at revision 760">
+                        @760</a>
+                        <a class="chgset" href="../../changeset/760/mystic/_math.html" title="View changeset [760] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-10-04T18%3A52%3A54-07%3A00&amp;precision=second" title="2014-10-04T18:52:54-07:00 in Timeline">20 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        convert most eq and ne checks against None to is and is not
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="757@mystic/_math" title="From [757]" />
+                    <input type="radio" name="new" value="757@mystic/_math" title="To [757]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=757" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=757" title="Browse at revision 757">
+                        @757</a>
+                        <a class="chgset" href="../../changeset/757/mystic/_math.html" title="View changeset [757] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-09-28T15%3A55%3A46-07%3A00&amp;precision=second" title="2014-09-28T15:55:46-07:00 in Timeline">20 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        document support, support_index, and ess_minimum in measures;
+silent …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="731@mystic/_math" title="From [731]" />
+                    <input type="radio" name="new" value="731@mystic/_math" title="To [731]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=731" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=731" title="Browse at revision 731">
+                        @731</a>
+                        <a class="chgset" href="../../changeset/731/mystic/_math.html" title="View changeset [731] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-07-26T08%3A08%3A22-07%3A00&amp;precision=second" title="2014-07-26T08:08:22-07:00 in Timeline">22 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        removed old Makefiles
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="713@mystic/_math" title="From [713]" />
+                    <input type="radio" name="new" value="713@mystic/_math" title="To [713]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=713" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=713" title="Browse at revision 713">
+                        @713</a>
+                        <a class="chgset" href="../../changeset/713/mystic/_math.html" title="View changeset [713] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-04-03T12%3A44%3A55-07%3A00&amp;precision=second" title="2014-04-03T12:44:55-07:00 in Timeline">2 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added license and copyright to each file
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="706@mystic/_math" title="From [706]" />
+                    <input type="radio" name="new" value="706@mystic/_math" title="To [706]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=706" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=706" title="Browse at revision 706">
+                        @706</a>
+                        <a class="chgset" href="../../changeset/706/mystic/_math.html" title="View changeset [706] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-08-11T16%3A52%3A39-07%3A00&amp;precision=second" title="2013-08-11T16:52:39-07:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved mystic.cache to new subpackage klepto; updated LICENSE file
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="694@mystic/_math" title="From [694]" />
+                    <input type="radio" name="new" value="694@mystic/_math" title="To [694]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=694" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=694" title="Browse at revision 694">
+                        @694</a>
+                        <a class="chgset" href="../../changeset/694/mystic/_math.html" title="View changeset [694] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-06-22T11%3A52%3A00-07%3A00&amp;precision=second" title="2013-06-22T11:52:00-07:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        renamed measure's and discrete's min/max to minimum/maximum
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="687@mystic/_math" title="From [687]" />
+                    <input type="radio" name="new" value="687@mystic/_math" title="To [687]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=687" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=687" title="Browse at revision 687">
+                        @687</a>
+                        <a class="chgset" href="../../changeset/687/mystic/_math.html" title="View changeset [687] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-06-15T18%3A43%3A09-07%3A00&amp;precision=second" title="2013-06-15T18:43:09-07:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        renaming of some of the measure methods, including dirac_measure to …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="686@mystic/_math" title="From [686]" />
+                    <input type="radio" name="new" value="686@mystic/_math" title="To [686]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=686" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=686" title="Browse at revision 686">
+                        @686</a>
+                        <a class="chgset" href="../../changeset/686/mystic/_math.html" title="View changeset [686] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-06-11T17%3A59%3A35-07%3A00&amp;precision=second" title="2013-06-11T17:59:35-07:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: symbolic now recognizes x0 as parameter and first default
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="669@mystic/_math" title="From [669]" />
+                    <input type="radio" name="new" value="669@mystic/_math" title="To [669]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=669" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=669" title="Browse at revision 669">
+                        @669</a>
+                        <a class="chgset" href="../../changeset/669/mystic/_math.html" title="View changeset [669] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-05-29T18%3A32%3A53-07%3A00&amp;precision=second" title="2013-05-29T18:32:53-07:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved rounding and cache stuff from decorate branch into trunk
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="646@mystic/_math" title="From [646]" />
+                    <input type="radio" name="new" value="646@mystic/_math" title="To [646]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=646" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=646" title="Browse at revision 646">
+                        @646</a>
+                        <a class="chgset" href="../../changeset/646/mystic/_math.html" title="View changeset [646] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-18T06%3A20%3A57-08%3A00&amp;precision=second" title="2013-01-18T06:20:57-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved discrete from decorate/wrapper to mystic.constraints;
+added …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="630@mystic/_math" title="From [630]" />
+                    <input type="radio" name="new" value="630@mystic/_math" title="To [630]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=630" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=630" title="Browse at revision 630">
+                        @630</a>
+                        <a class="chgset" href="../../changeset/630/mystic/_math.html" title="View changeset [630] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-03T13%3A21%3A26-08%3A00&amp;precision=second" title="2013-01-03T13:21:26-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added randomly_bin to grid; enable <a class="missing wiki">LatticeSolver?</a> to randomly_bin;
+abstract …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="613@mystic/_math" title="From [613]" />
+                    <input type="radio" name="new" value="613@mystic/_math" title="To [613]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=613" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=613" title="Browse at revision 613">
+                        @613</a>
+                        <a class="chgset" href="../../changeset/613/mystic/_math.html" title="View changeset [613] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-18T10%3A25%3A00-08%3A00&amp;precision=second" title="2012-12-18T10:25:00-08:00 in Timeline">3 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added impose_product and impose_sum to mystic.math.measures;
+allow …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="589@mystic/_math" title="From [589]" />
+                    <input type="radio" name="new" value="589@mystic/_math" title="To [589]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=589" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=589" title="Browse at revision 589">
+                        @589</a>
+                        <a class="chgset" href="../../changeset/589/mystic/_math.html" title="View changeset [589] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-11-13T10%3A42%3A43-08%3A00&amp;precision=second" title="2012-11-13T10:42:43-08:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        convert VTR to VTRCOG in fmin, fmin_powell, diffev*
+return cost = inf when …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="588@mystic/_math" title="From [588]" />
+                    <input type="radio" name="new" value="588@mystic/_math" title="To [588]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=588" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=588" title="Browse at revision 588">
+                        @588</a>
+                        <a class="chgset" href="../../changeset/588/mystic/_math.html" title="View changeset [588] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-11-07T22%3A10%3A17-08%3A00&amp;precision=second" title="2012-11-07T22:10:17-08:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        allow hausdorff normalization of y
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="584@mystic/_math" title="From [584]" />
+                    <input type="radio" name="new" value="584@mystic/_math" title="To [584]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=584" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=584" title="Browse at revision 584">
+                        @584</a>
+                        <a class="chgset" href="../../changeset/584/mystic/_math.html" title="View changeset [584] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-11-03T06%3A51%3A28-07%3A00&amp;precision=second" title="2012-11-03T06:51:28-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        hausdorff normalization can be given in graphical_distance
+use bounds …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="583@mystic/_math" title="From [583]" />
+                    <input type="radio" name="new" value="583@mystic/_math" title="To [583]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=583" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=583" title="Browse at revision 583">
+                        @583</a>
+                        <a class="chgset" href="../../changeset/583/mystic/_math.html" title="View changeset [583] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-11-02T10%3A10%3A32-07%3A00&amp;precision=second" title="2012-11-02T10:10:32-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added a toggle for the hausdorff norm in grahical distance
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="569@mystic/_math" title="From [569]" />
+                    <input type="radio" name="new" value="569@mystic/_math" title="To [569]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=569" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=569" title="Browse at revision 569">
+                        @569</a>
+                        <a class="chgset" href="../../changeset/569/mystic/_math.html" title="View changeset [569] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-09-24T15%3A59%3A25-07%3A00&amp;precision=second" title="2012-09-24T15:59:25-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        merge of dirac_measure plus compressed, paramtrans, and legacydata to …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="551@mystic/_math" title="From [551]" />
+                    <input type="radio" name="new" value="551@mystic/_math" title="To [551]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=551" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=551" title="Browse at revision 551">
+                        @551</a>
+                        <a class="chgset" href="../../changeset/551/mystic/_math.html" title="View changeset [551] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-09-03T09%3A14%3A02-07%3A00&amp;precision=second" title="2012-09-03T09:14:02-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        list comprehension in expectation, also renamed weightTol to tol
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="549@mystic/_math" title="From [549]" />
+                    <input type="radio" name="new" value="549@mystic/_math" title="To [549]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=549" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=549" title="Browse at revision 549">
+                        @549</a>
+                        <a class="chgset" href="../../changeset/549/mystic/_math.html" title="View changeset [549] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-08-28T13%3A27%3A59-07%3A00&amp;precision=second" title="2012-08-28T13:27:59-07:00 in Timeline">4 years</a></td>
+                    <td class="author">tjs</td>
+                    <td class="summary">
+                        Tweaked expectation algorithm again to filter the lists instead, rather …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="548@mystic/_math" title="From [548]" />
+                    <input type="radio" name="new" value="548@mystic/_math" title="To [548]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=548" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=548" title="Browse at revision 548">
+                        @548</a>
+                        <a class="chgset" href="../../changeset/548/mystic/_math.html" title="View changeset [548] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-08-21T17%3A01%3A34-07%3A00&amp;precision=second" title="2012-08-21T17:01:34-07:00 in Timeline">4 years</a></td>
+                    <td class="author">tjs</td>
+                    <td class="summary">
+                        Tweaked expectation algorithm to allow an optional weightTol, with the …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="508@mystic/_math" title="From [508]" />
+                    <input type="radio" name="new" value="508@mystic/_math" title="To [508]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=508" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=508" title="Browse at revision 508">
+                        @508</a>
+                        <a class="chgset" href="../../changeset/508/mystic/_math.html" title="View changeset [508] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-03-21T19%3A29%3A57-07%3A00&amp;precision=second" title="2012-03-21T19:29:57-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added set_expect and get_expect for dirac_measures; easier debug for …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="480@mystic/_math" title="From [480]" />
+                    <input type="radio" name="new" value="480@mystic/_math" title="To [480]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=480" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=480" title="Browse at revision 480">
+                        @480</a>
+                        <a class="chgset" href="../../changeset/480/mystic/_math.html" title="View changeset [480] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-10-05T20%3A46%3A32-07%3A00&amp;precision=second" title="2011-10-05T20:46:32-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added 'info' channels to Monitors
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="472@mystic/_math" title="From [472]" />
+                    <input type="radio" name="new" value="472@mystic/_math" title="To [472]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=472" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=472" title="Browse at revision 472">
+                        @472</a>
+                        <a class="chgset" href="../../changeset/472/mystic/_math.html" title="View changeset [472] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-06T16%3A05%3A45-07%3A00&amp;precision=second" title="2011-07-06T16:05:45-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        new methods for product measure: load, flatten, pts, wts, pos;
+more …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="470@mystic/_math" title="From [470]" />
+                    <input type="radio" name="new" value="470@mystic/_math" title="To [470]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=470" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=470" title="Browse at revision 470">
+                        @470</a>
+                        <a class="chgset" href="../../changeset/470/mystic/_math.html" title="View changeset [470] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-05T14%3A57%3A23-07%3A00&amp;precision=second" title="2011-07-05T14:57:23-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        migrated "Null" to monitors; set <a class="missing wiki">StepMon/Evalmon?</a> is now a method
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="469@mystic/_math" title="From [469]" />
+                    <input type="radio" name="new" value="469@mystic/_math" title="To [469]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=469" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=469" title="Browse at revision 469">
+                        @469</a>
+                        <a class="chgset" href="../../changeset/469/mystic/_math.html" title="View changeset [469] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-03T13%3A21%3A01-07%3A00&amp;precision=second" title="2011-07-03T13:21:01-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved _flat_split to split_param
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="468@mystic/_math" title="From [468]" />
+                    <input type="radio" name="new" value="468@mystic/_math" title="To [468]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=468" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=468" title="Browse at revision 468">
+                        @468</a>
+                        <a class="chgset" href="../../changeset/468/mystic/_math.html" title="View changeset [468] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-03T12%3A49%3A31-07%3A00&amp;precision=second" title="2011-07-03T12:49:31-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        migrated almostEqual from approx_equal to numpy.allclose
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="466@mystic/_math" title="From [466]" />
+                    <input type="radio" name="new" value="466@mystic/_math" title="To [466]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=466" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=466" title="Browse at revision 466">
+                        @466</a>
+                        <a class="chgset" href="../../changeset/466/mystic/_math.html" title="View changeset [466] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-02T20%3A41%3A02-07%3A00&amp;precision=second" title="2011-07-02T20:41:02-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        moved monitors from mystic.tools to mystic.monitors
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="465@mystic/_math" title="From [465]" />
+                    <input type="radio" name="new" value="465@mystic/_math" title="To [465]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=465" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=465" title="Browse at revision 465">
+                        @465</a>
+                        <a class="chgset" href="../../changeset/465/mystic/_math.html" title="View changeset [465] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-01T23%3A05%3A59-07%3A00&amp;precision=second" title="2011-07-01T23:05:59-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        all solvers import through 'solvers', and tools through 'tools'
+renamed …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="461@mystic/_math" title="From [461]" />
+                    <input type="radio" name="new" value="461@mystic/_math" title="To [461]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=461" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=461" title="Browse at revision 461">
+                        @461</a>
+                        <a class="chgset" href="../../changeset/461/mystic/_math.html" title="View changeset [461] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-06-05T12%3A54%3A30-07%3A00&amp;precision=second" title="2011-06-05T12:54:30-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        better behavior for normalization to zero
+(i.e. removed rand from …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="460@mystic/_math" title="From [460]" />
+                    <input type="radio" name="new" value="460@mystic/_math" title="To [460]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=460" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=460" title="Browse at revision 460">
+                        @460</a>
+                        <a class="chgset" href="../../changeset/460/mystic/_math.html" title="View changeset [460] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-05-14T22%3A03%3A14-07%3A00&amp;precision=second" title="2011-05-14T22:03:14-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        migrated from "A += B"  to  "A = A + B" -- was bad for accuracy in arrays
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="459@mystic/_math" title="From [459]" />
+                    <input type="radio" name="new" value="459@mystic/_math" title="To [459]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=459" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=459" title="Browse at revision 459">
+                        @459</a>
+                        <a class="chgset" href="../../changeset/459/mystic/_math.html" title="View changeset [459] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-05-11T17%3A28%3A48-07%3A00&amp;precision=second" title="2011-05-11T17:28:48-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        when normalizing to zero, don't always burden x[-1]... possibly a bad idea
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="458@mystic/_math" title="From [458]" />
+                    <input type="radio" name="new" value="458@mystic/_math" title="To [458]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=458" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=458" title="Browse at revision 458">
+                        @458</a>
+                        <a class="chgset" href="../../changeset/458/mystic/_math.html" title="View changeset [458] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-05-11T09%3A56%3A16-07%3A00&amp;precision=second" title="2011-05-11T09:56:16-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        improved normalization when norm=0.0, including 'zero_norm_scaling'
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="457@mystic/_math" title="From [457]" />
+                    <input type="radio" name="new" value="457@mystic/_math" title="To [457]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=457" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=457" title="Browse at revision 457">
+                        @457</a>
+                        <a class="chgset" href="../../changeset/457/mystic/_math.html" title="View changeset [457] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-05-10T21%3A52%3A10-07%3A00&amp;precision=second" title="2011-05-10T21:52:10-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added sampled_pof and support methods to dirac_measure (for large …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="452@mystic/_math" title="From [452]" />
+                    <input type="radio" name="new" value="452@mystic/_math" title="To [452]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=452" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=452" title="Browse at revision 452">
+                        @452</a>
+                        <a class="chgset" href="../../changeset/452/mystic/_math.html" title="View changeset [452] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-04-19T15%3A22%3A13-07%3A00&amp;precision=second" title="2011-04-19T15:22:13-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        small changes to support very large numbers of dirac masses
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="451@mystic/_math" title="From [451]" />
+                    <input type="radio" name="new" value="451@mystic/_math" title="To [451]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=451" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=451" title="Browse at revision 451">
+                        @451</a>
+                        <a class="chgset" href="../../changeset/451/mystic/_math.html" title="View changeset [451] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-03-29T08%3A58%3A24-07%3A00&amp;precision=second" title="2011-03-29T08:58:24-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        allow impose_weight_norm to use mass != 1.0
+allow arrays as inputs for …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="450@mystic/_math" title="From [450]" />
+                    <input type="radio" name="new" value="450@mystic/_math" title="To [450]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=450" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=450" title="Browse at revision 450">
+                        @450</a>
+                        <a class="chgset" href="../../changeset/450/mystic/_math.html" title="View changeset [450] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-03-28T20%3A34%3A41-07%3A00&amp;precision=second" title="2011-03-28T20:34:41-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        allow normalization to mass != 1.0
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="449@mystic/_math" title="From [449]" />
+                    <input type="radio" name="new" value="449@mystic/_math" title="To [449]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=449" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=449" title="Browse at revision 449">
+                        @449</a>
+                        <a class="chgset" href="../../changeset/449/mystic/_math.html" title="View changeset [449] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-03-24T17%3A20%3A11-07%3A00&amp;precision=second" title="2011-03-24T17:20:11-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        allow 'impose_expectation' to take constraints function:  x' = …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="448@mystic/_math" title="From [448]" />
+                    <input type="radio" name="new" value="448@mystic/_math" title="To [448]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=448" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=448" title="Browse at revision 448">
+                        @448</a>
+                        <a class="chgset" href="../../changeset/448/mystic/_math.html" title="View changeset [448] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-03-22T18%3A04%3A32-07%3A00&amp;precision=second" title="2011-03-22T18:04:32-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        allow constraints=None kwds for DE solver and also for impose_expect; …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="447@mystic/_math" title="From [447]" />
+                    <input type="radio" name="new" value="447@mystic/_math" title="To [447]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=447" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=447" title="Browse at revision 447">
+                        @447</a>
+                        <a class="chgset" href="../../changeset/447/mystic/_math.html" title="View changeset [447] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-03-22T16%3A09%3A11-07%3A00&amp;precision=second" title="2011-03-22T16:09:11-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add import for impose_variance, testing for impose_variance
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="446@mystic/_math" title="From [446]" />
+                    <input type="radio" name="new" value="446@mystic/_math" title="To [446]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=446" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=446" title="Browse at revision 446">
+                        @446</a>
+                        <a class="chgset" href="../../changeset/446/mystic/_math.html" title="View changeset [446] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-03-22T15%3A01%3A46-07%3A00&amp;precision=second" title="2011-03-22T15:01:46-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added variance and impose_variance, added variance to set methods
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="445@mystic/_math" title="From [445]" />
+                    <input type="radio" name="new" value="445@mystic/_math" title="To [445]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=445" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=445" title="Browse at revision 445">
+                        @445</a>
+                        <a class="chgset" href="../../changeset/445/mystic/_math.html" title="View changeset [445] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-03-22T11%3A24%3A58-07%3A00&amp;precision=second" title="2011-03-22T11:24:58-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added compose and decompose generators for dirac_measures, added tests
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="441@mystic/_math" title="From [441]" />
+                    <input type="radio" name="new" value="441@mystic/_math" title="To [441]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=441" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=441" title="Browse at revision 441">
+                        @441</a>
+                        <a class="chgset" href="../../changeset/441/mystic/_math.html" title="View changeset [441] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-03-16T15%3A47%3A14-07%3A00&amp;precision=second" title="2011-03-16T15:47:14-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added probability of failure method for product measures;
+commented out …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="440@mystic/_math" title="From [440]" />
+                    <input type="radio" name="new" value="440@mystic/_math" title="To [440]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=440" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=440" title="Browse at revision 440">
+                        @440</a>
+                        <a class="chgset" href="../../changeset/440/mystic/_math.html" title="View changeset [440] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-03-14T16%3A56%3A37-07%3A00&amp;precision=second" title="2011-03-14T16:56:37-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        <a class="missing wiki">SetStrictRanges?</a> no longer requires 'min' and 'max';
+<a class="missing wiki">RandomInitialPoints?</a> …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="439@mystic/_math" title="From [439]" />
+                    <input type="radio" name="new" value="439@mystic/_math" title="To [439]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=439" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=439" title="Browse at revision 439">
+                        @439</a>
+                        <a class="chgset" href="../../changeset/439/mystic/_math.html" title="View changeset [439] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-03-10T17%3A13%3A00-08%3A00&amp;precision=second" title="2011-03-10T17:13:00-08:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fixed indentation error in integrate helper method
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="438@mystic/_math" title="From [438]" />
+                    <input type="radio" name="new" value="438@mystic/_math" title="To [438]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=438" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=438" title="Browse at revision 438">
+                        @438</a>
+                        <a class="chgset" href="../../changeset/438/mystic/_math.html" title="View changeset [438] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-03-09T19%3A05%3A28-08%3A00&amp;precision=second" title="2011-03-09T19:05:28-08:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added functions for integrated and sampled statistics;
+added 'shortcut' …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="437@mystic/_math" title="From [437]" />
+                    <input type="radio" name="new" value="437@mystic/_math" title="To [437]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=437" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=437" title="Browse at revision 437">
+                        @437</a>
+                        <a class="chgset" href="../../changeset/437/mystic/_math.html" title="View changeset [437] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-12-08T18%3A08%3A36-08%3A00&amp;precision=second" title="2010-12-08T18:08:36-08:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        bugfix: gridpts no longer limited to 32-d
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="423@mystic/_math" title="From [423]" />
+                    <input type="radio" name="new" value="423@mystic/_math" title="To [423]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=423" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=423" title="Browse at revision 423">
+                        @423</a>
+                        <a class="chgset" href="../../changeset/423/mystic/_math.html" title="View changeset [423] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-09-10T09%3A49%3A46-07%3A00&amp;precision=second" title="2010-09-10T09:49:46-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added termination test suite (temporarily in wrong dir)
+minor bugfixes to …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="260@mystic/_math" title="From [260]" />
+                    <input type="radio" name="new" value="260@mystic/_math" title="To [260]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=260" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=260" title="Browse at revision 260">
+                        @260</a>
+                        <a class="chgset" href="../../changeset/260/mystic/_math.html" title="View changeset [260] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-06-17T17%3A05%3A42-07%3A00&amp;precision=second" title="2010-06-17T17:05:42-07:00 in Timeline">6 years</a></td>
+                    <td class="author">altafang</td>
+                    <td class="summary">
+                        final cleanup -- committing mcdiarmid code correctly now, hopefully
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="259@mystic/_math" title="From [259]" />
+                    <input type="radio" name="new" value="259@mystic/_math" title="To [259]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=259" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=259" title="Browse at revision 259">
+                        @259</a>
+                        <a class="chgset" href="../../changeset/259/mystic/_math.html" title="View changeset [259] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-06-17T16%3A53%3A57-07%3A00&amp;precision=second" title="2010-06-17T16:53:57-07:00 in Timeline">6 years</a></td>
+                    <td class="author">altafang</td>
+                    <td class="summary">
+                        Committed the wrong thing again, sorry! Reverting to revision 256
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="258@mystic/_math" title="From [258]" />
+                    <input type="radio" name="new" value="258@mystic/_math" title="To [258]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=258" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=258" title="Browse at revision 258">
+                        @258</a>
+                        <a class="chgset" href="../../changeset/258/mystic/_math.html" title="View changeset [258] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-06-17T16%3A50%3A49-07%3A00&amp;precision=second" title="2010-06-17T16:50:49-07:00 in Timeline">6 years</a></td>
+                    <td class="author">altafang</td>
+                    <td class="summary">
+                        commited to wrong place, oops
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="257@mystic/_math" title="From [257]" />
+                    <input type="radio" name="new" value="257@mystic/_math" title="To [257]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=257" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=257" title="Browse at revision 257">
+                        @257</a>
+                        <a class="chgset" href="../../changeset/257/mystic/_math.html" title="View changeset [257] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-06-17T16%3A43%3A21-07%3A00&amp;precision=second" title="2010-06-17T16:43:21-07:00 in Timeline">6 years</a></td>
+                    <td class="author">altafang</td>
+                    <td class="summary">
+                        Generalizing the <a class="missing wiki">McDiarmid?</a> bound code and some of the other math code
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="243@mystic/_math" title="From [243]" />
+                    <input type="radio" name="new" value="243@mystic/_math" title="To [243]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/_math?rev=243" title="View log starting at this revision">
+                        <span class="copy"></span>
+                        <span class="comment">(copy)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math?rev=243" title="Browse at revision 243">
+                        @243</a>
+                        <a class="chgset" href="../../changeset/243/mystic/_math.html" title="View changeset [243] restricted to mystic/_math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-05-21T23%3A50%3A18-07%3A00&amp;precision=second" title="2010-05-21T23:50:18-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        again fixing so epydoc and setup.py are happy with "mystic.math"
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td></td>
+                  <td class="copyfrom_path" colspan="6" style="padding-left: 1em">
+                    copied from <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/math?rev=241">mystic/mystic/math</a>:
+                  </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="241@mystic/mystic/math" checked="checked" title="From [241]" />
+                    <input type="radio" name="new" value="241@mystic/mystic/math" title="To [241]" />
+                  </td>
+                    <td class="change" style="padding-left: 2em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/math?rev=241" title="View log starting at this revision">
+                        <span class="copy"></span>
+                        <span class="comment">(copy)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/math?rev=241" title="Browse at revision 241">
+                        @241</a>
+                        <a class="chgset" href="../../changeset/241/mystic/mystic/math.html" title="View changeset [241] restricted to mystic/mystic/math"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-05-21T14%3A24%3A20-07%3A00&amp;precision=second" title="2010-05-21T14:24:20-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        epydoc barfs at mystic.math, so moving to mystic/math
+                    </td>
+                </tr>
+          </tbody>
+        </table>
+        <div class="buttons">
+          <input type="submit" value="View changes" title="Diff from Old Revision to New Revision (as selected in the Diff column)" />
+        </div>
+      </form>
+      <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracRevisionLog.html">TracRevisionLog</a>
+        for help on using the revision log.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/log/mystic/_math?format=rss&amp;limit=100&amp;mode=stop_on_copy" class="rss">RSS Feed</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/log/mystic/_math?format=changelog&amp;limit=100&amp;mode=stop_on_copy">ChangeLog</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/log/mystic/_math by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:57:06 GMT -->
+</html>

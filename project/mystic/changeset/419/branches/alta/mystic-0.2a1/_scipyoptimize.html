@@ -1,0 +1,1184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/419/branches/alta/mystic-0.2a1/_scipyoptimize.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:51:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 419 for branches/alta/mystic-0.2a1/_scipyoptimize.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../../search.html" />
+        <link rel="help" href="../../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/419/branches/alta/mystic-0.2a1/_scipyoptimize.py?format=diff&amp;new=419" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/419/branches/alta/mystic-0.2a1/_scipyoptimize.py?format=zip&amp;new=419" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="start" href="../../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../../418/branches/alta/mystic-0.2a1/_scipyoptimize.html" title="Changeset 418 for branches/alta/mystic-0.2a1/_scipyoptimize.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../../login.html">Login</a></li><li><a href="../../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../../wiki.html">Wiki</a></li><li><a href="../../../../../timeline.html">Timeline</a></li><li><a href="../../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../../browser.html">Browse Source</a></li><li><a href="../../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../../418/branches/alta/mystic-0.2a1/_scipyoptimize.html" title="Changeset 418 for branches/alta/mystic-0.2a1/_scipyoptimize.py">Previous Change</a></span></li><li class="last"><span class="missing">Next Change &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../../419.html">419</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/_scipyoptimize.py?rev=419">branches/alta/mystic-0.2a1/_scipyoptimize.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             08/25/10 13:40:01
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-08-25T13%3A40%3A01-07%3A00&amp;precision=second" title="2010-08-25T13:40:01-07:00 in Timeline">6 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+reduce scipy function copies (and likely delay due to importing)<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/_scipyoptimize.py?rev=419">
+              branches/alta/mystic-0.2a1/_scipyoptimize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="_scipyoptimize.html" title="Show the changeset 419 restricted to branches/alta/mystic-0.2a1/_scipyoptimize.py">branches/alta/mystic-0.2a1/_scipyoptimize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 418">
+                    <a title="Show revision 418 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/_scipyoptimize.py?rev=418#L1">
+                      r418</a>
+                  </th>
+                  <th title="Revision 419">
+                    <a title="Show revision 419 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/_scipyoptimize.py?rev=419#L1">
+                      r419</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>#!/usr/bin/env python</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>2</th><th> </th><td class="l"><span>#__docformat__ = "restructuredtext en"</span> </td>
+                      </tr><tr>
+                        <th>3</th><th> </th><td class="l"><span># ******NOTICE***************</span> </td>
+                      </tr><tr>
+                        <th>4</th><th> </th><td class="l"><span># optimize.py module by Travis E. Oliphant</span> </td>
+                      </tr><tr>
+                        <th>5</th><th> </th><td class="l"><span>#</span> </td>
+                      </tr><tr>
+                        <th>6</th><th> </th><td class="l"><span># You may copy and use this module as you see fit with no</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span># guarantee implied provided you keep this notice in all copies.</span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span># *****END NOTICE************</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>"""modified local copy of scipy.optimize"""</span> </td>
+                      </tr><tr>
+                        <th>10</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>11</th><th> </th><td class="l"><span>#__all__ = ['fmin', 'fmin_powell', 'fmin_ncg', # 'fmin_cg', 'fmin_bfgs',</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>2</th><td class="r"><span>"""modified algorithms from local copy of scipy.optimize"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>3</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>4</th><td class="r"><span>#__all__ = ['fmin', 'fmin_powell', 'fmin_ncg', 'fmin_cg', 'fmin_bfgs',</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>5</th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'fminbound','brent', 'golden','bracket','rosen','rosen_der',</span> </td>
+                  </tr><tr>
+                          <th>13</th><th>6</th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'rosen_hess', 'rosen_hess_prod', 'brute', 'approx_fprime',</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/_scipyoptimize.py?rev=418#L239">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/branches/alta/mystic-0.2a1/_scipyoptimize.py?rev=419#L232">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>239</th><th>232</th><td class="l"><span>&nbsp; &nbsp; return grad</span> </td>
+                  </tr><tr>
+                          <th>240</th><th>233</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>241</th><th> </th><td class="l"><del>def fmin_cg(f, x0, fprime=None, args=(), gtol=1e-5, norm=Inf, epsilon=_epsilon,</del> </td>
+                  </tr><tr>
+                          <th>242</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maxiter=None, full_output=0, disp=1, retall=0, callback=None):</del> </td>
+                  </tr><tr>
+                          <th>243</th><th> </th><td class="l"><del>&nbsp; &nbsp; """Minimize a function with nonlinear conjugate gradient algorithm.</del> </td>
+                  </tr><tr>
+                          <th>244</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>245</th><th> </th><td class="l"><del>&nbsp; &nbsp; :Parameters:</del> </td>
+                  </tr><tr>
+                          <th>246</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>247</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; f -- the Python function or method to be minimized.</del> </td>
+                  </tr><tr>
+                          <th>248</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; x0 : ndarray -- the initial guess for the minimizer.</del> </td>
+                  </tr><tr>
+                          <th>249</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>250</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fprime -- a function to compute the gradient of f.</del> </td>
+                  </tr><tr>
+                          <th>251</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; args -- extra arguments to f and fprime.</del> </td>
+                  </tr><tr>
+                          <th>252</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; gtol : number</del> </td>
+                  </tr><tr>
+                          <th>253</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; stop when norm of gradient is less than gtol</del> </td>
+                  </tr><tr>
+                          <th>254</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; norm : number</del> </td>
+                  </tr><tr>
+                          <th>255</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; order of vector norm to use</del> </td>
+                  </tr><tr>
+                          <th>256</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; epsilon :number</del> </td>
+                  </tr><tr>
+                          <th>257</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if fprime is approximated use this value for</del> </td>
+                  </tr><tr>
+                          <th>258</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;the step size (can be scalar or vector)</del> </td>
+                  </tr><tr>
+                          <th>259</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; callback -- an optional user-supplied function to call after each</del> </td>
+                  </tr><tr>
+                          <th>260</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</del> </td>
+                  </tr><tr>
+                          <th>261</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; current parameter vector.</del> </td>
+                  </tr><tr>
+                          <th>262</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>263</th><th> </th><td class="l"><del>&nbsp; &nbsp; :Returns: (xopt, {fopt, func_calls, grad_calls, warnflag}, {allvecs})</del> </td>
+                  </tr><tr>
+                          <th>264</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>265</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; xopt : ndarray </del> </td>
+                  </tr><tr>
+                          <th>266</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; the minimizer of f.</del> </td>
+                  </tr><tr>
+                          <th>267</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fopt :number</del> </td>
+                  </tr><tr>
+                          <th>268</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; the value of f(xopt).</del> </td>
+                  </tr><tr>
+                          <th>269</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; func_calls : number </del> </td>
+                  </tr><tr>
+                          <th>270</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; the number of function_calls.</del> </td>
+                  </tr><tr>
+                          <th>271</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; grad_calls : number</del> </td>
+                  </tr><tr>
+                          <th>272</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; the number of gradient calls.</del> </td>
+                  </tr><tr>
+                          <th>273</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; warnflag :number </del> </td>
+                  </tr><tr>
+                          <th>274</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; an integer warning flag:</del> </td>
+                  </tr><tr>
+                          <th>275</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 : 'Maximum number of iterations exceeded.'</del> </td>
+                  </tr><tr>
+                          <th>276</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 : 'Gradient and/or function calls not changing'</del> </td>
+                  </tr><tr>
+                          <th>277</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; allvecs : ndarray</del> </td>
+                  </tr><tr>
+                          <th>278</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if retall then this vector of the iterates is returned</del> </td>
+                  </tr><tr>
+                          <th>279</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>280</th><th> </th><td class="l"><del>&nbsp; &nbsp; :OtherParameters:</del> </td>
+                  </tr><tr>
+                          <th>281</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>282</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; maxiter :number</del> </td>
+                  </tr><tr>
+                          <th>283</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; the maximum number of iterations.</del> </td>
+                  </tr><tr>
+                          <th>284</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; full_output : number </del> </td>
+                  </tr><tr>
+                          <th>285</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if non-zero then return fopt, func_calls, grad_calls,</del> </td>
+                  </tr><tr>
+                          <th>286</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;and warnflag in addition to xopt.</del> </td>
+                  </tr><tr>
+                          <th>287</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; disp : number</del> </td>
+                  </tr><tr>
+                          <th>288</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; print convergence message if non-zero.</del> </td>
+                  </tr><tr>
+                          <th>289</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; retall : number</del> </td>
+                  </tr><tr>
+                          <th>290</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; return a list of results at each iteration if True</del> </td>
+                  </tr><tr>
+                          <th>291</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>292</th><th> </th><td class="l"><del>&nbsp; &nbsp; :SeeAlso:</del> </td>
+                  </tr><tr>
+                          <th>293</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>294</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fmin, fmin_powell, fmin_cg,</del> </td>
+                  </tr><tr>
+                          <th>295</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fmin_bfgs, fmin_ncg -- multivariate local optimizers</del> </td>
+                  </tr><tr>
+                          <th>296</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; leastsq -- nonlinear least squares minimizer</del> </td>
+                  </tr><tr>
+                          <th>297</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>298</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fmin_l_bfgs_b, fmin_tnc,</del> </td>
+                  </tr><tr>
+                          <th>299</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fmin_cobyla -- constrained multivariate optimizers</del> </td>
+                  </tr><tr>
+                          <th>300</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>301</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; anneal, brute -- global optimizers</del> </td>
+                  </tr><tr>
+                          <th>302</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>303</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fminbound, brent, golden, bracket -- local scalar minimizers</del> </td>
+                  </tr><tr>
+                          <th>304</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>305</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fsolve -- n-dimenstional root-finding</del> </td>
+                  </tr><tr>
+                          <th>306</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>307</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; brentq, brenth, ridder, bisect, newton -- one-dimensional root-finding</del> </td>
+                  </tr><tr>
+                          <th>308</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>309</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fixed_point -- scalar fixed-point finder</del> </td>
+                  </tr><tr>
+                          <th>310</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; </del> </td>
+                  </tr><tr>
+                          <th>311</th><th> </th><td class="l"><del>&nbsp; &nbsp; Notes</del> </td>
+                  </tr><tr>
+                          <th>312</th><th> </th><td class="l"><del>&nbsp; &nbsp; ---------------------------------------------</del> </td>
+                  </tr><tr>
+                          <th>313</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>314</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; Optimize the function, f, whose gradient is given by fprime using the</del> </td>
+                  </tr><tr>
+                          <th>315</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; nonlinear conjugate gradient algorithm of Polak and Ribiere</del> </td>
+                  </tr><tr>
+                          <th>316</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; See Wright, and Nocedal 'Numerical Optimization', 1999, pg. 120-122.</del> </td>
+                  </tr><tr>
+                          <th>317</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; """</del> </td>
+                  </tr><tr>
+                          <th>318</th><th> </th><td class="l"><del>&nbsp; &nbsp; x0 = asarray(x0).flatten()</del> </td>
+                  </tr><tr>
+                          <th>319</th><th> </th><td class="l"><del>&nbsp; &nbsp; if maxiter is None:</del> </td>
+                  </tr><tr>
+                          <th>320</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; maxiter = len(x0)*200</del> </td>
+                  </tr><tr>
+                          <th>321</th><th> </th><td class="l"><del>&nbsp; &nbsp; func_calls, f = wrap_function(f, args)</del> </td>
+                  </tr><tr>
+                          <th>322</th><th> </th><td class="l"><del>&nbsp; &nbsp; if fprime is None:</del> </td>
+                  </tr><tr>
+                          <th>323</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; grad_calls, myfprime = wrap_function(approx_fprime, (f, epsilon))</del> </td>
+                  </tr><tr>
+                          <th>324</th><th> </th><td class="l"><del>&nbsp; &nbsp; else:</del> </td>
+                  </tr><tr>
+                          <th>325</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; grad_calls, myfprime = wrap_function(fprime, args)</del> </td>
+                  </tr><tr>
+                          <th>326</th><th> </th><td class="l"><del>&nbsp; &nbsp; gfk = myfprime(x0)</del> </td>
+                  </tr><tr>
+                          <th>327</th><th> </th><td class="l"><del>&nbsp; &nbsp; k = 0</del> </td>
+                  </tr><tr>
+                          <th>328</th><th> </th><td class="l"><del>&nbsp; &nbsp; N = len(x0)</del> </td>
+                  </tr><tr>
+                          <th>329</th><th> </th><td class="l"><del>&nbsp; &nbsp; xk = x0</del> </td>
+                  </tr><tr>
+                          <th>330</th><th> </th><td class="l"><del>&nbsp; &nbsp; old_fval = f(xk)</del> </td>
+                  </tr><tr>
+                          <th>331</th><th> </th><td class="l"><del>&nbsp; &nbsp; old_old_fval = old_fval + 5000</del> </td>
+                  </tr><tr>
+                          <th>332</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>333</th><th> </th><td class="l"><del>&nbsp; &nbsp; if retall:</del> </td>
+                  </tr><tr>
+                          <th>334</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; allvecs = [xk]</del> </td>
+                  </tr><tr>
+                          <th>335</th><th> </th><td class="l"><del>&nbsp; &nbsp; sk = [2*gtol]</del> </td>
+                  </tr><tr>
+                          <th>336</th><th> </th><td class="l"><del>&nbsp; &nbsp; warnflag = 0</del> </td>
+                  </tr><tr>
+                          <th>337</th><th> </th><td class="l"><del>&nbsp; &nbsp; pk = -gfk</del> </td>
+                  </tr><tr>
+                          <th>338</th><th> </th><td class="l"><del>&nbsp; &nbsp; gnorm = vecnorm(gfk,ord=norm)</del> </td>
+                  </tr><tr>
+                          <th>339</th><th> </th><td class="l"><del>&nbsp; &nbsp; while (gnorm &gt; gtol) and (k &lt; maxiter):</del> </td>
+                  </tr><tr>
+                          <th>340</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; deltak = numpy.dot(gfk,gfk)</del> </td>
+                  </tr><tr>
+                          <th>341</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>342</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; # These values are modified by the line search, even if it fails</del> </td>
+                  </tr><tr>
+                          <th>343</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; old_fval_backup = old_fval</del> </td>
+                  </tr><tr>
+                          <th>344</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; old_old_fval_backup = old_old_fval</del> </td>
+                  </tr><tr>
+                          <th>345</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>346</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; # NOTE: w/o scipy.optimize.linesearch, results may be noticeably worse.</del> </td>
+                  </tr><tr>
+                          <th>347</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; try: #XXX: break dependency on scipy.optimize.linesearch</del> </td>
+                  </tr><tr>
+                          <th>348</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; import scipy.optimize</del> </td>
+                  </tr><tr>
+                          <th>349</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alpha_k, fc, gc, old_fval, old_old_fval, gfkp1 = \</del> </td>
+                  </tr><tr>
+                          <th>350</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; scipy.optimize.linesearch.line_search(f,myfprime,xk,pk,gfk,\</del> </td>
+                  </tr><tr>
+                          <th>351</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; old_fval,old_old_fval,c2=0.4)</del> </td>
+                  </tr><tr>
+                          <th>352</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; except ImportError:</del> </td>
+                  </tr><tr>
+                          <th>353</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alpha_k = None</del> </td>
+                  </tr><tr>
+                          <th>354</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>355</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if alpha_k is None:&nbsp; # line search failed -- use different one.</del> </td>
+                  </tr><tr>
+                          <th>356</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alpha_k, fc, gc, old_fval, old_old_fval, gfkp1 = \</del> </td>
+                  </tr><tr>
+                          <th>357</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;line_search(f,myfprime,xk,pk,gfk,</del> </td>
+                  </tr><tr>
+                          <th>358</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;old_fval_backup,old_old_fval_backup)</del> </td>
+                  </tr><tr>
+                          <th>359</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if alpha_k is None or alpha_k == 0:</del> </td>
+                  </tr><tr>
+                          <th>360</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # This line search also failed to find a better solution.</del> </td>
+                  </tr><tr>
+                          <th>361</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warnflag = 2</del> </td>
+                  </tr><tr>
+                          <th>362</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</del> </td>
+                  </tr><tr>
+                          <th>363</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; xk = xk + alpha_k*pk</del> </td>
+                  </tr><tr>
+                          <th>364</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if retall:</del> </td>
+                  </tr><tr>
+                          <th>365</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; allvecs.append(xk)</del> </td>
+                  </tr><tr>
+                          <th>366</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if gfkp1 is None:</del> </td>
+                  </tr><tr>
+                          <th>367</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gfkp1 = myfprime(xk)</del> </td>
+                  </tr><tr>
+                          <th>368</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; yk = gfkp1 - gfk</del> </td>
+                  </tr><tr>
+                          <th>369</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; beta_k = pymax(0,numpy.dot(yk,gfkp1)/deltak)</del> </td>
+                  </tr><tr>
+                          <th>370</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; pk = -gfkp1 + beta_k * pk</del> </td>
+                  </tr><tr>
+                          <th>371</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; gfk = gfkp1</del> </td>
+                  </tr><tr>
+                          <th>372</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; gnorm = vecnorm(gfk,ord=norm)</del> </td>
+                  </tr><tr>
+                          <th>373</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if callback is not None:</del> </td>
+                  </tr><tr>
+                          <th>374</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; callback(xk)</del> </td>
+                  </tr><tr>
+                          <th>375</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; k += 1</del> </td>
+                  </tr><tr>
+                          <th>376</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>377</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>378</th><th> </th><td class="l"><del>&nbsp; &nbsp; if disp or full_output:</del> </td>
+                  </tr><tr>
+                          <th>379</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; fval = old_fval</del> </td>
+                  </tr><tr>
+                          <th>380</th><th> </th><td class="l"><del>&nbsp; &nbsp; if warnflag == 2:</del> </td>
+                  </tr><tr>
+                          <th>381</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if disp:</del> </td>
+                  </tr><tr>
+                          <th>382</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Desired error not necessarily achieved due to precision loss"</del> </td>
+                  </tr><tr>
+                          <th>383</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Current function value: %f" % fval</del> </td>
+                  </tr><tr>
+                          <th>384</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Iterations: %d" % k</del> </td>
+                  </tr><tr>
+                          <th>385</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Function evaluations: %d" % func_calls[0]</del> </td>
+                  </tr><tr>
+                          <th>386</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gradient evaluations: %d" % grad_calls[0]</del> </td>
+                  </tr><tr>
+                          <th>387</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>388</th><th> </th><td class="l"><del>&nbsp; &nbsp; elif k &gt;= maxiter:</del> </td>
+                  </tr><tr>
+                          <th>389</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; warnflag = 1</del> </td>
+                  </tr><tr>
+                          <th>390</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if disp:</del> </td>
+                  </tr><tr>
+                          <th>391</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Maximum number of iterations has been exceeded"</del> </td>
+                  </tr><tr>
+                          <th>392</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Current function value: %f" % fval</del> </td>
+                  </tr><tr>
+                          <th>393</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Iterations: %d" % k</del> </td>
+                  </tr><tr>
+                          <th>394</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Function evaluations: %d" % func_calls[0]</del> </td>
+                  </tr><tr>
+                          <th>395</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gradient evaluations: %d" % grad_calls[0]</del> </td>
+                  </tr><tr>
+                          <th>396</th><th> </th><td class="l"><del>&nbsp; &nbsp; else:</del> </td>
+                  </tr><tr>
+                          <th>397</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if disp:</del> </td>
+                  </tr><tr>
+                          <th>398</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Optimization terminated successfully."</del> </td>
+                  </tr><tr>
+                          <th>399</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Current function value: %f" % fval</del> </td>
+                  </tr><tr>
+                          <th>400</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Iterations: %d" % k</del> </td>
+                  </tr><tr>
+                          <th>401</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Function evaluations: %d" % func_calls[0]</del> </td>
+                  </tr><tr>
+                          <th>402</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gradient evaluations: %d" % grad_calls[0]</del> </td>
+                  </tr><tr>
+                          <th>403</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>404</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>405</th><th> </th><td class="l"><del>&nbsp; &nbsp; if full_output:</del> </td>
+                  </tr><tr>
+                          <th>406</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; retlist = xk, fval, func_calls[0], grad_calls[0], warnflag</del> </td>
+                  </tr><tr>
+                          <th>407</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if retall:</del> </td>
+                  </tr><tr>
+                          <th>408</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retlist += (allvecs,)</del> </td>
+                  </tr><tr>
+                          <th>409</th><th> </th><td class="l"><del>&nbsp; &nbsp; else:</del> </td>
+                  </tr><tr>
+                          <th>410</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; retlist = xk</del> </td>
+                  </tr><tr>
+                          <th>411</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if retall:</del> </td>
+                  </tr><tr>
+                          <th>412</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retlist = (xk, allvecs)</del> </td>
+                  </tr><tr>
+                          <th>413</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>414</th><th> </th><td class="l"><del>&nbsp; &nbsp; return retlist</del> </td>
+                  </tr><tr>
+                          <th>415</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>416</th><th> </th><td class="l"><del>def fmin_bfgs(f, x0, fprime=None, args=(), gtol=1e-5, norm=Inf,</del> </td>
+                  </tr><tr>
+                          <th>417</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; epsilon=_epsilon, maxiter=None, full_output=0, disp=1,</del> </td>
+                  </tr><tr>
+                          <th>418</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retall=0, callback=None):</del> </td>
+                  </tr><tr>
+                          <th>419</th><th> </th><td class="l"><del>&nbsp; &nbsp; """Minimize a function using the BFGS algorithm.</del> </td>
+                  </tr><tr>
+                          <th>420</th><th> </th><td class="l"><del>&nbsp; &nbsp; </del> </td>
+                  </tr><tr>
+                          <th>421</th><th> </th><td class="l"><del>&nbsp; &nbsp; :Parameters:</del> </td>
+                  </tr><tr>
+                          <th>422</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>423</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; f : the Python function or method to be minimized.</del> </td>
+                  </tr><tr>
+                          <th>424</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; x0 : ndarray</del> </td>
+                  </tr><tr>
+                          <th>425</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; the initial guess for the minimizer.</del> </td>
+                  </tr><tr>
+                          <th>426</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>427</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fprime : a function to compute the gradient of f.</del> </td>
+                  </tr><tr>
+                          <th>428</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; args : extra arguments to f and fprime.</del> </td>
+                  </tr><tr>
+                          <th>429</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; gtol : number</del> </td>
+                  </tr><tr>
+                          <th>430</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; gradient norm must be less than gtol before succesful termination</del> </td>
+                  </tr><tr>
+                          <th>431</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; norm : number</del> </td>
+                  </tr><tr>
+                          <th>432</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; order of norm (Inf is max, -Inf is min)</del> </td>
+                  </tr><tr>
+                          <th>433</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; epsilon : number</del> </td>
+                  </tr><tr>
+                          <th>434</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if fprime is approximated use this value for</del> </td>
+                  </tr><tr>
+                          <th>435</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;the step size (can be scalar or vector)</del> </td>
+                  </tr><tr>
+                          <th>436</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; callback : an optional user-supplied function to call after each</del> </td>
+                  </tr><tr>
+                          <th>437</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</del> </td>
+                  </tr><tr>
+                          <th>438</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; current parameter vector.</del> </td>
+                  </tr><tr>
+                          <th>439</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>440</th><th> </th><td class="l"><del>&nbsp; &nbsp; :Returns: (xopt, {fopt, gopt, Hopt, func_calls, grad_calls, warnflag}, &lt;allvecs&gt;)</del> </td>
+                  </tr><tr>
+                          <th>441</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>442</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; xopt : ndarray</del> </td>
+                  </tr><tr>
+                          <th>443</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; the minimizer of f.</del> </td>
+                  </tr><tr>
+                          <th>444</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>445</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fopt : number</del> </td>
+                  </tr><tr>
+                          <th>446</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; the value of f(xopt).</del> </td>
+                  </tr><tr>
+                          <th>447</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; gopt : ndarray</del> </td>
+                  </tr><tr>
+                          <th>448</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; the value of f'(xopt).&nbsp; (Should be near 0)</del> </td>
+                  </tr><tr>
+                          <th>449</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; Bopt : ndarray</del> </td>
+                  </tr><tr>
+                          <th>450</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; the value of 1/f''(xopt).&nbsp; (inverse hessian matrix)</del> </td>
+                  </tr><tr>
+                          <th>451</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; func_calls : number</del> </td>
+                  </tr><tr>
+                          <th>452</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; the number of function_calls.</del> </td>
+                  </tr><tr>
+                          <th>453</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; grad_calls : number</del> </td>
+                  </tr><tr>
+                          <th>454</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; the number of gradient calls.</del> </td>
+                  </tr><tr>
+                          <th>455</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; warnflag : integer</del> </td>
+                  </tr><tr>
+                          <th>456</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1 : 'Maximum number of iterations exceeded.'</del> </td>
+                  </tr><tr>
+                          <th>457</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2 : 'Gradient and/or function calls not changing'</del> </td>
+                  </tr><tr>
+                          <th>458</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; allvecs&nbsp; :&nbsp; a list of all iterates&nbsp; (only returned if retall==1)</del> </td>
+                  </tr><tr>
+                          <th>459</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>460</th><th> </th><td class="l"><del>&nbsp; &nbsp; :OtherParameters:</del> </td>
+                  </tr><tr>
+                          <th>461</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>462</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; maxiter : number</del> </td>
+                  </tr><tr>
+                          <th>463</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; the maximum number of iterations.</del> </td>
+                  </tr><tr>
+                          <th>464</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; full_output : number</del> </td>
+                  </tr><tr>
+                          <th>465</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if non-zero then return fopt, func_calls, grad_calls,</del> </td>
+                  </tr><tr>
+                          <th>466</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;and warnflag in addition to xopt.</del> </td>
+                  </tr><tr>
+                          <th>467</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; disp : number</del> </td>
+                  </tr><tr>
+                          <th>468</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; print convergence message if non-zero.</del> </td>
+                  </tr><tr>
+                          <th>469</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; retall : number</del> </td>
+                  </tr><tr>
+                          <th>470</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; return a list of results at each iteration if non-zero</del> </td>
+                  </tr><tr>
+                          <th>471</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>472</th><th> </th><td class="l"><del>&nbsp; &nbsp; :SeeAlso:</del> </td>
+                  </tr><tr>
+                          <th>473</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>474</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fmin, fmin_powell, fmin_cg,</del> </td>
+                  </tr><tr>
+                          <th>475</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fmin_bfgs, fmin_ncg -- multivariate local optimizers</del> </td>
+                  </tr><tr>
+                          <th>476</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; leastsq -- nonlinear least squares minimizer</del> </td>
+                  </tr><tr>
+                          <th>477</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>478</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fmin_l_bfgs_b, fmin_tnc,</del> </td>
+                  </tr><tr>
+                          <th>479</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fmin_cobyla -- constrained multivariate optimizers</del> </td>
+                  </tr><tr>
+                          <th>480</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>481</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; anneal, brute -- global optimizers</del> </td>
+                  </tr><tr>
+                          <th>482</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>483</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fminbound, brent, golden, bracket -- local scalar minimizers</del> </td>
+                  </tr><tr>
+                          <th>484</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>485</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fsolve -- n-dimenstional root-finding</del> </td>
+                  </tr><tr>
+                          <th>486</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>487</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; brentq, brenth, ridder, bisect, newton -- one-dimensional root-finding</del> </td>
+                  </tr><tr>
+                          <th>488</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>489</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; fixed_point -- scalar fixed-point finder</del> </td>
+                  </tr><tr>
+                          <th>490</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; </del> </td>
+                  </tr><tr>
+                          <th>491</th><th> </th><td class="l"><del>&nbsp; &nbsp; Notes</del> </td>
+                  </tr><tr>
+                          <th>492</th><th> </th><td class="l"><del>&nbsp; &nbsp; </del> </td>
+                  </tr><tr>
+                          <th>493</th><th> </th><td class="l"><del>&nbsp; &nbsp; ----------------------------------</del> </td>
+                  </tr><tr>
+                          <th>494</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>495</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; Optimize the function, f, whose gradient is given by fprime using the</del> </td>
+                  </tr><tr>
+                          <th>496</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; quasi-Newton method of Broyden, Fletcher, Goldfarb, and Shanno (BFGS)</del> </td>
+                  </tr><tr>
+                          <th>497</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; See Wright, and Nocedal 'Numerical Optimization', 1999, pg. 198.</del> </td>
+                  </tr><tr>
+                          <th>498</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; """</del> </td>
+                  </tr><tr>
+                          <th>499</th><th> </th><td class="l"><del>&nbsp; &nbsp; x0 = asarray(x0).squeeze()</del> </td>
+                  </tr><tr>
+                          <th>500</th><th> </th><td class="l"><del>&nbsp; &nbsp; if x0.ndim == 0:</del> </td>
+                  </tr><tr>
+                          <th>501</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; x0.shape = (1,)</del> </td>
+                  </tr><tr>
+                          <th>502</th><th> </th><td class="l"><del>&nbsp; &nbsp; if maxiter is None:</del> </td>
+                  </tr><tr>
+                          <th>503</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; maxiter = len(x0)*200</del> </td>
+                  </tr><tr>
+                          <th>504</th><th> </th><td class="l"><del>&nbsp; &nbsp; func_calls, f = wrap_function(f, args)</del> </td>
+                  </tr><tr>
+                          <th>505</th><th> </th><td class="l"><del>&nbsp; &nbsp; if fprime is None:</del> </td>
+                  </tr><tr>
+                          <th>506</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; grad_calls, myfprime = wrap_function(approx_fprime, (f, epsilon))</del> </td>
+                  </tr><tr>
+                          <th>507</th><th> </th><td class="l"><del>&nbsp; &nbsp; else:</del> </td>
+                  </tr><tr>
+                          <th>508</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; grad_calls, myfprime = wrap_function(fprime, args)</del> </td>
+                  </tr><tr>
+                          <th>509</th><th> </th><td class="l"><del>&nbsp; &nbsp; gfk = myfprime(x0)</del> </td>
+                  </tr><tr>
+                          <th>510</th><th> </th><td class="l"><del>&nbsp; &nbsp; k = 0</del> </td>
+                  </tr><tr>
+                          <th>511</th><th> </th><td class="l"><del>&nbsp; &nbsp; N = len(x0)</del> </td>
+                  </tr><tr>
+                          <th>512</th><th> </th><td class="l"><del>&nbsp; &nbsp; I = numpy.eye(N,dtype=int)</del> </td>
+                  </tr><tr>
+                          <th>513</th><th> </th><td class="l"><del>&nbsp; &nbsp; Hk = I</del> </td>
+                  </tr><tr>
+                          <th>514</th><th> </th><td class="l"><del>&nbsp; &nbsp; old_fval = f(x0)</del> </td>
+                  </tr><tr>
+                          <th>515</th><th> </th><td class="l"><del>&nbsp; &nbsp; old_old_fval = old_fval + 5000</del> </td>
+                  </tr><tr>
+                          <th>516</th><th> </th><td class="l"><del>&nbsp; &nbsp; xk = x0</del> </td>
+                  </tr><tr>
+                          <th>517</th><th> </th><td class="l"><del>&nbsp; &nbsp; if retall:</del> </td>
+                  </tr><tr>
+                          <th>518</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; allvecs = [x0]</del> </td>
+                  </tr><tr>
+                          <th>519</th><th> </th><td class="l"><del>&nbsp; &nbsp; sk = [2*gtol]</del> </td>
+                  </tr><tr>
+                          <th>520</th><th> </th><td class="l"><del>&nbsp; &nbsp; warnflag = 0</del> </td>
+                  </tr><tr>
+                          <th>521</th><th> </th><td class="l"><del>&nbsp; &nbsp; gnorm = vecnorm(gfk,ord=norm)</del> </td>
+                  </tr><tr>
+                          <th>522</th><th> </th><td class="l"><del>&nbsp; &nbsp; while (gnorm &gt; gtol) and (k &lt; maxiter):</del> </td>
+                  </tr><tr>
+                          <th>523</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; pk = -numpy.dot(Hk,gfk)</del> </td>
+                  </tr><tr>
+                          <th>524</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>525</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; # NOTE: w/o scipy.optimize.linesearch, results may be noticeably worse.</del> </td>
+                  </tr><tr>
+                          <th>526</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; try: #XXX: break dependency on scipy.optimize.linesearch</del> </td>
+                  </tr><tr>
+                          <th>527</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; import scipy.optimize</del> </td>
+                  </tr><tr>
+                          <th>528</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alpha_k, fc, gc, old_fval, old_old_fval, gfkp1 = \</del> </td>
+                  </tr><tr>
+                          <th>529</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; scipy.optimize.linesearch.line_search(f,myfprime,xk,pk,gfk, \</del> </td>
+                  </tr><tr>
+                          <th>530</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; old_fval,old_old_fval)</del> </td>
+                  </tr><tr>
+                          <th>531</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; except ImportError:</del> </td>
+                  </tr><tr>
+                          <th>532</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alpha_k = None</del> </td>
+                  </tr><tr>
+                          <th>533</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>534</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if alpha_k is None:&nbsp; # line search failed try different one.</del> </td>
+                  </tr><tr>
+                          <th>535</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; alpha_k, fc, gc, old_fval, old_old_fval, gfkp1 = \</del> </td>
+                  </tr><tr>
+                          <th>536</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;line_search(f,myfprime,xk,pk,gfk,</del> </td>
+                  </tr><tr>
+                          <th>537</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;old_fval,old_old_fval)</del> </td>
+                  </tr><tr>
+                          <th>538</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if alpha_k is None:</del> </td>
+                  </tr><tr>
+                          <th>539</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # This line search also failed to find a better solution.</del> </td>
+                  </tr><tr>
+                          <th>540</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warnflag = 2</del> </td>
+                  </tr><tr>
+                          <th>541</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </del> </td>
+                  </tr><tr>
+                          <th>542</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; xkp1 = xk + alpha_k * pk</del> </td>
+                  </tr><tr>
+                          <th>543</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if retall:</del> </td>
+                  </tr><tr>
+                          <th>544</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; allvecs.append(xkp1)</del> </td>
+                  </tr><tr>
+                          <th>545</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; sk = xkp1 - xk</del> </td>
+                  </tr><tr>
+                          <th>546</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; xk = xkp1</del> </td>
+                  </tr><tr>
+                          <th>547</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if gfkp1 is None:</del> </td>
+                  </tr><tr>
+                          <th>548</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gfkp1 = myfprime(xkp1)</del> </td>
+                  </tr><tr>
+                          <th>549</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>550</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; yk = gfkp1 - gfk</del> </td>
+                  </tr><tr>
+                          <th>551</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; gfk = gfkp1</del> </td>
+                  </tr><tr>
+                          <th>552</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if callback is not None:</del> </td>
+                  </tr><tr>
+                          <th>553</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; callback(xk)</del> </td>
+                  </tr><tr>
+                          <th>554</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; k += 1</del> </td>
+                  </tr><tr>
+                          <th>555</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; gnorm = vecnorm(gfk,ord=norm)</del> </td>
+                  </tr><tr>
+                          <th>556</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if (gnorm &lt;= gtol):</del> </td>
+                  </tr><tr>
+                          <th>557</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</del> </td>
+                  </tr><tr>
+                          <th>558</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>559</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; try: # this was handled in numeric, let it remaines for more safety</del> </td>
+                  </tr><tr>
+                          <th>560</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rhok = 1.0 / (numpy.dot(yk,sk))</del> </td>
+                  </tr><tr>
+                          <th>561</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; except ZeroDivisionError: </del> </td>
+                  </tr><tr>
+                          <th>562</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rhok = 1000.0</del> </td>
+                  </tr><tr>
+                          <th>563</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Divide-by-zero encountered: rhok assumed large"</del> </td>
+                  </tr><tr>
+                          <th>564</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if isinf(rhok): # this is patch for numpy</del> </td>
+                  </tr><tr>
+                          <th>565</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rhok = 1000.0</del> </td>
+                  </tr><tr>
+                          <th>566</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Divide-by-zero encountered: rhok assumed large"</del> </td>
+                  </tr><tr>
+                          <th>567</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; A1 = I - sk[:,numpy.newaxis] * yk[numpy.newaxis,:] * rhok</del> </td>
+                  </tr><tr>
+                          <th>568</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; A2 = I - yk[:,numpy.newaxis] * sk[numpy.newaxis,:] * rhok</del> </td>
+                  </tr><tr>
+                          <th>569</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; Hk = numpy.dot(A1,numpy.dot(Hk,A2)) + rhok * sk[:,numpy.newaxis] \</del> </td>
+                  </tr><tr>
+                          <th>570</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;* sk[numpy.newaxis,:]</del> </td>
+                  </tr><tr>
+                          <th>571</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>572</th><th> </th><td class="l"><del>&nbsp; &nbsp; if disp or full_output:</del> </td>
+                  </tr><tr>
+                          <th>573</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; fval = old_fval</del> </td>
+                  </tr><tr>
+                          <th>574</th><th> </th><td class="l"><del>&nbsp; &nbsp; if warnflag == 2:</del> </td>
+                  </tr><tr>
+                          <th>575</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if disp:</del> </td>
+                  </tr><tr>
+                          <th>576</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Desired error not necessarily achieved due to precision loss"</del> </td>
+                  </tr><tr>
+                          <th>577</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Current function value: %f" % fval</del> </td>
+                  </tr><tr>
+                          <th>578</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Iterations: %d" % k</del> </td>
+                  </tr><tr>
+                          <th>579</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Function evaluations: %d" % func_calls[0]</del> </td>
+                  </tr><tr>
+                          <th>580</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gradient evaluations: %d" % grad_calls[0]</del> </td>
+                  </tr><tr>
+                          <th>581</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>582</th><th> </th><td class="l"><del>&nbsp; &nbsp; elif k &gt;= maxiter:</del> </td>
+                  </tr><tr>
+                          <th>583</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; warnflag = 1</del> </td>
+                  </tr><tr>
+                          <th>584</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if disp:</del> </td>
+                  </tr><tr>
+                          <th>585</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Maximum number of iterations has been exceeded"</del> </td>
+                  </tr><tr>
+                          <th>586</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Current function value: %f" % fval</del> </td>
+                  </tr><tr>
+                          <th>587</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Iterations: %d" % k</del> </td>
+                  </tr><tr>
+                          <th>588</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Function evaluations: %d" % func_calls[0]</del> </td>
+                  </tr><tr>
+                          <th>589</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gradient evaluations: %d" % grad_calls[0]</del> </td>
+                  </tr><tr>
+                          <th>590</th><th> </th><td class="l"><del>&nbsp; &nbsp; else:</del> </td>
+                  </tr><tr>
+                          <th>591</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if disp:</del> </td>
+                  </tr><tr>
+                          <th>592</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Optimization terminated successfully."</del> </td>
+                  </tr><tr>
+                          <th>593</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Current function value: %f" % fval</del> </td>
+                  </tr><tr>
+                          <th>594</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Iterations: %d" % k</del> </td>
+                  </tr><tr>
+                          <th>595</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Function evaluations: %d" % func_calls[0]</del> </td>
+                  </tr><tr>
+                          <th>596</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Gradient evaluations: %d" % grad_calls[0]</del> </td>
+                  </tr><tr>
+                          <th>597</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>598</th><th> </th><td class="l"><del>&nbsp; &nbsp; if full_output:</del> </td>
+                  </tr><tr>
+                          <th>599</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; retlist = xk, fval, gfk, Hk, func_calls[0], grad_calls[0], warnflag</del> </td>
+                  </tr><tr>
+                          <th>600</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if retall:</del> </td>
+                  </tr><tr>
+                          <th>601</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retlist += (allvecs,)</del> </td>
+                  </tr><tr>
+                          <th>602</th><th> </th><td class="l"><del>&nbsp; &nbsp; else:</del> </td>
+                  </tr><tr>
+                          <th>603</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; retlist = xk</del> </td>
+                  </tr><tr>
+                          <th>604</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if retall:</del> </td>
+                  </tr><tr>
+                          <th>605</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; retlist = (xk, allvecs)</del> </td>
+                  </tr><tr>
+                          <th>606</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>607</th><th> </th><td class="l"><del>&nbsp; &nbsp; return retlist</del> </td>
+                  </tr><tr>
+                          <th>608</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>609</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>610</th><th> </th><td class="l"><del>def main():</del> </td>
+                  </tr><tr>
+                          <th>611</th><th> </th><td class="l"><del>&nbsp; &nbsp; import time</del> </td>
+                  </tr><tr>
+                          <th>612</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>613</th><th> </th><td class="l"><del>&nbsp; &nbsp; times = []</del> </td>
+                  </tr><tr>
+                          <th>614</th><th> </th><td class="l"><del>&nbsp; &nbsp; algor = []</del> </td>
+                  </tr><tr>
+                          <th>615</th><th> </th><td class="l"><del>&nbsp; &nbsp; x0 = [0.8,1.2,0.7]</del> </td>
+                  </tr><tr>
+                          <th>616</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "Nelder-Mead Simplex"</del> </td>
+                  </tr><tr>
+                          <th>617</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "==================="</del> </td>
+                  </tr><tr>
+                          <th>618</th><th> </th><td class="l"><del>&nbsp; &nbsp; start = time.time()</del> </td>
+                  </tr><tr>
+                          <th>619</th><th> </th><td class="l"><del>&nbsp; &nbsp; x = fmin(rosen,x0)</del> </td>
+                  </tr><tr>
+                          <th>620</th><th> </th><td class="l"><del>&nbsp; &nbsp; print x</del> </td>
+                  </tr><tr>
+                          <th>621</th><th> </th><td class="l"><del>&nbsp; &nbsp; times.append(time.time() - start)</del> </td>
+                  </tr><tr>
+                          <th>622</th><th> </th><td class="l"><del>&nbsp; &nbsp; algor.append('Nelder-Mead Simplex\t')</del> </td>
+                  </tr><tr>
+                          <th>623</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>624</th><th> </th><td class="l"><del>&nbsp; &nbsp; print</del> </td>
+                  </tr><tr>
+                          <th>625</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "Powell Direction Set Method"</del> </td>
+                  </tr><tr>
+                          <th>626</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "==========================="</del> </td>
+                  </tr><tr>
+                          <th>627</th><th> </th><td class="l"><del>&nbsp; &nbsp; start = time.time()</del> </td>
+                  </tr><tr>
+                          <th>628</th><th> </th><td class="l"><del>&nbsp; &nbsp; x = fmin_powell(rosen,x0)</del> </td>
+                  </tr><tr>
+                          <th>629</th><th> </th><td class="l"><del>&nbsp; &nbsp; print x</del> </td>
+                  </tr><tr>
+                          <th>630</th><th> </th><td class="l"><del>&nbsp; &nbsp; times.append(time.time() - start)</del> </td>
+                  </tr><tr>
+                          <th>631</th><th> </th><td class="l"><del>&nbsp; &nbsp; algor.append('Powell Direction Set Method.')</del> </td>
+                  </tr><tr>
+                          <th>632</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>633</th><th> </th><td class="l"><del>&nbsp; &nbsp; print</del> </td>
+                  </tr><tr>
+                          <th>634</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "Nonlinear CG"</del> </td>
+                  </tr><tr>
+                          <th>635</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "============"</del> </td>
+                  </tr><tr>
+                          <th>636</th><th> </th><td class="l"><del>&nbsp; &nbsp; start = time.time()</del> </td>
+                  </tr><tr>
+                          <th>637</th><th> </th><td class="l"><del>&nbsp; &nbsp; x = fmin_cg(rosen, x0, fprime=rosen_der, maxiter=200)</del> </td>
+                  </tr><tr>
+                          <th>638</th><th> </th><td class="l"><del>&nbsp; &nbsp; print x</del> </td>
+                  </tr><tr>
+                          <th>639</th><th> </th><td class="l"><del>&nbsp; &nbsp; times.append(time.time() - start)</del> </td>
+                  </tr><tr>
+                          <th>640</th><th> </th><td class="l"><del>&nbsp; &nbsp; algor.append('Nonlinear CG&nbsp; &nbsp; &nbsp;\t')</del> </td>
+                  </tr><tr>
+                          <th>641</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>642</th><th> </th><td class="l"><del>&nbsp; &nbsp; print</del> </td>
+                  </tr><tr>
+                          <th>643</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "BFGS Quasi-Newton"</del> </td>
+                  </tr><tr>
+                          <th>644</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "================="</del> </td>
+                  </tr><tr>
+                          <th>645</th><th> </th><td class="l"><del>&nbsp; &nbsp; start = time.time()</del> </td>
+                  </tr><tr>
+                          <th>646</th><th> </th><td class="l"><del>&nbsp; &nbsp; x = fmin_bfgs(rosen, x0, fprime=rosen_der, maxiter=80)</del> </td>
+                  </tr><tr>
+                          <th>647</th><th> </th><td class="l"><del>&nbsp; &nbsp; print x</del> </td>
+                  </tr><tr>
+                          <th>648</th><th> </th><td class="l"><del>&nbsp; &nbsp; times.append(time.time() - start)</del> </td>
+                  </tr><tr>
+                          <th>649</th><th> </th><td class="l"><del>&nbsp; &nbsp; algor.append('BFGS Quasi-Newton\t')</del> </td>
+                  </tr><tr>
+                          <th>650</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>651</th><th> </th><td class="l"><del>&nbsp; &nbsp; print</del> </td>
+                  </tr><tr>
+                          <th>652</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "BFGS approximate gradient"</del> </td>
+                  </tr><tr>
+                          <th>653</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "========================="</del> </td>
+                  </tr><tr>
+                          <th>654</th><th> </th><td class="l"><del>&nbsp; &nbsp; start = time.time()</del> </td>
+                  </tr><tr>
+                          <th>655</th><th> </th><td class="l"><del>&nbsp; &nbsp; x = fmin_bfgs(rosen, x0, gtol=1e-4, maxiter=100)</del> </td>
+                  </tr><tr>
+                          <th>656</th><th> </th><td class="l"><del>&nbsp; &nbsp; print x</del> </td>
+                  </tr><tr>
+                          <th>657</th><th> </th><td class="l"><del>&nbsp; &nbsp; times.append(time.time() - start)</del> </td>
+                  </tr><tr>
+                          <th>658</th><th> </th><td class="l"><del>&nbsp; &nbsp; algor.append('BFGS without gradient\t')</del> </td>
+                  </tr><tr>
+                          <th>659</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>660</th><th> </th><td class="l"><del>&nbsp; &nbsp; print</del> </td>
+                  </tr><tr>
+                          <th>661</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "Newton-CG with Hessian product"</del> </td>
+                  </tr><tr>
+                          <th>662</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "=============================="</del> </td>
+                  </tr><tr>
+                          <th>663</th><th> </th><td class="l"><del>&nbsp; &nbsp; start = time.time()</del> </td>
+                  </tr><tr>
+                          <th>664</th><th> </th><td class="l"><del>&nbsp; &nbsp; x = fmin_ncg(rosen, x0, rosen_der, fhess_p=rosen_hess_prod, maxiter=80)</del> </td>
+                  </tr><tr>
+                          <th>665</th><th> </th><td class="l"><del>&nbsp; &nbsp; print x</del> </td>
+                  </tr><tr>
+                          <th>666</th><th> </th><td class="l"><del>&nbsp; &nbsp; times.append(time.time() - start)</del> </td>
+                  </tr><tr>
+                          <th>667</th><th> </th><td class="l"><del>&nbsp; &nbsp; algor.append('Newton-CG with hessian product')</del> </td>
+                  </tr><tr>
+                          <th>668</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>669</th><th> </th><td class="l"><del>&nbsp; &nbsp; print</del> </td>
+                  </tr><tr>
+                          <th>670</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "Newton-CG with full Hessian"</del> </td>
+                  </tr><tr>
+                          <th>671</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "==========================="</del> </td>
+                  </tr><tr>
+                          <th>672</th><th> </th><td class="l"><del>&nbsp; &nbsp; start = time.time()</del> </td>
+                  </tr><tr>
+                          <th>673</th><th> </th><td class="l"><del>&nbsp; &nbsp; x = fmin_ncg(rosen, x0, rosen_der, fhess=rosen_hess, maxiter=80)</del> </td>
+                  </tr><tr>
+                          <th>674</th><th> </th><td class="l"><del>&nbsp; &nbsp; print x</del> </td>
+                  </tr><tr>
+                          <th>675</th><th> </th><td class="l"><del>&nbsp; &nbsp; times.append(time.time() - start)</del> </td>
+                  </tr><tr>
+                          <th>676</th><th> </th><td class="l"><del>&nbsp; &nbsp; algor.append('Newton-CG with full hessian')</del> </td>
+                  </tr><tr>
+                          <th>677</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>678</th><th> </th><td class="l"><del>&nbsp; &nbsp; print</del> </td>
+                  </tr><tr>
+                          <th>679</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "\nMinimizing the Rosenbrock function of order 3\n"</del> </td>
+                  </tr><tr>
+                          <th>680</th><th> </th><td class="l"><del>&nbsp; &nbsp; print " Algorithm \t\t\t&nbsp; &nbsp; &nbsp; &nbsp;Seconds"</del> </td>
+                  </tr><tr>
+                          <th>681</th><th> </th><td class="l"><del>&nbsp; &nbsp; print "===========\t\t\t&nbsp; &nbsp; &nbsp; ========="</del> </td>
+                  </tr><tr>
+                          <th>682</th><th> </th><td class="l"><del>&nbsp; &nbsp; for k in range(len(algor)):</del> </td>
+                  </tr><tr class="last">
+                          <th>683</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; print algor[k], "\t -- ", times[k]</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>684</th><th>234</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>685</th><th>235</th><td class="l"><span>if __name__ == "__main__":</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>686</th><th> </th><td class="l"><span>&nbsp; &nbsp; <del>main()</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>236</th><td class="r"><span>&nbsp; &nbsp; <ins>pass</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>687</th><th>237</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>688</th><th>238</th><td class="l"><span># End of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/419/branches/alta/mystic-0.2a1/_scipyoptimize.py?format=diff&amp;new=419" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/419/branches/alta/mystic-0.2a1/_scipyoptimize.py?format=zip&amp;new=419" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/419/branches/alta/mystic-0.2a1/_scipyoptimize.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:51:48 GMT -->
+</html>

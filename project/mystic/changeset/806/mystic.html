@@ -1,0 +1,1352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/806/mystic by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:55:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 806 for mystic – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/806/mystic?format=diff&amp;new=806" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/806/mystic?format=zip&amp;new=806" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../807/mystic.html" title="Changeset 807 for mystic" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../805/mystic.html" title="Changeset 805 for mystic" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../805/mystic.html" title="Changeset 805 for mystic">Previous Change</a></span></li><li class="last"><span><a class="next" href="../807/mystic.html" title="Changeset 807 for mystic">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../806.html">806</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=806">mystic</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             07/17/15 08:25:07
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-07-17T08%3A25%3A07-07%3A00&amp;precision=second" title="2015-07-17T08:25:07-07:00 in Timeline">10 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+enable function call for mystic_log_reader<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=806">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>2 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=806">
+              mystic/scripts.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">7 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/scripts/mystic_log_reader.py?rev=806">
+              scripts/mystic_log_reader.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="mystic/mystic/scripts.html" title="Show the changeset 806 restricted to mystic/mystic/scripts.py">mystic/mystic/scripts.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 805">
+                    <a title="Show revision 805 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L6">
+                      r805</a>
+                  </th>
+                  <th title="Revision 806">
+                    <a title="Show revision 806 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=806#L6">
+                      r806</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>8</th><th> </th><td class="l"><span>__doc__ = \</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>"""</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>8</th><td class="r"><span>__doc__ = """</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>9</th><td class="l"><span>functional interfaces for mystic's visual analytics scripts</span> </td>
+                  </tr><tr>
+                          <th>11</th><th>10</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>12</th><th>11</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>13</th><th> </th><td class="l"><span>__all__ = ['model_plotter',]</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>12</th><td class="r"><span>__all__ = ['model_plotter','log_reader']</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>13</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>16</th><th>14</th><td class="l"><span>from mpl_toolkits.mplot3d import axes3d</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L20">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=806#L18">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>18</th><td class="l"><span>from mystic.munge import read_history</span> </td>
+                  </tr><tr>
+                          <th>21</th><th>19</th><td class="l"><span>from mystic.munge import logfile_reader, raw_to_support</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>20</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>21</th><td class="r"><ins># globals</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>22</th><td class="r"><ins>__quit = False</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>23</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>24</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>23</th><th>25</th><td class="l"><span>#XXX: better if reads single id only? (e.g. same interface as read_history)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L339">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=806#L341">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>339</th><th>341</th><td class="l"><span>Additional Inputs:</span> </td>
+                  </tr><tr>
+                          <th>340</th><th>342</th><td class="l"><span>&nbsp; filename&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; name of the convergence logfile (e.g. log.txt)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>341</th><th> </th><td class="l"><span><del>&nbsp; &nbsp; </del>"""</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>343</th><td class="r"><span><ins></ins>"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>342</th><th>344</th><td class="l"><span>&nbsp; &nbsp; #FIXME: should be able to:</span> </td>
+                  </tr><tr>
+                          <th>343</th><th>345</th><td class="l"><span>&nbsp; &nbsp; # - apply a constraint as a region of NaN -- apply when 'xx,yy=x[ij],y[ij]'</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L354">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=806#L356">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>354</th><th>356</th><td class="l"><span>&nbsp; &nbsp; #&nbsp; &nbsp;(see support_hypercube.py for how to fix bounds)</span> </td>
+                  </tr><tr>
+                          <th>355</th><th>357</th><td class="l"><span>&nbsp; &nbsp; import shlex</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>358</th><td class="r"><ins>&nbsp; &nbsp; global __quit</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>359</th><td class="r"><ins>&nbsp; &nbsp; __quit = False</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>356</th><th>360</th><td class="l"><span>&nbsp; &nbsp; _model = None</span> </td>
+                  </tr><tr>
+                          <th>357</th><th>361</th><td class="l"><span>&nbsp; &nbsp; _reducer = None</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L414">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=806#L418">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>414</th><th>418</th><td class="l"><span>&nbsp; &nbsp; #XXX: note that 'argparse' is new as of python2.7</span> </td>
+                  </tr><tr>
+                          <th>415</th><th>419</th><td class="l"><span>&nbsp; &nbsp; from optparse import OptionParser</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>416</th><th> </th><td class="l"><span>&nbsp; &nbsp; parser = OptionParser(usage=model_plotter.__doc__)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>420</th><td class="r"><span>&nbsp; &nbsp; def _exit(self, **kwds):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>421</th><td class="r"><span>&nbsp; &nbsp; &nbsp; global __quit</span> </td>
+                      </tr><tr>
+                        <th> </th><th>422</th><td class="r"><span>&nbsp; &nbsp; &nbsp; __quit = True</span> </td>
+                      </tr><tr>
+                        <th> </th><th>423</th><td class="r"><span>&nbsp; &nbsp; OptionParser.exit = _exit</span> </td>
+                      </tr><tr>
+                        <th> </th><th>424</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>425</th><td class="r"><span>&nbsp; &nbsp; parser = OptionParser(usage=model_plotter.__doc__.split('\n\nOptions:')[0])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>417</th><th>426</th><td class="l"><span>&nbsp; &nbsp; parser.add_option("-u","--out",action="store",dest="out",\</span> </td>
+                  </tr><tr>
+                          <th>418</th><th>427</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; metavar="STR",default=None,</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L449">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=806#L458">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>449</th><th>458</th><td class="l"><span>&nbsp; &nbsp; parsed_opts, parsed_args = parser.parse_args(cmdargs)</span> </td>
+                  </tr><tr>
+                          <th>450</th><th>459</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>460</th><td class="r"><ins>#&nbsp; &nbsp;import sys</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>461</th><td class="r"><ins>#&nbsp; &nbsp;if 'mystic_model_plotter.py' not in sys.argv:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>462</th><td class="r"><ins>&nbsp; &nbsp; from StringIO import StringIO</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>463</th><td class="r"><ins>&nbsp; &nbsp; f = StringIO()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>464</th><td class="r"><ins>&nbsp; &nbsp; parser.print_help(file=f)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>465</th><td class="r"><ins>&nbsp; &nbsp; f.seek(0)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>466</th><td class="r"><ins>&nbsp; &nbsp; if 'Options:' not in model_plotter.__doc__:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>467</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; model_plotter.__doc__ += '\nOptions:%s' % f.read().split('Options:')[-1]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>468</th><td class="r"><ins>&nbsp; &nbsp; f.close()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>469</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>470</th><td class="r"><ins>&nbsp; &nbsp; if __quit: return</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>471</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>451</th><th>472</th><td class="l"><span>&nbsp; &nbsp; # get the import path for the model</span> </td>
+                  </tr><tr>
+                          <th>452</th><th>473</th><td class="l"><span>&nbsp; &nbsp; model = parsed_args[0]&nbsp; # e.g. 'mystic.models.rosen'</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=805#L625">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=806#L646">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>625</th><th>646</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>626</th><th>647</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>627</th><th> </th><td class="l"><span>if __name__=='__main__':</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>648</th><td class="r"><span>def log_reader(filename, **kwds):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>649</th><td class="r"><span>&nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>650</th><td class="r"><span>plot parameter convergence from file written with 'LoggingMonitor'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>651</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>652</th><td class="r"><span>Available from the command shell as:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>653</th><td class="r"><span>&nbsp; mystic_log_reader.py filename [options]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>654</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>655</th><td class="r"><span>or as a function call as:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>656</th><td class="r"><span>&nbsp; mystic.log_reader(filename, **options)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>657</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>658</th><td class="r"><span>The option "param" takes an indicator string. The indicator string is built</span> </td>
+                      </tr><tr>
+                        <th> </th><th>659</th><td class="r"><span>from comma-separated array slices. For example, params = ":" will plot all</span> </td>
+                      </tr><tr>
+                        <th> </th><th>660</th><td class="r"><span>parameters.&nbsp; Alternatively, params = ":2, 3:" will plot all parameters except</span> </td>
+                      </tr><tr>
+                        <th> </th><th>661</th><td class="r"><span>for the third parameter, while params = "0" will only plot the first parameter.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>662</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>663</th><td class="r"><span>Required Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>664</th><td class="r"><span>&nbsp; filename&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; name of the convergence logfile (e.g log.txt)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>665</th><td class="r"><span>"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>666</th><td class="r"><span>&nbsp; &nbsp; import shlex</span> </td>
+                      </tr><tr>
+                        <th> </th><th>667</th><td class="r"><span>&nbsp; &nbsp; global __quit</span> </td>
+                      </tr><tr>
+                        <th> </th><th>668</th><td class="r"><span>&nbsp; &nbsp; __quit = False</span> </td>
+                      </tr><tr>
+                        <th> </th><th>669</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>670</th><td class="r"><span>&nbsp; &nbsp; # handle the special case where list is provided by sys.argv</span> </td>
+                      </tr><tr>
+                        <th> </th><th>671</th><td class="r"><span>&nbsp; &nbsp; if isinstance(filename, (list,tuple)) and not kwds:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>672</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs = filename # (above is used by script to parse command line)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>673</th><td class="r"><span>&nbsp; &nbsp; elif isinstance(filename, basestring) and not kwds:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>674</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs = shlex.split(filename)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>675</th><td class="r"><span>&nbsp; &nbsp; # 'everything else' is essentially the functional interface</span> </td>
+                      </tr><tr>
+                        <th> </th><th>676</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>677</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; out = kwds.get('out', None)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>678</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; dots = kwds.get('dots', False)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>679</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; line = kwds.get('line', False)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>680</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; iter = kwds.get('iter', None)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>681</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; legend = kwds.get('legend', False)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>682</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; nid = kwds.get('nid', None)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>683</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; param = kwds.get('param', None)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>684</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>685</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process "commandline" arguments</span> </td>
+                      </tr><tr>
+                        <th> </th><th>686</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs = ''</span> </td>
+                      </tr><tr>
+                        <th> </th><th>687</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if out is None else '--out={} '.format(out)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>688</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if dots == False else '--dots '</span> </td>
+                      </tr><tr>
+                        <th> </th><th>689</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if line == False else '--line '</span> </td>
+                      </tr><tr>
+                        <th> </th><th>690</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if iter is None else '--iter={} '.format(iter)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>691</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if legend == False else '--legend '</span> </td>
+                      </tr><tr>
+                        <th> </th><th>692</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if nid is None else '--nid={} '.format(nid)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>693</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if param is None else '--param="{}" '.format(param)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>694</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs = filename.split() + shlex.split(cmdargs)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>695</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>696</th><td class="r"><span>&nbsp; &nbsp; #XXX: note that 'argparse' is new as of python2.7</span> </td>
+                      </tr><tr>
+                        <th> </th><th>697</th><td class="r"><span>&nbsp; &nbsp; from optparse import OptionParser</span> </td>
+                      </tr><tr>
+                        <th> </th><th>698</th><td class="r"><span>&nbsp; &nbsp; def _exit(self, **kwds):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>699</th><td class="r"><span>&nbsp; &nbsp; &nbsp; global __quit</span> </td>
+                      </tr><tr>
+                        <th> </th><th>700</th><td class="r"><span>&nbsp; &nbsp; &nbsp; __quit = True</span> </td>
+                      </tr><tr>
+                        <th> </th><th>701</th><td class="r"><span>&nbsp; &nbsp; OptionParser.exit = _exit</span> </td>
+                      </tr><tr>
+                        <th> </th><th>702</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>703</th><td class="r"><span>&nbsp; &nbsp; parser = OptionParser(usage=log_reader.__doc__.split('\n\nOptions:')[0])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>704</th><td class="r"><span>&nbsp; &nbsp; parser.add_option("-u","--out",action="store",dest="out",\</span> </td>
+                      </tr><tr>
+                        <th> </th><th>705</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; metavar="STR",default=None,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>706</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; help="filepath to save generated plot")</span> </td>
+                      </tr><tr>
+                        <th> </th><th>707</th><td class="r"><span>&nbsp; &nbsp; parser.add_option("-d","--dots",action="store_true",dest="dots",\</span> </td>
+                      </tr><tr>
+                        <th> </th><th>708</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default=False,help="show data points in plot")</span> </td>
+                      </tr><tr>
+                        <th> </th><th>709</th><td class="r"><span>&nbsp; &nbsp; parser.add_option("-l","--line",action="store_true",dest="line",\</span> </td>
+                      </tr><tr>
+                        <th> </th><th>710</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default=False,help="connect data points in plot with a line")</span> </td>
+                      </tr><tr>
+                        <th> </th><th>711</th><td class="r"><span>&nbsp; &nbsp; parser.add_option("-i","--iter",action="store",dest="stop",metavar="INT",\</span> </td>
+                      </tr><tr>
+                        <th> </th><th>712</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default=None,help="the largest iteration to plot")</span> </td>
+                      </tr><tr>
+                        <th> </th><th>713</th><td class="r"><span>&nbsp; &nbsp; parser.add_option("-g","--legend",action="store_true",dest="legend",\</span> </td>
+                      </tr><tr>
+                        <th> </th><th>714</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default=False,help="show the legend")</span> </td>
+                      </tr><tr>
+                        <th> </th><th>715</th><td class="r"><span>&nbsp; &nbsp; parser.add_option("-n","--nid",action="store",dest="id",\</span> </td>
+                      </tr><tr>
+                        <th> </th><th>716</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; metavar="INT",default=None,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>717</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; help="id # of the nth simultaneous points to plot")</span> </td>
+                      </tr><tr>
+                        <th> </th><th>718</th><td class="r"><span>&nbsp; &nbsp; parser.add_option("-p","--param",action="store",dest="param",\</span> </td>
+                      </tr><tr>
+                        <th> </th><th>719</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; metavar="STR",default=":",</span> </td>
+                      </tr><tr>
+                        <th> </th><th>720</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; help="indicator string to select parameters")</span> </td>
+                      </tr><tr>
+                        <th> </th><th>721</th><td class="r"><span>&nbsp; &nbsp; #parser.add_option("-f","--file",action="store",dest="filename",metavar="FILE",\</span> </td>
+                      </tr><tr>
+                        <th> </th><th>722</th><td class="r"><span>&nbsp; &nbsp; #&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default='log.txt',help="log file name")</span> </td>
+                      </tr><tr>
+                        <th> </th><th>723</th><td class="r"><span>&nbsp; &nbsp; parsed_opts, parsed_args = parser.parse_args(cmdargs)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>724</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>725</th><td class="r"><span>#&nbsp; &nbsp;import sys</span> </td>
+                      </tr><tr>
+                        <th> </th><th>726</th><td class="r"><span>#&nbsp; &nbsp;if 'mystic_log_reader.py' not in sys.argv:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>727</th><td class="r"><span>&nbsp; &nbsp; from StringIO import StringIO</span> </td>
+                      </tr><tr>
+                        <th> </th><th>728</th><td class="r"><span>&nbsp; &nbsp; f = StringIO()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>729</th><td class="r"><span>&nbsp; &nbsp; parser.print_help(file=f)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>730</th><td class="r"><span>&nbsp; &nbsp; f.seek(0)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>731</th><td class="r"><span>&nbsp; &nbsp; if 'Options:' not in log_reader.__doc__:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>732</th><td class="r"><span>&nbsp; &nbsp; &nbsp; log_reader.__doc__ += '\nOptions:%s' % f.read().split('Options:')[-1]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>733</th><td class="r"><span>&nbsp; &nbsp; f.close()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>734</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>735</th><td class="r"><span>&nbsp; &nbsp; style = '-' # default linestyle</span> </td>
+                      </tr><tr>
+                        <th> </th><th>736</th><td class="r"><span>&nbsp; &nbsp; if parsed_opts.dots:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>737</th><td class="r"><span>&nbsp; &nbsp; &nbsp; mark = 'o'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>738</th><td class="r"><span>&nbsp; &nbsp; &nbsp; # when using 'dots', also can turn off 'line'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>739</th><td class="r"><span>&nbsp; &nbsp; &nbsp; if not parsed_opts.line:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>740</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; style = 'None'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>741</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>742</th><td class="r"><span>&nbsp; &nbsp; &nbsp; mark = ''</span> </td>
+                      </tr><tr>
+                        <th> </th><th>743</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>744</th><td class="r"><span>&nbsp; &nbsp; if __quit: return</span> </td>
+                      </tr><tr>
+                        <th> </th><th>745</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>746</th><td class="r"><span>&nbsp; &nbsp; try: # get logfile name</span> </td>
+                      </tr><tr>
+                        <th> </th><th>747</th><td class="r"><span>&nbsp; &nbsp; &nbsp; filename = parsed_args[0]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>748</th><td class="r"><span>&nbsp; &nbsp; except:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>749</th><td class="r"><span>&nbsp; &nbsp; &nbsp; raise IOError, "please provide log file name"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>750</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>751</th><td class="r"><span>&nbsp; &nbsp; try: # select which iteration to stop plotting at</span> </td>
+                      </tr><tr>
+                        <th> </th><th>752</th><td class="r"><span>&nbsp; &nbsp; &nbsp; stop = int(parsed_opts.stop)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>753</th><td class="r"><span>&nbsp; &nbsp; except:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>754</th><td class="r"><span>&nbsp; &nbsp; &nbsp; stop = None</span> </td>
+                      </tr><tr>
+                        <th> </th><th>755</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>756</th><td class="r"><span>&nbsp; &nbsp; try: # select which 'id' to plot results for</span> </td>
+                      </tr><tr>
+                        <th> </th><th>757</th><td class="r"><span>&nbsp; &nbsp; &nbsp; runs = (int(parsed_opts.id),) #XXX: allow selecting more than one id ?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>758</th><td class="r"><span>&nbsp; &nbsp; except:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>759</th><td class="r"><span>&nbsp; &nbsp; &nbsp; runs = None # i.e. 'all' **or** use id=0, which should be 'best' energy ?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>760</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>761</th><td class="r"><span>&nbsp; &nbsp; try: # select which parameters to plot</span> </td>
+                      </tr><tr>
+                        <th> </th><th>762</th><td class="r"><span>&nbsp; &nbsp; &nbsp; select = parsed_opts.param.split(',')&nbsp; # format is ":2, 2:4, 5, 6:"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>763</th><td class="r"><span>&nbsp; &nbsp; except:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>764</th><td class="r"><span>&nbsp; &nbsp; &nbsp; select = [':']</span> </td>
+                      </tr><tr>
+                        <th> </th><th>765</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>766</th><td class="r"><span>&nbsp; &nbsp; # ensure all terms of select have a ":"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>767</th><td class="r"><span>&nbsp; &nbsp; for i in range(len(select)):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>768</th><td class="r"><span>&nbsp; &nbsp; &nbsp; if isinstance(select[i], int): select[i] = str(select[i])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>769</th><td class="r"><span>&nbsp; &nbsp; &nbsp; if select[i] == '-1': select[i] = 'len(params)-1:len(params)'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>770</th><td class="r"><span>&nbsp; &nbsp; &nbsp; elif not select[i].count(':'):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>771</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; select[i] += ':' + str(int(select[i])+1)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>772</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>773</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>774</th><td class="r"><span>&nbsp; &nbsp; # == Possible results ==</span> </td>
+                      </tr><tr>
+                        <th> </th><th>775</th><td class="r"><span>&nbsp; &nbsp; # iter = (i,id) or (i,) </span> </td>
+                      </tr><tr>
+                        <th> </th><th>776</th><td class="r"><span>&nbsp; &nbsp; # split =&gt; { (i,) then (i+1,) } or { (i,) then (0,) }</span> </td>
+                      </tr><tr>
+                        <th> </th><th>777</th><td class="r"><span>&nbsp; &nbsp; # y x = { float list } or { list [list1, ...] }</span> </td>
+                      </tr><tr>
+                        <th> </th><th>778</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>779</th><td class="r"><span>&nbsp; &nbsp; # == Use Cases ==</span> </td>
+                      </tr><tr>
+                        <th> </th><th>780</th><td class="r"><span>&nbsp; &nbsp; # (i,id) + { (i,) then (i+1,) } + { float list }</span> </td>
+                      </tr><tr>
+                        <th> </th><th>781</th><td class="r"><span>&nbsp; &nbsp; # (i,) + { (i,) then (i+1,) } + { float list }</span> </td>
+                      </tr><tr>
+                        <th> </th><th>782</th><td class="r"><span>&nbsp; &nbsp; # (i,id) + { (i,) then (i+1,) } + { list [list1, ...] }</span> </td>
+                      </tr><tr>
+                        <th> </th><th>783</th><td class="r"><span>&nbsp; &nbsp; # (i,) + { (i,) then (i+1,) } + { list [list1, ...] }</span> </td>
+                      </tr><tr>
+                        <th> </th><th>784</th><td class="r"><span>&nbsp; &nbsp; # (i,id) + { (i,) then (0,) } + { float list }</span> </td>
+                      </tr><tr>
+                        <th> </th><th>785</th><td class="r"><span>&nbsp; &nbsp; # (i,) + { (i,) then (0,) } + { float list }</span> </td>
+                      </tr><tr>
+                        <th> </th><th>786</th><td class="r"><span>&nbsp; &nbsp; # (i,id) + { (i,) then (0,) } + { list [list1, ...] }</span> </td>
+                      </tr><tr>
+                        <th> </th><th>787</th><td class="r"><span>&nbsp; &nbsp; # (i,) + { (i,) then (0,) } + { list [list1, ...] }</span> </td>
+                      </tr><tr>
+                        <th> </th><th>788</th><td class="r"><span>&nbsp; &nbsp; # NOTES:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>789</th><td class="r"><span>&nbsp; &nbsp; #&nbsp; &nbsp;Legend is different for list versus [list1,...]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>790</th><td class="r"><span>&nbsp; &nbsp; #&nbsp; &nbsp;Plot should be discontinuous for (i,) then (0,)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>791</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>792</th><td class="r"><span>&nbsp; &nbsp; # parse file contents to get (i,id), cost, and parameters</span> </td>
+                      </tr><tr>
+                        <th> </th><th>793</th><td class="r"><span>&nbsp; &nbsp; from mystic.munge import logfile_reader, read_raw_file</span> </td>
+                      </tr><tr>
+                        <th> </th><th>794</th><td class="r"><span>&nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>795</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; step, param, cost = logfile_reader(filename)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>796</th><td class="r"><span>&nbsp; &nbsp; except SyntaxError:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>797</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; read_raw_file(filename)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>798</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; msg = "incompatible file format, try 'support_convergence.py'"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>799</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; raise SyntaxError(msg)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>800</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>801</th><td class="r"><span>&nbsp; &nbsp; # ignore everything after 'stop'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>802</th><td class="r"><span>&nbsp; &nbsp; step = step[:stop]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>803</th><td class="r"><span>&nbsp; &nbsp; cost = cost[:stop]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>804</th><td class="r"><span>&nbsp; &nbsp; param = param[:stop]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>805</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>806</th><td class="r"><span>&nbsp; &nbsp; # split (i,id) into iteration and id</span> </td>
+                      </tr><tr>
+                        <th> </th><th>807</th><td class="r"><span>&nbsp; &nbsp; multinode = len(step[0]) - 1&nbsp; #XXX: what if step = []?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>808</th><td class="r"><span>&nbsp; &nbsp; iter = [i[0] for i in step]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>809</th><td class="r"><span>&nbsp; &nbsp; if multinode:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>810</th><td class="r"><span>&nbsp; &nbsp; &nbsp; id = [i[1] for i in step]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>811</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>812</th><td class="r"><span>&nbsp; &nbsp; &nbsp; id = [0 for i in step]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>813</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>814</th><td class="r"><span>&nbsp; &nbsp; # build the list of selected parameters</span> </td>
+                      </tr><tr>
+                        <th> </th><th>815</th><td class="r"><span>&nbsp; &nbsp; params = range(len(param[0]))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>816</th><td class="r"><span>&nbsp; &nbsp; selected = []</span> </td>
+                      </tr><tr>
+                        <th> </th><th>817</th><td class="r"><span>&nbsp; &nbsp; for i in select:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>818</th><td class="r"><span>&nbsp; &nbsp; &nbsp; selected.extend(eval("params[%s]" % i))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>819</th><td class="r"><span>&nbsp; &nbsp; selected = list(set(selected))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>820</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>821</th><td class="r"><span>&nbsp; &nbsp; results = [[] for i in range(max(id) + 1)]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>822</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>823</th><td class="r"><span>&nbsp; &nbsp; # populate results for each id with the corresponding (iter,cost,param)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>824</th><td class="r"><span>&nbsp; &nbsp; for i in range(len(id)):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>825</th><td class="r"><span>&nbsp; &nbsp; &nbsp; if runs is None or id[i] in runs: # take only the selected 'id'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>826</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; results[id[i]].append((iter[i],cost[i],param[i]))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>827</th><td class="r"><span>&nbsp; &nbsp; # NOTE: for example...&nbsp; results = [[(0,...)],[(0,...),(1,...)],[],[(0,...)]]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>828</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>829</th><td class="r"><span>&nbsp; &nbsp; # build list of parameter (and cost) convergences for each id</span> </td>
+                      </tr><tr>
+                        <th> </th><th>830</th><td class="r"><span>&nbsp; &nbsp; conv = []; cost_conv = []; iter_conv = []</span> </td>
+                      </tr><tr>
+                        <th> </th><th>831</th><td class="r"><span>&nbsp; &nbsp; for i in range(len(results)):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>832</th><td class="r"><span>&nbsp; &nbsp; &nbsp; conv.append([])#; cost_conv.append([]); iter_conv.append([])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>833</th><td class="r"><span>&nbsp; &nbsp; &nbsp; if len(results[i]):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>834</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; for k in range(len(results[i][0][2])):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>835</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; conv[i].append([results[i][j][2][k] for j in range(len(results[i]))])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>836</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost_conv.append([results[i][j][1] for j in range(len(results[i]))])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>837</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; iter_conv.append([results[i][j][0] for j in range(len(results[i]))])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>838</th><td class="r"><span>&nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>839</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; conv[i] = [[] for k in range(len(param[0]))]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>840</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost_conv.append([])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>841</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; iter_conv.append([])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>842</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>843</th><td class="r"><span>&nbsp; &nbsp; #print "iter_conv = %s" % iter_conv</span> </td>
+                      </tr><tr>
+                        <th> </th><th>844</th><td class="r"><span>&nbsp; &nbsp; #print "cost_conv = %s" % cost_conv</span> </td>
+                      </tr><tr>
+                        <th> </th><th>845</th><td class="r"><span>&nbsp; &nbsp; #print "conv = %s" % conv</span> </td>
+                      </tr><tr>
+                        <th> </th><th>846</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>847</th><td class="r"><span>&nbsp; &nbsp; import matplotlib.pyplot as plt</span> </td>
+                      </tr><tr>
+                        <th> </th><th>848</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>849</th><td class="r"><span>&nbsp; &nbsp; fig = plt.figure()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>850</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>851</th><td class="r"><span>&nbsp; &nbsp; #FIXME: These may fail when conv[i][j] = [[],[],[]] and cost = []. Verify this.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>852</th><td class="r"><span>&nbsp; &nbsp; ax1 = fig.add_subplot(2,1,1)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>853</th><td class="r"><span>&nbsp; &nbsp; for i in range(len(conv)):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>854</th><td class="r"><span>&nbsp; &nbsp; &nbsp; if runs is None or i in runs: # take only the selected 'id'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>855</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; for j in range(len(param[0])):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>856</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if j in selected: # take only the selected 'params'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>857</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; tag = "%d,%d" % (j,i) # label is 'parameter,id'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>858</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ax1.plot(iter_conv[i],conv[i][j],label="%s" % tag,marker=mark,linestyle=style)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>859</th><td class="r"><span>&nbsp; &nbsp; if parsed_opts.legend: plt.legend()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>860</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>861</th><td class="r"><span>&nbsp; &nbsp; ax2 = fig.add_subplot(2,1,2)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>862</th><td class="r"><span>&nbsp; &nbsp; for i in range(len(conv)):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>863</th><td class="r"><span>&nbsp; &nbsp; &nbsp; if runs is None or i in runs: # take only the selected 'id'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>864</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; tag = "%d" % i # label is 'cost id'</span> </td>
+                      </tr><tr>
+                        <th> </th><th>865</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ax2.plot(iter_conv[i],cost_conv[i],label='cost %s' % tag,marker=mark,linestyle=style)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>866</th><td class="r"><span>&nbsp; &nbsp; if parsed_opts.legend: plt.legend()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>867</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>868</th><td class="r"><span>&nbsp; &nbsp; if not parsed_opts.out:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>869</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; plt.show()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>870</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>871</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; fig.savefig(parsed_opts.out)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>872</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>873</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>874</th><td class="r"><span># initialize doc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>875</th><td class="r"><span>try: log_reader()</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>876</th><td class="r"><span>except TypeError:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>628</th><th>877</th><td class="l"><span>&nbsp; &nbsp; pass</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>629</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>630</th><th> </th><td class="l"><span># End of file</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>878</th><td class="r"><span>try: model_plotter()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>879</th><td class="r"><span>except TypeError:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>880</th><td class="r"><span>&nbsp; &nbsp; pass</span> </td>
+                      </tr><tr>
+                        <th> </th><th>881</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>882</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>883</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>884</th><td class="r"><span>if __name__ == '__main__':</span> </td>
+                      </tr><tr>
+                        <th> </th><th>885</th><td class="r"><span>&nbsp; &nbsp; pass</span> </td>
+                      </tr><tr>
+                        <th> </th><th>886</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>887</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>888</th><td class="r"><span># EOF</span> </td>
+                      </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="mystic/scripts/mystic_log_reader.html" title="Show the changeset 806 restricted to mystic/scripts/mystic_log_reader.py">mystic/scripts/mystic_log_reader.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 792">
+                    <a title="Show revision 792 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/scripts/mystic_log_reader.py?rev=792#L6">
+                      r792</a>
+                  </th>
+                  <th title="Revision 806">
+                    <a title="Show revision 806 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/scripts/mystic_log_reader.py?rev=806#L6">
+                      r806</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>8</th><th> </th><td class="l"><span>__doc__ = """</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>mystic_log_reader.py [options] filename</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>8</th><td class="r"><span>from mystic import log_reader</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>9</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>11</th><th> </th><td class="l"><span>plot parameter convergence from file written with 'LoggingMonitor'</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>10</th><td class="r"><span>__doc__ = log_reader.__doc__</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>11</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>13</th><th> </th><td class="l"><span>The option "param" takes an indicator string. The indicator string is built</span> </td>
+                      </tr><tr>
+                        <th>14</th><th> </th><td class="l"><span>from comma-separated array slices. For example, params = ":" will plot all</span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>parameters.&nbsp; Alternatively, params = ":2, 3:" will plot all parameters except</span> </td>
+                      </tr><tr>
+                        <th>16</th><th> </th><td class="l"><span>for the third parameter, while params = "0" will only plot the first parameter.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>12</th><td class="r"><span>if __name__ == '__main__':</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>17</th><th>13</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>18</th><th> </th><td class="l"><span>Required Inputs:</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; filename&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; name of the convergence logfile (e.g log.txt)</span> </td>
+                      </tr><tr>
+                        <th>20</th><th> </th><td class="l"><span>"""</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>14</th><td class="r"><span>&nbsp; &nbsp; import sys</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>21</th><th>15</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>22</th><th> </th><td class="l"><span>#XXX: note that 'argparse' is new as of python2.7</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>from optparse import OptionParser</span> </td>
+                      </tr><tr>
+                        <th>24</th><th> </th><td class="l"><span>parser = OptionParser(usage=__doc__)</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span>parser.add_option("-d","--dots",action="store_true",dest="dots",\</span> </td>
+                      </tr><tr>
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default=False,help="show data points in plot")</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>parser.add_option("-l","--line",action="store_true",dest="line",\</span> </td>
+                      </tr><tr>
+                        <th>28</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default=False,help="connect data points in plot with a line")</span> </td>
+                      </tr><tr>
+                        <th>29</th><th> </th><td class="l"><span>parser.add_option("-i","--iter",action="store",dest="stop",metavar="INT",\</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default=None,help="the largest iteration to plot")</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>parser.add_option("-g","--legend",action="store_true",dest="legend",\</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default=False,help="show the legend")</span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>parser.add_option("-n","--nid",action="store",dest="id",\</span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; metavar="INT",default=None,</span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; help="id # of the nth simultaneous points to plot")</span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span>parser.add_option("-p","--param",action="store",dest="param",\</span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; metavar="STR",default=":",</span> </td>
+                      </tr><tr>
+                        <th>38</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; help="indicator string to select parameters")</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span>#parser.add_option("-f","--file",action="store",dest="filename",metavar="FILE",\</span> </td>
+                      </tr><tr>
+                        <th>40</th><th> </th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; default='log.txt',help="log file name")</span> </td>
+                      </tr><tr>
+                        <th>41</th><th> </th><td class="l"><span>parsed_opts, parsed_args = parser.parse_args()</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>16</th><td class="r"><span>&nbsp; &nbsp; log_reader(sys.argv[1:])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>17</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>43</th><th>18</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>44</th><th> </th><td class="l"><span>style = '-' # default linestyle</span> </td>
+                      </tr><tr>
+                        <th>45</th><th> </th><td class="l"><span>if parsed_opts.dots:</span> </td>
+                      </tr><tr>
+                        <th>46</th><th> </th><td class="l"><span>&nbsp; mark = 'o'</span> </td>
+                      </tr><tr>
+                        <th>47</th><th> </th><td class="l"><span>&nbsp; # when using 'dots', also can turn off 'line'</span> </td>
+                      </tr><tr>
+                        <th>48</th><th> </th><td class="l"><span>&nbsp; if not parsed_opts.line:</span> </td>
+                      </tr><tr>
+                        <th>49</th><th> </th><td class="l"><span>&nbsp; &nbsp; style = 'None'</span> </td>
+                      </tr><tr>
+                        <th>50</th><th> </th><td class="l"><span>else:</span> </td>
+                      </tr><tr>
+                        <th>51</th><th> </th><td class="l"><span>&nbsp; mark = ''</span> </td>
+                      </tr><tr>
+                        <th>52</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>53</th><th> </th><td class="l"><span>try: # get logfile name</span> </td>
+                      </tr><tr>
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; filename = parsed_args[0]</span> </td>
+                      </tr><tr>
+                        <th>55</th><th> </th><td class="l"><span>except:</span> </td>
+                      </tr><tr>
+                        <th>56</th><th> </th><td class="l"><span>&nbsp; raise IOError, "please provide log file name"</span> </td>
+                      </tr><tr>
+                        <th>57</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>58</th><th> </th><td class="l"><span>try: # select which iteration to stop plotting at</span> </td>
+                      </tr><tr>
+                        <th>59</th><th> </th><td class="l"><span>&nbsp; stop = int(parsed_opts.stop)</span> </td>
+                      </tr><tr>
+                        <th>60</th><th> </th><td class="l"><span>except:</span> </td>
+                      </tr><tr>
+                        <th>61</th><th> </th><td class="l"><span>&nbsp; stop = None</span> </td>
+                      </tr><tr>
+                        <th>62</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>63</th><th> </th><td class="l"><span>try: # select which 'id' to plot results for</span> </td>
+                      </tr><tr>
+                        <th>64</th><th> </th><td class="l"><span>&nbsp; runs = (int(parsed_opts.id),) #XXX: allow selecting more than one id ?</span> </td>
+                      </tr><tr>
+                        <th>65</th><th> </th><td class="l"><span>except:</span> </td>
+                      </tr><tr>
+                        <th>66</th><th> </th><td class="l"><span>&nbsp; runs = None # i.e. 'all' **or** use id=0, which should be 'best' energy ?</span> </td>
+                      </tr><tr>
+                        <th>67</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>68</th><th> </th><td class="l"><span>try: # select which parameters to plot</span> </td>
+                      </tr><tr>
+                        <th>69</th><th> </th><td class="l"><span>&nbsp; select = parsed_opts.param.split(',')&nbsp; # format is ":2, 2:4, 5, 6:"</span> </td>
+                      </tr><tr>
+                        <th>70</th><th> </th><td class="l"><span>except:</span> </td>
+                      </tr><tr>
+                        <th>71</th><th> </th><td class="l"><span>&nbsp; select = [':']</span> </td>
+                      </tr><tr>
+                        <th>72</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>73</th><th> </th><td class="l"><span># ensure all terms of select have a ":"</span> </td>
+                      </tr><tr>
+                        <th>74</th><th> </th><td class="l"><span>for i in range(len(select)):</span> </td>
+                      </tr><tr>
+                        <th>75</th><th> </th><td class="l"><span>&nbsp; if isinstance(select[i], int): select[i] = str(select[i])</span> </td>
+                      </tr><tr>
+                        <th>76</th><th> </th><td class="l"><span>&nbsp; if select[i] == '-1': select[i] = 'len(params)-1:len(params)'</span> </td>
+                      </tr><tr>
+                        <th>77</th><th> </th><td class="l"><span>&nbsp; elif not select[i].count(':'):</span> </td>
+                      </tr><tr>
+                        <th>78</th><th> </th><td class="l"><span>&nbsp; &nbsp; select[i] += ':' + str(int(select[i])+1)</span> </td>
+                      </tr><tr>
+                        <th>79</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>80</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>81</th><th> </th><td class="l"><span># == Possible results ==</span> </td>
+                      </tr><tr>
+                        <th>82</th><th> </th><td class="l"><span># iter = (i,id) or (i,) </span> </td>
+                      </tr><tr>
+                        <th>83</th><th> </th><td class="l"><span># split =&gt; { (i,) then (i+1,) } or { (i,) then (0,) }</span> </td>
+                      </tr><tr>
+                        <th>84</th><th> </th><td class="l"><span># y x = { float list } or { list [list1, ...] }</span> </td>
+                      </tr><tr>
+                        <th>85</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>86</th><th> </th><td class="l"><span># == Use Cases ==</span> </td>
+                      </tr><tr>
+                        <th>87</th><th> </th><td class="l"><span># (i,id) + { (i,) then (i+1,) } + { float list }</span> </td>
+                      </tr><tr>
+                        <th>88</th><th> </th><td class="l"><span># (i,) + { (i,) then (i+1,) } + { float list }</span> </td>
+                      </tr><tr>
+                        <th>89</th><th> </th><td class="l"><span># (i,id) + { (i,) then (i+1,) } + { list [list1, ...] }</span> </td>
+                      </tr><tr>
+                        <th>90</th><th> </th><td class="l"><span># (i,) + { (i,) then (i+1,) } + { list [list1, ...] }</span> </td>
+                      </tr><tr>
+                        <th>91</th><th> </th><td class="l"><span># (i,id) + { (i,) then (0,) } + { float list }</span> </td>
+                      </tr><tr>
+                        <th>92</th><th> </th><td class="l"><span># (i,) + { (i,) then (0,) } + { float list }</span> </td>
+                      </tr><tr>
+                        <th>93</th><th> </th><td class="l"><span># (i,id) + { (i,) then (0,) } + { list [list1, ...] }</span> </td>
+                      </tr><tr>
+                        <th>94</th><th> </th><td class="l"><span># (i,) + { (i,) then (0,) } + { list [list1, ...] }</span> </td>
+                      </tr><tr>
+                        <th>95</th><th> </th><td class="l"><span># NOTES:</span> </td>
+                      </tr><tr>
+                        <th>96</th><th> </th><td class="l"><span>#&nbsp; &nbsp;Legend is different for list versus [list1,...]</span> </td>
+                      </tr><tr>
+                        <th>97</th><th> </th><td class="l"><span>#&nbsp; &nbsp;Plot should be discontinuous for (i,) then (0,)</span> </td>
+                      </tr><tr>
+                        <th>98</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>99</th><th> </th><td class="l"><span># parse file contents to get (i,id), cost, and parameters</span> </td>
+                      </tr><tr>
+                        <th>100</th><th> </th><td class="l"><span>from mystic.munge import logfile_reader, read_raw_file</span> </td>
+                      </tr><tr>
+                        <th>101</th><th> </th><td class="l"><span>try:</span> </td>
+                      </tr><tr>
+                        <th>102</th><th> </th><td class="l"><span>&nbsp; &nbsp; step, param, cost = logfile_reader(filename)</span> </td>
+                      </tr><tr>
+                        <th>103</th><th> </th><td class="l"><span>except SyntaxError:</span> </td>
+                      </tr><tr>
+                        <th>104</th><th> </th><td class="l"><span>&nbsp; &nbsp; read_raw_file(filename)</span> </td>
+                      </tr><tr>
+                        <th>105</th><th> </th><td class="l"><span>&nbsp; &nbsp; msg = "incompatible file format, try 'support_convergence.py'"</span> </td>
+                      </tr><tr>
+                        <th>106</th><th> </th><td class="l"><span>&nbsp; &nbsp; raise SyntaxError(msg)</span> </td>
+                      </tr><tr>
+                        <th>107</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>108</th><th> </th><td class="l"><span># ignore everything after 'stop'</span> </td>
+                      </tr><tr>
+                        <th>109</th><th> </th><td class="l"><span>step = step[:stop]</span> </td>
+                      </tr><tr>
+                        <th>110</th><th> </th><td class="l"><span>cost = cost[:stop]</span> </td>
+                      </tr><tr>
+                        <th>111</th><th> </th><td class="l"><span>param = param[:stop]</span> </td>
+                      </tr><tr>
+                        <th>112</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>113</th><th> </th><td class="l"><span># split (i,id) into iteration and id</span> </td>
+                      </tr><tr>
+                        <th>114</th><th> </th><td class="l"><span>multinode = len(step[0]) - 1&nbsp; #XXX: what if step = []?</span> </td>
+                      </tr><tr>
+                        <th>115</th><th> </th><td class="l"><span>iter = [i[0] for i in step]</span> </td>
+                      </tr><tr>
+                        <th>116</th><th> </th><td class="l"><span>if multinode:</span> </td>
+                      </tr><tr>
+                        <th>117</th><th> </th><td class="l"><span>&nbsp; id = [i[1] for i in step]</span> </td>
+                      </tr><tr>
+                        <th>118</th><th> </th><td class="l"><span>else:</span> </td>
+                      </tr><tr>
+                        <th>119</th><th> </th><td class="l"><span>&nbsp; id = [0 for i in step]</span> </td>
+                      </tr><tr>
+                        <th>120</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>121</th><th> </th><td class="l"><span># build the list of selected parameters</span> </td>
+                      </tr><tr>
+                        <th>122</th><th> </th><td class="l"><span>params = range(len(param[0]))</span> </td>
+                      </tr><tr>
+                        <th>123</th><th> </th><td class="l"><span>selected = []</span> </td>
+                      </tr><tr>
+                        <th>124</th><th> </th><td class="l"><span>for i in select:</span> </td>
+                      </tr><tr>
+                        <th>125</th><th> </th><td class="l"><span>&nbsp; selected.extend(eval("params[%s]" % i))</span> </td>
+                      </tr><tr>
+                        <th>126</th><th> </th><td class="l"><span>selected = list(set(selected))</span> </td>
+                      </tr><tr>
+                        <th>127</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>128</th><th> </th><td class="l"><span>results = [[] for i in range(max(id) + 1)]</span> </td>
+                      </tr><tr>
+                        <th>129</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>130</th><th> </th><td class="l"><span># populate results for each id with the corresponding (iter,cost,param)</span> </td>
+                      </tr><tr>
+                        <th>131</th><th> </th><td class="l"><span>for i in range(len(id)):</span> </td>
+                      </tr><tr>
+                        <th>132</th><th> </th><td class="l"><span>&nbsp; if runs is None or id[i] in runs: # take only the selected 'id'</span> </td>
+                      </tr><tr>
+                        <th>133</th><th> </th><td class="l"><span>&nbsp; &nbsp; results[id[i]].append((iter[i],cost[i],param[i]))</span> </td>
+                      </tr><tr>
+                        <th>134</th><th> </th><td class="l"><span># NOTE: for example...&nbsp; results = [[(0,...)],[(0,...),(1,...)],[],[(0,...)]]</span> </td>
+                      </tr><tr>
+                        <th>135</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>136</th><th> </th><td class="l"><span># build list of parameter (and cost) convergences for each id</span> </td>
+                      </tr><tr>
+                        <th>137</th><th> </th><td class="l"><span>conv = []; cost_conv = []; iter_conv = []</span> </td>
+                      </tr><tr>
+                        <th>138</th><th> </th><td class="l"><span>for i in range(len(results)):</span> </td>
+                      </tr><tr>
+                        <th>139</th><th> </th><td class="l"><span>&nbsp; conv.append([])#; cost_conv.append([]); iter_conv.append([])</span> </td>
+                      </tr><tr>
+                        <th>140</th><th> </th><td class="l"><span>&nbsp; if len(results[i]):</span> </td>
+                      </tr><tr>
+                        <th>141</th><th> </th><td class="l"><span>&nbsp; &nbsp; for k in range(len(results[i][0][2])):</span> </td>
+                      </tr><tr>
+                        <th>142</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; conv[i].append([results[i][j][2][k] for j in range(len(results[i]))])</span> </td>
+                      </tr><tr>
+                        <th>143</th><th> </th><td class="l"><span>&nbsp; &nbsp; cost_conv.append([results[i][j][1] for j in range(len(results[i]))])</span> </td>
+                      </tr><tr>
+                        <th>144</th><th> </th><td class="l"><span>&nbsp; &nbsp; iter_conv.append([results[i][j][0] for j in range(len(results[i]))])</span> </td>
+                      </tr><tr>
+                        <th>145</th><th> </th><td class="l"><span>&nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th>146</th><th> </th><td class="l"><span>&nbsp; &nbsp; conv[i] = [[] for k in range(len(param[0]))]</span> </td>
+                      </tr><tr>
+                        <th>147</th><th> </th><td class="l"><span>&nbsp; &nbsp; cost_conv.append([])</span> </td>
+                      </tr><tr>
+                        <th>148</th><th> </th><td class="l"><span>&nbsp; &nbsp; iter_conv.append([])</span> </td>
+                      </tr><tr>
+                        <th>149</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>150</th><th> </th><td class="l"><span>#print "iter_conv = %s" % iter_conv</span> </td>
+                      </tr><tr>
+                        <th>151</th><th> </th><td class="l"><span>#print "cost_conv = %s" % cost_conv</span> </td>
+                      </tr><tr>
+                        <th>152</th><th> </th><td class="l"><span>#print "conv = %s" % conv</span> </td>
+                      </tr><tr>
+                        <th>153</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>154</th><th> </th><td class="l"><span>import matplotlib.pyplot as plt</span> </td>
+                      </tr><tr>
+                        <th>155</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>156</th><th> </th><td class="l"><span>fig = plt.figure()</span> </td>
+                      </tr><tr>
+                        <th>157</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>158</th><th> </th><td class="l"><span>#FIXME: These may fail when conv[i][j] = [[],[],[]] and cost = []. Verify this.</span> </td>
+                      </tr><tr>
+                        <th>159</th><th> </th><td class="l"><span>ax1 = fig.add_subplot(2,1,1)</span> </td>
+                      </tr><tr>
+                        <th>160</th><th> </th><td class="l"><span>for i in range(len(conv)):</span> </td>
+                      </tr><tr>
+                        <th>161</th><th> </th><td class="l"><span>&nbsp; if runs is None or i in runs: # take only the selected 'id'</span> </td>
+                      </tr><tr>
+                        <th>162</th><th> </th><td class="l"><span>&nbsp; &nbsp; for j in range(len(param[0])):</span> </td>
+                      </tr><tr>
+                        <th>163</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; if j in selected: # take only the selected 'params'</span> </td>
+                      </tr><tr>
+                        <th>164</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; tag = "%d,%d" % (j,i) # label is 'parameter,id'</span> </td>
+                      </tr><tr>
+                        <th>165</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ax1.plot(iter_conv[i],conv[i][j],label="%s" % tag,marker=mark,linestyle=style)</span> </td>
+                      </tr><tr>
+                        <th>166</th><th> </th><td class="l"><span>if parsed_opts.legend: plt.legend()</span> </td>
+                      </tr><tr>
+                        <th>167</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>168</th><th> </th><td class="l"><span>ax2 = fig.add_subplot(2,1,2)</span> </td>
+                      </tr><tr>
+                        <th>169</th><th> </th><td class="l"><span>for i in range(len(conv)):</span> </td>
+                      </tr><tr>
+                        <th>170</th><th> </th><td class="l"><span>&nbsp; if runs is None or i in runs: # take only the selected 'id'</span> </td>
+                      </tr><tr>
+                        <th>171</th><th> </th><td class="l"><span>&nbsp; &nbsp; tag = "%d" % i # label is 'cost id'</span> </td>
+                      </tr><tr>
+                        <th>172</th><th> </th><td class="l"><span>&nbsp; &nbsp; ax2.plot(iter_conv[i],cost_conv[i],label='cost %s' % tag,marker=mark,linestyle=style)</span> </td>
+                      </tr><tr>
+                        <th>173</th><th> </th><td class="l"><span>if parsed_opts.legend: plt.legend()</span> </td>
+                      </tr><tr>
+                        <th>174</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>175</th><th> </th><td class="l"><span>plt.show()</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>19</th><td class="r"><span># EOF</span> </td>
+                      </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/806/mystic?format=diff&amp;new=806" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/806/mystic?format=zip&amp;new=806" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/806/mystic by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:55:49 GMT -->
+</html>

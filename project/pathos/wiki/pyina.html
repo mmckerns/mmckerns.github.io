@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/pathos/wiki/pyina by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 May 2016 18:05:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      pyina – Pathos
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/pathos/wiki/pyina?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/pathos_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/pathos_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Pathos" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/folding.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/pathos/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/projects/pathos/wiki.html"><img src="http://mmckerns.github.io/projects/pathos/pathos_banner.png" alt="PATHOS" height="150" width="350" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/pathos/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="pyina.html" title="View pyina">pyina</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://mmckerns.github.io/project/pathos/wiki/pyina?action=history">History</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          
+          <div class="trac-modifiedby"><a href="http://mmckerns.github.io/project/pathos/wiki/pyina?action=diff&amp;version=6" title="Version 6 by mmckerns: added link to github page">Last modified</a> <a class="timeline" href="http://mmckerns.github.io/project/pathos/timeline?from=2013-07-10T20%3A17%3A49-07%3A00&amp;precision=second" title="2013-07-10T20:17:49-07:00 in Timeline">3 years</a> ago</div>
+          <div id="wikipage"><br />
+<h1 style="color: brown">pyina: a MPI-based parallel mapper and launcher</h1>
+<br />
+||
+<a href="pyina/User_Guide.html">User Guide</a>
+||
+<a href="pyina/Installation.html">Download</a>
+||
+<a href="pyina/Tutorials.html">Tutorials</a>
+||
+<a href="http://docs.danse.us/pathos/current/pyina-module.html">Manual</a>
+||
+<a href="License.html">License</a>
+||
+<a href="Feedback.html">Feedback</a>
+||
+<hr />
+<h4 id="AboutPyina">About Pyina</h4>
+<p>
+The pyina package provides several basic tools to make MPI-based
+high-performance computing more accessable to the end user. The goal
+of pyina is to allow the user to extend their own code to MPI-based
+high-performance computing with minimal refactoring.
+</p>
+<p>
+The central element of pyina is the parallel map-reduce algorithm.
+Pyina currently provides two strategies for executing the parallel-map,
+where a strategy is the algorithm for distributing the work list of
+jobs across the availble nodes.  These strategies can be used "in-the-raw"
+(i.e. directly) to provide map-reduce to a user's own mpi-aware code.
+Further, pyina provides the "ez_map" interface, which is a map-reduce
+implementation that hides the MPI internals from the user. With ez_map,
+the user can launch their code in parallel batch mode -- using standard
+python and without ever having to write a line of parallel python or MPI code.
+</p>
+<p>
+There are several ways that a user would typically launch their code in
+parallel -- directly with "mpirun" or "mpiexec", or through the use of a
+scheduler such as torque or slurm. Pyina encapsulates several of these
+'launchers', and provides a common interface to the different methods of
+launching a MPI job.
+</p>
+<p>
+Pyina is part of <a class="wiki" href="WikiStart.html">pathos</a>, a python framework for heterogenous computing.
+Pyina is in the early development stages, and any user feedback is
+highly appreciated. Contact Mike McKerns [mmckerns at caltech dot edu]
+with comments, suggestions, and any bugs you may find. A list of known
+issues is maintained at <a href="../query.html">http://mmckerns.github.io/project/pathos/query</a>.
+</p>
+<hr />
+
+<h4 id="MajorFeatures">Major Features</h4>
+<p>
+Pyina provides a highly configurable parallel map-reduce interface
+to running MPI jobs, with::
+</p>
+<ul><li>a map-reduce interface that extends the python 'map' standard
+</li><li>the ability to submit batch jobs to a selection of schedulers
+</li><li>the ability to customize node and process launch configurations
+</li><li>the ability to launch parallel MPI jobs with standard python
+</li><li>ease in selecting different strategies for processing a work list
+</li></ul><hr />
+<h4 id="CurrentRelease">Current Release</h4>
+<p>
+This release version is <a class="closed milestone" href="../milestone/pathos-0.html">pyina-0.1a1</a>. You can download it <a class="wiki" href="pyina/Installation.html">here</a>.<br />
+The latest released version of pyina is available from::
+</p>
+<blockquote>
+<p>
+<a href="http://mmckerns.github.io/project/pathos">http://mmckerns.github.io/project/pathos</a>
+</p>
+</blockquote>
+<p>
+Pyina is distributed under a modified BSD <a class="wiki" href="License.html">license</a>.
+</p>
+<hr />
+<h4 id="DevelopmentRelease">Development Release</h4>
+<p>
+If you like living on the edge, and don't mind the promise of a little instability, <br />
+you can get the latest development release with all the shiny new features at::
+</p>
+<blockquote>
+<p>
+<a class="ext-link" href="http://dev.danse.us/packages"><span class="icon"> </span>http://dev.danse.us/packages</a>.
+</p>
+</blockquote>
+<p>
+or even better, fork us on our github mirror of the svn trunk::
+</p>
+<blockquote>
+<p>
+<a class="ext-link" href="https://github.com/uqfoundation"><span class="icon"> </span>https://github.com/uqfoundation</a>
+</p>
+</blockquote>
+<hr />
+<h4 id="Citation">Citation</h4>
+<p>
+If you use pyina to do research that leads to publication, we ask that you <br />
+acknowledge use of pyina by citing the following in your publication::
+</p>
+<pre class="wiki">    M.M. McKerns, L. Strand, T. Sullivan, A. Fang, M.A.G. Aivazis,
+    "Building a framework for predictive science", Proceedings of
+    the 10th Python in Science Conference, 2011;
+    http://arxiv.org/pdf/1202.1056
+
+    Michael McKerns and Michael Aivazis,
+    "pathos: a framework for heterogeneous computing", 2010- ;
+    http://mmckerns.github.io/project/pathos
+</pre><hr />
+<h4 id="MoreInformation">More Information</h4>
+<p>
+Probably the best way to get started is to look at a few of the
+examples provided within pyina. See <tt>pyina.examples</tt> for a
+set of scripts that demonstrate the configuration and launching of
+mpi-based parallel jobs using the <tt>ez_map</tt> interface. Also see
+<tt>pyina.examples_other</tt> for a set of scripts that test the more raw
+internals of pyina. The source code is also generally well documented,
+so further questions may be resolved by <a class="source" href="../browser/pyina.html">inspecting the code</a> itself, or through 
+browsing the <a class="ext-link" href="http://docs.danse.us/pathos/current/pyina-module.html"><span class="icon"> </span>reference manual</a>. For those who like to leap before
+they look, you can jump right to the <a class="wiki" href="pyina/Installation.html">installation instructions</a>. If the aforementioned documents
+do not adequately address your needs, please <a class="wiki" href="Feedback.html">send us feedback</a>.
+</p>
+<p>
+Pyina is an active research tool. There are a growing number of <a class="wiki" href="Publications.html">publications and presentations</a> that
+discuss real-world examples and new features of pyina in greater detail than presented in the <a class="wiki" href="User_Guide.html">user's guide</a>. 
+If you would like to share how you use pyina in your work, please <a class="wiki" href="Feedback.html">send us a link</a>.
+</p>
+</div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/pathos/wiki/pyina?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/pathos/wiki/pyina by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 May 2016 18:05:24 GMT -->
+</html>

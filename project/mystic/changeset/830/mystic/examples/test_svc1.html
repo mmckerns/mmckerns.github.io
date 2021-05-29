@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/830/mystic/examples/test_svc1.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:16 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 830 for mystic/examples/test_svc1.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/830/mystic/examples/test_svc1.py?format=diff&amp;new=830" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/830/mystic/examples/test_svc1.py?format=zip&amp;new=830" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../835/mystic/examples/test_svc1.html" title="Changeset 835 for mystic/examples/test_svc1.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../827/mystic/examples/test_svc1.html" title="Changeset 827 for mystic/examples/test_svc1.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../827/mystic/examples/test_svc1.html" title="Changeset 827 for mystic/examples/test_svc1.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../835/mystic/examples/test_svc1.html" title="Changeset 835 for mystic/examples/test_svc1.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../830.html">830</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svc1.py?rev=830">mystic/examples/test_svc1.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             09/19/15 11:26:58
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-09-19T11%3A26%3A58-07%3A00&amp;precision=second" title="2015-09-19T11:26:58-07:00 in Timeline">8 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+cleaning and documentation for SVR and SVC examples; rename <a class="missing wiki">StandardLinearKernel?</a><br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svc1.py?rev=830">
+              mystic/examples/test_svc1.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">5 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="test_svc1.html" title="Show the changeset 830 restricted to mystic/examples/test_svc1.py">mystic/examples/test_svc1.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 827">
+                    <a title="Show revision 827 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svc1.py?rev=827#L14">
+                      r827</a>
+                  </th>
+                  <th title="Revision 830">
+                    <a title="Show revision 830 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svc1.py?rev=830#L14">
+                      r830</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>14</th><th>14</th><td class="l"><span>from mystic.svctools import *</span> </td>
+                  </tr><tr>
+                          <th>15</th><th>15</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>16</th><th> </th><td class="l"><span># a common objective function for solving a QP problem</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span># (see http://www.mathworks.com/help/optim/ug/quadprog.html)</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>def objective(x, H, f):</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; return 0.5 * dot(dot(x,H),x) + dot(f,x)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>16</th><td class="r"><span># define the objective function to match standard QP solver</span> </td>
+                      </tr><tr>
+                        <th> </th><th>17</th><td class="r"><span># (see: http://www.mathworks.com/help/optim/ug/quadprog.html)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>18</th><td class="r"><span># the objective funciton is very similar to the dual for SVC</span> </td>
+                      </tr><tr>
+                        <th> </th><th>19</th><td class="r"><span># (see: http://scikit-learn.org/stable/modules/svm.html#svc)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span>def objective(x, Q, b):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>21</th><td class="r"><span>&nbsp; &nbsp; return 0.5 * dot(dot(x,Q),x) + dot(b,x)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>22</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>23</th><td class="r"><ins># define the data points for each class</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>21</th><th>24</th><td class="l"><span>c1 = array([[0., 0.],[1., 0.],[ 0.2, 0.2],[0.,1.]])</span> </td>
+                  </tr><tr>
+                          <th>22</th><th>25</th><td class="l"><span>c2 = array([[0, 1.1], [1.1, 0.],[0, 1.5],[0.5,1.2],[0.8, 1.7]])</span> </td>
+                  </tr><tr>
+                          <th>23</th><th>26</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>24</th><th> </th><td class="l"><span># the Kernel Matrix (with the linear kernel)</span> </td>
+                      </tr><tr>
+                        <th>25</th><th> </th><td class="l"><span># Q = multiply.outer(X,X)&nbsp; &nbsp;# NOTE: requires X is a list of scalars</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>27</th><td class="r"><span># define the full data set</span> </td>
+                      </tr><tr>
+                        <th> </th><th>28</th><td class="r"><span>X = concatenate([c1,c2]); nx = X.shape[0]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>29</th><td class="r"><span># define the labels (+1 for c1; -1 for c2)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>30</th><td class="r"><span>y = concatenate([ones(c1.shape[0]), -ones(c2.shape[0])]).reshape(1,nx)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>26</th><th>31</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>32</th><td class="r"><ins># build the Kernel Matrix (with the linear kernel)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>33</th><td class="r"><ins># get the QP quadratic and linear terms</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>27</th><th>34</th><td class="l"><span>XX = concatenate([c1,-c2])</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>28</th><th> </th><td class="l"><span>nx = XX.shape[0]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>35</th><td class="r"><span>Q = KernelMatrix(XX)&nbsp; # Q_ij = K(x_i, x_j)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>36</th><td class="r"><span>b = -ones(nx)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# b_i = 1&nbsp; (in dual)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>37</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>30</th><th> </th><td class="l"><span># quadratic and linear terms of QP</span> </td>
+                      </tr><tr>
+                        <th>31</th><th> </th><td class="l"><span>Q = KernelMatrix(XX)</span> </td>
+                      </tr><tr>
+                        <th>32</th><th> </th><td class="l"><span>b = -1 * ones(nx)</span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span>H = Q</span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>f = b</span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span>Aeq = concatenate([ones(c1.shape[0]), -ones(c2.shape[0])]).reshape(1,nx)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>38</th><td class="r"><span># build the constraints (y.T * x = 0.0)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>39</th><td class="r"><span># 1.0*x0 + 1.0*x1 + ... - 1.0*xN = 0.0</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>40</th><td class="r"><span>Aeq = y</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>37</th><th>41</th><td class="l"><span>Beq = array([0.])</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>42</th><td class="r"><ins># set the bounds</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>38</th><th>43</th><td class="l"><span>lb = zeros(nx)</span> </td>
+                  </tr><tr>
+                          <th>39</th><th>44</th><td class="l"><span>ub = 99999 * ones(nx)</span> </td>
+                  </tr><tr>
+                          <th>40</th><th>45</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>46</th><td class="r"><ins># build the constraints operator</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>41</th><th>47</th><td class="l"><span>from mystic.symbolic import linear_symbolic, solve, \</span> </td>
+                  </tr><tr>
+                          <th>42</th><th>48</th><td class="l"><span>&nbsp; &nbsp; &nbsp;generate_solvers as solvers, generate_constraint as constraint</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svc1.py?rev=827#L52">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svc1.py?rev=830#L58">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>58</th><td class="l"><span>#mon = VerboseMonitor(1)</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>59</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>60</th><td class="r"><ins># solve the dual for alpha</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>61</th><td class="l"><span>from mystic.solvers import diffev</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>55</th><th> </th><td class="l"><span>alpha = diffev(objective, zip(lb,ub), args=(<del>H,f</del>), npop=nx*3, gtol=200, \</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>62</th><td class="r"><span>alpha = diffev(objective, zip(lb,ub), args=(<ins>Q,b</ins>), npop=nx*3, gtol=200, \</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>63</th><td class="l"><span>#&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; itermon=mon, \</span> </td>
+                  </tr><tr>
+                          <th>57</th><th>64</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ftol=1e-8, bounds=zip(lb,ub), constraints=conserve, disp=1)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svc1.py?rev=827#L59">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svc1.py?rev=830#L66">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>59</th><th>66</th><td class="l"><span>print 'solved x: ', alpha</span> </td>
+                  </tr><tr>
+                          <th>60</th><th>67</th><td class="l"><span>print "constraint A*x == 0: ", inner(Aeq, alpha)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>61</th><th> </th><td class="l"><span>print "minimum 0.5*x'<del>Hx + f'*x: ", objective(alpha, H, f</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>68</th><td class="r"><span>print "minimum 0.5*x'<ins>Qx + b'*x: ", objective(alpha, Q, b</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>62</th><th>69</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>63</th><th> </th><td class="l"><span># the labels and the points</span> </td>
+                      </tr><tr>
+                        <th>64</th><th> </th><td class="l"><span>X = concatenate([c1,c2])</span> </td>
+                      </tr><tr>
+                        <th>65</th><th> </th><td class="l"><span>y = concatenate([ones(c1.shape[0]), -ones(c2.shape[0])]).reshape(1,nx)</span> </td>
+                      </tr><tr>
+                        <th>66</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>70</th><td class="r"><span># calculate weight vectors, support vectors, and bias</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>67</th><th>71</th><td class="l"><span>wv = WeightVector(alpha, X, y)</span> </td>
+                  </tr><tr>
+                          <th>68</th><th>72</th><td class="l"><span>sv1, sv2 = SupportVectors(alpha,y,eps=1e-6)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svc1.py?rev=827#L80">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svc1.py?rev=830#L84">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>80</th><th>84</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>81</th><th>85</th><td class="l"><span># plot data</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>82</th><th> </th><td class="l"><span>pylab.plot(c1[:,0], c1[:,1], 'bo'<del></del>)</span> </td>
+                      </tr><tr>
+                        <th>83</th><th> </th><td class="l"><span>pylab.plot(c2[:,0], c2[:,1], 'yo'<del></del>)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>86</th><td class="r"><span>pylab.plot(c1[:,0], c1[:,1], 'bo'<ins>, markersize=5</ins>)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>87</th><td class="r"><span>pylab.plot(c2[:,0], c2[:,1], 'yo'<ins>, markersize=5</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>84</th><th>88</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>85</th><th>89</th><td class="l"><span># plot hyperplane: wv[0] x + wv[1] y + bias = 0</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svc1.py?rev=827#L89">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svc1.py?rev=830#L93">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>89</th><th>93</th><td class="l"><span>pylab.plot(hx, hy, 'k-')</span> </td>
+                  </tr><tr>
+                          <th>90</th><th>94</th><td class="l"><span>#pylab.axis([xmin,xmax,ymin,ymax])</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>95</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>96</th><td class="r"><ins># plot the support points</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>97</th><td class="r"><ins>pylab.plot(XX[sv1,0], XX[sv1,1], 'bo', markersize=8)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>98</th><td class="r"><ins>pylab.plot(-XX[sv2,0], -XX[sv2,1], 'yo', markersize=8)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>99</th><td class="r"><ins>#pylab.axis('equal')</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>91</th><th>100</th><td class="l"><span>pylab.show()</span> </td>
+                  </tr><tr>
+                          <th>92</th><th>101</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/830/mystic/examples/test_svc1.py?format=diff&amp;new=830" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/830/mystic/examples/test_svc1.py?format=zip&amp;new=830" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/830/mystic/examples/test_svc1.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:16 GMT -->
+</html>

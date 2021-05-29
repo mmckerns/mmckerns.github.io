@@ -1,0 +1,2647 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/686 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:49:04 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 686 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="685.html" title="Changeset 685" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/686?format=diff&amp;new=686" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/686?format=zip&amp;new=686" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="687.html" title="Changeset 687" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="685.html" title="Changeset 685">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="687.html" title="Changeset 687">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 686</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             06/11/13 17:59:35
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-06-11T17%3A59%3A35-07%3A00&amp;precision=second" title="2013-06-11T17:59:35-07:00 in Timeline">3 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+fix: symbolic now recognizes x0 as parameter and first default<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=686">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>5 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/measures.py?rev=686">
+              _math/measures.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686">
+              mystic/_symbolic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">34 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686">
+              mystic/symbolic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">21 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic.py?rev=686">
+              tests/test_symbolic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic_basic.py?rev=686">
+              tests/test_symbolic_basic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">2 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="686/mystic/_math/measures.html" title="Show the changeset 686 restricted to mystic/_math/measures.py">mystic/_math/measures.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 646">
+                    <a title="Show revision 646 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/measures.py?rev=646#L338">
+                      r646</a>
+                  </th>
+                  <th title="Revision 686">
+                    <a title="Show revision 686 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/measures.py?rev=686#L338">
+                      r686</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>338</th><th>338</th><td class="l"><span>&nbsp; &nbsp; inequality = ""; equality = ""; equality2 = ""</span> </td>
+                  </tr><tr>
+                          <th>339</th><th>339</th><td class="l"><span>&nbsp; &nbsp; for i in range(ndim):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>340</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; inequality += "x%s &gt;= 0.0\n" % (i<del>+1</del>) # positive</span> </td>
+                      </tr><tr>
+                        <th>341</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; equality += "x%s + " % (i<del>+1</del>)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# normalized</span> </td>
+                      </tr><tr>
+                        <th>342</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; equality2 += "%s * x%s + " % (float(samples[i]),(i<del>+1</del>)) # mean</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>340</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; inequality += "x%s &gt;= 0.0\n" % (i<ins></ins>) # positive</span> </td>
+                      </tr><tr>
+                        <th> </th><th>341</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; equality += "x%s + " % (i<ins></ins>)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# normalized</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>342</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; equality2 += "%s * x%s + " % (float(samples[i]),(i<ins></ins>)) # mean</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>343</th><th>343</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>344</th><th>344</th><td class="l"><span>&nbsp; &nbsp; equality += "0.0 = %s\n" % float(norm)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/measures.py?rev=646#L383">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/measures.py?rev=686#L383">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>383</th><th>383</th><td class="l"><span>&nbsp; &nbsp; equality = ""; equality2 = ""; equality3 = ""</span> </td>
+                  </tr><tr>
+                          <th>384</th><th>384</th><td class="l"><span>&nbsp; &nbsp; for i in range(ndim):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>385</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; inequality += "x%s &gt;= 0.0\n" % (i<del>+1</del>) # positive</span> </td>
+                      </tr><tr>
+                        <th>386</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; equality += "x%s + " % (i<del>+1</del>)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# normalized</span> </td>
+                      </tr><tr>
+                        <th>387</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; equality2 += "%s * x%s + " % (float(samples[i]),(i<del>+1</del>)) # mean</span> </td>
+                      </tr><tr>
+                        <th>388</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; equality3 += "x%s*(%s-%s)**2 + " % ((i<del>+1</del>),float(samples[i]),m) # var</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>385</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; inequality += "x%s &gt;= 0.0\n" % (i<ins></ins>) # positive</span> </td>
+                      </tr><tr>
+                        <th> </th><th>386</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; equality += "x%s + " % (i<ins></ins>)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;# normalized</span> </td>
+                      </tr><tr>
+                        <th> </th><th>387</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; equality2 += "%s * x%s + " % (float(samples[i]),(i<ins></ins>)) # mean</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>388</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; equality3 += "x%s*(%s-%s)**2 + " % ((i<ins></ins>),float(samples[i]),m) # var</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>389</th><th>389</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>390</th><th>390</th><td class="l"><span>&nbsp; &nbsp; equality += "0.0 = %s\n" % float(norm)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="686/mystic/mystic/_symbolic.html" title="Show the changeset 686 restricted to mystic/mystic/_symbolic.py">mystic/mystic/_symbolic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 645">
+                    <a title="Show revision 645 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L2">
+                      r645</a>
+                  </th>
+                  <th title="Revision 686">
+                    <a title="Show revision 686 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L2">
+                      r686</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>2</th><td class="l"><span># &gt;&gt;&gt; from sympy import Eq, Symbol</span> </td>
+                  </tr><tr>
+                          <th>3</th><th>3</th><td class="l"><span># &gt;&gt;&gt; from sympy import solve as symsol</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>4</th><td class="r"><ins># &gt;&gt;&gt; x0 = Symbol('x0')</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>5</th><td class="l"><span># &gt;&gt;&gt; x1 = Symbol('x1')</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>6</th><td class="l"><span># &gt;&gt;&gt; x2 = Symbol('x2')</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>6</th><th> </th><td class="l"><span># &gt;&gt;&gt; x3 = Symbol('x3')</span> </td>
+                      </tr><tr>
+                        <th>7</th><th> </th><td class="l"><span># &gt;&gt;&gt; eq1 = Eq(x2, x1 - 2.)</span> </td>
+                      </tr><tr>
+                        <th>8</th><th> </th><td class="l"><span># &gt;&gt;&gt; eq2 = Eq(x2, x3*2.)</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span># &gt;&gt;&gt; soln = symsol([eq2, eq1], [x1, x2, x3])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>7</th><td class="r"><span># &gt;&gt;&gt; eq1 = Eq(x1, x0 - 2.)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>8</th><td class="r"><span># &gt;&gt;&gt; eq2 = Eq(x1, x2*2.)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>9</th><td class="r"><span># &gt;&gt;&gt; soln = symsol([eq2, eq1], [x0, x1, x2])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>10</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>11</th><th>11</th><td class="l"><span>from mystic.tools import permutations</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L27">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L27">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>27</th><th>27</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>28</th><th>28</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>29</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1 = x5</del>**2</span> </td>
+                      </tr><tr>
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>3 = x4 + x5</del>'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>29</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0 = x4</ins>**2</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>30</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>2 = x3 + x4</ins>'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>31</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; _classify_variables(constraints, nvars=5)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; {'dependent':['x<del>1','x3'], 'independent':['x4','x5'], 'unconstrained':['x2</del>']}</span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''<del></del></span> </td>
+                      </tr><tr>
+                        <th>34</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1 = x5</del>**2</span> </td>
+                      </tr><tr>
+                        <th>35</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>5 - x4</del> = 0.</span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>5 - x1 = x3</del>'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>32</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; {'dependent':['x<ins>0','x2'], 'independent':['x3','x4'], 'unconstrained':['x1</ins>']}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>33</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>34</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0 = x4</ins>**2</span> </td>
+                      </tr><tr>
+                        <th> </th><th>35</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>4 - x3</ins> = 0.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>36</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>4 - x0 = x2</ins>'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>37</th><th>37</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; _classify_variables(constraints, nvars=5)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>38</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; {'dependent': ['x<del>1','x3','x5'], 'independent': ['x4'], 'unconstrained': ['x2</del>']}</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>38</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; {'dependent': ['x<ins>0','x2','x4'], 'independent': ['x3'], 'unconstrained': ['x1</ins>']}</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>39</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>40</th><th>40</th><td class="l"><span>Additional Inputs:</span> </td>
+                  </tr><tr>
+                          <th>41</th><th>41</th><td class="l"><span>&nbsp; &nbsp; nvars -- number of variables. Includes variables not explicitly</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; given by the constraint equations (e.g. 'x<del>2</del>' in the example above).</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>42</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; given by the constraint equations (e.g. 'x<ins>1</ins>' in the example above).</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>43</th><th>43</th><td class="l"><span>&nbsp; &nbsp; variables -- desired variable name. Default is 'x'. A list of variable</span> </td>
+                  </tr><tr>
+                          <th>44</th><th>44</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; name strings is also accepted for when desired variable names</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L52">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L52">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>52</th><td class="l"><span>&nbsp; &nbsp; #XXX: use solve? or first if not in form xi = ... ?</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>53</th><td class="l"><span>&nbsp; &nbsp; if list_or_tuple_or_ndarray(variables):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<del></del>: variables = variables[:nvars]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>54</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: variables = variables[:nvars]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>55</th><th>55</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints = replace_variables(constraints, variables)</span> </td>
+                  </tr><tr>
+                          <th>56</th><th>56</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = '$'</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L59">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L59">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>59</th><th>59</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = variables # varname used below instead of variables</span> </td>
+                  </tr><tr>
+                          <th>60</th><th>60</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; myvar = get_variables(constraints, variables)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>61</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>61</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<ins>&nbsp;+ 1</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>62</th><th>62</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: ndim = 0</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>63</th><th> </th><td class="l"><span>&nbsp; &nbsp; if nvars<del></del>: ndim = nvars</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>63</th><td class="r"><span>&nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: ndim = nvars</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>64</th><th>64</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>65</th><th>65</th><td class="l"><span>&nbsp; &nbsp; eqns = constraints.splitlines()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>66</th><th> </th><td class="l"><span>&nbsp; &nbsp; indices = range(<del>1, ndim+1</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>66</th><td class="r"><span>&nbsp; &nbsp; indices = range(<ins>ndim</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>67</th><th>67</th><td class="l"><span>&nbsp; &nbsp; dep = []</span> </td>
+                  </tr><tr>
+                          <th>68</th><th>68</th><td class="l"><span>&nbsp; &nbsp; indep = []</span> </td>
+                  </tr><tr>
+                          <th>69</th><th>69</th><td class="l"><span>&nbsp; &nbsp; for eqn in eqns: # find which variables are used</span> </td>
+                  </tr><tr>
+                          <th>70</th><th>70</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if eqn:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>71</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for var in range(<del>1, ndim+1</del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>71</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for var in range(<ins>ndim</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>72</th><th>72</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if indices.count(var) != 0:</span> </td>
+                  </tr><tr>
+                          <th>73</th><th>73</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if eqn.find(varname + str(var)) != -1:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L97">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L97">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>97</th><th>97</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dep.append(_dep[0])</span> </td>
+                  </tr><tr>
+                          <th>98</th><th>98</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indep.remove(_dep[0])</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>99</th><th> </th><td class="l"><span>&nbsp; &nbsp; #FIXME: 'equivalent' equations not ignored (e.g. x<del>3=x3; or x3=1, 2*x3</del>=2)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>99</th><td class="r"><span>&nbsp; &nbsp; #FIXME: 'equivalent' equations not ignored (e.g. x<ins>2=x2; or x2=1, 2*x2</ins>=2)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>100</th><th>100</th><td class="l"><span>&nbsp; &nbsp; """These are good:</span> </td>
+                  </tr><tr>
+                          <th>101</th><th>101</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>102</th><th> </th><td class="l"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1 = x5</del>**2</span> </td>
+                      </tr><tr>
+                        <th>103</th><th> </th><td class="l"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>3 - x5 - x4</del> = 0.'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>102</th><td class="r"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0 = x4</ins>**2</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>103</th><td class="r"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>2 - x4 - x3</ins> = 0.'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>104</th><th>104</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; _classify_variables(constraints, nvars=5)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>105</th><th> </th><td class="l"><span>&nbsp; &nbsp; {'dependent': ['x<del>1','x3'], 'independent': ['x4','x5'], 'unconstrained': ['x2</del>']}</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>105</th><td class="r"><span>&nbsp; &nbsp; {'dependent': ['x<ins>0','x2'], 'independent': ['x3','x4'], 'unconstrained': ['x1</ins>']}</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>106</th><th>106</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>107</th><th> </th><td class="l"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1 + x3</del> = 0.</span> </td>
+                      </tr><tr>
+                        <th>108</th><th> </th><td class="l"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1 + 2*x3</del> = 0.'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>107</th><td class="r"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0 + x2</ins> = 0.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>108</th><td class="r"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0 + 2*x2</ins> = 0.'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>109</th><th>109</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; _classify_variables(constraints, nvars=5)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>110</th><th> </th><td class="l"><span>&nbsp; &nbsp; {'dependent': ['x<del>1','x3'], 'independent': [], 'unconstrained': ['x2','x4','x5</del>']}</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>110</th><td class="r"><span>&nbsp; &nbsp; {'dependent': ['x<ins>0','x2'], 'independent': [], 'unconstrained': ['x1','x3','x4</ins>']}</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>111</th><th>111</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>112</th><th>112</th><td class="l"><span>&nbsp; &nbsp; This is a bug:</span> </td>
+                  </tr><tr>
+                          <th>113</th><th>113</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>114</th><th> </th><td class="l"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1 + x3</del> = 0.</span> </td>
+                      </tr><tr>
+                        <th>115</th><th> </th><td class="l"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;2*x<del>1 + 2*x3</del> = 0.'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>114</th><td class="r"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0 + x2</ins> = 0.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>115</th><td class="r"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;2*x<ins>0 + 2*x2</ins> = 0.'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>116</th><th>116</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; _classify_variables(constraints, nvars=5)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>117</th><th> </th><td class="l"><span>&nbsp; &nbsp; {'dependent': ['x<del>1','x3'], 'independent': [], 'unconstrained': ['x2','x4','x5</del>']}</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>117</th><td class="r"><span>&nbsp; &nbsp; {'dependent': ['x<ins>0','x2'], 'independent': [], 'unconstrained': ['x1','x3','x4</ins>']}</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>118</th><th>118</th><td class="l"><span>&nbsp; &nbsp; """ #XXX: should simplify first?</span> </td>
+                  </tr><tr>
+                          <th>119</th><th>119</th><td class="l"><span>&nbsp; &nbsp; dep.sort()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L121">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L121">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>121</th><th>121</th><td class="l"><span>&nbsp; &nbsp; # return the actual variable names (not the indicies)</span> </td>
+                  </tr><tr>
+                          <th>122</th><th>122</th><td class="l"><span>&nbsp; &nbsp; if varname == variables: # then was single variable</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>123</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; variables = [varname+str(i) for i in range(<del>1,ndim+1</del>)]</span> </td>
+                      </tr><tr>
+                        <th>124</th><th> </th><td class="l"><span>&nbsp; &nbsp; dep = [variables[i<del>-1</del>] for i in dep]</span> </td>
+                      </tr><tr>
+                        <th>125</th><th> </th><td class="l"><span>&nbsp; &nbsp; indep = [variables[i<del>-1</del>] for i in indep]</span> </td>
+                      </tr><tr>
+                        <th>126</th><th> </th><td class="l"><span>&nbsp; &nbsp; indices = [variables[i<del>-1</del>] for i in indices]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>123</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; variables = [varname+str(i) for i in range(<ins>ndim</ins>)]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>124</th><td class="r"><span>&nbsp; &nbsp; dep = [variables[i<ins></ins>] for i in dep]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>125</th><td class="r"><span>&nbsp; &nbsp; indep = [variables[i<ins></ins>] for i in indep]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>126</th><td class="r"><span>&nbsp; &nbsp; indices = [variables[i<ins></ins>] for i in indices]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>127</th><th>127</th><td class="l"><span>&nbsp; &nbsp; d = {'dependent':dep, 'independent':indep, 'unconstrained':indices}</span> </td>
+                  </tr><tr>
+                          <th>128</th><th>128</th><td class="l"><span>&nbsp; &nbsp; return d</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L143">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L143">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>143</th><th>143</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>144</th><th>144</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>145</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1 = x5</del>**2</span> </td>
+                      </tr><tr>
+                        <th>146</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>5 - x4</del> = 0.</span> </td>
+                      </tr><tr>
+                        <th>147</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>5 - x1 = x3</del>'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>145</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0 = x4</ins>**2</span> </td>
+                      </tr><tr>
+                        <th> </th><th>146</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>4 - x3</ins> = 0.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>147</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>4 - x0 = x2</ins>'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>148</th><th>148</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; code, lhs, rhs, vars, neqn = _prepare_sympy(constraints, nvars=5)</span> </td>
+                  </tr><tr>
+                          <th>149</th><th>149</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print code</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>150</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; x0=Symbol('x0')</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>150</th><th>151</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x1=Symbol('x1')</span> </td>
+                  </tr><tr>
+                          <th>151</th><th>152</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x2=Symbol('x2')</span> </td>
+                  </tr><tr>
+                          <th>152</th><th>153</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x3=Symbol('x3')</span> </td>
+                  </tr><tr>
+                          <th>153</th><th>154</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x4=Symbol('x4')</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>154</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; x5=Symbol('x5')</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>155</th><th>155</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; rand = Symbol('rand')</span> </td>
+                  </tr><tr>
+                          <th>156</th><th>156</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print lhs, rhs</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>157</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ['x<del>1 ', 'x5 - x4 ', 'x5 - x1 '] [' x5**2', ' 0.', ' x3</del>']</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>157</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ['x<ins>0 ', 'x4 - x3 ', 'x4 - x0 '] [' x4**2', ' 0.', ' x2</ins>']</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>158</th><th>158</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; print "%s in %s eqns" % (vars, neqn)&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>159</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>1,x2,x3,x4,x5</del>, in 3 eqns</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>159</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>0,x1,x2,x3,x4</ins>, in 3 eqns</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>160</th><th>160</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>161</th><th>161</th><td class="l"><span>Additional Inputs:</span> </td>
+                  </tr><tr>
+                          <th>162</th><th>162</th><td class="l"><span>&nbsp; &nbsp; nvars -- number of variables. Includes variables not explicitly</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>163</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; given by the constraint equations (e.g. 'x<del>2</del>' in the example above).</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>163</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; given by the constraint equations (e.g. 'x<ins>1</ins>' in the example above).</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>164</th><th>164</th><td class="l"><span>&nbsp; &nbsp; variables -- desired variable name. Default is 'x'. A list of variable</span> </td>
+                  </tr><tr>
+                          <th>165</th><th>165</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; name strings is also accepted for when desired variable names</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L171">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L171">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>171</th><th>171</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>172</th><th>172</th><td class="l"><span>&nbsp; &nbsp; from mystic.symbolic import replace_variables, get_variables</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>173</th><th> </th><td class="l"><span>&nbsp; &nbsp; #XXX: if constraints contain x<del>1,x2,x4 for 'x', should x3</del> be in code,xlist?</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>173</th><td class="r"><span>&nbsp; &nbsp; #XXX: if constraints contain x<ins>0,x1,x3 for 'x', should x2</ins> be in code,xlist?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>174</th><th>174</th><td class="l"><span>&nbsp; &nbsp; if list_or_tuple_or_ndarray(variables):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>175</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<del></del>: variables = variables[:nvars]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>175</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: variables = variables[:nvars]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>176</th><th>176</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints = replace_variables(constraints, variables, markers='_')</span> </td>
+                  </tr><tr>
+                          <th>177</th><th>177</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = '_'</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L180">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L180">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>180</th><th>180</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = variables # varname used below instead of variables</span> </td>
+                  </tr><tr>
+                          <th>181</th><th>181</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; myvar = get_variables(constraints, variables)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>182</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>182</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<ins>&nbsp;+ 1</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>183</th><th>183</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: ndim = 0</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>184</th><th> </th><td class="l"><span>&nbsp; &nbsp; if nvars<del></del>: ndim = nvars</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>184</th><td class="r"><span>&nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: ndim = nvars</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>185</th><th>185</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>186</th><th>186</th><td class="l"><span>&nbsp; &nbsp; # split constraints_str into lists of left hand sides and right hand sides</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L207">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L207">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>207</th><th>207</th><td class="l"><span>&nbsp; &nbsp; # First create list of x variables</span> </td>
+                  </tr><tr>
+                          <th>208</th><th>208</th><td class="l"><span>&nbsp; &nbsp; xlist = ""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>209</th><th> </th><td class="l"><span>&nbsp; &nbsp; for i in range(<del>1, ndim + 1</del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>209</th><td class="r"><span>&nbsp; &nbsp; for i in range(<ins>ndim</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>210</th><th>210</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; xn = varname + str(i)</span> </td>
+                  </tr><tr>
+                          <th>211</th><th>211</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; xlist += xn + ","</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L213">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L213">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>213</th><th>213</th><td class="l"><span>&nbsp; &nbsp; # Start constructing the code string</span> </td>
+                  </tr><tr>
+                          <th>214</th><th>214</th><td class="l"><span>&nbsp; &nbsp; code = ""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>215</th><th> </th><td class="l"><span>&nbsp; &nbsp; for i in range(<del>1, ndim + 1</del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>215</th><td class="r"><span>&nbsp; &nbsp; for i in range(<ins>ndim</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>216</th><th>216</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; xn = varname + str(i)</span> </td>
+                  </tr><tr>
+                          <th>217</th><th>217</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; code += xn + '=' + "Symbol('" + xn + "')\n"</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L231">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L231">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>231</th><th>231</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>232</th><th>232</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>233</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; equation = "x<del>2 - 3. = x1*x3</del>"</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>233</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; equation = "x<ins>1 - 3. = x0*x2</ins>"</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>234</th><th>234</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print _solve_single(equation)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>235</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>1 = -(3.0 - x2)/x3</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>235</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>0 = -(3.0 - x1)/x2</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>236</th><th>236</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>237</th><th>237</th><td class="l"><span>Additional Inputs:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L244">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L244">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>244</th><th>244</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>245</th><th>245</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>246</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; equation = "x<del>2 - 3. = x1*x3</del>"</span> </td>
+                      </tr><tr>
+                        <th>247</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print _solve_single(equation, target='x<del>2</del>')</span> </td>
+                      </tr><tr>
+                        <th>248</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>2 = 3.0 + x1*x3</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>246</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; equation = "x<ins>1 - 3. = x0*x2</ins>"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>247</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print _solve_single(equation, target='x<ins>1</ins>')</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>248</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>1 = 3.0 + x0*x2</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>249</th><th>249</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>250</th><th>250</th><td class="l"><span>Further Inputs:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L276">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L276">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>276</th><th>276</th><td class="l"><span>&nbsp; &nbsp; from mystic.symbolic import replace_variables, get_variables</span> </td>
+                  </tr><tr>
+                          <th>277</th><th>277</th><td class="l"><span>&nbsp; &nbsp; if list_or_tuple_or_ndarray(variables):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>278</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<del></del>: variables = variables[:nvars]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>278</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: variables = variables[:nvars]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>279</th><th>279</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints = replace_variables(constraint, variables, markers='_')</span> </td>
+                  </tr><tr>
+                          <th>280</th><th>280</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = '_'</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L287">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L287">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>287</th><th>287</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = variables # varname used below instead of variables</span> </td>
+                  </tr><tr>
+                          <th>288</th><th>288</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; myvar = get_variables(constraint, variables)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>289</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>289</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<ins>&nbsp;+ 1</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>290</th><th>290</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: ndim = 0</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>291</th><th> </th><td class="l"><span>&nbsp; &nbsp; if nvars<del></del>: ndim = nvars</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>291</th><td class="r"><span>&nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: ndim = nvars</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>292</th><th>292</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>293</th><th>293</th><td class="l"><span>&nbsp; &nbsp; # create function to replace "_" with original variables</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L295">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L295">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>295</th><th>295</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if list_or_tuple_or_ndarray(variables):</span> </td>
+                  </tr><tr>
+                          <th>296</th><th>296</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; vars = get_variables(mystring,'_')</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>297</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indices = [int(v.strip('_'))<del>-1</del> for v in vars]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>297</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indices = [int(v.strip('_'))<ins></ins> for v in vars]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>298</th><th>298</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in range(len(vars)):</span> </td>
+                  </tr><tr>
+                          <th>299</th><th>299</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mystring = mystring.replace(vars[i],variables[indices[i]])</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L343">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L343">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>343</th><th>343</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>344</th><th>344</th><td class="l"><span>&nbsp; &nbsp; ########################################################################</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>345</th><th> </th><td class="l"><span>&nbsp; &nbsp; # solve each xi: symsol(single_equation, [x<del>1,x2</del>,...,xi,...,xn])</span> </td>
+                      </tr><tr>
+                        <th>346</th><th> </th><td class="l"><span>&nbsp; &nbsp; # returns: {x<del>1: f(xn,...), x2: f(xn,...), ..., xn: f(...,x1</del>)}</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>345</th><td class="r"><span>&nbsp; &nbsp; # solve each xi: symsol(single_equation, [x<ins>0,x1</ins>,...,xi,...,xn])</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>346</th><td class="r"><span>&nbsp; &nbsp; # returns: {x<ins>0: f(xn,...), x1: f(xn,...), ..., xn: f(...,x0</ins>)}</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>347</th><th>347</th><td class="l"><span>&nbsp; &nbsp; if permute or not target: #XXX: the goal is solving *only one* equation</span> </td>
+                  </tr><tr>
+                          <th>348</th><th>348</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; code += '_xlist = %s\n' % ','.join(targeted)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L396">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L396">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>396</th><th>396</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>397</th><th>397</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>398</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1 - x3</del> = 2.</span> </td>
+                      </tr><tr>
+                        <th>399</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>3 = x4</del>*2.'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>398</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0 - x2</ins> = 2.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>399</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>2 = x3</ins>*2.'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>400</th><th>400</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print _solve_linear(constraints)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>401</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>3 = 2.0*x4</del></span> </td>
+                      </tr><tr>
+                        <th>402</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>1 = 2.0 + 2.0*x4</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>401</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>2 = 2.0*x3</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>402</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>0 = 2.0 + 2.0*x3</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>403</th><th>403</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>404</th><th>404</th><td class="l"><span>Additional Inputs:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L414">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L414">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>414</th><th>414</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>415</th><th>415</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>416</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1 - x3</del> = 2.</span> </td>
+                      </tr><tr>
+                        <th>417</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>3 = x4</del>*2.'''</span> </td>
+                      </tr><tr>
+                        <th>418</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print _solve_linear(constraints, target=['x<del>4','x3</del>'])</span> </td>
+                      </tr><tr>
+                        <th>419</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>4 = -1.0 + 0.5*x1</del></span> </td>
+                      </tr><tr>
+                        <th>420</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>3 = -2.0 + x1</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>416</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0 - x2</ins> = 2.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>417</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>2 = x3</ins>*2.'''</span> </td>
+                      </tr><tr>
+                        <th> </th><th>418</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print _solve_linear(constraints, target=['x<ins>3','x2</ins>'])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>419</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>3 = -1.0 + 0.5*x0</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>420</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>2 = -2.0 + x0</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>421</th><th>421</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>422</th><th>422</th><td class="l"><span>Further Inputs:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L442">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L442">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>442</th><th>442</th><td class="l"><span>&nbsp; &nbsp; from mystic.symbolic import replace_variables, get_variables</span> </td>
+                  </tr><tr>
+                          <th>443</th><th>443</th><td class="l"><span>&nbsp; &nbsp; if list_or_tuple_or_ndarray(variables):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>444</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<del></del>: variables = variables[:nvars]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>444</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: variables = variables[:nvars]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>445</th><th>445</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; _constraints = replace_variables(constraints, variables, '_')</span> </td>
+                  </tr><tr>
+                          <th>446</th><th>446</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = '_'</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L453">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L453">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>453</th><th>453</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = variables # varname used below instead of variables</span> </td>
+                  </tr><tr>
+                          <th>454</th><th>454</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; myvar = get_variables(constraints, variables)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>455</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>455</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<ins>&nbsp;+ 1</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>456</th><th>456</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: ndim = 0</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>457</th><th> </th><td class="l"><span>&nbsp; &nbsp; if nvars<del></del>: ndim = nvars</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>457</th><td class="r"><span>&nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: ndim = nvars</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>458</th><th>458</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>459</th><th>459</th><td class="l"><span>&nbsp; &nbsp; # create function to replace "_" with original variables</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L461">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L461">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>461</th><th>461</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if list_or_tuple_or_ndarray(variables):</span> </td>
+                  </tr><tr>
+                          <th>462</th><th>462</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; vars = get_variables(mystring,'_')</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>463</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indices = [int(v.strip('_'))<del>-1</del> for v in vars]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>463</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indices = [int(v.strip('_'))<ins></ins> for v in vars]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>464</th><th>464</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in range(len(vars)):</span> </td>
+                  </tr><tr>
+                          <th>465</th><th>465</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mystring = mystring.replace(vars[i],variables[indices[i]])</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L524">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L524">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>524</th><th>524</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; _code = code</span> </td>
+                  </tr><tr>
+                          <th>525</th><th>525</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; xlist = ','.join(perm).rstrip(',') #XXX: if not all, use target ?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>526</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # solve dependent xi: symsol([linear_system], [x<del>1,x2</del>,...,xi,...,xn])</span> </td>
+                      </tr><tr>
+                        <th>527</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # returns: {x<del>1: f(xn,...), x2</del>: f(xn,...), ...}</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>526</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # solve dependent xi: symsol([linear_system], [x<ins>0,x1</ins>,...,xi,...,xn])</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>527</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # returns: {x<ins>0: f(xn,...), x1</ins>: f(xn,...), ...}</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>528</th><th>528</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; _code += 'soln = symsol([' + eqlist + '], [' + xlist + '])'</span> </td>
+                  </tr><tr>
+                          <th>529</th><th>529</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if verbose: print _code</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L587">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L587">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>587</th><th>587</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>588</th><th>588</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>589</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1 - x3</del> = 2.</span> </td>
+                      </tr><tr>
+                        <th>590</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>3 = x4</del>*2.'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>589</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0 - x2</ins> = 2.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>590</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>2 = x3</ins>*2.'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>591</th><th>591</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print solve(constraints)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>592</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>3 = 2.0*x4</del></span> </td>
+                      </tr><tr>
+                        <th>593</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>1 = 2.0 + 2.0*x4</del></span> </td>
+                      </tr><tr>
+                        <th>594</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''<del></del></span> </td>
+                      </tr><tr>
+                        <th>595</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;spread([x<del>1,x2]) - 1.0 = mean([x1,x2</del>])&nbsp; &nbsp;</span> </td>
+                      </tr><tr>
+                        <th>596</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;mean([x<del>1,x2,x3]) = x3</del>'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>592</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>2 = 2.0*x3</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>593</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>0 = 2.0 + 2.0*x3</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>594</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>595</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;spread([x<ins>0,x1]) - 1.0 = mean([x0,x1</ins>])&nbsp; &nbsp;</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>596</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;mean([x<ins>0,x1,x2]) = x2</ins>'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>597</th><th>597</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print solve(constraints)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>598</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>1 = -0.5 + 0.5*x3</del></span> </td>
+                      </tr><tr>
+                        <th>599</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>2 = 0.5 + 1.5*x3</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>598</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>0 = -0.5 + 0.5*x2</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>599</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>1 = 0.5 + 1.5*x2</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>600</th><th>600</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>601</th><th>601</th><td class="l"><span>Additional Inputs:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L611">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L611">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>611</th><th>611</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>612</th><th>612</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>613</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1 - x3</del> = 2.</span> </td>
+                      </tr><tr>
+                        <th>614</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>3 = x4</del>*2.'''</span> </td>
+                      </tr><tr>
+                        <th>615</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print solve(constraints, target=['x<del>4','x3</del>'])</span> </td>
+                      </tr><tr>
+                        <th>616</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>4 = -1.0 + 0.5*x1</del></span> </td>
+                      </tr><tr>
+                        <th>617</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>3 = -2.0 + x1</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>613</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0 - x2</ins> = 2.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>614</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>2 = x3</ins>*2.'''</span> </td>
+                      </tr><tr>
+                        <th> </th><th>615</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print solve(constraints, target=['x<ins>3','x2</ins>'])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>616</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>3 = -1.0 + 0.5*x0</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>617</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>2 = -2.0 + x0</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>618</th><th>618</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>619</th><th>619</th><td class="l"><span>Further Inputs:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L651">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L651">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>651</th><th>651</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>652</th><th>652</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>653</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''x<del>2 = x4*3. + x1*x3</del>'''</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>653</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''x<ins>1 = x3*3. + x0*x2</ins>'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>654</th><th>654</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print _solve_nonlinear(constraints)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>655</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>1 = (x2 - 3.0*x4)/x3</del></span> </td>
+                      </tr><tr>
+                        <th>656</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''<del></del></span> </td>
+                      </tr><tr>
+                        <th>657</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;spread([x<del>1,x2]) - 1.0 = mean([x1,x2</del>])&nbsp; &nbsp;</span> </td>
+                      </tr><tr>
+                        <th>658</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;mean([x<del>1,x2,x3]) = x3</del>'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>655</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>0 = (x1 - 3.0*x3)/x2</ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>656</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>657</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;spread([x<ins>0,x1]) - 1.0 = mean([x0,x1</ins>])&nbsp; &nbsp;</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>658</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;mean([x<ins>0,x1,x2]) = x2</ins>'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>659</th><th>659</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print _solve_nonlinear(constraints)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>660</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>1 = -0.5 + 0.5*x3</del></span> </td>
+                      </tr><tr>
+                        <th>661</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>2 = 0.5 + 1.5*x3</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>660</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>0 = -0.5 + 0.5*x2</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>661</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>1 = 0.5 + 1.5*x2</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>662</th><th>662</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>663</th><th>663</th><td class="l"><span>Additional Inputs:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L673">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L673">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>673</th><th>673</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>674</th><th>674</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>675</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;spread([x<del>1,x2]) - 1.0 = mean([x1,x2</del>])&nbsp; &nbsp;</span> </td>
+                      </tr><tr>
+                        <th>676</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;mean([x<del>1,x2,x3]) = x3</del>'''</span> </td>
+                      </tr><tr>
+                        <th>677</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print _solve_nonlinear(constraints, target=['x<del>2</del>'])</span> </td>
+                      </tr><tr>
+                        <th>678</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>2 = -0.833333333333333 + 0.166666666666667*x3</del></span> </td>
+                      </tr><tr>
+                        <th>679</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<del>1 = -0.5 + 0.5*x3</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>675</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;spread([x<ins>0,x1]) - 1.0 = mean([x0,x1</ins>])&nbsp; &nbsp;</span> </td>
+                      </tr><tr>
+                        <th> </th><th>676</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;mean([x<ins>0,x1,x2]) = x2</ins>'''</span> </td>
+                      </tr><tr>
+                        <th> </th><th>677</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print _solve_nonlinear(constraints, target=['x<ins>1</ins>'])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>678</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>1 = -0.833333333333333 + 0.166666666666667*x2</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>679</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x<ins>0 = -0.5 + 0.5*x2</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>680</th><th>680</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>681</th><th>681</th><td class="l"><span>Further Inputs:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L701">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L701">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>701</th><th>701</th><td class="l"><span>&nbsp; &nbsp; from mystic.symbolic import replace_variables, get_variables</span> </td>
+                  </tr><tr>
+                          <th>702</th><th>702</th><td class="l"><span>&nbsp; &nbsp; if list_or_tuple_or_ndarray(variables):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>703</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<del></del>: variables = variables[:nvars]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>703</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: variables = variables[:nvars]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>704</th><th>704</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints = replace_variables(constraints, variables, '_')</span> </td>
+                  </tr><tr>
+                          <th>705</th><th>705</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = '_'</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L708">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L708">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>708</th><th>708</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = variables # varname used below instead of variables</span> </td>
+                  </tr><tr>
+                          <th>709</th><th>709</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; myvar = get_variables(constraints, variables)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>710</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>710</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<ins>&nbsp;+ 1</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>711</th><th>711</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: ndim = 0</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>712</th><th> </th><td class="l"><span>&nbsp; &nbsp; if nvars<del></del>: ndim = nvars</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>712</th><td class="r"><span>&nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: ndim = nvars</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>713</th><th>713</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>714</th><th>714</th><td class="l"><span>&nbsp; &nbsp; # create function to replace "_" with original variables</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L716">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L716">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>716</th><th>716</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if list_or_tuple_or_ndarray(variables):</span> </td>
+                  </tr><tr>
+                          <th>717</th><th>717</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; vars = get_variables(mystring,'_')</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>718</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indices = [int(v.strip('_'))<del>-1</del> for v in vars]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>718</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indices = [int(v.strip('_'))<ins></ins> for v in vars]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>719</th><th>719</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in range(len(vars)):</span> </td>
+                  </tr><tr>
+                          <th>720</th><th>720</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; mystring = mystring.replace(vars[i],variables[indices[i]])</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L734">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L734">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>734</th><th>734</th><td class="l"><span>&nbsp; &nbsp; neqns = len(actual_eqns)</span> </td>
+                  </tr><tr>
+                          <th>735</th><th>735</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>736</th><th> </th><td class="l"><span>&nbsp; &nbsp; xperms = [varname+str(i<del>+1</del>) for i in range(ndim)]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>736</th><td class="r"><span>&nbsp; &nbsp; xperms = [varname+str(i<ins></ins>) for i in range(ndim)]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>737</th><th>737</th><td class="l"><span>&nbsp; &nbsp; if target:</span> </td>
+                  </tr><tr>
+                          <th>738</th><th>738</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [target.remove(i) for i in target if i not in xperms]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L754">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L754">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>754</th><th>754</th><td class="l"><span>&nbsp; &nbsp; # look into reducing the number of repeats?</span> </td>
+                  </tr><tr>
+                          <th>755</th><th>755</th><td class="l"><span>&nbsp; &nbsp; for perm in xperms:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>756</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # Sort the list actual_eqns so any equation containing x<del>1</del> is first, etc.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>756</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # Sort the list actual_eqns so any equation containing x<ins>0</ins> is first, etc.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>757</th><th>757</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; sorted_eqns = []</span> </td>
+                  </tr><tr>
+                          <th>758</th><th>758</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; actual_eqns_copy = orig_eqns[:]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L774">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L774">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>774</th><th>774</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; tempusedvar.sort()</span> </td>
+                  </tr><tr>
+                          <th>775</th><th>775</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; nmissing = ndim - len(tempusedvar)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>776</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for m in range(<del>1, nmissing+1</del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>776</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; for m in range(<ins>nmissing</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>777</th><th>777</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; usedvars.append(varname + str(len(tempusedvar) + m))</span> </td>
+                  </tr><tr>
+                          <th>778</th><th>778</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=645#L819">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/_symbolic.py?rev=686#L819">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>819</th><th>819</th><td class="l"><span>&nbsp; &nbsp; if verbose:</span> </td>
+                  </tr><tr>
+                          <th>820</th><th>820</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; print _classify_variables(simplified, variables, ndim)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>821</th><th> </th><td class="l"><span>&nbsp; &nbsp; if permute: #FIXME: target='x<del>4,x2' may order correct, while 'x2,x4</del>' doesn't</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>821</th><td class="r"><span>&nbsp; &nbsp; if permute: #FIXME: target='x<ins>3,x1' may order correct, while 'x1,x3</ins>' doesn't</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>822</th><th>822</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; filter = []; results = []</span> </td>
+                  </tr><tr>
+                          <th>823</th><th>823</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for i in complete_list:</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="686/mystic/mystic/symbolic.html" title="Show the changeset 686 restricted to mystic/mystic/symbolic.py">mystic/mystic/symbolic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 645">
+                    <a title="Show revision 645 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L36">
+                      r645</a>
+                  </th>
+                  <th title="Revision 686">
+                    <a title="Show revision 686 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L36">
+                      r686</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>36</th><th>36</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; h = [5.]</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>37</th><td class="l"><span>&nbsp; &nbsp; &gt;&gt;&gt; print linear_symbolic(A,b,G,h)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>38</th><th> </th><td class="l"><span>&nbsp; &nbsp; 1.0*x<del>1 + 0.0*x2 + 0.0*x3</del> &lt;= 5.0</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; &nbsp; 3.0*x<del>1 + 4.0*x2 + 5.0*x3</del> = 0.0</span> </td>
+                      </tr><tr>
+                        <th>40</th><th> </th><td class="l"><span>&nbsp; &nbsp; 1.0*x<del>1 + 6.0*x2 + -9.0*x3</del> = 0.0</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>38</th><td class="r"><span>&nbsp; &nbsp; 1.0*x<ins>0 + 0.0*x1 + 0.0*x2</ins> &lt;= 5.0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>39</th><td class="r"><span>&nbsp; &nbsp; 3.0*x<ins>0 + 4.0*x1 + 5.0*x2</ins> = 0.0</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>40</th><td class="r"><span>&nbsp; &nbsp; 1.0*x<ins>0 + 6.0*x1 + -9.0*x2</ins> = 0.0</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>41</th><th>41</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>42</th><th>42</th><td class="l"><span>&nbsp; &nbsp; eqstring = ""</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L62">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L62">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>62</th><th>62</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Asum = ""</span> </td>
+                  </tr><tr>
+                          <th>63</th><th>63</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for j in range(ndim):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>64</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Asum += str(A[i][j]) + '*x' + str(j<del>+1</del>) + ' + '</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>64</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Asum += str(A[i][j]) + '*x' + str(j<ins></ins>) + ' + '</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>65</th><th>65</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; eqstring += Asum.rstrip(' + ') + ' = ' + str(b[i]) + '\n'</span> </td>
+                  </tr><tr>
+                          <th>66</th><th>66</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L87">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L87">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>87</th><th>87</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gsum = ""</span> </td>
+                  </tr><tr>
+                          <th>88</th><th>88</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for j in range(ndim):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>89</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gsum += str(G[i][j]) + '*x' + str(j<del>+1</del>) + ' + '</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>89</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Gsum += str(G[i][j]) + '*x' + str(j<ins></ins>) + ' + '</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>90</th><th>90</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ineqstring += Gsum.rstrip(' + ') + ' &lt;= ' + str(h[i]) + '\n'</span> </td>
+                  </tr><tr>
+                          <th>91</th><th>91</th><td class="l"><span>&nbsp; &nbsp; totalconstraints = ineqstring + eqstring</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L105">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L105">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>105</th><th>105</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; be replaced in the order that they are provided, where if the</span> </td>
+                  </tr><tr>
+                          <th>106</th><th>106</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; default marker "$i" is used, the first variable will be replaced</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>107</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; with "$<del>1", the second with "$2</del>", and so on.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>107</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; with "$<ins>0", the second with "$1</ins>", and so on.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>108</th><th>108</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>109</th><th>109</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L111">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L111">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>111</th><th>111</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''spam + eggs - 42'''</span> </td>
+                  </tr><tr>
+                          <th>112</th><th>112</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print replace_variables(constraints, variables, 'x')</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>113</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; 'x<del>1 + x2</del> - 42'</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>113</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; 'x<ins>0 + x1</ins> - 42'</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>114</th><th>114</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>115</th><th>115</th><td class="l"><span>Additional Inputs:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L131">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L131">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>131</th><th>131</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; equations = replace_variables(constraints,variables,'_')</span> </td>
+                  </tr><tr>
+                          <th>132</th><th>132</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; vars = get_variables(equations,'_')</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>133</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; indices = [int(v.strip('_'))<del>-1</del> for v in vars]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>133</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; indices = [int(v.strip('_'))<ins></ins> for v in vars]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>134</th><th>134</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for i in range(len(vars)):</span> </td>
+                  </tr><tr>
+                          <th>135</th><th>135</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; equations = equations.replace(vars[i],markers[indices[i]])</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L162">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L162">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>162</th><th>162</th><td class="l"><span>&nbsp; &nbsp; ''' #FIXME: don't parse if __name__ in __builtins__, globals, or locals?</span> </td>
+                  </tr><tr>
+                          <th>163</th><th>163</th><td class="l"><span>&nbsp; &nbsp; for i in indices: #FIXME: or better, use 're' pattern matching</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>164</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints = constraints.replace(variables[i], marker + str(i<del>+1</del>))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>164</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints = constraints.replace(variables[i], marker + str(i<ins></ins>))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>165</th><th>165</th><td class="l"><span>&nbsp; &nbsp; return constraints.replace(marker, markers)</span> </td>
+                  </tr><tr>
+                          <th>166</th><th>166</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L199">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L199">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>199</th><th>199</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; equations = replace_variables(constraints,variables,'_')</span> </td>
+                  </tr><tr>
+                          <th>200</th><th>200</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; vars = get_variables(equations,'_')</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>201</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; indices = [int(v.strip('_'))<del>-1</del> for v in vars]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>201</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; indices = [int(v.strip('_'))<ins></ins> for v in vars]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>202</th><th>202</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varnamelist = []</span> </td>
+                  </tr><tr>
+                          <th>203</th><th>203</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from numpy import sort</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L230">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L230">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>230</th><th>230</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>231</th><th>231</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>232</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>3 = x1</del>/2.</span> </td>
+                      </tr><tr>
+                        <th>233</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1</del> &gt;= 0.'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>232</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>2 = x0</ins>/2.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>233</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0</ins> &gt;= 0.'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>234</th><th>234</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; penalty_parser(constraints, nvars=3)</span> </td>
+                  </tr><tr>
+                          <th>235</th><th>235</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; (('-(x[0] - (0.))',), ('x[2] - (x[0]/2.)',))</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L246">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L246">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>246</th><th>246</th><td class="l"><span>&nbsp; &nbsp;#ndim = len(get_variables(src(func), variables))</span> </td>
+                  </tr><tr>
+                          <th>247</th><th>247</th><td class="l"><span>&nbsp; &nbsp; if list_or_tuple_or_ndarray(variables):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>248</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<del></del>: variables = variables[:nvars]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>248</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: variables = variables[:nvars]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>249</th><th>249</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints = replace_variables(constraints, variables)</span> </td>
+                  </tr><tr>
+                          <th>250</th><th>250</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = '$'</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L253">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L253">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>253</th><th>253</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = variables # varname used below instead of variables</span> </td>
+                  </tr><tr>
+                          <th>254</th><th>254</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; myvar = get_variables(constraints, variables)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>255</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>255</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<ins>&nbsp;+ 1</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>256</th><th>256</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: ndim = 0</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>257</th><th> </th><td class="l"><span>&nbsp; &nbsp; if nvars<del></del>: ndim = nvars</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>257</th><td class="r"><span>&nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: ndim = nvars</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>258</th><th>258</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>259</th><th>259</th><td class="l"><span>&nbsp; &nbsp; # Parse the constraints string</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L265">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L265">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>265</th><th>265</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fixed = line</span> </td>
+                  </tr><tr>
+                          <th>266</th><th>266</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Iterate in reverse in case ndim &gt; 9.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>267</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indices = list(range(<del>1, ndim+1</del>))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>267</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indices = list(range(<ins>ndim</ins>))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>268</th><th>268</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indices.reverse()</span> </td>
+                  </tr><tr>
+                          <th>269</th><th>269</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in indices:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>270</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fixed = fixed.replace(varname + str(i), 'x[' + str(i<del>-1</del>) + ']') </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>270</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fixed = fixed.replace(varname + str(i), 'x[' + str(i<ins></ins>) + ']') </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>271</th><th>271</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraint = fixed.strip()</span> </td>
+                  </tr><tr>
+                          <th>272</th><th>272</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L317">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L317">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>317</th><th>317</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>318</th><th>318</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>319</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>3 = x1</del>/2.</span> </td>
+                      </tr><tr>
+                        <th>320</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1</del> &gt;= 0.'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>319</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>2 = x0</ins>/2.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>320</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0</ins> &gt;= 0.'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>321</th><th>321</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints_parser(constraints, nvars=3)</span> </td>
+                  </tr><tr>
+                          <th>322</th><th>322</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ('x[2] = x[0]/2.', 'x[0] = max(0., x[0])')</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L333">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L333">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>333</th><th>333</th><td class="l"><span>&nbsp; &nbsp;#ndim = len(get_variables(src(func), variables))</span> </td>
+                  </tr><tr>
+                          <th>334</th><th>334</th><td class="l"><span>&nbsp; &nbsp; if list_or_tuple_or_ndarray(variables):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>335</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<del></del>: variables = variables[:nvars]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>335</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: variables = variables[:nvars]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>336</th><th>336</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints = replace_variables(constraints, variables)</span> </td>
+                  </tr><tr>
+                          <th>337</th><th>337</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = '$'</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L340">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L340">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>340</th><th>340</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; varname = variables # varname used below instead of variables</span> </td>
+                  </tr><tr>
+                          <th>341</th><th>341</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; myvar = get_variables(constraints, variables)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>342</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>342</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if myvar: ndim = max([int(v.strip(varname)) for v in myvar])<ins>&nbsp;+ 1</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>343</th><th>343</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: ndim = 0</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>344</th><th> </th><td class="l"><span>&nbsp; &nbsp; if nvars<del></del>: ndim = nvars</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>344</th><td class="r"><span>&nbsp; &nbsp; if nvars<ins>&nbsp;!= None</ins>: ndim = nvars</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>345</th><th>345</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>346</th><th>346</th><td class="l"><span>&nbsp; &nbsp; # Parse the constraints string</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L351">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L351">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>351</th><th>351</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fixed = line</span> </td>
+                  </tr><tr>
+                          <th>352</th><th>352</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Iterate in reverse in case ndim &gt; 9.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>353</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indices = list(range(<del>1, ndim+1</del>))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>353</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indices = list(range(<ins>ndim</ins>))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>354</th><th>354</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; indices.reverse()</span> </td>
+                  </tr><tr>
+                          <th>355</th><th>355</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in indices:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>356</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fixed = fixed.replace(varname + str(i), 'x[' + str(i<del>-1</del>) + ']') </span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>356</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; fixed = fixed.replace(varname + str(i), 'x[' + str(i<ins></ins>) + ']') </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>357</th><th>357</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; constraint = fixed.strip()</span> </td>
+                  </tr><tr>
+                          <th>358</th><th>358</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L418">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L418">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>418</th><th>418</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>419</th><th>419</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>420</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1**2 = 2.5*x4</del> - 5.0</span> </td>
+                      </tr><tr>
+                        <th>421</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;exp(x<del>3/x1</del>) &gt;= 7.0'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>420</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0**2 = 2.5*x3</ins> - 5.0</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>421</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;exp(x<ins>2/x0</ins>) &gt;= 7.0'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>422</th><th>422</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; ineqf,eqf = generate_conditions(constraints, nvars=4)</span> </td>
+                  </tr><tr>
+                          <th>423</th><th>423</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print ineqf[0].__doc__</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L490">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L490">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>490</th><th>490</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>491</th><th>491</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>492</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>3 = x1</del>/2.</span> </td>
+                      </tr><tr>
+                        <th>493</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1</del> &gt;= 0.'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>492</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>2 = x0</ins>/2.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>493</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0</ins> &gt;= 0.'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>494</th><th>494</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; solv = generate_solvers(constraints, nvars=3)</span> </td>
+                  </tr><tr>
+                          <th>495</th><th>495</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print solv[0].__doc__</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L564">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L564">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>564</th><th>564</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>565</th><th>565</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>566</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>3 = x1</del>/2.</span> </td>
+                      </tr><tr>
+                        <th>567</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1</del> &gt;= 0.'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>566</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>2 = x0</ins>/2.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>567</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0</ins> &gt;= 0.'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>568</th><th>568</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; ineqf,eqf = generate_conditions(constraints, nvars=3)</span> </td>
+                  </tr><tr>
+                          <th>569</th><th>569</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; penalty = generate_penalty((ineqf,eqf))</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L627">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L627">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>627</th><th>627</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>628</th><th>628</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>629</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1 = cos(x2</del>) + 2.</span> </td>
+                      </tr><tr>
+                        <th>630</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>2 = x3</del>*2.'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>629</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0 = cos(x1</ins>) + 2.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>630</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>1 = x2</ins>*2.'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>631</th><th>631</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; solv = generate_solvers(constraints)</span> </td>
+                  </tr><tr>
+                          <th>632</th><th>632</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraint = generate_constraint(solv)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=645#L640">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/symbolic.py?rev=686#L640">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>640</th><th>640</th><td class="l"><span>&nbsp; &nbsp; For example:</span> </td>
+                  </tr><tr>
+                          <th>641</th><th>641</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; constraints = '''</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>642</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>3 = x1</del>/2.</span> </td>
+                      </tr><tr>
+                        <th>643</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<del>1</del> &gt;= 0.'''</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>642</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>2 = x0</ins>/2.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>643</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;x<ins>0</ins> &gt;= 0.'''</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>644</th><th>644</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; solv = generate_solvers(constraints, nvars=3)</span> </td>
+                  </tr><tr>
+                          <th>645</th><th>645</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &gt;&gt;&gt; print solv[0].__doc__</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="686/mystic/tests/test_symbolic.html" title="Show the changeset 686 restricted to mystic/tests/test_symbolic.py">mystic/tests/test_symbolic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 645">
+                    <a title="Show revision 645 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic.py?rev=645#L6">
+                      r645</a>
+                  </th>
+                  <th title="Revision 686">
+                    <a title="Show revision 686 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic.py?rev=686#L6">
+                      r686</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>6</th><th>6</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>7</th><th>7</th><td class="l"><span>&nbsp; constraints = """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>8</th><th> </th><td class="l"><span>&nbsp; x<del>1**2 = 2.5*x4</del> - a</span> </td>
+                      </tr><tr>
+                        <th>9</th><th> </th><td class="l"><span>&nbsp; exp(x<del>3/x1</del>) &gt;= b"""</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>8</th><td class="r"><span>&nbsp; x<ins>0**2 = 2.5*x3</ins> - a</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>9</th><td class="r"><span>&nbsp; exp(x<ins>2/x0</ins>) &gt;= b"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>10</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>11</th><th>11</th><td class="l"><span>&nbsp; ineq,eq = generate_conditions(constraints, nvars=4, locals={'a':5.0, 'b':7.0})</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic.py?rev=645#L24">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic.py?rev=686#L24">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>24</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>25</th><th>25</th><td class="l"><span>&nbsp; constraints = """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; mean([x<del>1, x2, x3</del>]) = 5.0</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>&nbsp; x<del>1 = x2 + x3</del>"""</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>26</th><td class="r"><span>&nbsp; mean([x<ins>0, x1, x2</ins>]) = 5.0</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>27</th><td class="r"><span>&nbsp; x<ins>0 = x1 + x2</ins>"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>28</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>29</th><th>29</th><td class="l"><span>&nbsp; ineq,eq = generate_conditions(constraints)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic.py?rev=645#L41">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic.py?rev=686#L41">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>41</th><th>41</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>42</th><th>42</th><td class="l"><span>&nbsp; constraints = """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>43</th><th> </th><td class="l"><span>&nbsp; mean([x<del>1, x2, x3</del>]) = 5.0</span> </td>
+                      </tr><tr>
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; spread([x<del>1, x2, x3</del>]) = 10.0"""</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>43</th><td class="r"><span>&nbsp; mean([x<ins>0, x1, x2</ins>]) = 5.0</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>44</th><td class="r"><span>&nbsp; spread([x<ins>0, x1, x2</ins>]) = 10.0"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>45</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>46</th><th>46</th><td class="l"><span>&nbsp; from mystic.math.measures import mean, spread</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic.py?rev=645#L55">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic.py?rev=686#L55">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>55</th><th>55</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>56</th><th>56</th><td class="l"><span>&nbsp; constraints = """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>57</th><th> </th><td class="l"><span>&nbsp; spread([x<del>1,x2]) - 1.0 = mean([x1,x2</del>])&nbsp; &nbsp;</span> </td>
+                      </tr><tr>
+                        <th>58</th><th> </th><td class="l"><span>&nbsp; mean([x<del>1,x2,x3]) = x3</del>"""</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>57</th><td class="r"><span>&nbsp; spread([x<ins>0,x1]) - 1.0 = mean([x0,x1</ins>])&nbsp; &nbsp;</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>58</th><td class="r"><span>&nbsp; mean([x<ins>0,x1,x2]) = x2</ins>"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>59</th><th>59</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>60</th><th>60</th><td class="l"><span>&nbsp; from mystic.math.measures import mean, spread</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="686/mystic/tests/test_symbolic_basic.html" title="Show the changeset 686 restricted to mystic/tests/test_symbolic_basic.py">mystic/tests/test_symbolic_basic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 645">
+                    <a title="Show revision 645 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic_basic.py?rev=645#L73">
+                      r645</a>
+                  </th>
+                  <th title="Revision 686">
+                    <a title="Show revision 686 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic_basic.py?rev=686#L73">
+                      r686</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>73</th><th>73</th><td class="l"><span>&nbsp; &nbsp; # Test a nonlinear constraints example.</span> </td>
+                  </tr><tr>
+                          <th>74</th><th>74</th><td class="l"><span>&nbsp; &nbsp; string = """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>75</th><th> </th><td class="l"><span>&nbsp; &nbsp; x<del>2*x3</del> = 1.</span> </td>
+                      </tr><tr>
+                        <th>76</th><th> </th><td class="l"><span>&nbsp; &nbsp; x<del>3 = x1</del> - 3.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; &nbsp; x<ins>1*x2</ins> = 1.</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>76</th><td class="r"><span>&nbsp; &nbsp; x<ins>2 = x0</ins> - 3.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>77</th><th>77</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>78</th><th>78</th><td class="l"><span>&nbsp; &nbsp; print "building constraints function for:%s" % string.rstrip()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic_basic.py?rev=645#L136">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/test_symbolic_basic.py?rev=686#L136">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>136</th><th>136</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>137</th><th>137</th><td class="l"><span>def test_feasible_pt():</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>138</th><th> </th><td class="l"><span>&nbsp; &nbsp; constraints = """x<del>1 + x2 + x7 - 2*x4</del> &gt; 3"""</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>138</th><td class="r"><span>&nbsp; &nbsp; constraints = """x<ins>0 + x1 + x6 - 2*x3</ins> &gt; 3"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>139</th><th>139</th><td class="l"><span>&nbsp; &nbsp; soln = solve(constraints, guess=[1.]*8) #FIXME: either constraints.solve</span> </td>
+                  </tr><tr>
+                          <th>140</th><th>140</th><td class="l"><span>&nbsp; &nbsp; print 'actual solution:', soln, "\n"&nbsp; &nbsp; #&nbsp; &nbsp; &nbsp; &nbsp;or symbolic.solve ... ?</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/686?format=diff&amp;new=686" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/686?format=zip&amp;new=686" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/686 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:49:05 GMT -->
+</html>

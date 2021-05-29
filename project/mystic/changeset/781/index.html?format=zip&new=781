@@ -1,0 +1,771 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/781/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:26:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 781 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="prev" href="../780.html" title="Changeset 780" />
+        <link rel="last" href="../862.html" title="Changeset 862" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/781/?format=diff&amp;new=781" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/781/?format=zip&amp;new=781" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../782.html" title="Changeset 782" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="../1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+        <link rel="icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://trac.mystic.cacr.caltech.edu/"><img src="http://www.cacr.caltech.edu/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://trac.mystic.cacr.caltech.edu/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../780.html" title="Changeset 780">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="../782.html" title="Changeset 782">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 781</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             02/16/15 16:43:28
+             (<a class="timeline" href="http://trac.mystic.cacr.caltech.edu/project/mystic/timeline?from=2015-02-16T16%3A43%3A28-08%3A00&amp;precision=second" title="2015-02-16T16:43:28-08:00 in Timeline">15 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+rename _bootstrap_decorate to _bootstrap_objective;<br />
+fix: diffev solver should _process_inputs in Step;<br />
+fix: random_state uses <span class="underline">import</span> if importlib is not found<br />
+fix: sympy can't do ptp, so don't test spread<br />
+fix: tuples don't have 'index' in 2.5, so convert When to list in test<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic?rev=781">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>7 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=781">
+              mystic/abstract_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=781">
+              mystic/differential_evolution.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=781">
+              mystic/scipy_optimize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=781">
+              mystic/tools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_compound_termination.py?rev=781">
+              tests/test_compound_termination.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_symbolic.py?rev=781">
+              tests/test_symbolic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_symbolic_basic.py?rev=781">
+              tests/test_symbolic_basic.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="mystic/mystic/abstract_solver.html" title="Show the changeset 781 restricted to mystic/mystic/abstract_solver.py">mystic/mystic/abstract_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=776#L590">
+                      r776</a>
+                  </th>
+                  <th title="Revision 781">
+                    <a title="Show revision 781 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=781#L590">
+                      r781</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>590</th><th>590</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return cost</span> </td>
+                  </tr><tr>
+                          <th>591</th><th>591</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>592</th><th> </th><td class="l"><span>&nbsp; &nbsp; def _bootstrap_<del>decorat</del>e(self, cost=None, ExtraArgs=None):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>592</th><td class="r"><span>&nbsp; &nbsp; def _bootstrap_<ins>objectiv</ins>e(self, cost=None, ExtraArgs=None):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>593</th><th>593</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """HACK to enable not explicitly calling _RegisterObjective"""</span> </td>
+                  </tr><tr>
+                          <th>594</th><th>594</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; args = None</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=776#L696">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=781#L696">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>696</th><th>696</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>697</th><th>697</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _RegisterObjective</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>698</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_<del>decorat</del>e(cost, ExtraArgs)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>698</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_<ins>objectiv</ins>e(cost, ExtraArgs)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>699</th><th>699</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                  </tr><tr>
+                          <th>700</th><th>700</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = self._process_inputs(kwds)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="mystic/mystic/differential_evolution.html" title="Show the changeset 781 restricted to mystic/mystic/differential_evolution.py">mystic/mystic/differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=776#L220">
+                      r776</a>
+                  </th>
+                  <th title="Revision 781">
+                    <a title="Show revision 781 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=781#L220">
+                      r781</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>220</th><th>220</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Note that ExtraArgs should be a *tuple* of extra arguments"""</span> </td>
+                  </tr><tr>
+                          <th>221</th><th>221</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _RegisterObjective</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>222</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_decorate(cost, ExtraArgs)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>222</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>223</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                      </tr><tr>
+                        <th> </th><th>224</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; kwds['strategy'] = strategy&nbsp; # override default strategy with None</span> </td>
+                      </tr><tr>
+                        <th> </th><th>225</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = self._process_inputs(kwds)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>226</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; for key in settings:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>227</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exec "%s = settings['%s']" % (key,key)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>223</th><th>228</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>224</th><th>229</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not len(self._stepmon): # do generation = 0</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=776#L372">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=781#L377">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>372</th><th>377</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Note that ExtraArgs should be a *tuple* of extra arguments"""</span> </td>
+                  </tr><tr>
+                          <th>373</th><th>378</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _RegisterObjective</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>374</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_decorate(cost, ExtraArgs)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>379</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>380</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                      </tr><tr>
+                        <th> </th><th>381</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; kwds['strategy'] = strategy&nbsp; # override default strategy with None</span> </td>
+                      </tr><tr>
+                        <th> </th><th>382</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = self._process_inputs(kwds)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>383</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; for key in settings:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>384</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exec "%s = settings['%s']" % (key,key)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>375</th><th>385</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>376</th><th>386</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not len(self._stepmon): # do generation = 0</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="mystic/mystic/scipy_optimize.html" title="Show the changeset 781 restricted to mystic/mystic/scipy_optimize.py">mystic/mystic/scipy_optimize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=776#L145">
+                      r776</a>
+                  </th>
+                  <th title="Revision 781">
+                    <a title="Show revision 781 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=781#L145">
+                      r781</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>145</th><th>145</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Note that ExtraArgs should be a *tuple* of extra arguments"""</span> </td>
+                  </tr><tr>
+                          <th>146</th><th>146</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _RegisterObjective</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>147</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_<del>decorat</del>e(cost, ExtraArgs)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>147</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_<ins>objectiv</ins>e(cost, ExtraArgs)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>148</th><th>148</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                  </tr><tr>
+                          <th>149</th><th>149</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = self._process_inputs(kwds)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=776#L459">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=781#L459">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>459</th><th>459</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Note that ExtraArgs should be a *tuple* of extra arguments"""</span> </td>
+                  </tr><tr>
+                          <th>460</th><th>460</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _RegisterObjective</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>461</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_<del>decorat</del>e(cost, ExtraArgs)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>461</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_<ins>objectiv</ins>e(cost, ExtraArgs)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>462</th><th>462</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                  </tr><tr>
+                          <th>463</th><th>463</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = self._process_inputs(kwds)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="mystic/mystic/tools.html" title="Show the changeset 781 restricted to mystic/mystic/tools.py">mystic/mystic/tools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=776#L142">
+                      r776</a>
+                  </th>
+                  <th title="Revision 781">
+                    <a title="Show revision 781 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/tools.py?rev=781#L142">
+                      r781</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>142</th><th>142</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # convienence for passing in 'numpy'</span> </td>
+                  </tr><tr>
+                          <th>143</th><th>143</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if module == 'numpy': module = 'numpy.random'</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>144</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import importlib</span> </td>
+                      </tr><tr>
+                        <th>145</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; rng = importlib.import_module(module)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>144</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>145</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; import importlib</span> </td>
+                      </tr><tr>
+                        <th> </th><th>146</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rng = importlib.import_module(module)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>147</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; except ImportError:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>148</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rng = __import__(module, fromlist=module.split('.')[-1:])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>146</th><th>149</th><td class="l"><span>&nbsp; &nbsp; elif module.__name__ == 'numpy': # convienence for passing in numpy</span> </td>
+                  </tr><tr>
+                          <th>147</th><th>150</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from numpy import random as rng</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="mystic/tests/test_compound_termination.html" title="Show the changeset 781 restricted to mystic/tests/test_compound_termination.py">mystic/tests/test_compound_termination.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_compound_termination.py?rev=776#L69">
+                      r776</a>
+                  </th>
+                  <th title="Revision 781">
+                    <a title="Show revision 781 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_compound_termination.py?rev=781#L69">
+                      r781</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>69</th><th>69</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>70</th><th>70</th><td class="l"><span>&nbsp; &nbsp; assert len(_v) == len(_c) == len(_n) == 1</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>71</th><th> </th><td class="l"><span>&nbsp; &nbsp; assert <del>_v.index(v) == _c.index(c) == _n</del>.index(n) == 0</span> </td>
+                      </tr><tr>
+                        <th>72</th><th> </th><td class="l"><span>&nbsp; &nbsp; assert <del>_v.count(v) == _c.count(c) == _n</del>.count(n) == 1</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>71</th><td class="r"><span>&nbsp; &nbsp; assert <ins>list(_v).index(v) == list(_c).index(c) == list(_n)</ins>.index(n) == 0</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>72</th><td class="r"><span>&nbsp; &nbsp; assert <ins>list(_v).count(v) == list(_c).count(c) == list(_n)</ins>.count(n) == 1</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>73</th><th>73</th><td class="l"><span>&nbsp; &nbsp; assert v in _v and c in _c and n in _n</span> </td>
+                  </tr><tr>
+                          <th>74</th><th>74</th><td class="l"><span>&nbsp; &nbsp; assert v in v_and_c and c in v_and_c</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_compound_termination.py?rev=776#L84">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_compound_termination.py?rev=781#L84">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>84</th><th>84</th><td class="l"><span>&nbsp; &nbsp; assert c in c_and_v and v in c_and_v</span> </td>
+                  </tr><tr>
+                          <th>85</th><th>85</th><td class="l"><span>&nbsp; &nbsp; assert c in c_or_v and v in c_or_v</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>86</th><th> </th><td class="l"><span>&nbsp; &nbsp; assert <del>c_and_v.index(c) == v_and_c</del>.index(v)</span> </td>
+                      </tr><tr>
+                        <th>87</th><th> </th><td class="l"><span>&nbsp; &nbsp; assert <del>c_and_v.index(v) == v_and_c</del>.index(c)</span> </td>
+                      </tr><tr>
+                        <th>88</th><th> </th><td class="l"><span>&nbsp; &nbsp; assert <del>c_or_v.index(c) == v_or_c</del>.index(v)</span> </td>
+                      </tr><tr>
+                        <th>89</th><th> </th><td class="l"><span>&nbsp; &nbsp; assert <del>c_or_v.index(v) == v_or_c</del>.index(c)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>86</th><td class="r"><span>&nbsp; &nbsp; assert <ins>list(c_and_v).index(c) == list(v_and_c)</ins>.index(v)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>87</th><td class="r"><span>&nbsp; &nbsp; assert <ins>list(c_and_v).index(v) == list(v_and_c)</ins>.index(c)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>88</th><td class="r"><span>&nbsp; &nbsp; assert <ins>list(c_or_v).index(c) == list(v_or_c)</ins>.index(v)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>89</th><td class="r"><span>&nbsp; &nbsp; assert <ins>list(c_or_v).index(v) == list(v_or_c)</ins>.index(c)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>90</th><th>90</th><td class="l"><span>&nbsp; &nbsp; assert c_and_v in c_or__c_and_v and _c in c_or__c_and_v</span> </td>
+                  </tr><tr>
+                          <th>91</th><th>91</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="mystic/tests/test_symbolic.html" title="Show the changeset 781 restricted to mystic/tests/test_symbolic.py">mystic/tests/test_symbolic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_symbolic.py?rev=776#L62">
+                      r776</a>
+                  </th>
+                  <th title="Revision 781">
+                    <a title="Show revision 781 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_symbolic.py?rev=781#L62">
+                      r781</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>62</th><th>62</th><td class="l"><span>def test_solve_constraint():</span> </td>
+                  </tr><tr>
+                          <th>63</th><th>63</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>64</th><td class="r"><ins>&nbsp; # sympy can no longer do "spread([x0,x1])"... so use "x1 - x0"</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>64</th><th>65</th><td class="l"><span>&nbsp; constraints = """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>65</th><th> </th><td class="l"><span>&nbsp; <del>spread([x0,x1]</del>) - 1.0 = mean([x0,x1])&nbsp; &nbsp;</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>66</th><td class="r"><span>&nbsp; <ins>(x1 - x0</ins>) - 1.0 = mean([x0,x1])&nbsp; &nbsp;</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>66</th><th>67</th><td class="l"><span>&nbsp; mean([x0,x1,x2]) = x2"""</span> </td>
+                  </tr><tr>
+                          <th>67</th><th>68</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>68</th><th> </th><td class="l"><span>&nbsp; from mystic.math.measures import mean<del>, spread</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>69</th><td class="r"><span>&nbsp; from mystic.math.measures import mean<ins></ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>69</th><th>70</th><td class="l"><span>&nbsp; _constraints = solve(constraints)</span> </td>
+                  </tr><tr>
+                          <th>70</th><th>71</th><td class="l"><span>&nbsp; solv = generate_solvers(_constraints)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_symbolic.py?rev=776#L73">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_symbolic.py?rev=781#L74">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>73</th><th>74</th><td class="l"><span>&nbsp; assert all(x) == all([1.0, 5.0, 3.0])</span> </td>
+                  </tr><tr>
+                          <th>74</th><th>75</th><td class="l"><span>&nbsp; assert mean(x) == x[2]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>75</th><th> </th><td class="l"><span>&nbsp; assert <del>spread(x[:-1</del>]) - 1.0 == mean(x[:-1])</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>76</th><td class="r"><span>&nbsp; assert <ins>(x[1] - x[0</ins>]) - 1.0 == mean(x[:-1])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>76</th><th>77</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>77</th><th>78</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="mystic/tests/test_symbolic_basic.html" title="Show the changeset 781 restricted to mystic/tests/test_symbolic_basic.py">mystic/tests/test_symbolic_basic.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_symbolic_basic.py?rev=776#L125">
+                      r776</a>
+                  </th>
+                  <th title="Revision 781">
+                    <a title="Show revision 781 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/tests/test_symbolic_basic.py?rev=781#L125">
+                      r781</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>125</th><th>125</th><td class="l"><span>&nbsp; &nbsp; # print "symbolic string:\n", constraints_string.rstrip()</span> </td>
+                  </tr><tr>
+                          <th>126</th><th>126</th><td class="l"><span>&nbsp; &nbsp; pf = generate_penalty(generate_conditions(constraints_string))</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>127</th><td class="r"><ins>&nbsp; &nbsp; cn = as_constraint(pf)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>127</th><th>128</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>128</th><th> </th><td class="l"><span>&nbsp; &nbsp; @inner(as_constraint(pf))</span> </td>
+                      </tr><tr>
+                        <th>129</th><th> </th><td class="l"><span>&nbsp; &nbsp; def cf(x):</span> </td>
+                      </tr><tr>
+                        <th>130</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return sum(x)</span> </td>
+                      </tr><tr>
+                        <th>131</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>129</th><td class="r"><span>&nbsp; &nbsp; x0 = [1., 1., 1.]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>130</th><td class="r"><span>&nbsp; &nbsp; assert almostEqual(pf(cn(x0)), 0.0, tol=1e-7)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>132</th><th>131</th><td class="l"><span>&nbsp; &nbsp; #XXX: implement: wrap_constraint( as_constraint(pf), sum, ctype='inner') ?</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>133</th><th> </th><td class="l"><del>&nbsp; &nbsp; # print "c = constraints wrapped around sum(x)"</del> </td>
+                  </tr><tr>
+                          <th>134</th><th> </th><td class="l"><del>&nbsp; &nbsp; x0 = [1., 1., 1.]</del> </td>
+                  </tr><tr>
+                          <th>135</th><th> </th><td class="l"><del>&nbsp; &nbsp; # print "c(%s): %s\n" % (x0, cf(x0))</del> </td>
+                  </tr><tr class="last">
+                          <th>136</th><th> </th><td class="l"><del>&nbsp; &nbsp; assert almostEqual(cf(x0), 0.133687558709, tol=1e-15)</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>137</th><th>132</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>138</th><th>133</th><td class="l"><span>def test_varnamelist():</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/781/?format=diff&amp;new=781" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/781/?format=zip&amp;new=781" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://www.cacr.caltech.edu/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://www.cacr.caltech.edu/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://www.cacr.caltech.edu/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://www.cacr.caltech.edu/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://www.cacr.caltech.edu/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://www.cacr.caltech.edu/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://www.cacr.caltech.edu/projects/mystic">http://www.cacr.caltech.edu/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/781/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:26:52 GMT -->
+</html>

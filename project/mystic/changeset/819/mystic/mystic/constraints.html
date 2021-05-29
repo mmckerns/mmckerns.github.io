@@ -1,0 +1,464 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/819/mystic/mystic/constraints.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:18 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 819 for mystic/mystic/constraints.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/819/mystic/mystic/constraints.py?format=diff&amp;new=819" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/819/mystic/mystic/constraints.py?format=zip&amp;new=819" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../823/mystic/mystic/constraints.html" title="Changeset 823 for mystic/mystic/constraints.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../814/mystic/mystic/constraints.html" title="Changeset 814 for mystic/mystic/constraints.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../814/mystic/mystic/constraints.html" title="Changeset 814 for mystic/mystic/constraints.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../823/mystic/mystic/constraints.html" title="Changeset 823 for mystic/mystic/constraints.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../819.html">819</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=819">mystic/mystic/constraints.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             08/12/15 08:26:54
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-08-12T08%3A26%3A54-07%3A00&amp;precision=second" title="2015-08-12T08:26:54-07:00 in Timeline">9 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+use mystic.constraints.integers in integer_programming examples;<br />
+add docs to mystic.constraints.unique (and impose_unique)<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=819">
+              mystic/mystic/constraints.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">5 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="constraints.html" title="Show the changeset 819 restricted to mystic/mystic/constraints.py">mystic/mystic/constraints.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 814">
+                    <a title="Show revision 814 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=814#L243">
+                      r814</a>
+                  </th>
+                  <th title="Revision 819">
+                    <a title="Show revision 819 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=819#L243">
+                      r819</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>243</th><th>243</th><td class="l"><span>Input:</span> </td>
+                  </tr><tr>
+                          <th>244</th><th>244</th><td class="l"><span>&nbsp; &nbsp; constraints -- a constraints solver function or a penalty function</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>245</th><th> </th><td class="l"><span>&nbsp; &nbsp; guess -- list of parameter values pr<del></del>posed to solve the constraints</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>245</th><td class="r"><span>&nbsp; &nbsp; guess -- list of parameter values pr<ins>o</ins>posed to solve the constraints</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>246</th><th>246</th><td class="l"><span>&nbsp; &nbsp; tol -- residual error magnitude for which constraints are considered solved</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>247</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>248</th><td class="r"><ins>&nbsp; &nbsp; For example:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>249</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; @normalized()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>250</th><td class="r"><ins>&nbsp; &nbsp; ... def constraint(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>251</th><td class="r"><ins>&nbsp; &nbsp; ...&nbsp; &nbsp;return x</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>252</th><td class="r"><ins>&nbsp; &nbsp; ... </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>253</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; constraint([.5,.5])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>254</th><td class="r"><ins>&nbsp; &nbsp; [0.5, 0.5]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>255</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; issolution(constraint, [.5,.5])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>256</th><td class="r"><ins>&nbsp; &nbsp; True</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>257</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>258</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; from mystic.penalty import quadratic_inequality</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>259</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; @quadratic_inequality(lambda x: x[0] - x[1] + 10)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>260</th><td class="r"><ins>&nbsp; &nbsp; ... def penalty(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>261</th><td class="r"><ins>&nbsp; &nbsp; ...&nbsp; &nbsp;return 0.0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>262</th><td class="r"><ins>&nbsp; &nbsp; ... </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>263</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; penalty([-10,.5])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>264</th><td class="r"><ins>&nbsp; &nbsp; 0.0</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>265</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; issolution(penalty, [-10,.5])</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>266</th><td class="r"><ins>&nbsp; &nbsp; True</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>247</th><th>267</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>248</th><th>268</th><td class="l"><span>&nbsp; &nbsp; if hasattr(constraints, 'error'):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=814#L555">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=819#L575">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>555</th><th>575</th><td class="l"><span>&nbsp; &nbsp; range(min(seq),max(seq)). If full is a sequence (list or set), then</span> </td>
+                  </tr><tr>
+                          <th>556</th><th>576</th><td class="l"><span>&nbsp; &nbsp; unique values are selected from the given sequence. </span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>577</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>578</th><td class="r"><ins>&nbsp; &nbsp; For example:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>579</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; unique([1,2,3,1,2,4], range(11))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>580</th><td class="r"><ins>&nbsp; &nbsp; [1, 2, 3, 9, 8, 4]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>581</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; unique([1,2,3,1,2,9], range(11))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>582</th><td class="r"><ins>&nbsp; &nbsp; [1, 2, 3, 8, 5, 9]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>583</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; try:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>584</th><td class="r"><ins>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;unique([1,2,3,1,2,13], range(11))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>585</th><td class="r"><ins>&nbsp; &nbsp; ... except ValueError:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>586</th><td class="r"><ins>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;pass</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>587</th><td class="r"><ins>&nbsp; &nbsp; ...</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>588</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt;</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>589</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; unique([1,2,3,1,2,4], {'min':0, 'max':11})</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>590</th><td class="r"><ins>&nbsp; &nbsp; [1, 2, 3, 4.175187820357143, 2.5407265707465716, 4]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>591</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; mcon.unique([1,2,3,1,2,4], float)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>592</th><td class="r"><ins>&nbsp; &nbsp; [1, 2, 3, 1.012375036824941, 3.9821250727509905, 4]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>593</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; unique([1,2,3,1,2,10], int)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>594</th><td class="r"><ins>&nbsp; &nbsp; [1, 2, 3, 9, 6, 10]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>595</th><td class="r"><ins>&nbsp; &nbsp; &gt;&gt;&gt; try:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>596</th><td class="r"><ins>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;unique([1,2,3,1,2,4], int)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>597</th><td class="r"><ins>&nbsp; &nbsp; ... except ValueError:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>598</th><td class="r"><ins>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;pass</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>599</th><td class="r"><ins>&nbsp; &nbsp; ...</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>557</th><th>600</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>558</th><th>601</th><td class="l"><span>&nbsp; &nbsp; unique = set()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=814#L615">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=819#L658">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>615</th><th>658</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>616</th><th>659</th><td class="l"><span>def impose_unique(seq=None):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>617</th><th> </th><td class="l"><span>&nbsp; &nbsp; """ensure all values are unique and found in the given set"""</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>660</th><td class="r"><span>&nbsp; &nbsp; """ensure all values are unique and found in the given set</span> </td>
+                      </tr><tr>
+                        <th> </th><th>661</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>662</th><td class="r"><span>&nbsp; &nbsp; For example:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>663</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; @impose_unique(range(11))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>664</th><td class="r"><span>&nbsp; &nbsp; ... def doit(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>665</th><td class="r"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;return x</span> </td>
+                      </tr><tr>
+                        <th> </th><th>666</th><td class="r"><span>&nbsp; &nbsp; ... </span> </td>
+                      </tr><tr>
+                        <th> </th><th>667</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; doit([1,2,3,1,2,4])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>668</th><td class="r"><span>&nbsp; &nbsp; [1, 2, 3, 9, 8, 4]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>669</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; doit([1,2,3,1,2,10])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>670</th><td class="r"><span>&nbsp; &nbsp; [1, 2, 3, 8, 5, 10]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>671</th><td class="r"><span>&nbsp; &nbsp; &gt;&gt;&gt; try:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>672</th><td class="r"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;doit([1,2,3,1,2,13])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>673</th><td class="r"><span>&nbsp; &nbsp; ... except ValueError:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>674</th><td class="r"><span>&nbsp; &nbsp; ...&nbsp; &nbsp; &nbsp;print "Bad Input"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>675</th><td class="r"><span>&nbsp; &nbsp; ...</span> </td>
+                      </tr><tr>
+                        <th> </th><th>676</th><td class="r"><span>&nbsp; &nbsp; Bad Input</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>677</th><td class="r"><span>"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>618</th><th>678</th><td class="l"><span>&nbsp; &nbsp; def dec(f):</span> </td>
+                  </tr><tr>
+                          <th>619</th><th>679</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; def func(x,*args,**kwds):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=814#L624">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=819#L684">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>624</th><th>684</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>625</th><th>685</th><td class="l"><span>#XXX: enable near_integers and has_unique on selected members of x?</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>686</th><td class="r"><ins>#FIXME: the following don't seem to belong in 'mystic.constraints'</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>626</th><th>687</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>627</th><th>688</th><td class="l"><span>from numpy import round, abs</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=814#L638">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/constraints.py?rev=819#L699">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>638</th><th>699</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>639</th><th>700</th><td class="l"><span># EOF</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>640</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr class="last">
+                          <th>641</th><th> </th><td class="l"><del># EOF</del> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/819/mystic/mystic/constraints.py?format=diff&amp;new=819" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/819/mystic/mystic/constraints.py?format=zip&amp;new=819" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/819/mystic/mystic/constraints.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:18 GMT -->
+</html>

@@ -1,0 +1,916 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/704/mystic/mystic by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:58:47 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 704 for mystic/mystic – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../search.html" />
+        <link rel="help" href="../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/704/mystic/mystic?format=diff&amp;new=704" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/704/mystic/mystic?format=zip&amp;new=704" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../705/mystic/mystic.html" title="Changeset 705 for mystic/mystic" />
+        <link rel="start" href="../../../wiki.html" />
+        <link rel="stylesheet" href="../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../702/mystic/mystic.html" title="Changeset 702 for mystic/mystic" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../login.html">Login</a></li><li><a href="../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../about.html">About Trac</a></li><li class="last"><a href="../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../wiki.html">Wiki</a></li><li><a href="../../../timeline.html">Timeline</a></li><li><a href="../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../browser.html">Browse Source</a></li><li><a href="../../../query.html">View Tickets</a></li><li class="last"><a href="../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../702/mystic/mystic.html" title="Changeset 702 for mystic/mystic">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../705/mystic/mystic.html" title="Changeset 705 for mystic/mystic">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../704.html">704</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic?rev=704">mystic/mystic</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             08/07/13 17:29:18
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-08-07T17%3A29%3A18-07%3A00&amp;precision=second" title="2013-08-07T17:29:18-07:00 in Timeline">3 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+solver monitors prepend existing monitor data, prior behavior with new=True;<br />
+monitors now have extend and prepend methods; added test of monitor prepending;<br />
+can unset <a class="missing wiki">StrictRanges?</a> with <a class="missing wiki">SetStrictRanges?</a>(None); simiarly for <a class="missing wiki">SetSaveFrequency?</a><br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic?rev=704">mystic/mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>2 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=704">
+              abstract_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=704">
+              monitors.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">12 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="mystic/abstract_solver.html" title="Show the changeset 704 restricted to mystic/mystic/abstract_solver.py">mystic/mystic/abstract_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 698">
+                    <a title="Show revision 698 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=698#L239">
+                      r698</a>
+                  </th>
+                  <th title="Revision 704">
+                    <a title="Show revision 704 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=704#L239">
+                      r704</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>239</th><th>239</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>240</th><th>240</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>241</th><th> </th><td class="l"><span>&nbsp; &nbsp; def SetGenerationMonitor(self, monitor<del></del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>241</th><td class="r"><span>&nbsp; &nbsp; def SetGenerationMonitor(self, monitor<ins>, new=False</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>242</th><th>242</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """select a callable to monitor (x, f(x)) after each solver iteration"""</span> </td>
+                  </tr><tr>
+                          <th>243</th><th>243</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.monitors import Null, Monitor#, CustomMonitor</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>244</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; current = Null() if new else self._stepmon</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>244</th><th>245</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if isinstance(monitor, Monitor):&nbsp; # is Monitor()</span> </td>
+                  </tr><tr>
+                          <th>245</th><th>246</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._stepmon = monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>246</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif isinstance(monitor, Null) or monitor == Null:&nbsp; # is Null() or Null</span> </td>
+                      </tr><tr>
+                        <th>247</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._stepmon = Monitor() #XXX: don't allow Null stepmon</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>247</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._stepmon.prepend(current)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>248</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif isinstance(monitor, Null) or monitor == Null: # is Null() or Null</span> </td>
+                      </tr><tr>
+                        <th> </th><th>249</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._stepmon = Monitor()&nbsp; #XXX: don't allow Null</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>250</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._stepmon.prepend(current)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>248</th><th>251</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif hasattr(monitor, '__module__'):&nbsp; # is CustomMonitor()</span> </td>
+                  </tr><tr>
+                          <th>249</th><th>252</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if monitor.__module__ in ['mystic._genSow']:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>250</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._stepmon = monitor<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>253</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._stepmon = monitor<ins>&nbsp;#FIXME: need .prepend(current)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>251</th><th>254</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                  </tr><tr>
+                          <th>252</th><th>255</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raise TypeError, "'%s' is not a monitor instance" % monitor</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=698#L255">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=704#L258">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>255</th><th>258</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>256</th><th>259</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>257</th><th> </th><td class="l"><span>&nbsp; &nbsp; def SetEvaluationMonitor(self, monitor<del></del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>260</th><td class="r"><span>&nbsp; &nbsp; def SetEvaluationMonitor(self, monitor<ins>, new=False</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>258</th><th>261</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """select a callable to monitor (x, f(x)) after each cost function evaluation"""</span> </td>
+                  </tr><tr>
+                          <th>259</th><th>262</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.monitors import Null, Monitor#, CustomMonitor</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>263</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; current = Null() if new else self._evalmon</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>260</th><th>264</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if isinstance(monitor, (Null, Monitor) ):&nbsp; # is Monitor() or Null()</span> </td>
+                  </tr><tr>
+                          <th>261</th><th>265</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._evalmon = monitor</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>266</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._evalmon.prepend(current)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>262</th><th>267</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif monitor == Null:&nbsp; # is Null</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>263</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._evalmon = monitor</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>268</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._evalmon = monitor()</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>269</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._evalmon.prepend(current)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>264</th><th>270</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif hasattr(monitor, '__module__'):&nbsp; # is CustomMonitor()</span> </td>
+                  </tr><tr>
+                          <th>265</th><th>271</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if monitor.__module__ in ['mystic._genSow']:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>266</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._evalmon = monitor<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>272</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._evalmon = monitor<ins>&nbsp;#FIXME: need .prepend(current)</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>267</th><th>273</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                  </tr><tr>
+                          <th>268</th><th>274</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raise TypeError, "'%s' is not a monitor instance" % monitor</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=698#L274">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=704#L280">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>274</th><th>280</th><td class="l"><span>input::</span> </td>
+                  </tr><tr>
+                          <th>275</th><th>281</th><td class="l"><span>&nbsp; &nbsp; - min, max: must be a sequence of length self.nDim</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>276</th><th> </th><td class="l"><span>&nbsp; &nbsp; - each min[i] should be &lt;= the corresponding max[i]"""</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>282</th><td class="r"><span>&nbsp; &nbsp; - each min[i] should be &lt;= the corresponding max[i]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>283</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>284</th><td class="r"><span>note::</span> </td>
+                      </tr><tr>
+                        <th> </th><th>285</th><td class="r"><span>&nbsp; &nbsp; SetStrictRanges(None) will remove strict range constraints"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>286</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if min is False or max is False:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>287</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._useStrictRange = False</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>288</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>277</th><th>289</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #XXX: better to use 'defaultMin,defaultMax' or '-inf,inf' ???</span> </td>
+                  </tr><tr>
+                          <th>278</th><th>290</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if min == None: min = self._defaultMin</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=698#L433">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=704#L445">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>433</th><th>445</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>434</th><th>446</th><td class="l"><span>&nbsp; &nbsp; def SetSaveFrequency(self, generations=None, filename=None, **kwds):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>435</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """set frequency for saving solver restart file"""</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>447</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """set frequency for saving solver restart file</span> </td>
+                      </tr><tr>
+                        <th> </th><th>448</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>449</th><td class="r"><span>input::</span> </td>
+                      </tr><tr>
+                        <th> </th><th>450</th><td class="r"><span>&nbsp; &nbsp; - generations = number of solver iterations before next save of state</span> </td>
+                      </tr><tr>
+                        <th> </th><th>451</th><td class="r"><span>&nbsp; &nbsp; - filename = name of file in which to save solver state</span> </td>
+                      </tr><tr>
+                        <th> </th><th>452</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>453</th><td class="r"><span>note::</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>454</th><td class="r"><span>&nbsp; &nbsp; SetSaveFrequency(None) will disable saving solver restart file"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>436</th><th>455</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._saveiter = generations</span> </td>
+                  </tr><tr>
+                          <th>437</th><th>456</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#self._saveeval = evaluations</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="mystic/monitors.html" title="Show the changeset 704 restricted to mystic/mystic/monitors.py">mystic/mystic/monitors.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 680">
+                    <a title="Show revision 680 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=680#L128">
+                      r680</a>
+                  </th>
+                  <th title="Revision 704">
+                    <a title="Show revision 704 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=704#L128">
+                      r704</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>128</th><th>128</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; self._y[-1] = self._y[-1][best]</span> </td>
+                  </tr><tr>
+                          <th>129</th><th>129</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>130</th><td class="r"><ins>&nbsp; &nbsp; def extend(self, monitor):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>131</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """append the contents of the given monitor"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>132</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if isinstance(monitor, Monitor): # is Monitor()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>133</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>134</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; elif (monitor == Null) or isinstance(monitor, Null): # is Null or Null()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>135</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; monitor = Monitor()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>136</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; elif hasattr(monitor, '__module__') and \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>137</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; monitor.__module__ in ['mystic._genSow']: # is CustomMonitor()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>138</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass #XXX: CustomMonitor may fail...</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>139</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>140</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raise TypeError, "'%s' is not a monitor instance" % monitor</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>141</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._x.extend(monitor._x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>142</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._y.extend(monitor._y)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>143</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._id.extend(monitor._id)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>144</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._info.extend(monitor._info)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>145</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>146</th><td class="r"><ins>&nbsp; &nbsp; def prepend(self, monitor):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>147</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """prepend the contents of the given monitor"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>148</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if isinstance(monitor, Monitor): # is Monitor()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>149</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>150</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; elif (monitor == Null) or isinstance(monitor, Null): # is Null or Null()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>151</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; monitor = Monitor()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>152</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; elif hasattr(monitor, '__module__') and \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>153</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; monitor.__module__ in ['mystic._genSow']: # is CustomMonitor()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>154</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; pass #XXX: CustomMonitor may fail...</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>155</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>156</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raise TypeError, "'%s' is not a monitor instance" % monitor</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>157</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; [self._x.insert(i,j) for (i,j) in list(enumerate(monitor._x))]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>158</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; [self._y.insert(i,j) for (i,j) in list(enumerate(monitor._y))]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>159</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; [self._id.insert(i,j) for (i,j) in list(enumerate(monitor._id))]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>160</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; [self._info.insert(i,j) for (i,j) in list(enumerate(monitor._info))]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>161</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #XXX: may be faster ways of doing the above...</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>162</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #&nbsp; &nbsp; &nbsp;(e.g. deepcopy(monitor) allows enumerate w/o list())</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>163</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>130</th><th>164</th><td class="l"><span>&nbsp; &nbsp; def get_x(self):</span> </td>
+                  </tr><tr>
+                          <th>131</th><th>165</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return self._x</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=680#L140">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=704#L174">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>140</th><th>174</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return self._info</span> </td>
+                  </tr><tr>
+                          <th>141</th><th>175</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>176</th><td class="r"><ins>&nbsp; &nbsp; def __step(self):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>177</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return len(self.x)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>178</th><td class="r"><ins>&nbsp; &nbsp; _step = property(__step)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>142</th><th>179</th><td class="l"><span>&nbsp; &nbsp; x = property(get_x, doc = "Params")</span> </td>
+                  </tr><tr>
+                          <th>143</th><th>180</th><td class="l"><span>&nbsp; &nbsp; y = property(get_y, doc = "Costs")</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=680#L153">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=704#L190">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>153</th><th>190</th><td class="l"><span>&nbsp; &nbsp; def __init__(self, interval = 10, xinterval = numpy.inf, all=True):</span> </td>
+                  </tr><tr>
+                          <th>154</th><th>191</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(VerboseMonitor,self).__init__()</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>155</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self._step = 0</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>156</th><th>192</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not interval or interval is numpy.nan: interval = numpy.inf</span> </td>
+                  </tr><tr>
+                          <th>157</th><th>193</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not xinterval or xinterval is numpy.nan: xinterval = numpy.inf</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=680#L167">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=704#L203">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>167</th><th>203</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(VerboseMonitor,self).__call__(x, y, id)</span> </td>
+                  </tr><tr>
+                          <th>168</th><th>204</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._yinterval is not numpy.inf and \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>169</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int(<del>self._step</del> % self._yinterval) == 0:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>205</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int(<ins>(self._step-1)</ins> % self._yinterval) == 0:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>170</th><th>206</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not list_or_tuple_or_ndarray(y):</span> </td>
+                  </tr><tr>
+                          <th>171</th><th>207</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ''</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=680#L177">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=704#L213">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>177</th><th>213</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ' best'</span> </td>
+                  </tr><tr>
+                          <th>178</th><th>214</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %f" % self._y[-1][best]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>179</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = "Generation %d has%s Chi-Squared:%s" % (self._step<del>, who, </del>y)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>215</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = "Generation %d has%s Chi-Squared:%s" % (self._step<ins>-1,who,</ins>y)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>180</th><th>216</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if id != None: msg = "[id: %d] " % (id) + msg</span> </td>
+                  </tr><tr>
+                          <th>181</th><th>217</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print msg</span> </td>
+                  </tr><tr>
+                          <th>182</th><th>218</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._xinterval is not numpy.inf and \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>183</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int(<del>self._step</del> % self._xinterval) == 0:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>219</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int(<ins>(self._step-1)</ins> % self._xinterval) == 0:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>184</th><th>220</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not list_or_tuple_or_ndarray(x):</span> </td>
+                  </tr><tr>
+                          <th>185</th><th>221</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ''</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=680#L191">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=704#L227">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>191</th><th>227</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ' best'</span> </td>
+                  </tr><tr>
+                          <th>192</th><th>228</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x = "\n %s" % self._x[-1][best]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>193</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = "Generation %d has%s fit parameters:%s" % (self._step<del>, who, </del>x)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>229</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = "Generation %d has%s fit parameters:%s" % (self._step<ins>-1,who,</ins>x)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>194</th><th>230</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if id != None: msg = "[id: %d] " % (id) + msg</span> </td>
+                  </tr><tr>
+                          <th>195</th><th>231</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print msg</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>196</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self._step += 1</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>197</th><th>232</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>198</th><th>233</th><td class="l"><span>&nbsp; &nbsp; pass</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=680#L207">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=704#L242">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>207</th><th>242</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(LoggingMonitor,self).__init__()</span> </td>
+                  </tr><tr>
+                          <th>208</th><th>243</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._filename = filename</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>209</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self._step = 0</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>210</th><th>244</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not interval or interval is numpy.nan: interval = numpy.inf</span> </td>
+                  </tr><tr>
+                          <th>211</th><th>245</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._yinterval = interval</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=680#L230">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=704#L264">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>230</th><th>264</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(LoggingMonitor,self).__call__(x, y, id)</span> </td>
+                  </tr><tr>
+                          <th>231</th><th>265</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._yinterval is not numpy.inf and \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>232</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int(<del>self._step</del> % self._yinterval) == 0:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>266</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int(<ins>(self._step-1)</ins> % self._yinterval) == 0:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>233</th><th>267</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not list_or_tuple_or_ndarray(y):</span> </td>
+                  </tr><tr>
+                          <th>234</th><th>268</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = "%f" % self._y[-1]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=680#L251">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=704#L285">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>251</th><th>285</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                  </tr><tr>
+                          <th>252</th><th>286</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x = "%s" % xb</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>253</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; step = [self._step<del></del>]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>287</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; step = [self._step<ins>-1</ins>]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>254</th><th>288</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if id != None: step.append(id)</span> </td>
+                  </tr><tr>
+                          <th>255</th><th>289</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._file.write("&nbsp; %s&nbsp; &nbsp; &nbsp;%s&nbsp; &nbsp;%s\n" % (tuple(step), y, x))</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>256</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self._step += 1</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>257</th><th>290</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._file.close()</span> </td>
+                  </tr><tr>
+                          <th>258</th><th>291</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=680#L277">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=704#L310">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>277</th><th>310</th><td class="l"><span>&nbsp; &nbsp; def __call__(self, x, y, id=None, best=0):</span> </td>
+                  </tr><tr>
+                          <th>278</th><th>311</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(VerboseLoggingMonitor,self).__call__(x, y, id, best)</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>279</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self._step += -1&nbsp; # rollback step counter (incremented in super call)</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>280</th><th>312</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._vyinterval is not numpy.inf and \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>281</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int(<del>self._step</del> % self._vyinterval) == 0:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>313</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int(<ins>(self._step-1)</ins> % self._vyinterval) == 0:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>282</th><th>314</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not list_or_tuple_or_ndarray(y):</span> </td>
+                  </tr><tr>
+                          <th>283</th><th>315</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ''</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=680#L289">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=704#L321">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>289</th><th>321</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ' best'</span> </td>
+                  </tr><tr>
+                          <th>290</th><th>322</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = " %f" % self._y[-1][best]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>291</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = "Generation %d has%s Chi-Squared:%s" % (self._step<del>, who, </del>y)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>323</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = "Generation %d has%s Chi-Squared:%s" % (self._step<ins>-1,who,</ins>y)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>292</th><th>324</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if id != None: msg = "[id: %d] " % (id) + msg</span> </td>
+                  </tr><tr>
+                          <th>293</th><th>325</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print msg</span> </td>
+                  </tr><tr>
+                          <th>294</th><th>326</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._vxinterval is not numpy.inf and \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>295</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int(<del>self._step</del> % self._vxinterval) == 0:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>327</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;int(<ins>(self._step-1)</ins> % self._vxinterval) == 0:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>296</th><th>328</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not list_or_tuple_or_ndarray(x):</span> </td>
+                  </tr><tr>
+                          <th>297</th><th>329</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ''</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=680#L303">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=704#L335">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>303</th><th>335</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; who = ' best'</span> </td>
+                  </tr><tr>
+                          <th>304</th><th>336</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x = "\n %s" % self._x[-1][best]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>305</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = "Generation %d has%s fit parameters:%s" % (self._step<del>, who, </del>x)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>337</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = "Generation %d has%s fit parameters:%s" % (self._step<ins>-1,who,</ins>x)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>306</th><th>338</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if id != None: msg = "[id: %d] " % (id) + msg</span> </td>
+                  </tr><tr>
+                          <th>307</th><th>339</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print msg</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>308</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self._step += 1</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>309</th><th>340</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>310</th><th>341</th><td class="l"><span>&nbsp; &nbsp; pass</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/704/mystic/mystic?format=diff&amp;new=704" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/704/mystic/mystic?format=zip&amp;new=704" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/704/mystic/mystic by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:58:49 GMT -->
+</html>

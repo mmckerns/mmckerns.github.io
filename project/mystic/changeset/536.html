@@ -1,0 +1,1288 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/536 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:50:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 536 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="535.html" title="Changeset 535" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/536?format=diff&amp;new=536" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/536?format=zip&amp;new=536" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="537.html" title="Changeset 537" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="535.html" title="Changeset 535">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="537.html" title="Changeset 537">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 536</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             07/29/12 22:10:39
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-07-29T22%3A10%3A39-07%3A00&amp;precision=second" title="2012-07-29T22:10:39-07:00 in Timeline">4 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+added guard against null and empty logs in munge; added isNull;<br />
+allow non-boolean returns from termination to provide information for restarts<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic?rev=536">mystic/mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>6 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=536">
+              differential_evolution.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=536">
+              monitors.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=536">
+              munge.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">6 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=536">
+              scipy_optimize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536">
+              termination.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">15 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=536">
+              tools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="536/mystic/mystic/differential_evolution.html" title="Show the changeset 536 restricted to mystic/mystic/differential_evolution.py">mystic/mystic/differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 519">
+                    <a title="Show revision 519 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=519#L286">
+                      r519</a>
+                  </th>
+                  <th title="Revision 536">
+                    <a title="Show revision 536 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=536#L286">
+                      r536</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>286</th><th>286</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>287</th><th>287</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(self.bestEnergy)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>288</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; termination(self) #XXX: initialize termination conditions, if needed</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>288</th><th>289</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(self.bestSolution[:], self.bestEnergy, id)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>289</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.generations = 0 <del>&nbsp;</del>#XXX: above currently *not* counted as an iteration</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>290</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.generations = 0 <ins></ins>#XXX: above currently *not* counted as an iteration</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>290</th><th>291</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if callback is not None:</span> </td>
+                  </tr><tr>
+                          <th>291</th><th>292</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; callback(self.bestSolution)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=519#L493">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=536#L494">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>493</th><th>494</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>494</th><th>495</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(self.bestEnergy)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>496</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; termination(self) #XXX: initialize termination conditions, if needed</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>495</th><th>497</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#FIXME: StepMonitor works for 'pp'?</span> </td>
+                  </tr><tr>
+                          <th>496</th><th>498</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(self.bestSolution[:], self.bestEnergy, id)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="536/mystic/mystic/monitors.html" title="Show the changeset 536 restricted to mystic/mystic/monitors.py">mystic/mystic/monitors.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 480">
+                    <a title="Show revision 480 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=480#L75">
+                      r480</a>
+                  </th>
+                  <th title="Revision 536">
+                    <a title="Show revision 536 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=536#L75">
+                      r536</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>75</th><th>75</th><td class="l"><span>&nbsp; &nbsp; def __setattr__(self, name, value): return self</span> </td>
+                  </tr><tr>
+                          <th>76</th><th>76</th><td class="l"><span>&nbsp; &nbsp; def __delattr__(self, name): return self</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>77</th><td class="r"><ins>&nbsp; &nbsp; def __len__(self): return&nbsp; #XXX ?</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>77</th><th>78</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>78</th><th>79</th><td class="l"><span>class Monitor(object):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=480#L99">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/monitors.py?rev=536#L100">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>99</th><th>100</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._info = []</span> </td>
+                  </tr><tr>
+                          <th>100</th><th>101</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#self._all = all</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>102</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>103</th><td class="r"><ins>&nbsp; &nbsp; def __len__(self):</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>104</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return len(self.x)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>101</th><th>105</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>102</th><th>106</th><td class="l"><span>&nbsp; &nbsp; def info(self, message):</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="536/mystic/mystic/munge.html" title="Show the changeset 536 restricted to mystic/mystic/munge.py">mystic/mystic/munge.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 477">
+                    <a title="Show revision 477 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=477#L1">
+                      r477</a>
+                  </th>
+                  <th title="Revision 536">
+                    <a title="Show revision 536 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=536#L1">
+                      r536</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>1</th><th>1</th><td class="l"><span>from mystic.tools import list_or_tuple_or_ndarray as sequence</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>2</th><td class="r"><ins>from mystic.tools import isNull</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>3</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>3</th><th>4</th><td class="l"><span># logfile reader</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=477#L46">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=536#L47">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>47</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>47</th><th>48</th><td class="l"><span>def raw_to_converge(steps, energy):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>48</th><th> </th><td class="l"><span>&nbsp; if not sequence(steps[0][0]):</span> </td>
+                      </tr><tr>
+                        <th>49</th><th> </th><td class="l"><span>&nbsp; &nbsp; steps = [[step] for step in steps]&nbsp; # needed when steps = [1,2,3,...]</span> </td>
+                      </tr><tr>
+                        <th>50</th><th> </th><td class="l"><span>&nbsp; steps = [zip(*step) for step in steps] # also can be used to revert 'steps'</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>49</th><td class="r"><span>&nbsp; if len(steps) &gt; 0:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>50</th><td class="r"><span>&nbsp; &nbsp; if not sequence(steps[0][0]):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>51</th><td class="r"><span>&nbsp; &nbsp; &nbsp; steps = [[step] for step in steps]&nbsp; # needed when steps = [1,2,3,...]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>52</th><td class="r"><span>&nbsp; &nbsp; steps = [zip(*step) for step in steps] # also can be used to revert 'steps'</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>51</th><th>53</th><td class="l"><span>&nbsp; return steps, energy</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>54</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=477#L58">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=536#L60">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>58</th><th>60</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>59</th><th>61</th><td class="l"><span>def write_raw_file(mon,log_file='paramlog.py',**kwds):</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>62</th><td class="r"><ins>&nbsp; if isNull(mon): return&nbsp; #XXX: throw error? warning? ???</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>60</th><th>63</th><td class="l"><span>&nbsp; steps, energy = read_monitor(mon)</span> </td>
+                  </tr><tr>
+                          <th>61</th><th>64</th><td class="l"><span>&nbsp; f = open(log_file,'w')</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=477#L69">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=536#L72">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>69</th><th>72</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>70</th><th>73</th><td class="l"><span>def write_support_file(mon,log_file='paramlog.py'):</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>74</th><td class="r"><ins>&nbsp; if isNull(mon): return&nbsp; #XXX: throw error? warning? ???</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>71</th><th>75</th><td class="l"><span>&nbsp; monitor = write_monitor( *raw_to_support( *read_monitor(mon) ) )</span> </td>
+                  </tr><tr>
+                          <th>72</th><th>76</th><td class="l"><span>&nbsp; write_raw_file(monitor,log_file,header="written in 'support' format")</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=477#L74">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=536#L78">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>78</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>75</th><th>79</th><td class="l"><span>def write_converge_file(mon,log_file='paramlog.py'):</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>80</th><td class="r"><ins>&nbsp; if isNull(mon): return&nbsp; #XXX: throw error? warning? ???</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>76</th><th>81</th><td class="l"><span>&nbsp; monitor = write_monitor( *raw_to_converge( *read_monitor(mon) ) )</span> </td>
+                  </tr><tr>
+                          <th>77</th><th>82</th><td class="l"><span>&nbsp; write_raw_file(monitor,log_file,header="written in 'converge' format")</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=477#L131">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=536#L136">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>131</th><th>136</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>132</th><th>137</th><td class="l"><span>def __orig_write_support_file(mon,log_file='paramlog.py'):</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>138</th><td class="r"><ins>&nbsp; if isNull(mon): return&nbsp; #XXX: throw error? warning? ???</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>133</th><th>139</th><td class="l"><span>&nbsp; steps, energy = read_monitor(mon)</span> </td>
+                  </tr><tr>
+                          <th>134</th><th>140</th><td class="l"><span>&nbsp; log = []</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>135</th><th> </th><td class="l"><span>&nbsp; for p in range(len(steps[0])):</span> </td>
+                      </tr><tr>
+                        <th>136</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = []</span> </td>
+                      </tr><tr>
+                        <th>137</th><th> </th><td class="l"><span>&nbsp; &nbsp; for s in range(len(steps)):</span> </td>
+                      </tr><tr>
+                        <th>138</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; q.append(steps[s][p])</span> </td>
+                      </tr><tr>
+                        <th>139</th><th> </th><td class="l"><span>&nbsp; &nbsp; log.append(q)&nbsp; </span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>141</th><td class="r"><span>&nbsp; if len(steps) &gt; 0:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>142</th><td class="r"><span>&nbsp; &nbsp; for p in range(len(steps[0])):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>143</th><td class="r"><span>&nbsp; &nbsp; &nbsp; q = []</span> </td>
+                      </tr><tr>
+                        <th> </th><th>144</th><td class="r"><span>&nbsp; &nbsp; &nbsp; for s in range(len(steps)):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>145</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; q.append(steps[s][p])</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>146</th><td class="r"><span>&nbsp; &nbsp; &nbsp; log.append(q)&nbsp; </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>140</th><th>147</th><td class="l"><span>&nbsp; monitor = write_monitor(log, energy)</span> </td>
+                  </tr><tr>
+                          <th>141</th><th>148</th><td class="l"><span>&nbsp; write_raw_file(monitor,log_file)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="536/mystic/mystic/scipy_optimize.html" title="Show the changeset 536 restricted to mystic/mystic/scipy_optimize.py">mystic/mystic/scipy_optimize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 528">
+                    <a title="Show revision 528 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=528#L215">
+                      r528</a>
+                  </th>
+                  <th title="Revision 536">
+                    <a title="Show revision 536 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=536#L215">
+                      r536</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>215</th><th>215</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; allvecs = [sim[0]]</span> </td>
+                  </tr><tr>
+                          <th>216</th><th>216</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; fsim[0] = func(x0)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>217</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; termination(self) #XXX: initialize termination conditions, if needed</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>217</th><th>218</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(sim[0], fsim[0], id) # sim = all; "best" is sim[0]</span> </td>
+                  </tr><tr>
+                          <th>218</th><th>219</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=528#L586">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=536#L587">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>586</th><th>587</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy[0] = fval&nbsp; #XXX: pointless?</span> </td>
+                  </tr><tr>
+                          <th>587</th><th>588</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(self.bestEnergy)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>589</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; termination(self) #XXX: initialize termination conditions, if needed</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>588</th><th>590</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(x, fval, id) # get initial values</span> </td>
+                  </tr><tr>
+                          <th>589</th><th>591</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="536/mystic/mystic/termination.html" title="Show the changeset 536 restricted to mystic/mystic/termination.py">mystic/mystic/termination.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 484">
+                    <a title="Show revision 484 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L7">
+                      r484</a>
+                  </th>
+                  <th title="Revision 536">
+                    <a title="Show revision 536 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L7">
+                      r536</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>7</th><th>7</th><td class="l"><span>import numpy</span> </td>
+                  </tr><tr>
+                          <th>8</th><th>8</th><td class="l"><span>from numpy import absolute</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>9</th><td class="r"><ins>from __builtin__ import bool as _bool</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>9</th><th>10</th><td class="l"><span>abs = absolute</span> </td>
+                  </tr><tr>
+                          <th>10</th><th>11</th><td class="l"><span>Inf = numpy.Inf</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>12</th><td class="r"><ins>null = ""</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>11</th><th>13</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>12</th><th>14</th><td class="l"><span># a module level singleton.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L18">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L20">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>18</th><th>20</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>19</th><th>21</th><td class="l"><span>cost[-1] &lt;= tolerance"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>20</th><th> </th><td class="l"><span>&nbsp; &nbsp; def _VTR(inst):</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>22</th><td class="r"><span>&nbsp; &nbsp; doc = "VTR with %s" % {'tolerance':tolerance, 'target':target}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>23</th><td class="r"><span>&nbsp; &nbsp; def _VTR(inst, bool=True):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>24</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if bool: bool = _bool</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>25</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;else: bool = lambda x:x</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>21</th><th>26</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hist = inst.energy_history</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>22</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return abs(hist[-1] - target) &lt;= tolerance</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>27</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if not len(hist): return bool(null)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>28</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if abs(hist[-1] - target) &lt;= tolerance: msg = doc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>29</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;else: msg = null</span> </td>
+                      </tr><tr>
+                        <th> </th><th>30</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return bool(msg)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>31</th><td class="r"><span>&nbsp; &nbsp;#_VTR.__doc__ = "%s(**%s)" % tuple(doc.split(" with "))</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>32</th><td class="r"><span>&nbsp; &nbsp; _VTR.__doc__ = doc</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>23</th><th>33</th><td class="l"><span>&nbsp; &nbsp; return _VTR</span> </td>
+                  </tr><tr>
+                          <th>24</th><th>34</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L27">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L37">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>27</th><th>37</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>28</th><th>38</th><td class="l"><span>cost[-g] - cost[-1] &lt;= tolerance, where g=generations"""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>39</th><td class="r"><ins>&nbsp; &nbsp; doc = "ChangeOverGeneration with %s" % {'tolerance':tolerance,</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>40</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'generations':generations}</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>41</th><td class="l"><span>&nbsp; &nbsp; def _ChangeOverGeneration(inst):</span> </td>
+                  </tr><tr>
+                          <th>30</th><th>42</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hist = inst.energy_history</span> </td>
+                  </tr><tr>
+                          <th>31</th><th>43</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;lg = len(hist)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if lg &lt;= generations: return False</span> </td>
+                      </tr><tr>
+                        <th>33</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return (hist[-generations]-hist[-1]) &lt;= tolerance</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>44</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if lg &lt;= generations: return ""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>45</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (hist[-generations]-hist[-1]) &lt;= tolerance: return doc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>46</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return ""</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>47</th><td class="r"><span>&nbsp; &nbsp; _ChangeOverGeneration.__doc__ = doc</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>48</th><td class="l"><span>&nbsp; &nbsp; return _ChangeOverGeneration</span> </td>
+                  </tr><tr>
+                          <th>35</th><th>49</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L39">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L53">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>53</th><td class="l"><span>(cost[-g] - cost[-1]) /&nbsp; 0.5*(abs(cost[-g]) + abs(cost[-1])) &lt;= tolerance"""</span> </td>
+                  </tr><tr>
+                          <th>40</th><th>54</th><td class="l"><span>&nbsp; &nbsp; eta = 1e-20</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>55</th><td class="r"><ins>&nbsp; &nbsp; doc = "NormalizedChangeOverGeneration with %s" % {'tolerance':tolerance,</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>56</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'generations':generations}</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>41</th><th>57</th><td class="l"><span>&nbsp; &nbsp; def _NormalizedChangeOverGeneration(inst):</span> </td>
+                  </tr><tr>
+                          <th>42</th><th>58</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hist = inst.energy_history</span> </td>
+                  </tr><tr>
+                          <th>43</th><th>59</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;lg = len(hist)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if lg &lt;= generations: return <del>False</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>60</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if lg &lt;= generations: return <ins>""</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>61</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;diff = tolerance*(abs(hist[-generations])+abs(hist[-1])) + eta</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>46</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return 2.0*(hist[-generations]-hist[-1]) &lt;= diff</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>62</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if 2.0*(hist[-generations]-hist[-1]) &lt;= diff: return doc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>63</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return ""</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>64</th><td class="r"><span>&nbsp; &nbsp; _NormalizedChangeOverGeneration.__doc__ = doc</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>47</th><th>65</th><td class="l"><span>&nbsp; &nbsp; return _NormalizedChangeOverGeneration</span> </td>
+                  </tr><tr>
+                          <th>48</th><th>66</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L52">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L70">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>70</th><td class="l"><span>abs(xi-x0) &lt;= xtol &amp; abs(fi-f0) &lt;= ftol, where x=params &amp; f=cost"""</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>71</th><td class="l"><span>&nbsp; &nbsp; #NOTE: this termination expects nPop &gt; 1</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>72</th><td class="r"><ins>&nbsp; &nbsp; doc = "CandidateRelativeTolerance with %s" % {'xtol':xtol, 'ftol':ftol}</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>54</th><th>73</th><td class="l"><span>&nbsp; &nbsp; def _CandidateRelativeTolerance(inst):</span> </td>
+                  </tr><tr>
+                          <th>55</th><th>74</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sim = numpy.array(inst.population)</span> </td>
+                  </tr><tr>
+                          <th>56</th><th>75</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fsim = numpy.array(inst.popEnergy)</span> </td>
+                  </tr><tr>
+                          <th>57</th><th>76</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if not len(fsim[1:]):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>58</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;print "Warning: Invalid termination condition (nPop &lt; 2)"</span> </td>
+                      </tr><tr>
+                        <th>59</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return True</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>77</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;warn = "Warning: Invalid termination condition (nPop &lt; 2)"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>78</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;print warn</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>79</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return warn</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>60</th><th>80</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp;raise ValueError, "Invalid termination condition (nPop &lt; 2)"</span> </td>
+                  </tr><tr>
+                          <th>61</th><th>81</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#FIXME: abs(inf - inf) will raise a warning...</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L64">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L84">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>64</th><th>84</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;answer = answer and max(abs(fsim[0]-fsim[1:])) &lt;= ftol</span> </td>
+                  </tr><tr>
+                          <th>65</th><th>85</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;numpy.seterr(invalid=errdict['invalid']) #FIXME: turn on warnings</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>66</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return answer</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>86</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if answer: return doc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>87</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return ""</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>88</th><td class="r"><span>&nbsp; &nbsp; _CandidateRelativeTolerance.__doc__ = doc</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>67</th><th>89</th><td class="l"><span>&nbsp; &nbsp; return _CandidateRelativeTolerance</span> </td>
+                  </tr><tr>
+                          <th>68</th><th>90</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L71">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L93">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>71</th><th>93</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>72</th><th>94</th><td class="l"><span>sum(abs(last_params - current_params)) &lt;= tolerance"""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>95</th><td class="r"><ins>&nbsp; &nbsp; doc = "SolutionImprovement with %s" % {'tolerance':tolerance}</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>73</th><th>96</th><td class="l"><span>&nbsp; &nbsp; def _SolutionImprovement(inst):</span> </td>
+                  </tr><tr>
+                          <th>74</th><th>97</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; best = numpy.array(inst.bestSolution)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L76">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L99">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>76</th><th>99</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; update = best - trial #XXX: if inf - inf ?</span> </td>
+                  </tr><tr>
+                          <th>77</th><th>100</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; answer = numpy.add.reduce(abs(update)) &lt;= tolerance</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>78</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return answer</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>101</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if answer: return doc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>102</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return ""</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>103</th><td class="r"><span>&nbsp; &nbsp; _SolutionImprovement.__doc__ = doc</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>79</th><th>104</th><td class="l"><span>&nbsp; &nbsp; return _SolutionImprovement</span> </td>
+                  </tr><tr>
+                          <th>80</th><th>105</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L87">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L112">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>87</th><th>112</th><td class="l"><span>&nbsp; &nbsp; #&nbsp; original --&gt; if generations: then return cost[-g] - cost[-1] &lt; 0</span> </td>
+                  </tr><tr>
+                          <th>88</th><th>113</th><td class="l"><span>&nbsp; &nbsp; #&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;--&gt; else: return fval != 0 and abs((best - fval)/fval) &lt; tol</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>114</th><td class="r"><ins>&nbsp; &nbsp; doc = "NormalizedCostTarget with %s" % {'fval':fval, 'tolerance':tolerance,</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>115</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 'generations':generations}</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>89</th><th>116</th><td class="l"><span>&nbsp; &nbsp; def _NormalizedCostTarget(inst):</span> </td>
+                  </tr><tr>
+                          <th>90</th><th>117</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if generations and fval == None:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L92">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L119">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>92</th><th>119</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;lg = len(hist)</span> </td>
+                  </tr><tr>
+                          <th>93</th><th>120</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#XXX: throws error when hist is shorter than generations ?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>94</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return lg &gt; generations and (hist[-generations]-hist[-1]) &lt;= 0</span> </td>
+                      </tr><tr>
+                        <th>95</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if not generations and fval == None: return True</span> </td>
+                      </tr><tr>
+                        <th>96</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return abs(inst.bestEnergy-fval) &lt;= abs(tolerance * fval)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>121</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if lg &gt; generations and (hist[-generations]-hist[-1]) &lt;= 0:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>122</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return doc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>123</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return ""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>124</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if not generations and fval == None: return doc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>125</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if abs(inst.bestEnergy-fval) &lt;= abs(tolerance * fval): return doc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>126</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return ""</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>127</th><td class="r"><span>&nbsp; &nbsp; _NormalizedCostTarget.__doc__ = doc</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>97</th><th>128</th><td class="l"><span>&nbsp; &nbsp; return _NormalizedCostTarget</span> </td>
+                  </tr><tr>
+                          <th>98</th><th>129</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L103">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L134">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>103</th><th>134</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>104</th><th>135</th><td class="l"><span>cost[-g] - cost[-1] &lt;= gtol, where g=generations *or* cost[-1] &lt;= ftol."""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>136</th><td class="r"><ins>&nbsp; &nbsp; doc = "VTRChangeOverGeneration with %s" % {'ftol':ftol, 'gtol':gtol,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>137</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'generations':generations,</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>138</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'target':target}</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>105</th><th>139</th><td class="l"><span>&nbsp; &nbsp; def _VTRChangeOverGeneration(inst):</span> </td>
+                  </tr><tr>
+                          <th>106</th><th>140</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;hist = inst.energy_history</span> </td>
+                  </tr><tr>
+                          <th>107</th><th>141</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;lg = len(hist)</span> </td>
+                  </tr><tr>
+                          <th>108</th><th>142</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#XXX: throws error when hist is shorter than generations ?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>109</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return (lg &gt; generations and (hist[-generations]-hist[-1]) &lt;= gtol)\</span> </td>
+                      </tr><tr>
+                        <th>110</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; or ( abs(hist[-1] - target) &lt;= ftol )</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>143</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if (lg &gt; generations and (hist[-generations]-hist[-1]) &lt;= gtol)\</span> </td>
+                      </tr><tr>
+                        <th> </th><th>144</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; or ( abs(hist[-1] - target) &lt;= ftol ): return doc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>145</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return ""</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>146</th><td class="r"><span>&nbsp; &nbsp; _VTRChangeOverGeneration.__doc__ = doc</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>111</th><th>147</th><td class="l"><span>&nbsp; &nbsp; return _VTRChangeOverGeneration</span> </td>
+                  </tr><tr>
+                          <th>112</th><th>148</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L115">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L151">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>115</th><th>151</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>116</th><th>152</th><td class="l"><span>abs(params - params[0]) &lt;= tolerance"""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>153</th><td class="r"><ins>&nbsp; &nbsp; doc = "PopulationSpread with %s" % {'tolerance':tolerance}</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>117</th><th>154</th><td class="l"><span>&nbsp; &nbsp; def _PopulationSpread(inst):</span> </td>
+                  </tr><tr>
+                          <th>118</th><th>155</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sim = numpy.array(inst.population)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L120">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L157">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>120</th><th>157</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; print "Warning: Invalid termination condition (nPop &lt; 2)"</span> </td>
+                  </tr><tr>
+                          <th>121</th><th>158</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; return True</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>122</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return numpy.all(abs(sim - sim[0]) &lt;= abs(tolerance * sim[0]))</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>159</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;if numpy.all(abs(sim - sim[0]) &lt;= abs(tolerance * sim[0])): return doc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>160</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return ""</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>161</th><td class="r"><span>&nbsp; &nbsp; _PopulationSpread.__doc__ = doc</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>123</th><th>162</th><td class="l"><span>&nbsp; &nbsp; return _PopulationSpread</span> </td>
+                  </tr><tr>
+                          <th>124</th><th>163</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L127">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L166">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>127</th><th>166</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>128</th><th>167</th><td class="l"><span>sum( abs(gradient)**norm )**(1.0/norm) &lt;= tolerance"""</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>168</th><td class="r"><ins>&nbsp; &nbsp; doc = "GradientNormTolerance with %s" % {'tolerance':tolerance, 'norm':norm}</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>129</th><th>169</th><td class="l"><span>&nbsp; &nbsp; def _GradientNormTolerance(inst):</span> </td>
+                  </tr><tr>
+                          <th>130</th><th>170</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; try:</span> </td>
+                  </tr><tr>
+                          <th>131</th><th>171</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gfk = inst.gfk #XXX: need to ensure that gfk is an array ?</span> </td>
+                  </tr><tr>
+                          <th>132</th><th>172</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; except:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>133</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Invalid termination condition (no gradient)"</span> </td>
+                      </tr><tr>
+                        <th>134</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return True</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>173</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warn = "Warning: Invalid termination condition (no gradient)"</span> </td>
+                      </tr><tr>
+                        <th> </th><th>174</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print warn</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>175</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return warn</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>135</th><th>176</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if norm == Inf:</span> </td>
+                  </tr><tr>
+                          <th>136</th><th>177</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gnorm = numpy.amax(abs(gfk))</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=484#L141">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=536#L182">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>141</th><th>182</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#XXX: as norm &lt; -large, gnorm approaches amin(abs(gfk)) --&gt; then -inf</span> </td>
+                  </tr><tr>
+                          <th>142</th><th>183</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; gnorm = numpy.sum(abs(gfk)**norm,axis=0)**(1.0/norm)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>143</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return gnorm &lt;= tolerance</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>184</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if gnorm &lt;= tolerance: return doc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>185</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return ""</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>186</th><td class="r"><span>&nbsp; &nbsp; _GradientNormTolerance.__doc__ = doc</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>144</th><th>187</th><td class="l"><span>&nbsp; &nbsp; return _GradientNormTolerance</span> </td>
+                  </tr><tr>
+                          <th>145</th><th>188</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="536/mystic/mystic/tools.html" title="Show the changeset 536 restricted to mystic/mystic/tools.py">mystic/mystic/tools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 470">
+                    <a title="Show revision 470 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=470#L251">
+                      r470</a>
+                  </th>
+                  <th title="Revision 536">
+                    <a title="Show revision 536 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=536#L251">
+                      r536</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>251</th><th>251</th><td class="l"><span>from monitors import Null</span> </td>
+                  </tr><tr>
+                          <th>252</th><th>252</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>253</th><td class="r"><ins>def isNull(mon):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>254</th><td class="r"><ins>&nbsp; &nbsp; if isinstance(mon, Null): # is Null()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>255</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return True</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>256</th><td class="r"><ins>&nbsp; &nbsp; if mon == Null:&nbsp; # is Null</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>257</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return True</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>258</th><td class="r"><ins>&nbsp; &nbsp; return False</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>259</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>253</th><th>260</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>254</th><th>261</th><td class="l"><span>if __name__=='__main__':</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/536?format=diff&amp;new=536" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/536?format=zip&amp;new=536" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/536 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:50:06 GMT -->
+</html>

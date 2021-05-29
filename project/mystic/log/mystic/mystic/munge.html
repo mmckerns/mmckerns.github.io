@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 01:00:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      mystic/mystic/munge.py (log) – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../search.html" />
+        <link rel="help" href="../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?format=rss&amp;limit=100&amp;mode=stop_on_copy" type="application/rss+xml" class="rss" title="RSS Feed" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?format=changelog&amp;limit=100&amp;mode=stop_on_copy" type="text/plain" title="ChangeLog" />
+        <link rel="up" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic?rev=862" title="Parent directory" />
+        <link rel="start" href="../../../wiki.html" />
+        <link rel="stylesheet" href="../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../chrome/common/css/browser.css" type="text/css" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../chrome/common/js/search.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../login.html">Login</a></li><li><a href="../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../about.html">About Trac</a></li><li class="last"><a href="../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../wiki.html">Wiki</a></li><li><a href="../../../timeline.html">Timeline</a></li><li><a href="../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../browser.html">Browse Source</a></li><li><a href="../../../query.html">View Tickets</a></li><li class="last"><a href="../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="last first"><a href="../../../browser/mystic/mystic/munge.html">View Latest Revision</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="log">
+      <h1>
+<a class="pathentry first" href="http://mmckerns.github.io/project/mystic/browser?rev=862" title="Go to repository root">source:</a>
+<a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=862" title="View mystic">mystic</a><span class="pathentry sep">/</span><a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic?rev=862" title="View mystic">mystic</a><span class="pathentry sep">/</span><a class="pathentry" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=862" title="View munge.py">munge.py</a>
+<span class="pathentry sep">@</span>
+  <a class="pathentry" href="../../../changeset/862.html" title="View changeset 862">862</a>
+<br style="clear: both" />
+</h1>
+      <form id="prefs" action="#" method="get">
+        <div>
+          <input type="hidden" name="action" value="stop_on_copy" />
+          <div class="choice">
+            <fieldset>
+              <legend>Revision Log Mode:</legend>
+              <label>
+                <input type="radio" id="stop_on_copy" name="mode" value="stop_on_copy" checked="checked" />
+                Stop on copy
+              </label>
+              <label>
+                <input type="radio" id="follow_copy" name="mode" value="follow_copy" />
+                Follow copies
+              </label>
+              <label>
+                <input type="radio" id="path_history" name="mode" value="path_history" />
+                Show only adds and deletes
+              </label>
+            </fieldset>
+          </div>
+          <label>
+              View log starting at
+              <input type="text" id="rev" name="rev" value="862" size="5" />
+            </label>
+            <label>
+              and back to
+              <input type="text" id="stop_rev" name="stop_rev" size="5" />
+            </label><br />
+          <label>
+              Show at most
+              <input type="text" id="limit" name="limit" value="100" size="3" maxlength="3" />
+              revisions per page.
+            </label><br />
+          <label>
+            <input type="checkbox" id="verbose" name="verbose" />
+            Show full log messages
+          </label>
+        </div>
+        <div class="buttons">
+          <input type="submit" value="Update" />
+        </div>
+      </form>
+      <div class="diff">
+        <div class="legend" id="file-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="mod"></dt><dd>Modified</dd>
+            <dt class="cp"></dt><dd>Copied or renamed</dd>
+          </dl>
+        </div>
+      </div>
+      <form class="printableform" action="http://mmckerns.github.io/project/mystic/changeset" method="get">
+        <div class="buttons">
+          <input type="hidden" name="reponame" />
+          <input type="submit" value="View changes" title="Diff from Old Revision to New Revision (as selected in the Diff column)" />
+        </div>
+        <table class="listing chglist">
+          <thead>
+            <tr>
+              <th class="diff" title="Old / New">Diff</th>
+              <th class="change"></th>
+              <th class="rev">Rev</th>
+              <th class="age">Age</th>
+              <th class="author">Author</th>
+              <th class="summary">Log Message</th>
+            </tr>
+          </thead>
+          <tbody>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="855@mystic/mystic/munge.py" title="From [855]" />
+                    <input type="radio" name="new" value="855@mystic/mystic/munge.py" checked="checked" title="To [855]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=855" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=855" title="Browse at revision 855">
+                        @855</a>
+                        <a class="chgset" href="../../../changeset/855/mystic/mystic/munge.html" title="View changeset [855] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-01-01T19%3A05%3A11-08%3A00&amp;precision=second" title="2016-01-01T19:05:11-08:00 in Timeline">5 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        updated copyright to 2016
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="838@mystic/mystic/munge.py" title="From [838]" />
+                    <input type="radio" name="new" value="838@mystic/mystic/munge.py" title="To [838]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=838" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=838" title="Browse at revision 838">
+                        @838</a>
+                        <a class="chgset" href="../../../changeset/838/mystic/mystic/munge.html" title="View changeset [838] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-10-16T11%3A18%3A48-07%3A00&amp;precision=second" title="2015-10-16T11:18:48-07:00 in Timeline">7 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add read_trajectories function; use in model_plotter and log_reader; …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="801@mystic/mystic/munge.py" title="From [801]" />
+                    <input type="radio" name="new" value="801@mystic/mystic/munge.py" title="To [801]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=801" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=801" title="Browse at revision 801">
+                        @801</a>
+                        <a class="chgset" href="../../../changeset/801/mystic/mystic/munge.html" title="View changeset [801] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-27T14%3A10%3A35-07%3A00&amp;precision=second" title="2015-06-27T14:10:35-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        windows comparibility in getch, and pathos; added better read_import
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="792@mystic/mystic/munge.py" title="From [792]" />
+                    <input type="radio" name="new" value="792@mystic/mystic/munge.py" title="To [792]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=792" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=792" title="Browse at revision 792">
+                        @792</a>
+                        <a class="chgset" href="../../../changeset/792/mystic/mystic/munge.html" title="View changeset [792] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-10T13%3A01%3A55-07%3A00&amp;precision=second" title="2015-06-10T13:01:55-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        for speed, use contains instead of get and has_key
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="791@mystic/mystic/munge.py" title="From [791]" />
+                    <input type="radio" name="new" value="791@mystic/mystic/munge.py" title="To [791]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=791" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=791" title="Browse at revision 791">
+                        @791</a>
+                        <a class="chgset" href="../../../changeset/791/mystic/mystic/munge.html" title="View changeset [791] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-06-10T09%3A03%3A56-07%3A00&amp;precision=second" title="2015-06-10T09:03:56-07:00 in Timeline">11 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        use len(stepmon) more uniformly; fix _fcalls for DESolvers;
+generations …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="776@mystic/mystic/munge.py" title="From [776]" />
+                    <input type="radio" name="new" value="776@mystic/mystic/munge.py" title="To [776]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=776" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=776" title="Browse at revision 776">
+                        @776</a>
+                        <a class="chgset" href="../../../changeset/776/mystic/mystic/munge.html" title="View changeset [776] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-01-02T06%3A51%3A14-08%3A00&amp;precision=second" title="2015-01-02T06:51:14-08:00 in Timeline">17 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        copyright updated to 2015; added to examples2
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="765@mystic/mystic/munge.py" title="From [765]" />
+                    <input type="radio" name="new" value="765@mystic/mystic/munge.py" title="To [765]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=765" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=765" title="Browse at revision 765">
+                        @765</a>
+                        <a class="chgset" href="../../../changeset/765/mystic/mystic/munge.html" title="View changeset [765] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-10-16T13%3A43%3A52-07%3A00&amp;precision=second" title="2014-10-16T13:43:52-07:00 in Timeline">19 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        fix: logfile reader should not choke on inf or nan
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="747@mystic/mystic/munge.py" title="From [747]" />
+                    <input type="radio" name="new" value="747@mystic/mystic/munge.py" title="To [747]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=747" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=747" title="Browse at revision 747">
+                        @747</a>
+                        <a class="chgset" href="../../../changeset/747/mystic/mystic/munge.html" title="View changeset [747] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-08-11T17%3A58%3A45-07%3A00&amp;precision=second" title="2014-08-11T17:58:45-07:00 in Timeline">22 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        support multi-id logfiles in model_plotter; allow: no model, stop iter, …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="742@mystic/mystic/munge.py" title="From [742]" />
+                    <input type="radio" name="new" value="742@mystic/mystic/munge.py" title="To [742]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=742" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=742" title="Browse at revision 742">
+                        @742</a>
+                        <a class="chgset" href="../../../changeset/742/mystic/mystic/munge.html" title="View changeset [742] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-08-06T14%3A40%3A38-07%3A00&amp;precision=second" title="2014-08-06T14:40:38-07:00 in Timeline">22 months</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        add read_history to munge; moved trajectory_plotter to model_plotter;
+add …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="713@mystic/mystic/munge.py" title="From [713]" />
+                    <input type="radio" name="new" value="713@mystic/mystic/munge.py" title="To [713]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=713" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=713" title="Browse at revision 713">
+                        @713</a>
+                        <a class="chgset" href="../../../changeset/713/mystic/mystic/munge.html" title="View changeset [713] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2014-04-03T12%3A44%3A55-07%3A00&amp;precision=second" title="2014-04-03T12:44:55-07:00 in Timeline">2 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added license and copyright to each file
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="575@mystic/mystic/munge.py" title="From [575]" />
+                    <input type="radio" name="new" value="575@mystic/mystic/munge.py" title="To [575]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=575" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=575" title="Browse at revision 575">
+                        @575</a>
+                        <a class="chgset" href="../../../changeset/575/mystic/mystic/munge.html" title="View changeset [575] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-10-04T10%3A56%3A37-07%3A00&amp;precision=second" title="2012-10-04T10:56:37-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added 'info' keyword to <a class="missing wiki">LoggingMonitor?</a> for logging info during init;
+added …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="536@mystic/mystic/munge.py" title="From [536]" />
+                    <input type="radio" name="new" value="536@mystic/mystic/munge.py" title="To [536]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=536" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=536" title="Browse at revision 536">
+                        @536</a>
+                        <a class="chgset" href="../../../changeset/536/mystic/mystic/munge.html" title="View changeset [536] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-07-29T22%3A10%3A39-07%3A00&amp;precision=second" title="2012-07-29T22:10:39-07:00 in Timeline">4 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        added guard against null and empty logs in munge; added isNull;
+allow …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="477@mystic/mystic/munge.py" title="From [477]" />
+                    <input type="radio" name="new" value="477@mystic/mystic/munge.py" title="To [477]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=477" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=477" title="Browse at revision 477">
+                        @477</a>
+                        <a class="chgset" href="../../../changeset/477/mystic/mystic/munge.html" title="View changeset [477] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-09-17T14%3A59%3A17-07%3A00&amp;precision=second" title="2011-09-17T14:59:17-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        bugfix: typo in writing support files; cleanup of raw / converge file …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="476@mystic/mystic/munge.py" title="From [476]" />
+                    <input type="radio" name="new" value="476@mystic/mystic/munge.py" title="To [476]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=476" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=476" title="Browse at revision 476">
+                        @476</a>
+                        <a class="chgset" href="../../../changeset/476/mystic/mystic/munge.html" title="View changeset [476] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-08-29T14%3A54%3A25-07%3A00&amp;precision=second" title="2011-08-29T14:54:25-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        standardized plotters; plotters now can read standard logfile;
+split up …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="465@mystic/mystic/munge.py" title="From [465]" />
+                    <input type="radio" name="new" value="465@mystic/mystic/munge.py" title="To [465]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=465" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=465" title="Browse at revision 465">
+                        @465</a>
+                        <a class="chgset" href="../../../changeset/465/mystic/mystic/munge.html" title="View changeset [465] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-01T23%3A05%3A59-07%3A00&amp;precision=second" title="2011-07-01T23:05:59-07:00 in Timeline">5 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        all solvers import through 'solvers', and tools through 'tools'
+renamed …
+                    </td>
+                </tr>
+                <tr class="odd">
+                  <td class="diff">
+                    <input type="radio" name="old" value="370@mystic/mystic/munge.py" title="From [370]" />
+                    <input type="radio" name="new" value="370@mystic/mystic/munge.py" title="To [370]" />
+                  </td>
+                    <td class="change" style="padding-left: 1em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?rev=370" title="View log starting at this revision">
+                        <span class="copy"></span>
+                        <span class="comment">(copy)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/munge.py?rev=370" title="Browse at revision 370">
+                        @370</a>
+                        <a class="chgset" href="../../../changeset/370/mystic/mystic/munge.html" title="View changeset [370] restricted to mystic/mystic/munge.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-08-03T14%3A43%3A48-07%3A00&amp;precision=second" title="2010-08-03T14:43:48-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        modified Sows to allow capture of "population" not just "best" value; …
+                    </td>
+                </tr>
+                <tr class="even">
+                  <td></td>
+                  <td class="copyfrom_path" colspan="6" style="padding-left: 1em">
+                    copied from <a href="http://mmckerns.github.io/project/mystic/browser/branches/multilogger/logger.py?rev=353">branches/multilogger/logger.py</a>:
+                  </td>
+                </tr>
+                <tr class="even">
+                  <td class="diff">
+                    <input type="radio" name="old" value="353@branches/multilogger/logger.py" checked="checked" title="From [353]" />
+                    <input type="radio" name="new" value="353@branches/multilogger/logger.py" title="To [353]" />
+                  </td>
+                    <td class="change" style="padding-left: 2em">
+                      <a href="http://mmckerns.github.io/project/mystic/log/branches/multilogger/logger.py?rev=353" title="View log starting at this revision">
+                        <span class="edit"></span>
+                        <span class="comment">(edit)</span>
+                      </a>
+                    </td>
+                    <td class="rev">
+                      <a href="http://mmckerns.github.io/project/mystic/browser/branches/multilogger/logger.py?rev=353" title="Browse at revision 353">
+                        @353</a>
+                        <a class="chgset" href="../../../changeset/353/branches/multilogger/logger.html" title="View changeset [353] restricted to branches/multilogger/logger.py"> </a>
+                    </td>
+                    <td class="age"><a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-07-28T00%3A13%3A25-07%3A00&amp;precision=second" title="2010-07-28T00:13:25-07:00 in Timeline">6 years</a></td>
+                    <td class="author">mmckerns</td>
+                    <td class="summary">
+                        adapted monitor, logger, plotters to handle list of x same as nested list …
+                    </td>
+                </tr>
+          </tbody>
+        </table>
+        <div class="buttons">
+          <input type="submit" value="View changes" title="Diff from Old Revision to New Revision (as selected in the Diff column)" />
+        </div>
+      </form>
+      <div id="help"><strong>Note:</strong> See <a href="../../../wiki/TracRevisionLog.html">TracRevisionLog</a>
+        for help on using the revision log.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?format=rss&amp;limit=100&amp;mode=stop_on_copy" class="rss">RSS Feed</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py?format=changelog&amp;limit=100&amp;mode=stop_on_copy">ChangeLog</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/log/mystic/mystic/munge.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 01:00:39 GMT -->
+</html>

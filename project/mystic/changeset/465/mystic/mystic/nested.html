@@ -1,0 +1,508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/465/mystic/mystic/nested.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:44:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 465 for mystic/mystic/nested.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/465/mystic/mystic/nested.py?format=diff&amp;new=465" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/465/mystic/mystic/nested.py?format=zip&amp;new=465" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../466/mystic/mystic/nested.html" title="Changeset 466 for mystic/mystic/nested.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../463/mystic/mystic/nested.html" title="Changeset 463 for mystic/mystic/nested.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../463/mystic/mystic/nested.html" title="Changeset 463 for mystic/mystic/nested.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../466/mystic/mystic/nested.html" title="Changeset 466 for mystic/mystic/nested.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../465.html">465</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=465">mystic/mystic/nested.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             07/01/11 23:05:59
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-01T23%3A05%3A59-07%3A00&amp;precision=second" title="2011-07-01T23:05:59-07:00 in Timeline">5 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+all solvers import through 'solvers', and tools through 'tools'<br />
+renamed <a class="missing wiki">BatchGrid?</a> and Scattershot solvers; (see ticket <a class="closed ticket" href="../../../../ticket/143.html" title="task: better naming for nested and mapping in solvers (closed: worksforme)">#143</a>)<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=465">
+              mystic/mystic/nested.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">9 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="nested.html" title="Show the changeset 465 restricted to mystic/mystic/nested.py">mystic/mystic/nested.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 463">
+                    <a title="Show revision 463 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=463#L12">
+                      r463</a>
+                  </th>
+                  <th title="Revision 465">
+                    <a title="Show revision 465 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=465#L12">
+                      r465</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>12</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>13</th><th>13</th><td class="l"><span>The set of solvers built on mystic's AbstractNestdSolver are::</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>14</th><th> </th><td class="l"><span>&nbsp; &nbsp;<del>BatchGrid</del>Solver -- start from center of N grid points</span> </td>
+                      </tr><tr>
+                        <th>15</th><th> </th><td class="l"><span>&nbsp; &nbsp;<del>Scatter</del>shotSolver -- start from N random points in parameter space</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>14</th><td class="r"><span>&nbsp; &nbsp;<ins>Lattice</ins>Solver -- start from center of N grid points</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>15</th><td class="r"><span>&nbsp; &nbsp;<ins>Buck</ins>shotSolver -- start from N random points in parameter space</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>16</th><th>16</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>17</th><th>17</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=463#L19">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=465#L19">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>19</th><th>19</th><td class="l"><span>=====</span> </td>
+                  </tr><tr>
+                          <th>20</th><th>20</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>21</th><th> </th><td class="l"><span>See `mystic.examples.<del>scatter</del>shot_example06` for an example of using</span> </td>
+                      </tr><tr>
+                        <th>22</th><th> </th><td class="l"><span><del>ScattershotSolver. See `mystic.examples.batchgrid</del>_example06`</span> </td>
+                      </tr><tr>
+                        <th>23</th><th> </th><td class="l"><span>or an example of using <del>BatchGrid</del>Solver.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>21</th><td class="r"><span>See `mystic.examples.<ins>buck</ins>shot_example06` for an example of using</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span><ins>BuckshotSolver. See `mystic.examples.lattice</ins>_example06`</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>23</th><td class="r"><span>or an example of using <ins>Lattice</ins>Solver.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>24</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>25</th><th>25</th><td class="l"><span>All solvers included in this module provide the standard signal handling.</span> </td>
+                  </tr><tr>
+                          <th>26</th><th>26</th><td class="l"><span>For more information, see `mystic.mystic.abstract_solver`.</span> </td>
+                  </tr><tr>
+                          <th>27</th><th>27</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>28</th><th> </th><td class="l"><span>__all__ = ['<del>BatchGridSolver','Scatter</del>shotSolver']</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>28</th><td class="r"><span>__all__ = ['<ins>LatticeSolver','Buck</ins>shotSolver']</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>29</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>30</th><th>30</th><td class="l"><span>from mystic.tools import Null, wrap_function</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=463#L33">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=465#L33">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>33</th><th>33</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>34</th><th>34</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>35</th><th> </th><td class="l"><span>class <del>BatchGrid</del>Solver(AbstractNestedSolver):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>35</th><td class="r"><span>class <ins>Lattice</ins>Solver(AbstractNestedSolver):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>36</th><th>36</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>37</th><td class="l"><span>parallel mapped optimization starting from the center of N grid points</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=463#L45">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=465#L45">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>45</th><td class="l"><span>All important class members are inherited from AbstractNestedSolver.</span> </td>
+                  </tr><tr>
+                          <th>46</th><th>46</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>47</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(<del>BatchGrid</del>Solver, self).__init__(dim, nbins=nbins)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>47</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(<ins>Lattice</ins>Solver, self).__init__(dim, nbins=nbins)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>48</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>49</th><th>49</th><td class="l"><span>#&nbsp; &nbsp;def SetGridBins(self, nbins):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=463#L134">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=465#L134">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>134</th><th>134</th><td class="l"><span>def local_optimize(cost, termination, x0, rank):</span> </td>
+                  </tr><tr>
+                          <th>135</th><th>135</th><td class="l"><span>&nbsp; &nbsp; from %s import %s as LocalSolver</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>136</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic<del></del> import Sow</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>136</th><td class="r"><span>&nbsp; &nbsp; from mystic<ins>.tools</ins> import Sow</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>137</th><th>137</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>138</th><th>138</th><td class="l"><span>&nbsp; &nbsp; stepmon = Sow()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=463#L220">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=465#L220">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>220</th><th>220</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return </span> </td>
+                  </tr><tr>
+                          <th>221</th><th>221</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>222</th><th> </th><td class="l"><span>class <del>Scatter</del>shotSolver(AbstractNestedSolver):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>222</th><td class="r"><span>class <ins>Buck</ins>shotSolver(AbstractNestedSolver):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>223</th><th>223</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>224</th><th>224</th><td class="l"><span>parallel mapped optimization starting from the N random points</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=463#L232">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=465#L232">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>232</th><th>232</th><td class="l"><span>All important class members are inherited from AbstractNestedSolver.</span> </td>
+                  </tr><tr>
+                          <th>233</th><th>233</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>234</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(<del>Scatter</del>shotSolver, self).__init__(dim, npts=npts)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>234</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(<ins>Buck</ins>shotSolver, self).__init__(dim, npts=npts)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>235</th><th>235</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>236</th><th>236</th><td class="l"><span>&nbsp; &nbsp; def Solve(self, cost, termination, sigint_callback=None,</span> </td>
+                  </tr><tr>
+                          <th>237</th><th>237</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; EvaluationMonitor=Null, StepMonitor=Null, ExtraArgs=(), **kwds):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>238</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using <del>scatter</del>shot optimization.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>238</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using <ins>buck</ins>shot optimization.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>239</th><th>239</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>240</th><th>240</th><td class="l"><span>Description:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=463#L308">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=465#L308">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>308</th><th>308</th><td class="l"><span>def local_optimize(cost, termination, x0, rank):</span> </td>
+                  </tr><tr>
+                          <th>309</th><th>309</th><td class="l"><span>&nbsp; &nbsp; from %s import %s as LocalSolver</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>310</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic<del></del> import Sow</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>310</th><td class="r"><span>&nbsp; &nbsp; from mystic<ins>.tools</ins> import Sow</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>311</th><th>311</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>312</th><th>312</th><td class="l"><span>&nbsp; &nbsp; stepmon = Sow()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=463#L394">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/nested.py?rev=465#L394">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>394</th><th>394</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return </span> </td>
+                  </tr><tr>
+                          <th>395</th><th>395</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>396</th><td class="r"><ins># backward compatibility</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>397</th><td class="r"><ins>ScattershotSolver = BuckshotSolver</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>398</th><td class="r"><ins>BatchGridSolver = LatticeSolver</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>399</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>396</th><th>400</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>397</th><th>401</th><td class="l"><span>if __name__=='__main__':</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/465/mystic/mystic/nested.py?format=diff&amp;new=465" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/465/mystic/mystic/nested.py?format=zip&amp;new=465" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/465/mystic/mystic/nested.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:44:46 GMT -->
+</html>

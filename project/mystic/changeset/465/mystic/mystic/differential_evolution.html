@@ -1,0 +1,533 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/465/mystic/mystic/differential_evolution.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:44:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 465 for mystic/mystic/differential_evolution.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/465/mystic/mystic/differential_evolution.py?format=diff&amp;new=465" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/465/mystic/mystic/differential_evolution.py?format=zip&amp;new=465" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../466/mystic/mystic/differential_evolution.html" title="Changeset 466 for mystic/mystic/differential_evolution.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../462/mystic/mystic/differential_evolution.html" title="Changeset 462 for mystic/mystic/differential_evolution.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../462/mystic/mystic/differential_evolution.html" title="Changeset 462 for mystic/mystic/differential_evolution.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../466/mystic/mystic/differential_evolution.html" title="Changeset 466 for mystic/mystic/differential_evolution.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../465.html">465</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=465">mystic/mystic/differential_evolution.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             07/01/11 23:05:59
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-01T23%3A05%3A59-07%3A00&amp;precision=second" title="2011-07-01T23:05:59-07:00 in Timeline">5 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+all solvers import through 'solvers', and tools through 'tools'<br />
+renamed <a class="missing wiki">BatchGrid?</a> and Scattershot solvers; (see ticket <a class="closed ticket" href="../../../../ticket/143.html" title="task: better naming for nested and mapping in solvers (closed: worksforme)">#143</a>)<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=465">
+              mystic/mystic/differential_evolution.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">6 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="differential_evolution.html" title="Show the changeset 465 restricted to mystic/mystic/differential_evolution.py">mystic/mystic/differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 462">
+                    <a title="Show revision 462 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=462#L39">
+                      r462</a>
+                  </th>
+                  <th title="Revision 465">
+                    <a title="Show revision 465 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=465#L39">
+                      r465</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>39</th><td class="l"><span>A minimal interface that mimics a scipy.optimize interface has also been</span> </td>
+                  </tr><tr>
+                          <th>40</th><th>40</th><td class="l"><span>implemented, and functionality from the mystic solver API has been added</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>41</th><th> </th><td class="l"><span>with reasonable defaults.&nbsp; DifferentialEvolutionSolver2 is used by</span> </td>
+                      </tr><tr>
+                        <th>42</th><th> </th><td class="l"><span>the minimal interface, unless 'invariant_current' is set to False.</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>41</th><td class="r"><span>with reasonable defaults. </span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>43</th><th>42</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>44</th><th>43</th><td class="l"><span>Minimal function interface to optimization routines::</span> </td>
+                  </tr><tr>
+                          <th>45</th><th>44</th><td class="l"><span>&nbsp; &nbsp; diffev&nbsp; &nbsp; &nbsp; -- Differential Evolution (DE) solver</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>45</th><td class="r"><ins>&nbsp; &nbsp; diffev2&nbsp; &nbsp; &nbsp;-- Price &amp; Storn's Differential Evolution solver</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>46</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>47</th><th>47</th><td class="l"><span>The corresponding solvers built on mystic's AbstractSolver are::</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=462#L49">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=465#L49">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>49</th><th>49</th><td class="l"><span>&nbsp; &nbsp; DifferentialEvolutionSolver2 -- Storn &amp; Price's DE solver</span> </td>
+                  </tr><tr>
+                          <th>50</th><th>50</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>51</th><th> </th><td class="l"><span>Mystic solver behavior activated in d<del>effev</del>::</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>51</th><td class="r"><span>Mystic solver behavior activated in d<ins>iffev and diffev2</ins>::</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>52</th><td class="l"><span>&nbsp; &nbsp; - EvaluationMonitor = Sow()</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>53</th><td class="l"><span>&nbsp; &nbsp; - StepMonitor = Sow()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=462#L138">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=465#L138">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>138</th><th>138</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>139</th><th>139</th><td class="l"><span>__all__ = ['DifferentialEvolutionSolver','DifferentialEvolutionSolver2',\</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>140</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'diffev'<del></del>]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>140</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;'diffev'<ins>,'diffev2'</ins>]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>141</th><th>141</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>142</th><th>142</th><td class="l"><span>from mystic.tools import Null, wrap_function, unpair</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=462#L565">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=465#L565">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>565</th><th>565</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>566</th><th>566</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>567</th><th> </th><td class="l"><span>def diffev<del></del>(func,x0,npop,args=(),bounds=None,ftol=5e-3,gtol=None,</span> </td>
+                      </tr><tr>
+                        <th>568</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del></del>maxiter=None,maxfun=None,cross=0.9,scale=0.8,</span> </td>
+                      </tr><tr>
+                        <th>569</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>full_output=0,disp=1,retall=0,callback=None,invariant_current=Tru</del>e):</span> </td>
+                      </tr><tr>
+                        <th>570</th><th> </th><td class="l"><span>&nbsp; &nbsp; """Minimize a function using <del></del>differential evolution.</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>567</th><td class="r"><span>def diffev<ins>2</ins>(func,x0,npop,args=(),bounds=None,ftol=5e-3,gtol=None,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>568</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>&nbsp;</ins>maxiter=None,maxfun=None,cross=0.9,scale=0.8,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>569</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>&nbsp;full_output=0,disp=1,retall=0,callback=Non</ins>e):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>570</th><td class="r"><span>&nbsp; &nbsp; """Minimize a function using <ins>Storn &amp; Price's </ins>differential evolution.</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>571</th><th>571</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>572</th><th>572</th><td class="l"><span>Description:</span> </td>
+                  </tr><tr>
+                          <th>573</th><th>573</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>574</th><th> </th><td class="l"><span>&nbsp; &nbsp; Uses <del>a differential evolution algorith to find the minimum of</del></span> </td>
+                      </tr><tr>
+                        <th>575</th><th> </th><td class="l"><span>&nbsp; &nbsp; <del></del>a function of one or more variables. Mimics a scipy.optimize style</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>574</th><td class="r"><span>&nbsp; &nbsp; Uses <ins>Storn &amp; Prices's differential evolution algorith to find the minimum</ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>575</th><td class="r"><span>&nbsp; &nbsp; <ins>of </ins>a function of one or more variables. Mimics a scipy.optimize style</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>576</th><th>576</th><td class="l"><span>&nbsp; &nbsp; interface.</span> </td>
+                  </tr><tr>
+                          <th>577</th><th>577</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=462#L600">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=465#L600">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>600</th><th>600</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</span> </td>
+                  </tr><tr>
+                          <th>601</th><th>601</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; current parameter vector.</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>602</th><th> </th><td class="l"><del>&nbsp; &nbsp; invariant_current -- set to True to call DifferentialEvolutionSolver2,</del> </td>
+                  </tr><tr class="last">
+                          <th>603</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; otherwise call DifferentialEvolutionSolver</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>604</th><th>602</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>605</th><th>603</th><td class="l"><span>Returns: (xopt, {fopt, iter, funcalls, warnflag}, {allvecs})</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=462#L615">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=465#L613">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>615</th><th>613</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>616</th><th>614</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>615</th><td class="r"><ins>&nbsp; &nbsp; return diffev(func,x0,npop,args=(),bounds=None,ftol=5e-3,gtol=None,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>616</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maxiter=None,maxfun=None,cross=0.9,scale=0.8,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>617</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; full_output=0,disp=1,retall=0,callback=None,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>618</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; invariant_current=True)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>619</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>620</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>621</th><td class="r"><ins>def diffev(func,x0,npop,args=(),bounds=None,ftol=5e-3,gtol=None,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>622</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;maxiter=None,maxfun=None,cross=0.9,scale=0.8,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>623</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;full_output=0,disp=1,retall=0,callback=None,**kwds):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>624</th><td class="r"><ins>&nbsp; &nbsp; """Minimize a function using differential evolution.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>625</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>626</th><td class="r"><ins>Description:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>627</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>628</th><td class="r"><ins>&nbsp; &nbsp; Uses a differential evolution algorith to find the minimum of</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>629</th><td class="r"><ins>&nbsp; &nbsp; a function of one or more variables. Mimics a scipy.optimize style</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>630</th><td class="r"><ins>&nbsp; &nbsp; interface.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>631</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>632</th><td class="r"><ins>Inputs:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>633</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>634</th><td class="r"><ins>&nbsp; &nbsp; func -- the Python function or method to be minimized.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>635</th><td class="r"><ins>&nbsp; &nbsp; x0 -- the initial guess (ndarray), if desired to start from a</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>636</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; set point; otherwise takes an array of (min,max) bounds,</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>637</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; for when random initial points are desired</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>638</th><td class="r"><ins>&nbsp; &nbsp; npop -- size of the trial solution population.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>639</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>640</th><td class="r"><ins>Additional Inputs:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>641</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>642</th><td class="r"><ins>&nbsp; &nbsp; args -- extra arguments for func.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>643</th><td class="r"><ins>&nbsp; &nbsp; bounds -- list - n pairs of bounds (min,max), one pair for each parameter.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>644</th><td class="r"><ins>&nbsp; &nbsp; ftol -- number - acceptable relative error in func(xopt) for convergence.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>645</th><td class="r"><ins>&nbsp; &nbsp; gtol -- number - maximum number of iterations to run without improvement.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>646</th><td class="r"><ins>&nbsp; &nbsp; maxiter -- number - the maximum number of iterations to perform.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>647</th><td class="r"><ins>&nbsp; &nbsp; maxfun -- number - the maximum number of function evaluations.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>648</th><td class="r"><ins>&nbsp; &nbsp; cross -- number - the probability of cross-parameter mutations</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>649</th><td class="r"><ins>&nbsp; &nbsp; scale -- number - multiplier for impact of mutations on trial solution.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>650</th><td class="r"><ins>&nbsp; &nbsp; full_output -- number - non-zero if fval and warnflag outputs are desired.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>651</th><td class="r"><ins>&nbsp; &nbsp; disp -- number - non-zero to print convergence messages.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>652</th><td class="r"><ins>&nbsp; &nbsp; retall -- number - non-zero to return list of solutions at each iteration.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>653</th><td class="r"><ins>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>654</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is the</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>655</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; current parameter vector.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>656</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>657</th><td class="r"><ins>Returns: (xopt, {fopt, iter, funcalls, warnflag}, {allvecs})</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>658</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>659</th><td class="r"><ins>&nbsp; &nbsp; xopt -- ndarray - minimizer of function</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>660</th><td class="r"><ins>&nbsp; &nbsp; fopt -- number - value of function at minimum: fopt = func(xopt)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>661</th><td class="r"><ins>&nbsp; &nbsp; iter -- number - number of iterations</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>662</th><td class="r"><ins>&nbsp; &nbsp; funcalls -- number - number of function calls</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>663</th><td class="r"><ins>&nbsp; &nbsp; warnflag -- number - Integer warning flag:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>664</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; 1 : 'Maximum number of function evaluations.'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>665</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; 2 : 'Maximum number of iterations.'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>666</th><td class="r"><ins>&nbsp; &nbsp; allvecs -- list - a list of solutions at each iteration</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>667</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>668</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>669</th><td class="r"><ins>&nbsp; &nbsp; invariant_current = False</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>670</th><td class="r"><ins>&nbsp; &nbsp; if kwds.has_key('invariant_current'):</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>671</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; invariant_current = kwds['invariant_current']</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>617</th><th>672</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>618</th><th>673</th><td class="l"><span>&nbsp; &nbsp; from mystic.tools import Sow</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/465/mystic/mystic/differential_evolution.py?format=diff&amp;new=465" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/465/mystic/mystic/differential_evolution.py?format=zip&amp;new=465" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/465/mystic/mystic/differential_evolution.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:44:44 GMT -->
+</html>

@@ -1,0 +1,2302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/637 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:50:11 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 637 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="636.html" title="Changeset 636" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/637?format=diff&amp;new=637" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/637?format=zip&amp;new=637" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="638.html" title="Changeset 638" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="636.html" title="Changeset 636">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="638.html" title="Changeset 638">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 637</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             01/07/13 15:18:17
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2013-01-07T15%3A18%3A17-08%3A00&amp;precision=second" title="2013-01-07T15:18:17-08:00 in Timeline">3 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+add _map_solver attribute, merge trialPop to trialSolution (2D for map solver);<br />
+refactor diffev* solvers to allow stepping over a single iteration;<br />
+account for 2D trialSolution in termination and strategy;<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=637">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>6 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=637">
+              mystic/abstract_map_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=637">
+              mystic/abstract_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=637">
+              mystic/differential_evolution.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">6 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=637">
+              mystic/strategy.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">11 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=637">
+              mystic/termination.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/solver_test_compare.py?rev=637">
+              tests/solver_test_compare.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="637/mystic/mystic/abstract_map_solver.html" title="Show the changeset 637 restricted to mystic/mystic/abstract_map_solver.py">mystic/mystic/abstract_map_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 631">
+                    <a title="Show revision 631 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=631#L107">
+                      r631</a>
+                  </th>
+                  <th title="Revision 637">
+                    <a title="Show revision 637 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_map_solver.py?rev=637#L107">
+                      r637</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>107</th><th>107</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#self.signal_handler&nbsp; &nbsp;= None</span> </td>
+                  </tr><tr>
+                          <th>108</th><th>108</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#self._handle_sigint&nbsp; &nbsp;= False</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>109</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; trialPop = [[0.0 for i in range(dim)] for j in range(self.nPop)]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>110</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution&nbsp; &nbsp; = trialPop</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>111</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._map_solver&nbsp; &nbsp; &nbsp; = True</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>109</th><th>112</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>110</th><th>113</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # import 'map' defaults</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="637/mystic/mystic/abstract_solver.html" title="Show the changeset 637 restricted to mystic/mystic/abstract_solver.py">mystic/mystic/abstract_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 636">
+                    <a title="Show revision 636 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=636#L113">
+                      r636</a>
+                  </th>
+                  <th title="Revision 637">
+                    <a title="Show revision 637 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=637#L113">
+                      r637</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>113</th><th>113</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.population&nbsp; &nbsp; &nbsp; &nbsp;= [[0.0 for i in range(dim)] for j in range(NP)]</span> </td>
+                  </tr><tr>
+                          <th>114</th><th>114</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution&nbsp; &nbsp; = [0.0] * dim</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>115</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._map_solver&nbsp; &nbsp; &nbsp; = False</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>115</th><th>116</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._bestEnergy&nbsp; &nbsp; &nbsp; = None</span> </td>
+                  </tr><tr>
+                          <th>116</th><th>117</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._bestSolution&nbsp; &nbsp; = None</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="637/mystic/mystic/differential_evolution.html" title="Show the changeset 637 restricted to mystic/mystic/differential_evolution.py">mystic/mystic/differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 636">
+                    <a title="Show revision 636 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=636#L191">
+                      r636</a>
+                  </th>
+                  <th title="Revision 637">
+                    <a title="Show revision 637 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=637#L191">
+                      r637</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>191</th><th>191</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>192</th><th>192</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>193</th><td class="r"><ins>&nbsp; &nbsp; def _SetEvaluationLimits(self, iterscale=None, evalscale=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>194</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """set the evaluation limits"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>195</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if iterscale is None: iterscale = 10</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>196</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if evalscale is None: evalscale = 1000</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>197</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # if SetEvaluationLimits not applied, use the solver default</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>198</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxiter is None:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>199</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = self.nDim * self.nPop * iterscale</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>200</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxfun is None:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>201</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = self.nDim * self.nPop * evalscale</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>202</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>203</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>204</th><td class="r"><ins>&nbsp; &nbsp; def _Decorate(self, costfunction, ExtraArgs=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>205</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """decorate cost function with bounds, penalties, monitors, etc"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>206</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._fcalls, costfunction = wrap_function(costfunction, ExtraArgs, self._evalmon)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>207</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if self._useStrictRange:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>208</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in range(self.nPop):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>209</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[i] = self._clipGuessWithinRangeBoundary(self.population[i])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>210</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; costfunction = wrap_bounds(costfunction, self._strictMin, self._strictMax)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>211</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; costfunction = wrap_penalty(costfunction, self._penalty)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>212</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return costfunction</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>213</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>214</th><td class="r"><ins>&nbsp; &nbsp; def Step(self, costfunction, strategy=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>215</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """perform a single optimization iteration"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>216</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if not self.generations: # this is the first iteration</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>217</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[0] = asfarray(self.population[0])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>218</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # decouple bestSolution from population and bestEnergy from popEnergy</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>219</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = self.population[0]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>220</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = self.popEnergy[0]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>221</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>222</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; for candidate in range(self.nPop):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>223</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not self.generations:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>224</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # generate trialSolution (within valid range)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>225</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution[:] = self.population[candidate]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>226</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if strategy:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>227</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # generate trialSolution (within valid range)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>228</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; strategy(self, candidate)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>229</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # apply constraints</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>230</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution[:] = self._constraints(self.trialSolution)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>231</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # apply penalty</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>232</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#trialEnergy = self._penalty(self.trialSolution)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>233</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # calculate cost</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>234</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trialEnergy = costfunction(self.trialSolution)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>235</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>236</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if trialEnergy &lt; self.popEnergy[candidate]:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>237</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # New low for this candidate</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>238</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy[candidate] = trialEnergy</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>239</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[candidate][:] = self.trialSolution</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>240</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.UpdateGenealogyRecords(candidate, self.trialSolution[:])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>241</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>242</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Check if all-time low</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>243</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if trialEnergy &lt; self.bestEnergy:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>244</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = trialEnergy</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>245</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution[:] = self.trialSolution</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>246</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>247</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # log bestSolution and bestEnergy (includes penalty)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>248</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(self.bestSolution[:], self.bestEnergy, self.id)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>249</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>250</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>251</th><td class="r"><ins>&nbsp; &nbsp; def _process_inputs(self, kwds):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>252</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """process and activate input settings"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>253</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #allow for inputs that don't conform to AbstractSolver interface</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>254</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Best1Bin</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>255</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; strategy=Best1Bin&nbsp; &nbsp; #mutation strategy (see mystic.strategy)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>256</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; callback=None&nbsp; &nbsp; &nbsp; &nbsp; #user-supplied function, called after each step</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>257</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; disp=0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#non-zero to print convergence messages</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>258</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; probability=0.9&nbsp; &nbsp; &nbsp; #potential for parameter cross-mutation</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>259</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; scale=0.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #multiplier for mutation impact</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>260</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if not kwds.has_key('strategy'): kwds['strategy'] = strategy</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>261</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if not kwds.has_key('callback'): kwds['callback'] = callback</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>262</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if not kwds.has_key('disp'): kwds['disp'] = disp</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>263</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.probability = kwds.pop('CrossProbability', probability)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>264</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.scale = kwds.pop('ScalingFactor', scale)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>265</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # backward compatibility</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>266</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('EvaluationMonitor'): \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>267</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetEvaluationMonitor(kwds.pop('EvaluationMonitor'))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>268</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('StepMonitor'): \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>269</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetGenerationMonitor(kwds.pop('StepMonitor'))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>270</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('penalty'): \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>271</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetPenalty(kwds.pop('penalty'))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>272</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('constraints'): \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>273</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetConstraints(kwds.pop('constraints'))</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>274</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return kwds</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>275</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>193</th><th>276</th><td class="l"><span>&nbsp; &nbsp; def Solve(self, costfunction, termination, sigint_callback=None,</span> </td>
+                  </tr><tr>
+                          <th>194</th><th>277</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ExtraArgs=(), **kwds):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=636#L223">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=637#L306">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>223</th><th>306</th><td class="l"><span>&nbsp; &nbsp; disp -- non-zero to print convergence messages.</span> </td>
+                  </tr><tr>
+                          <th>224</th><th>307</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>225</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #allow for inputs that don't conform to AbstractSolver interface</span> </td>
+                      </tr><tr>
+                        <th>226</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.population[0] = asfarray(self.population[0])</span> </td>
+                      </tr><tr>
+                        <th>227</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Best1Bin</span> </td>
+                      </tr><tr>
+                        <th>228</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; strategy=Best1Bin&nbsp; &nbsp; #mutation strategy (see mystic.strategy)</span> </td>
+                      </tr><tr>
+                        <th>229</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; CrossProbability=0.9 #potential for parameter cross-mutation</span> </td>
+                      </tr><tr>
+                        <th>230</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ScalingFactor=0.8&nbsp; &nbsp; #multiplier for mutation impact</span> </td>
+                      </tr><tr>
+                        <th>231</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; callback=None&nbsp; &nbsp; &nbsp; &nbsp; #user-supplied function, called after each step</span> </td>
+                      </tr><tr>
+                        <th>232</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; disp=0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#non-zero to print convergence messages</span> </td>
+                      </tr><tr>
+                        <th>233</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('strategy'): strategy = kwds['strategy']</span> </td>
+                      </tr><tr>
+                        <th>234</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('CrossProbability'): \</span> </td>
+                      </tr><tr>
+                        <th>235</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability = kwds['CrossProbability']</span> </td>
+                      </tr><tr>
+                        <th>236</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('ScalingFactor'): ScalingFactor = kwds['ScalingFactor']</span> </td>
+                      </tr><tr>
+                        <th>237</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('callback'): callback = kwds['callback']</span> </td>
+                      </tr><tr>
+                        <th>238</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('disp'): disp = kwds['disp']</span> </td>
+                      </tr><tr>
+                        <th>239</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # backward compatibility</span> </td>
+                      </tr><tr>
+                        <th>240</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('EvaluationMonitor'): \</span> </td>
+                      </tr><tr>
+                        <th>241</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetEvaluationMonitor(kwds['EvaluationMonitor'])</span> </td>
+                      </tr><tr>
+                        <th>242</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('StepMonitor'): \</span> </td>
+                      </tr><tr>
+                        <th>243</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetGenerationMonitor(kwds['StepMonitor'])</span> </td>
+                      </tr><tr>
+                        <th>244</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('penalty'): \</span> </td>
+                      </tr><tr>
+                        <th>245</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetPenalty(kwds['penalty'])</span> </td>
+                      </tr><tr>
+                        <th>246</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('constraints'): \</span> </td>
+                      </tr><tr>
+                        <th>247</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetConstraints(kwds['constraints'])</span> </td>
+                      </tr><tr>
+                        <th>248</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                      </tr><tr>
+                        <th>249</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>308</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                      </tr><tr>
+                        <th> </th><th>309</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = {}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>310</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings.update(self._process_inputs(kwds))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>311</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; disp = settings['disp']</span> </td>
+                      </tr><tr>
+                        <th> </th><th>312</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; callback = settings['callback']</span> </td>
+                      </tr><tr>
+                        <th> </th><th>313</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; strategy = settings['strategy'] #XXX: specific to diffev* ?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>314</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>315</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # set up signal handler</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>250</th><th>316</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import signal</span> </td>
+                  </tr><tr>
+                          <th>251</th><th>317</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._EARLYEXIT = False</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>252</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>253</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self._fcalls, costfunction = wrap_function(costfunction, ExtraArgs, self._evalmon)</del> </td>
+                  </tr><tr>
+                          <th>254</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if self._useStrictRange:</del> </td>
+                  </tr><tr>
+                          <th>255</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in range(self.nPop):</del> </td>
+                  </tr><tr>
+                          <th>256</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[i] = self._clipGuessWithinRangeBoundary(self.population[i])</del> </td>
+                  </tr><tr>
+                          <th>257</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; costfunction = wrap_bounds(costfunction, self._strictMin, self._strictMax)</del> </td>
+                  </tr><tr>
+                          <th>258</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; costfunction = wrap_penalty(costfunction, self._penalty)</del> </td>
+                  </tr><tr>
+                          <th>259</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr class="last">
+                          <th>260</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; #generate signal_handler</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>261</th><th>318</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._generateHandler(sigint_callback) </span> </td>
+                  </tr><tr>
+                          <th>262</th><th>319</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint: signal.signal(signal.SIGINT, self.signal_handler)</span> </td>
+                  </tr><tr>
+                          <th>263</th><th>320</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>264</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; id = self.id</span> </td>
+                      </tr><tr>
+                        <th>265</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.probability = CrossProbability</span> </td>
+                      </tr><tr>
+                        <th>266</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.scale = ScalingFactor</span> </td>
+                      </tr><tr>
+                        <th>267</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>268</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # decouple bestSolution from population and bestEnergy from popEnergy</span> </td>
+                      </tr><tr>
+                        <th>269</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = self.population[0]</span> </td>
+                      </tr><tr>
+                        <th>270</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = self.popEnergy[0]</span> </td>
+                      </tr><tr>
+                        <th>271</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>272</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #set initial solution and energy by running a single iteration</span> </td>
+                      </tr><tr>
+                        <th>273</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for candidate in range(self.nPop):</span> </td>
+                      </tr><tr>
+                        <th>274</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # generate trialSolution (within valid range)</span> </td>
+                      </tr><tr>
+                        <th>275</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution[:] = self.population[candidate]</span> </td>
+                      </tr><tr>
+                        <th>276</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # apply constraints</span> </td>
+                      </tr><tr>
+                        <th>277</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution[:] = self._constraints(self.trialSolution)</span> </td>
+                      </tr><tr>
+                        <th>278</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # apply penalty</span> </td>
+                      </tr><tr>
+                        <th>279</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#trialEnergy = self._penalty(self.trialSolution)</span> </td>
+                      </tr><tr>
+                        <th>280</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # calculate cost</span> </td>
+                      </tr><tr>
+                        <th>281</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trialEnergy = costfunction(self.trialSolution)</span> </td>
+                      </tr><tr>
+                        <th>282</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>283</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if trialEnergy &lt; self.popEnergy[candidate]:</span> </td>
+                      </tr><tr>
+                        <th>284</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # New low for this candidate</span> </td>
+                      </tr><tr>
+                        <th>285</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy[candidate] = trialEnergy</span> </td>
+                      </tr><tr>
+                        <th>286</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[candidate][:] = self.trialSolution</span> </td>
+                      </tr><tr>
+                        <th>287</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.UpdateGenealogyRecords(candidate, self.trialSolution[:])</span> </td>
+                      </tr><tr>
+                        <th>288</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>289</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Check if all-time low</span> </td>
+                      </tr><tr>
+                        <th>290</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if trialEnergy &lt; self.bestEnergy:</span> </td>
+                      </tr><tr>
+                        <th>291</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = trialEnergy</span> </td>
+                      </tr><tr>
+                        <th>292</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution[:] = self.trialSolution</span> </td>
+                      </tr><tr>
+                        <th>293</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>294</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # log bestSolution and bestEnergy (includes penalty)</span> </td>
+                      </tr><tr>
+                        <th>295</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(self.bestSolution[:], self.bestEnergy, id)</span> </td>
+                      </tr><tr>
+                        <th>296</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; termination(self) #XXX: initialize termination conditions, if needed</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>321</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # decorate cost function with bounds, penalties, monitors, etc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>322</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; costfunction = self._Decorate(costfunction, ExtraArgs)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>323</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>324</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # the initital optimization iteration</span> </td>
+                      </tr><tr>
+                        <th> </th><th>325</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.Step(costfunction)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>326</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # initialize termination conditions, if needed</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>327</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; termination(self)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>297</th><th>328</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if callback is not None:</span> </td>
+                  </tr><tr>
+                          <th>298</th><th>329</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; callback(self.bestSolution)</span> </td>
+                  </tr><tr>
+                          <th>299</th><th>330</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>300</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # if SetEvaluationLimits not applied, use the solver default</span> </td>
+                      </tr><tr>
+                        <th>301</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxiter is None:</span> </td>
+                      </tr><tr>
+                        <th>302</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = self.nDim * self.nPop * 10&nbsp; #XXX: better defaults?</span> </td>
+                      </tr><tr>
+                        <th>303</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxfun is None:</span> </td>
+                      </tr><tr>
+                        <th>304</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = self.nDim * self.nPop * 1000 #XXX: better defaults?</span> </td>
+                      </tr><tr>
+                        <th>305</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>331</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # impose the evaluation limits</span> </td>
+                      </tr><tr>
+                        <th> </th><th>332</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._SetEvaluationLimits()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>333</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>334</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # the main optimization loop</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>306</th><th>335</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; while not self._terminated(termination) and not self._EARLYEXIT:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>307</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for candidate in range(self.nPop):</span> </td>
+                      </tr><tr>
+                        <th>308</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # generate trialSolution (within valid range)</span> </td>
+                      </tr><tr>
+                        <th>309</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; strategy(self, candidate)</span> </td>
+                      </tr><tr>
+                        <th>310</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # apply constraints</span> </td>
+                      </tr><tr>
+                        <th>311</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution[:] = self._constraints(self.trialSolution)</span> </td>
+                      </tr><tr>
+                        <th>312</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # apply penalty</span> </td>
+                      </tr><tr>
+                        <th>313</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#trialEnergy = self._penalty(self.trialSolution)</span> </td>
+                      </tr><tr>
+                        <th>314</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # calculate cost</span> </td>
+                      </tr><tr>
+                        <th>315</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trialEnergy = costfunction(self.trialSolution)</span> </td>
+                      </tr><tr>
+                        <th>316</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>317</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if trialEnergy &lt; self.popEnergy[candidate]:</span> </td>
+                      </tr><tr>
+                        <th>318</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # New low for this candidate</span> </td>
+                      </tr><tr>
+                        <th>319</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy[candidate] = trialEnergy</span> </td>
+                      </tr><tr>
+                        <th>320</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[candidate][:] = self.trialSolution</span> </td>
+                      </tr><tr>
+                        <th>321</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.UpdateGenealogyRecords(candidate, self.trialSolution[:])</span> </td>
+                      </tr><tr>
+                        <th>322</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>323</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Check if all-time low</span> </td>
+                      </tr><tr>
+                        <th>324</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if trialEnergy &lt; self.bestEnergy:</span> </td>
+                      </tr><tr>
+                        <th>325</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = trialEnergy</span> </td>
+                      </tr><tr>
+                        <th>326</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution[:] = self.trialSolution</span> </td>
+                      </tr><tr>
+                        <th>327</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>328</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # log bestSolution and bestEnergy (includes penalty)</span> </td>
+                      </tr><tr>
+                        <th>329</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(self.bestSolution[:], self.bestEnergy, id)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>336</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.Step(costfunction, strategy=strategy)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>330</th><th>337</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if callback is not None:</span> </td>
+                  </tr><tr>
+                          <th>331</th><th>338</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; callback(self.bestSolution)</span> </td>
+                  </tr><tr>
+                          <th>332</th><th>339</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>340</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # handle signal interrupts</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>333</th><th>341</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                  </tr><tr>
+                          <th>334</th><th>342</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=636#L371">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=637#L379">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>371</th><th>379</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>372</th><th>380</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>373</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Solve(self, costfunction, termination, sigint_callback=None,</span> </td>
+                      </tr><tr>
+                        <th>374</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ExtraArgs=(), **kwds):</span> </td>
+                      </tr><tr>
+                        <th>375</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using differential evolution.</span> </td>
+                      </tr><tr>
+                        <th>376</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>377</th><th> </th><td class="l"><span>Description:</span> </td>
+                      </tr><tr>
+                        <th>378</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>379</th><th> </th><td class="l"><span>&nbsp; &nbsp; Uses a differential evolution algorith to find the minimum of</span> </td>
+                      </tr><tr>
+                        <th>380</th><th> </th><td class="l"><span>&nbsp; &nbsp; a function of one or more variables. This implementation holds</span> </td>
+                      </tr><tr>
+                        <th>381</th><th> </th><td class="l"><span>&nbsp; &nbsp; the current generation invariant until the end of each iteration.</span> </td>
+                      </tr><tr>
+                        <th>382</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>383</th><th> </th><td class="l"><span>Inputs:</span> </td>
+                      </tr><tr>
+                        <th>384</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>385</th><th> </th><td class="l"><span>&nbsp; &nbsp; costfunction -- the Python function or method to be minimized.</span> </td>
+                      </tr><tr>
+                        <th>386</th><th> </th><td class="l"><span>&nbsp; &nbsp; termination -- callable object providing termination conditions.</span> </td>
+                      </tr><tr>
+                        <th>387</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>388</th><th> </th><td class="l"><span>Additional Inputs:</span> </td>
+                      </tr><tr>
+                        <th>389</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>390</th><th> </th><td class="l"><span>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</span> </td>
+                      </tr><tr>
+                        <th>391</th><th> </th><td class="l"><span>&nbsp; &nbsp; ExtraArgs -- extra arguments for func.</span> </td>
+                      </tr><tr>
+                        <th>392</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>393</th><th> </th><td class="l"><span>Further Inputs:</span> </td>
+                      </tr><tr>
+                        <th>394</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>395</th><th> </th><td class="l"><span>&nbsp; &nbsp; strategy -- the mutation strategy for generating new trial</span> </td>
+                      </tr><tr>
+                        <th>396</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; solutions [default = Best1Bin]</span> </td>
+                      </tr><tr>
+                        <th>397</th><th> </th><td class="l"><span>&nbsp; &nbsp; CrossProbability -- the probability of cross-parameter mutations</span> </td>
+                      </tr><tr>
+                        <th>398</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [default = 0.9]</span> </td>
+                      </tr><tr>
+                        <th>399</th><th> </th><td class="l"><span>&nbsp; &nbsp; ScalingFactor -- multiplier for the impact of mutations on the</span> </td>
+                      </tr><tr>
+                        <th>400</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; trial solution [default = 0.8]</span> </td>
+                      </tr><tr>
+                        <th>401</th><th> </th><td class="l"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                      </tr><tr>
+                        <th>402</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is</span> </td>
+                      </tr><tr>
+                        <th>403</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; the current parameter vector.&nbsp; [default = None]</span> </td>
+                      </tr><tr>
+                        <th>404</th><th> </th><td class="l"><span>&nbsp; &nbsp; disp -- non-zero to print convergence messages.</span> </td>
+                      </tr><tr>
+                        <th>405</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th>406</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #allow for inputs that don't conform to AbstractSolver interface</span> </td>
+                      </tr><tr>
+                        <th>407</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.population[0] = asfarray(self.population[0])</span> </td>
+                      </tr><tr>
+                        <th>408</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Best1Bin</span> </td>
+                      </tr><tr>
+                        <th>409</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; strategy=Best1Bin&nbsp; &nbsp; #mutation strategy (see mystic.strategy)</span> </td>
+                      </tr><tr>
+                        <th>410</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; CrossProbability=0.9 #potential for parameter cross-mutation</span> </td>
+                      </tr><tr>
+                        <th>411</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ScalingFactor=0.8&nbsp; &nbsp; #multiplier for mutation impact</span> </td>
+                      </tr><tr>
+                        <th>412</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; callback=None&nbsp; &nbsp; &nbsp; &nbsp; #user-supplied function, called after each step</span> </td>
+                      </tr><tr>
+                        <th>413</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; disp=0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#non-zero to print convergence messages</span> </td>
+                      </tr><tr>
+                        <th>414</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('strategy'): strategy = kwds['strategy']</span> </td>
+                      </tr><tr>
+                        <th>415</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('CrossProbability'): \</span> </td>
+                      </tr><tr>
+                        <th>416</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability = kwds['CrossProbability']</span> </td>
+                      </tr><tr>
+                        <th>417</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('ScalingFactor'): ScalingFactor = kwds['ScalingFactor']</span> </td>
+                      </tr><tr>
+                        <th>418</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('callback'): callback = kwds['callback']</span> </td>
+                      </tr><tr>
+                        <th>419</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('disp'): disp = kwds['disp']</span> </td>
+                      </tr><tr>
+                        <th>420</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # backward compatibility</span> </td>
+                      </tr><tr>
+                        <th>421</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('EvaluationMonitor'): \</span> </td>
+                      </tr><tr>
+                        <th>422</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetEvaluationMonitor(kwds['EvaluationMonitor'])</span> </td>
+                      </tr><tr>
+                        <th>423</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('StepMonitor'): \</span> </td>
+                      </tr><tr>
+                        <th>424</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetGenerationMonitor(kwds['StepMonitor'])</span> </td>
+                      </tr><tr>
+                        <th>425</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('penalty'): \</span> </td>
+                      </tr><tr>
+                        <th>426</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetPenalty(kwds['penalty'])</span> </td>
+                      </tr><tr>
+                        <th>427</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('constraints'): \</span> </td>
+                      </tr><tr>
+                        <th>428</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetConstraints(kwds['constraints'])</span> </td>
+                      </tr><tr>
+                        <th>429</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                      </tr><tr>
+                        <th>430</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>431</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; import signal</span> </td>
+                      </tr><tr>
+                        <th>432</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._EARLYEXIT = False</span> </td>
+                      </tr><tr>
+                        <th>433</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>381</th><td class="r"><span>&nbsp; &nbsp; def _SetEvaluationLimits(self, iterscale=None, evalscale=None):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>382</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """set the evaluation limits"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>383</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if iterscale is None: iterscale = 10</span> </td>
+                      </tr><tr>
+                        <th> </th><th>384</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if evalscale is None: evalscale = 1000</span> </td>
+                      </tr><tr>
+                        <th> </th><th>385</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # if SetEvaluationLimits not applied, use the solver default</span> </td>
+                      </tr><tr>
+                        <th> </th><th>386</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxiter is None:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>387</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = self.nDim * self.nPop * iterscale</span> </td>
+                      </tr><tr>
+                        <th> </th><th>388</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxfun is None:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>389</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = self.nDim * self.nPop * evalscale</span> </td>
+                      </tr><tr>
+                        <th> </th><th>390</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                      </tr><tr>
+                        <th> </th><th>391</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>392</th><td class="r"><span>&nbsp; &nbsp; def _Decorate(self, costfunction, ExtraArgs=None):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>393</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """decorate cost function with bounds, penalties, monitors, etc"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>434</th><th>394</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#FIXME: EvaluationMonitor fails for MPI, throws error for 'pp'</span> </td>
+                  </tr><tr>
+                          <th>435</th><th>395</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from python_map import python_map</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=636#L443">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=637#L403">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>443</th><th>403</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; costfunction = wrap_bounds(costfunction, self._strictMin, self._strictMax)</span> </td>
+                  </tr><tr>
+                          <th>444</th><th>404</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; costfunction = wrap_penalty(costfunction, self._penalty)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>445</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>446</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #generate signal_handler</span> </td>
+                      </tr><tr>
+                        <th>447</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._generateHandler(sigint_callback) </span> </td>
+                      </tr><tr>
+                        <th>448</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint: signal.signal(signal.SIGINT, self.signal_handler)</span> </td>
+                      </tr><tr>
+                        <th>449</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>450</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; id = self.id</span> </td>
+                      </tr><tr>
+                        <th>451</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.probability = CrossProbability</span> </td>
+                      </tr><tr>
+                        <th>452</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.scale = ScalingFactor</span> </td>
+                      </tr><tr>
+                        <th>453</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>454</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # break link between population and popEnergy</span> </td>
+                      </tr><tr>
+                        <th>455</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = self.population[0]</span> </td>
+                      </tr><tr>
+                        <th>456</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = self.popEnergy[0]</span> </td>
+                      </tr><tr>
+                        <th>457</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>458</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialPop = [[0.0 for i in range(self.nDim)] for j in range(self.nPop)]</span> </td>
+                      </tr><tr>
+                        <th>459</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #set initial solution and energy by running a single iteration</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>405</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return costfunction</span> </td>
+                      </tr><tr>
+                        <th> </th><th>406</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>407</th><td class="r"><span>&nbsp; &nbsp; def Step(self, costfunction, strategy=None):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>408</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """perform a single optimization iteration"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>409</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not self.generations: # this is the first iteration</span> </td>
+                      </tr><tr>
+                        <th> </th><th>410</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[0] = asfarray(self.population[0])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>411</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # decouple bestSolution from population and bestEnergy from popEnergy</span> </td>
+                      </tr><tr>
+                        <th> </th><th>412</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = self.population[0]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>413</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = self.popEnergy[0]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>414</th><td class="r"><span></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>460</th><th>415</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for candidate in range(self.nPop):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>461</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # generate trialSolution (within valid range)</span> </td>
+                      </tr><tr>
+                        <th>462</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution[:] = self.population[candidate]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>416</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if not self.generations:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>417</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # generate trialSolution (within valid range)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>418</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution[candidate][:] = self.population[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>419</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if strategy:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>420</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # generate trialSolution (within valid range)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>421</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; strategy(self, candidate)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>463</th><th>422</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # apply constraints</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>464</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution[:] = self._constraints(self.trialSolution)</span> </td>
+                      </tr><tr>
+                        <th>465</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trialPop[candidate][:] = self.trialSolution</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>423</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution[candidate][:] = self._constraints(self.trialSolution[candidate])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>466</th><th>424</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>467</th><th>425</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; mapconfig = dict(nnodes=self._nnodes, launcher=self._launcher, \</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=636#L469">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=637#L427">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>469</th><th>427</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;timelimit=self._timelimit, scheduler=self._scheduler, \</span> </td>
+                  </tr><tr>
+                          <th>470</th><th>428</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ncpus=self._ncpus, servers=self._servers)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>429</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>471</th><th>430</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # apply penalty</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>472</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#trialEnergy = map(self._penalty, <del>trialPop</del>)#, **mapconfig)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>431</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp;#trialEnergy = map(self._penalty, <ins>self.trialSolution</ins>)#, **mapconfig)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>473</th><th>432</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # calculate cost</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>474</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialEnergy = self._map(costfunction, <del>trialPop</del>, **mapconfig)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>433</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialEnergy = self._map(costfunction, <ins>self.trialSolution</ins>, **mapconfig)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>475</th><th>434</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>476</th><th>435</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for candidate in range(self.nPop):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=636#L478">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=637#L437">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>478</th><th>437</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # New low for this candidate</span> </td>
+                  </tr><tr>
+                          <th>479</th><th>438</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy[candidate] = trialEnergy[candidate]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>480</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[candidate][:] = <del>trialPop</del>[candidate]</span> </td>
+                      </tr><tr>
+                        <th>481</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.UpdateGenealogyRecords(candidate, <del>trialPop</del>[candidate][:])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>439</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[candidate][:] = <ins>self.trialSolution</ins>[candidate]</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>440</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.UpdateGenealogyRecords(candidate, <ins>self.trialSolution</ins>[candidate][:])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>482</th><th>441</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>483</th><th>442</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Check if all-time low</span> </td>
+                  </tr><tr>
+                          <th>484</th><th>443</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if trialEnergy[candidate] &lt; self.bestEnergy:</span> </td>
+                  </tr><tr>
+                          <th>485</th><th>444</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = trialEnergy[candidate]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>486</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution[:] = <del>trialPop</del>[candidate]</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>445</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution[:] = <ins>self.trialSolution</ins>[candidate]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>487</th><th>446</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>488</th><th>447</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # log bestSolution and bestEnergy (includes penalty)</span> </td>
+                  </tr><tr>
+                          <th>489</th><th>448</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#FIXME: StepMonitor works for 'pp'?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>490</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(self.bestSolution[:], self.bestEnergy, id)</span> </td>
+                      </tr><tr>
+                        <th>491</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; termination(self) #XXX: initialize termination conditions, if needed</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>449</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(self.bestSolution[:], self.bestEnergy, self.id)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>450</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                      </tr><tr>
+                        <th> </th><th>451</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>452</th><td class="r"><span>&nbsp; &nbsp; def _process_inputs(self, kwds):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>453</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """process and activate input settings"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>454</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; #allow for inputs that don't conform to AbstractSolver interface</span> </td>
+                      </tr><tr>
+                        <th> </th><th>455</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Best1Bin</span> </td>
+                      </tr><tr>
+                        <th> </th><th>456</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; strategy=Best1Bin&nbsp; &nbsp; #mutation strategy (see mystic.strategy)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>457</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; callback=None&nbsp; &nbsp; &nbsp; &nbsp; #user-supplied function, called after each step</span> </td>
+                      </tr><tr>
+                        <th> </th><th>458</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; disp=0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#non-zero to print convergence messages</span> </td>
+                      </tr><tr>
+                        <th> </th><th>459</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; probability=0.9&nbsp; &nbsp; &nbsp; #potential for parameter cross-mutation</span> </td>
+                      </tr><tr>
+                        <th> </th><th>460</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; scale=0.8&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #multiplier for mutation impact</span> </td>
+                      </tr><tr>
+                        <th> </th><th>461</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not kwds.has_key('strategy'): kwds['strategy'] = strategy</span> </td>
+                      </tr><tr>
+                        <th> </th><th>462</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not kwds.has_key('callback'): kwds['callback'] = callback</span> </td>
+                      </tr><tr>
+                        <th> </th><th>463</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not kwds.has_key('disp'): kwds['disp'] = disp</span> </td>
+                      </tr><tr>
+                        <th> </th><th>464</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.probability = kwds.pop('CrossProbability', probability)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>465</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.scale = kwds.pop('ScalingFactor', scale)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>466</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # backward compatibility</span> </td>
+                      </tr><tr>
+                        <th> </th><th>467</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('EvaluationMonitor'): \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>468</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetEvaluationMonitor(kwds.pop('EvaluationMonitor'))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>469</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('StepMonitor'): \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>470</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetGenerationMonitor(kwds.pop('StepMonitor'))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>471</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('penalty'): \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>472</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetPenalty(kwds.pop('penalty'))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>473</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('constraints'): \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>474</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self.SetConstraints(kwds.pop('constraints'))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>475</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return kwds</span> </td>
+                      </tr><tr>
+                        <th> </th><th>476</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>477</th><td class="r"><span>&nbsp; &nbsp; def Solve(self, costfunction, termination, sigint_callback=None,</span> </td>
+                      </tr><tr>
+                        <th> </th><th>478</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ExtraArgs=(), **kwds):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>479</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using differential evolution.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>480</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>481</th><td class="r"><span>Description:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>482</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>483</th><td class="r"><span>&nbsp; &nbsp; Uses a differential evolution algorith to find the minimum of</span> </td>
+                      </tr><tr>
+                        <th> </th><th>484</th><td class="r"><span>&nbsp; &nbsp; a function of one or more variables. This implementation holds</span> </td>
+                      </tr><tr>
+                        <th> </th><th>485</th><td class="r"><span>&nbsp; &nbsp; the current generation invariant until the end of each iteration.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>486</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>487</th><td class="r"><span>Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>488</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>489</th><td class="r"><span>&nbsp; &nbsp; costfunction -- the Python function or method to be minimized.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>490</th><td class="r"><span>&nbsp; &nbsp; termination -- callable object providing termination conditions.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>491</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>492</th><td class="r"><span>Additional Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>493</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>494</th><td class="r"><span>&nbsp; &nbsp; sigint_callback -- callback function for signal handler.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>495</th><td class="r"><span>&nbsp; &nbsp; ExtraArgs -- extra arguments for func.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>496</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>497</th><td class="r"><span>Further Inputs:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>498</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>499</th><td class="r"><span>&nbsp; &nbsp; strategy -- the mutation strategy for generating new trial</span> </td>
+                      </tr><tr>
+                        <th> </th><th>500</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; solutions [default = Best1Bin]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>501</th><td class="r"><span>&nbsp; &nbsp; CrossProbability -- the probability of cross-parameter mutations</span> </td>
+                      </tr><tr>
+                        <th> </th><th>502</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; [default = 0.9]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>503</th><td class="r"><span>&nbsp; &nbsp; ScalingFactor -- multiplier for the impact of mutations on the</span> </td>
+                      </tr><tr>
+                        <th> </th><th>504</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trial solution [default = 0.8]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>505</th><td class="r"><span>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</span> </td>
+                      </tr><tr>
+                        <th> </th><th>506</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is</span> </td>
+                      </tr><tr>
+                        <th> </th><th>507</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; the current parameter vector.&nbsp; [default = None]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>508</th><td class="r"><span>&nbsp; &nbsp; disp -- non-zero to print convergence messages.</span> </td>
+                      </tr><tr>
+                        <th> </th><th>509</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                      </tr><tr>
+                        <th> </th><th>510</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                      </tr><tr>
+                        <th> </th><th>511</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = {}</span> </td>
+                      </tr><tr>
+                        <th> </th><th>512</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings.update(self._process_inputs(kwds))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>513</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; disp = settings['disp']</span> </td>
+                      </tr><tr>
+                        <th> </th><th>514</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; callback = settings['callback']</span> </td>
+                      </tr><tr>
+                        <th> </th><th>515</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; strategy = settings['strategy'] #XXX: specific to diffev* ?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>516</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>517</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # set up signal handler</span> </td>
+                      </tr><tr>
+                        <th> </th><th>518</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; import signal</span> </td>
+                      </tr><tr>
+                        <th> </th><th>519</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._EARLYEXIT = False</span> </td>
+                      </tr><tr>
+                        <th> </th><th>520</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._generateHandler(sigint_callback) </span> </td>
+                      </tr><tr>
+                        <th> </th><th>521</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint: signal.signal(signal.SIGINT, self.signal_handler)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>522</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>523</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # decorate cost function with bounds, penalties, monitors, etc</span> </td>
+                      </tr><tr>
+                        <th> </th><th>524</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; costfunction = self._Decorate(costfunction, ExtraArgs)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>525</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>526</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # the initital optimization iteration</span> </td>
+                      </tr><tr>
+                        <th> </th><th>527</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.Step(costfunction)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>528</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # initialize termination conditions, if needed</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>529</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; termination(self)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>492</th><th>530</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if callback is not None:</span> </td>
+                  </tr><tr>
+                          <th>493</th><th>531</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; callback(self.bestSolution)</span> </td>
+                  </tr><tr>
+                          <th>494</th><th>532</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>495</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # if SetEvaluationLimits not applied, use the solver default</span> </td>
+                      </tr><tr>
+                        <th>496</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxiter is None:</span> </td>
+                      </tr><tr>
+                        <th>497</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = self.nDim * self.nPop * 10&nbsp; #XXX: better defaults?</span> </td>
+                      </tr><tr>
+                        <th>498</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxfun is None:</span> </td>
+                      </tr><tr>
+                        <th>499</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = self.nDim * self.nPop * 1000 #XXX: better defaults?</span> </td>
+                      </tr><tr>
+                        <th>500</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>533</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # impose the evaluation limits</span> </td>
+                      </tr><tr>
+                        <th> </th><th>534</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._SetEvaluationLimits()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>535</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>536</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # the main optimization loop</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>501</th><th>537</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; while not self._terminated(termination) and not self._EARLYEXIT:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>502</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for candidate in range(self.nPop):</span> </td>
+                      </tr><tr>
+                        <th>503</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # generate trialSolution (within valid range)</span> </td>
+                      </tr><tr>
+                        <th>504</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; strategy(self, candidate)</span> </td>
+                      </tr><tr>
+                        <th>505</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # apply constraints</span> </td>
+                      </tr><tr>
+                        <th>506</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution[:] = self._constraints(self.trialSolution)</span> </td>
+                      </tr><tr>
+                        <th>507</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trialPop[candidate][:] = self.trialSolution</span> </td>
+                      </tr><tr>
+                        <th>508</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>509</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # apply penalty</span> </td>
+                      </tr><tr>
+                        <th>510</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#trialEnergy = map(self._penalty, trialPop)#, **mapconfig)</span> </td>
+                      </tr><tr>
+                        <th>511</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # calculate cost</span> </td>
+                      </tr><tr>
+                        <th>512</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trialEnergy = self._map(costfunction, trialPop, **mapconfig)</span> </td>
+                      </tr><tr>
+                        <th>513</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;##XXX:[HACK] return trialPop b/c may be altered by constraints</span> </td>
+                      </tr><tr>
+                        <th>514</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#trials = map(costfunction, trialPop)</span> </td>
+                      </tr><tr>
+                        <th>515</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#trialEnergy = [i for i,j in trials]</span> </td>
+                      </tr><tr>
+                        <th>516</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#trialPop = [j for i,j in trials] #FIXME: breaks on inf (out of bounds)</span> </td>
+                      </tr><tr>
+                        <th>517</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;##XXX:[HACK] -end-</span> </td>
+                      </tr><tr>
+                        <th>518</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>519</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for candidate in range(self.nPop):</span> </td>
+                      </tr><tr>
+                        <th>520</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if trialEnergy[candidate] &lt; self.popEnergy[candidate]:</span> </td>
+                      </tr><tr>
+                        <th>521</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # New low for this candidate</span> </td>
+                      </tr><tr>
+                        <th>522</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy[candidate] = trialEnergy[candidate]</span> </td>
+                      </tr><tr>
+                        <th>523</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[candidate][:] = trialPop[candidate]</span> </td>
+                      </tr><tr>
+                        <th>524</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.UpdateGenealogyRecords(candidate, trialPop[candidate][:])</span> </td>
+                      </tr><tr>
+                        <th>525</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>526</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Check if all-time low</span> </td>
+                      </tr><tr>
+                        <th>527</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if trialEnergy[candidate] &lt; self.bestEnergy:</span> </td>
+                      </tr><tr>
+                        <th>528</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = trialEnergy[candidate]</span> </td>
+                      </tr><tr>
+                        <th>529</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution[:] = trialPop[candidate]</span> </td>
+                      </tr><tr>
+                        <th>530</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>531</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # log bestSolution and bestEnergy (includes penalty)</span> </td>
+                      </tr><tr>
+                        <th>532</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#FIXME: StepMonitor works for 'pp'?</span> </td>
+                      </tr><tr>
+                        <th>533</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._stepmon(self.bestSolution[:], self.bestEnergy, id)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>538</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.Step(costfunction, strategy=strategy)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>534</th><th>539</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if callback is not None:</span> </td>
+                  </tr><tr>
+                          <th>535</th><th>540</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; callback(self.bestSolution)</span> </td>
+                  </tr><tr>
+                          <th>536</th><th>541</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>542</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # handle signal interrupts</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>537</th><th>543</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                  </tr><tr>
+                          <th>538</th><th>544</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="637/mystic/mystic/strategy.html" title="Show the changeset 637 restricted to mystic/mystic/strategy.py">mystic/mystic/strategy.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 124">
+                    <a title="Show revision 124 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=124#L33">
+                      r124</a>
+                  </th>
+                  <th title="Revision 637">
+                    <a title="Show revision 637 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=637#L33">
+                      r637</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>33</th><th>33</th><td class="l"><span>&nbsp; &nbsp; r1,r2 = get_random_candidates(inst.nPop, candidate, 2) </span> </td>
+                  </tr><tr>
+                          <th>34</th><th>34</th><td class="l"><span>&nbsp; &nbsp; n = random.randrange(inst.nDim)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>35</th><th> </th><td class="l"><span>&nbsp; &nbsp;</span> </td>
+                      </tr><tr>
+                        <th>36</th><th> </th><td class="l"><span>&nbsp; &nbsp; inst.trialSolution[:] = inst.population[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>38</th><th> </th><td class="l"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th>40</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th>41</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th>42</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; inst.trialSolution[n] = inst.bestSolution[n] + \</span> </td>
+                      </tr><tr>
+                        <th>43</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.scale * (inst.population[r1][n] - \</span> </td>
+                      </tr><tr>
+                        <th>44</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r2][n])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>35</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>36</th><td class="r"><span>&nbsp; &nbsp; if inst._map_solver:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>37</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>38</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>39</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution</span> </td>
+                      </tr><tr>
+                        <th> </th><th>40</th><td class="r"><span>&nbsp; &nbsp; trialSolution[:] = inst.population[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>41</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>42</th><td class="r"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>43</th><td class="r"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>44</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>45</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th> </th><th>46</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution[n] = inst.bestSolution[n] + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>47</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.scale * (inst.population[r1][n] - \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>48</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r2][n])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>49</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; n = (n + 1) % inst.nDim</span> </td>
+                  </tr><tr>
+                          <th>46</th><th>50</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; i += 1</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=124#L58">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=637#L62">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>58</th><th>62</th><td class="l"><span>&nbsp; &nbsp; r1,r2 = get_random_candidates(inst.nPop, candidate, 2) </span> </td>
+                  </tr><tr>
+                          <th>59</th><th>63</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>60</th><th> </th><td class="l"><span>&nbsp; &nbsp; inst.trialSolution[:] = inst.population[candidate][:]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>64</th><td class="r"><span>&nbsp; &nbsp; if inst._map_solver:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>65</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>66</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>67</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>68</th><td class="r"><span>&nbsp; &nbsp; trialSolution[:] = inst.population[candidate]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>69</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>62</th><th>70</th><td class="l"><span>&nbsp; &nbsp; # Randomly chosen index between [0, ND-1] (See Eq.4 of [1] )</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=124#L67">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=637#L75">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>67</th><th>75</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if i==n or cross &lt; inst.probability:</span> </td>
+                  </tr><tr>
+                          <th>68</th><th>76</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # this component of trial vector will come from vector v</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>69</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <del>inst.</del>trialSolution[i] = inst.bestSolution[i] + \</span> </td>
+                      </tr><tr>
+                        <th>70</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp;</del>inst.scale * (inst.population[r1][i] - \</span> </td>
+                      </tr><tr>
+                        <th>71</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<del>&nbsp; &nbsp; &nbsp;</del>inst.population[r2][i])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>77</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <ins></ins>trialSolution[i] = inst.bestSolution[i] + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>78</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins></ins>inst.scale * (inst.population[r1][i] - \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>79</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins></ins>inst.population[r2][i])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>72</th><th>80</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>73</th><th>81</th><td class="l"><span>#&nbsp; &nbsp;inst._keepSolutionWithinRangeBoundary(inst.bestSolution)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=124#L82">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=637#L90">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>82</th><th>90</th><td class="l"><span>&nbsp; &nbsp; n = random.randrange(inst.nDim)</span> </td>
+                  </tr><tr>
+                          <th>83</th><th>91</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>84</th><th> </th><td class="l"><span>&nbsp; &nbsp; inst.trialSolution[:] = inst.population[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th>85</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>86</th><th> </th><td class="l"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th>87</th><th> </th><td class="l"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th>88</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th>89</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th>90</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; inst.trialSolution[n] = inst.population[r1][n] + \</span> </td>
+                      </tr><tr>
+                        <th>91</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.scale * (inst.population[r2][n] - \</span> </td>
+                      </tr><tr>
+                        <th>92</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r3][n])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>92</th><td class="r"><span>&nbsp; &nbsp; if inst._map_solver:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>93</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>94</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>95</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution</span> </td>
+                      </tr><tr>
+                        <th> </th><th>96</th><td class="r"><span>&nbsp; &nbsp; trialSolution[:] = inst.population[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>97</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>98</th><td class="r"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>99</th><td class="r"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>100</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>101</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th> </th><th>102</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution[n] = inst.population[r1][n] + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>103</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.scale * (inst.population[r2][n] - \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>104</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r3][n])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>93</th><th>105</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; n = (n + 1) % inst.nDim</span> </td>
+                  </tr><tr>
+                          <th>94</th><th>106</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; i += 1</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=124#L108">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=637#L120">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>108</th><th>120</th><td class="l"><span>&nbsp; &nbsp; n = random.randrange(inst.nDim)</span> </td>
+                  </tr><tr>
+                          <th>109</th><th>121</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>110</th><th> </th><td class="l"><span>&nbsp; &nbsp; inst.trialSolution[:] = inst.population[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th>111</th><th> </th><td class="l"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th>112</th><th> </th><td class="l"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th>113</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th>114</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th>115</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; inst.trialSolution[n] += inst.scale * (inst.bestSolution[n] - \</span> </td>
+                      </tr><tr>
+                        <th>116</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.trialSolution[n]) + \</span> </td>
+                      </tr><tr>
+                        <th>117</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.scale * (inst.population[r1][n] - \</span> </td>
+                      </tr><tr>
+                        <th>118</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r2][n])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>122</th><td class="r"><span>&nbsp; &nbsp; if inst._map_solver:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>123</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>124</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>125</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution</span> </td>
+                      </tr><tr>
+                        <th> </th><th>126</th><td class="r"><span>&nbsp; &nbsp; trialSolution[:] = inst.population[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>127</th><td class="r"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>128</th><td class="r"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>129</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>130</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th> </th><th>131</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution[n] += inst.scale * (inst.bestSolution[n] - \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>132</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trialSolution[n]) + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>133</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.scale * (inst.population[r1][n] - \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>134</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r2][n])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>119</th><th>135</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; n = (n + 1) % inst.nDim</span> </td>
+                  </tr><tr>
+                          <th>120</th><th>136</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; i += 1</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=124#L131">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=637#L147">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>131</th><th>147</th><td class="l"><span>&nbsp; &nbsp; n = random.randrange(inst.nDim)</span> </td>
+                  </tr><tr>
+                          <th>132</th><th>148</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>133</th><th> </th><td class="l"><span>&nbsp; &nbsp; inst.trialSolution[:] = inst.population[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th>134</th><th> </th><td class="l"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th>135</th><th> </th><td class="l"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th>136</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th>137</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th>138</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; inst.trialSolution[n] = inst.bestSolution[n] + \</span> </td>
+                      </tr><tr>
+                        <th>139</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.scale * (inst.population[r1][n] + \</span> </td>
+                      </tr><tr>
+                        <th>140</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r2][n] - \</span> </td>
+                      </tr><tr>
+                        <th>141</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r3][n] - \</span> </td>
+                      </tr><tr>
+                        <th>142</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r4][n])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>149</th><td class="r"><span>&nbsp; &nbsp; if inst._map_solver:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>150</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>151</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>152</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution</span> </td>
+                      </tr><tr>
+                        <th> </th><th>153</th><td class="r"><span>&nbsp; &nbsp; trialSolution[:] = inst.population[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>154</th><td class="r"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>155</th><td class="r"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>156</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>157</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th> </th><th>158</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution[n] = inst.bestSolution[n] + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>159</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.scale * (inst.population[r1][n] + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>160</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r2][n] - \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>161</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r3][n] - \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>162</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r4][n])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>143</th><th>163</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; n = (n + 1) % inst.nDim</span> </td>
+                  </tr><tr>
+                          <th>144</th><th>164</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; i += 1</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=124#L155">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=637#L175">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>155</th><th>175</th><td class="l"><span>&nbsp; &nbsp; n = random.randrange(inst.nDim)</span> </td>
+                  </tr><tr>
+                          <th>156</th><th>176</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>157</th><th> </th><td class="l"><span>&nbsp; &nbsp; inst.trialSolution[:] = inst.population[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th>158</th><th> </th><td class="l"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th>159</th><th> </th><td class="l"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th>160</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th>161</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th>162</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; inst.trialSolution[n] = inst.population[r1][n] + \</span> </td>
+                      </tr><tr>
+                        <th>163</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.scale * (inst.population[r2][n] + \</span> </td>
+                      </tr><tr>
+                        <th>164</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r3][n] - \</span> </td>
+                      </tr><tr>
+                        <th>165</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r4][n] - \</span> </td>
+                      </tr><tr>
+                        <th>166</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r5][n])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>177</th><td class="r"><span>&nbsp; &nbsp; if inst._map_solver:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>178</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>179</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>180</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution</span> </td>
+                      </tr><tr>
+                        <th> </th><th>181</th><td class="r"><span>&nbsp; &nbsp; trialSolution[:] = inst.population[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>182</th><td class="r"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>183</th><td class="r"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>184</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>185</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th> </th><th>186</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution[n] = inst.population[r1][n] + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>187</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.scale * (inst.population[r2][n] + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>188</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r3][n] - \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>189</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r4][n] - \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>190</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r5][n])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>167</th><th>191</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; n = (n + 1) % inst.nDim</span> </td>
+                  </tr><tr>
+                          <th>168</th><th>192</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; i += 1</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=124#L179">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=637#L203">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>179</th><th>203</th><td class="l"><span>&nbsp; &nbsp; n = random.randrange(inst.nDim)</span> </td>
+                  </tr><tr>
+                          <th>180</th><th>204</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>181</th><th> </th><td class="l"><span>&nbsp; &nbsp; inst.trialSolution[:] = inst.population[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th>182</th><th> </th><td class="l"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th>183</th><th> </th><td class="l"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th>184</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th>185</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th>186</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; inst.trialSolution[n] = inst.population[r1][n] + \</span> </td>
+                      </tr><tr>
+                        <th>187</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.scale * (inst.population[r2][n] -\</span> </td>
+                      </tr><tr>
+                        <th>188</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r3][n])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>205</th><td class="r"><span>&nbsp; &nbsp; if inst._map_solver:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>206</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>207</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>208</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution</span> </td>
+                      </tr><tr>
+                        <th> </th><th>209</th><td class="r"><span>&nbsp; &nbsp; trialSolution[:] = inst.population[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>210</th><td class="r"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>211</th><td class="r"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>212</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>213</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th> </th><th>214</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution[n] = inst.population[r1][n] + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>215</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.scale * (inst.population[r2][n] -\</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>216</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r3][n])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>189</th><th>217</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; n = (n + 1) % inst.nDim</span> </td>
+                  </tr><tr>
+                          <th>190</th><th>218</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; i += 1</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=124#L202">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=637#L230">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>202</th><th>230</th><td class="l"><span>&nbsp; &nbsp; n = random.randrange(inst.nDim)</span> </td>
+                  </tr><tr>
+                          <th>203</th><th>231</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>204</th><th> </th><td class="l"><span>&nbsp; &nbsp; inst.trialSolution[:] = inst.population[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th>205</th><th> </th><td class="l"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th>206</th><th> </th><td class="l"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th>207</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th>208</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th>209</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; inst.trialSolution[n] += inst.scale * (inst.bestSolution[n] - \</span> </td>
+                      </tr><tr>
+                        <th>210</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.trialSolution[n]) + \</span> </td>
+                      </tr><tr>
+                        <th>211</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.scale * (inst.population[r1][n] - \</span> </td>
+                      </tr><tr>
+                        <th>212</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r2][n])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>232</th><td class="r"><span>&nbsp; &nbsp; if inst._map_solver:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>233</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>234</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>235</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution</span> </td>
+                      </tr><tr>
+                        <th> </th><th>236</th><td class="r"><span>&nbsp; &nbsp; trialSolution[:] = inst.population[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>237</th><td class="r"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>238</th><td class="r"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>239</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>240</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th> </th><th>241</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution[n] += inst.scale * (inst.bestSolution[n] - \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>242</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trialSolution[n]) + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>243</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.scale * (inst.population[r1][n] - \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>244</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r2][n])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>213</th><th>245</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; n = (n + 1) % inst.nDim</span> </td>
+                  </tr><tr>
+                          <th>214</th><th>246</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; i += 1</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=124#L225">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=637#L257">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>225</th><th>257</th><td class="l"><span>&nbsp; &nbsp; n = random.randrange(inst.nDim)</span> </td>
+                  </tr><tr>
+                          <th>226</th><th>258</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>227</th><th> </th><td class="l"><span>&nbsp; &nbsp; inst.trialSolution[:] = inst.population[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th>228</th><th> </th><td class="l"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th>229</th><th> </th><td class="l"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th>230</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th>231</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th>232</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; inst.trialSolution[n] = inst.bestSolution[n] + \</span> </td>
+                      </tr><tr>
+                        <th>233</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.scale * (inst.population[r1][n] + \</span> </td>
+                      </tr><tr>
+                        <th>234</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r2][n] - \</span> </td>
+                      </tr><tr>
+                        <th>235</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r3][n] - \</span> </td>
+                      </tr><tr>
+                        <th>236</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r4][n])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>259</th><td class="r"><span>&nbsp; &nbsp; if inst._map_solver:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>260</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>261</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>262</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution</span> </td>
+                      </tr><tr>
+                        <th> </th><th>263</th><td class="r"><span>&nbsp; &nbsp; trialSolution[:] = inst.population[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>264</th><td class="r"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>265</th><td class="r"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>266</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>267</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th> </th><th>268</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution[n] = inst.bestSolution[n] + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>269</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.scale * (inst.population[r1][n] + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>270</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r2][n] - \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>271</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r3][n] - \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>272</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r4][n])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>237</th><th>273</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; n = (n + 1) % inst.nDim</span> </td>
+                  </tr><tr>
+                          <th>238</th><th>274</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; i += 1</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=124#L249">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/strategy.py?rev=637#L285">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>249</th><th>285</th><td class="l"><span>&nbsp; &nbsp; n = random.randrange(inst.nDim)</span> </td>
+                  </tr><tr>
+                          <th>250</th><th>286</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>251</th><th> </th><td class="l"><span>&nbsp; &nbsp; inst.trialSolution[:] = inst.population[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th>252</th><th> </th><td class="l"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th>253</th><th> </th><td class="l"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th>254</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th>255</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th>256</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; inst.trialSolution[n] = inst.population[r1][n] + \</span> </td>
+                      </tr><tr>
+                        <th>257</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.scale * (inst.population[r2][n] + \</span> </td>
+                      </tr><tr>
+                        <th>258</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r3][n] - \</span> </td>
+                      </tr><tr>
+                        <th>259</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r4][n] - \</span> </td>
+                      </tr><tr>
+                        <th>260</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; inst.population[r5][n])</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>287</th><td class="r"><span>&nbsp; &nbsp; if inst._map_solver:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>288</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>289</th><td class="r"><span>&nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>290</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution = inst.trialSolution</span> </td>
+                      </tr><tr>
+                        <th> </th><th>291</th><td class="r"><span>&nbsp; &nbsp; trialSolution[:] = inst.population[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>292</th><td class="r"><span>&nbsp; &nbsp; i = 0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>293</th><td class="r"><span>&nbsp; &nbsp; while 1:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>294</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if random.random() &gt;= inst.probability or i == inst.nDim:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>295</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                      </tr><tr>
+                        <th> </th><th>296</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialSolution[n] = inst.population[r1][n] + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>297</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.scale * (inst.population[r2][n] + \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>298</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r3][n] - \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>299</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r4][n] - \</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>300</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;inst.population[r5][n])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>261</th><th>301</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; n = (n + 1) % inst.nDim</span> </td>
+                  </tr><tr>
+                          <th>262</th><th>302</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; i += 1</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="637/mystic/mystic/termination.html" title="Show the changeset 637 restricted to mystic/mystic/termination.py">mystic/mystic/termination.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 632">
+                    <a title="Show revision 632 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=632#L211">
+                      r632</a>
+                  </th>
+                  <th title="Revision 637">
+                    <a title="Show revision 637 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/termination.py?rev=637#L211">
+                      r637</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>211</th><th>211</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; best = numpy.array(inst.bestSolution)</span> </td>
+                  </tr><tr>
+                          <th>212</th><th>212</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; trial = numpy.array(inst.trialSolution)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>213</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; update = best - trial #XXX: if inf - inf ?</span> </td>
+                      </tr><tr>
+                        <th>214</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; answer = numpy.add.reduce(abs(update)) &lt;= tolerance</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>213</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; update = abs(best - trial) #XXX: if inf - inf ?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>214</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; answer = numpy.add.reduce(update.T)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>215</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if isinstance(answer, numpy.ndarray): # if trialPop, take 'best' answer</span> </td>
+                      </tr><tr>
+                        <th> </th><th>216</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; answer = max(answer)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #XXX: is this 'best' or 'worst'?</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>217</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; answer = answer &lt;= tolerance</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>215</th><th>218</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if answer: return info(doc)</span> </td>
+                  </tr><tr>
+                          <th>216</th><th>219</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return info(null)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="637/mystic/tests/solver_test_compare.html" title="Show the changeset 637 restricted to mystic/tests/solver_test_compare.py">mystic/tests/solver_test_compare.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 635">
+                    <a title="Show revision 635 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/solver_test_compare.py?rev=635#L69">
+                      r635</a>
+                  </th>
+                  <th title="Revision 637">
+                    <a title="Show revision 637 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/tests/solver_test_compare.py?rev=637#L69">
+                      r637</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>69</th><th>69</th><td class="l"><span>&nbsp; print "comparing against known results"</span> </td>
+                  </tr><tr>
+                          <th>70</th><th>70</th><td class="l"><span>&nbsp; sol = solvers.diffev(rosen, x0, npop=40, disp=0, full_output=True)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>71</th><th> </th><td class="l"><span>&nbsp; assert almostEqual(sol[1], 0.0020640145337293249, tol=<del>1</del>e-3)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>71</th><td class="r"><span>&nbsp; assert almostEqual(sol[1], 0.0020640145337293249, tol=<ins>3</ins>e-3)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>72</th><th>72</th><td class="l"><span>&nbsp; sol = solvers.diffev2(rosen, x0, npop=40, disp=0, full_output=True)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>73</th><th> </th><td class="l"><span>&nbsp; assert almostEqual(sol[1], 0.0017516784703663288<del></del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>73</th><td class="r"><span>&nbsp; assert almostEqual(sol[1], 0.0017516784703663288<ins>, tol=3e-3</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>74</th><th>74</th><td class="l"><span>&nbsp; sol = solvers.fmin_powell(rosen, x0, disp=0, full_output=True)</span> </td>
+                  </tr><tr>
+                          <th>75</th><th>75</th><td class="l"><span>&nbsp; assert almostEqual(sol[1], 8.3173488898295291e-23)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/637?format=diff&amp;new=637" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/637?format=zip&amp;new=637" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/637 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:50:15 GMT -->
+</html>

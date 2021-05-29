@@ -1,0 +1,816 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/828/mystic by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:55:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 828 for mystic – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/828/mystic?format=diff&amp;new=828" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/828/mystic?format=zip&amp;new=828" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../829/mystic.html" title="Changeset 829 for mystic" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../827/mystic.html" title="Changeset 827 for mystic" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../827/mystic.html" title="Changeset 827 for mystic">Previous Change</a></span></li><li class="last"><span><a class="next" href="../829/mystic.html" title="Changeset 829 for mystic">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../828.html">828</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=828">mystic</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             09/18/15 16:05:53
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-09-18T16%3A05%3A53-07%3A00&amp;precision=second" title="2015-09-18T16:05:53-07:00 in Timeline">8 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+update SV regression examples from examples_other<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=828">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="cp"></dt><dd>2 copied</dd>
+              <dt class="mv"></dt><dd>2 moved</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mv"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svr1.py?rev=828">
+              examples/test_svr1.py
+            </a>
+          <span class="comment">(moved)</span>
+            <small><em>(moved from <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/test_svr1.py?rev=776" title="Show original file (revision 776)">
+                mystic/examples_other/test_svr1.py</a>)</em></small>
+              (<a title="Show differences" href="#file0">5 diffs</a>)
+            </li><li>
+          <div class="mv"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svr2.py?rev=828">
+              examples/test_svr2.py
+            </a>
+          <span class="comment">(moved)</span>
+            <small><em>(moved from <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/test_svr2.py?rev=776" title="Show original file (revision 776)">
+                mystic/examples_other/test_svr2.py</a>)</em></small>
+              (<a title="Show differences" href="#file1">3 diffs</a>)
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/qld_svr1.py?rev=828">
+              examples_other/qld_svr1.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/test_svr1.py?rev=776" title="Show original file (revision 776)">
+                mystic/examples_other/test_svr1.py</a>)</em></small>
+            </li><li>
+          <div class="cp"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/qld_svr2.py?rev=828">
+              examples_other/qld_svr2.py
+            </a>
+          <span class="comment">(copied)</span>
+            <small><em>(copied from <a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/test_svr2.py?rev=776" title="Show original file (revision 776)">
+                mystic/examples_other/test_svr2.py</a>)</em></small>
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="mystic/examples/test_svr1.html" title="Show the changeset 828 restricted to mystic/examples/test_svr1.py">mystic/examples/test_svr1.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/test_svr1.py?rev=776#L2">
+                      r776</a>
+                  </th>
+                  <th title="Revision 828">
+                    <a title="Show revision 828 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svr1.py?rev=828#L2">
+                      r828</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>2</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>4</th><td class="r"><ins># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>5</th><td class="l"><span># Copyright (c) 1997-2015 California Institute of Technology.</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/test_svr1.py?rev=776#L10">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svr1.py?rev=828#L11">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>10</th><th>11</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>11</th><th>12</th><td class="l"><span>from numpy import *</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>12</th><th> </th><td class="l"><del>import qld</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>13</th><th>13</th><td class="l"><span>import pylab</span> </td>
+                  </tr><tr>
+                          <th>14</th><th>14</th><td class="l"><span>from mystic.svmtools import *</span> </td>
+                  </tr><tr>
+                          <th>15</th><th>15</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>16</th><th> </th><td class="l"><span>from mystic.tools import random_seed</span> </td>
+                      </tr><tr>
+                        <th>17</th><th> </th><td class="l"><span>#random_seed(123)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>16</th><td class="r"><span># a common objective function for solving a QP problem</span> </td>
+                      </tr><tr>
+                        <th> </th><th>17</th><td class="r"><span># (see http://www.mathworks.com/help/optim/ug/quadprog.html)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>18</th><td class="r"><span>def objective(x, H, f):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>19</th><td class="r"><span>&nbsp; &nbsp; return 0.5 * dot(dot(x,H),x) + dot(f,x)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>18</th><th>20</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>21</th><td class="r"><ins># linear data with scatter</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>19</th><th>22</th><td class="l"><span>x = arange(-5, 5.001)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>20</th><th> </th><td class="l"><span>y = x + random.rand(x.size)*7</span> </td>
+                      </tr><tr>
+                        <th>21</th><th> </th><td class="l"><span>#y = array([9.99, 10.93, 9.11, 6.50, 12.69, 14.09, 13.83, 15.86, 17.49, 14.20, 19.98])</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>23</th><td class="r"><span>y = x + 7*random.rand(x.size)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>22</th><th>24</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>23</th><th>25</th><td class="l"><span>l = x.size</span> </td>
+                  </tr><tr>
+                          <th>24</th><th>26</th><td class="l"><span>N = 2*l</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>25</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>26</th><th> </th><td class="l"><del>pylab.plot(x, y, 'k+')</del> </td>
+                  </tr><tr class="last">
+                          <th>27</th><th> </th><td class="l"><del>#pylab.show()</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>27</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>29</th><th>28</th><td class="l"><span># the Kernel Matrix (with the linear kernel)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/test_svr1.py?rev=776#L33">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svr1.py?rev=828#L32">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>33</th><th>32</th><td class="l"><span># the linear term for the QP</span> </td>
+                  </tr><tr>
+                          <th>34</th><th>33</th><td class="l"><span>Y = concatenate([y,-y])</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>35</th><th> </th><td class="l"><span>svr_epsilon = 3<del>;</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>34</th><td class="r"><span>svr_epsilon = 3<ins></ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>36</th><th>35</th><td class="l"><span>b = Y + svr_epsilon * ones(Y.size)</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>36</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/test_svr1.py?rev=776#L39">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svr1.py?rev=828#L38">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>39</th><th>38</th><td class="l"><span>f = b</span> </td>
+                  </tr><tr>
+                          <th>40</th><th>39</th><td class="l"><span>Aeq = concatenate([ones(l), -ones(l)]).reshape(1,N)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>41</th><th> </th><td class="l"><span>Beq = array([0<del></del>])</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>40</th><td class="r"><span>Beq = array([0<ins>.</ins>])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>42</th><th>41</th><td class="l"><span>lb = zeros(N)</span> </td>
+                  </tr><tr>
+                          <th>43</th><th>42</th><td class="l"><span>ub = zeros(N) + 0.5</span> </td>
+                  </tr><tr>
+                          <th>44</th><th>43</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>44</th><td class="r"><ins>from mystic.symbolic import linear_symbolic, solve, \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>45</th><td class="r"><ins>&nbsp; &nbsp; &nbsp;generate_solvers as solvers, generate_constraint as constraint</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>46</th><td class="r"><ins>constrain = linear_symbolic(Aeq,Beq)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>47</th><td class="r"><ins>constrain = constraint(solvers(solve(constrain,target=['x0'])))</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>48</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>46</th><th> </th><td class="l"><span>alpha = qld.quadprog2(H, f, None, None, Aeq, Beq, lb, ub)</span> </td>
+                      </tr><tr>
+                        <th>47</th><th> </th><td class="l"><span>#alpha = 2*alpha</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>49</th><td class="r"><span>from mystic import supressed</span> </td>
+                      </tr><tr>
+                        <th> </th><th>50</th><td class="r"><span>@supressed(1e-5)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>51</th><td class="r"><span>def conserve(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>52</th><td class="r"><span>&nbsp; &nbsp; return constrain(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>53</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>54</th><td class="r"><span>from mystic.monitors import VerboseMonitor</span> </td>
+                      </tr><tr>
+                        <th> </th><th>55</th><td class="r"><span>mon = VerboseMonitor(10)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>56</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>57</th><td class="r"><span>from mystic.solvers import diffev</span> </td>
+                      </tr><tr>
+                        <th> </th><th>58</th><td class="r"><span>alpha = diffev(objective, zip(lb,.1*ub), args=(H,f), npop=N*3, gtol=200, \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>59</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;itermon=mon, \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>60</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ftol=1e-5, bounds=zip(lb,ub), constraints=conserve, disp=1)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>61</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>62</th><td class="r"><span>print 'solved x: ', alpha</span> </td>
+                      </tr><tr>
+                        <th> </th><th>63</th><td class="r"><span>print "constraint A*x == 0: ", inner(Aeq, alpha)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>64</th><td class="r"><span>print "minimum 0.5*x'Hx + f'*x: ", objective(alpha, H, f)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>65</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>49</th><th>66</th><td class="l"><span>sv1 = SupportVectors(alpha[:l])</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/test_svr1.py?rev=776#L52">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svr1.py?rev=828#L69">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>52</th><th>69</th><td class="l"><span>R = RegressionFunction(x, y, alpha, svr_epsilon, LinearKernel)</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>70</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>pylab.plot(x,R(x))</span> </td>
+                      </tr><tr>
+                        <th>55</th><th> </th><td class="l"><span>pylab.plot(x,R(x)+svr_epsilon, 'k--')</span> </td>
+                      </tr><tr>
+                        <th>56</th><th> </th><td class="l"><span>pylab.plot(x,R(x)-svr_epsilon, 'k--')</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>71</th><td class="r"><span>print 'support vectors: ', sv1, sv2</span> </td>
+                      </tr><tr>
+                        <th> </th><th>72</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>73</th><td class="r"><span># plot data</span> </td>
+                      </tr><tr>
+                        <th> </th><th>74</th><td class="r"><span>pylab.plot(x, y, 'k+', markersize=10)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>75</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>76</th><td class="r"><span># plot regression function and support</span> </td>
+                      </tr><tr>
+                        <th> </th><th>77</th><td class="r"><span>pylab.plot(x,R(x), 'k-')</span> </td>
+                      </tr><tr>
+                        <th> </th><th>78</th><td class="r"><span>pylab.plot(x,R(x)-svr_epsilon, 'r--')</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>79</th><td class="r"><span>pylab.plot(x,R(x)+svr_epsilon, 'g--')</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>57</th><th>80</th><td class="l"><span>pylab.plot(x[sv1],y[sv1],'ro')</span> </td>
+                  </tr><tr>
+                          <th>58</th><th>81</th><td class="l"><span>pylab.plot(x[sv2],y[sv2],'go')</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>59</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>60</th><th> </th><td class="l"><del>print alpha</del> </td>
+                  </tr><tr class="last">
+                          <th>61</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>62</th><th>82</th><td class="l"><span>pylab.show()</span> </td>
+                  </tr><tr>
+                          <th>63</th><th>83</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>64</th><th> </th><td class="l"><del># $Id$</del> </td>
+                  </tr><tr class="last">
+                          <th>65</th><th> </th><td class="l"><del># </del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>66</th><th>84</th><td class="l"><span># end of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="mystic/examples/test_svr2.html" title="Show the changeset 828 restricted to mystic/examples/test_svr2.py">mystic/examples/test_svr2.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 776">
+                    <a title="Show revision 776 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/test_svr2.py?rev=776#L2">
+                      r776</a>
+                  </th>
+                  <th title="Revision 828">
+                    <a title="Show revision 828 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svr2.py?rev=828#L2">
+                      r828</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>2</th><th>2</th><td class="l"><span>#</span> </td>
+                  </tr><tr>
+                          <th>3</th><th>3</th><td class="l"><span># Author: Patrick Hung (patrickh @caltech)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>4</th><td class="r"><ins># Author: Mike McKerns (mmckerns @caltech and @uqfoundation)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>4</th><th>5</th><td class="l"><span># Copyright (c) 1997-2015 California Institute of Technology.</span> </td>
+                  </tr><tr>
+                          <th>5</th><th>6</th><td class="l"><span># License: 3-clause BSD.&nbsp; The full license text is available at:</span> </td>
+                  </tr><tr>
+                          <th>6</th><th>7</th><td class="l"><span>#&nbsp; - http://mmckerns.github.io/project/mystic/browser/mystic/LICENSE</span> </td>
+                  </tr><tr>
+                          <th>7</th><th>8</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>8</th><th> </th><td class="l"><span>Support Vector Regression. Example <del>1</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>9</th><td class="r"><span>Support Vector Regression. Example <ins>2</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>9</th><th>10</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>10</th><th>11</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>11</th><th>12</th><td class="l"><span>from numpy import *</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>12</th><th> </th><td class="l"><del>import qld</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>13</th><th>13</th><td class="l"><span>import pylab</span> </td>
+                  </tr><tr>
+                          <th>14</th><th>14</th><td class="l"><span>from mystic.svmtools import *</span> </td>
+                  </tr><tr>
+                          <th>15</th><th>15</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>16</th><td class="r"><ins># a common objective function for solving a QP problem</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>17</th><td class="r"><ins># (see http://www.mathworks.com/help/optim/ug/quadprog.html)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>18</th><td class="r"><ins>def objective(x, H, f):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>19</th><td class="r"><ins>&nbsp; &nbsp; return 0.5 * dot(dot(x,H),x) + dot(f,x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>20</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>21</th><td class="r"><ins># quadratic data plus scatter</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>16</th><th>22</th><td class="l"><span>x = arange(-5, 5.001)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>17</th><th> </th><td class="l"><span>y = x*x + random.rand(x.size)*8</span> </td>
+                      </tr><tr>
+                        <th>18</th><th> </th><td class="l"><span>#y = array([9.99, 10.93, 9.11, 6.50, 12.69, 14.09, 13.83, 15.86, 17.49, 14.20, 19.98])</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>23</th><td class="r"><span>y = x*x + 8*random.rand(x.size)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>19</th><th>24</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>20</th><th>25</th><td class="l"><span>l = x.size</span> </td>
+                  </tr><tr>
+                          <th>21</th><th>26</th><td class="l"><span>N = 2*l</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>22</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr class="last">
+                          <th>23</th><th> </th><td class="l"><del>pylab.plot(x, y, 'k+')</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>27</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>25</th><th>28</th><td class="l"><span># the Kernel Matrix </span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/test_svr2.py?rev=776#L37">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svr2.py?rev=828#L40">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>37</th><th>40</th><td class="l"><span>f = b</span> </td>
+                  </tr><tr>
+                          <th>38</th><th>41</th><td class="l"><span>Aeq = concatenate([ones(l), -ones(l)]).reshape(1,N)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>39</th><th> </th><td class="l"><span>Beq = array([0<del></del>])</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>42</th><td class="r"><span>Beq = array([0<ins>.</ins>])</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>40</th><th>43</th><td class="l"><span>lb = zeros(N)</span> </td>
+                  </tr><tr>
+                          <th>41</th><th>44</th><td class="l"><span>ub = zeros(N) + 0.5</span> </td>
+                  </tr><tr>
+                          <th>42</th><th>45</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>43</th><th> </th><td class="l"><span>alpha = qld.quadprog2(H, f, None, None, Aeq, Beq, lb, ub)</span> </td>
+                      </tr><tr>
+                        <th>44</th><th> </th><td class="l"><span>#alpha = 2*alpha</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>46</th><td class="r"><span>from mystic.symbolic import linear_symbolic, solve, \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>47</th><td class="r"><span>&nbsp; &nbsp; &nbsp;generate_solvers as solvers, generate_constraint as constraint</span> </td>
+                      </tr><tr>
+                        <th> </th><th>48</th><td class="r"><span>constrain = linear_symbolic(Aeq,Beq)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>49</th><td class="r"><span>constrain = constraint(solvers(solve(constrain,target=['x0'])))</span> </td>
+                      </tr><tr>
+                        <th> </th><th>50</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>51</th><td class="r"><span>from mystic import supressed</span> </td>
+                      </tr><tr>
+                        <th> </th><th>52</th><td class="r"><span>@supressed(1e-5)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>53</th><td class="r"><span>def conserve(x):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>54</th><td class="r"><span>&nbsp; &nbsp; return constrain(x)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>55</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>56</th><td class="r"><span>from mystic.monitors import VerboseMonitor</span> </td>
+                      </tr><tr>
+                        <th> </th><th>57</th><td class="r"><span>mon = VerboseMonitor(10)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>58</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>59</th><td class="r"><span>from mystic.solvers import diffev</span> </td>
+                      </tr><tr>
+                        <th> </th><th>60</th><td class="r"><span>alpha = diffev(objective, zip(lb,.1*ub), args=(H,f), npop=N*3, gtol=200, \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>61</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;itermon=mon, \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>62</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;ftol=1e-5, bounds=zip(lb,ub), constraints=conserve, disp=1)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>63</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>64</th><td class="r"><span>print 'solved x: ', alpha</span> </td>
+                      </tr><tr>
+                        <th> </th><th>65</th><td class="r"><span>print "constraint A*x == 0: ", inner(Aeq, alpha)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>66</th><td class="r"><span>print "minimum 0.5*x'Hx + f'*x: ", objective(alpha, H, f)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>67</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>46</th><th>68</th><td class="l"><span>sv1 = SupportVectors(alpha[:l])</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples_other/test_svr2.py?rev=776#L49">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_svr2.py?rev=828#L71">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>49</th><th>71</th><td class="l"><span>R = RegressionFunction(x, y, alpha, svr_epsilon, pk)</span> </td>
+                  </tr><tr>
+                          <th>50</th><th>72</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>73</th><td class="r"><ins>print 'support vectors: ', sv1, sv2</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>74</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>75</th><td class="r"><ins># plot data</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>76</th><td class="r"><ins>pylab.plot(x, y, 'k+', markersize=10)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>77</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>78</th><td class="r"><ins># plot regression function and support</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>51</th><th>79</th><td class="l"><span>xx = arange(min(x),max(x),0.1)</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>80</th><td class="l"><span>pylab.plot(xx,R(xx))</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>53</th><th> </th><td class="l"><span>pylab.plot(xx,R(xx)<del>+svr_epsilon, 'k</del>--')</span> </td>
+                      </tr><tr>
+                        <th>54</th><th> </th><td class="l"><span>pylab.plot(xx,R(xx)<del>-svr_epsilon, 'k</del>--')</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>81</th><td class="r"><span>pylab.plot(xx,R(xx)<ins>-svr_epsilon, 'r</ins>--')</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>82</th><td class="r"><span>pylab.plot(xx,R(xx)<ins>+svr_epsilon, 'g</ins>--')</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>55</th><th>83</th><td class="l"><span>pylab.plot(x[sv1],y[sv1],'ro')</span> </td>
+                  </tr><tr>
+                          <th>56</th><th>84</th><td class="l"><span>pylab.plot(x[sv2],y[sv2],'go')</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>57</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>58</th><th> </th><td class="l"><del>print alpha</del> </td>
+                  </tr><tr class="last">
+                          <th>59</th><th> </th><td class="l"><del></del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>60</th><th>85</th><td class="l"><span>pylab.show()</span> </td>
+                  </tr><tr>
+                          <th>61</th><th>86</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>62</th><th> </th><td class="l"><del># $Id$</del> </td>
+                  </tr><tr class="last">
+                          <th>63</th><th> </th><td class="l"><del># </del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>64</th><th>87</th><td class="l"><span># end of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/828/mystic?format=diff&amp;new=828" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/828/mystic?format=zip&amp;new=828" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/828/mystic by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:55:49 GMT -->
+</html>

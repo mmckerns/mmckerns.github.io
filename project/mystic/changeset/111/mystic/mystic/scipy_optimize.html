@@ -1,0 +1,625 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/111/mystic/mystic/scipy_optimize.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:31:34 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 111 for mystic/mystic/scipy_optimize.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/111/mystic/mystic/scipy_optimize.py?format=diff&amp;new=111" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/111/mystic/mystic/scipy_optimize.py?format=zip&amp;new=111" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../112/mystic/mystic/scipy_optimize.html" title="Changeset 112 for mystic/mystic/scipy_optimize.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../109/mystic/mystic/scipy_optimize.html" title="Changeset 109 for mystic/mystic/scipy_optimize.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../109/mystic/mystic/scipy_optimize.html" title="Changeset 109 for mystic/mystic/scipy_optimize.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../112/mystic/mystic/scipy_optimize.html" title="Changeset 112 for mystic/mystic/scipy_optimize.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../111.html">111</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111">mystic/mystic/scipy_optimize.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             03/11/09 11:33:05
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-03-11T11%3A33%3A05-07%3A00&amp;precision=second" title="2009-03-11T11:33:05-07:00 in Timeline">7 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+created <a class="missing wiki">SetEvaluationLimits?</a> method in abstract_solver;<br />
+propagated changes to the derived solvers and examples;<br />
+removed 'ooe' circle branch... it's in the trunk now<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111">
+              mystic/mystic/scipy_optimize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">12 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="scipy_optimize.html" title="Show the changeset 111 restricted to mystic/mystic/scipy_optimize.py">mystic/mystic/scipy_optimize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 109">
+                    <a title="Show revision 109 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=109#L95">
+                      r109</a>
+                  </th>
+                  <th title="Revision 111">
+                    <a title="Show revision 111 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111#L95">
+                      r111</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>95</th><th>95</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return x0, val</span> </td>
+                  </tr><tr>
+                          <th>96</th><th>96</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>97</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Solve(self, func, termination,</span> </td>
+                      </tr><tr>
+                        <th>98</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maxiter=None, maxfun=None, sigint_callback=None,</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>97</th><td class="r"><span>&nbsp; &nbsp; def Solve(self, func, termination, sigint_callback=None,</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>99</th><th>98</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; EvaluationMonitor=Null, StepMonitor=Null, ExtraArgs=(), **kwds):</span> </td>
+                  </tr><tr>
+                          <th>100</th><th>99</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using the downhill simplex algorithm.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=109#L112">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111#L111">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>112</th><th>111</th><td class="l"><span>&nbsp; &nbsp; Additional Inputs:</span> </td>
+                  </tr><tr>
+                          <th>113</th><th>112</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>114</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; maxiter -- the maximum number of iterations to perform.</del> </td>
+                  </tr><tr class="last">
+                          <th>115</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; maxfun -- the maximum number of function evaluations.</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>116</th><th>113</th><td class="l"><span>&nbsp; &nbsp; &nbsp; sigint_callback -- callback function for signal handler.</span> </td>
+                  </tr><tr>
+                          <th>117</th><th>114</th><td class="l"><span>&nbsp; &nbsp; &nbsp; EvaluationMonitor -- a callable object that will be passed x, fval</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=109#L193">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111#L190">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>193</th><th>190</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not -1 &lt; rank &lt; 2:</span> </td>
+                  </tr><tr>
+                          <th>194</th><th>191</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raise ValueError, "Initial guess must be a scalar or rank-1 sequence."</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>195</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if maxiter is None:</span> </td>
+                      </tr><tr>
+                        <th>196</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maxiter = N * 200</span> </td>
+                      </tr><tr>
+                        <th>197</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if maxfun is None:</span> </td>
+                      </tr><tr>
+                        <th>198</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maxfun = N * 200</span> </td>
+                      </tr><tr>
+                        <th>199</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = maxiter #XXX: better to just copy the code?</span> </td>
+                      </tr><tr>
+                        <th>200</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = maxfun&nbsp; &nbsp;#XXX: better to just copy the code?</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>192</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxiter is None:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>193</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = N * 200</span> </td>
+                      </tr><tr>
+                        <th> </th><th>194</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxfun is None:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>195</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = N * 200</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>201</th><th>196</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>202</th><th>197</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; rho = 1; chi = 2; psi = 0.5; sigma = 0.5;</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=109#L235">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111#L230">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>235</th><th>230</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iterations = 1</span> </td>
+                  </tr><tr>
+                          <th>236</th><th>231</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>237</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; while (fcalls[0] &lt; <del>maxfun and iterations &lt; </del>maxiter):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>232</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; while (fcalls[0] &lt; <ins>self._maxfun and iterations &lt; self._</ins>maxiter):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>238</th><th>233</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(sim, fsim) # get all values; "best" is sim[0]</span> </td>
+                  </tr><tr>
+                          <th>239</th><th>234</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if detools.EARLYEXIT or termination(self):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=109#L309">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111#L304">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>309</th><th>304</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; warnflag = 0</span> </td>
+                  </tr><tr>
+                          <th>310</th><th>305</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>311</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if fcalls[0] &gt;= <del></del>maxfun:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>306</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if fcalls[0] &gt;= <ins>self._</ins>maxfun:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>312</th><th>307</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warnflag = 1</span> </td>
+                  </tr><tr>
+                          <th>313</th><th>308</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if disp:</span> </td>
+                  </tr><tr>
+                          <th>314</th><th>309</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Maximum number of function evaluations has "\</span> </td>
+                  </tr><tr>
+                          <th>315</th><th>310</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "been exceeded."</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>316</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif iterations &gt;= <del></del>maxiter:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>311</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif iterations &gt;= <ins>self._</ins>maxiter:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>317</th><th>312</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warnflag = 2</span> </td>
+                  </tr><tr>
+                          <th>318</th><th>313</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if disp:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=109#L350">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111#L345">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>350</th><th>345</th><td class="l"><span>&nbsp; &nbsp; solver.SetInitialPoints(x0)</span> </td>
+                  </tr><tr>
+                          <th>351</th><th>346</th><td class="l"><span>&nbsp; &nbsp;#solver.enable_signal_handler()</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>347</th><td class="r"><ins>&nbsp; &nbsp; solver.SetEvaluationLimits(maxiter,maxfun)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>352</th><th>348</th><td class="l"><span>&nbsp; &nbsp; solver.Solve(func,termination=CRT(xtol,ftol),\</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>353</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;maxiter=maxiter,maxfun=maxfun,\</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>354</th><th>349</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;EvaluationMonitor=evalmon,StepMonitor=stepmon,\</span> </td>
+                  </tr><tr>
+                          <th>355</th><th>350</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;disp=disp, ExtraArgs=args, callback=callback)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=109#L411">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111#L406">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>411</th><th>406</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>412</th><th>407</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>413</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Solve(self, func, termination,</span> </td>
+                      </tr><tr>
+                        <th>414</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maxiter=None, maxfun=None, sigint_callback=None,</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>408</th><td class="r"><span>&nbsp; &nbsp; def Solve(self, func, termination, sigint_callback=None,</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>415</th><th>409</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; EvaluationMonitor=Null, StepMonitor=Null, ExtraArgs=(), **kwds):</span> </td>
+                  </tr><tr>
+                          <th>416</th><th>410</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a function using modified Powell's method.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=109#L428">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111#L422">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>428</th><th>422</th><td class="l"><span>&nbsp; &nbsp; Additional Inputs:</span> </td>
+                  </tr><tr>
+                          <th>429</th><th>423</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>430</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; maxiter -- the maximum number of iterations to perform.</del> </td>
+                  </tr><tr class="last">
+                          <th>431</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; maxfun -- the maximum number of function evaluations.</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>432</th><th>424</th><td class="l"><span>&nbsp; &nbsp; &nbsp; sigint_callback -- callback function for signal handler.</span> </td>
+                  </tr><tr>
+                          <th>433</th><th>425</th><td class="l"><span>&nbsp; &nbsp; &nbsp; EvaluationMonitor -- a callable object that will be passed x, fval</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=109#L515">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111#L507">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>515</th><th>507</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not -1 &lt; rank &lt; 2:</span> </td>
+                  </tr><tr>
+                          <th>516</th><th>508</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; raise ValueError, "Initial guess must be a scalar or rank-1 sequence."</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>517</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if maxiter is None:</span> </td>
+                      </tr><tr>
+                        <th>518</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maxiter = N * 1000</span> </td>
+                      </tr><tr>
+                        <th>519</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if maxfun is None:</span> </td>
+                      </tr><tr>
+                        <th>520</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; maxfun = N * 1000</span> </td>
+                      </tr><tr>
+                        <th>521</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = maxiter #XXX: better to just copy the code?</span> </td>
+                      </tr><tr>
+                        <th>522</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = maxfun&nbsp; &nbsp;#XXX: better to just copy the code?</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>509</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxiter is None:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>510</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxiter = N * 1000</span> </td>
+                      </tr><tr>
+                        <th> </th><th>511</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxfun is None:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>512</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = N * 1000</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>523</th><th>513</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>524</th><th>514</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if direc is None:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=109#L561">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111#L551">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>561</th><th>551</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(fval) #XXX: the 'best' for now...</span> </td>
+                  </tr><tr>
+                          <th>562</th><th>552</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if detools.EARLYEXIT or termination(self): CONTINUE = False #break</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>563</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif fcalls[0] &gt;= <del></del>maxfun: CONTINUE = False #break</span> </td>
+                      </tr><tr>
+                        <th>564</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif iter &gt;= <del></del>maxiter: CONTINUE = False #break</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>553</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif fcalls[0] &gt;= <ins>self._</ins>maxfun: CONTINUE = False #break</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>554</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; elif iter &gt;= <ins>self._</ins>maxiter: CONTINUE = False #break</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>565</th><th>555</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>566</th><th>556</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else: # Construct the extrapolated point</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=109#L596">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111#L586">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>596</th><th>586</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; warnflag = 0</span> </td>
+                  </tr><tr>
+                          <th>597</th><th>587</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>598</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if fcalls[0] &gt;= <del></del>maxfun:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>588</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if fcalls[0] &gt;= <ins>self._</ins>maxfun:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>599</th><th>589</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warnflag = 1</span> </td>
+                  </tr><tr>
+                          <th>600</th><th>590</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if disp:</span> </td>
+                  </tr><tr>
+                          <th>601</th><th>591</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Warning: Maximum number of function evaluations has "\</span> </td>
+                  </tr><tr>
+                          <th>602</th><th>592</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; "been exceeded."</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>603</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif iter &gt;= <del></del>maxiter:</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>593</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif iter &gt;= <ins>self._</ins>maxiter:</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>604</th><th>594</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; warnflag = 2</span> </td>
+                  </tr><tr>
+                          <th>605</th><th>595</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if disp:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=109#L642">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=111#L632">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>642</th><th>632</th><td class="l"><span>&nbsp; &nbsp; solver.SetInitialPoints(x0)</span> </td>
+                  </tr><tr>
+                          <th>643</th><th>633</th><td class="l"><span>&nbsp; &nbsp;#solver.enable_signal_handler()</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>634</th><td class="r"><ins>&nbsp; &nbsp; solver.SetEvaluationLimits(maxiter,maxfun)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>644</th><th>635</th><td class="l"><span>&nbsp; &nbsp; solver.Solve(func,termination=NCOG(ftol),\</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>645</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;maxiter=maxiter,maxfun=maxfun,\</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>646</th><th>636</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;EvaluationMonitor=evalmon,StepMonitor=stepmon,\</span> </td>
+                  </tr><tr>
+                          <th>647</th><th>637</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;xtol=xtol, ExtraArgs=args, callback=callback, \</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/111/mystic/mystic/scipy_optimize.py?format=diff&amp;new=111" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/111/mystic/mystic/scipy_optimize.py?format=zip&amp;new=111" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/111/mystic/mystic/scipy_optimize.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:31:35 GMT -->
+</html>

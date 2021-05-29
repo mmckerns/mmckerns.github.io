@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/pathos/wiki/klepto by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 May 2016 18:05:19 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      klepto – Pathos
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="help" href="TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/pathos/wiki/klepto?format=txt" type="text/x-trac-wiki" title="Plain Text" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/wiki.css" type="text/css" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/pathos_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/pathos_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Pathos" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/folding.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/pathos/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("#content").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $("#content").find(".wikianchor").each(function() {
+          $(this).addAnchor(babel.format(_("Link to #%(id)s"), {id: $(this).attr('id')}));
+        });
+        $(".foldable").enableFolding(true, true);
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/projects/pathos/wiki.html"><img src="http://mmckerns.github.io/projects/pathos/pathos_banner.png" alt="PATHOS" height="150" width="350" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/pathos/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first active"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="pagepath" class="noprint">
+  <a class="pathentry first" title="View WikiStart" href="../wiki.html">wiki:</a><a class="pathentry" href="klepto.html" title="View klepto">klepto</a>
+</div>
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><a href="WikiStart.html">Start Page</a></li><li><a href="TitleIndex.html">Index</a></li><li class="last"><a href="http://mmckerns.github.io/project/pathos/wiki/klepto?action=history">History</a></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="wiki">
+      <div class="wikipage searchable">
+        
+          
+          <div class="trac-modifiedby"><a href="http://mmckerns.github.io/project/pathos/wiki/klepto?action=diff&amp;version=3" title="Version 3 by mmckerns: cleanup header links for klepto-0.1.1">Last modified</a> <a class="timeline" href="http://mmckerns.github.io/project/pathos/timeline?from=2015-08-05T06%3A26%3A03-07%3A00&amp;precision=second" title="2015-08-05T06:26:03-07:00 in Timeline">10 months</a> ago</div>
+          <div id="wikipage"><br />
+<h1 style="color: brown">klepto: persistent caching to memory, disk, or database</h1>
+<br />
+||
+<a href="klepto/User_Guide.html">User Guide</a>
+||
+<a href="klepto/Installation.html">Download</a>
+||
+<a href="klepto/Tutorials.html">Tutorials</a>
+||
+<a href="License.html">License</a>
+||
+<hr />
+<h4 id="AboutKlepto">About Klepto</h4>
+<p>
+Klepto extends python's 'lru_cache' to utilize different keymaps and alternate caching algorithms, such as 'lfu_cache'
+and 'mru_cache'. While caching is meant for fast access to saved results, klepto also has archiving capabilities, for
+longer-term storage. Klepto uses a simple dictionary-sytle interface for all caches and archives, and all caches can be
+applied to any python function as a decorator. Keymaps are algorithms for converting a function's input signature to a
+unique dictionary, where the function's results are the dictionary value. Thus for y = f(x), y will be stored in cache[x] (e.g. {x:y}).
+</p>
+<p>
+Klepto provides both standard and 'safe' caching, where safe caches are slower but can recover from hashing errors.
+Klepto is intended to be used for distributed and parallel computing, where several of the keymaps serialize the stored
+objects. Caches and archives are intended to be read/write accessible from different threads and processes. Klepto
+enables a user to decorate a function, save the results to a file or database archive, close the interpreter, start a new
+session, and reload the function and it's cache.
+</p>
+<p>
+Klepto is part of <a class="wiki" href="WikiStart.html">pathos</a>, a python framework for heterogenous computing.
+Klepto is in the early development stages, and any user feedback is
+highly appreciated. Contact Mike McKerns [mmckerns at caltech dot edu]
+with comments, suggestions, and any bugs you may find. A list of known
+issues is maintained at <a href="../query.html">http://mmckerns.github.io/project/pathos/query</a>.
+</p>
+<hr />
+
+<h4 id="MajorFeatures">Major Features</h4>
+<p>
+Klepto has standard and 'safe' variants of the following::
+</p>
+<ul><li>'lfu_cache' - the least-frequently-used caching algorithm
+</li><li>'lru_cache' - the least-recently-used caching algorithm
+</li><li>'mru_cache' - the most-recently-used caching algorithm
+</li><li>'rr_cache' - the random-replacement caching algorithm
+</li><li>'no_cache' - a dummy caching interface to archiving
+</li><li>'inf_cache' - an infinitely-growing cache
+</li></ul><p>
+Klepto has the following archive types::
+</p>
+<ul><li>'file_archive' - a dictionary-style interface to a file
+</li><li>'dir_archive' - a dictionary-style interface to a folder of files
+</li><li>'sqltable_archive' - a dictionary-style interface to a sql database table
+</li><li>'sql_archive' - a dictionary-style interface to a sql database
+</li><li>'dict_archive' - a dictionary with an archive interface
+</li><li>'null_archive' - a dictionary-style interface to a dummy archive 
+</li></ul><p>
+Klepto provides the following keymaps::
+</p>
+<ul><li>'keymap' - keys are raw python objects
+</li><li>'hashmap' - keys are a hash for the python object
+</li><li>'stringmap' - keys are the python object cast as a string
+</li><li>'picklemap' - keys are the serialized python object
+</li></ul><p>
+Klepto also includes a few useful decorators providing::
+</p>
+<ul><li>simple, shallow, or deep rounding
+</li><li>cryptographic key generation, with masking of selected arguments
+</li></ul><hr />
+<h4 id="CurrentRelease">Current Release</h4>
+<p>
+The latest stable version is <a class="milestone" href="../milestone/pathos-1.html">klepto-0.1.1</a>. You can download it <a class="wiki" href="klepto/Installation.html">here</a>.<br />
+The latest released version of klepto is always available from::
+</p>
+<blockquote>
+<p>
+<a class="ext-link" href="http://dev.danse.us/trac/pathos"><span class="icon"> </span>http://dev.danse.us/trac/pathos</a>
+</p>
+</blockquote>
+<p>
+Klepto is distributed under a 3-clause BSD <a class="wiki" href="License.html">license</a>.
+</p>
+<hr />
+<h4 id="DevelopmentRelease">Development Release</h4>
+<p>
+You can get the latest development release with all the shiny new features at::
+</p>
+<blockquote>
+<p>
+<a class="ext-link" href="http://dev.danse.us/packages"><span class="icon"> </span>http://dev.danse.us/packages</a>.
+</p>
+</blockquote>
+<p>
+or even better, fork us on our github mirror of the svn trunk::
+</p>
+<blockquote>
+<p>
+<a class="ext-link" href="https://github.com/uqfoundation"><span class="icon"> </span>https://github.com/uqfoundation</a>
+</p>
+</blockquote>
+<hr />
+<h4 id="Citation">Citation</h4>
+<p>
+If you use klepto to do research that leads to publication, we ask that you <br />
+acknowledge use of klepto by citing the following in your publication::
+</p>
+<pre class="wiki">    Michael McKerns and Michael Aivazis,
+    "pathos: a framework for heterogeneous computing", 2010- ;
+    http://dev.danse.us/trac/pathos
+</pre><hr />
+<h4 id="MoreInformation">More Information</h4>
+<p>
+Probably the best way to get started is to look at the tests
+that are provide within klepto. See <tt>klepto.tests</tt> for a set of scripts
+that test klepto's ability to provide caching and archiving.
+Klepto's source code is also generally well documented,
+so further questions may be resolved by <a class="source" href="../browser/klepto.html">inspecting the code</a> itself, or through 
+browsing the <a class="ext-link" href="http://docs.danse.us/pathos/current/klepto-module.html"><span class="icon"> </span>reference manual</a>. For those who like to leap before
+they look, you can jump right to the <a class="wiki" href="klepto/Installation.html">installation instructions</a>. If the aforementioned documents
+do not adequately address your needs, please <a class="wiki" href="Feedback.html">send us feedback</a>.
+</p>
+<p>
+Klepto is an active research tool. There are a growing number of <a class="wiki" href="Publications.html">publications and presentations</a> that
+discuss real-world examples and new features of klepto in greater detail than presented in the <a class="wiki" href="User_Guide.html">user's guide</a>. 
+If you would like to share how you use klepto in your work, please <a class="wiki" href="Feedback.html">send us a link</a>.
+</p>
+</div>
+        
+        
+      </div>
+      
+
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="last first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/pathos/wiki/klepto?format=txt">Plain Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/pathos/wiki/klepto by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 May 2016 18:05:20 GMT -->
+</html>

@@ -1,0 +1,2343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/pathos/query by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 May 2016 18:04:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Custom Query – Pathos
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="search.html" />
+        <link rel="help" href="wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/pathos/query?status=%21closed&amp;format=rss&amp;order=priority" type="application/rss+xml" class="rss" title="RSS Feed" /><link rel="alternate" href="http://mmckerns.github.io/project/pathos/query?status=%21closed&amp;format=csv&amp;order=priority" type="text/csv" class="csv" title="Comma-delimited Text" /><link rel="alternate" href="http://mmckerns.github.io/project/pathos/query?status=%21closed&amp;format=tab&amp;order=priority" type="text/tab-separated-values" class="tab" title="Tab-delimited Text" />
+        <link rel="start" href="wiki.html" />
+        <link rel="stylesheet" href="chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="chrome/common/css/report.css" type="text/css" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/pathos_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/pathos_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="search/opensearch" title="Search Pathos" />
+    <script type="text/javascript" src="chrome/common/js/jquery.js"></script><script type="text/javascript" src="chrome/common/js/babel.js"></script><script type="text/javascript" src="chrome/common/js/trac.js"></script><script type="text/javascript" src="chrome/common/js/search.js"></script><script type="text/javascript" src="chrome/common/js/query.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/pathos/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="chrome/common/js/folding.js"></script><script type="text/javascript">/*<![CDATA[*/
+      jQuery(document).ready(function($) {
+        $("#group").change(function() {
+          $("#groupdesc").enable(this.selectedIndex != 0)
+        }).change();
+        $("fieldset legend.foldable").enableFolding(false);
+        /* Hide the filters for saved queries. */
+        if (window.location.href.search(/[?&]report=[0-9]+/) != -1)
+          $("#filters").toggleClass("collapsed");
+        /* Hide the columns by default. */
+        $("#columns").toggleClass("collapsed");
+      });
+    /*]]>*/</script>
+    <link rel="stylesheet" type="text/css" href="chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/projects/pathos/wiki.html"><img src="http://mmckerns.github.io/projects/pathos/pathos_banner.png" alt="PATHOS" height="150" width="350" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/pathos/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="login.html">Login</a></li><li><a href="wiki/TracGuide.html">Help/Guide</a></li><li><a href="about.html">About Trac</a></li><li class="last"><a href="prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="wiki.html">Wiki</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="roadmap.html">Roadmap</a></li><li><a href="browser.html">Browse Source</a></li><li class="active"><a href="query.html">View Tickets</a></li><li class="last"><a href="search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+        <hr />
+      </div>
+    <div id="content" class="query">
+      <h1>Custom Query <span class="numrows">(93 matches)</span></h1>
+      <form id="query" method="post" action="http://mmckerns.github.io/project/pathos/query"><div><input type="hidden" name="__FORM_TOKEN" value="82ed09e6a8460d1d274de4e3" /></div>
+        <fieldset id="filters">
+          <legend class="foldable">Filters</legend>
+          <table summary="Query filters">
+            <tbody>
+              <tr style="display: none">
+                <td>
+		  <div class="trac-clause-lsep"> <hr /></div>
+		  <div class="trac-clause-msep">Or</div>
+		  <div class="trac-clause-rsep"> <hr /></div>
+		</td>
+              </tr>
+              <tr><td class="trac-clause">
+                <table class="trac-clause">
+                  <tbody>
+                    <tr class="status">
+                      <td>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="rm_filter_0_status_0" value="–" />
+                        </div>
+                      </td>
+                          <th scope="row"><label id="label_0_status">Status</label></th>
+                      <td class="filter" colspan="2">
+                            <input type="checkbox" id="_0_status_assigned" name="0_status" value="assigned" checked="checked" />
+                            <label for="_0_status_assigned" class="control">assigned</label>
+                            <input type="checkbox" id="_0_status_closed" name="0_status" value="closed" />
+                            <label for="_0_status_closed" class="control">closed</label>
+                            <input type="checkbox" id="_0_status_new" name="0_status" value="new" checked="checked" />
+                            <label for="_0_status_new" class="control">new</label>
+                            <input type="checkbox" id="_0_status_reopened" name="0_status" value="reopened" checked="checked" />
+                            <label for="_0_status_reopened" class="control">reopened</label>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr class="actions">
+                      <td class="and" colspan="2">
+                         <label for="add_filter_0">And</label> 
+                        <select name="add_filter_0" id="add_filter_0">
+                          <option></option>
+                          <option value="cc">Cc</option><option value="component">Component</option><option value="time">Created</option><option value="description">Description</option><option value="keywords">Keywords</option><option value="milestone">Milestone</option><option value="changetime">Modified</option><option value="owner">Owner</option><option value="priority">Priority</option><option value="reporter">Reporter</option><option value="resolution">Resolution</option><option value="status" disabled="disabled">Status</option><option value="summary">Summary</option><option value="id">Ticket</option><option value="type">Type</option>
+                        </select>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="add_0" value="+" />
+                        </div>
+                      </td>
+                      <td class="or" colspan="2">
+                        <label for="add_clause">Or</label> 
+                        <select name="add_clause_1" id="add_clause">
+                          <option></option>
+                          <option value="cc">Cc</option><option value="component">Component</option><option value="time">Created</option><option value="description">Description</option><option value="keywords">Keywords</option><option value="milestone">Milestone</option><option value="changetime">Modified</option><option value="owner">Owner</option><option value="priority">Priority</option><option value="reporter">Reporter</option><option value="resolution">Resolution</option><option value="status">Status</option><option value="summary">Summary</option><option value="id">Ticket</option><option value="type">Type</option>
+                        </select>
+                        <div class="inlinebuttons">
+                          <input type="submit" name="add_1" value="+" />
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td></tr>
+            </tbody>
+          </table>
+        </fieldset>
+        <fieldset id="columns">
+          <legend class="foldable">Columns</legend>
+          <div>
+              <label>
+                <input type="checkbox" name="col" value="summary" checked="checked" />
+                Summary
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="status" checked="checked" />
+                Status
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="owner" checked="checked" />
+                Owner
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="type" checked="checked" />
+                Type
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="priority" checked="checked" />
+                Priority
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="milestone" checked="checked" />
+                Milestone
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="component" />
+                Component
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="resolution" />
+                Resolution
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="time" />
+                Created
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="changetime" />
+                Modified
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="reporter" />
+                Reporter
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="keywords" />
+                Keywords
+              </label>
+              <label>
+                <input type="checkbox" name="col" value="cc" />
+                Cc
+              </label>
+          </div>
+        </fieldset>
+        <p class="option">
+          <label for="group">Group results by</label>
+          <select name="group" id="group">
+            <option></option>
+              <option value="component">Component</option>
+              <option value="milestone">Milestone</option>
+              <option value="owner">Owner</option>
+              <option value="priority">Priority</option>
+              <option value="reporter">Reporter</option>
+              <option value="resolution">Resolution</option>
+              <option value="status">Status</option>
+              <option value="type">Type</option>
+          </select>
+          <input type="checkbox" name="groupdesc" id="groupdesc" />
+          <label for="groupdesc">descending</label>
+        </p>
+        <p class="option">
+          Show under each result:
+            <label><input type="checkbox" name="row" value="description" />
+            Description</label>
+        </p>
+        <p class="option">
+          <label for="max">Max items per page</label>
+          <input type="text" name="max" id="max" size="10" value="100" />
+        </p>
+        <div class="buttons">
+          <input type="hidden" name="order" value="priority" />
+          <input type="submit" name="update" value="Update" />
+        </div>
+        <hr />
+      </form>
+      <script type="text/javascript">
+        var properties={
+          status: { type: "radio", label: "Status"
+          , options: [
+            "assigned",
+            "closed",
+            "new",
+            "reopened"
+            ]
+          },
+          changetime: { type: "time", label: "Modified"
+          },
+          description: { type: "textarea", label: "Description"
+          },
+          reporter: { type: "text", label: "Reporter"
+          },
+          cc: { type: "text", label: "Cc"
+          },
+          resolution: { type: "radio", label: "Resolution"
+          , options: [
+            "fixed",
+            "invalid",
+            "wontfix",
+            "duplicate",
+            "worksforme"
+            ]
+          },
+          time: { type: "time", label: "Created"
+          },
+          component: { type: "select", label: "Component"
+          , options: [
+            "dill",
+            "hydra",
+            "klepto",
+            "pathos",
+            "pox",
+            "prion",
+            "pyina"
+            ]
+          },
+          summary: { type: "text", label: "Summary"
+          },
+          priority: { type: "select", label: "Priority"
+          , options: [
+            "blocker",
+            "critical",
+            "major",
+            "minor",
+            "trivial"
+            ]
+          },
+          keywords: { type: "text", label: "Keywords"
+          },
+          milestone: { type: "select", label: "Milestone"
+          , options: [
+            "pathos-0.1a1",
+            "pathos-0.2a",
+            "pathos-0.3a",
+            "pathos-0.4a",
+            "pathos-0.5a",
+            "pathos-dev"
+            ]
+          },
+          owner: { type: "text", label: "Owner"
+          },
+          type: { type: "select", label: "Type"
+          , options: [
+            "defect",
+            "enhancement",
+            "task",
+            "idea",
+            "verification"
+            ]
+          },
+          id: { type: "id", label: "Ticket"
+          }
+        };
+        var modes = {
+          text: [
+            {text: "contains", value: "~"},
+            {text: "doesn\'t contain", value: "!~"},
+            {text: "begins with", value: "^"},
+            {text: "ends with", value: "$"},
+            {text: "is", value: ""},
+            {text: "is not", value: "!"}
+            ],
+          select: [
+            {text: "is", value: ""},
+            {text: "is not", value: "!"}
+            ],
+          textarea: [
+            {text: "contains", value: "~"},
+            {text: "doesn\'t contain", value: "!~"}
+            ],
+          id: [
+            {text: "is", value: ""},
+            {text: "is not", value: "!"}
+            ]
+        };
+        initializeFilters();
+      </script>
+      <div>
+  
+    <table class="listing tickets">
+      <thead>
+        <tr>
+          <th class="id">
+            <a title="Sort by Ticket (ascending)" href="http://mmckerns.github.io/project/pathos/query?status=%21closed&amp;order=id">Ticket</a>
+          </th><th class="summary">
+            <a title="Sort by Summary (ascending)" href="http://mmckerns.github.io/project/pathos/query?status=%21closed&amp;order=summary">Summary</a>
+          </th><th class="status">
+            <a title="Sort by Status (ascending)" href="http://mmckerns.github.io/project/pathos/query?status=%21closed&amp;order=status">Status</a>
+          </th><th class="owner">
+            <a title="Sort by Owner (ascending)" href="http://mmckerns.github.io/project/pathos/query?status=%21closed&amp;order=owner">Owner</a>
+          </th><th class="type">
+            <a title="Sort by Type (ascending)" href="http://mmckerns.github.io/project/pathos/query?status=%21closed&amp;order=type">Type</a>
+          </th><th class="priority asc">
+            <a title="Sort by Priority (descending)" href="http://mmckerns.github.io/project/pathos/query?status=%21closed&amp;desc=1&amp;order=priority">Priority</a>
+          </th><th class="milestone">
+            <a title="Sort by Milestone (ascending)" href="http://mmckerns.github.io/project/pathos/query?status=%21closed&amp;order=milestone">Milestone</a>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+              <tr class="even prio1">
+                    <td class="id"><a href="ticket/93.html" title="View ticket">#93</a></td>
+                    <td class="summary">
+                      <a href="ticket/93.html" title="View ticket">upload 0.2a tarball &amp; point docs to it</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      blocker
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-1.html">pathos-0.2a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio2">
+                    <td class="id"><a href="ticket/16.html" title="View ticket">#16</a></td>
+                    <td class="summary">
+                      <a href="ticket/16.html" title="View ticket">provide programmatic installation of user-configured services</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      critical
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="even prio2">
+                    <td class="id"><a href="ticket/18.html" title="View ticket">#18</a></td>
+                    <td class="summary">
+                      <a href="ticket/18.html" title="View ticket">provide a master job registry</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      critical
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="odd prio2">
+                    <td class="id"><a href="ticket/77.html" title="View ticket">#77</a></td>
+                    <td class="summary">
+                      <a href="ticket/77.html" title="View ticket">harden sshTunnel</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      critical
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/3.html" title="View ticket">#3</a></td>
+                    <td class="summary">
+                      <a href="ticket/3.html" title="View ticket">dill fails on weakrefs</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/9.html" title="View ticket">#9</a></td>
+                    <td class="summary">
+                      <a href="ticket/9.html" title="View ticket">provide raw capabilities for filesystem exploration and reporting</a>
+                    </td>
+                    <td class="status">
+                      assigned
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/10.html" title="View ticket">#10</a></td>
+                    <td class="summary">
+                      <a href="ticket/10.html" title="View ticket">provide a translation service for environment variable in ssh calls</a>
+                    </td>
+                    <td class="status">
+                      assigned
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/14.html" title="View ticket">#14</a></td>
+                    <td class="summary">
+                      <a href="ticket/14.html" title="View ticket">provide mechanism for single point authentication</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/15.html" title="View ticket">#15</a></td>
+                    <td class="summary">
+                      <a href="ticket/15.html" title="View ticket">provide programmatic installation of dependencies to remote user space</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/17.html" title="View ticket">#17</a></td>
+                    <td class="summary">
+                      <a href="ticket/17.html" title="View ticket">provide node-to-node communication with publish/subscribe</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/20.html" title="View ticket">#20</a></td>
+                    <td class="summary">
+                      <a href="ticket/20.html" title="View ticket">provide capabilities for recovery and robustness of services</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/23.html" title="View ticket">#23</a></td>
+                    <td class="summary">
+                      <a href="ticket/23.html" title="View ticket">grep is brittle in obtaining child-of-child's pid</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/24.html" title="View ticket">#24</a></td>
+                    <td class="summary">
+                      <a href="ticket/24.html" title="View ticket">abstract the RPC service interface</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/25.html" title="View ticket">#25</a></td>
+                    <td class="summary">
+                      <a href="ticket/25.html" title="View ticket">provide generic mechanism for replicating 'login' environment</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/28.html" title="View ticket">#28</a></td>
+                    <td class="summary">
+                      <a href="ticket/28.html" title="View ticket">dill fails on frame types</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/37.html" title="View ticket">#37</a></td>
+                    <td class="summary">
+                      <a href="ticket/37.html" title="View ticket">extend existing mapping strategies to all launchers</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/38.html" title="View ticket">#38</a></td>
+                    <td class="summary">
+                      <a href="ticket/38.html" title="View ticket">provide monitoring and control of scheduled jobs</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/39.html" title="View ticket">#39</a></td>
+                    <td class="summary">
+                      <a href="ticket/39.html" title="View ticket">provide raw capabilities for killing and restarting jobs</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/40.html" title="View ticket">#40</a></td>
+                    <td class="summary">
+                      <a href="ticket/40.html" title="View ticket">provide versioning repository interactor</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/41.html" title="View ticket">#41</a></td>
+                    <td class="summary">
+                      <a href="ticket/41.html" title="View ticket">provide egg interactor</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/42.html" title="View ticket">#42</a></td>
+                    <td class="summary">
+                      <a href="ticket/42.html" title="View ticket">provide zip interactor</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/43.html" title="View ticket">#43</a></td>
+                    <td class="summary">
+                      <a href="ticket/43.html" title="View ticket">provide basic capabilities for service factory deployment</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/44.html" title="View ticket">#44</a></td>
+                    <td class="summary">
+                      <a href="ticket/44.html" title="View ticket">provide basic capabilities for service deployment</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/45.html" title="View ticket">#45</a></td>
+                    <td class="summary">
+                      <a href="ticket/45.html" title="View ticket">provide basic capabilities for service management</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/46.html" title="View ticket">#46</a></td>
+                    <td class="summary">
+                      <a href="ticket/46.html" title="View ticket">provide service factories</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/47.html" title="View ticket">#47</a></td>
+                    <td class="summary">
+                      <a href="ticket/47.html" title="View ticket">improvements on making remote connections</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/50.html" title="View ticket">#50</a></td>
+                    <td class="summary">
+                      <a href="ticket/50.html" title="View ticket">pyina launchers should derive from Launcher.py</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/51.html" title="View ticket">#51</a></td>
+                    <td class="summary">
+                      <a href="ticket/51.html" title="View ticket">add ssh map to accompany the ssh launcher</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/56.html" title="View ticket">#56</a></td>
+                    <td class="summary">
+                      <a href="ticket/56.html" title="View ticket">add pyina support for pypar</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/79.html" title="View ticket">#79</a></td>
+                    <td class="summary">
+                      <a href="ticket/79.html" title="View ticket">add monitoring by proxy</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/82.html" title="View ticket">#82</a></td>
+                    <td class="summary">
+                      <a href="ticket/82.html" title="View ticket">migrate base monitor from mystic to pathos</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/83.html" title="View ticket">#83</a></td>
+                    <td class="summary">
+                      <a href="ticket/83.html" title="View ticket">add rsync launcher</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/86.html" title="View ticket">#86</a></td>
+                    <td class="summary">
+                      <a href="ticket/86.html" title="View ticket">heterogeneous launch / map</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/88.html" title="View ticket">#88</a></td>
+                    <td class="summary">
+                      <a href="ticket/88.html" title="View ticket">incorporate any new use cases from srrietveld.job</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/89.html" title="View ticket">#89</a></td>
+                    <td class="summary">
+                      <a href="ticket/89.html" title="View ticket">check map strategies for logical bugs</a>
+                    </td>
+                    <td class="status">
+                      assigned
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      verification
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-1.html">pathos-0.2a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/94.html" title="View ticket">#94</a></td>
+                    <td class="summary">
+                      <a href="ticket/94.html" title="View ticket">add a real multithreaded launcher</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/95.html" title="View ticket">#95</a></td>
+                    <td class="summary">
+                      <a href="ticket/95.html" title="View ticket">add tutorial examples for dill</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/96.html" title="View ticket">#96</a></td>
+                    <td class="summary">
+                      <a href="ticket/96.html" title="View ticket">add tutorial examples for pathos</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/97.html" title="View ticket">#97</a></td>
+                    <td class="summary">
+                      <a href="ticket/97.html" title="View ticket">add tutorial examples for pyina</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/98.html" title="View ticket">#98</a></td>
+                    <td class="summary">
+                      <a href="ticket/98.html" title="View ticket">add tutorial examples for pox</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/100.html" title="View ticket">#100</a></td>
+                    <td class="summary">
+                      <a href="ticket/100.html" title="View ticket">provide conditional and probabilistic maps</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/121.html" title="View ticket">#121</a></td>
+                    <td class="summary">
+                      <a href="ticket/121.html" title="View ticket">add imap for MPI</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/122.html" title="View ticket">#122</a></td>
+                    <td class="summary">
+                      <a href="ticket/122.html" title="View ticket">add async map for MPI</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/126.html" title="View ticket">#126</a></td>
+                    <td class="summary">
+                      <a href="ticket/126.html" title="View ticket">add real pipe objects for ssh and ssh tunnel</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/128.html" title="View ticket">#128</a></td>
+                    <td class="summary">
+                      <a href="ticket/128.html" title="View ticket">add MPI pipes</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/130.html" title="View ticket">#130</a></td>
+                    <td class="summary">
+                      <a href="ticket/130.html" title="View ticket">serialize between python versions</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/133.html" title="View ticket">#133</a></td>
+                    <td class="summary">
+                      <a href="ticket/133.html" title="View ticket">decorator to sendmail when scheduled job is complete</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/134.html" title="View ticket">#134</a></td>
+                    <td class="summary">
+                      <a href="ticket/134.html" title="View ticket">ssh and ssh tunneled maps</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/135.html" title="View ticket">#135</a></td>
+                    <td class="summary">
+                      <a href="ticket/135.html" title="View ticket">gpu pipes and maps</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/136.html" title="View ticket">#136</a></td>
+                    <td class="summary">
+                      <a href="ticket/136.html" title="View ticket">numpy vector pipes and maps</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/138.html" title="View ticket">#138</a></td>
+                    <td class="summary">
+                      <a href="ticket/138.html" title="View ticket">serialize with json</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/140.html" title="View ticket">#140</a></td>
+                    <td class="summary">
+                      <a href="ticket/140.html" title="View ticket">zmq pipes and maps</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/143.html" title="View ticket">#143</a></td>
+                    <td class="summary">
+                      <a href="ticket/143.html" title="View ticket">finish and clean up docs in pyina</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-1.html">pathos-0.2a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/150.html" title="View ticket">#150</a></td>
+                    <td class="summary">
+                      <a href="ticket/150.html" title="View ticket">use 'archive' dict in pyina's maps</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/152.html" title="View ticket">#152</a></td>
+                    <td class="summary">
+                      <a href="ticket/152.html" title="View ticket">move from tempfiles to pipes in pyina's maps</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/153.html" title="View ticket">#153</a></td>
+                    <td class="summary">
+                      <a href="ticket/153.html" title="View ticket">throw PicklingError if dill fails</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/154.html" title="View ticket">#154</a></td>
+                    <td class="summary">
+                      <a href="ticket/154.html" title="View ticket">deal with objects that "fake" a module name</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio3">
+                    <td class="id"><a href="ticket/159.html" title="View ticket">#159</a></td>
+                    <td class="summary">
+                      <a href="ticket/159.html" title="View ticket">add caching/archiving with MPI shared memory</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio3">
+                    <td class="id"><a href="ticket/160.html" title="View ticket">#160</a></td>
+                    <td class="summary">
+                      <a href="ticket/160.html" title="View ticket">add 'hydra-style' node proxies</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      major
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/1.html" title="View ticket">#1</a></td>
+                    <td class="summary">
+                      <a href="ticket/1.html" title="View ticket">add tests for speed</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/4.html" title="View ticket">#4</a></td>
+                    <td class="summary">
+                      <a href="ticket/4.html" title="View ticket">extend dill to more easily handle big arrays</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/19.html" title="View ticket">#19</a></td>
+                    <td class="summary">
+                      <a href="ticket/19.html" title="View ticket">provide network detection and load-balancing</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/30.html" title="View ticket">#30</a></td>
+                    <td class="summary">
+                      <a href="ticket/30.html" title="View ticket">lone pickling of a function declared inside a new-style class fails</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/35.html" title="View ticket">#35</a></td>
+                    <td class="summary">
+                      <a href="ticket/35.html" title="View ticket">remove pyre dependency for "Launcher.py"</a>
+                    </td>
+                    <td class="status">
+                      assigned
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/48.html" title="View ticket">#48</a></td>
+                    <td class="summary">
+                      <a href="ticket/48.html" title="View ticket">look into paramiko for ssh bindings</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/52.html" title="View ticket">#52</a></td>
+                    <td class="summary">
+                      <a href="ticket/52.html" title="View ticket">explore more scalable parallel mapping algorithm</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/60.html" title="View ticket">#60</a></td>
+                    <td class="summary">
+                      <a href="ticket/60.html" title="View ticket">extend setup.py to RPyC</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/62.html" title="View ticket">#62</a></td>
+                    <td class="summary">
+                      <a href="ticket/62.html" title="View ticket">add support for pyro</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/63.html" title="View ticket">#63</a></td>
+                    <td class="summary">
+                      <a href="ticket/63.html" title="View ticket">add cloud maps and pipes</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/69.html" title="View ticket">#69</a></td>
+                    <td class="summary">
+                      <a href="ticket/69.html" title="View ticket">provide access to pp's print_stats()</a>
+                    </td>
+                    <td class="status">
+                      assigned
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/70.html" title="View ticket">#70</a></td>
+                    <td class="summary">
+                      <a href="ticket/70.html" title="View ticket">provide parallel &amp; distributed logging</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/73.html" title="View ticket">#73</a></td>
+                    <td class="summary">
+                      <a href="ticket/73.html" title="View ticket">provide script to detect current_dir &amp; path</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/76.html" title="View ticket">#76</a></td>
+                    <td class="summary">
+                      <a href="ticket/76.html" title="View ticket">add map factories</a>
+                    </td>
+                    <td class="status">
+                      assigned
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/78.html" title="View ticket">#78</a></td>
+                    <td class="summary">
+                      <a href="ticket/78.html" title="View ticket">return support for pyre.mpi</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/85.html" title="View ticket">#85</a></td>
+                    <td class="summary">
+                      <a href="ticket/85.html" title="View ticket">allow use of "launcher" config file</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-3.html">pathos-0.4a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/92.html" title="View ticket">#92</a></td>
+                    <td class="summary">
+                      <a href="ticket/92.html" title="View ticket">use the tools available in config to explore the $ENV</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/106.html" title="View ticket">#106</a></td>
+                    <td class="summary">
+                      <a href="ticket/106.html" title="View ticket">allow access of dill's types in multiprocessing</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/109.html" title="View ticket">#109</a></td>
+                    <td class="summary">
+                      <a href="ticket/109.html" title="View ticket">python 3.x support for pathos</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/110.html" title="View ticket">#110</a></td>
+                    <td class="summary">
+                      <a href="ticket/110.html" title="View ticket">python 3.x support for pyina</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-4.html">pathos-0.5a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/112.html" title="View ticket">#112</a></td>
+                    <td class="summary">
+                      <a href="ticket/112.html" title="View ticket">better support for .job files in pyina</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/120.html" title="View ticket">#120</a></td>
+                    <td class="summary">
+                      <a href="ticket/120.html" title="View ticket">add serial async map</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      task
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/124.html" title="View ticket">#124</a></td>
+                    <td class="summary">
+                      <a href="ticket/124.html" title="View ticket">python bindings for schedulers</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/137.html" title="View ticket">#137</a></td>
+                    <td class="summary">
+                      <a href="ticket/137.html" title="View ticket">cython pipes and maps</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/139.html" title="View ticket">#139</a></td>
+                    <td class="summary">
+                      <a href="ticket/139.html" title="View ticket">add a timeit tool or decorator</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-dev.html">pathos-dev</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/141.html" title="View ticket">#141</a></td>
+                    <td class="summary">
+                      <a href="ticket/141.html" title="View ticket">look into async pipe for standard python</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/144.html" title="View ticket">#144</a></td>
+                    <td class="summary">
+                      <a href="ticket/144.html" title="View ticket">make settings for ncpus nodes etc like make more sense</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      defect
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-1.html">pathos-0.2a</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/145.html" title="View ticket">#145</a></td>
+                    <td class="summary">
+                      <a href="ticket/145.html" title="View ticket">make sensible map and pipe one-liners</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/151.html" title="View ticket">#151</a></td>
+                    <td class="summary">
+                      <a href="ticket/151.html" title="View ticket">cleanup (or remove) the use of settings in pyina's maps</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-1.html">pathos-0.2a</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/156.html" title="View ticket">#156</a></td>
+                    <td class="summary">
+                      <a href="ticket/156.html" title="View ticket">transfer mystic.monitors to pathos</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio4">
+                    <td class="id"><a href="ticket/158.html" title="View ticket">#158</a></td>
+                    <td class="summary">
+                      <a href="ticket/158.html" title="View ticket">support for pathos on BlueGene</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio4">
+                    <td class="id"><a href="ticket/161.html" title="View ticket">#161</a></td>
+                    <td class="summary">
+                      <a href="ticket/161.html" title="View ticket">add config file with machine-specific settings</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      minor
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="odd prio5">
+                    <td class="id"><a href="ticket/80.html" title="View ticket">#80</a></td>
+                    <td class="summary">
+                      <a href="ticket/80.html" title="View ticket">provide machine-specific launchers</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      idea
+                    </td>
+                    <td class="priority">
+                      trivial
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+              <tr class="even prio5">
+                    <td class="id"><a href="ticket/125.html" title="View ticket">#125</a></td>
+                    <td class="summary">
+                      <a href="ticket/125.html" title="View ticket">replace use of `which python`</a>
+                    </td>
+                    <td class="status">
+                      new
+                    </td>
+                    <td class="owner">
+                      mmckerns
+                    </td>
+                    <td class="type">
+                      enhancement
+                    </td>
+                    <td class="priority">
+                      trivial
+                    </td>
+                    <td class="milestone">
+                      <a title="View milestone" href="milestone/pathos-2.html">pathos-0.3a</a>
+                    </td>
+              </tr>
+      </tbody>
+    </table>
+  
+</div>
+      <div class="buttons">
+      </div>
+      <div id="help"><strong>Note:</strong> See <a href="wiki/TracQuery.html">TracQuery</a>
+        for help on using queries.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/pathos/query?status=%21closed&amp;format=rss&amp;order=priority" class="rss">RSS Feed</a>
+        </li><li>
+          <a rel="nofollow" href="http://mmckerns.github.io/project/pathos/query?status=%21closed&amp;format=csv&amp;order=priority" class="csv">Comma-delimited Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/pathos/query?status=%21closed&amp;format=tab&amp;order=priority" class="tab">Tab-delimited Text</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/pathos/query by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 20 May 2016 18:05:16 GMT -->
+</html>

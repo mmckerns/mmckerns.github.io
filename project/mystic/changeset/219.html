@@ -1,0 +1,1192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/219 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:52:10 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 219 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="218.html" title="Changeset 218" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/219?format=diff&amp;new=219" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/219?format=zip&amp;new=219" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="220.html" title="Changeset 220" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="218.html" title="Changeset 218">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="220.html" title="Changeset 220">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 219</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             04/29/10 14:23:44
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2010-04-29T14%3A23%3A44-07%3A00&amp;precision=second" title="2010-04-29T14:23:44-07:00 in Timeline">6 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+bugfix for <a class="closed ticket" href="../ticket/102.html" title="defect: initial population is not used in DESolver (closed: fixed)">#102</a>, DE uses initial population;<br />
+SOW now captures initial pop,E for each solver;<br />
+consistent maxiter termination per solver &amp; w/ scipy<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=219">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>7 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock.py?rev=219">
+              examples/test_rosenbrock.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">6 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock2.py?rev=219">
+              examples/test_rosenbrock2.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock3.py?rev=219">
+              examples/test_rosenbrock3.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=219">
+              mystic/abstract_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=219">
+              mystic/differential_evolution.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">8 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=219">
+              mystic/scipy_optimize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=219">
+              mystic/tools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">2 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="219/mystic/examples/test_rosenbrock.html" title="Show the changeset 219 restricted to mystic/examples/test_rosenbrock.py">mystic/examples/test_rosenbrock.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 118">
+                    <a title="Show revision 118 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock.py?rev=118#L16">
+                      r118</a>
+                  </th>
+                  <th title="Revision 219">
+                    <a title="Show revision 219 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock.py?rev=219#L16">
+                      r219</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>16</th><th>16</th><td class="l"><span>from mystic.termination import ChangeOverGeneration, VTR</span> </td>
+                  </tr><tr>
+                          <th>17</th><th>17</th><td class="l"><span>from mystic.models import rosen</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>18</th><th> </th><td class="l"><span>from mystic import Sow<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>18</th><td class="r"><span>from mystic import Sow<ins>, VerboseSow</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>19</th><th>19</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>20</th><th>20</th><td class="l"><span>import random</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock.py?rev=118#L23">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock.py?rev=219#L23">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>23</th><th>23</th><td class="l"><span>ND = 3</span> </td>
+                  </tr><tr>
+                          <th>24</th><th>24</th><td class="l"><span>NP = 30</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>25</th><td class="r"><ins>#MAX_GENERATIONS = 29</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>25</th><th>26</th><td class="l"><span>MAX_GENERATIONS = 99999</span> </td>
+                  </tr><tr>
+                          <th>26</th><th>27</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock.py?rev=118#L32">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock.py?rev=219#L33">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>32</th><th>33</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>33</th><th>34</th><td class="l"><span>&nbsp; &nbsp; solver.Solve(rosen, termination = VTR(0.0001), \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>34</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=0.5, ScalingFactor=0.6<del></del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>35</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=0.5, ScalingFactor=0.6<ins>, disp=1</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>35</th><th>36</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>36</th><th>37</th><td class="l"><span>&nbsp; &nbsp; solution = solver.Solution()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock.py?rev=118#L44">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock.py?rev=219#L45">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>44</th><th>45</th><td class="l"><span>&nbsp; &nbsp; print "without bounds..."</span> </td>
+                  </tr><tr>
+                          <th>45</th><th>46</th><td class="l"><span>&nbsp; &nbsp; from timeit import Timer</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>47</th><td class="r"><ins>&nbsp; &nbsp; print "Differential Evolution"</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>48</th><td class="r"><ins>&nbsp; &nbsp; print "======================"</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>49</th><td class="l"><span>&nbsp; &nbsp; t = Timer("main()", "from __main__ import main")</span> </td>
+                  </tr><tr>
+                          <th>47</th><th>50</th><td class="l"><span>&nbsp; &nbsp; timetaken =&nbsp; t.timeit(number=1)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock.py?rev=118#L58">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock.py?rev=219#L61">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>58</th><th>61</th><td class="l"><span>&nbsp; &nbsp; esow= Sow()</span> </td>
+                  </tr><tr>
+                          <th>59</th><th>62</th><td class="l"><span>&nbsp; &nbsp; ssow= Sow()</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>63</th><td class="r"><ins>&nbsp; &nbsp;#ssow= VerboseSow(1)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>60</th><th>64</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>61</th><th>65</th><td class="l"><span>&nbsp;#&nbsp; xinit = [random.random() for j in range(ND)]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock.py?rev=118#L75">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock.py?rev=219#L79">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>75</th><th>79</th><td class="l"><span>&nbsp; &nbsp; solver.SetEvaluationLimits(maxiter=MAX_GENERATIONS)</span> </td>
+                  </tr><tr>
+                          <th>76</th><th>80</th><td class="l"><span>&nbsp; &nbsp; solver.Solve(rosen, VTR(0.0001), EvaluationMonitor=esow, StepMonitor=ssow,\</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>77</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=0.5, ScalingFactor=0.6<del></del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>81</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=0.5, ScalingFactor=0.6<ins>, disp=1</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>78</th><th>82</th><td class="l"><span>&nbsp; &nbsp; sol = solver.Solution()</span> </td>
+                  </tr><tr>
+                          <th>79</th><th>83</th><td class="l"><span>&nbsp; &nbsp; print sol</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="219/mystic/examples/test_rosenbrock2.html" title="Show the changeset 219 restricted to mystic/examples/test_rosenbrock2.py">mystic/examples/test_rosenbrock2.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 103">
+                    <a title="Show revision 103 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock2.py?rev=103#L24">
+                      r103</a>
+                  </th>
+                  <th title="Revision 219">
+                    <a title="Show revision 219 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock2.py?rev=219#L24">
+                      r219</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>24</th><td class="l"><span>&nbsp; &nbsp; print "==================="</span> </td>
+                  </tr><tr>
+                          <th>25</th><th>25</th><td class="l"><span>&nbsp; &nbsp; start = time.time()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.tools import Sow #VerboseSow</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>26</th><td class="r"><span>&nbsp; &nbsp; from mystic.tools import Sow, VerboseSow</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>27</th><td class="r"><span>&nbsp; &nbsp;#stepmon = VerboseSow(1)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>27</th><th>28</th><td class="l"><span>&nbsp; &nbsp; stepmon = Sow() #VerboseSow(10)</span> </td>
+                  </tr><tr>
+                          <th>28</th><th>29</th><td class="l"><span>&nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>30</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp;<del>#</del>from scipy.optimize import fmin</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>31</th><td class="r"><span>&nbsp; &nbsp;<ins>&nbsp;</ins>from scipy.optimize import fmin</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>32</th><td class="l"><span>&nbsp; &nbsp; from mystic.scipy_optimize import fmin, NelderMeadSimplexSolver</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp;<del>#print fmin(rosen,x0,retall=0,full_output=0</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>33</th><td class="r"><span>&nbsp; &nbsp;<ins>&nbsp;print fmin(rosen,x0,retall=0,full_output=0,maxiter=121</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>33</th><th>34</th><td class="l"><span>&nbsp; &nbsp; solver = NelderMeadSimplexSolver(len(x0))</span> </td>
+                  </tr><tr>
+                          <th>34</th><th>35</th><td class="l"><span>&nbsp; &nbsp; solver.SetInitialPoints(x0)</span> </td>
+                  </tr><tr>
+                          <th>35</th><th>36</th><td class="l"><span>&nbsp; &nbsp; solver.SetStrictRanges(min,max)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>37</th><td class="r"><ins>&nbsp; &nbsp; solver.SetEvaluationLimits(maxiter=146)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>36</th><th>38</th><td class="l"><span>&nbsp; &nbsp; solver.enable_signal_handler()</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>39</th><td class="l"><span>&nbsp; &nbsp; solver.Solve(rosen,termination=CRT(xtol=4e-5),StepMonitor=stepmon,disp=1)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="219/mystic/examples/test_rosenbrock3.html" title="Show the changeset 219 restricted to mystic/examples/test_rosenbrock3.py">mystic/examples/test_rosenbrock3.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 116">
+                    <a title="Show revision 116 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock3.py?rev=116#L24">
+                      r116</a>
+                  </th>
+                  <th title="Revision 219">
+                    <a title="Show revision 219 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/examples/test_rosenbrock3.py?rev=219#L24">
+                      r219</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>24</th><td class="l"><span>&nbsp; &nbsp; print "==========================="</span> </td>
+                  </tr><tr>
+                          <th>25</th><th>25</th><td class="l"><span>&nbsp; &nbsp; start = time.time()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>26</th><th> </th><td class="l"><span>&nbsp; &nbsp; from mystic.tools import Sow #VerboseSow</span> </td>
+                      </tr><tr>
+                        <th>27</th><th> </th><td class="l"><span>&nbsp; &nbsp; stepmon = Sow() #VerboseSow(1)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>26</th><td class="r"><span>&nbsp; &nbsp; from mystic.tools import Sow, VerboseSow</span> </td>
+                      </tr><tr>
+                        <th> </th><th>27</th><td class="r"><span>&nbsp; &nbsp;#stepmon = VerboseSow(1)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>28</th><td class="r"><span>&nbsp; &nbsp; stepmon = Sow() #VerboseSow(10)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>28</th><th>29</th><td class="l"><span>&nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</span> </td>
+                  </tr><tr>
+                          <th>29</th><th>30</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>30</th><th> </th><td class="l"><span>&nbsp; &nbsp;<del>#</del>from scipy.optimize import fmin_powell</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>31</th><td class="r"><span>&nbsp; &nbsp;<ins>&nbsp;</ins>from scipy.optimize import fmin_powell</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>32</th><td class="l"><span>&nbsp; &nbsp; from mystic.scipy_optimize import fmin_powell, PowellDirectionalSolver</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>32</th><th> </th><td class="l"><span>&nbsp; &nbsp;<del>#print fmin_powell(rosen,x0,retall=0,full_output=0</del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>33</th><td class="r"><span>&nbsp; &nbsp;<ins>&nbsp;print fmin_powell(rosen,x0,retall=0,full_output=0,maxiter=14</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>33</th><th>34</th><td class="l"><span>&nbsp; &nbsp; solver = PowellDirectionalSolver(len(x0))</span> </td>
+                  </tr><tr>
+                          <th>34</th><th>35</th><td class="l"><span>&nbsp; &nbsp; solver.SetInitialPoints(x0)</span> </td>
+                  </tr><tr>
+                          <th>35</th><th>36</th><td class="l"><span>&nbsp; &nbsp; solver.SetStrictRanges(min,max)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>37</th><td class="r"><ins>&nbsp; &nbsp; solver.SetEvaluationLimits(maxiter=13)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>36</th><th>38</th><td class="l"><span>&nbsp; &nbsp; solver.enable_signal_handler()</span> </td>
+                  </tr><tr>
+                          <th>37</th><th>39</th><td class="l"><span>&nbsp; &nbsp; solver.Solve(rosen,termination=NCOG(tolerance=1e-4),StepMonitor=stepmon,disp=1)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="219/mystic/mystic/abstract_solver.html" title="Show the changeset 219 restricted to mystic/mystic/abstract_solver.py">mystic/mystic/abstract_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 140">
+                    <a title="Show revision 140 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=140#L116">
+                      r140</a>
+                  </th>
+                  <th title="Revision 219">
+                    <a title="Show revision 219 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=219#L116">
+                      r219</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>116</th><th>116</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>117</th><th>117</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._init_popEnergy&nbsp; = 1.0E20 #XXX: or numpy.inf?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>118</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy&nbsp; &nbsp; &nbsp; &nbsp; = [<del>0.0</del>] * NP</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>118</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy&nbsp; &nbsp; &nbsp; &nbsp; = [<ins>self._init_popEnergy</ins>] * NP</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>119</th><th>119</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.population&nbsp; &nbsp; &nbsp; &nbsp;= [[0.0 for i in range(dim)] for j in range(NP)]</span> </td>
+                  </tr><tr>
+                          <th>120</th><th>120</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history&nbsp; &nbsp;= []</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=140#L211">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=219#L211">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>211</th><th>211</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for j in range(self.nDim):</span> </td>
+                  </tr><tr>
+                          <th>212</th><th>212</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[i][j] = random.uniform(min[j],max[j])</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>213</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy[i] = self._init_popEnergy</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>214</th><th>213</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>215</th><th>214</th><td class="l"><span>&nbsp; &nbsp; def SetMultinormalInitialPoints(self, mean, var = None):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=140#L236">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=219#L235">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>236</th><th>235</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for i in range(self.nPop):</span> </td>
+                  </tr><tr>
+                          <th>237</th><th>236</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[i] = multivariate_normal(mean, var).tolist()</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>238</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy[i] = self._init_popEnergy</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>239</th><th>237</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>240</th><th>238</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="219/mystic/mystic/differential_evolution.html" title="Show the changeset 219 restricted to mystic/mystic/differential_evolution.py">mystic/mystic/differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 218">
+                    <a title="Show revision 218 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=218#L249">
+                      r218</a>
+                  </th>
+                  <th title="Revision 219">
+                    <a title="Show revision 219 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=219#L249">
+                      r219</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>249</th><th>249</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.scale = ScalingFactor</span> </td>
+                  </tr><tr>
+                          <th>250</th><th>250</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>251</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = self._init_popEnergy</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>251</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; #set initial solution and energy by running a single iteration</span> </td>
+                      </tr><tr>
+                        <th> </th><th>252</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = self.population[0][:]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>253</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = self.popEnergy[0]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>254</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; for candidate in range(self.nPop):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>255</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # generate trialSolution (within valid range)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>256</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution[:] = self.population[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>257</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trialEnergy = costfunction(self.trialSolution)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>258</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>259</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if trialEnergy &lt; self.popEnergy[candidate]:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>260</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # New low for this candidate</span> </td>
+                      </tr><tr>
+                        <th> </th><th>261</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy[candidate] = trialEnergy</span> </td>
+                      </tr><tr>
+                        <th> </th><th>262</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[candidate][:] = self.trialSolution[:]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>263</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.UpdateGenealogyRecords(candidate, self.trialSolution[:])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>264</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>265</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Check if all-time low</span> </td>
+                      </tr><tr>
+                        <th> </th><th>266</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if trialEnergy &lt; self.bestEnergy:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>267</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = trialEnergy</span> </td>
+                      </tr><tr>
+                        <th> </th><th>268</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution[:] = self.trialSolution[:]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>269</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>270</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(self.bestEnergy)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>271</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(self.bestSolution[:], self.bestEnergy)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>272</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.generations = 0&nbsp; #XXX: above currently *not* counted as an iteration</span> </td>
+                      </tr><tr>
+                        <th> </th><th>273</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if callback is not None:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>274</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; callback(self.bestSolution)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>252</th><th>275</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> </td>
+                  </tr><tr>
+                          <th>253</th><th>276</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxiter is None:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=218#L256">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=219#L279">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>256</th><th>279</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = self.nDim * self.nPop * 1000 #XXX: set better defaults?</span> </td>
+                  </tr><tr>
+                          <th>257</th><th>280</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>258</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; generation = 0</span> </td>
+                      </tr><tr>
+                        <th>259</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for generation in range(self._maxiter):</span> </td>
+                      </tr><tr>
+                        <th>260</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(self.bestSolution[:], self.bestEnergy)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>281</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; #run for generations &lt;= maxiter</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>282</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; for generation in range(self._maxiter - self.generations):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>261</th><th>283</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if fcalls[0] &gt;= self._maxfun: break</span> </td>
+                  </tr><tr>
+                          <th>262</th><th>284</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for candidate in range(self.nPop):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=218#L277">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=219#L299">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>277</th><th>299</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>278</th><th>300</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(self.bestEnergy)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>279</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>301</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(self.bestSolution[:], self.bestEnergy)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>302</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.generations += 1</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>280</th><th>303</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if callback is not None:</span> </td>
+                  </tr><tr>
+                          <th>281</th><th>304</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; callback(self.bestSolution)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=218#L283">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=219#L306">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>283</th><th>306</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if self._EARLYEXIT or termination(self):</span> </td>
+                  </tr><tr>
+                          <th>284</th><th>307</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>285</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr class="last">
+                          <th>286</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self.generations = generation + 1</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>287</th><th>308</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>288</th><th>309</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=218#L394">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=219#L415">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>394</th><th>415</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.scale = ScalingFactor</span> </td>
+                  </tr><tr>
+                          <th>395</th><th>416</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>396</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = self._init_popEnergy</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>417</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; #set initial solution and energy by running a single iteration</span> </td>
+                      </tr><tr>
+                        <th> </th><th>418</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = self.population[0][:]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>419</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = self.popEnergy[0]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>420</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialPop = [[0.0 for i in range(self.nDim)] for j in range(self.nPop)]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>421</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; for candidate in range(self.nPop):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>422</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # generate trialSolution (within valid range)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>423</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution[:] = self.population[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>424</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #XXX:[HACK] apply constraints</span> </td>
+                      </tr><tr>
+                        <th> </th><th>425</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.trialSolution[:] = constraints(self.trialSolution[:])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>426</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #XXX:[HACK] -end-</span> </td>
+                      </tr><tr>
+                        <th> </th><th>427</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; trialPop[candidate][:] = self.trialSolution[:]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>428</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>429</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialEnergy = map(costfunction, trialPop)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>430</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>431</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; for candidate in range(self.nPop):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>432</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if trialEnergy[candidate] &lt; self.popEnergy[candidate]:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>433</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # New low for this candidate</span> </td>
+                      </tr><tr>
+                        <th> </th><th>434</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy[candidate] = trialEnergy[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>435</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[candidate][:] = trialPop[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>436</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.UpdateGenealogyRecords(candidate, trialPop[candidate][:])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>437</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#XXX: was self.UpdateGenealogyRecords(candidate, self.trialSolution[:])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>438</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>439</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # Check if all-time low</span> </td>
+                      </tr><tr>
+                        <th> </th><th>440</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if trialEnergy[candidate] &lt; self.bestEnergy:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>441</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = trialEnergy[candidate]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>442</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution[:] = trialPop[candidate][:]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>443</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                      </tr><tr>
+                        <th> </th><th>444</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(self.bestEnergy)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>445</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(self.bestSolution[:], self.bestEnergy)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>446</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.generations = 0&nbsp; #XXX: above currently *not* counted as an iteration</span> </td>
+                      </tr><tr>
+                        <th> </th><th>447</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if callback is not None:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>448</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; callback(self.bestSolution)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>397</th><th>449</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span> </td>
+                  </tr><tr>
+                          <th>398</th><th>450</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxiter is None:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=218#L400">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=219#L452">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>400</th><th>452</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._maxfun is None:</span> </td>
+                  </tr><tr>
+                          <th>401</th><th>453</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._maxfun = self.nDim * self.nPop * 1000 #XXX: set better defaults?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>402</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; trialPop = [[0.0 for i in range(self.nDim)] for j in range(self.nPop)]</span> </td>
+                      </tr><tr>
+                        <th>403</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>404</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; generation = 0</span> </td>
+                      </tr><tr>
+                        <th>405</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for generation in range(self._maxiter):</span> </td>
+                      </tr><tr>
+                        <th>406</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(self.bestSolution[:], self.bestEnergy)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>454</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>455</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; #run for generations &lt;= maxiter</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>456</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; for generation in range(self._maxiter - self.generations):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>407</th><th>457</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if fcalls[0] &gt;= self._maxfun: break</span> </td>
+                  </tr><tr>
+                          <th>408</th><th>458</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for candidate in range(self.nPop):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=218#L435">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=219#L485">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>435</th><th>485</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>436</th><th>486</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(self.bestEnergy)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>437</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>487</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(self.bestSolution[:], self.bestEnergy)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>488</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.generations += 1</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>438</th><th>489</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if callback is not None:</span> </td>
+                  </tr><tr>
+                          <th>439</th><th>490</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; callback(self.bestSolution)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=218#L441">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=219#L492">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>441</th><th>492</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if self._EARLYEXIT or termination(self):</span> </td>
+                  </tr><tr>
+                          <th>442</th><th>493</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>443</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr class="last">
+                          <th>444</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self.generations = generation + 1</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>445</th><th>494</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>446</th><th>495</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="219/mystic/mystic/scipy_optimize.html" title="Show the changeset 219 restricted to mystic/mystic/scipy_optimize.py">mystic/mystic/scipy_optimize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 132">
+                    <a title="Show revision 132 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=132#L207">
+                      r132</a>
+                  </th>
+                  <th title="Revision 219">
+                    <a title="Show revision 219 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=219#L207">
+                      r219</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>207</th><th>207</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; allvecs = [sim[0]]</span> </td>
+                  </tr><tr>
+                          <th>208</th><th>208</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; fsim[0] = func(x0)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>209</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(sim[0], fsim[0]) # sim = all values; "best" is sim[0]</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>209</th><th>210</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>210</th><th>211</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #--- ensure initial simplex is within bounds ---</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=132#L227">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=219#L228">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>227</th><th>228</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy = fsim</span> </td>
+                  </tr><tr>
+                          <th>228</th><th>229</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(self.bestEnergy)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>230</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(sim[0], fsim[0]) # sim = all values; "best" is sim[0]</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>229</th><th>231</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>230</th><th>232</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iterations = 1</span> </td>
+                  </tr><tr>
+                          <th>231</th><th>233</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>232</th><th>234</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; while (fcalls[0] &lt; self._maxfun and iterations &lt; self._maxiter):</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>233</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(sim[0], fsim[0]) # sim = all values; "best" is sim[0]</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>234</th><th>235</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if self._EARLYEXIT or termination(self):</span> </td>
+                  </tr><tr>
+                          <th>235</th><th>236</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; break</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=132#L295">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=219#L296">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>295</th><th>296</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy = fsim</span> </td>
+                  </tr><tr>
+                          <th>296</th><th>297</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(self.bestEnergy)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>298</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; StepMonitor(sim[0], fsim[0]) # sim = all values; "best" is sim[0]</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>297</th><th>299</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>298</th><th>300</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.generations = iterations</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="219/mystic/mystic/tools.html" title="Show the changeset 219 restricted to mystic/mystic/tools.py">mystic/mystic/tools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 126">
+                    <a title="Show revision 126 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=126#L161">
+                      r126</a>
+                  </th>
+                  <th title="Revision 219">
+                    <a title="Show revision 219 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=219#L161">
+                      r219</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>161</th><th>161</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from numpy import ndarray</span> </td>
+                  </tr><tr>
+                          <th>162</th><th>162</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Sow.__call__(self, x, y)</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>163</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self._step += 1</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>164</th><th>163</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if isinstance(y,(list,ndarray)):</span> </td>
+                  </tr><tr>
+                          <th>165</th><th>164</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = y[0] #XXX: get the "best" fit... which should be in y[0]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=126#L171">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/tools.py?rev=219#L170">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>171</th><th>170</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if int(self._step % self._xinterval) == 0:</span> </td>
+                  </tr><tr>
+                          <th>172</th><th>171</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; print "Generation %d has best fit parameters:\n %s" % (self._step, x)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>172</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._step += 1</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>173</th><th>173</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>174</th><th>174</th><td class="l"><span>&nbsp; &nbsp; pass</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/219?format=diff&amp;new=219" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/219?format=zip&amp;new=219" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/219 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:52:16 GMT -->
+</html>

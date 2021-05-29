@@ -1,0 +1,835 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/474 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:49:26 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 474 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="473.html" title="Changeset 473" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/474?format=diff&amp;new=474" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/474?format=zip&amp;new=474" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="475.html" title="Changeset 475" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="473.html" title="Changeset 473">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="475.html" title="Changeset 475">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 474</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             07/08/11 10:54:46
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-08T10%3A54%3A46-07%3A00&amp;precision=second" title="2011-07-08T10:54:46-07:00 in Timeline">5 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+populate <a class="missing wiki">SetConstraints?</a> method to UQ branch<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math?rev=474">branches/UQ/math</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>10 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=474">
+              examples2/TEST4d_OUQ_surrogate_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=474">
+              examples2/TEST_OUQ_surrogate_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/thk_safe/INV_seesaw2d_inf_thk_diam.py?rev=474">
+              examples3/thk_safe/INV_seesaw2d_inf_thk_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/thk_safe/INV_seesaw2d_sup_thk_diam.py?rev=474">
+              examples3/thk_safe/INV_seesaw2d_sup_thk_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/thk_unsafe/INV_seesaw2d_inf_thk_diam.py?rev=474">
+              examples3/thk_unsafe/INV_seesaw2d_inf_thk_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/thk_unsafe/INV_seesaw2d_sup_thk_diam.py?rev=474">
+              examples3/thk_unsafe/INV_seesaw2d_sup_thk_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/vel_safe/INV_seesaw2d_inf_vel_diam.py?rev=474">
+              examples3/vel_safe/INV_seesaw2d_inf_vel_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file6">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/vel_safe/INV_seesaw2d_sup_vel_diam.py?rev=474">
+              examples3/vel_safe/INV_seesaw2d_sup_vel_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file7">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/vel_unsafe/INV_seesaw2d_inf_vel_diam.py?rev=474">
+              examples3/vel_unsafe/INV_seesaw2d_inf_vel_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file8">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/vel_unsafe/INV_seesaw2d_sup_vel_diam.py?rev=474">
+              examples3/vel_unsafe/INV_seesaw2d_sup_vel_diam.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file9">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="474/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.html" title="Show the changeset 474 restricted to branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py">branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 472">
+                    <a title="Show revision 472 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=472#L46">
+                      r472</a>
+                  </th>
+                  <th title="Revision 474">
+                    <a title="Show revision 474 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST4d_OUQ_surrogate_diam.py?rev=474#L46">
+                      r474</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>46</th><td class="l"><span>&nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>47</th><th>47</th><td class="l"><span>&nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>48</th><td class="r"><ins>&nbsp; solver.SetConstraints(_constraints)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>49</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>49</th><th>50</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr><tr>
+                          <th>50</th><th>51</th><td class="l"><span>&nbsp; solver.Solve(cost,termination=COG(tol,ngen),strategy=Best1Exp, \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>51</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change, \</span> </td>
+                      </tr><tr>
+                        <th>52</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;constraints=_constraints)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>52</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>53</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>54</th><th>54</th><td class="l"><span>&nbsp; solved = solver.bestSolution</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="474/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.html" title="Show the changeset 474 restricted to branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py">branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 472">
+                    <a title="Show revision 472 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=472#L46">
+                      r472</a>
+                  </th>
+                  <th title="Revision 474">
+                    <a title="Show revision 474 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples2/TEST_OUQ_surrogate_diam.py?rev=474#L46">
+                      r474</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>46</th><td class="l"><span>&nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>47</th><th>47</th><td class="l"><span>&nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>48</th><td class="r"><ins>&nbsp; solver.SetConstraints(_constraints)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>49</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>49</th><th>50</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr><tr>
+                          <th>50</th><th>51</th><td class="l"><span>&nbsp; solver.Solve(cost,termination=COG(tol,ngen),strategy=Best1Exp, \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>51</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change, \</span> </td>
+                      </tr><tr>
+                        <th>52</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;constraints=_constraints)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>52</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>53</th><th>53</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>54</th><th>54</th><td class="l"><span>&nbsp; solved = solver.bestSolution</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="474/branches/UQ/math/examples3/thk_safe/INV_seesaw2d_inf_thk_diam.html" title="Show the changeset 474 restricted to branches/UQ/math/examples3/thk_safe/INV_seesaw2d_inf_thk_diam.py">branches/UQ/math/examples3/thk_safe/INV_seesaw2d_inf_thk_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/thk_safe/INV_seesaw2d_inf_thk_diam.py?rev=471#L48">
+                      r471</a>
+                  </th>
+                  <th title="Revision 474">
+                    <a title="Show revision 474 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/thk_safe/INV_seesaw2d_inf_thk_diam.py?rev=474#L48">
+                      r474</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>48</th><td class="l"><span>&nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>49</th><th>49</th><td class="l"><span>&nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>50</th><td class="r"><ins>&nbsp; solver.SetConstraints(_constraints)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>51</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>51</th><th>52</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>53</th><td class="l"><span>&nbsp;#solver.Solve(cost,termination=CRT(tol,tol),strategy=Best1Exp, \</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>54</th><td class="l"><span>&nbsp; solver.Solve(cost,termination=COG(tol,ngen),strategy=Best1Exp, \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change, \</span> </td>
+                      </tr><tr>
+                        <th>55</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;constraints=_constraints)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>55</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>56</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>57</th><th>57</th><td class="l"><span>&nbsp; solved = solver.bestSolution</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="474/branches/UQ/math/examples3/thk_safe/INV_seesaw2d_sup_thk_diam.html" title="Show the changeset 474 restricted to branches/UQ/math/examples3/thk_safe/INV_seesaw2d_sup_thk_diam.py">branches/UQ/math/examples3/thk_safe/INV_seesaw2d_sup_thk_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/thk_safe/INV_seesaw2d_sup_thk_diam.py?rev=471#L48">
+                      r471</a>
+                  </th>
+                  <th title="Revision 474">
+                    <a title="Show revision 474 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/thk_safe/INV_seesaw2d_sup_thk_diam.py?rev=474#L48">
+                      r474</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>48</th><td class="l"><span>&nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>49</th><th>49</th><td class="l"><span>&nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>50</th><td class="r"><ins>&nbsp; solver.SetConstraints(_constraints)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>51</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>51</th><th>52</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>53</th><td class="l"><span>&nbsp;#solver.Solve(cost,termination=CRT(tol,tol),strategy=Best1Exp, \</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>54</th><td class="l"><span>&nbsp; solver.Solve(cost,termination=COG(tol,ngen),strategy=Best1Exp, \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change, \</span> </td>
+                      </tr><tr>
+                        <th>55</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;constraints=_constraints)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>55</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>56</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>57</th><th>57</th><td class="l"><span>&nbsp; solved = solver.bestSolution</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="474/branches/UQ/math/examples3/thk_unsafe/INV_seesaw2d_inf_thk_diam.html" title="Show the changeset 474 restricted to branches/UQ/math/examples3/thk_unsafe/INV_seesaw2d_inf_thk_diam.py">branches/UQ/math/examples3/thk_unsafe/INV_seesaw2d_inf_thk_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/thk_unsafe/INV_seesaw2d_inf_thk_diam.py?rev=471#L48">
+                      r471</a>
+                  </th>
+                  <th title="Revision 474">
+                    <a title="Show revision 474 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/thk_unsafe/INV_seesaw2d_inf_thk_diam.py?rev=474#L48">
+                      r474</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>48</th><td class="l"><span>&nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>49</th><th>49</th><td class="l"><span>&nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>50</th><td class="r"><ins>&nbsp; solver.SetConstraints(_constraints)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>51</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>51</th><th>52</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>53</th><td class="l"><span>&nbsp;#solver.Solve(cost,termination=CRT(tol,tol),strategy=Best1Exp, \</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>54</th><td class="l"><span>&nbsp; solver.Solve(cost,termination=COG(tol,ngen),strategy=Best1Exp, \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change, \</span> </td>
+                      </tr><tr>
+                        <th>55</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;constraints=_constraints)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>55</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>56</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>57</th><th>57</th><td class="l"><span>&nbsp; solved = solver.bestSolution</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="474/branches/UQ/math/examples3/thk_unsafe/INV_seesaw2d_sup_thk_diam.html" title="Show the changeset 474 restricted to branches/UQ/math/examples3/thk_unsafe/INV_seesaw2d_sup_thk_diam.py">branches/UQ/math/examples3/thk_unsafe/INV_seesaw2d_sup_thk_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/thk_unsafe/INV_seesaw2d_sup_thk_diam.py?rev=471#L48">
+                      r471</a>
+                  </th>
+                  <th title="Revision 474">
+                    <a title="Show revision 474 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/thk_unsafe/INV_seesaw2d_sup_thk_diam.py?rev=474#L48">
+                      r474</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>48</th><td class="l"><span>&nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>49</th><th>49</th><td class="l"><span>&nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>50</th><td class="r"><ins>&nbsp; solver.SetConstraints(_constraints)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>51</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>51</th><th>52</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>53</th><td class="l"><span>&nbsp;#solver.Solve(cost,termination=CRT(tol,tol),strategy=Best1Exp, \</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>54</th><td class="l"><span>&nbsp; solver.Solve(cost,termination=COG(tol,ngen),strategy=Best1Exp, \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change, \</span> </td>
+                      </tr><tr>
+                        <th>55</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;constraints=_constraints)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>55</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>56</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>57</th><th>57</th><td class="l"><span>&nbsp; solved = solver.bestSolution</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file6">
+          <a href="474/branches/UQ/math/examples3/vel_safe/INV_seesaw2d_inf_vel_diam.html" title="Show the changeset 474 restricted to branches/UQ/math/examples3/vel_safe/INV_seesaw2d_inf_vel_diam.py">branches/UQ/math/examples3/vel_safe/INV_seesaw2d_inf_vel_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/vel_safe/INV_seesaw2d_inf_vel_diam.py?rev=471#L48">
+                      r471</a>
+                  </th>
+                  <th title="Revision 474">
+                    <a title="Show revision 474 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/vel_safe/INV_seesaw2d_inf_vel_diam.py?rev=474#L48">
+                      r474</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>48</th><td class="l"><span>&nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>49</th><th>49</th><td class="l"><span>&nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>50</th><td class="r"><ins>&nbsp; solver.SetConstraints(_constraints)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>51</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>51</th><th>52</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>53</th><td class="l"><span>&nbsp;#solver.Solve(cost,termination=CRT(tol,tol),strategy=Best1Exp, \</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>54</th><td class="l"><span>&nbsp; solver.Solve(cost,termination=COG(tol,ngen),strategy=Best1Exp, \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change, \</span> </td>
+                      </tr><tr>
+                        <th>55</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;constraints=_constraints)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>55</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>56</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>57</th><th>57</th><td class="l"><span>&nbsp; solved = solver.bestSolution</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file7">
+          <a href="474/branches/UQ/math/examples3/vel_safe/INV_seesaw2d_sup_vel_diam.html" title="Show the changeset 474 restricted to branches/UQ/math/examples3/vel_safe/INV_seesaw2d_sup_vel_diam.py">branches/UQ/math/examples3/vel_safe/INV_seesaw2d_sup_vel_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/vel_safe/INV_seesaw2d_sup_vel_diam.py?rev=471#L48">
+                      r471</a>
+                  </th>
+                  <th title="Revision 474">
+                    <a title="Show revision 474 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/vel_safe/INV_seesaw2d_sup_vel_diam.py?rev=474#L48">
+                      r474</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>48</th><td class="l"><span>&nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>49</th><th>49</th><td class="l"><span>&nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>50</th><td class="r"><ins>&nbsp; solver.SetConstraints(_constraints)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>51</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>51</th><th>52</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>53</th><td class="l"><span>&nbsp;#solver.Solve(cost,termination=CRT(tol,tol),strategy=Best1Exp, \</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>54</th><td class="l"><span>&nbsp; solver.Solve(cost,termination=COG(tol,ngen),strategy=Best1Exp, \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change, \</span> </td>
+                      </tr><tr>
+                        <th>55</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;constraints=_constraints)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>55</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>56</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>57</th><th>57</th><td class="l"><span>&nbsp; solved = solver.bestSolution</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file8">
+          <a href="474/branches/UQ/math/examples3/vel_unsafe/INV_seesaw2d_inf_vel_diam.html" title="Show the changeset 474 restricted to branches/UQ/math/examples3/vel_unsafe/INV_seesaw2d_inf_vel_diam.py">branches/UQ/math/examples3/vel_unsafe/INV_seesaw2d_inf_vel_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/vel_unsafe/INV_seesaw2d_inf_vel_diam.py?rev=471#L48">
+                      r471</a>
+                  </th>
+                  <th title="Revision 474">
+                    <a title="Show revision 474 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/vel_unsafe/INV_seesaw2d_inf_vel_diam.py?rev=474#L48">
+                      r474</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>48</th><td class="l"><span>&nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>49</th><th>49</th><td class="l"><span>&nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>50</th><td class="r"><ins>&nbsp; solver.SetConstraints(_constraints)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>51</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>51</th><th>52</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>53</th><td class="l"><span>&nbsp;#solver.Solve(cost,termination=CRT(tol,tol),strategy=Best1Exp, \</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>54</th><td class="l"><span>&nbsp; solver.Solve(cost,termination=COG(tol,ngen),strategy=Best1Exp, \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change, \</span> </td>
+                      </tr><tr>
+                        <th>55</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;constraints=_constraints)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>55</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>56</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>57</th><th>57</th><td class="l"><span>&nbsp; solved = solver.bestSolution</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file9">
+          <a href="474/branches/UQ/math/examples3/vel_unsafe/INV_seesaw2d_sup_vel_diam.html" title="Show the changeset 474 restricted to branches/UQ/math/examples3/vel_unsafe/INV_seesaw2d_sup_vel_diam.py">branches/UQ/math/examples3/vel_unsafe/INV_seesaw2d_sup_vel_diam.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 471">
+                    <a title="Show revision 471 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/vel_unsafe/INV_seesaw2d_sup_vel_diam.py?rev=471#L48">
+                      r471</a>
+                  </th>
+                  <th title="Revision 474">
+                    <a title="Show revision 474 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/branches/UQ/math/examples3/vel_unsafe/INV_seesaw2d_sup_vel_diam.py?rev=474#L48">
+                      r474</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>48</th><th>48</th><td class="l"><span>&nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>49</th><th>49</th><td class="l"><span>&nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>50</th><td class="r"><ins>&nbsp; solver.SetConstraints(_constraints)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>50</th><th>51</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>51</th><th>52</th><td class="l"><span>&nbsp; tol = convergence_tol</span> </td>
+                  </tr><tr>
+                          <th>52</th><th>53</th><td class="l"><span>&nbsp;#solver.Solve(cost,termination=CRT(tol,tol),strategy=Best1Exp, \</span> </td>
+                  </tr><tr>
+                          <th>53</th><th>54</th><td class="l"><span>&nbsp; solver.Solve(cost,termination=COG(tol,ngen),strategy=Best1Exp, \</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>54</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change, \</span> </td>
+                      </tr><tr>
+                        <th>55</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;constraints=_constraints)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>55</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;CrossProbability=crossover,ScalingFactor=percent_change)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>56</th><th>56</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>57</th><th>57</th><td class="l"><span>&nbsp; solved = solver.bestSolution</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/474?format=diff&amp;new=474" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/474?format=zip&amp;new=474" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/474 by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:49:37 GMT -->
+</html>

@@ -1,0 +1,862 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/87 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:59:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 87 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="86.html" title="Changeset 86" />
+        <link rel="last" href="862.html" title="Changeset 862" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/87?format=diff&amp;new=87" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/87?format=zip&amp;new=87" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="88.html" title="Changeset 88" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="86.html" title="Changeset 86">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="88.html" title="Changeset 88">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 87</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             02/05/09 20:28:35
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2009-02-05T20%3A28%3A35-08%3A00&amp;precision=second" title="2009-02-05T20:28:35-08:00 in Timeline">7 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+added tools.wrap_bounds; added range bounds to fmin (modified from park.simplex)<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/python?rev=87">python</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>3 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/nmtools.py?rev=87">
+              nmtools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=87">
+              scipy_optimize_fmin.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">10 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/python/tools.py?rev=87">
+              tools.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">1 diff</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="87/python/nmtools.html" title="Show the changeset 87 restricted to python/nmtools.py">python/nmtools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 82">
+                    <a title="Show revision 82 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/nmtools.py?rev=82#L16">
+                      r82</a>
+                  </th>
+                  <th title="Revision 87">
+                    <a title="Show revision 87 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/nmtools.py?rev=87#L16">
+                      r87</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>16</th><th>16</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;sim = inst.population</span> </td>
+                  </tr><tr>
+                          <th>17</th><th>17</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;fsim = inst.popEnergy</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>18</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return (max(numpy.ravel(abs(sim[1:]-sim[0]))) &lt;= xtol \</span> </td>
+                      </tr><tr>
+                        <th>19</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and max(abs(fsim[0]-fsim[1:])) &lt;= ftol)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>18</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#FIXME: abs(inf - inf) will raise a warning...</span> </td>
+                      </tr><tr>
+                        <th> </th><th>19</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;errdict = numpy.seterr(invalid='ignore') #FIXME: turn off warning </span> </td>
+                      </tr><tr>
+                        <th> </th><th>20</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;answer = (max(numpy.ravel(abs(sim[1:]-sim[0]))) &lt;= xtol \</span> </td>
+                      </tr><tr>
+                        <th> </th><th>21</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; and max(abs(fsim[0]-fsim[1:])) &lt;= ftol)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>22</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;numpy.seterr(invalid=errdict['invalid']) #FIXME: turn on warnings</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>23</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;return answer</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>24</th><td class="l"><span>&nbsp; &nbsp; return _</span> </td>
+                  </tr><tr>
+                          <th>21</th><th>25</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="87/python/scipy_optimize_fmin.html" title="Show the changeset 87 restricted to python/scipy_optimize_fmin.py">python/scipy_optimize_fmin.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 82">
+                    <a title="Show revision 82 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=82#L5">
+                      r82</a>
+                  </th>
+                  <th title="Revision 87">
+                    <a title="Show revision 87 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=87#L5">
+                      r87</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>5</th><th>5</th><td class="l"><span># adapted from scipy.optimize, scipy version 0.4.8</span> </td>
+                  </tr><tr>
+                          <th>6</th><th>6</th><td class="l"><span># by Patrick Hung, Caltech.</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>7</th><th> </th><td class="l"><span># adapted to class by mmckerns@caltech.edu</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>7</th><td class="r"><span># adapted to class (&amp; added bounds)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>8</th><td class="r"><span># by mmckerns@caltech.edu</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>8</th><th>9</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>9</th><th>10</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=82#L18">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=87#L19">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>18</th><th>19</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>19</th><th>20</th><td class="l"><span>from mystic.tools import Null, wrap_function</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>21</th><td class="r"><ins>from mystic.tools import wrap_bounds</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>22</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>21</th><th>23</th><td class="l"><span>import numpy</span> </td>
+                  </tr><tr>
+                          <th>22</th><th>24</th><td class="l"><span>from numpy import atleast_1d, eye, zeros, shape, \</span> </td>
+                  </tr><tr>
+                          <th>23</th><th>25</th><td class="l"><span>&nbsp; &nbsp; &nbsp;asarray, absolute, sqrt, Inf, asfarray</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>26</th><td class="r"><ins>from numpy import clip</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>24</th><th>27</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>25</th><th>28</th><td class="l"><span>abs = absolute</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=82#L59">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=87#L62">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>59</th><th>62</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>60</th><th>63</th><td class="l"><span>&nbsp; &nbsp; def SetStrictRanges(self, min, max):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>61</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; raise NotImplementedError, "bound constraints not implemented"</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>64</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._useStrictRange = True</span> </td>
+                      </tr><tr>
+                        <th> </th><th>65</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._strictMin = min</span> </td>
+                      </tr><tr>
+                        <th> </th><th>66</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._strictMax = max</span> </td>
+                      </tr><tr>
+                        <th> </th><th>67</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                      </tr><tr>
+                        <th> </th><th>68</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>69</th><td class="r"><span>&nbsp; &nbsp; def setSimplexWithinRangeBoundary(self, x0, radius):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>70</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """ensure that initial simplex is set within bounds"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>71</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; #code modified from park-1.2/park/simplex.py (version 1257)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>72</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._useStrictRange:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>73</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; lo = asarray(self._strictMin)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hi = asarray(self._strictMax)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>75</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # crop x0 at bounds</span> </td>
+                      </tr><tr>
+                        <th> </th><th>76</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x0[x0&lt;lo] = lo[x0&lt;lo]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>77</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x0[x0&gt;hi] = hi[x0&gt;hi]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>78</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>79</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; val = x0*(1+radius)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>80</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; val[val==0] = radius</span> </td>
+                      </tr><tr>
+                        <th> </th><th>81</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not self._useStrictRange:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>82</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return x0, val</span> </td>
+                      </tr><tr>
+                        <th> </th><th>83</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>84</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; radius = clip(radius,0,0.5)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>85</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # rescale val by bounded range...</span> </td>
+                      </tr><tr>
+                        <th> </th><th>86</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # (increases fit for tight bounds; makes worse[?] for large bounds)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>87</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; bounded = ~numpy.isinf(lo) &amp; ~numpy.isinf(hi)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>88</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; val[bounded] = x0[bounded] + (hi[bounded]-lo[bounded])*radius</span> </td>
+                      </tr><tr>
+                        <th> </th><th>89</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # crop val at bounds</span> </td>
+                      </tr><tr>
+                        <th> </th><th>90</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; val[val&lt;lo] = lo[val&lt;lo]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>91</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; val[val&gt;hi] = hi[val&gt;hi]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>92</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # handle collisions (when val[i] == x0[i])</span> </td>
+                      </tr><tr>
+                        <th> </th><th>93</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; collision = val==x0</span> </td>
+                      </tr><tr>
+                        <th> </th><th>94</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if numpy.any(collision):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>95</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rval = x0*(1-radius)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>96</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rval[rval==0] = -radius</span> </td>
+                      </tr><tr>
+                        <th> </th><th>97</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; rval[bounded] = x0[bounded] - (hi[bounded]-lo[bounded])*radius</span> </td>
+                      </tr><tr>
+                        <th> </th><th>98</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; val[collision] = rval[collision]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>99</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # make tolerance relative for bounded parameters</span> </td>
+                      </tr><tr>
+                        <th> </th><th>100</th><td class="r"><span>&nbsp; &nbsp; &nbsp;#&nbsp; tol = numpy.ones(x0.shape)*xtol</span> </td>
+                      </tr><tr>
+                        <th> </th><th>101</th><td class="r"><span>&nbsp; &nbsp; &nbsp;#&nbsp; tol[bounded] = (hi[bounded]-lo[bounded])*xtol</span> </td>
+                      </tr><tr>
+                        <th> </th><th>102</th><td class="r"><span>&nbsp; &nbsp; &nbsp;#&nbsp; xtol = tol</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>103</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return x0, val</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>62</th><th>104</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>63</th><th>105</th><td class="l"><span>&nbsp; &nbsp; def UpdateGenealogyRecords(self, id, newchild):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=82#L128">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=87#L170">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>128</th><th>170</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; disp=0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#non-zero to print convergence messages.</span> </td>
+                  </tr><tr>
+                          <th>129</th><th>171</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; retall=0</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>172</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; radius=0.05&nbsp; &nbsp; #percentage change for initial simplex values</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>130</th><th>173</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('disp'): disp = kwds['disp']</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>174</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('radius'): radius = kwds['radius']</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>131</th><th>175</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>132</th><th>176</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=82#L136">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=87#L180">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>136</th><th>180</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>137</th><th>181</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; fcalls, func = wrap_function(func, args, EvaluationMonitor)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>182</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if self._useStrictRange:</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>183</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; func = wrap_bounds(func, self._strictMin, self._strictMax)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>138</th><th>184</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>139</th><th>185</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; def handler(signum, frame):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=82#L195">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=87#L241">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>195</th><th>241</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; allvecs = [sim[0]]</span> </td>
+                  </tr><tr>
+                          <th>196</th><th>242</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; fsim[0] = func(x0)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>197</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; nonzdelt = 0.05</span> </td>
+                      </tr><tr>
+                        <th>198</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; zdelt = 0.00025</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>243</th><td class="r"><span></span> </td>
+                      </tr><tr>
+                        <th> </th><th>244</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; #--- ensure initial simplex is within bounds ---</span> </td>
+                      </tr><tr>
+                        <th> </th><th>245</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x0,val = self.setSimplexWithinRangeBoundary(x0,radius)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>246</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; #--- end bounds code ---</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>199</th><th>247</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for k in range(0,N):</span> </td>
+                  </tr><tr>
+                          <th>200</th><th>248</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y = numpy.array(x0,copy=True)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>201</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if y[k] != 0:</span> </td>
+                      </tr><tr>
+                        <th>202</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y[k] = (1+nonzdelt)*y[k]</span> </td>
+                      </tr><tr>
+                        <th>203</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th>204</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y[k] = zdelt</span> </td>
+                      </tr><tr>
+                        <th>205</th><th> </th><td class="l"><span></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>249</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; y[k] = val[k]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>206</th><th>250</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sim[k+1] = y</span> </td>
+                  </tr><tr>
+                          <th>207</th><th>251</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; f = func(y)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=82#L209">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=87#L253">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>209</th><th>253</th><td class="l"><span>&nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>210</th><th>254</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ind = numpy.argsort(fsim)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>211</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; fsim = numpy.take(fsim,ind)&nbsp; # sort so sim[0,:] has the lowest function value</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>255</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; fsim = numpy.take(fsim,ind)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>256</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # sort so sim[0,:] has the lowest function value</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>212</th><th>257</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; sim = numpy.take(sim,ind,0)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>213</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = sim[0]<del>&nbsp;#XXX: goes here?</del></span> </td>
+                      </tr><tr>
+                        <th>214</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = min(fsim)<del>&nbsp;#XXX: goes here?</del></span> </td>
+                      </tr><tr>
+                        <th>215</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.population = sim<del>&nbsp;#XXX: OK?</del></span> </td>
+                      </tr><tr>
+                        <th>216</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy = fsim<del>&nbsp;#XXX: OK?</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>258</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = sim[0]<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>259</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = min(fsim)<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>260</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.population = sim<ins></ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>261</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy = fsim<ins></ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>217</th><th>262</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>218</th><th>263</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; iterations = 1</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=82#L276">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=87#L321">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>276</th><th>321</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; allvecs.append(sim[0])</span> </td>
+                  </tr><tr>
+                          <th>277</th><th>322</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>278</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = sim[0]<del>&nbsp;#XXX: goes here?</del></span> </td>
+                      </tr><tr>
+                        <th>279</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = min(fsim)<del>&nbsp;#XXX: goes here?</del></span> </td>
+                      </tr><tr>
+                        <th>280</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population = sim<del>&nbsp;#XXX: OK?</del></span> </td>
+                      </tr><tr>
+                        <th>281</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy = fsim<del>&nbsp;#XXX: OK?</del></span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>323</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestSolution = sim[0]<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>324</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.bestEnergy = min(fsim)<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>325</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population = sim<ins></ins></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>326</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy = fsim<ins></ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>282</th><th>327</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.energy_history.append(self.bestEnergy)</span> </td>
+                  </tr><tr>
+                          <th>283</th><th>328</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=82#L326">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=87#L371">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>326</th><th>371</th><td class="l"><span>&nbsp; &nbsp; stepmon = Sow()</span> </td>
+                  </tr><tr>
+                          <th>327</th><th>372</th><td class="l"><span>&nbsp; &nbsp; evalmon = Sow()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>328</th><th> </th><td class="l"><span>&nbsp; &nbsp; from <del></del>nmtools import IterationRelativeError as IRE</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>373</th><td class="r"><span>&nbsp; &nbsp; from <ins>mystic.</ins>nmtools import IterationRelativeError as IRE</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>329</th><th>374</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>330</th><th>375</th><td class="l"><span>&nbsp; &nbsp; solver = NelderMeadSimplexSolver(len(x0))</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=82#L375">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/python/scipy_optimize_fmin.py?rev=87#L420">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>375</th><th>420</th><td class="l"><span>&nbsp; &nbsp; algor = []</span> </td>
+                  </tr><tr>
+                          <th>376</th><th>421</th><td class="l"><span>&nbsp; &nbsp; x0 = [0.8,1.2,0.7]</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>422</th><td class="r"><ins>&nbsp; &nbsp;#x0 = [0.8,1.2,1.7]&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #... better when using "bad" range</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>423</th><td class="r"><ins>&nbsp; &nbsp; min = [-0.999, -0.999, 0.999]&nbsp; &nbsp; &nbsp; &nbsp;#XXX: behaves badly when large range</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>424</th><td class="r"><ins>&nbsp; &nbsp; max = [200.001, 100.001, numpy.inf] #... for &gt;=1 x0 out of bounds; (up xtol)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>425</th><td class="r"><ins>&nbsp; # min = [-0.999, -0.999, -0.999]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>426</th><td class="r"><ins>&nbsp; # max = [200.001, 100.001, numpy.inf]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>427</th><td class="r"><ins>&nbsp;#&nbsp; min = [-0.999, -0.999, 0.999]</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>428</th><td class="r"><ins>&nbsp;#&nbsp; max = [2.001, 1.001, 1.001]</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>377</th><th>429</th><td class="l"><span>&nbsp; &nbsp; print "Nelder-Mead Simplex"</span> </td>
+                  </tr><tr>
+                          <th>378</th><th>430</th><td class="l"><span>&nbsp; &nbsp; print "==================="</span> </td>
+                  </tr><tr>
+                          <th>379</th><th>431</th><td class="l"><span>&nbsp; &nbsp; start = time.time()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>380</th><th> </th><td class="l"><span>&nbsp; &nbsp; from <del></del>tools import VerboseSow</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>432</th><td class="r"><span>&nbsp; &nbsp; from <ins>mystic.</ins>tools import VerboseSow</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>381</th><th>433</th><td class="l"><span>&nbsp; &nbsp; stepmon = VerboseSow(10)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>382</th><th> </th><td class="l"><span>&nbsp; &nbsp; from <del></del>nmtools import IterationRelativeError as IRE</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>434</th><td class="r"><span>&nbsp; &nbsp; from <ins>mystic.</ins>nmtools import IterationRelativeError as IRE</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>383</th><th>435</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>384</th><th>436</th><td class="l"><span>&nbsp; &nbsp;#print fmin(__rosen,x0,retall=0,full_output=0)</span> </td>
+                  </tr><tr>
+                          <th>385</th><th>437</th><td class="l"><span>&nbsp; &nbsp; solver = NelderMeadSimplexSolver(len(x0))</span> </td>
+                  </tr><tr>
+                          <th>386</th><th>438</th><td class="l"><span>&nbsp; &nbsp; solver.SetInitialPoints(x0)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>439</th><td class="r"><ins>&nbsp; &nbsp; solver.SetStrictRanges(min,max)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>387</th><th>440</th><td class="l"><span>&nbsp; &nbsp; solver.enable_signal_handler()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>388</th><th> </th><td class="l"><span>&nbsp; &nbsp; solver.Solve(__rosen,termination=IRE(<del></del>),StepMonitor=stepmon)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>441</th><td class="r"><span>&nbsp; &nbsp; solver.Solve(__rosen,termination=IRE(<ins>xtol=1e-5</ins>),StepMonitor=stepmon)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>389</th><th>442</th><td class="l"><span>&nbsp; &nbsp; print solver.Solution()</span> </td>
+                  </tr><tr>
+                          <th>390</th><th>443</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="87/python/tools.html" title="Show the changeset 87 restricted to python/tools.py">python/tools.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 82">
+                    <a title="Show revision 82 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/tools.py?rev=82#L189">
+                      r82</a>
+                  </th>
+                  <th title="Revision 87">
+                    <a title="Show revision 87 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/python/tools.py?rev=87#L189">
+                      r87</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>189</th><th>189</th><td class="l"><span>&nbsp; &nbsp; return ncalls, function_wrapper</span> </td>
+                  </tr><tr>
+                          <th>190</th><th>190</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>191</th><td class="r"><ins>def wrap_bounds(function, min=None, max=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>192</th><td class="r"><ins>&nbsp; &nbsp; from numpy import asarray, any, inf</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>193</th><td class="r"><ins>&nbsp; &nbsp; bounds = True</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>194</th><td class="r"><ins>&nbsp; &nbsp; if min is not None and max is not None: #has upper &amp; lower bound</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>195</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; min = asarray(min)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>196</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; max = asarray(max)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>197</th><td class="r"><ins>&nbsp; &nbsp; elif min is not None: #has lower bound</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>198</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; min = asarray(min)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>199</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; max = asarray([inf for i in min])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>200</th><td class="r"><ins>&nbsp; &nbsp; elif max is not None: #has upper bound</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>201</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; max = asarray(max)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>202</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; min = asarray([-inf for i in max])</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>203</th><td class="r"><ins>&nbsp; &nbsp; else: #not bounded</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>204</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; bounds = False</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>205</th><td class="r"><ins>&nbsp; &nbsp; if bounds:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>206</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; def function_wrapper(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>207</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if any((x&lt;min)|(x&gt;max)): #if violate bounds, evaluate as inf</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>208</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return inf</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>209</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return function(x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>210</th><td class="r"><ins>&nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>211</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; def function_wrapper(x):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>212</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; return function(x)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>213</th><td class="r"><ins>&nbsp; &nbsp; return function_wrapper</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>214</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>191</th><th>215</th><td class="l"><span>def wrap_cf(CF, REG=None, cfmult = 1.0, regmult = 0.0):</span> </td>
+                  </tr><tr>
+                          <th>192</th><th>216</th><td class="l"><span>&nbsp; &nbsp; def _(*args, **kwargs):</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/87?format=diff&amp;new=87" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/87?format=zip&amp;new=87" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/87 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:59:33 GMT -->
+</html>

@@ -1,0 +1,518 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/473/mystic/mystic/scipy_optimize.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:49:44 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 473 for mystic/mystic/scipy_optimize.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/473/mystic/mystic/scipy_optimize.py?format=diff&amp;new=473" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/473/mystic/mystic/scipy_optimize.py?format=zip&amp;new=473" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../505/mystic/mystic/scipy_optimize.html" title="Changeset 505 for mystic/mystic/scipy_optimize.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../470/mystic/mystic/scipy_optimize.html" title="Changeset 470 for mystic/mystic/scipy_optimize.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../470/mystic/mystic/scipy_optimize.html" title="Changeset 470 for mystic/mystic/scipy_optimize.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../505/mystic/mystic/scipy_optimize.html" title="Changeset 505 for mystic/mystic/scipy_optimize.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../473.html">473</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=473">mystic/mystic/scipy_optimize.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             07/07/11 08:44:38
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2011-07-07T08%3A44%3A38-07%3A00&amp;precision=second" title="2011-07-07T08:44:38-07:00 in Timeline">5 years</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+converted 'constraints' keyword to <a class="missing wiki">SetConstraints?</a> method;<br />
+enabled use of constraints in <a class="missing wiki">DifferentialEvolutionSolver?</a>;<br />
+added new constraints example ('test_rosenbrock3b') <br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=473">
+              mystic/mystic/scipy_optimize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">9 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="scipy_optimize.html" title="Show the changeset 473 restricted to mystic/mystic/scipy_optimize.py">mystic/mystic/scipy_optimize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 470">
+                    <a title="Show revision 470 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=470#L162">
+                      r470</a>
+                  </th>
+                  <th title="Revision 473">
+                    <a title="Show revision 473 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=473#L162">
+                      r473</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>162</th><th>162</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; callback=None&nbsp; #user-supplied function, called after each step</span> </td>
+                  </tr><tr>
+                          <th>163</th><th>163</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; radius=0.05&nbsp; &nbsp; #percentage change for initial simplex values</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>164</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; constraints = lambda x: x # Constraints function to be imposed</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>165</th><th>164</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('callback'): callback = kwds['callback']</span> </td>
+                  </tr><tr>
+                          <th>166</th><th>165</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('disp'): disp = kwds['disp']</span> </td>
+                  </tr><tr>
+                          <th>167</th><th>166</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('radius'): radius = kwds['radius']</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>168</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('constraints'): constraints = kwds['constraints']</del> </td>
+                  </tr><tr class="last">
+                          <th>169</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if not constraints: constraints = lambda x: x</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>170</th><th>167</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # backward compatibility</span> </td>
+                  </tr><tr>
+                          <th>171</th><th>168</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('EvaluationMonitor'): \</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=470#L173">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=473#L170">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>173</th><th>170</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('StepMonitor'): \</span> </td>
+                  </tr><tr>
+                          <th>174</th><th>171</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self._stepmon = kwds['StepMonitor']</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>172</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('constraints'): \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>173</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self._constraints = kwds['constraints']</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>174</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if not self._constraints: self._constraints = lambda x: x</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>175</th><th>175</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>176</th><th>176</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=470#L189">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=473#L189">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>189</th><th>189</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>190</th><th>190</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # wrap constraints function</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>191</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; func = wrap_nested(func, <del></del>constraints)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>191</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; func = wrap_nested(func, <ins>self._</ins>constraints)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>192</th><th>192</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>193</th><th>193</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; id = self.id</span> </td>
+                  </tr><tr>
+                          <th>194</th><th>194</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x0 = asfarray(x0).flatten()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>195</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x0 = asfarray(<del></del>constraints(x0))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>195</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x0 = asfarray(<ins>self._</ins>constraints(x0))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>196</th><th>196</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; N = len(x0) #XXX: this should be equal to self.nDim</span> </td>
+                  </tr><tr>
+                          <th>197</th><th>197</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; rank = len(x0.shape)</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=470#L245">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=473#L245">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>245</th><th>245</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>246</th><th>246</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # apply constraints&nbsp; #XXX: is this the only appropriate place???</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>247</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sim[0] = asfarray(<del></del>constraints(sim[0]))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>247</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; sim[0] = asfarray(<ins>self._</ins>constraints(sim[0]))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>248</th><th>248</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>249</th><th>249</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; xbar = numpy.add.reduce(sim[:-1],0) / N</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=470#L501">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=473#L501">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>501</th><th>501</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; callback=None&nbsp; #user-supplied function, called after each step</span> </td>
+                  </tr><tr>
+                          <th>502</th><th>502</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; xtol=1e-4&nbsp; &nbsp; &nbsp; #line-search error tolerance</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="last first">
+                          <th>503</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; constraints = lambda x: x # Constraints function to be imposed</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>504</th><th>503</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('callback'): callback = kwds['callback']</span> </td>
+                  </tr><tr>
+                          <th>505</th><th>504</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('direc'): direc = kwds['direc']&nbsp; #XXX: best interface?</span> </td>
+                  </tr><tr>
+                          <th>506</th><th>505</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('xtol'): xtol = kwds['xtol']</span> </td>
+                  </tr><tr>
+                          <th>507</th><th>506</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('disp'): disp = kwds['disp']</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>508</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('constraints'): constraints = kwds['constraints']</del> </td>
+                  </tr><tr class="last">
+                          <th>509</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if not constraints: constraints = lambda x: x</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>510</th><th>507</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # backward compatibility</span> </td>
+                  </tr><tr>
+                          <th>511</th><th>508</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('EvaluationMonitor'): \</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=470#L513">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=473#L510">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>513</th><th>510</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('StepMonitor'): \</span> </td>
+                  </tr><tr>
+                          <th>514</th><th>511</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self._stepmon = kwds['StepMonitor']</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>512</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if kwds.has_key('constraints'): \</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>513</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;self._constraints = kwds['constraints']</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>514</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if not self._constraints: self._constraints = lambda x: x</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>515</th><th>515</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #-------------------------------------------------------------</span> </td>
+                  </tr><tr>
+                          <th>516</th><th>516</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=470#L529">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=473#L529">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>529</th><th>529</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>530</th><th>530</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # wrap constraints function</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>531</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; func = wrap_nested(func, <del></del>constraints)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>531</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; func = wrap_nested(func, <ins>self._</ins>constraints)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>532</th><th>532</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>533</th><th>533</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; id = self.id</span> </td>
+                  </tr><tr>
+                          <th>534</th><th>534</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x = asfarray(x0).flatten()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>535</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x = asfarray(<del></del>constraints(x))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>535</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; x = asfarray(<ins>self._</ins>constraints(x))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>536</th><th>536</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if retall:</span> </td>
+                  </tr><tr>
+                          <th>537</th><th>537</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; allvecs = [x]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=470#L577">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=473#L577">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>577</th><th>577</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>578</th><th>578</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # apply constraints</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>579</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x = asfarray(<del></del>constraints(x))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>579</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; x = asfarray(<ins>self._</ins>constraints(x))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>580</th><th>580</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>581</th><th>581</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; iter += 1</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=470#L607">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=473#L607">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>607</th><th>607</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; direc[-1] = direc1</span> </td>
+                  </tr><tr>
+                          <th>608</th><th>608</th><td class="l"><span>&nbsp;</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>609</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; &nbsp; &nbsp; x = asfarray(<del></del>constraints(x))</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>609</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;#&nbsp; &nbsp; &nbsp; &nbsp; x = asfarray(<ins>self._</ins>constraints(x))</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>610</th><th>610</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>611</th><th>611</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.energy_history[-1] = fval #...update to 'best' energy</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/473/mystic/mystic/scipy_optimize.py?format=diff&amp;new=473" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/473/mystic/mystic/scipy_optimize.py?format=zip&amp;new=473" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/473/mystic/mystic/scipy_optimize.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:49:47 GMT -->
+</html>

@@ -1,0 +1,1229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/862 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:01:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 862 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="861.html" title="Changeset 861" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/862?format=diff&amp;new=862" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/862?format=zip&amp;new=862" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li class="active"><a href="../browser.html">Browse Source</a></li><li><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="861.html" title="Changeset 861">Previous Changeset</a></span></li><li class="last"><span class="missing">Next Changeset &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 862</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             04/18/16 14:14:14
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2016-04-18T14%3A14%3A14-07%3A00&amp;precision=second" title="2016-04-18T14:14:14-07:00 in Timeline">4 weeks</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+add mystic.math.Distribution; use it for <a class="missing wiki">InitialPoints?</a>, ensemble Distribution<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://mmckerns.github.io/project/mystic/browser/mystic?rev=862">mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>6 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/__init__.py?rev=862">
+              _math/__init__.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/grid.py?rev=862">
+              _math/grid.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/samples.py?rev=862">
+              _math/samples.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">6 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=862">
+              mystic/abstract_ensemble_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">3 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=862">
+              mystic/abstract_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">2 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=862">
+              mystic/ensemble.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file5">7 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="862/mystic/_math/__init__.html" title="Show the changeset 862 restricted to mystic/_math/__init__.py">mystic/_math/__init__.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 855">
+                    <a title="Show revision 855 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/__init__.py?rev=855#L29">
+                      r855</a>
+                  </th>
+                  <th title="Revision 862">
+                    <a title="Show revision 862 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/__init__.py?rev=862#L29">
+                      r862</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>29</th><th>29</th><td class="l"><span>&nbsp; &nbsp; samplepts&nbsp; &nbsp; -- generate a set of randomly sampled points </span> </td>
+                  </tr><tr>
+                          <th>30</th><th>30</th><td class="l"><span>&nbsp; &nbsp; almostEqual&nbsp; -- test if equal within some absolute or relative tolerance</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>31</th><td class="r"><ins>&nbsp; &nbsp; Distribution -- generate a sampling distribution instance</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>31</th><th>32</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>32</th><th>33</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/__init__.py?rev=855#L43">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/__init__.py?rev=862#L44">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>43</th><th>44</th><td class="l"><span>import distance as paramtrans</span> </td>
+                  </tr><tr>
+                          <th>44</th><th>45</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>46</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>47</th><td class="r"><ins># distribution object</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>48</th><td class="r"><ins>class Distribution(object):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>49</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>50</th><td class="r"><ins>Sampling distribution for mystic optimizers</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>51</th><td class="r"><ins>&nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>52</th><td class="r"><ins>&nbsp; &nbsp; def __init__(self, generator=None, *args, **kwds):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>53</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>54</th><td class="r"><ins>generate a sampling distribution with interface dist(size=None)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>55</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>56</th><td class="r"><ins>input::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>57</th><td class="r"><ins>&nbsp; &nbsp; - generator: a 'distribution' method from scipy.stats or numpy.random</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>58</th><td class="r"><ins>&nbsp; &nbsp; - args: positional arguments for the distribtution object</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>59</th><td class="r"><ins>&nbsp; &nbsp; - kwds: keyword arguments for the distribution object</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>60</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>61</th><td class="r"><ins>note::</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>62</th><td class="r"><ins>&nbsp; &nbsp; this method only accepts numpy.random methods with the keyword 'size'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>63</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>64</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.tools import random_state</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>65</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; rng = random_state(module='numpy.random')</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>66</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if generator is None: generator = rng.random</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>67</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if getattr(generator, 'rvs', False): </ins> </td>
+                  </tr><tr>
+                          <th> </th><th>68</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; d = generator(*args, **kwds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>69</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.rvs = lambda size=None: d.rvs(size=size, random_state=rng)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>70</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; else:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>71</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; d = getattr(rng, generator.__name__)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>72</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.rvs = lambda size=None: d(size=size, *args, **kwds)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>73</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>74</th><td class="r"><ins>&nbsp; &nbsp; def __call__(self, size=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>75</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """generate a sample of given size (tuple) from the distribution"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>76</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return self.rvs(size)</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>77</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>45</th><th>78</th><td class="l"><span># end of file</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="862/mystic/_math/grid.html" title="Show the changeset 862 restricted to mystic/_math/grid.py">mystic/_math/grid.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 855">
+                    <a title="Show revision 855 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/grid.py?rev=855#L9">
+                      r855</a>
+                  </th>
+                  <th title="Revision 862">
+                    <a title="Show revision 862 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/grid.py?rev=862#L9">
+                      r862</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>9</th><th>9</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>10</th><th>10</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>11</th><th> </th><td class="l"><span>def gridpts(q<del></del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>11</th><td class="r"><span>def gridpts(q<ins>, dist=None</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>12</th><th>12</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>13</th><th>13</th><td class="l"><span>takes a list of lists of arbitrary length q = [[1,2],[3,4]]</span> </td>
+                  </tr><tr>
+                          <th>14</th><th>14</th><td class="l"><span>and produces a list of gridpoints g = [[1,3],[1,4],[2,3],[2,4]]</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>15</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>16</th><td class="r"><ins>Note:</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>17</th><td class="r"><ins>&nbsp; &nbsp; if a mystic.math.Distribution is provided, use it to inject randomness</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>15</th><th>18</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>16</th><th>19</th><td class="l"><span>&nbsp; &nbsp; w = [[] for i in range(len(q[-1]))]</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/grid.py?rev=855#L20">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/grid.py?rev=862#L23">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>20</th><th>23</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; w[l].append(q[j][k])</span> </td>
+                  </tr><tr>
+                          <th>21</th><th>24</th><td class="l"><span>&nbsp; &nbsp; &nbsp; if j: w += [i[:] for i in w[:]*(len(q[j-1])-1)]</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>22</th><th> </th><td class="l"><span>&nbsp; &nbsp; return [list(reversed(w[i])) for i in range(len(w))]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>25</th><td class="r"><span>&nbsp; &nbsp; pts = [list(reversed(w[i])) for i in range(len(w))]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>26</th><td class="r"><span>&nbsp; &nbsp; # inject some randomness</span> </td>
+                      </tr><tr>
+                        <th> </th><th>27</th><td class="r"><span>&nbsp; &nbsp; if dist is None: return pts</span> </td>
+                      </tr><tr>
+                        <th> </th><th>28</th><td class="r"><span>&nbsp; &nbsp; if not len(pts): return pts</span> </td>
+                      </tr><tr>
+                        <th> </th><th>29</th><td class="r"><span>&nbsp; &nbsp; pts += dist((len(pts),len(pts[0])))</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>30</th><td class="r"><span>&nbsp; &nbsp; return pts.tolist()</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>23</th><th>31</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>24</th><th>32</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>25</th><th> </th><td class="l"><span>def samplepts(lb,ub,npts<del></del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>33</th><td class="r"><span>def samplepts(lb,ub,npts<ins>,dist=None</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>26</th><th>34</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>27</th><th>35</th><td class="l"><span>takes lower and upper bounds (e.g. lb = [0,3], ub = [2,4])</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/grid.py?rev=855#L32">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/grid.py?rev=862#L40">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>32</th><th>40</th><td class="l"><span>&nbsp; &nbsp; ub&nbsp; --&nbsp; a list of the upper bounds</span> </td>
+                  </tr><tr>
+                          <th>33</th><th>41</th><td class="l"><span>&nbsp; &nbsp; npts&nbsp; --&nbsp; number of sample points</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>42</th><td class="r"><ins>&nbsp; &nbsp; dist -- a mystic.math.Distribution instance</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>43</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>35</th><th>44</th><td class="l"><span>&nbsp; &nbsp; from mystic.math.samples import random_samples</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>36</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = random_samples(lb,ub,npts)</span> </td>
+                      </tr><tr>
+                        <th>37</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = [list(i) for i in q]</span> </td>
+                      </tr><tr>
+                        <th>38</th><th> </th><td class="l"><span>&nbsp; &nbsp; q = zip(*q)</span> </td>
+                      </tr><tr>
+                        <th>39</th><th> </th><td class="l"><span>&nbsp; &nbsp; return [list(i) for i in q]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>45</th><td class="r"><span>&nbsp; &nbsp; q = random_samples(lb,ub,npts,dist)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>46</th><td class="r"><span>&nbsp; &nbsp; return q.T.tolist()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>47</th><td class="r"><span>&nbsp; &nbsp;#q = [list(i) for i in q]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>48</th><td class="r"><span>&nbsp; &nbsp;#q = zip(*q)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>49</th><td class="r"><span>&nbsp; &nbsp;#return [list(i) for i in q]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>40</th><th>50</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>41</th><th>51</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="862/mystic/_math/samples.html" title="Show the changeset 862 restricted to mystic/_math/samples.py">mystic/_math/samples.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 855">
+                    <a title="Show revision 855 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/samples.py?rev=855#L14">
+                      r855</a>
+                  </th>
+                  <th title="Revision 862">
+                    <a title="Show revision 862 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/samples.py?rev=862#L14">
+                      r862</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>14</th><th>14</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>15</th><th>15</th><td class="l"><span># SAMPLING #</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>16</th><th> </th><td class="l"><span>def <del></del>random_samples(lb,ub,npts=10000):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>16</th><td class="r"><span>def <ins>_</ins>random_samples(lb,ub,npts=10000):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>17</th><th>17</th><td class="l"><span>&nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>18</th><th>18</th><td class="l"><span>generate npts random samples between given lb &amp; ub</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/samples.py?rev=855#L32">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/samples.py?rev=862#L32">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>32</th><th>32</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>33</th><th>33</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>34</th><td class="r"><ins>def random_samples(lb,ub, npts=10000, dist=None, clip=False):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>35</th><td class="r"><ins>&nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>36</th><td class="r"><ins>generate npts samples from the given distribution between given lb &amp; ub</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>37</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>38</th><td class="r"><ins>Inputs:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>39</th><td class="r"><ins>&nbsp; &nbsp; dist&nbsp; --&nbsp; a mystic.tools.Distribution instance</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>40</th><td class="r"><ins>&nbsp; &nbsp; lower bounds&nbsp; --&nbsp; a list of the lower bounds</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>41</th><td class="r"><ins>&nbsp; &nbsp; upper bounds&nbsp; --&nbsp; a list of the upper bounds</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>42</th><td class="r"><ins>&nbsp; &nbsp; npts&nbsp; --&nbsp; number of sample points [default = 10000]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>43</th><td class="r"><ins>&nbsp; &nbsp; clip&nbsp; --&nbsp; if True, clip at bounds, else resample [default = False]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>44</th><td class="r"><ins>"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>45</th><td class="r"><ins>&nbsp; if dist is None:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>46</th><td class="r"><ins>&nbsp; &nbsp; return _random_samples(lb,ub, npts)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>47</th><td class="r"><ins>&nbsp; import numpy as np</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>48</th><td class="r"><ins>&nbsp; dim = len(lb)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>49</th><td class="r"><ins>&nbsp; pts = dist((npts,dim)) # transpose of desired shape</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>50</th><td class="r"><ins>&nbsp; pts = np.clip(pts, lb, ub).T</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>51</th><td class="r"><ins>&nbsp; if clip: return pts&nbsp; #XXX: returns a numpy.array</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>52</th><td class="r"><ins>&nbsp; bad = ((pts.T == lb) + (pts.T == ub)).T</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>53</th><td class="r"><ins>&nbsp; new = bad.sum()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>54</th><td class="r"><ins>&nbsp; _n, n = 1, 1000 #FIXME: fixed number of max tries</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>55</th><td class="r"><ins>&nbsp; while new:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>56</th><td class="r"><ins>&nbsp; &nbsp; if _n == n: #XXX: slows the while loop...</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>57</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; raise RuntimeError('bounds could not be applied in %s iterations' % n)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>58</th><td class="r"><ins>&nbsp; &nbsp; pts[bad] = dist(new)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>59</th><td class="r"><ins>&nbsp; &nbsp; pts = np.clip(pts.T, lb, ub).T</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>60</th><td class="r"><ins>&nbsp; &nbsp; bad = ((pts.T == lb) + (pts.T == ub)).T</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>61</th><td class="r"><ins>&nbsp; &nbsp; new = bad.sum()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>62</th><td class="r"><ins>&nbsp; &nbsp; _n += 1</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>63</th><td class="r"><ins>&nbsp; return pts&nbsp; #XXX: returns a numpy.array</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>64</th><td class="r"><ins></ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>65</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>34</th><th>66</th><td class="l"><span>def sample(f,lb,ub,npts=10000):</span> </td>
+                  </tr><tr>
+                          <th>35</th><th>67</th><td class="l"><span>&nbsp; """</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/samples.py?rev=855#L43">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/samples.py?rev=862#L75">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>43</th><th>75</th><td class="l"><span>"""</span> </td>
+                  </tr><tr>
+                          <th>44</th><th>76</th><td class="l"><span>&nbsp; from numpy import transpose</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>45</th><th> </th><td class="l"><span>&nbsp; pts = <del></del>random_samples(lb, ub, npts)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>77</th><td class="r"><span>&nbsp; pts = <ins>_</ins>random_samples(lb, ub, npts)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>46</th><th>78</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>47</th><th>79</th><td class="l"><span>&nbsp; failure = 0; success = 0</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/samples.py?rev=855#L68">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/samples.py?rev=862#L100">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>68</th><th>100</th><td class="l"><span>&nbsp; from numpy import inf, transpose</span> </td>
+                  </tr><tr>
+                          <th>69</th><th>101</th><td class="l"><span>&nbsp; from mystic.tools import wrap_bounds</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>70</th><th> </th><td class="l"><span>&nbsp; pts = <del></del>random_samples(lb, ub, npts)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>102</th><td class="r"><span>&nbsp; pts = <ins>_</ins>random_samples(lb, ub, npts)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>71</th><th>103</th><td class="l"><span>&nbsp; f = wrap_bounds(f,lb,ub)</span> </td>
+                  </tr><tr>
+                          <th>72</th><th>104</th><td class="l"><span>&nbsp; ave = 0; count = 0</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/samples.py?rev=855#L111">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/samples.py?rev=862#L143">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>111</th><th>143</th><td class="l"><span>&nbsp; &nbsp; npts -- the number of points to sample [Default is npts=10000]</span> </td>
+                  </tr><tr>
+                          <th>112</th><th>144</th><td class="l"><span>"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>113</th><th> </th><td class="l"><span>&nbsp; pts = <del></del>random_samples(lb, ub, npts)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>145</th><td class="r"><span>&nbsp; pts = <ins>_</ins>random_samples(lb, ub, npts)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>114</th><th>146</th><td class="l"><span>&nbsp; return _pof_given_samples(f, pts)</span> </td>
+                  </tr><tr>
+                          <th>115</th><th>147</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/samples.py?rev=855#L197">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/_math/samples.py?rev=862#L229">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>197</th><th>229</th><td class="l"><span>&nbsp; &nbsp; upper = [100.0, 30.0, 2.8]</span> </td>
+                  </tr><tr>
+                          <th>198</th><th>230</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>199</th><th> </th><td class="l"><span>&nbsp; &nbsp; pts = <del></del>random_samples(lower,upper,num_sample_points)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>231</th><td class="r"><span>&nbsp; &nbsp; pts = <ins>_</ins>random_samples(lower,upper,num_sample_points)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>200</th><th>232</th><td class="l"><span>&nbsp; &nbsp; print "randomly sampled points\nbetween %s and %s" % (lower, upper)</span> </td>
+                  </tr><tr>
+                          <th>201</th><th>233</th><td class="l"><span>&nbsp; &nbsp; print pts</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="862/mystic/mystic/abstract_ensemble_solver.html" title="Show the changeset 862 restricted to mystic/mystic/abstract_ensemble_solver.py">mystic/mystic/abstract_ensemble_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 860">
+                    <a title="Show revision 860 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=860#L118">
+                      r860</a>
+                  </th>
+                  <th title="Revision 862">
+                    <a title="Show revision 862 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=862#L118">
+                      r862</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>118</th><th>118</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # default settings for nested optimization</span> </td>
+                  </tr><tr>
+                          <th>119</th><th>119</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #XXX: move nbins and npts to _InitialPoints?</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>120</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._dist = None #kwds['dist'] if 'dist' in kwds else None</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>120</th><th>121</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; nbins = kwds['nbins'] if 'nbins' in kwds else [1]*dim</span> </td>
+                  </tr><tr>
+                          <th>121</th><th>122</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if isinstance(nbins, int):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=860#L206">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=862#L207">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>206</th><th>207</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; raise NotImplementedError, "must be overwritten..."</span> </td>
+                  </tr><tr>
+                          <th>207</th><th>208</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>208</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Set<del>DistributionInitialPoints(self, dist</del>):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>209</th><td class="r"><span>&nbsp; &nbsp; def Set<ins>SampledInitialPoints(self, dist=None</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>209</th><th>210</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Generate Random Initial Points from Distribution (dist)</span> </td>
+                  </tr><tr>
+                          <th>210</th><th>211</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>211</th><th>212</th><td class="l"><span>input::</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>212</th><th> </th><td class="l"><span>&nbsp; &nbsp; - dist: a <del>scipy.stats d</del>istribution instance</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>213</th><td class="r"><span>&nbsp; &nbsp; - dist: a <ins>mystic.math.D</ins>istribution instance</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>213</th><th>214</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>214</th><th>215</th><td class="l"><span>*** this method must be overwritten ***"""</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=860#L272">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=862#L273">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>272</th><th>273</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>273</th><th>274</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>275</th><td class="r"><ins>&nbsp; &nbsp; def SetDistribution(self, dist=None):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>276</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """Set the distribution used for determining solver starting points</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>277</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>278</th><td class="r"><ins>Inputs:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>279</th><td class="r"><ins>&nbsp; &nbsp; - dist: a mystic.math.Distribution instance</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>280</th><td class="r"><ins>"""</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>281</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.math import Distribution</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>282</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if dist and Distribution not in dist.__class__.mro():</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>283</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dist = Distribution(dist) #XXX: or throw error?</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>284</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._dist = dist</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>285</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>286</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>274</th><th>287</th><td class="l"><span>&nbsp; &nbsp; def _InitialPoints(self):</span> </td>
+                  </tr><tr>
+                          <th>275</th><th>288</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Generate a grid of starting points for the ensemble of optimizers</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="862/mystic/mystic/abstract_solver.html" title="Show the changeset 862 restricted to mystic/mystic/abstract_solver.py">mystic/mystic/abstract_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 861">
+                    <a title="Show revision 861 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=861#L411">
+                      r861</a>
+                  </th>
+                  <th title="Revision 862">
+                    <a title="Show revision 862 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=862#L411">
+                      r862</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>411</th><th>411</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>412</th><th>412</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.tools import random_state</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>413</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; <del>p</del>rng = random_state(module='numpy.random')</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>413</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; <ins></ins>rng = random_state(module='numpy.random')</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>414</th><th>414</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; assert(len(mean) == self.nDim)</span> </td>
+                  </tr><tr>
+                          <th>415</th><th>415</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if var is None:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=861#L423">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=862#L423">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>423</th><th>423</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; var = var * numpy.eye(self.nDim)</span> </td>
+                  </tr><tr>
+                          <th>424</th><th>424</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; for i in range(len(self.population)):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>425</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[i] = <del>p</del>rng.multivariate_normal(mean, var).tolist()</span> </td>
+                      </tr><tr>
+                        <th>426</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return<del></del></span> </td>
+                      </tr><tr>
+                        <th>427</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>428</th><th> </th><td class="l"><span>&nbsp; &nbsp; def Set<del>DistributionInitialPoints(self, dist, *args</del>):</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>425</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[i] = <ins></ins>rng.multivariate_normal(mean, var).tolist()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>426</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return<ins></ins></span> </td>
+                      </tr><tr>
+                        <th> </th><th>427</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>428</th><td class="r"><span>&nbsp; &nbsp; def Set<ins>SampledInitialPoints(self, dist=None</ins>):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>429</th><th>429</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Generate Random Initial Points from Distribution (dist)</span> </td>
+                  </tr><tr>
+                          <th>430</th><th>430</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>431</th><th>431</th><td class="l"><span>input::</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>432</th><th> </th><td class="l"><span>&nbsp; &nbsp; - dist: a scipy.stats distribution instance (or a numpy.random method)</span> </td>
+                      </tr><tr>
+                        <th>433</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>434</th><th> </th><td class="l"><span>note::</span> </td>
+                      </tr><tr>
+                        <th>435</th><th> </th><td class="l"><span>&nbsp; &nbsp; this method only accepts numpy.random methods with the keyword 'size'"""</span> </td>
+                      </tr><tr>
+                        <th>436</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.tools import random_state</span> </td>
+                      </tr><tr>
+                        <th>437</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; prng = random_state(module='numpy.random')</span> </td>
+                      </tr><tr>
+                        <th>438</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not args and type(dist).__name__ is 'rv_frozen': #from scipy.stats</span> </td>
+                      </tr><tr>
+                        <th>439</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in range(self.nPop):</span> </td>
+                      </tr><tr>
+                        <th>440</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[i] = dist.rvs(self.nDim, random_state=prng).tolist()</span> </td>
+                      </tr><tr>
+                        <th>441</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: #from numpy.random with *args and size in kwds</span> </td>
+                      </tr><tr>
+                        <th>442</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; for i in range(self.nPop): </span> </td>
+                      </tr><tr>
+                        <th>443</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[i] = dist(*args, size=self.nDim).tolist()</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>432</th><td class="r"><span>&nbsp; &nbsp; - dist: a mystic.math.Distribution instance</span> </td>
+                      </tr><tr>
+                        <th> </th><th>433</th><td class="r"><span>"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>434</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.math import Distribution</span> </td>
+                      </tr><tr>
+                        <th> </th><th>435</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if dist is None:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>436</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dist = Distribution()</span> </td>
+                      </tr><tr>
+                        <th> </th><th>437</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; elif type(Distribution) not in dist.__class__.mro():</span> </td>
+                      </tr><tr>
+                        <th> </th><th>438</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; dist = Distribution(dist) #XXX: or throw error?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>439</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; for i in range(self.nPop):</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>440</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.population[i] = dist(self.nDim)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>444</th><th>441</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>445</th><th>442</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file5">
+          <a href="862/mystic/mystic/ensemble.html" title="Show the changeset 862 restricted to mystic/mystic/ensemble.py">mystic/mystic/ensemble.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 860">
+                    <a title="Show revision 860 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860#L38">
+                      r860</a>
+                  </th>
+                  <th title="Revision 862">
+                    <a title="Show revision 862 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=862#L38">
+                      r862</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>38</th><th>38</th><td class="l"><span>class LatticeSolver(AbstractEnsembleSolver):</span> </td>
+                  </tr><tr>
+                          <th>39</th><th>39</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>40</th><th> </th><td class="l"><span>parallel mapped optimization starting from the center<del></del> of N grid points</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>40</th><td class="r"><span>parallel mapped optimization starting from the center<ins>s</ins> of N grid points</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>41</th><th>41</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>42</th><th>42</th><td class="l"><span>&nbsp; &nbsp; def __init__(self, dim, nbins=8):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860#L72">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=862#L72">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>72</th><th>72</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # build a grid of starting points</span> </td>
+                  </tr><tr>
+                          <th>73</th><th>73</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.math import gridpts</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>74</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return gridpts(bins<del></del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>74</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return gridpts(bins<ins>, self._dist</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>75</th><th>75</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>76</th><th>76</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>77</th><th>77</th><td class="l"><span>class BuckshotSolver(AbstractEnsembleSolver):</span> </td>
+                  </tr><tr>
+                          <th>78</th><th>78</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>79</th><th> </th><td class="l"><span>parallel mapped optimization starting from <del>the N random</del> points</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>79</th><td class="r"><span>parallel mapped optimization starting from <ins>N uniform randomly sampled</ins> points</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>80</th><th>80</th><td class="l"><span>&nbsp; &nbsp; """</span> </td>
+                  </tr><tr>
+                          <th>81</th><th>81</th><td class="l"><span>&nbsp; &nbsp; def __init__(self, dim, npts=8):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860#L104">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=862#L104">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>104</th><th>104</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # build a grid of starting points</span> </td>
+                  </tr><tr>
+                          <th>105</th><th>105</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.math import samplepts</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>106</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return samplepts(lower,upper,npts<del></del>)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>106</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return samplepts(lower,upper,npts<ins>, self._dist</ins>)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>107</th><th>107</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>108</th><th>108</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860#L150">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=862#L150">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>150</th><th>150</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; This function should return y', with y' == 0 when the encoded</span> </td>
+                  </tr><tr>
+                          <th>151</th><th>151</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints are satisfied, and y' &gt; 0 otherwise.</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>152</th><td class="r"><ins>&nbsp; &nbsp; dist -- an optional mystic.math.Distribution instance.&nbsp; If provided,</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>153</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; this distribution generates randomness in ensemble starting position.</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>152</th><th>154</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>153</th><th>155</th><td class="l"><span>Returns: (xopt, {fopt, iter, funcalls, warnflag, allfuncalls}, {allvecs})</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860#L186">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=862#L188">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>186</th><th>188</th><td class="l"><span>&nbsp; &nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>187</th><th>189</th><td class="l"><span>&nbsp; &nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>190</th><td class="r"><ins>&nbsp; &nbsp; if 'dist' in kwds:</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>191</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetDistribution(kwds['dist'])</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>188</th><th>192</th><td class="l"><span>&nbsp; &nbsp; if 'penalty' in kwds:</span> </td>
+                  </tr><tr>
+                          <th>189</th><th>193</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetPenalty(kwds['penalty'])</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860#L271">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=862#L275">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>271</th><th>275</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; This function should return y', with y' == 0 when the encoded</span> </td>
+                  </tr><tr>
+                          <th>272</th><th>276</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; constraints are satisfied, and y' &gt; 0 otherwise.</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>277</th><td class="r"><ins>&nbsp; &nbsp; dist -- an optional mystic.math.Distribution instance.&nbsp; If provided,</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>278</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; this distribution generates randomness in ensemble starting position.</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>273</th><th>279</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>274</th><th>280</th><td class="l"><span>Returns: (xopt, {fopt, iter, funcalls, warnflag, allfuncalls}, {allvecs})</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=860#L307">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/ensemble.py?rev=862#L313">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>307</th><th>313</th><td class="l"><span>&nbsp; &nbsp; solver.SetEvaluationMonitor(evalmon)</span> </td>
+                  </tr><tr>
+                          <th>308</th><th>314</th><td class="l"><span>&nbsp; &nbsp; solver.SetGenerationMonitor(stepmon)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>315</th><td class="r"><ins>&nbsp; &nbsp; if 'dist' in kwds:</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>316</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetDistribution(kwds['dist'])</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>309</th><th>317</th><td class="l"><span>&nbsp; &nbsp; if 'penalty' in kwds:</span> </td>
+                  </tr><tr>
+                          <th>310</th><th>318</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; solver.SetPenalty(kwds['penalty'])</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/862?format=diff&amp;new=862" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/862?format=zip&amp;new=862" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/862 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:01:31 GMT -->
+</html>

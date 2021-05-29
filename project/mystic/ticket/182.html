@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/ticket/182 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:48:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      #182 (add decorator-based tools)
+     – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../search.html" />
+        <link rel="prev" href="181.html" title="Ticket #181" />
+        <link rel="last" href="257.html" title="Ticket #257" />
+        <link rel="help" href="../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/ticket/182?format=csv" type="text/csv" class="csv" title="Comma-delimited Text" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/ticket/182?format=tab" type="text/tab-separated-values" class="tab" title="Tab-delimited Text" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/ticket/182?format=rss" type="application/rss+xml" class="rss" title="RSS Feed" />
+        <link rel="next" href="183.html" title="Ticket #183" />
+        <link rel="start" href="../wiki.html" />
+        <link rel="stylesheet" href="../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../chrome/common/css/ticket.css" type="text/css" />
+        <link rel="first" href="1.html" title="Ticket #1" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript">
+      var auto_preview_timeout=2.0;
+      var form_token="29dfe7d61594daee56a0f88e";
+    </script>
+    <script type="text/javascript" src="../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../chrome/common/js/babel.js"></script><script type="text/javascript" src="../chrome/common/js/trac.js"></script><script type="text/javascript" src="../chrome/common/js/search.js"></script><script type="text/javascript" src="../chrome/common/js/folding.js"></script><script type="text/javascript" src="../chrome/common/js/wikitoolbar.js"></script><script type="text/javascript" src="../chrome/common/js/resizer.js"></script><script type="text/javascript" src="../chrome/common/js/auto_preview.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $("div.description").find("h1,h2,h3,h4,h5,h6").addAnchor(_("Link to this section"));
+        $(".foldable").enableFolding(false, true);
+        var args = {realm: "ticket", id: 182, escape_newlines: 0}
+        $("#comment").autoPreview("/project/mystic/wiki_render", args, function(textarea, text, rendered) {
+            $("#ticketchange div.comment").html(rendered);
+            if (rendered)
+              $("#ticketchange").show();
+            else if ($("#ticketchange ul.changes").length == 0)
+              $("#ticketchange").hide();
+        });
+        $("#trac-comment-editor textarea").autoPreview("/project/mystic/wiki_render", args,
+                                                       function(textarea, text, rendered) {
+          var comment = $("#trac-comment-editor").next("div.comment");
+          comment.html(rendered);
+          if (rendered)
+            comment.show();
+          else
+            comment.hide();
+        });
+        $("#modify").parent().toggleClass("collapsed");
+        $(".trac-topnav a").click(function() { $("#modify").parent().removeClass("collapsed"); });
+        /* only enable control elements for the currently selected action */
+        var actions = $("#action input[name='action']");
+        function updateActionFields() {
+          actions.each(function () {
+            $(this).siblings().find("*[id]").enable($(this).checked());
+            $(this).siblings().filter("*[id]").enable($(this).checked());
+          });
+        }
+        actions.click(updateActionFields);
+        updateActionFields();
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../login.html">Login</a></li><li><a href="../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../about.html">About Trac</a></li><li class="last"><a href="../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../wiki.html">Wiki</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../roadmap.html">Roadmap</a></li><li><a href="../browser.html">Browse Source</a></li><li class="active"><a href="../query.html">View Tickets</a></li><li class="last"><a href="../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="181.html" title="Ticket #181">Previous Ticket</a></span></li><li class="last"><span><a class="next" href="183.html" title="Ticket #183">Next Ticket</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="ticket">
+      <h1 id="trac-ticket-title">
+          <a href="182.html">Ticket #182</a>
+          <span class="status">(closed idea: worksforme)</span>
+      </h1>
+      <div id="ticket">
+  <div class="date">
+    <p>Opened <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-09-17T13%3A43%3A53-07%3A00&amp;precision=second" title="2012-09-17T13:43:53-07:00 in Timeline">4 years</a> ago</p>
+    <p>Last modified <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-29T18%3A51%3A11-08%3A00&amp;precision=second" title="2012-12-29T18:51:11-08:00 in Timeline">3 years</a> ago</p>
+  </div>
+  <h2 class="summary searchable">add decorator-based tools</h2>
+  <table class="properties">
+    <tr>
+      <th id="h_reporter">Reported by:</th>
+      <td headers="h_reporter" class="searchable">
+        <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;reporter=mmckerns">mmckerns</a>
+      </td>
+      <th id="h_owner">Owned by:</th>
+      <td headers="h_owner">
+        <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;owner=mmckerns">mmckerns</a>
+      </td>
+    </tr>
+    <tr>
+        <th id="h_priority">
+          Priority:
+        </th>
+        <td headers="h_priority">
+              <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;priority=major">major</a>
+        </td>
+        <th id="h_milestone">
+          Milestone:
+        </th>
+        <td headers="h_milestone">
+              <a class="milestone" href="../milestone/mystic-1.html">mystic-0.2a2</a>
+        </td>
+    </tr><tr>
+        <th id="h_component">
+          Component:
+        </th>
+        <td headers="h_component">
+              <a href="http://mmckerns.github.io/project/mystic/query?status=%21closed&amp;component=mystic.tools">mystic.tools</a>
+        </td>
+        <th id="h_keywords">
+          Keywords:
+        </th>
+        <td headers="h_keywords" class="searchable">
+        </td>
+    </tr><tr>
+        <th id="h_cc">
+          Cc:
+        </th>
+        <td headers="h_cc" class="searchable">
+        </td>
+        <th>
+        </th>
+        <td>
+        </td>
+    </tr>
+  </table>
+  <div class="description">
+    <h3 id="comment:description">
+      Description
+      <span class="lastmod" title="2012-12-30 02:51:11+00:00">
+        (last modified by mmckerns)
+        (<a href="http://mmckerns.github.io/project/mystic/ticket/182?action=diff&amp;version=9">diff</a>)
+      </span>
+    </h3>
+    <div class="searchable">
+      <p>
+add decorator-based tools
+</p>
+
+    </div>
+  </div>
+</div>
+          
+
+        <div>
+          <h2 class="foldable">Change History</h2>
+          <div id="changelog">
+              <div class="change" id="trac-change-1">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:1" class="cnum">
+      <a href="#comment:1">comment:1</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-09-17T13%3A45%3A02-07%3A00&amp;precision=second" title="2012-09-17T13:45:02-07:00 in Timeline">4 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+started <a class="source" href="../browser/decorate.html">decorate branch</a> in <a class="changeset" href="../changeset/532.html" title="added some simple and useful decorators
+">r532</a>
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-2">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:2" class="cnum">
+      <a href="#comment:2">comment:2</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-09-17T13%3A46%3A28-07%3A00&amp;precision=second" title="2012-09-17T13:46:28-07:00 in Timeline">4 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+added basic timing and caching decorators
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-3">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:3" class="cnum">
+      <a href="#comment:3">comment:3</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-09-17T14%3A04%3A57-07%3A00&amp;precision=second" title="2012-09-17T14:04:57-07:00 in Timeline">4 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+added decorator-based function wrappers in <a class="changeset" href="../changeset/550.html" title="added decorator versions of function wrappers from mystic.tools
+">r550</a>
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-4">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:4" class="cnum">
+      <a href="#comment:4">comment:4</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-11-24T05%3A30%3A46-08%3A00&amp;precision=second" title="2012-11-24T05:30:46-08:00 in Timeline">3 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+added decorator for discrete inputs in <a class="changeset" href="../changeset/591.html" title="added decorator in wrapper to provide discrete input
+added test for ...">r591</a>
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-5">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:5" class="cnum">
+      <a href="#comment:5">comment:5</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-11-24T05%3A32%3A53-08%3A00&amp;precision=second" title="2012-11-24T05:32:53-08:00 in Timeline">3 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+added a simple float caching decorator in <a class="changeset" href="../changeset/595.html" title="enable a simple round (only rounds floats, does not 'deep round')
+">r595</a> and shallow rounding in <a class="changeset" href="../changeset/597.html" title="add 'shallow' rounding (one level deep for floats, lists, arrays)
+">r597</a> (as opposed to deep rounding done by existing float caching decorator)
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-6">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:6" class="cnum">
+      <a href="#comment:6">comment:6</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-11-24T05%3A35%3A12-08%3A00&amp;precision=second" title="2012-11-24T05:35:12-08:00 in Timeline">3 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+added decorators that enable an arbitrary function to respect the bounds in <a class="changeset" href="../changeset/598.html" title="added clip_bounded, target_bounded, and bounce_bounded decorators to ...">r598</a> (uses clipping, bounce-back, or targeting) 
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-7">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:7" class="cnum">
+      <a href="#comment:7">comment:7</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-11-24T05%3A36%3A26-08%3A00&amp;precision=second" title="2012-11-24T05:36:26-08:00 in Timeline">3 years</a> ago by mmckerns
+                </h3>
+                
+    <div class="comment searchable">
+      
+      <p>
+added decorators for penalty functions in <a class="changeset" href="../changeset/599.html" title="added decorators for penalty functions: barrier, quadratic, lagrange
+">r599</a>
+</p>
+
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-8">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:8" class="cnum">
+      <a href="#comment:8">comment:8</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-17T06%3A59%3A39-08%3A00&amp;precision=second" title="2012-12-17T06:59:39-08:00 in Timeline">3 years</a> ago by mmckerns
+                </h3>
+                
+  <ul class="changes">
+    <li>
+      <strong>Milestone</strong>
+        changed from <em>mystic-dev</em> to <em>mystic-0.3a</em>
+    </li>
+  </ul>
+    <div class="comment searchable">
+      
+      
+    </div>
+
+              </div>
+              <div class="change" id="trac-change-9">
+                <h3 class="change">
+                  <span class="threading">
+                    <span id="comment:9" class="cnum">
+      <a href="#comment:9">comment:9</a>
+    </span>
+                  </span>
+                  Changed <a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2012-12-29T18%3A51%3A11-08%3A00&amp;precision=second" title="2012-12-29T18:51:11-08:00 in Timeline">3 years</a> ago by mmckerns
+                </h3>
+                
+  <ul class="changes">
+    <li>
+      <strong>Status</strong>
+        changed from <em>new</em> to <em>closed</em>
+    </li><li>
+      <strong>Summary</strong>
+        changed from <em>add decorator-based tools, refactor existing tools for decorators where appropriate</em> to <em>add decorator-based tools</em>
+    </li><li>
+      <strong>Resolution</strong>
+        set to <em>worksforme</em>
+    </li><li>
+      <strong>Description</strong>
+        modified (<a href="http://mmckerns.github.io/project/mystic/ticket/182?action=diff&amp;version=9">diff</a>)
+    </li><li>
+      <strong>Milestone</strong>
+        changed from <em>mystic-0.3a</em> to <em>mystic-0.2a2</em>
+    </li>
+  </ul>
+    <div class="comment searchable">
+      
+      <p>
+split off refactor of existing tools to <a class="new ticket" href="200.html" title="enhancement: refactor existing tools for decorators where appropriate (new)">#200</a>.
+</p>
+<p>
+consider this one closed.  Still needs a merge to the trunk.
+</p>
+
+    </div>
+
+              </div>
+          </div>
+        </div>
+      <div id="help"><strong>Note:</strong> See
+        <a href="../wiki/TracTickets.html">TracTickets</a> for help on using
+        tickets.</div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/ticket/182?format=csv" class="csv">Comma-delimited Text</a>
+        </li><li>
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/ticket/182?format=tab" class="tab">Tab-delimited Text</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/ticket/182?format=rss" class="rss">RSS Feed</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/ticket/182 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:48:11 GMT -->
+</html>

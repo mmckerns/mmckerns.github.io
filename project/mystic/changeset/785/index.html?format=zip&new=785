@@ -1,0 +1,1639 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/785/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:26:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 785 – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../search.html" />
+        <link rel="prev" href="../784.html" title="Changeset 784" />
+        <link rel="last" href="../862.html" title="Changeset 862" />
+        <link rel="help" href="../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/785/?format=diff&amp;new=785" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/785/?format=zip&amp;new=785" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../786.html" title="Changeset 786" />
+        <link rel="start" href="../../wiki.html" />
+        <link rel="stylesheet" href="../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../chrome/common/css/code.css" type="text/css" />
+        <link rel="first" href="../1.html" title="Changeset 1" />
+        <link rel="shortcut icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+        <link rel="icon" href="http://trac.mystic.cacr.caltech.edu/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://trac.mystic.cacr.caltech.edu/"><img src="http://www.cacr.caltech.edu/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://trac.mystic.cacr.caltech.edu/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../login.html">Login</a></li><li><a href="../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../about.html">About Trac</a></li><li class="last"><a href="../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../wiki.html">Wiki</a></li><li><a href="../../timeline.html">Timeline</a></li><li><a href="../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../browser.html">Browse Source</a></li><li><a href="../../query.html">View Tickets</a></li><li class="last"><a href="../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../784.html" title="Changeset 784">Previous Changeset</a></span></li><li class="last"><span><a class="next" href="../786.html" title="Changeset 786">Next Changeset</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset 785</h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             02/19/15 20:39:03
+             (<a class="timeline" href="http://trac.mystic.cacr.caltech.edu/project/mystic/timeline?from=2015-02-19T20%3A39%3A03-08%3A00&amp;precision=second" title="2015-02-19T20:39:03-08:00 in Timeline">15 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+refactor Solve is Step while not Terminated; radius, xtol, strategy are sticky; <br />
+fix: DESolver2 missing self._terminated and NP = max(...);<br />
+rename <a class="missing wiki">CheckTermination?</a> to Terminated, Step to _Step (and add new Step);<br />
+rename _RegisterObjective to _decorate_objective, _exitMain to _Finalize;<br />
+</p>
+
+            
+            
+          </dd>
+          <dt class="property location">Location:</dt>
+          <dd class="searchable"><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic?rev=785">mystic/mystic</a></dd>
+        <dt class="property files">
+          Files:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>5 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=785">
+              abstract_ensemble_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">1 diff</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=785">
+              abstract_solver.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file1">9 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=785">
+              differential_evolution.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file2">9 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=785">
+              ensemble.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file3">4 diffs</a>)
+            </li><li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=785">
+              scipy_optimize.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file4">8 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="mystic/mystic/abstract_ensemble_solver.html" title="Show the changeset 785 restricted to mystic/mystic/abstract_ensemble_solver.py">mystic/mystic/abstract_ensemble_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 784">
+                    <a title="Show revision 784 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=784#L207">
+                      r784</a>
+                  </th>
+                  <th title="Revision 785">
+                    <a title="Show revision 785 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_ensemble_solver.py?rev=785#L207">
+                      r785</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>207</th><th>207</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; raise NotImplementedError, "must be overwritten..."</span> </td>
+                  </tr><tr>
+                          <th>208</th><th>208</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>209</th><th> </th><td class="l"><span>&nbsp; &nbsp; def <del>CheckTermination</del>(self, disp=False, info=False, termination=None):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>209</th><td class="r"><span>&nbsp; &nbsp; def <ins>Terminated</ins>(self, disp=False, info=False, termination=None):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>210</th><th>210</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """check if the solver meets the given termination conditions</span> </td>
+                  </tr><tr>
+                          <th>211</th><th>211</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file1">
+          <a href="mystic/mystic/abstract_solver.html" title="Show the changeset 785 restricted to mystic/mystic/abstract_solver.py">mystic/mystic/abstract_solver.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 784">
+                    <a title="Show revision 784 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L540">
+                      r784</a>
+                  </th>
+                  <th title="Revision 785">
+                    <a title="Show revision 785 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=785#L540">
+                      r785</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>540</th><th>540</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>541</th><th>541</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>542</th><th> </th><td class="l"><span>&nbsp; &nbsp; def <del>CheckTermination</del>(self, disp=False, info=False, termination=None):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>542</th><td class="r"><span>&nbsp; &nbsp; def <ins>Terminated</ins>(self, disp=False, info=False, termination=None):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>543</th><th>543</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """check if the solver meets the given termination conditions</span> </td>
+                  </tr><tr>
+                          <th>544</th><th>544</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L592">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=785#L592">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>592</th><th>592</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>593</th><th>593</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>594</th><th> </th><td class="l"><span>&nbsp; &nbsp; def _RegisterObjective(self, cost, ExtraArgs=None):</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>594</th><td class="r"><span>&nbsp; &nbsp; def SetObjective(self, cost, ExtraArgs=None, fetch=False):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>595</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """set the objective, decorated with bounds, penalties, monitors, etc"""</span> </td>
+                      </tr><tr>
+                        <th> </th><th>596</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs=None)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>597</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return cost if fetch else None</span> </td>
+                      </tr><tr>
+                        <th> </th><th>598</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>599</th><td class="r"><span>&nbsp; &nbsp; def _decorate_objective(self, cost, ExtraArgs=None):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>595</th><th>600</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """decorate cost function with bounds, penalties, monitors, etc"""</span> </td>
+                  </tr><tr>
+                          <th>596</th><th>601</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if ExtraArgs is None: ExtraArgs = ()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L610">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=785#L615">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>610</th><th>615</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>611</th><th>616</th><td class="l"><span>&nbsp; &nbsp; def _bootstrap_objective(self, cost=None, ExtraArgs=None):</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>612</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """HACK to enable not explicitly calling _<del>RegisterO</del>bjective"""</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>617</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; """HACK to enable not explicitly calling _<ins>decorate_o</ins>bjective"""</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>613</th><th>618</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; args = None</span> </td>
+                  </tr><tr>
+                          <th>614</th><th>619</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if cost is None: # 'use existing cost'</span> </td>
+                  </tr><tr>
+                          <th>615</th><th>620</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cost,args = self._cost # use args, unless override with ExtraArgs</span> </td>
+                  </tr><tr>
+                          <th>616</th><th>621</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if ExtraArgs is not None: args = ExtraArgs</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>617</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._cost[0] is None: # '_<del>RegisterO</del>bjective not yet called'</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>622</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._cost[0] is None: # '_<ins>decorate_o</ins>bjective not yet called'</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>618</th><th>623</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if args is None: args = ()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>619</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cost = self._<del>RegisterO</del>bjective(cost, args)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>624</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cost = self._<ins>decorate_o</ins>bjective(cost, args)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>620</th><th>625</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return cost</span> </td>
+                  </tr><tr>
+                          <th>621</th><th>626</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>622</th><th> </th><td class="l"><span>&nbsp; &nbsp; def <del></del>Step(self, cost=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>627</th><td class="r"><span>&nbsp; &nbsp; def <ins>_</ins>Step(self, cost=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>623</th><th>628</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """perform a single optimization iteration</span> </td>
+                  </tr><tr>
+                          <th>624</th><th>629</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L666">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=785#L671">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>666</th><th>671</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>667</th><th>672</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>668</th><th> </th><td class="l"><span>&nbsp; &nbsp; def _<del>exitMain</del>(self, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>673</th><td class="r"><span>&nbsp; &nbsp; def _<ins>Finalize</ins>(self, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>669</th><th>674</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """cleanup upon exiting the main optimization loop"""</span> </td>
+                  </tr><tr>
+                          <th>670</th><th>675</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; pass</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L673">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=785#L678">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>673</th><th>678</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """process and activate input settings"""</span> </td>
+                  </tr><tr>
+                          <th>674</th><th>679</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #allow for inputs that don't conform to AbstractSolver interface</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>680</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: not sticky: callback, disp</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>681</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: sticky: EvaluationMonitor, StepMonitor, penalty, constraints</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>675</th><th>682</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = \</span> </td>
+                  </tr><tr>
+                          <th>676</th><th>683</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;{'callback':None,&nbsp; &nbsp; &nbsp;#user-supplied function, called after each step</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L688">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=785#L695">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>688</th><th>695</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return settings</span> </td>
+                  </tr><tr>
+                          <th>689</th><th>696</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>697</th><td class="r"><ins>&nbsp; &nbsp; def Step(self, cost=None, termination=None, ExtraArgs=None, **kwds):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>698</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """Take a single optimiztion step using the given 'cost' function.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>699</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>700</th><td class="r"><ins>Description:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>701</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>702</th><td class="r"><ins>&nbsp; &nbsp; Uses an optimization algorithm to take one 'step' toward</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>703</th><td class="r"><ins>&nbsp; &nbsp; the minimum of a function of one or more variables.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>704</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>705</th><td class="r"><ins>Inputs:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>706</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>707</th><td class="r"><ins>&nbsp; &nbsp; cost -- the Python function or method to be minimized.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>708</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>709</th><td class="r"><ins>Additional Inputs:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>710</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>711</th><td class="r"><ins>&nbsp; &nbsp; termination -- callable object providing termination conditions.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>712</th><td class="r"><ins>&nbsp; &nbsp; ExtraArgs -- extra arguments for cost.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>713</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>714</th><td class="r"><ins>Further Inputs:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>715</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>716</th><td class="r"><ins>&nbsp; &nbsp; callback -- an optional user-supplied function to call after each</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>717</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; iteration.&nbsp; It is called as callback(xk), where xk is</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>718</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; the current parameter vector.&nbsp; [default = None]</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>719</th><td class="r"><ins>&nbsp; &nbsp; disp -- non-zero to print convergence messages.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>720</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>721</th><td class="r"><ins>Notes:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>722</th><td class="r"><ins>&nbsp; &nbsp; If the algorithm does not meet the given termination conditions after</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>723</th><td class="r"><ins>&nbsp; &nbsp; the call to "Step", the solver may be left in an "out-of-sync" state.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>724</th><td class="r"><ins>&nbsp; &nbsp; When abandoning an non-terminated solver, one should call "_Finalize"</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>725</th><td class="r"><ins>&nbsp; &nbsp; to make sure the solver is fully returned to a "synchronized" state.</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>726</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>727</th><td class="r"><ins>&nbsp; &nbsp; To run the solver until termination, call "Solve()".&nbsp; Alternately, use</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>728</th><td class="r"><ins>&nbsp; &nbsp; Terminated()" as the condition in a while loop over "Step".</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>729</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; """</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>730</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; disp = kwds.pop('disp', False)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>731</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>732</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # register: cost, termination, ExtraArgs</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>733</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>734</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if termination is not None: self.SetTermination(termination)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>735</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>736</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # check termination before 'stepping'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>737</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if len(self._stepmon):</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>738</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = self.Terminated(disp=disp, info=True) or None</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>739</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; else: msg = None</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>740</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>741</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; # if not terminated, then take a step</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>742</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; if msg is None:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>743</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._Step(**kwds) #FIXME: not all kwds are given in __doc__</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>744</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if self.Terminated(): # then cleanup/finalize</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>745</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._Finalize()</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>746</th><td class="r"><ins></ins> </td>
+                  </tr><tr>
+                          <th> </th><th>747</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; # get termination message and log state</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>748</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; msg = self.Terminated(disp=disp, info=True) or None</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>749</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if msg:</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>750</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self._stepmon.info('STOP("%s")' % msg)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>751</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.__save_state(force=True)</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>752</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; return msg</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>753</th><td class="r"><ins></ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>690</th><th>754</th><td class="l"><span>&nbsp; &nbsp; def Solve(self, cost=None, termination=None, ExtraArgs=None, **kwds):</span> </td>
+                  </tr><tr>
+                          <th>691</th><th>755</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """Minimize a 'cost' function with given termination conditions.</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L693">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=785#L757">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>693</th><th>757</th><td class="l"><span>Description:</span> </td>
+                  </tr><tr>
+                          <th>694</th><th>758</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>695</th><th> </th><td class="l"><span>&nbsp; &nbsp; Uses an optimization algorith<del></del> to find the minimum of</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>759</th><td class="r"><span>&nbsp; &nbsp; Uses an optimization algorith<ins>m</ins> to find the minimum of</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>696</th><th>760</th><td class="l"><span>&nbsp; &nbsp; a function of one or more variables.</span> </td>
+                  </tr><tr>
+                          <th>697</th><th>761</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L713">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=785#L777">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>713</th><th>777</th><td class="l"><span>&nbsp; &nbsp; disp -- non-zero to print convergence messages.</span> </td>
+                  </tr><tr>
+                          <th>714</th><th>778</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>715</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _RegisterObjective</del> </td>
+                  </tr><tr class="last">
+                          <th>716</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>717</th><th>779</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                  </tr><tr>
+                          <th>718</th><th>780</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; sigint_callback = kwds.pop('sigint_callback', None)</span> </td>
+                  </tr><tr>
+                          <th>719</th><th>781</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = self._process_inputs(kwds)</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>720</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; for key in settings:</del> </td>
+                  </tr><tr class="last">
+                          <th>721</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exec "%s = settings['%s']" % (key,key)</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>722</th><th>782</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>723</th><th>783</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # set up signal handler</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=784#L729">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/abstract_solver.py?rev=785#L789">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>729</th><th>789</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if self._handle_sigint: signal.signal(signal.SIGINT,self.signal_handler)</span> </td>
+                  </tr><tr>
+                          <th>730</th><th>790</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>731</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;## decorate cost function with bounds, penalties, monitors, etc</span> </td>
+                      </tr><tr>
+                        <th>732</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp;#self._RegisterObjective(cost, ExtraArgs)&nbsp; &nbsp; #XXX: SetObjective ?</span> </td>
+                      </tr><tr>
+                        <th>733</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # register termination function</span> </td>
+                      </tr><tr>
+                        <th>734</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if termination is not None:</span> </td>
+                      </tr><tr>
+                        <th>735</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.SetTermination(termination)</span> </td>
+                      </tr><tr>
+                        <th>736</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>737</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # the initital optimization iteration</span> </td>
+                      </tr><tr>
+                        <th>738</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if not len(self._stepmon): # do generation = 0</span> </td>
+                      </tr><tr>
+                        <th>739</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.Step(**settings)&nbsp; # includes settings['callback']</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>791</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # register: cost, termination, ExtraArgs</span> </td>
+                      </tr><tr>
+                        <th> </th><th>792</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>793</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if termination is not None: self.SetTermination(termination)</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>794</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; #XXX: self.Step(cost, termination, ExtraArgs, **settings) ?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>740</th><th>795</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>741</th><th>796</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # the main optimization loop</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>742</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; while not self.CheckTermination():</span> </td>
+                      </tr><tr>
+                        <th>743</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; self.Step(**settings)&nbsp; # includes settings['callback']</span> </td>
+                      </tr><tr>
+                        <th>744</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: self._exitMain()</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>797</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; while not self.Step(**settings): #XXX: remove need to pass settings?</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>798</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; continue</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>745</th><th>799</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>746</th><th>800</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # restore default handler for signal interrupts</span> </td>
+                  </tr><tr>
+                          <th>747</th><th>801</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; signal.signal(signal.SIGINT,signal.default_int_handler)</span> </td>
+                  </tr>
+            </tbody><tbody class="rem">
+                  <tr class="first">
+                          <th>748</th><th> </th><td class="l"><del></del> </td>
+                  </tr><tr>
+                          <th>749</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; # log any termination messages</del> </td>
+                  </tr><tr>
+                          <th>750</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; msg = self.CheckTermination(disp=disp, info=True)</del> </td>
+                  </tr><tr>
+                          <th>751</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; if msg: self._stepmon.info('STOP("%s")' % msg)</del> </td>
+                  </tr><tr>
+                          <th>752</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; # save final state</del> </td>
+                  </tr><tr class="last">
+                          <th>753</th><th> </th><td class="l"><del>&nbsp; &nbsp; &nbsp; &nbsp; self.__save_state(force=True)</del> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>754</th><th>802</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>755</th><th>803</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file2">
+          <a href="mystic/mystic/differential_evolution.html" title="Show the changeset 785 restricted to mystic/mystic/differential_evolution.py">mystic/mystic/differential_evolution.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 784">
+                    <a title="Show revision 784 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L58">
+                      r784</a>
+                  </th>
+                  <th title="Revision 785">
+                    <a title="Show revision 785 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=785#L58">
+                      r785</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>58</th><th>58</th><td class="l"><span>&nbsp; &nbsp; - EvaluationMonitor = Monitor()</span> </td>
+                  </tr><tr>
+                          <th>59</th><th>59</th><td class="l"><span>&nbsp; &nbsp; - StepMonitor = Monitor()</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>60</th><th> </th><td class="l"><span>&nbsp; &nbsp; - strategy = Best1<del>Exp</del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>60</th><td class="r"><span>&nbsp; &nbsp; - strategy = Best1<ins>Bin</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>61</th><th>61</th><td class="l"><span>&nbsp; &nbsp; - termination = ChangeOverGeneration(ftol,gtol), if gtol provided</span> </td>
+                  </tr><tr>
+                          <th>62</th><th>62</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ''&nbsp; &nbsp; &nbsp; = VTRChangeOverGenerations(ftol), otherwise</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L171">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=785#L171">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>171</th><th>171</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.scale&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 0.8</span> </td>
+                  </tr><tr>
+                          <th>172</th><th>172</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.probability&nbsp; &nbsp;= 0.9</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>173</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.strategy&nbsp; &nbsp; &nbsp; = 'Best1Bin'</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>173</th><th>174</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ftol = 5e-3</span> </td>
+                  </tr><tr>
+                          <th>174</th><th>175</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTRChangeOverGeneration</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L200">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=785#L201">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>200</th><th>201</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>201</th><th>202</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>202</th><th> </th><td class="l"><span>&nbsp; &nbsp; def _<del>RegisterO</del>bjective(self, cost, ExtraArgs=None):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>203</th><td class="r"><span>&nbsp; &nbsp; def _<ins>decorate_o</ins>bjective(self, cost, ExtraArgs=None):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>203</th><th>204</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """decorate cost function with bounds, penalties, monitors, etc"""</span> </td>
+                  </tr><tr>
+                          <th>204</th><th>205</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if ExtraArgs is None: ExtraArgs = ()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L216">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=785#L217">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>216</th><th>217</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return cost</span> </td>
+                  </tr><tr>
+                          <th>217</th><th>218</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>218</th><th> </th><td class="l"><span>&nbsp; &nbsp; def <del></del>Step(self, cost=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>219</th><td class="r"><span>&nbsp; &nbsp; def <ins>_</ins>Step(self, cost=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>219</th><th>220</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """perform a single optimization iteration</span> </td>
+                  </tr><tr>
+                          <th>220</th><th>221</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Note that ExtraArgs should be a *tuple* of extra arguments"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>221</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _<del>RegisterO</del>bjective</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>222</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _<ins>decorate_o</ins>bjective</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>222</th><th>223</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</span> </td>
+                  </tr><tr>
+                          <th>223</th><th>224</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L275">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=785#L276">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>275</th><th>276</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # initialize termination conditions, if needed</span> </td>
+                  </tr><tr>
+                          <th>276</th><th>277</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if init: self._termination(self) #XXX: at generation 0 or always?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>277</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return #XXX: call <del>CheckTermination</del> ?</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>278</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return #XXX: call <ins>Terminated</ins> ?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>278</th><th>279</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>279</th><th>280</th><td class="l"><span>&nbsp; &nbsp; def _process_inputs(self, kwds):</span> </td>
+                  </tr><tr>
+                          <th>280</th><th>281</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """process and activate input settings"""</span> </td>
+                  </tr><tr>
+                          <th>281</th><th>282</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #allow for inputs that don't conform to AbstractSolver interface</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>283</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: not sticky: callback, disp</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>284</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: sticky: EvaluationMonitor, StepMonitor, penalty, constraints</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>285</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: sticky: strategy, CrossProbability, ScalingFactor</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>282</th><th>286</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = super(DifferentialEvolutionSolver, self)._process_inputs(kwds)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>283</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Best1Bin</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>287</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic import strategy</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>288</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; strategy = getattr(strategy,self.strategy,strategy.Best1Bin) #XXX: None?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>284</th><th>289</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings.update({\</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>285</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; 'strategy':<del>Best1Bin})</del>#mutation strategy (see mystic.strategy)</span> </td>
+                      </tr><tr>
+                        <th>286</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; probability=<del>0.9&nbsp; &nbsp; &nbsp;</del> #potential for parameter cross-mutation</span> </td>
+                      </tr><tr>
+                        <th>287</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; scale=<del>0.8</del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #multiplier for mutation impact</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>290</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; 'strategy':<ins>&nbsp;strategy})&nbsp; &nbsp; &nbsp; &nbsp;</ins>#mutation strategy (see mystic.strategy)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>291</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; probability=<ins>self.probability</ins> #potential for parameter cross-mutation</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>292</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; scale=<ins>self.scale </ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #multiplier for mutation impact</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>288</th><th>293</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [settings.update({i:j}) for (i,j) in kwds.items() if i in settings]</span> </td>
+                  </tr><tr>
+                          <th>289</th><th>294</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.probability = kwds.get('CrossProbability', probability)</span> </td>
+                  </tr><tr>
+                          <th>290</th><th>295</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.scale = kwds.get('ScalingFactor', scale)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>296</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.strategy = getattr(settings['strategy'],'__name__','Best1Bin')</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>291</th><th>297</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return settings</span> </td>
+                  </tr><tr>
+                          <th>292</th><th>298</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L345">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=785#L351">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>345</th><th>351</th><td class="l"><span>All important class members are inherited from AbstractSolver.</span> </td>
+                  </tr><tr>
+                          <th>346</th><th>352</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>347</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; <del></del>#XXX: raise Error if npop &lt;= 4?</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>353</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; <ins>NP = max(NP, dim, 4) </ins>#XXX: raise Error if npop &lt;= 4?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>348</th><th>354</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; super(DifferentialEvolutionSolver2, self).__init__(dim, npop=NP)</span> </td>
+                  </tr><tr>
+                          <th>349</th><th>355</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.genealogy&nbsp; &nbsp; &nbsp;= [ [] for j in range(NP)]</span> </td>
+                  </tr><tr>
+                          <th>350</th><th>356</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.scale&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;= 0.8</span> </td>
+                  </tr><tr>
+                          <th>351</th><th>357</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.probability&nbsp; &nbsp;= 0.9</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>358</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.strategy&nbsp; &nbsp; &nbsp; = 'Best1Bin'</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>359</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; ftol = 5e-3</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>360</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import VTRChangeOverGeneration</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>361</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self._termination = VTRChangeOverGeneration(ftol)</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>352</th><th>362</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; </span> </td>
+                  </tr><tr>
+                          <th>353</th><th>363</th><td class="l"><span>&nbsp; &nbsp; def UpdateGenealogyRecords(self, id, newchild):</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L359">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=785#L369">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>359</th><th>369</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>360</th><th>370</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>361</th><th> </th><td class="l"><span>&nbsp; &nbsp; def _<del>RegisterO</del>bjective(self, cost, ExtraArgs=None):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>371</th><td class="r"><span>&nbsp; &nbsp; def _<ins>decorate_o</ins>bjective(self, cost, ExtraArgs=None):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>362</th><th>372</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """decorate cost function with bounds, penalties, monitors, etc"""</span> </td>
+                  </tr><tr>
+                          <th>363</th><th>373</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if ExtraArgs is None: ExtraArgs = ()</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L380">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=785#L390">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>380</th><th>390</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return cost</span> </td>
+                  </tr><tr>
+                          <th>381</th><th>391</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>382</th><th> </th><td class="l"><span>&nbsp; &nbsp; def <del></del>Step(self, cost=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>392</th><td class="r"><span>&nbsp; &nbsp; def <ins>_</ins>Step(self, cost=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>383</th><th>393</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """perform a single optimization iteration</span> </td>
+                  </tr><tr>
+                          <th>384</th><th>394</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Note that ExtraArgs should be a *tuple* of extra arguments"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>385</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _<del>RegisterO</del>bjective</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>395</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _<ins>decorate_o</ins>bjective</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>386</th><th>396</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</span> </td>
+                  </tr><tr>
+                          <th>387</th><th>397</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=784#L444">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/differential_evolution.py?rev=785#L454">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>444</th><th>454</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # initialize termination conditions, if needed</span> </td>
+                  </tr><tr>
+                          <th>445</th><th>455</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if init: self._termination(self) #XXX: at generation 0 or always?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>446</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return #XXX: call <del>CheckTermination</del> ?</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>456</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return #XXX: call <ins>Terminated</ins> ?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>447</th><th>457</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>448</th><th>458</th><td class="l"><span>&nbsp; &nbsp; def _process_inputs(self, kwds):</span> </td>
+                  </tr><tr>
+                          <th>449</th><th>459</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """process and activate input settings"""</span> </td>
+                  </tr><tr>
+                          <th>450</th><th>460</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #allow for inputs that don't conform to AbstractSolver interface</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>461</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: not sticky: callback, disp</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>462</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: sticky: EvaluationMonitor, StepMonitor, penalty, constraints</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>463</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: sticky: strategy, CrossProbability, ScalingFactor</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>451</th><th>464</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = super(DifferentialEvolutionSolver2, self)._process_inputs(kwds)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>452</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.strategy import Best1Bin</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>465</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic import strategy</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>466</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; strategy = getattr(strategy,self.strategy,strategy.Best1Bin) #XXX: None?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>453</th><th>467</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings.update({\</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>454</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; 'strategy':<del>Best1Bin})</del>#mutation strategy (see mystic.strategy)</span> </td>
+                      </tr><tr>
+                        <th>455</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; probability=<del>0.9&nbsp; &nbsp; &nbsp;</del> #potential for parameter cross-mutation</span> </td>
+                      </tr><tr>
+                        <th>456</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; scale=<del>0.8</del>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #multiplier for mutation impact</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>468</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; 'strategy':<ins>&nbsp;strategy})&nbsp; &nbsp; &nbsp; &nbsp;</ins>#mutation strategy (see mystic.strategy)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>469</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; probability=<ins>self.probability</ins> #potential for parameter cross-mutation</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>470</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; scale=<ins>self.scale </ins>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; #multiplier for mutation impact</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>457</th><th>471</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [settings.update({i:j}) for (i,j) in kwds.items() if i in settings]</span> </td>
+                  </tr><tr>
+                          <th>458</th><th>472</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.probability = kwds.get('CrossProbability', probability)</span> </td>
+                  </tr><tr>
+                          <th>459</th><th>473</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.scale = kwds.get('ScalingFactor', scale)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>474</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.strategy = getattr(settings['strategy'],'__name__','Best1Bin')</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>460</th><th>475</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return settings</span> </td>
+                  </tr><tr>
+                          <th>461</th><th>476</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file3">
+          <a href="mystic/mystic/ensemble.html" title="Show the changeset 785 restricted to mystic/mystic/ensemble.py">mystic/mystic/ensemble.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 784">
+                    <a title="Show revision 784 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L227">
+                      r784</a>
+                  </th>
+                  <th title="Revision 785">
+                    <a title="Show revision 785 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=785#L227">
+                      r785</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>227</th><th>227</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>228</th><th>228</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # log any termination messages</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>229</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; msg = self.<del>CheckTermination</del>(disp=disp, info=True)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>229</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; msg = self.<ins>Terminated</ins>(disp=disp, info=True)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>230</th><th>230</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if msg: self._stepmon.info('STOP("%s")' % msg)</span> </td>
+                  </tr><tr>
+                          <th>231</th><th>231</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # save final state</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L413">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=785#L413">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>413</th><th>413</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>414</th><th>414</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # log any termination messages</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>415</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; msg = self.<del>CheckTermination</del>(disp=disp, info=True)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>415</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; msg = self.<ins>Terminated</ins>(disp=disp, info=True)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>416</th><th>416</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if msg: self._stepmon.info('STOP("%s")' % msg)</span> </td>
+                  </tr><tr>
+                          <th>417</th><th>417</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # save final state</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L523">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=785#L523">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>523</th><th>523</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>524</th><th>524</th><td class="l"><span>&nbsp; &nbsp; # code below here pushes output to scipy.optimize.fmin interface</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>525</th><th> </th><td class="l"><span>&nbsp; &nbsp; msg = solver.<del>CheckTermination</del>(disp=False, info=True)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>525</th><td class="r"><span>&nbsp; &nbsp; msg = solver.<ins>Terminated</ins>(disp=False, info=True)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>526</th><th>526</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>527</th><th>527</th><td class="l"><span>&nbsp; &nbsp; x = solver.bestSolution</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=784#L654">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/ensemble.py?rev=785#L654">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>654</th><th>654</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>655</th><th>655</th><td class="l"><span>&nbsp; &nbsp; # code below here pushes output to scipy.optimize.fmin interface</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>656</th><th> </th><td class="l"><span>&nbsp; &nbsp; msg = solver.<del>CheckTermination</del>(disp=False, info=True)</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>656</th><td class="r"><span>&nbsp; &nbsp; msg = solver.<ins>Terminated</ins>(disp=False, info=True)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>657</th><th>657</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>658</th><th>658</th><td class="l"><span>&nbsp; &nbsp; x = solver.bestSolution</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="entry">
+        <h2 id="file4">
+          <a href="mystic/mystic/scipy_optimize.html" title="Show the changeset 785 restricted to mystic/mystic/scipy_optimize.py">mystic/mystic/scipy_optimize.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 784">
+                    <a title="Show revision 784 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L92">
+                      r784</a>
+                  </th>
+                  <th title="Revision 785">
+                    <a title="Show revision 785 of this file in browser" href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=785#L92">
+                      r785</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>92</th><th>92</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.popEnergy.append(self._init_popEnergy)</span> </td>
+                  </tr><tr>
+                          <th>93</th><th>93</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.population.append([0.0 for i in range(dim)])</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>94</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.radius= 0.05 #percentage change for initial simplex values</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>94</th><th>95</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; xtol, ftol = 1e-4, 1e-4</span> </td>
+                  </tr><tr>
+                          <th>95</th><th>96</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import CandidateRelativeTolerance as CRT</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L141">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=785#L142">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>141</th><th>142</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>142</th><th>143</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>143</th><th> </th><td class="l"><span>&nbsp; &nbsp; def <del></del>Step(self, cost=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>144</th><td class="r"><span>&nbsp; &nbsp; def <ins>_</ins>Step(self, cost=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>144</th><th>145</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """perform a single optimization iteration</span> </td>
+                  </tr><tr>
+                          <th>145</th><th>146</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Note that ExtraArgs should be a *tuple* of extra arguments"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>146</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _<del>RegisterO</del>bjective</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>147</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _<ins>decorate_o</ins>bjective</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>147</th><th>148</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</span> </td>
+                  </tr><tr>
+                          <th>148</th><th>149</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L259">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=785#L260">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>259</th><th>260</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # initialize termination conditions, if needed</span> </td>
+                  </tr><tr>
+                          <th>260</th><th>261</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if init: self._termination(self) #XXX: at generation 0 or always?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>261</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return #XXX: call <del>CheckTermination</del> ?</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>262</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return #XXX: call <ins>Terminated</ins> ?</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>262</th><th>263</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>263</th><th>264</th><td class="l"><span>&nbsp; &nbsp; def _process_inputs(self, kwds):</span> </td>
+                  </tr><tr>
+                          <th>264</th><th>265</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """process and activate input settings"""</span> </td>
+                  </tr><tr>
+                          <th>265</th><th>266</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #allow for inputs that don't conform to AbstractSolver interface</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>267</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: not sticky: callback, disp</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>268</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: sticky: EvaluationMonitor, StepMonitor, penalty, constraints</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>269</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: sticky: radius</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>266</th><th>270</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = super(NelderMeadSimplexSolver, self)._process_inputs(kwds)</span> </td>
+                  </tr><tr>
+                          <th>267</th><th>271</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings.update({\</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>268</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; 'radius':<del>0.05})&nbsp; &nbsp; &nbsp;</del> #percentage change for initial simplex values</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>272</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; 'radius':<ins>self.radius})</ins> #percentage change for initial simplex values</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>269</th><th>273</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [settings.update({i:j}) for (i,j) in kwds.items() if i in settings]</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>274</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.radius = settings['radius']</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>270</th><th>275</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return settings</span> </td>
+                  </tr><tr>
+                          <th>271</th><th>276</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L453">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=785#L458">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>453</th><th>458</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [x1, fx, bigind, delta]</span> </td>
+                  </tr><tr>
+                          <th>454</th><th>459</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.__internals = [x1, fx,&nbsp; &nbsp; &nbsp; 0,&nbsp; &nbsp;0.0]</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>460</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.xtol&nbsp; = 1e-4&nbsp; #line-search error tolerance</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>455</th><th>461</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; ftol, gtol = 1e-4, 2</span> </td>
+                  </tr><tr>
+                          <th>456</th><th>462</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; from mystic.termination import NormalizedChangeOverGeneration as NCOG</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L461">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=785#L467">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>461</th><th>467</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return</span> </td>
+                  </tr><tr>
+                          <th>462</th><th>468</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>463</th><th> </th><td class="l"><span>&nbsp; &nbsp; def <del></del>Step(self, cost=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>469</th><td class="r"><span>&nbsp; &nbsp; def <ins>_</ins>Step(self, cost=None, ExtraArgs=None, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>464</th><th>470</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """perform a single optimization iteration</span> </td>
+                  </tr><tr>
+                          <th>465</th><th>471</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; Note that ExtraArgs should be a *tuple* of extra arguments"""</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>466</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _<del>RegisterO</del>bjective</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>472</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; # HACK to enable not explicitly calling _<ins>decorate_o</ins>bjective</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>467</th><th>473</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cost = self._bootstrap_objective(cost, ExtraArgs)</span> </td>
+                  </tr><tr>
+                          <th>468</th><th>474</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # process and activate input settings</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L471">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=785#L477">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>471</th><th>477</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; exec "%s = settings['%s']" % (key,key)</span> </td>
+                  </tr><tr>
+                          <th>472</th><th>478</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>473</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; direc = self._direc<del></del></span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>479</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; direc = self._direc<ins>&nbsp;#XXX: throws Error if direc=None after generation=0</ins></span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>474</th><th>480</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; x = self.population[0]&nbsp; &nbsp;# bestSolution</span> </td>
+                  </tr><tr>
+                          <th>475</th><th>481</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; fval = self.popEnergy[0] # bestEnergy</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L571">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=785#L577">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>571</th><th>577</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; # initialize termination conditions, if needed</span> </td>
+                  </tr><tr>
+                          <th>572</th><th>578</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; if init: self._termination(self) #XXX: at generation 0 or always?</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>573</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return #XXX: call <del>CheckTermination</del> ?</span> </td>
+                      </tr><tr>
+                        <th>574</th><th> </th><td class="l"><span></span> </td>
+                      </tr><tr>
+                        <th>575</th><th> </th><td class="l"><span>&nbsp; &nbsp; def _<del>exitMain</del>(self, **kwds):</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>579</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; return #XXX: call <ins>Terminated</ins> ?</span> </td>
+                      </tr><tr>
+                        <th> </th><th>580</th><td class="r"><span></span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>581</th><td class="r"><span>&nbsp; &nbsp; def _<ins>Finalize</ins>(self, **kwds):</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>576</th><th>582</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """cleanup upon exiting the main optimization loop"""</span> </td>
+                  </tr><tr>
+                          <th>577</th><th>583</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self.energy_history = None # resync with 'best' energy</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=784#L584">…</a></th>
+                  <th><a href="http://trac.mystic.cacr.caltech.edu/project/mystic/browser/mystic/mystic/scipy_optimize.py?rev=785#L590">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>584</th><th>590</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; """process and activate input settings"""</span> </td>
+                  </tr><tr>
+                          <th>585</th><th>591</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; #allow for inputs that don't conform to AbstractSolver interface</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="first">
+                          <th> </th><th>592</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: not sticky: callback, disp</ins> </td>
+                  </tr><tr>
+                          <th> </th><th>593</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: sticky: EvaluationMonitor, StepMonitor, penalty, constraints</ins> </td>
+                  </tr><tr class="last">
+                          <th> </th><th>594</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; #NOTE: sticky: xtol, direc</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>586</th><th>595</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings = super(PowellDirectionalSolver, self)._process_inputs(kwds)</span> </td>
+                  </tr><tr>
+                          <th>587</th><th>596</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; settings.update({\</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>588</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; 'xtol':<del>1e-4})&nbsp; &nbsp; &nbsp;</del>&nbsp; &nbsp;#line-search error tolerance</span> </td>
+                      </tr>
+                      <tr class="last">
+                        <th> </th><th>597</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; 'xtol':<ins>self.xtol})</ins>&nbsp; &nbsp;#line-search error tolerance</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>589</th><th>598</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; direc=self._direc&nbsp; &nbsp; #initial direction set</span> </td>
+                  </tr><tr>
+                          <th>590</th><th>599</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; [settings.update({i:j}) for (i,j) in kwds.items() if i in settings]</span> </td>
+                  </tr><tr>
+                          <th>591</th><th>600</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; self._direc = kwds.get('direc', direc)</span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>601</th><td class="r"><ins>&nbsp; &nbsp; &nbsp; &nbsp; self.xtol = settings['xtol']</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>592</th><th>602</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; return settings</span> </td>
+                  </tr><tr>
+                          <th>593</th><th>603</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/785/?format=diff&amp;new=785" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://trac.mystic.cacr.caltech.edu/project/mystic/changeset/785/?format=zip&amp;new=785" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://www.cacr.caltech.edu/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://www.cacr.caltech.edu/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://www.cacr.caltech.edu/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://www.cacr.caltech.edu/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://www.cacr.caltech.edu/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://www.cacr.caltech.edu/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://www.cacr.caltech.edu/projects/mystic">http://www.cacr.caltech.edu/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from trac.mystic.cacr.caltech.edu/project/mystic/changeset/785/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 18 May 2016 23:26:35 GMT -->
+</html>

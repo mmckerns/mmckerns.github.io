@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  
+  
+
+  
+
+
+  
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/835/mystic/mystic/scripts.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>
+      Changeset 835 for mystic/mystic/scripts.py – Mystic
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <link rel="search" href="../../../../search.html" />
+        <link rel="help" href="../../../../wiki/TracGuide.html" />
+        <link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/835/mystic/mystic/scripts.py?format=diff&amp;new=835" type="text/plain" class="diff" title="Unified Diff" /><link rel="alternate" href="http://mmckerns.github.io/project/mystic/changeset/835/mystic/mystic/scripts.py?format=zip&amp;new=835" type="application/zip" class="zip" title="Zip Archive" />
+        <link rel="next" href="../../../836/mystic/mystic/scripts.html" title="Changeset 836 for mystic/mystic/scripts.py" />
+        <link rel="start" href="../../../../wiki.html" />
+        <link rel="stylesheet" href="../../../../chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/changeset.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/diff.css" type="text/css" /><link rel="stylesheet" href="../../../../chrome/common/css/code.css" type="text/css" />
+        <link rel="prev" href="../../../810/mystic/mystic/scripts.html" title="Changeset 810 for mystic/mystic/scripts.py" />
+        <link rel="shortcut icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+        <link rel="icon" href="http://mmckerns.github.io/mystic_icon.ico?" />
+      <link type="application/opensearchdescription+xml" rel="search" href="../../../../search/opensearch" title="Search Mystic" />
+    <script type="text/javascript" src="../../../../chrome/common/js/jquery.js"></script><script type="text/javascript" src="../../../../chrome/common/js/babel.js"></script><script type="text/javascript" src="../../../../chrome/common/js/trac.js"></script><script type="text/javascript" src="../../../../chrome/common/js/search.js"></script><script type="text/javascript" src="../../../../chrome/common/js/diff.js"></script>
+    <!--[if lt IE 7]>
+    <script type="text/javascript" src="/project/mystic/chrome/common/js/ie_pre7_hacks.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".trac-toggledeleted").show().click(function() {
+                  $(this).siblings().find(".trac-deleted").toggle();
+                  return false;
+        }).click();
+        $("#content").find("li.entry h2 a").parent().addAnchor(_("Link to this diff"));
+      });
+    </script>
+    <link rel="stylesheet" type="text/css" href="../../../../chrome/site/style.css" />
+  </head>
+  <body>
+    <div id="siteheader">
+    </div>
+    <div id="banner">
+      <div id="header">
+        <a id="logo" href="http://mmckerns.github.io/project/mystic/wiki.html"><img src="http://mmckerns.github.io/projects/mystic/mystic_banner.png" alt="MYSTIC" height="150" width="400" /></a>
+      </div>
+      <form id="search" action="http://mmckerns.github.io/project/mystic/search" method="get">
+        <div>
+          <label for="proj-search">Search:</label>
+          <input type="text" id="proj-search" name="q" size="18" value="" />
+          <input type="submit" value="Search" />
+        </div>
+      </form>
+      <div id="metanav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../login.html">Login</a></li><li><a href="../../../../wiki/TracGuide.html">Help/Guide</a></li><li><a href="../../../../about.html">About Trac</a></li><li class="last"><a href="../../../../prefs.html">Preferences</a></li>
+    </ul>
+  </div>
+    </div>
+    <div id="mainnav" class="nav">
+    <ul>
+      <li class="first"><a href="../../../../wiki.html">Wiki</a></li><li><a href="../../../../timeline.html">Timeline</a></li><li><a href="../../../../roadmap.html">Roadmap</a></li><li class="active"><a href="../../../../browser.html">Browse Source</a></li><li><a href="../../../../query.html">View Tickets</a></li><li class="last"><a href="../../../../search.html">Search</a></li>
+    </ul>
+  </div>
+    <div id="main">
+      <div id="ctxtnav" class="nav">
+        <h2>Context Navigation</h2>
+          <ul>
+              <li class="first"><span>&larr; <a class="prev" href="../../../810/mystic/mystic/scripts.html" title="Changeset 810 for mystic/mystic/scripts.py">Previous Change</a></span></li><li class="last"><span><a class="next" href="../../../836/mystic/mystic/scripts.html" title="Changeset 836 for mystic/mystic/scripts.py">Next Change</a> &rarr;</span></li>
+          </ul>
+        <hr />
+      </div>
+    <div id="content" class="changeset">
+      <div id="title">
+            <h1>Changeset <a title="Show full changeset" href="../../../835.html">835</a>
+              for <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=835">mystic/mystic/scripts.py</a></h1>
+      </div>
+      <form id="prefs" action="#">
+        <div>
+          
+  <label for="style">View differences</label>
+  <select id="style" name="style">
+    <option selected="selected" value="inline">inline</option>
+    <option value="sidebyside">side by side</option>
+  </select>
+  <div class="field">
+    <label><input type="radio" name="contextall" value="0" checked="checked" />
+             Show</label>
+      <label><input type="text" name="contextlines" id="contextlines" size="2" maxlength="3" value="2" />
+             lines around each change</label><br />
+    <label><input type="radio" name="contextall" value="1" />
+           Show the changes in full context</label>
+  </div>
+  <fieldset id="ignore">
+    <legend>Ignore:</legend>
+    <div class="field">
+      <input type="checkbox" id="ignoreblanklines" name="ignoreblanklines" />
+      <label for="ignoreblanklines">Blank lines</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorecase" name="ignorecase" />
+      <label for="ignorecase">Case changes</label>
+    </div>
+    <div class="field">
+      <input type="checkbox" id="ignorewhitespace" name="ignorewhitespace" />
+      <label for="ignorewhitespace">White space changes</label>
+    </div>
+  </fieldset>
+  <div class="buttons">
+    <input type="submit" name="update" value="Update" />
+  </div>
+
+        </div>
+      </form>
+      <dl id="overview">
+          <dt class="property time">Timestamp:</dt>
+          <dd class="time">
+             10/15/15 18:41:35
+             (<a class="timeline" href="http://mmckerns.github.io/project/mystic/timeline?from=2015-10-15T18%3A41%3A35-07%3A00&amp;precision=second" title="2015-10-15T18:41:35-07:00 in Timeline">7 months</a> ago)
+          </dd>
+          <dt class="property author">Author:</dt>
+          <dd class="author">mmckerns</dd>
+          <dt class="property message">Message:</dt>
+          <dd class="message searchable">
+            
+            
+              <p>
+use <a class="missing wiki">LinearKernel?</a> in test_svr1 example; enable use of numpy.poly1d as cost;<br />
+enable mystic.log_reader to read Monitor instance<br />
+</p>
+
+            
+            
+          </dd>
+        <dt class="property files">
+          File:
+        </dt>
+        <dd class="files">
+          <div class="legend" id="file-legend">
+            <dl>
+              <dt class="mod"></dt><dd>1 edited</dd>
+            </dl>
+          </div>
+          <br />
+          <ul>
+            <li>
+          <div class="mod"> </div>
+            <a title="Show entry in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=835">
+              mystic/mystic/scripts.py
+            </a>
+          <span class="comment">(modified)</span>
+              (<a title="Show differences" href="#file0">4 diffs</a>)
+            </li>
+          </ul>
+        </dd>
+      </dl>
+      <div class="diff">
+        <div class="legend" id="diff-legend">
+          <h3>Legend:</h3>
+          <dl>
+            <dt class="unmod"></dt><dd>Unmodified</dd>
+            <dt class="add"></dt><dd>Added</dd>
+            <dt class="rem"></dt><dd>Removed</dd>
+          </dl>
+        </div>
+        <div class="diff">
+  <ul class="entries">
+      <li class="entry">
+        <h2 id="file0">
+          <a href="scripts.html" title="Show the changeset 835 restricted to mystic/mystic/scripts.py">mystic/mystic/scripts.py</a>
+        </h2>
+        <table class="trac-diff inline" summary="Differences" cellspacing="0">
+              <colgroup><col class="lineno" /><col class="lineno" /><col class="content" /></colgroup>
+              <thead>
+                <tr>
+                  <th title="Revision 810">
+                    <a title="Show revision 810 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=810#L674">
+                      r810</a>
+                  </th>
+                  <th title="Revision 835">
+                    <a title="Show revision 835 of this file in browser" href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=835#L674">
+                      r835</a>
+                  </th>
+                  <td> </td>
+                </tr>
+              </thead>
+            <tbody class="unmod">
+                  <tr>
+                          <th>674</th><th>674</th><td class="l"><span>&nbsp; &nbsp; __quit = False</span> </td>
+                  </tr><tr>
+                          <th>675</th><th>675</th><td class="l"><span></span> </td>
+                  </tr>
+            </tbody><tbody class="add">
+                  <tr class="last first">
+                          <th> </th><th>676</th><td class="r"><ins>&nbsp; &nbsp; instance = None</ins> </td>
+                  </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>676</th><th>677</th><td class="l"><span>&nbsp; &nbsp; # handle the special case where list is provided by sys.argv</span> </td>
+                  </tr><tr>
+                          <th>677</th><th>678</th><td class="l"><span>&nbsp; &nbsp; if isinstance(filename, (list,tuple)) and not kwds:</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=810#L698">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=835#L699">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>698</th><th>699</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if nid is None else '--nid={} '.format(nid)</span> </td>
+                  </tr><tr>
+                          <th>699</th><th>700</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs += '' if param is None else '--param="{}" '.format(param)</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>700</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; cmdargs = filename.split() + shlex.split(cmdargs)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>701</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if isinstance(filename, basestring):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>702</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cmdargs = filename.split() + shlex.split(cmdargs)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>703</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; else: # special case of passing in monitor instance</span> </td>
+                      </tr><tr>
+                        <th> </th><th>704</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; instance = filename</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>705</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; cmdargs = ['^1203@magic*key311&amp;'] + shlex.split(cmdargs)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>701</th><th>706</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>702</th><th>707</th><td class="l"><span>&nbsp; &nbsp; #XXX: note that 'argparse' is new as of python2.7</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=810#L757">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=835#L762">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>757</th><th>762</th><td class="l"><span></span> </td>
+                  </tr><tr>
+                          <th>758</th><th>763</th><td class="l"><span>&nbsp; &nbsp; try: # get logfile name</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>759</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; filename = parsed_args[0]</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>764</th><td class="r"><span>&nbsp; &nbsp; &nbsp; if instance:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>765</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; filename = instance</span> </td>
+                      </tr><tr>
+                        <th> </th><th>766</th><td class="r"><span>&nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>767</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; filename = parsed_args[0]</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>760</th><th>768</th><td class="l"><span>&nbsp; &nbsp; except:</span> </td>
+                  </tr><tr>
+                          <th>761</th><th>769</th><td class="l"><span>&nbsp; &nbsp; &nbsp; raise IOError("please provide log file name")</span> </td>
+                  </tr>
+            </tbody>
+              <tbody class="skipped">
+                <tr>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=810#L804">…</a></th>
+                  <th><a href="http://mmckerns.github.io/project/mystic/browser/mystic/mystic/scripts.py?rev=835#L812">…</a></th>
+                  <td> </td>
+                </tr>
+              </tbody>
+            <tbody class="unmod">
+                  <tr>
+                          <th>804</th><th>812</th><td class="l"><span>&nbsp; &nbsp; # parse file contents to get (i,id), cost, and parameters</span> </td>
+                  </tr><tr>
+                          <th>805</th><th>813</th><td class="l"><span>&nbsp; &nbsp; try:</span> </td>
+                  </tr>
+            </tbody><tbody class="mod">
+                      <tr class="first">
+                        <th>806</th><th> </th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; step, param, cost = logfile_reader(filename)</span> </td>
+                      </tr>
+                      <tr>
+                        <th> </th><th>814</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; if instance:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>815</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; step = enumerate(instance.id)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>816</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if len(instance) == instance.id.count(None):</span> </td>
+                      </tr><tr>
+                        <th> </th><th>817</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; step = [(i,) for (i,j) in step]</span> </td>
+                      </tr><tr>
+                        <th> </th><th>818</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr>
+                        <th> </th><th>819</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; step = list(step)</span> </td>
+                      </tr><tr>
+                        <th> </th><th>820</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; param, cost = instance.x, instance.y</span> </td>
+                      </tr><tr>
+                        <th> </th><th>821</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; else:</span> </td>
+                      </tr><tr class="last">
+                        <th> </th><th>822</th><td class="r"><span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; step, param, cost = logfile_reader(filename)</span> </td>
+                      </tr>
+            </tbody><tbody class="unmod">
+                  <tr>
+                          <th>807</th><th>823</th><td class="l"><span>&nbsp; &nbsp; except SyntaxError:</span> </td>
+                  </tr><tr>
+                          <th>808</th><th>824</th><td class="l"><span>&nbsp; &nbsp; &nbsp; &nbsp; read_raw_file(filename)</span> </td>
+                  </tr>
+            </tbody>
+        </table>
+      </li>
+  </ul>
+</div>
+        <div id="help"><strong>Note:</strong> See <a href="../../../../wiki/TracChangeset.html">TracChangeset</a>
+          for help on using the changeset viewer.</div>
+      </div>
+    </div>
+    <div id="altlinks">
+      <h3>Download in other formats:</h3>
+      <ul>
+        <li class="first">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/835/mystic/mystic/scripts.py?format=diff&amp;new=835" class="diff">Unified Diff</a>
+        </li><li class="last">
+          <a rel="nofollow" href="http://mmckerns.github.io/project/mystic/changeset/835/mystic/mystic/scripts.py?format=zip&amp;new=835" class="zip">Zip Archive</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div id="footer" lang="en" xml:lang="en"><hr />
+      <a id="uqf" href="http://www.uqfoundation.org/"><img src="http://mmckerns.github.io/projects/mystic/UQ.png" height="38" width="50" alt="UQ Foundation" /></a>
+      <a id="caltech"><img src="http://mmckerns.github.io/projects/mystic/Caltech.png" height="40" width="40" alt="Caltech" /></a>
+      <a id="nsf"><img src="http://mmckerns.github.io/projects/mystic/NSF.png" height="42" width="42" alt="NSF" /></a>
+      <a id="afosr"><img src="http://mmckerns.github.io/projects/mystic/AFOSR.png" height="40" width="40" alt="AFOSR" /></a>
+      <a id="doe"><img src="http://mmckerns.github.io/projects/mystic/DOE.png" height="40" width="40" alt="DOE" /></a>
+      <a id="nnsa"><img src="http://mmckerns.github.io/projects/mystic/NNSA.png" height="40" width="100" alt="NNSA" /></a>
+      <p class="left">Powered by <a href="../../../../about.html"><strong>Trac 0.12</strong></a><br />
+        and coffee, lots of coffee.<br />
+        This project is funded by...</p>
+      <p class="right">For more information, please visit<br />the mystic project homepage at<br /><a href="http://mmckerns.github.io/projects/mystic">http://mmckerns.github.io/projects/mystic</a></p>
+    </div>
+    <div id="sitefooter">
+    </div>
+  </body>
+
+<!-- Mirrored from mmckerns.github.io/project/mystic/changeset/835/mystic/mystic/scripts.py by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 19 May 2016 00:11:12 GMT -->
+</html>
